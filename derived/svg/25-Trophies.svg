@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2660" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="2660" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">25-Trophies: Wonderland Gift Box System</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Wonderland Gift Box Overview</text>
+
+  <rect x="60" y="164" width="1080" height="112" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="192" font-size="14" fill="#4A4B65">The Wonderland Gift Box system manages trophies and rewards in Miliastra Sandbox. It allows</text>
+  <text x="80" y="214" font-size="14" fill="#4A4B65">creators to create additional in-game content for distribution to players. Gift boxes can be obtained</text>
+  <text x="80" y="236" font-size="14" fill="#4A4B65">through various conditions and are managed per Season.</text>
+  <text x="80" y="260" font-size="13" fill="#4A4B65">Access via System Menu &gt; [Manage Wonderland Gift Box]. Each Stage can contain up to 20 Gift Boxes.</text>
+
+  <circle cx="80" cy="312" r="16" fill="#2D6BE4"/>
+  <text x="80" y="313" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="313" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Gift Box Configuration</text>
+
+  <rect x="60" y="340" width="1080" height="468" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="340" width="4" height="468" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="368" font-size="14" font-weight="bold" fill="#1A1B2E">Base Attributes</text>
+
+  <g transform="translate(84, 396)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Gift Box Index</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">Unique identifier; must be unique across all gift boxes</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Select Icon</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Predefined icon or custom upload from local device</text>
+    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Rarity</text>
+    <text x="240" y="44" font-size="13" fill="#4A4B65">Indicates the quality tier of this Gift Box</text>
+    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Can it be obtained again after season update?</text>
+    <text x="240" y="66" font-size="13" fill="#4A4B65">When enabled, players can obtain it again on Season update</text>
+    <text x="0" y="90" font-size="13" font-weight="bold" fill="#1A1B2E">Validity Period</text>
+    <text x="240" y="90" font-size="13" fill="#4A4B65">Disabled = permanently active; enabled = set active Seasons</text>
+    <text x="0" y="112" font-size="13" font-weight="bold" fill="#1A1B2E">Number of valid seasons after obtaining</text>
+    <text x="240" y="112" font-size="13" fill="#4A4B65">Seasons the box remains active after being obtained</text>
+    <text x="0" y="134" font-size="13" font-weight="bold" fill="#1A1B2E">Description Content</text>
+    <text x="240" y="134" font-size="13" fill="#4A4B65">Describes this Gift Box's function</text>
+  </g>
+
+  <g transform="translate(80, 560)">
+    <text x="0" y="0" font-size="14" font-weight="bold" fill="#1A1B2E">Unlock Condition Types</text>
+
+    <rect x="0" y="16" width="320" height="64" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="36" font-size="13" font-weight="bold" fill="#1A1B2E">Leaderboard</text>
+    <text x="16" y="56" font-size="12" fill="#4A4B65">Select leaderboard data + required rank</text>
+
+    <rect x="340" y="16" width="320" height="64" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="36" font-size="13" font-weight="bold" fill="#1A1B2E">Rank</text>
+    <text x="16" y="56" font-size="12" fill="#4A4B65">Choose the ranking requirement to achieve</text>
+
+    <rect x="680" y="16" width="320" height="64" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="36" font-size="13" font-weight="bold" fill="#1A1B2E">Ultimate Achievement</text>
+    <text x="16" y="56" font-size="12" fill="#4A4B65">No additional editing required</text>
+  </g>
+
+  <circle cx="80" cy="846" r="16" fill="#2D6BE4"/>
+  <text x="80" y="847" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="847" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Apply &amp; Launch Settings</text>
+
+  <rect x="60" y="874" width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="874" width="4" height="260" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="902" font-size="14" font-weight="bold" fill="#1A1B2E">Apply Settings</text>
+  <text x="84" y="928" font-size="13" fill="#4A4B65">Defines the Seasons during which a Gift Box can be active.</text>
+  <g transform="translate(84, 952)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Activate?</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">When disabled, box is unavailable; when enabled, available during configured Season</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Display Priority</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Display order in the Shop; higher values appear first</text>
+    <text x="0" y="46" font-size="13" font-weight="bold" fill="#1A1B2E">Permanent Effect After Activation?</text>
+    <text x="240" y="46" font-size="13" fill="#4A4B65">Disabled: set via Listing Settings. Enabled: specify initial Season, then permanent</text>
+  </g>
+
+  <rect x="60" y="1148" width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="1148" width="4" height="180" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="1176" font-size="14" font-weight="bold" fill="#1A1B2E">Launch Settings (Listing Settings)</text>
+  <text x="84" y="1202" font-size="13" fill="#4A4B65">Defines which Gift Boxes are listed for each Season.</text>
+  <g transform="translate(84, 1228)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Select Season</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">Choose a Season to edit its listed Gift Boxes</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Add</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Add Gift Boxes to the currently selected Season</text>
+    <text x="0" y="48" font-size="13" fill="#4A4B65">Click the top-left corner or uncheck to remove a Gift Box from the Season.</text>
+    <text x="0" y="68" font-size="13" fill="#4A4B65">Permanent Gift Boxes cannot be removed in Listing Settings.</text>
+  </g>
+
+  <circle cx="80" cy="1366" r="16" fill="#1B4FC0"/>
+  <text x="80" y="1367" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1367" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Managing Gift Boxes via Node Graph</text>
+
+  <rect x="60" y="1394" width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="1422" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Nodes</text>
+
+  <g transform="translate(80, 1452)">
+    <rect x="0" y="0" width="320" height="60" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Consume Gift Box</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Consumes a gift box for the target player</text>
+
+    <rect x="340" y="0" width="320" height="60" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Query Corresponding Gift Box Quantity</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Queries how many of this box the player has</text>
+
+    <rect x="680" y="0" width="320" height="60" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Query Corresponding Gift Box Consumption</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Queries how many of this box have been consumed</text>
+  </g>
+
+  <rect x="60" y="1568" width="1080" height="82" rx="14" fill="#E8EEFB"/>
+  <rect x="60" y="1568" width="4" height="82" rx="2" fill="#2D6BE4"/>
+  <text x="80" y="1592" font-size="14" font-weight="bold" fill="#2D6BE4">Trophy &amp; Reward System</text>
+  <text x="80" y="1616" font-size="13" fill="#4A4B65">Trophies in Miliastra Sandbox are entirely handled through the Wonderland Gift Box system.</text>
+  <text x="80" y="1636" font-size="13" fill="#4A4B65">Gift boxes serve as the reward container; each box can contain various reward types.</text>
+
+  <text x="60" y="2510" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhl18n9382fu" target="_blank">
+    <text x="60" y="2536" font-size="13" fill="#2D6BE4" text-decoration="underline">Wonderland Gift Box</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhx1du08nhwo" target="_blank">
+    <text x="60" y="2560" font-size="13" fill="#2D6BE4" text-decoration="underline">Stage Settlement</text>
+  </a>
+  <text x="600" y="2640" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

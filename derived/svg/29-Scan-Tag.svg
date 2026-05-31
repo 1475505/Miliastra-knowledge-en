@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#1A1B2E" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B2E" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="3200" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">29-Scan Tag: Scan Function, Tags, Components &amp; Node Graphs</text>
+
+  <!-- I. What is the Scan Function -->
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What is the Scan Function</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" fill="#4A4B65">The scan function allows players to select an entity during gameplay by using the camera.</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">The scanned target can be configured to display special effects, such as unique icons or effects.</text>
+    <text x="20" y="76" font-size="14" fill="#4A4B65">In skill usage logic, scanned targets can be retrieved via nodes from the relevant node graph,</text>
+    <text x="20" y="96" font-size="14" fill="#4A4B65">allowing selection of specific skill targets.</text>
+    <text x="20" y="124" font-size="14" fill="#4A4B65">Whether an entity can be scanned and its status display after being scanned can be defined</text>
+    <text x="20" y="144" font-size="14" fill="#4A4B65">through <tspan font-weight="bold" fill="#1A1B2E">scan tags</tspan> and implemented through <tspan font-weight="bold" fill="#1A1B2E">scan components</tspan> to assign logic</text>
+    <text x="20" y="164" font-size="14" fill="#4A4B65">to prefabs and entities.</text>
+  </g>
+
+  <!-- II. Editing Scan Tags -->
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Scan Tags</text>
+
+  <g transform="translate(60, 408)">
+    <rect width="1080" height="976" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" fill="#4A4B65">A scan tag defines the filtering logic and display settings for a scannable object. It must be</text>
+    <text x="20" y="48" font-size="14" fill="#4A4B65">defined globally in advance. Access via "Scan Tag Management" in the system menu.</text>
+
+    <text x="20" y="76" font-size="14" font-weight="bold" fill="#1A1B2E">1. Scan Tag List</text>
+    <text x="20" y="100" font-size="13" fill="#4A4B65">All defined scan tags can be found in this interface for filtering and searching globally.</text>
+    <text x="20" y="120" font-size="13" fill="#4A4B65">Click "Create New Scan Tag Template" to add a new scan tag.</text>
+
+    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">2. Scan Tag Logic Configuration</text>
+    <text x="20" y="172" font-size="13" fill="#4A4B65">Divided into two tabs: Status Performance and Effective Conditions.</text>
+
+    <text x="20" y="200" font-size="13" font-weight="bold" fill="#1A1B2E">Basic Definition</text>
+    <text x="20" y="224" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag Name</tspan> — The name of the scan tag, used for identification.</text>
+    <text x="20" y="244" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Configuration ID</tspan> — Unique identifier used to index this scan tag in the node graph.</text>
+
+    <text x="20" y="276" font-size="13" font-weight="bold" fill="#1A1B2E">Status Performance</text>
+    <text x="20" y="300" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Icon Settings</tspan> — When a prefab/entity with this scan tag is selected, a hint icon appears.</text>
+    <text x="20" y="320" font-size="13" fill="#4A4B65">Configure icon resource groups for different selection states. Up to two icons on-screen.</text>
+    <text x="20" y="344" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Attachment Point</tspan> / <tspan font-weight="bold" fill="#1A1B2E">Offset</tspan> — Icon display position relative to entity attachment points.</text>
+
+    <text x="20" y="372" font-size="13" font-weight="bold" fill="#1A1B2E">Selection States (3 states)</text>
+
+    <rect x="20" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Active State</text>
+    <text x="36" y="430" font-size="11" fill="#4A4B65">Currently selected by scan.</text>
+    <text x="36" y="444" font-size="11" fill="#4A4B65">Only one entity at a time.</text>
+
+    <rect x="365" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="381" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Available State</text>
+    <text x="381" y="430" font-size="11" fill="#4A4B65">Meets conditions but not active.</text>
+    <text x="381" y="444" font-size="11" fill="#4A4B65">Higher priority target is active.</text>
+
+    <rect x="710" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="726" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Disabled State</text>
+    <text x="726" y="430" font-size="11" fill="#4A4B65">Effective conditions not met.</text>
+
+    <text x="20" y="480" font-size="13" font-weight="bold" fill="#1A1B2E">Special Effects Settings</text>
+    <text x="20" y="504" font-size="13" fill="#4A4B65">Effect configurations applied based on state:</text>
+    <text x="40" y="528" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Activated Status Effects</tspan> — VFX when entity is in active state.</text>
+    <text x="40" y="548" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Available Status Effects</tspan> — VFX when entity is in available state.</text>
+    <text x="40" y="568" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Disable Status Effects</tspan> — VFX when entity is in disabled state.</text>
+    <text x="20" y="592" font-size="13" fill="#4A4B65">Configure: VFX Assets, Attachment Point, Zoom Factor, Offset, Rotation.</text>
+
+    <text x="20" y="624" font-size="13" font-weight="bold" fill="#1A1B2E">Effective Conditions</text>
+    <text x="20" y="648" font-size="13" fill="#4A4B65">Describes conditions that must be met to put a scannable entity into the available state.</text>
+
+    <rect x="20" y="664" width="500" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="686" font-size="12" font-weight="bold" fill="#1A1B2E">Local Filter</text>
+    <text x="36" y="706" font-size="11" fill="#4A4B65">Boolean/Integer filter with associated node graph.</text>
+
+    <rect x="540" y="664" width="500" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="556" y="686" font-size="12" font-weight="bold" fill="#1A1B2E">Obstacle Detection</text>
+    <text x="556" y="706" font-size="11" fill="#4A4B65">Line-of-sight check with ray detection.</text>
+
+    <rect x="20" y="740" width="500" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="762" font-size="12" font-weight="bold" fill="#1A1B2E">Distance Detection</text>
+    <text x="36" y="782" font-size="11" fill="#4A4B65">Defines available range of scannable entity.</text>
+
+    <rect x="540" y="740" width="500" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="556" y="762" font-size="12" font-weight="bold" fill="#1A1B2E">Line of Sight Detection</text>
+    <text x="556" y="782" font-size="11" fill="#4A4B65">Obstacle check between camera and entity.</text>
+
+    <rect x="20" y="816" width="500" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="838" font-size="12" font-weight="bold" fill="#1A1B2E">FOV Range Settings</text>
+    <text x="36" y="858" font-size="11" fill="#4A4B65">Elliptical area at screen center.</text>
+
+    <text x="20" y="912" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Ignore Water Surface</tspan> — Available for both Obstacle and Line of Sight detection.</text>
+    <text x="20" y="936" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">FOV:</tspan> Configure Ellipse Horizontal/Vertical Axis Ratio. Preview available.</text>
+    <text x="20" y="956" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Detection Range</tspan> — Can be previewed directly in the scene.</text>
+  </g>
+
+  <!-- III. Scan Tag Components -->
+  <circle cx="80" cy="1420" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1421" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1421" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing Scan Tag Components</text>
+
+  <g transform="translate(60, 1448)">
+    <rect width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Adding Components</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">In the Entity or Prefab editing interface, open the Component Editing Tab. Click</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">"Add Components", then select and click "Scan Tag" to add it.</text>
+
+    <text x="20" y="100" font-size="14" font-weight="bold" fill="#1A1B2E">2. Scan Tag Component Settings</text>
+    <text x="20" y="124" font-size="13" fill="#4A4B65">The component can be configured with multiple alternative scan tag templates, but only</text>
+    <text x="20" y="144" font-size="13" fill="#4A4B65">one scan tag can take effect during gameplay. Can be dynamically switched via node graphs.</text>
+    <text x="20" y="168" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initially Effective</tspan> — Default active scan tag.</text>
+    <text x="20" y="192" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag List</tspan> — All scan tags contained in this component.</text>
+    <text x="20" y="216" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag ID</tspan> — Used as identifier when switching dynamically.</text>
+    <text x="20" y="240" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Reference Scan Tag</tspan> — Select and reference pre-defined global scan tags.</text>
+  </g>
+
+  <!-- IV. Scan Tag Filtering Logic -->
+  <circle cx="80" cy="1744" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1745" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1745" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Scan Tag Filtering Logic</text>
+
+  <g transform="translate(60, 1772)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" fill="#4A4B65">When multiple available scan objects are present simultaneously, only one scan object will be</text>
+    <text x="20" y="48" font-size="14" fill="#4A4B65">set to the active state. The filtering rules are defined by the class attribute</text>
+    <text x="20" y="68" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">"Scan Tag Recognition Rules"</tspan>.</text>
+
+    <rect x="20" y="88" width="480" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="110" font-size="12" font-weight="bold" fill="#1A1B2E">Distance From Center of FOV</text>
+    <text x="36" y="130" font-size="11" fill="#4A4B65">Closest to FOV center gets priority.</text>
+
+    <rect x="520" y="88" width="480" height="64" rx="8" fill="#E8EEFB"/>
+    <text x="536" y="110" font-size="12" font-weight="bold" fill="#1A1B2E">Actual Position Distance</text>
+    <text x="536" y="130" font-size="11" fill="#4A4B65">Nearest to player character gets priority.</text>
+  </g>
+
+  <!-- V. Node Graph Nodes -->
+  <circle cx="80" cy="1988" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1989" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="1989" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Scan Tag Node Graph Nodes</text>
+
+  <g transform="translate(60, 2016)">
+    <rect width="1080" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Server Nodes</text>
+
+    <rect x="20" y="44" width="500" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="66" font-size="12" font-weight="bold" fill="#1A1B2E">Set Scan Tag Rules</text>
+    <text x="36" y="86" font-size="11" fill="#4A4B65">Sets the recognition rule for scan filtering.</text>
+
+    <rect x="540" y="44" width="520" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="556" y="66" font-size="12" font-weight="bold" fill="#1A1B2E">Set Scan Component's Active Scan Tag ID</text>
+    <text x="556" y="86" font-size="11" fill="#4A4B65">Switches which scan tag is active.</text>
+
+    <rect x="20" y="116" width="500" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="138" font-size="12" font-weight="bold" fill="#1A1B2E">Get Current Active Scan Tag Config ID</text>
+    <text x="36" y="158" font-size="11" fill="#4A4B65">Returns the active scan tag config ID.</text>
+
+    <text x="20" y="208" font-size="14" font-weight="bold" fill="#1A1B2E">Client Nodes</text>
+
+    <rect x="20" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get All Valid Scannable Entities</text>
+    <text x="36" y="266" font-size="11" fill="#4A4B65">Returns all scannable entities.</text>
+
+    <rect x="370" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="386" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get Currently Scanned Entity</text>
+    <text x="386" y="266" font-size="11" fill="#4A4B65">Returns the active scanned entity.</text>
+
+    <rect x="720" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="736" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get Entity's Active Scan Tags</text>
+    <text x="736" y="266" font-size="11" fill="#4A4B65">Returns active state of all scan tags.</text>
+
+    <rect x="20" y="296" width="500" height="60" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="318" font-size="12" font-weight="bold" fill="#1A1B2E">Get Entity's Scan Status</text>
+    <text x="36" y="338" font-size="11" fill="#4A4B65">Returns whether entity is scanned/available/disabled.</text>
+  </g>
+
+  <!-- Source Links -->
+  <text x="60" y="2416" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrvf1ioor1w" target="_blank">
+    <text x="60" y="2442" font-size="13" fill="#2D6BE4" text-decoration="underline">Scan Tag</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhodlcrpht3q" target="_blank">
+    <text x="60" y="2468" font-size="13" fill="#2D6BE4" text-decoration="underline">Classes</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho6gviqhsqs" target="_blank">
+    <text x="60" y="2494" font-size="13" fill="#2D6BE4" text-decoration="underline">Shop Component</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0pppib5eyc" target="_blank">
+    <text x="60" y="2520" font-size="13" fill="#2D6BE4" text-decoration="underline">Mini-Map Marker</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="2560" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1580" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1580" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Variables</text>
+
+  <!-- Section I: Custom Variables - Definition & Types -->
+  <rect x="40" y="100" width="1120" height="210" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Custom Variables: Definition &amp; Types</text>
+  <text x="68" y="162" font-size="14" fill="#4A4B65">Custom variables are data structures stored in an entity's <tspan font-weight="700" fill="#1A1B2E">custom variable component</tspan>.</text>
+  <text x="68" y="186" font-size="14" fill="#4A4B65">They use <tspan font-weight="700" fill="#1A1B2E">custom variable names</tspan> (string type) as unique identifiers within the same entity.</text>
+  <text x="68" y="210" font-size="14" fill="#4A4B65">Supported data types: Integer, Float, String, Boolean, 3D Vector, Entities, GUID,</text>
+  <text x="68" y="234" font-size="14" fill="#4A4B65">Prefab ID, Configuration ID, Structure, and their List variants, plus Dictionary types.</text>
+  <text x="68" y="258" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Life Cycle:</tspan> Follows the entity. Variables are destroyed when the entity is destroyed.</text>
+  <text x="68" y="282" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Scope:</tspan> Global for both reading and writing — any entity can access any other entity's variables.</text>
+
+  <!-- Section II: Custom Variable Component & Editing -->
+  <rect x="40" y="330" width="1120" height="185" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="362" font-size="18" font-weight="700" fill="#2D6BE4">II. Custom Variable Component &amp; Editing</text>
+  <text x="68" y="392" font-size="14" fill="#4A4B65">The custom variable component is the data carrier. An entity must have this component before</text>
+  <text x="68" y="416" font-size="14" fill="#4A4B65">custom variable operations can be performed. All units have this component by default.</text>
+  <text x="68" y="440" font-size="14" fill="#4A4B65">In the <tspan font-weight="700" fill="#1A1B2E">Advanced Editing</tspan> tab, you can view, add, and modify custom variables including their</text>
+  <text x="68" y="464" font-size="14" fill="#4A4B65">names, types, and default values. The <tspan font-weight="700" fill="#1A1B2E">Stage Overview</tspan> lets you view all variables on stage.</text>
+  <text x="68" y="488" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Caution:</tspan> Changing a variable's name or type after use in node graphs may cause nodes to fail.</text>
+
+  <!-- Section III: Custom Variable Node Graph Nodes -->
+  <rect x="40" y="535" width="1120" height="375" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="567" font-size="18" font-weight="700" fill="#2D6BE4">III. Custom Variable Node Graph Nodes</text>
+
+  <!-- Node 1: Set Custom Variable -->
+  <text x="68" y="599" font-size="14" font-weight="700" fill="#1A1B2E">Set Custom Variable</text>
+  <text x="68" y="619" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="639" font-size="14" fill="#4A4B65">Sets a named custom variable on the target entity. Creates a new variable if none exists.</text>
+  <text x="68" y="663" font-size="14" fill="#4A4B65">Supports generic input. Parameters: Target Entity, Variable Name, Value, Trigger Event.</text>
+
+  <!-- Node 2: Get Custom Variable -->
+  <text x="68" y="695" font-size="14" font-weight="700" fill="#1A1B2E">Get Custom Variable</text>
+  <text x="68" y="715" font-size="13" fill="#8B8DA0">Node Type: Query</text>
+  <text x="68" y="735" font-size="14" fill="#4A4B65">Retrieves a custom variable value by name from the target entity. The output is generic and</text>
+  <text x="68" y="759" font-size="14" fill="#4A4B65">requires connection or manual type specification before use.</text>
+
+  <!-- Node 3: When Custom Variable Changes -->
+  <text x="68" y="791" font-size="14" font-weight="700" fill="#1A1B2E">When Custom Variable Changes</text>
+  <text x="68" y="811" font-size="13" fill="#8B8DA0">Node Type: Event</text>
+  <text x="68" y="831" font-size="14" fill="#4A4B65">Triggers when any custom variable on the entity changes. Fires even if the value remains</text>
+  <text x="68" y="855" font-size="14" fill="#4A4B65">identical. Filter by variable name for specific monitoring.</text>
+  <text x="68" y="879" font-size="13" fill="#4A4B65">Outputs: Event Source Entity, Source GUID, Variable Name, Pre-Change Value, Post-Change Value</text>
+  <text x="68" y="897" font-size="13" fill="#8B8DA0">Note: Container types (List, Dictionary, Structure) omit pre/post change values.</text>
+
+  <!-- Section IV: Node Graph Variables -->
+  <rect x="40" y="930" width="1120" height="290" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="962" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Variables: Definition &amp; Scope</text>
+  <text x="68" y="992" font-size="14" fill="#4A4B65">Node Graph Variables have a <tspan font-weight="700" fill="#1A1B2E">life cycle that follows the node graph</tspan>, and are only valid in</text>
+  <text x="68" y="1016" font-size="14" fill="#4A4B65">Server Node Graphs. They can only be accessed within the node graph they reside in.</text>
+  <text x="68" y="1040" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Why use them:</tspan> Lightweight, allow duplicate names across graphs, support modular design.</text>
+
+  <!-- Comparison mini-table -->
+  <rect x="68" y="1064" width="1064" height="34" fill="#2D6BE4"/>
+  <text x="80" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" dominant-baseline="middle">Aspect</text>
+  <text x="360" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Node Graph Variables</text>
+  <text x="830" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Custom Variables</text>
+
+  <rect x="68" y="1098" width="1064" height="30" fill="#F9F7F2"/>
+  <text x="80" y="1117" font-size="12" fill="#4A4B65" dominant-baseline="middle">Life Cycle</text>
+  <text x="360" y="1117" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Follows Node Graph</text>
+  <text x="830" y="1117" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Follows Entity</text>
+
+  <rect x="68" y="1128" width="1064" height="30" fill="#FFFFFF"/>
+  <text x="80" y="1147" font-size="12" fill="#4A4B65" dominant-baseline="middle">Scope</text>
+  <text x="360" y="1147" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Within node graph only</text>
+  <text x="830" y="1147" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Global (any entity)</text>
+
+  <rect x="68" y="1158" width="1064" height="30" fill="#F9F7F2"/>
+  <text x="80" y="1177" font-size="12" fill="#4A4B65" dominant-baseline="middle">Naming &amp; Override</text>
+  <text x="360" y="1177" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Unique in graph, expose to stage</text>
+  <text x="830" y="1177" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Unique in entity, general override</text>
+
+  <!-- Section V: Node Graph Variables - Editing & Exposing -->
+  <rect x="40" y="1240" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="1272" font-size="18" font-weight="700" fill="#2D6BE4">V. Node Graph Variables: Editing &amp; Exposing</text>
+  <text x="68" y="1302" font-size="14" fill="#4A4B65">Access the <tspan font-weight="700" fill="#1A1B2E">Node Graph Variables</tspan> tab from the node graph editing shortcut menu.</text>
+  <text x="68" y="1326" font-size="14" fill="#4A4B65">Create and edit variables directly in the tab. Drag a variable into the editing area to quickly</text>
+  <text x="68" y="1350" font-size="14" fill="#4A4B65">create Set or Get operation nodes. Click the <tspan font-weight="700" fill="#1A1B2E">Expose</tspan> button to allow stage-level</text>
+  <text x="68" y="1374" font-size="14" fill="#4A4B65">value overwriting on different entity instances for the same Node Graph Variable.</text>
+
+  <!-- Tip Box -->
+  <rect x="40" y="1420" width="1120" height="65" rx="14" fill="#E8EEFB"/>
+  <rect x="40" y="1420" width="4" height="65" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="1442" font-size="14" font-weight="700" fill="#1A1B2E">Container Type Pass-by-Reference</text>
+  <text x="68" y="1464" font-size="13" fill="#4A4B65">For List, Dictionary, and Structure types, Get Custom Variable returns a reference, not a copy.</text>
+  <text x="68" y="1482" font-size="13" fill="#4A4B65">Modifications via reference do not trigger When Custom Variable Changes. Use Set to trigger events.</text>
+
+  <!-- Source Links -->
+  <text x="68" y="1515" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh07te9wy8b6" target="_blank">
+    <text x="68" y="1543" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Custom Variables</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtq21i5la38" target="_blank">
+    <text x="68" y="1569" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Node Graph Variables</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="1570" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

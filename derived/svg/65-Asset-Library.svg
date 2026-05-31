@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2800" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="2800" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">65-Asset Library</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition of the Asset Library</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="32" font-size="14" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">In the Asset Library, Craftspeople can create multiple custom Asset Groups.</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">An Asset Group is data saved by combining and editing parameters for one</text>
+    <text x="20" y="96" font-size="13" fill="#4A4B65">or more UI control templates.</text>
+    <text x="20" y="126" font-size="13" fill="#4A4B65">In UI controls that support Asset Group configuration, previously defined</text>
+    <text x="20" y="146" font-size="13" fill="#4A4B65">Asset Groups can be referenced to enrich the visual presentation of the control.</text>
+  </g>
+
+  <g transform="translate(60, 392)">
+    <rect width="1080" height="100" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="100" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Asset Types</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Models, Textures, Sounds, VFX, UI controls, and animations can all be</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">imported and organized within the Asset Library for use across stages.</text>
+  </g>
+
+  <circle cx="80" cy="528" r="16" fill="#2D6BE4"/>
+  <text x="80" y="529" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="529" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Asset Library</text>
+
+  <g transform="translate(60, 556)">
+    <rect width="1080" height="860" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="15" font-weight="bold" fill="#1A1B2E">1. Creating an Asset Group</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">Select the Asset Library and click [Add Asset Template] to add currently</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">supported UI control templates to the asset details.</text>
+    <text x="20" y="100" font-size="13" fill="#4A4B65">After adding templates, select any UI controls to combine. Click</text>
+    <text x="20" y="120" font-size="13" fill="#4A4B65">[Create Asset Group] to generate an Asset Group.</text>
+
+    <text x="20" y="156" font-size="13" font-weight="bold" fill="#1A1B2E">Mask Option</text>
+    <text x="20" y="180" font-size="13" fill="#4A4B65">After creating the Asset Group, you can optionally enable a Mask.</text>
+    <text x="20" y="200" font-size="13" fill="#4A4B65">Enabling the mask allows a mask to be configured for that Asset Group.</text>
+
+    <g transform="translate(20, 216)">
+      <rect width="500" height="44" rx="8" fill="#E8EEFB"/>
+      <rect x="0" y="0" width="4" height="44" rx="2" fill="#2D6BE4"/>
+      <text x="16" y="28" font-size="12" fill="#1A1B2E" font-weight="bold">Note:</text>
+      <text x="60" y="28" font-size="12" fill="#4A4B65">Masks do not support special effects.</text>
+    </g>
+
+    <text x="20" y="286" font-size="15" font-weight="bold" fill="#1A1B2E">2. Referencing an Asset Group</text>
+    <text x="20" y="312" font-size="13" fill="#4A4B65">Using the Status Display Area control as an example: in the reference asset</text>
+    <text x="20" y="332" font-size="13" fill="#4A4B65">area, an Asset Group can be referenced.</text>
+    <text x="20" y="356" font-size="13" fill="#4A4B65">Click [Detail Edit] to either create a new Asset Group or directly reference</text>
+    <text x="20" y="376" font-size="13" fill="#4A4B65">an already-created one.</text>
+
+    <text x="20" y="416" font-size="15" font-weight="bold" fill="#1A1B2E">3. Preview Settings During Editing</text>
+    <text x="20" y="442" font-size="13" fill="#4A4B65">After entering the Asset Group editing interface, the current Asset Group</text>
+    <text x="20" y="462" font-size="13" fill="#4A4B65">being edited is visually isolated from the canvas using a dimmed overlay.</text>
+    <text x="20" y="486" font-size="13" fill="#4A4B65">The position on the canvas is for editing preview purposes only and does not</text>
+    <text x="20" y="506" font-size="13" fill="#4A4B65">affect the Asset Group's relative position based on its parent control.</text>
+
+    <text x="20" y="540" font-size="13" font-weight="bold" fill="#1A1B2E">Preview Configuration</text>
+    <text x="20" y="564" font-size="13" fill="#4A4B65">In the settings, you can configure the visibility of the mask and the source</text>
+    <text x="20" y="584" font-size="13" fill="#4A4B65">control of the Asset Group during the editing preview.</text>
+  </g>
+
+  <circle cx="80" cy="1452" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1453" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1453" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Organizing &amp; Managing Assets</text>
+
+  <g transform="translate(60, 1480)">
+    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Importing Assets</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">Assets can be imported from local files or the built-in asset repository.</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">Supported formats vary by asset type (e.g. .png/.jpg for textures, .fbx/.obj for models).</text>
+
+    <text x="20" y="112" font-size="14" font-weight="bold" fill="#1A1B2E">Organizing Assets</text>
+    <text x="20" y="138" font-size="13" fill="#4A4B65">Assets can be organized into folders and sub-folders within the library.</text>
+    <text x="20" y="158" font-size="13" fill="#4A4B65">Tagging and search functionality help locate assets quickly.</text>
+
+    <text x="20" y="194" font-size="14" font-weight="bold" fill="#1A1B2E">Asset Management</text>
+    <text x="20" y="220" font-size="13" fill="#4A4B65">- Rename, duplicate, or delete assets</text>
+    <text x="20" y="244" font-size="13" fill="#4A4B65">- Preview assets before use</text>
+    <text x="20" y="268" font-size="13" fill="#4A4B65">- Update/replace existing assets while preserving references</text>
+    <text x="20" y="292" font-size="13" fill="#4A4B65">- View asset usage across stages</text>
+  </g>
+
+  <g transform="translate(60, 1848)">
+    <rect width="1080" height="130" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="130" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Using Assets in the Editor</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Imported assets can be dragged directly from the Asset Library into the</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">stage editor or UI layout. Asset Groups provide a way to bundle related</text>
+    <text x="24" y="96" font-size="13" fill="#4A4B65">assets together for consistent reuse across different controls and stages.</text>
+  </g>
+
+  <g transform="translate(60, 2006)">
+    <rect width="1080" height="50" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  </g>
+  <a href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mhwylormozcm">
+    <text x="80" y="2086" font-size="12" fill="#2D6BE4" text-decoration="underline">Asset Library</text>
+  </a>
+
+  <text x="600" y="2140" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

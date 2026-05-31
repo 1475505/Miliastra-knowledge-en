@@ -1,0 +1,318 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2800" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="2800" fill="#F9F7F2"/>
+
+  <!-- Top gradient bar -->
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">08 - Complex Creations</text>
+
+  <!-- ==================== SECTION I: DEFINITION & CREATING ==================== -->
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition &amp; Creating Complex Creations</text>
+
+  <!-- Definition Card -->
+  <g transform="translate(60, 164)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Definition</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Complex Creations</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Creations with editable autonomous logic</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">and custom skills, like characters.</text>
+    <text x="16" y="130" font-size="13" fill="#4A4B65">Designed for Craftspeople who want</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">greater freedom customizing Creation</text>
+    <text x="16" y="170" font-size="13" fill="#4A4B65">models and behaviors.</text>
+  </g>
+
+  <!-- Creating Card -->
+  <g transform="translate(620, 164)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="86" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="59" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Creation</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">How to Create</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Open the Entity Placement Interface.</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">Select a specific item under the</text>
+    <text x="16" y="126" font-size="13" fill="#4A4B65">Complex Creations tab.</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">Click it or drag it into the Scene</text>
+    <text x="16" y="170" font-size="13" fill="#4A4B65">to create the Complex Creation.</text>
+  </g>
+
+  <!-- ==================== SECTION II: DIFFERENCES ==================== -->
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Differences Between Complex and Basic Creations</text>
+
+  <!-- Basic Information - Transformation & Model cards side by side -->
+  <g transform="translate(60, 408)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Transformation</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Scaling Support</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Complex Creations support scaling</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">with an adjustment rate of</text>
+    <text x="16" y="126" font-size="13" fill="#1A1B2E" font-weight="bold">0.5–3.0x</text>
+  </g>
+
+  <g transform="translate(620, 408)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="76" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="54" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Model</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Preset Status</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Complex Creations can adjust</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">Preset Status, which affects</text>
+    <text x="16" y="126" font-size="13" fill="#4A4B65">various aspects including</text>
+    <text x="16" y="146" font-size="13" fill="#1A1B2E" font-weight="bold">initial actions</text>
+    <text x="16" y="166" font-size="13" fill="#4A4B65">and behavior initialization.</text>
+  </g>
+
+  <!-- Specialized Settings section -->
+  <rect x="60" y="616" width="1080" height="36" rx="8" fill="#2D6BE4" opacity="0.08"/>
+  <text x="600" y="638" font-size="16" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Specialized Settings Overview</text>
+
+  <!-- Creation Status Decision Node Graph Card -->
+  <g transform="translate(60, 668)">
+    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="180" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="106" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Status Decision Node Graph</text>
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Status Decision Node Graph</text>
+    <text x="16" y="84" font-size="13" fill="#4A4B65">Complex Creations can be configured with a Creation Status Decision Node Graph.</text>
+    <text x="16" y="104" font-size="13" fill="#4A4B65">It continuously accesses this graph and enters different autonomous logic statuses</text>
+    <text x="16" y="124" font-size="13" fill="#4A4B65">based on configured conditions. Can reference the Creation Status Node Graph.</text>
+  </g>
+
+  <!-- Creation Skill Management Card (large table) -->
+  <g transform="translate(60, 838)">
+    <rect width="1080" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="160" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="96" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Skill Management</text>
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Skill Management</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Complex Creations can use Custom Skills. Skills must be defined before use in the Status Node Graph.</text>
+    <text x="16" y="100" font-size="13" fill="#4A4B65">Skill usage is subject to three cooldown timers: Global Skill CD, Skill CD, and Skill Group CD.</text>
+
+    <!-- Skills table header -->
+    <rect x="16" y="118" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="132" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Basic Settings</text>
+
+    <!-- Skills table rows -->
+    <rect x="16" y="146" width="524" height="28" fill="#F9F7F2" rx="0"/>
+    <rect x="540" y="146" width="524" height="28" fill="#F9F7F2" rx="0"/>
+    <text x="30" y="160" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">ID</text>
+    <text x="554" y="160" font-size="12" fill="#4A4B65" dominant-baseline="middle">Referenced in the Status Node Graph for Skill execution</text>
+
+    <rect x="16" y="174" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <rect x="540" y="174" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <text x="30" y="188" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Referenced Skill</text>
+    <text x="554" y="188" font-size="12" fill="#4A4B65" dominant-baseline="middle">Custom Skills can only reference Skills the Creation can use</text>
+
+    <!-- CD Configuration -->
+    <rect x="16" y="210" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="224" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">CD Configuration</text>
+
+    <rect x="16" y="238" width="524" height="42" fill="#F9F7F2" rx="0"/>
+    <rect x="540" y="238" width="524" height="42" fill="#F9F7F2" rx="0"/>
+    <text x="30" y="252" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Initial CD Start Point</text>
+    <text x="554" y="252" font-size="12" fill="#4A4B65" dominant-baseline="middle">In Battle: starts when entering battle.</text>
+    <text x="554" y="268" font-size="12" fill="#4A4B65" dominant-baseline="middle">Out of Battle: starts when exiting battle.</text>
+
+    <rect x="16" y="280" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <rect x="540" y="280" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <text x="30" y="294" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Initial CD Range (s)</text>
+    <text x="554" y="294" font-size="12" fill="#4A4B65" dominant-baseline="middle">Random time within range used as effective cooldown</text>
+
+    <rect x="16" y="308" width="524" height="28" fill="#F9F7F2" rx="0"/>
+    <rect x="540" y="308" width="524" height="28" fill="#F9F7F2" rx="0"/>
+    <text x="30" y="322" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Default CD Range (s)</text>
+    <text x="554" y="322" font-size="12" fill="#4A4B65" dominant-baseline="middle">Random time within range as Actual Cooldown Time</text>
+
+    <rect x="16" y="336" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <rect x="540" y="336" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <text x="30" y="350" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">CD Group</text>
+    <text x="554" y="350" font-size="12" fill="#4A4B65" dominant-baseline="middle">Skill can only be used when Skill CD + Global CD + Group CD ready</text>
+
+    <rect x="16" y="364" width="524" height="42" fill="#F9F7F2" rx="0"/>
+    <rect x="540" y="364" width="524" height="42" fill="#F9F7F2" rx="0"/>
+    <text x="30" y="378" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">CD Trigger Timing</text>
+    <text x="554" y="378" font-size="12" fill="#4A4B65" dominant-baseline="middle">When Skill ends: start CD after skill finishes.</text>
+    <text x="554" y="394" font-size="12" fill="#4A4B65" dominant-baseline="middle">When Skill starts: start CD when skill begins.</text>
+
+    <rect x="16" y="406" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <rect x="540" y="406" width="524" height="28" fill="#FFFFFF" rx="0"/>
+    <text x="30" y="420" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Trigger / Ignore Global Skill CD</text>
+    <text x="554" y="420" font-size="12" fill="#4A4B65" dominant-baseline="middle">Toggle whether this skill affects or ignores Global CD</text>
+  </g>
+
+  <!-- Cooldown Time Card -->
+  <g transform="translate(60, 1298)">
+    <rect width="1080" height="230" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Cooldown Time</text>
+
+    <text x="16" y="62" font-size="15" font-weight="bold" fill="#1A1B2E">Cooldown Time Configuration</text>
+    <text x="16" y="84" font-size="13" fill="#4A4B65">All Skills for a Complex Creation are affected by Global Cooldown Time.</text>
+
+    <!-- CD Group section -->
+    <text x="16" y="114" font-size="14" font-weight="bold" fill="#1A1B2E">CD Group Configuration</text>
+    <text x="16" y="134" font-size="13" fill="#4A4B65">Links cooldown timers of multiple Skills. Skills in the same CD Group share cooldown timing.</text>
+
+    <rect x="16" y="150" width="340" height="28" rx="4" fill="#2D6BE4"/>
+    <rect x="356" y="150" width="340" height="28" rx="4" fill="#2D6BE4"/>
+    <rect x="696" y="150" width="350" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="186" y="164" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">CD Group ID</text>
+    <text x="526" y="164" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">CD Group Name</text>
+    <text x="871" y="164" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">CD Range (s)</text>
+
+    <rect x="16" y="178" width="340" height="28" fill="#F9F7F2"/>
+    <rect x="356" y="178" width="340" height="28" fill="#F9F7F2"/>
+    <rect x="696" y="178" width="350" height="28" fill="#F9F7F2"/>
+    <text x="186" y="192" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Referenced in Nodes at runtime</text>
+    <text x="526" y="192" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Selected in specified editor</text>
+    <text x="871" y="192" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Configure cooldown time range</text>
+  </g>
+
+  <!-- Autonomous Logic Parameter Settings Card (big) -->
+  <g transform="translate(60, 1548)">
+    <rect width="1080" height="640" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="210" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="121" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Autonomous Logic Parameters</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Autonomous Logic Parameter Settings</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Complex Creations require Autonomous Logic Parameter Templates applied in the Status Node Graph.</text>
+    <text x="16" y="100" font-size="13" fill="#4A4B65">These parameters define the basic combat behavior requirements.</text>
+
+    <text x="16" y="124" font-size="14" font-weight="bold" fill="#1A1B2E">Initial Effective Autonomous Logic Parameter Template</text>
+    <text x="16" y="144" font-size="13" fill="#4A4B65">Active by default at runtime. Maximum 1 template active initially.</text>
+
+    <text x="16" y="168" font-size="14" font-weight="bold" fill="#1A1B2E">Autonomous Logic Parameter Template List</text>
+    <text x="16" y="188" font-size="13" fill="#4A4B65">Lists all templates configured for this Complex Creation. Add new templates (inactive by default).</text>
+    <text x="16" y="206" font-size="13" fill="#4A4B65">Template_X where X is the template ID — used as Node input for state adjustment.</text>
+
+    <!-- Sub-section: Basic Settings -->
+    <rect x="16" y="220" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="234" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">a. Basic Settings</text>
+
+    <rect x="16" y="248" width="524" height="28" fill="#F9F7F2"/>
+    <rect x="540" y="248" width="524" height="28" fill="#F9F7F2"/>
+    <text x="30" y="262" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Initially Effective</text>
+    <text x="554" y="262" font-size="12" fill="#4A4B65" dominant-baseline="middle">If enabled, template takes effect immediately when created</text>
+
+    <!-- Sub-section: Battle Settings -->
+    <rect x="16" y="284" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="298" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">b. Battle Settings</text>
+
+    <rect x="16" y="312" width="524" height="28" fill="#F9F7F2"/>
+    <rect x="540" y="312" width="524" height="28" fill="#F9F7F2"/>
+    <text x="30" y="326" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Detection Range</text>
+    <text x="554" y="326" font-size="12" fill="#4A4B65" dominant-baseline="middle">When hostiles in range, Creation can detect and enter battle</text>
+
+    <rect x="16" y="340" width="524" height="28" fill="#FFFFFF"/>
+    <rect x="540" y="340" width="524" height="28" fill="#FFFFFF"/>
+    <text x="30" y="354" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Preview Range</text>
+    <text x="554" y="354" font-size="12" fill="#4A4B65" dominant-baseline="middle">Toggle visual preview of Detection Range in editor</text>
+
+    <rect x="16" y="368" width="524" height="42" fill="#F9F7F2"/>
+    <rect x="540" y="368" width="524" height="42" fill="#F9F7F2"/>
+    <text x="30" y="382" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">FOV Type</text>
+    <text x="554" y="382" font-size="12" fill="#4A4B65" dominant-baseline="middle">FOV Cone (cone distance) or</text>
+    <text x="554" y="398" font-size="12" fill="#4A4B65" dominant-baseline="middle">Full FOV (sphere radius)</text>
+
+    <rect x="16" y="410" width="524" height="28" fill="#FFFFFF"/>
+    <rect x="540" y="410" width="524" height="28" fill="#FFFFFF"/>
+    <text x="30" y="424" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Chain Battle Distance (m)</text>
+    <text x="554" y="424" font-size="12" fill="#4A4B65" dominant-baseline="middle">Nearby Creations also enter battle with target</text>
+
+    <!-- Sub-section: Out-of-Battle Settings -->
+    <rect x="16" y="446" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="460" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">c. Out-of-Battle Settings</text>
+
+    <rect x="16" y="474" width="524" height="28" fill="#F9F7F2"/>
+    <rect x="540" y="474" width="524" height="28" fill="#F9F7F2"/>
+    <text x="30" y="488" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Out-of-Battle Distance (m)</text>
+    <text x="554" y="488" font-size="12" fill="#4A4B65" dominant-baseline="middle">Exceed distance from target → leaves battle</text>
+
+    <rect x="16" y="502" width="524" height="28" fill="#FFFFFF"/>
+    <rect x="540" y="502" width="524" height="28" fill="#FFFFFF"/>
+    <text x="30" y="516" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Leave Battle on Pathfinding Failure</text>
+    <text x="554" y="516" font-size="12" fill="#4A4B65" dominant-baseline="middle">If no valid path to target, leave battle</text>
+
+    <rect x="16" y="530" width="524" height="28" fill="#F9F7F2"/>
+    <rect x="540" y="530" width="524" height="28" fill="#F9F7F2"/>
+    <text x="30" y="544" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Leaving Battle Delay (s)</text>
+    <text x="554" y="544" font-size="12" fill="#4A4B65" dominant-baseline="middle">Delay before leaving battle after pathfinding failure</text>
+
+    <!-- Sub-section: Territory Settings -->
+    <rect x="16" y="566" width="1048" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="30" y="580" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">d. Territory Settings</text>
+
+    <rect x="16" y="594" width="524" height="28" fill="#F9F7F2"/>
+    <rect x="540" y="594" width="524" height="28" fill="#F9F7F2"/>
+    <text x="30" y="608" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Territory Shape</text>
+    <text x="554" y="608" font-size="12" fill="#4A4B65" dominant-baseline="middle">None, Sphere, or Cylinder (size params required)</text>
+  </g>
+
+  <!-- Patrol Settings card (small reference) -->
+  <g transform="translate(60, 2208)">
+    <rect width="1080" height="70" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Patrol Settings</text>
+    <text x="16" y="54" font-size="13" fill="#4A4B65">Refer to the Patrol section under General Settings for patrol configuration details.</text>
+  </g>
+
+  <!-- ==================== SECTION III: MANAGING BEHAVIORS ==================== -->
+  <circle cx="80" cy="2314" r="16" fill="#1B4FC0"/>
+  <text x="80" y="2315" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="2315" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Managing Behaviors Through Local Filter</text>
+
+  <!-- Status Decision Node Graph card -->
+  <g transform="translate(60, 2342)">
+    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="180" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="106" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Status Decision Node Graph</text>
+
+    <text x="16" y="62" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Status Decision Node Graph</text>
+    <text x="16" y="84" font-size="13" fill="#4A4B65">Starts with "Execute only by sequence" node. Each output pin connects to</text>
+    <text x="16" y="104" font-size="13" fill="#4A4B65">"Switch to self execution status" node to execute different behaviors.</text>
+    <text x="16" y="128" font-size="13" fill="#4A4B65">Continuously evaluates states in order. If a preceding state's conditions are met,</text>
+    <text x="16" y="148" font-size="13" fill="#4A4B65">the Creation immediately switches to that state. If none match, no state executes.</text>
+    <text x="16" y="172" font-size="13" fill="#4A4B65">Supports priority-based branching: branch 1 → branch 2 → branch N.</text>
+  </g>
+
+  <!-- Status Node Graph card -->
+  <g transform="translate(60, 2562)">
+    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="150" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="91" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Status Node Graph</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Status Node Graph</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Input and output pins support only single-line connections.</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">Represents continuous behavior — while the Creation stays in a given state,</text>
+    <text x="16" y="122" font-size="13" fill="#4A4B65">the configured behavior executes repeatedly until the Decision Graph switches state.</text>
+  </g>
+
+  <!-- ==================== SOURCE LINKS ==================== -->
+  <text x="60" y="2752" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ejirxhneu" target="_blank">
+    <text x="60" y="2776" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Complex Creations</text>
+  </a>
+
+  <!-- ==================== FOOTER ==================== -->
+  <text x="600" y="2780" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+
+</svg>

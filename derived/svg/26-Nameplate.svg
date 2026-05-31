@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2900" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="2900" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">26-Nameplate: Visual Information Display &amp; HUD System</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Functions of Nameplate Component</text>
+
+  <rect x="60" y="164" width="1080" height="184" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="192" font-size="14" fill="#4A4B65">Nameplate Components support displaying visual information for specified entities during stage</text>
+  <text x="80" y="214" font-size="14" fill="#4A4B65">runtime, providing entity HP, level, directional guidance, distance display, and other details.</text>
+
+  <g transform="translate(80, 246)">
+    <rect x="0" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Mounting</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Supports characters, objects,</text>
+    <text x="16" y="60" font-size="12" fill="#4A4B65">and creations</text>
+
+    <rect x="340" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Multiple Nameplates</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Multiple nameplates can be</text>
+    <text x="16" y="60" font-size="12" fill="#4A4B65">active simultaneously</text>
+
+    <rect x="680" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Visibility Control</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Enable/disable via default config,</text>
+    <text x="16" y="60" font-size="12" fill="#4A4B65">node graph, or local filter</text>
+  </g>
+
+  <rect x="60" y="362" width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="362" width="4" height="100" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="390" font-size="14" font-weight="bold" fill="#1A1B2E">Nameplate vs Navigation Indicator</text>
+  <text x="84" y="416" font-size="13" fill="#4A4B65">Nameplates can be occluded by the environment and exist on the same physics layer as the entity.</text>
+  <text x="84" y="438" font-size="13" fill="#4A4B65">Navigation indicators are not occluded by the environment and are rendered above the Interface Layout layer.</text>
+
+  <circle cx="80" cy="500" r="16" fill="#2D6BE4"/>
+  <text x="80" y="501" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="501" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Nameplate Components</text>
+
+  <rect x="60" y="528" width="1080" height="182" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="556" font-size="14" font-weight="bold" fill="#1A1B2E">Adding &amp; Configuring the Component</text>
+  <text x="80" y="582" font-size="13" fill="#4A4B65">(1) In the entity/prefab editing interface, open the Editing Components tab</text>
+  <text x="80" y="604" font-size="13" fill="#4A4B65">(2) Click [Add Components], select "Nameplate" to add it</text>
+  <text x="80" y="626" font-size="13" fill="#4A4B65">(3) Click [Advanced Editing] to expand the editing tab</text>
+
+  <g transform="translate(80, 654)">
+    <rect x="0" y="0" width="490" height="44" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">Initially Effective Nameplate</text>
+    <text x="12" y="34" font-size="12" fill="#4A4B65">Dropdown menu with checkboxes to set effective status</text>
+    <rect x="520" y="0" width="490" height="44" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">Nameplate List</text>
+    <text x="12" y="34" font-size="12" fill="#4A4B65">Enumerates all nameplates configured for the entity</text>
+  </g>
+
+  <circle cx="80" cy="748" r="16" fill="#2D6BE4"/>
+  <text x="80" y="749" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="749" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing Nameplates</text>
+
+  <rect x="60" y="776" width="1080" height="174" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="804" font-size="14" font-weight="bold" fill="#1A1B2E">Basic Settings</text>
+  <g transform="translate(80, 830)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Select Attachment Points</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">Preset or custom attachment point; nameplate position bases on this</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Visible Radius (m)</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Effective range; nameplate logic runs only within this distance</text>
+    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Filter Node Graph</text>
+    <text x="240" y="44" font-size="13" fill="#4A4B65">Local filter to determine visibility per client</text>
+    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Initially Effective</text>
+    <text x="240" y="66" font-size="13" fill="#4A4B65">Whether to enable simultaneously with object creation</text>
+  </g>
+
+  <rect x="60" y="964" width="1080" height="348" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="964" width="4" height="348" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="992" font-size="14" font-weight="bold" fill="#1A1B2E">Nameplate Content Types</text>
+  <text x="84" y="1016" font-size="13" fill="#4A4B65">The nameplate offers independent editable content types, usable separately or combined,</text>
+  <text x="84" y="1036" font-size="13" fill="#4A4B65">with adjustable position, size, and detailed data for each item.</text>
+
+  <g transform="translate(84, 1064)">
+    <rect x="0" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Text Box</text>
+    <text x="12" y="40" font-size="12" fill="#4A4B65">Text with variable insertion support</text>
+    <rect x="340" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Icons</text>
+    <text x="12" y="40" font-size="12" fill="#4A4B65">Custom icon or entity Faction Icon</text>
+    <rect x="680" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Progress Bar</text>
+    <text x="12" y="40" font-size="12" fill="#4A4B65">Horizontal, Vertical, or Ring shape</text>
+    <rect x="0" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Timer</text>
+    <text x="12" y="108" font-size="12" fill="#4A4B65">Stopwatch or Countdown</text>
+    <rect x="340" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">HP and Shield</text>
+    <text x="12" y="108" font-size="12" fill="#4A4B65">HP bar, shield display options</text>
+    <rect x="680" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Interrupt Intake Value</text>
+    <text x="12" y="108" font-size="12" fill="#4A4B65">Interruption gauge with color config</text>
+  </g>
+
+  <rect x="60" y="1326" width="1080" height="192" rx="14" fill="#E8EEFB"/>
+  <rect x="60" y="1326" width="4" height="192" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="1354" font-size="14" font-weight="bold" fill="#2D6BE4">Variable Insertion Format</text>
+  <text x="84" y="1382" font-size="13" fill="#4A4B65">Text content supports variable insertion: {Type:Prefix.VariableName}</text>
+  <text x="84" y="1410" font-size="13" font-weight="bold" fill="#1A1B2E">Type:</text>
+  <text x="180" y="1410" font-size="13" fill="#4A4B65">1 = custom variable of the entity itself, 2 = attribute of the entity</text>
+  <text x="84" y="1432" font-size="13" font-weight="bold" fill="#1A1B2E">Prefix:</text>
+  <text x="180" y="1432" font-size="13" fill="#4A4B65">s = non-character entity, a = character entity, p = player entity</text>
+  <text x="84" y="1458" font-size="13" font-weight="bold" fill="#1A1B2E">Available Attributes:</text>
+  <text x="200" y="1458" font-size="13" fill="#4A4B65">HpCur, HpMax, AtkCur, DefCur, LvCur, PName, PDist</text>
+
+  <circle cx="80" cy="1556" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1557" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1557" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Navigation Indicators</text>
+
+  <rect x="60" y="1584" width="1080" height="162" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="1612" font-size="14" font-weight="bold" fill="#1A1B2E">Navigation Indicator Settings</text>
+  <g transform="translate(80, 1640)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Offset</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">Adjustable relative to the attachment point</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Maximum Visible Radius (m)</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Maximum effective range of the indicator</text>
+    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Minimum Visible Radius (m)</text>
+    <text x="240" y="44" font-size="13" fill="#4A4B65">Minimum effective range of the indicator</text>
+    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Hide When Nameplate Is Displayed</text>
+    <text x="240" y="66" font-size="13" fill="#4A4B65">Smooth transition between indicator and nameplate</text>
+  </g>
+
+  <rect x="60" y="1760" width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <rect x="60" y="1760" width="4" height="130" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="1788" font-size="14" font-weight="bold" fill="#1A1B2E">Navigation Indicator Content Types</text>
+  <g transform="translate(84, 1816)">
+    <rect x="0" y="0" width="490" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Text Box</text>
+    <text x="12" y="40" font-size="12" fill="#4A4B65">Display text with variable insertion support</text>
+    <rect x="520" y="0" width="490" height="56" rx="6" fill="#F0F2F5"/>
+    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Icons</text>
+    <text x="12" y="40" font-size="12" fill="#4A4B65">Custom icon or entity Faction Icon</text>
+  </g>
+
+  <circle cx="80" cy="1928" r="16" fill="#1B4FC0"/>
+  <text x="80" y="1929" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="1929" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Managing Nameplates Through Node Graph</text>
+
+  <rect x="60" y="1956" width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="1984" font-size="13" fill="#4A4B65">During entity runtime, active nameplates can be managed through the node graph.</text>
+
+  <g transform="translate(80, 2014)">
+    <rect x="0" y="0" width="490" height="60" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Set Entity Active Nameplate</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Nameplate Config ID List overrides the target entity's active nameplate</text>
+    <rect x="520" y="0" width="490" height="60" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Parameters</text>
+    <text x="16" y="44" font-size="12" fill="#4A4B65">Target Entity (runtime) + Nameplate Config ID List</text>
+  </g>
+
+  <rect x="60" y="2100" width="1080" height="96" rx="14" fill="#E8EEFB"/>
+  <rect x="60" y="2100" width="4" height="96" rx="2" fill="#2D6BE4"/>
+  <text x="80" y="2124" font-size="14" font-weight="bold" fill="#2D6BE4">Filter Node Graph Local Variables</text>
+  <text x="80" y="2150" font-size="13" fill="#4A4B65">Get Self Entity: Outputs the entity with the nameplate component mounted</text>
+  <text x="80" y="2172" font-size="13" fill="#4A4B65">Get Current Character: Outputs the local character entity</text>
+
+  <text x="60" y="2750" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0oh59a6d2i" target="_blank">
+    <text x="60" y="2776" font-size="13" fill="#2D6BE4" text-decoration="underline">Nameplate</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwiv89yra02" target="_blank">
+    <text x="60" y="2800" font-size="13" fill="#2D6BE4" text-decoration="underline">Sound Effect Player</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwtz297kp6a" target="_blank">
+    <text x="60" y="2824" font-size="13" fill="#2D6BE4" text-decoration="underline">Text Bubble</text>
+  </a>
+  <text x="600" y="2880" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

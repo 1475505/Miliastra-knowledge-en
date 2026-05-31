@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3200" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">35-Main Camera</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Camera Definition</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Camera renders the Player's perspective in the game — it defines what the Player sees on screen.</text>
+    <text x="20" y="78" font-size="13" fill="#4A4B65">In Beyond Mode, creators define camera rules through camera templates. Each template represents</text>
+    <text x="20" y="98" font-size="13" fill="#4A4B65">a distinct Camera State. At runtime, each player always has one active Camera Template.</text>
+    <text x="20" y="122" font-size="13" fill="#4A4B65">Active templates can differ between players (e.g., Co-Op: Player A uses Template 1, B uses Template 2).</text>
+  </g>
+
+  <circle cx="80" cy="340" r="16" fill="#2D6BE4"/>
+  <text x="80" y="341" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="341" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Camera Template Editor</text>
+
+  <g transform="translate(60, 368)">
+    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Editor Layout</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Opening the Main Camera editor displays three sections:</text>
+    <text x="20" y="80" font-size="13" fill="#1A1B2E" font-weight="bold">Section 1</text>
+    <text x="85" y="80" font-size="13" fill="#4A4B65">Preview and configure parameters of the current Camera Template</text>
+    <text x="20" y="104" font-size="13" fill="#1A1B2E" font-weight="bold">Section 2</text>
+    <text x="85" y="104" font-size="13" fill="#4A4B65">Preview of camera position and character position relationship in the scene</text>
+    <text x="20" y="128" font-size="13" fill="#1A1B2E" font-weight="bold">Section 3</text>
+    <text x="85" y="128" font-size="13" fill="#4A4B65">Preview of actual in-game screen during gameplay</text>
+  </g>
+
+  <circle cx="80" cy="564" r="16" fill="#2D6BE4"/>
+  <text x="80" y="565" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="565" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Template Parameter Configuration</text>
+
+  <g transform="translate(60, 592)">
+    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Parameters</text>
+    <text x="20" y="62" font-size="13" fill="#1A1B2E" font-weight="bold">Template Name</text>
+    <text x="130" y="62" font-size="13" fill="#4A4B65">Name indicating the Template's role; also used as reference in Node Graphs</text>
+    <text x="20" y="88" font-size="13" fill="#1A1B2E" font-weight="bold">Movement Mode</text>
+    <text x="130" y="88" font-size="13" fill="#4A4B65">Currently supports camera following character entities</text>
+    <text x="20" y="114" font-size="13" fill="#1A1B2E" font-weight="bold">Mode</text>
+    <text x="65" y="114" font-size="13" fill="#4A4B65">Key parameter defining the Camera Template type. Determines core rules</text>
+    <text x="85" y="134" font-size="13" fill="#4A4B65">and which adjustable parameters are available</text>
+    <text x="20" y="160" font-size="13" fill="#1A1B2E" font-weight="bold">Default Effective Target</text>
+    <text x="160" y="160" font-size="13" fill="#4A4B65">Specifies which Classes the template initially applies to</text>
+    <text x="20" y="186" font-size="13" fill="#4A4B65">Location Information: Relative location between Camera and Character</text>
+    <text x="20" y="206" font-size="13" fill="#4A4B65">(editing parameters, collapsed by default, values shown in preview)</text>
+  </g>
+
+  <circle cx="80" cy="848" r="16" fill="#2D6BE4"/>
+  <text x="80" y="849" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="849" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Camera Modes</text>
+
+  <g transform="translate(60, 876)">
+    <rect width="520" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Classic Camera</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Classic Camera</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Matches Classic Mode. Parameters are grayed out —</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">supports preview only, cannot be edited.</text>
+
+    <rect x="16" y="130" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="143" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">3D Back Camera</text>
+    <text x="16" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">3D Back Camera</text>
+    <text x="16" y="194" font-size="13" fill="#4A4B65">Over-the-shoulder view positioned behind and to</text>
+    <text x="16" y="214" font-size="13" fill="#4A4B65">the right of the Character.</text>
+    <text x="16" y="238" font-size="13" fill="#1A1B2E" font-weight="bold">Key Parameters:</text>
+    <text x="16" y="256" font-size="13" fill="#4A4B65">• Camera FOV Detection (viewing cone)</text>
+    <text x="16" y="274" font-size="13" fill="#4A4B65">• Viewpoint Offset (world coordinate offset)</text>
+    <text x="16" y="292" font-size="13" fill="#4A4B65">• Viewpoint Follows Rotation (camera rotates with character)</text>
+    <text x="16" y="310" font-size="13" fill="#4A4B65">• Default Line of Sight (initial distance)</text>
+    <text x="16" y="328" font-size="13" fill="#4A4B65">• Line of Sight Range (adjustable range)</text>
+    <text x="16" y="346" font-size="13" fill="#4A4B65">• Horizontal Angle Range (left-right rotation, degrees)</text>
+    <text x="16" y="364" font-size="13" fill="#4A4B65">• Pitch Angle Range (up-down rotation, degrees)</text>
+
+    <rect x="16" y="392" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="405" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">2.5D</text>
+    <text x="16" y="432" font-size="14" font-weight="bold" fill="#1A1B2E">2.5D Camera</text>
+    <text x="16" y="454" font-size="13" fill="#4A4B65">Traditional 2.5D game camera. Supports Ignore</text>
+    <text x="16" y="472" font-size="13" fill="#4A4B65">Camera Collision toggle.</text>
+  </g>
+
+  <g transform="translate(620, 876)">
+    <rect width="520" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="140" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="86" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">First-Person</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">First-Person Camera</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Camera positioned at the Character's eye level,</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">simulating first-person perspective view.</text>
+
+    <rect x="16" y="130" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="143" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Third Person</text>
+    <text x="16" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">Third Person Camera</text>
+    <text x="16" y="194" font-size="13" fill="#4A4B65">Similar to Classic Mode but with editable detailed</text>
+    <text x="16" y="214" font-size="13" fill="#4A4B65">settings available to the user.</text>
+
+    <rect x="16" y="242" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="255" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Object</text>
+    <text x="16" y="284" font-size="14" font-weight="bold" fill="#1A1B2E">Object Camera (via Main Camera)</text>
+    <text x="16" y="306" font-size="13" fill="#4A4B65">Movement Mode: Follow Object/Creation.</text>
+    <text x="16" y="326" font-size="13" fill="#4A4B65">Supports Object Cameras following object/creation</text>
+    <text x="16" y="346" font-size="13" fill="#4A4B65">entities. Currently only Third-Person Camera</text>
+    <text x="16" y="366" font-size="13" fill="#4A4B65">mode is supported for object cameras.</text>
+    <text x="16" y="394" font-size="14" font-weight="bold" fill="#1A1B2E">Advanced Camera Settings</text>
+    <text x="16" y="416" font-size="13" fill="#4A4B65">Automatic Camera Correction: When disabled,</text>
+    <text x="16" y="436" font-size="13" fill="#4A4B65">correction parameters cannot be modified.</text>
+    <text x="16" y="456" font-size="13" fill="#4A4B65">Horizontal/Pitch Correction Speed: [0, 360]</text>
+    <text x="16" y="474" font-size="13" fill="#4A4B65">Horizontal/Pitch Correction Reference: [0, 180]</text>
+  </g>
+
+  <circle cx="80" cy="1392" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1393" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="1393" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Camera Template Switching</text>
+
+  <g transform="translate(60, 1420)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Node Graph Control</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">You can use Node Graphs to dynamically switch Camera Templates at runtime.</text>
+    <text x="20" y="78" font-size="13" fill="#4A4B65">Target Units are a list of Player Entities.</text>
+    <text x="20" y="104" font-size="13" fill="#4A4B65">Template parameters themselves cannot be modified dynamically — only the active template</text>
+    <text x="20" y="124" font-size="13" fill="#4A4B65">can be switched via Node Graph for a specific Player Entity.</text>
+  </g>
+
+  <g transform="translate(60, 1580)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Camera Template Lifecycle</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Define Template in Main Camera Editor → Configure Parameters → Assign Default Targets →</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">At Runtime: Switch active templates via Node Graph as needed</text>
+  </g>
+
+  <text x="60" y="1720" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0" target="_blank">
+    <text x="60" y="1746" font-size="13" fill="#2D6BE4" text-decoration="underline">Main Camera → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0</text>
+  </a>
+  <text x="600" y="1780" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

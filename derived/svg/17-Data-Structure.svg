@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1620" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1620" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Data Structures</text>
+
+  <!-- Section I: Structure - Definition -->
+  <rect x="40" y="100" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Structure: Definition &amp; Key Concepts</text>
+  <text x="68" y="162" font-size="14" fill="#4A4B65">A <tspan font-weight="700" fill="#1A1B2E">Structure</tspan> is an advanced data type that groups different kinds of data into a single custom</text>
+  <text x="68" y="186" font-size="14" fill="#4A4B65">data type. Each Structure has a <tspan font-weight="700" fill="#1A1B2E">unique name</tspan> that identifies it. Fields within a Structure are</text>
+  <text x="68" y="210" font-size="14" fill="#4A4B65">called <tspan font-weight="700" fill="#1A1B2E">Members</tspan>, each with a unique field name and a data type.</text>
+  <text x="68" y="234" font-size="14" fill="#4A4B65">Structures support nesting — a Structure can contain other Structures and Structure Lists.</text>
+  <text x="68" y="258" font-size="13" fill="#4A4B65">Pass by Reference: Structure data in node graphs is passed by reference, similar to Lists.</text>
+
+  <!-- Section II: Structure - Creating & Editing -->
+  <rect x="40" y="280" width="1120" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="312" font-size="18" font-weight="700" fill="#2D6BE4">II. Structure: Creating &amp; Editing</text>
+  <text x="68" y="342" font-size="14" fill="#4A4B65">Access <tspan font-weight="700" fill="#1A1B2E">Advanced Data Management</tspan> from the editor menu to open the Structure Editing tab.</text>
+  <text x="68" y="366" font-size="14" fill="#4A4B65">View existing Structures, add new ones, define Members with names and types. Once created,</text>
+  <text x="68" y="390" font-size="14" fill="#4A4B65">Structures are available in Server Node Graphs, Custom Variables, and Node Graph Variables.</text>
+
+  <!-- Section III: Structure - Node Graph Nodes -->
+  <rect x="40" y="400" width="1120" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="432" font-size="18" font-weight="700" fill="#2D6BE4">III. Structure Node Graph Nodes</text>
+
+  <!-- Assemble Structure -->
+  <text x="68" y="464" font-size="14" font-weight="700" fill="#1A1B2E">Assemble Structure</text>
+  <text x="68" y="484" font-size="13" fill="#8B8DA0">Node Type: Operation</text>
+  <text x="68" y="504" font-size="14" fill="#4A4B65">Fill in values for each Member parameter to generate Structure data. Select the Structure type</text>
+  <text x="68" y="528" font-size="14" fill="#4A4B65">via the Generic selection button first. All Members of the chosen Structure appear as inputs.</text>
+
+  <!-- Split Structure -->
+  <text x="68" y="560" font-size="14" font-weight="700" fill="#1A1B2E">Split Structure</text>
+  <text x="68" y="580" font-size="13" fill="#8B8DA0">Node Type: Operation</text>
+  <text x="68" y="600" font-size="14" fill="#4A4B65">Pass in a Structure to obtain the values of each Member. Select the Structure type via Generic.</text>
+
+  <!-- Modify Structure -->
+  <text x="68" y="632" font-size="14" font-weight="700" fill="#1A1B2E">Modify Structure</text>
+  <text x="68" y="652" font-size="13" fill="#8B8DA0">Node Type: Execution</text>
+  <text x="68" y="672" font-size="14" fill="#4A4B65">Edit selected Member values within a Structure. Use the dropdown to choose which Members</text>
+  <text x="68" y="696" font-size="14" fill="#4A4B65">to modify — unchecked Members retain their original values.</text>
+
+  <!-- Section IV: Dictionary - Definition -->
+  <rect x="40" y="750" width="1120" height="225" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="782" font-size="18" font-weight="700" fill="#2D6BE4">IV. Dictionary: Definition &amp; Key Concepts</text>
+  <text x="68" y="812" font-size="14" fill="#4A4B65">A <tspan font-weight="700" fill="#1A1B2E">Dictionary</tspan> is a data structure representing a set of key-value mapping relationships.</text>
+  <text x="68" y="836" font-size="14" fill="#4A4B65">Each Dictionary maps data type A (<tspan font-weight="700" fill="#1A1B2E">Key</tspan>) to data type B (<tspan font-weight="700" fill="#1A1B2E">Value</tspan>). Keys must be unique.</text>
+  <text x="68" y="860" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Type Determination:</tspan> A Dictionary's type is defined by both its Key and Value types.</text>
+  <text x="68" y="884" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Pass by Reference:</tspan> Dictionaries are passed by reference in node graphs.</text>
+  <text x="68" y="908" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Unordered:</tspan> Key-Value Pairs are not stored in order. Do not rely on sequence.</text>
+  <text x="68" y="932" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Available Key Types:</tspan> Entity, GUID, Integer, String, Factions, Prefab ID, Configuration ID.</text>
+  <text x="68" y="956" font-size="13" fill="#8B8DA0">Value types include all basic types, list types, and custom Structures.</text>
+
+  <!-- Section V: Dictionary - Node Graph Nodes -->
+  <rect x="40" y="995" width="1120" height="400" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="1027" font-size="18" font-weight="700" fill="#2D6BE4">V. Dictionary Node Graph Nodes</text>
+
+  <!-- Execution Nodes -->
+  <text x="68" y="1059" font-size="14" font-weight="700" fill="#1A1B2E">Execution Nodes</text>
+  <text x="88" y="1083" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Set or Add Key Value Pair:</tspan> Add a new pair or update an existing key's value.</text>
+  <text x="88" y="1107" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Remove Key Value Pair by Key:</tspan> Remove an entry from the dictionary by its key.</text>
+  <text x="88" y="1131" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Clear Dictionary:</tspan> Remove all entries from the dictionary.</text>
+  <text x="88" y="1155" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Sort Dictionary by Key / by Value:</tspan> Sort the dictionary entries.</text>
+
+  <!-- Query Nodes -->
+  <text x="68" y="1189" font-size="14" font-weight="700" fill="#1A1B2E">Query Nodes</text>
+  <text x="88" y="1213" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query Dictionary Length:</tspan> Get the number of key-value pairs.</text>
+  <text x="88" y="1237" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query Dictionary Value by Key:</tspan> Retrieve a value using its key.</text>
+  <text x="88" y="1261" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Get List of Keys / Get List of Values:</tspan> Extract all keys or all values as a list.</text>
+  <text x="88" y="1285" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query If Dictionary Contains Specific Key / Value:</tspan> Check for existence.</text>
+
+  <!-- Operation Nodes -->
+  <text x="68" y="1317" font-size="14" font-weight="700" fill="#1A1B2E">Operation Nodes</text>
+  <text x="88" y="1341" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Create Dictionary:</tspan> Create a new empty dictionary of a specified key-value type.</text>
+  <text x="88" y="1365" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Assembly Dictionary:</tspan> Build a dictionary by specifying key-value pairs directly.</text>
+
+  <!-- Tip Box -->
+  <rect x="40" y="1415" width="1120" height="65" rx="14" fill="#E8EEFB"/>
+  <rect x="40" y="1415" width="4" height="65" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="1437" font-size="14" font-weight="700" fill="#1A1B2E">Generic Pin Usage</text>
+  <text x="68" y="1459" font-size="13" fill="#4A4B65">Both Structure and Dictionary types use Generic Pins. Select the specific type from the generic</text>
+  <text x="68" y="1477" font-size="13" fill="#4A4B65">dropdown before the node can be fully defined.</text>
+
+  <!-- Source Links -->
+  <text x="68" y="1520" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2zrw94b0v6" target="_blank">
+    <text x="68" y="1548" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Structure</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbydx0u7cgw" target="_blank">
+    <text x="68" y="1574" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Dictionary</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="1610" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

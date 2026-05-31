@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2480" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="2480" fill="#F9F7F2"/>
+  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">05-Units and Prefabs: Understanding the Core Building Blocks</text>
+
+  <!-- ==================== SECTION I ==================== -->
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What are Units and Prefabs</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Units and Entities</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Units are individual entities that integrate data during both the editing process</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">and stage runtime. The in-game representation of a unit is called an entity.</text>
+    <text x="20" y="100" font-size="14" font-weight="bold" fill="#1A1B2E">Dynamic Entities</text>
+    <text x="20" y="124" font-size="14" fill="#4A4B65">Can run complex logic, have more Attributes and Components, and can use</text>
+    <text x="20" y="144" font-size="14" fill="#4A4B65">Node Graphs. They have GUIDs and can be controlled via node graphs.</text>
+    <text x="20" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">Static Entities</text>
+    <text x="20" y="196" font-size="14" fill="#4A4B65">Used only for model placement and visibility settings. Cannot be edited with</text>
+    <text x="20" y="216" font-size="14" fill="#4A4B65">additional attributes, components, or node graph functions.</text>
+  </g>
+
+  <g transform="translate(60, 420)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Prefabs</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Prefabs are preset entity data. All editable entities are created from prefabs.</text>
+    <text x="20" y="76" font-size="14" fill="#4A4B65">Each entity must be created based on predefined basic data (prefabs).</text>
+    <text x="20" y="108" font-size="14" font-weight="bold" fill="#1A1B2E">Prefabricated Components</text>
+    <text x="20" y="132" font-size="14" fill="#4A4B65">Pre-made dynamic, static, and enemy prefabs provided by the system.</text>
+    <text x="20" y="156" font-size="14" font-weight="bold" fill="#1A1B2E">Custom Prefabs</text>
+    <text x="20" y="172" font-size="14" fill="#4A4B65">Players can modify prefabricated components and save them as custom prefabs.</text>
+  </g>
+
+  <!-- ==================== SECTION II ==================== -->
+  <circle cx="80" cy="636" r="16" fill="#2D6BE4"/>
+  <text x="80" y="637" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="637" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Prefab Library Interface</text>
+
+  <g transform="translate(60, 664)">
+    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Entry Point and Interface</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">The Prefab Library is accessed via the third icon in the top tab bar.</text>
+    <text x="20" y="76" font-size="14" fill="#4A4B65">The Assets Bar is located on the left side of the interface.</text>
+    <text x="20" y="108" font-size="14" font-weight="bold" fill="#1A1B2E">Tabs in the Assets Bar</text>
+    <text x="20" y="132" font-size="14" fill="#4A4B65">Custom Prefabs tab — includes an Uncategorized tab by default.</text>
+    <text x="20" y="152" font-size="14" fill="#4A4B65">Basic Module Prefabs (Prefabricated Components) — Dynamic and Static.</text>
+    <text x="20" y="172" font-size="14" fill="#4A4B65">Asset Library — shows importable prefabs based on local assets.</text>
+    <text x="20" y="200" font-size="14" font-weight="bold" fill="#1A1B2E">Dynamic Prefabs include:</text>
+    <text x="20" y="220" font-size="14" fill="#4A4B65">Process objects, gameplay mechanisms, and others.</text>
+    <text x="20" y="236" font-size="14" fill="#4A4B65">Static Prefabs include: trees, vegetation, terrain features, etc.</text>
+  </g>
+
+  <g transform="translate(60, 920)">
+    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Custom Tab Management</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Click Add Tab to create custom organization tabs for your prefabs.</text>
+    <text x="20" y="76" font-size="14" fill="#4A4B65">You can organize tabs based on personal preferences to manage</text>
+    <text x="20" y="96" font-size="14" fill="#4A4B65">the prefabs you have created.</text>
+    <text x="20" y="124" font-size="14" fill="#4A4B65">Search functionality is available in the prefab library to find prefabs</text>
+    <text x="20" y="144" font-size="14" fill="#4A4B65">by name or type.</text>
+  </g>
+
+  <!-- ==================== SECTION III ==================== -->
+  <circle cx="80" cy="1116" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1117" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1117" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Creating and Editing Prefabs</text>
+
+  <g transform="translate(60, 1144)">
+    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Creating Prefabs</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">From Basic Module tab: Click the Asset icon to create a prefab at the</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">center of the camera view, or drag the Asset icon to create at cursor position.</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">From scene selection: Select placed entities, right-click, and choose to</text>
+    <text x="20" y="120" font-size="14" fill="#4A4B65">create or save as a prefab.</text>
+    <text x="20" y="148" font-size="14" fill="#4A4B65">Copy-paste: Copy an existing Custom Prefab from the right-click menu,</text>
+    <text x="20" y="168" font-size="14" fill="#4A4B65">then right-click a blank area and choose Paste.</text>
+    <text x="20" y="196" font-size="14" fill="#4A4B65">Newly created unsaved prefabs show a green plus icon UI indicator.</text>
+  </g>
+
+  <g transform="translate(60, 1380)">
+    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Editing and Saving Prefabs</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Click a prefab to open its Details page on the right, where you can edit</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">Attributes, Components, Node Graphs, and Combat Content.</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">Modified unsaved prefabs show yellow highlighted text on changed module</text>
+    <text x="20" y="120" font-size="14" fill="#4A4B65">titles and a yellow exclamation mark on the object.</text>
+    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">Save Operations</text>
+    <text x="20" y="172" font-size="14" fill="#4A4B65">Overwrite and Save Prefab — updates the original custom prefab.</text>
+    <text x="20" y="192" font-size="14" fill="#4A4B65">Save As Prefab — saves as a new custom prefab with a globally</text>
+    <text x="20" y="212" font-size="14" fill="#4A4B65">unique name. After saving, a globally unique Prefab ID is generated.</text>
+    <text x="20" y="232" font-size="14" fill="#4A4B65">You can rename the prefab and choose a tab when saving.</text>
+  </g>
+
+  <!-- ==================== SECTION IV ==================== -->
+  <circle cx="80" cy="1656" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1657" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1657" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Entity Placement</text>
+
+  <g transform="translate(60, 1684)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Entity and Prefab Relationship</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Objects dragged from the Object Placement panel are entities. View the</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">linked prefab via Details Panel > Object Attributes > Reference Source.</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">Entity data references the prefab. Edits made on the entity overwrite</text>
+    <text x="20" y="120" font-size="14" fill="#4A4B65">the referenced data.</text>
+    <text x="20" y="148" font-size="14" fill="#4A4B65">Deleting a prefab removes all of its entities from the scene.</text>
+  </g>
+
+  <g transform="translate(60, 1880)">
+    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Overwrite and Restore</text>
+    <text x="20" y="52" font-size="14" font-weight="bold" fill="#1A1B2E">Overwrite Prefab Data on Entity</text>
+    <text x="20" y="76" font-size="14" fill="#4A4B65">Non-overwritten fields receive updates pushed from the prefab.</text>
+    <text x="20" y="96" font-size="14" fill="#4A4B65">Overwritten fields do not receive pushed updates and are highlighted</text>
+    <text x="20" y="116" font-size="14" fill="#4A4B65">in blue in the Details Panel.</text>
+    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">Restore Entity to Prefab Data</text>
+    <text x="20" y="172" font-size="14" fill="#4A4B65">Restore All — reverts all entity data except location and rotation</text>
+    <text x="20" y="192" font-size="14" fill="#4A4B65">to match the prefab. Accessed via the objects icon on the top bar.</text>
+    <text x="20" y="216" font-size="14" fill="#4A4B65">Partial Restore — each attribute card supports restoring its values</text>
+    <text x="20" y="236" font-size="14" fill="#4A4B65">individually.</text>
+  </g>
+
+  <!-- ==================== SECTION V ==================== -->
+  <circle cx="80" cy="2156" r="16" fill="#2D6BE4"/>
+  <text x="80" y="2157" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="2157" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Using Prefabs in Node Graphs</text>
+
+  <g transform="translate(60, 2184)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Create Prefab Node</text>
+    <text x="20" y="52" font-size="14" fill="#4A4B65">Use the Create Prefab node in the node graph to create runtime entities</text>
+    <text x="20" y="72" font-size="14" fill="#4A4B65">directly from prefabs during gameplay.</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">Dynamic prefabs and creation prefabs can be created this way.</text>
+    <text x="20" y="120" font-size="14" fill="#4A4B65">Static prefabs cannot be created as runtime entities via the Create Prefab node.</text>
+  </g>
+
+  <!-- Source Links -->
+  <text x="60" y="2360" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <text x="60" y="2382" font-size="12" fill="#2D6BE4" text-decoration="underline">
+    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq0s1i7s80k">Miliastra Academy Documentation: Units</a>
+  </text>
+  <text x="60" y="2404" font-size="12" fill="#2D6BE4" text-decoration="underline">
+    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwp5h9d4h3e">Miliastra Academy Documentation: Prefab Library</a>
+  </text>
+  <text x="60" y="2426" font-size="12" fill="#2D6BE4" text-decoration="underline">
+    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnffmieeqbg">Miliastra Academy Documentation: Entity Placement</a>
+  </text>
+
+  <text x="600" y="2460" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3000" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3000" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">63-Message Queue: Message Queue Controls</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Features of the Message Queue</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="32" font-size="14" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">The Message Queue can be configured in a UI layout and pushes messages in a</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">specified style in real time via the node graph.</text>
+
+    <text x="20" y="110" font-size="14" font-weight="bold" fill="#1A1B2E">Use Cases</text>
+    <text x="20" y="134" font-size="13" fill="#4A4B65">- Pushing and displaying various in-game information during gameplay</text>
+    <text x="20" y="154" font-size="13" fill="#4A4B65">- Score updates, resource acquisition, stage progress changes</text>
+
+    <text x="20" y="188" font-size="14" font-weight="bold" fill="#1A1B2E">Key Characteristics</text>
+    <text x="20" y="212" font-size="13" fill="#4A4B65">- Information display only — cannot be interacted with</text>
+    <text x="20" y="232" font-size="13" fill="#4A4B65">- Additional animation effects play when messages are added or removed</text>
+  </g>
+
+  <g transform="translate(60, 412)">
+    <rect width="1080" height="100" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="100" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Message Types</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Messages can contain text, icons, and formatted data. Message priority determines</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">display order. Auto-dismiss removes messages after a configurable duration.</text>
+  </g>
+
+  <circle cx="80" cy="548" r="16" fill="#2D6BE4"/>
+  <text x="80" y="549" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="549" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Message Queue</text>
+
+  <g transform="translate(60, 576)">
+    <rect width="1080" height="820" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="15" font-weight="bold" fill="#1A1B2E">1. Adding the Message Queue</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">In the UI Control Group Editing Window, add a UI control template — Message Queue.</text>
+
+    <text x="20" y="96" font-size="15" font-weight="bold" fill="#1A1B2E">2. Message Item Style Settings</text>
+    <text x="20" y="122" font-size="13" fill="#4A4B65">Similar to Tab Controls and Single-Choice Viewport Controls, the style of message</text>
+    <text x="20" y="142" font-size="13" fill="#4A4B65">items can be customized in the style settings.</text>
+    <text x="20" y="166" font-size="13" fill="#4A4B65">Craftspeople can click [Detail Edit] to add any asset to the message item's Asset Group.</text>
+    <text x="20" y="190" font-size="13" fill="#4A4B65">For example, add a UI animation that plays every time a new message is added.</text>
+
+    <g transform="translate(20, 206)">
+      <rect width="700" height="70" rx="8" fill="#E8EEFB"/>
+      <rect x="0" y="0" width="4" height="70" rx="2" fill="#2D6BE4"/>
+      <text x="16" y="22" font-size="12" font-weight="bold" fill="#1A1B2E">Note:</text>
+      <text x="16" y="44" font-size="12" fill="#4A4B65">Messages default to fade-in and fade-out animations. If many messages update</text>
+      <text x="16" y="60" font-size="12" fill="#4A4B65">simultaneously, animation may cause visible display delays.</text>
+    </g>
+
+    <text x="20" y="306" font-size="15" font-weight="bold" fill="#1A1B2E">3. Message Queue Function Settings</text>
+
+    <text x="30" y="334" font-size="13" fill="#1A1B2E" font-weight="bold">Initial Fill Point</text>
+    <text x="150" y="334" font-size="13" fill="#4A4B65">Position when the first message item is added (e.g. Top-Left)</text>
+
+    <text x="30" y="362" font-size="13" fill="#1A1B2E" font-weight="bold">Fill Direction</text>
+    <text x="150" y="362" font-size="13" fill="#4A4B65">Direction message items are filled (Vertical or Horizontal)</text>
+
+    <text x="30" y="390" font-size="13" fill="#1A1B2E" font-weight="bold">New Message Insertion Position</text>
+    <text x="200" y="390" font-size="13" fill="#4A4B65">Start or End of the queue</text>
+
+    <text x="30" y="418" font-size="13" fill="#1A1B2E" font-weight="bold">Alignment</text>
+    <text x="150" y="418" font-size="13" fill="#4A4B65">Top/Bottom/Left/Right</text>
+
+    <text x="20" y="454" font-size="13" font-weight="bold" fill="#1A1B2E">Example (Layout Limit = Auto Wrap):</text>
+    <text x="30" y="478" font-size="13" fill="#4A4B65">- Fill Point = Top-Left, Direction = Vertical, Insertion = Queue End</text>
+    <text x="30" y="498" font-size="13" fill="#4A4B65">  &rarr; Messages fill top to bottom</text>
+    <text x="30" y="522" font-size="13" fill="#4A4B65">- Fill Point = Bottom-Left, Direction = Vertical, Insertion = Queue Start</text>
+    <text x="30" y="542" font-size="13" fill="#4A4B65">  &rarr; Messages fill bottom to top</text>
+
+    <text x="20" y="582" font-size="15" font-weight="bold" fill="#1A1B2E">4. Notes — Animation Clipping</text>
+    <text x="20" y="608" font-size="13" fill="#4A4B65">When the max message count exceeds the visible range, UI animations added to</text>
+    <text x="20" y="628" font-size="13" fill="#4A4B65">message items cannot be clipped. It is not recommended to configure the maximum</text>
+    <text x="20" y="648" font-size="13" fill="#4A4B65">message count to exceed the size of the Message Queue control.</text>
+  </g>
+
+  <circle cx="80" cy="1432" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1433" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1433" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Updating the Message Queue</text>
+
+  <g transform="translate(60, 1460)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Message Pushing</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">Use the server node Update Message Queue to push messages to the queue.</text>
+    <text x="20" y="80" font-size="13" fill="#4A4B65">Message queue updates can only push data as a complete struct —</text>
+    <text x="20" y="100" font-size="13" fill="#4A4B65">one struct per push operation.</text>
+
+    <text x="20" y="134" font-size="14" font-weight="bold" fill="#1A1B2E">Queue Display Behavior</text>
+    <text x="20" y="158" font-size="13" fill="#4A4B65">Messages are displayed in the queue according to their priority. Higher priority</text>
+    <text x="20" y="178" font-size="13" fill="#4A4B65">messages appear first. Auto-dismiss removes messages after a configured duration.</text>
+  </g>
+
+  <g transform="translate(60, 1668)">
+    <rect width="1080" height="50" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  </g>
+  <a href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs1f7ibtc6c">
+    <text x="80" y="1748" font-size="12" fill="#2D6BE4" text-decoration="underline">Message Queue Controls</text>
+  </a>
+
+  <text x="600" y="1800" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

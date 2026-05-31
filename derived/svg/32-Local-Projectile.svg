@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="2400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">32-Local Projectiles</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition &amp; Characteristics</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Local projectiles are entities that are computed and rendered locally to simulate projectile effects and on-hit effects.</text>
+    <text x="20" y="78" font-size="13" fill="#4A4B65">They need to be predefined during editing before they can be referenced and created by skill node graphs.</text>
+    <text x="20" y="108" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Dependencies</text>
+    <text x="20" y="134" font-size="13" fill="#4A4B65">• Projectile Motion Device — determines runtime movement rules</text>
+    <text x="20" y="154" font-size="13" fill="#4A4B65">• On-Hit Detection — determines collision trigger rules and effects</text>
+    <text x="20" y="174" font-size="13" fill="#4A4B65">• Life Cycle — defines the overall execution flow from initialization to destruction</text>
+  </g>
+
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creating &amp; Editing Local Projectiles</text>
+
+  <g transform="translate(60, 408)">
+    <rect width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Process</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">1. Enter the Combat Preset tab and select the Local Projectile tab</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">2. Manage tabs as needed, create corresponding local projectiles within the tab</text>
+    <text x="20" y="94" font-size="13" fill="#4A4B65">3. Click "Confirm Create" to create a new local projectile</text>
+    <text x="20" y="118" font-size="13" fill="#1A1B2E" font-weight="bold">Note: Each predefined local projectile name must be globally unique. A globally unique prefab ID is auto-generated.</text>
+  </g>
+
+  <circle cx="80" cy="574" r="16" fill="#2D6BE4"/>
+  <text x="80" y="575" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="575" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Base Attributes</text>
+
+  <g transform="translate(60, 602)">
+    <rect width="520" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Settings</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Model Configuration</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">The model used by the local projectile during runtime.</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">Supports X, Y, Z axis scaling (values persist after switching models).</text>
+    <text x="16" y="126" font-size="14" font-weight="bold" fill="#1A1B2E">Attribute Settings</text>
+    <text x="16" y="148" font-size="13" fill="#4A4B65">Two enumeration options:</text>
+    <text x="16" y="168" font-size="13" fill="#1A1B2E" font-weight="bold">Inherited from Creator</text>
+    <text x="16" y="186" font-size="13" fill="#4A4B65">HP, ATK, DEF identical to creator</text>
+    <text x="16" y="208" font-size="13" fill="#1A1B2E" font-weight="bold">Independent</text>
+    <text x="16" y="226" font-size="13" fill="#4A4B65">Configure HP, ATK, DEF as needed</text>
+    <text x="16" y="250" font-size="13" fill="#4A4B65">Whether Subsequent Settings Are Influenced by the Creator:</text>
+    <text x="16" y="270" font-size="13" fill="#4A4B65">If enabled, certain unit status effects on the creator will</text>
+    <text x="16" y="290" font-size="13" fill="#4A4B65">be synchronized to the projectile (only HP/ATK/DEF effects).</text>
+  </g>
+
+  <g transform="translate(620, 602)">
+    <rect width="520" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Life Cycle Settings</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Duration</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Permanent Duration: If not enabled, specify duration time</text>
+    <text x="16" y="104" font-size="13" fill="#4A4B65">Duration: Max time from initialization to destruction</text>
+    <text x="16" y="126" font-size="13" fill="#4A4B65">without other influencing factors</text>
+    <text x="16" y="154" font-size="14" font-weight="bold" fill="#1A1B2E">Destruction Distance</text>
+    <text x="16" y="176" font-size="13" fill="#4A4B65">X/Z Axis Destruction Distance: Highest priority condition for</text>
+    <text x="16" y="196" font-size="13" fill="#4A4B65">destroying local projectiles during runtime (except Ability Units)</text>
+    <text x="16" y="218" font-size="13" fill="#4A4B65">Y-Axis Destruction Distance</text>
+    <text x="16" y="242" font-size="14" font-weight="bold" fill="#1A1B2E">End of Life Cycle Behavior</text>
+    <text x="16" y="264" font-size="13" fill="#4A4B65">When life cycle ends, executes configured ability units</text>
+    <text x="16" y="284" font-size="13" fill="#4A4B65">in order from top to bottom. Ability units referenced are</text>
+    <text x="16" y="304" font-size="13" fill="#4A4B65">those defined within the projectile's ability unit settings.</text>
+  </g>
+
+  <circle cx="80" cy="998" r="16" fill="#2D6BE4"/>
+  <text x="80" y="999" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="999" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Common Components</text>
+
+  <g transform="translate(60, 1026)">
+    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Component Types</text>
+    <text x="20" y="64" font-size="14" font-weight="bold" fill="#1A1B2E">VFX Playing Component</text>
+    <text x="20" y="86" font-size="13" fill="#4A4B65">Plays visual effects associated with the projectile. Supports timed and looped effects.</text>
+    <text x="20" y="116" font-size="14" font-weight="bold" fill="#1A1B2E">Projectile Motion Device</text>
+    <text x="20" y="138" font-size="13" fill="#4A4B65">Defines the runtime movement rules for the projectile — speed, trajectory, homing behavior, etc.</text>
+    <text x="20" y="168" font-size="14" font-weight="bold" fill="#1A1B2E">On-Hit Detection</text>
+    <text x="20" y="190" font-size="13" fill="#4A4B65">Determines collision trigger rules and effects when the projectile hits a target.</text>
+    <text x="20" y="212" font-size="13" fill="#4A4B65">Can reference predefined ability units to execute on hit detection trigger.</text>
+    <text x="20" y="238" font-size="13" fill="#4A4B65">Ability units can be adjusted through "Advanced Editing".</text>
+  </g>
+
+  <circle cx="80" cy="1342" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1343" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="1343" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Ability Units</text>
+
+  <g transform="translate(60, 1370)">
+    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Ability Unit References</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Local projectiles can reference ability units from the third column of the editor. These units require</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">predefined editing and can be adjusted through "Advanced Editing".</text>
+    <text x="20" y="104" font-size="13" fill="#4A4B65">In the On-Hit Detection component, predefined ability units can be referenced and executed once</text>
+    <text x="20" y="124" font-size="13" fill="#4A4B65">hit detection is triggered. The execution order follows the configured list from top to bottom.</text>
+  </g>
+
+  <g transform="translate(60, 1540)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Local Projectile Life Cycle</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">All local projectiles follow this flow: Init → Motion Device (movement) → On-Hit Detection →</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">Life Cycle End Conditions Check → Execute End-of-Life Ability Units → Destroy</text>
+  </g>
+
+  <text x="60" y="1680" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s" target="_blank">
+    <text x="60" y="1706" font-size="13" fill="#2D6BE4" text-decoration="underline">Local Projectiles → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s</text>
+  </a>
+  <text x="600" y="1740" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

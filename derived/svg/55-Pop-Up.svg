@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1250" width="1200" height="1250">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card" xmlns="http://www.w3.org/2000/svg">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+
+<rect width="1200" height="1250" fill="#F9F7F2"/>
+
+<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+
+<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
+<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Pop-Up UI Controls</text>
+<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Overlay interface triggered during stage runtime for information, options, and player interactions</text>
+
+<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+
+<rect x="40" y="190" width="1120" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">A Pop-Up is an interface that appears during stage runtime due to logic triggers, used to provide:</text>
+<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Information Display</tspan> — Show hints, instructions, and contextual data to the player</text>
+<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Options &amp; Choices</tspan> — Present interactive options for player decision-making</text>
+<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Content Layout</tspan> — Title area and text content area with custom variable insertion support</text>
+<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Real-time Updates</tspan> — Text content updates in real time as custom variables change</text>
+
+<text x="72" y="390" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Content &amp; Layout</text>
+
+<rect x="40" y="410" width="1120" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+<rect x="72" y="432" width="400" height="200" rx="10" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+<rect x="72" y="432" width="400" height="36" rx="10" fill="#2D6BE4"/>
+<text x="272" y="455" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Pop-Up Title</text>
+<rect x="84" y="480" width="376" height="56" rx="6" fill="#FFFFFF"/>
+<text x="96" y="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">Text content area supporting</text>
+<text x="96" y="518" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">custom variable insertion</text>
+<rect x="84" y="546" width="108" height="30" rx="6" fill="#2D6BE4"/>
+<text x="138" y="565" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">Confirm</text>
+<rect x="200" y="546" width="108" height="30" rx="6" fill="#CCCCCC"/>
+<text x="254" y="565" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#666666" text-anchor="middle">Cancel</text>
+
+<text x="530" y="455" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Title</text>
+<text x="530" y="475" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Text shown in the title area of the pop-up window.</text>
+<text x="530" y="505" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Text Content</text>
+<text x="530" y="525" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Same as content in the text box. Supports inserting</text>
+<text x="530" y="545" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">custom variables for players and stages.</text>
+<text x="530" y="575" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65" font-weight="700">Real-time Update</text>
+<text x="530" y="595" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">During stage runtime, the displayed text updates</text>
+<text x="530" y="615" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">in real time as custom variables change.</text>
+
+<rect x="40" y="668" width="1120" height="50" rx="14" fill="#E8EEFB"/>
+<rect x="40" y="668" width="4" height="50" rx="2" fill="#2D6BE4"/>
+<text x="72" y="698" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Pop-Ups appear on top of the current stage UI and can be modal (blocking) or non-modal depending on configuration.</text>
+
+<text x="72" y="760" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Node Graph Control</text>
+
+<rect x="40" y="780" width="1120" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<text x="72" y="812" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Show Pop-Up</text>
+<text x="72" y="832" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Trigger the pop-up display through Node Graph logic during stage runtime.</text>
+<text x="72" y="862" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Hide Pop-Up</text>
+<text x="72" y="882" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Dismiss the pop-up programmatically via Node Graph events.</text>
+<text x="72" y="912" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Set Content</text>
+<text x="72" y="932" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Update pop-up title and text content dynamically through Node Graph variable bindings.</text>
+
+<text x="72" y="1010" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
+<text x="72" y="1030" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Pop-Up UI Controls</text>
+<text x="280" y="1030" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1aot9rt7ey</text>
+
+<line x1="40" y1="1065" x2="1160" y2="1065" stroke="#E0E0E0" stroke-width="1"/>
+<text x="600" y="1090" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

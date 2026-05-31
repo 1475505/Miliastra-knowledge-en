@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">49-Fullscreen UI Animation: Overlay, Entrance/Exit, Transitions &amp; Playback</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Fullscreen UI Animation Features</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Fullscreen UI Animations display special effect assets across the entire screen within the UI</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">Layout. They are used to beautify the interface and enrich visual presentation.</text>
+    <text x="20" y="104" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Control</text>
+    <text x="20" y="130" font-size="13" fill="#4A4B65">During stage runtime, Fullscreen UI Animation Controls can be triggered through Node Graphs.</text>
+  </g>
+
+  <circle cx="80" cy="360" r="16" fill="#2D6BE4"/>
+  <text x="80" y="361" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="361" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Fullscreen UI Animation</text>
+
+  <g transform="translate(60, 388)">
+    <rect width="1080" height="380" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Fullscreen</text>
+
+    <text x="20" y="62" font-size="14" font-weight="bold" fill="#1A1B2E">1. Add Fullscreen UI Animation</text>
+    <text x="20" y="86" font-size="13" fill="#4A4B65">In the UI Control Group Editor window, add the UI Control Template — Fullscreen UI Animation.</text>
+
+    <text x="20" y="118" font-size="14" font-weight="bold" fill="#1A1B2E">2. Fullscreen UI Animation Settings</text>
+    <text x="20" y="144" font-size="13" fill="#1A1B2E" font-weight="bold">Select UI Animation</text>
+    <text x="145" y="144" font-size="13" fill="#4A4B65">Select the special effect asset for display</text>
+    <text x="20" y="168" font-size="13" fill="#1A1B2E" font-weight="bold">Play Sound Effect</text>
+    <text x="135" y="168" font-size="13" fill="#4A4B65">If enabled, the sound effect included with the asset will also play</text>
+
+    <rect x="16" y="196" width="1048" height="60" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="196" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="218" font-size="12" fill="#4A4B65">Fullscreen UI Animations are on top of all layers by default and cannot be changed.</text>
+    <text x="32" y="238" font-size="12" fill="#4A4B65">They cover the entire screen and are generally used for on-screen atmospheric effects.</text>
+  </g>
+
+  <circle cx="80" cy="804" r="16" fill="#2D6BE4"/>
+  <text x="80" y="805" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="805" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Animation Types &amp; Transitions</text>
+
+  <g transform="translate(60, 832)">
+    <rect width="1080" height="640" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Animation Types</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Fullscreen UI Animations support the following animation types for rich visual transitions:</text>
+
+    <rect x="20" y="72" width="330" height="70" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="94" font-size="12" font-weight="bold" fill="#1A1B2E">Entrance Animation</text>
+    <text x="36" y="114" font-size="11" fill="#4A4B65">Played when the fullscreen overlay</text>
+    <text x="36" y="130" font-size="11" fill="#4A4B65">first appears on screen.</text>
+
+    <rect x="370" y="72" width="330" height="70" rx="8" fill="#E8EEFB"/>
+    <text x="386" y="94" font-size="12" font-weight="bold" fill="#1A1B2E">Exit Animation</text>
+    <text x="386" y="114" font-size="11" fill="#4A4B65">Played when the fullscreen overlay</text>
+    <text x="386" y="130" font-size="11" fill="#4A4B65">is dismissed or hidden.</text>
+
+    <rect x="720" y="72" width="340" height="70" rx="8" fill="#E8EEFB"/>
+    <text x="736" y="94" font-size="12" font-weight="bold" fill="#1A1B2E">Transition Animation</text>
+    <text x="736" y="114" font-size="11" fill="#4A4B65">Smooth visual transitions between</text>
+    <text x="736" y="130" font-size="11" fill="#4A4B65">different fullscreen states.</text>
+
+    <text x="20" y="176" font-size="14" font-weight="bold" fill="#1A1B2E">Fullscreen Parameters</text>
+    <text x="20" y="200" font-size="13" fill="#1A1B2E" font-weight="bold">Layer Override</text>
+    <text x="125" y="200" font-size="13" fill="#4A4B65">Always on top of all layers — cannot be changed</text>
+    <text x="20" y="224" font-size="13" fill="#1A1B2E" font-weight="bold">Screen Coverage</text>
+    <text x="135" y="224" font-size="13" fill="#4A4B65">Full screen — effective range cannot be modified</text>
+    <text x="20" y="248" font-size="13" fill="#1A1B2E" font-weight="bold">Use Case</text>
+    <text x="80" y="248" font-size="13" fill="#4A4B65">Atmospheric effects, fullscreen overlays, transitions</text>
+
+    <text x="20" y="282" font-size="14" font-weight="bold" fill="#1A1B2E">Comparison: Fullscreen vs Regular UI Animation</text>
+
+    <rect x="20" y="302" width="1040" height="30" fill="#2D6BE4" rx="4"/>
+    <text x="36" y="322" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Aspect</text>
+    <text x="350" y="322" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Fullscreen UI Animation</text>
+    <text x="780" y="322" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Regular UI Animation</text>
+
+    <rect x="20" y="332" width="1040" height="28" fill="#F9F7F2"/>
+    <text x="36" y="351" font-size="12" fill="#4A4B65" dominant-baseline="middle">Layer</text>
+    <text x="350" y="351" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Always on top (fixed)</text>
+    <text x="780" y="351" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Above/Below All (configurable)</text>
+
+    <rect x="20" y="360" width="1040" height="28" fill="#FFFFFF"/>
+    <text x="36" y="379" font-size="12" fill="#4A4B65" dominant-baseline="middle">Area</text>
+    <text x="350" y="379" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Full screen (fixed)</text>
+    <text x="780" y="379" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Configurable area</text>
+
+    <rect x="20" y="388" width="1040" height="28" fill="#F9F7F2"/>
+    <text x="36" y="407" font-size="12" fill="#4A4B65" dominant-baseline="middle">Typical Use</text>
+    <text x="350" y="407" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Atmospheric effects</text>
+    <text x="780" y="407" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">UI element animations</text>
+  </g>
+
+  <circle cx="80" cy="1508" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1509" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1509" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Playback Control via Node Graph</text>
+
+  <g transform="translate(60, 1536)">
+    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Play UI Animation on Control</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">The primary Node Graph node for controlling Fullscreen UI Animation playback.</text>
+
+    <text x="20" y="86" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Operations</text>
+    <rect x="20" y="106" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="140" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Play</text>
+    <text x="140" y="144" font-size="10" fill="#4A4B65" text-anchor="middle">Start fullscreen animation</text>
+
+    <rect x="275" y="106" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="395" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Stop</text>
+    <text x="395" y="144" font-size="10" fill="#4A4B65" text-anchor="middle">Stop fullscreen animation</text>
+
+    <rect x="530" y="106" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="650" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Pause</text>
+    <text x="650" y="144" font-size="10" fill="#4A4B65" text-anchor="middle">Pause at current frame</text>
+
+    <rect x="785" y="106" width="275" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="922" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Set Visibility</text>
+    <text x="922" y="144" font-size="10" fill="#4A4B65" text-anchor="middle">Show/hide fullscreen overlay</text>
+
+    <rect x="16" y="170" width="1048" height="50" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="170" width="4" height="50" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="190" font-size="12" fill="#4A4B65">Fullscreen UI Animations support entrance/exit transitions and can be triggered dynamically</text>
+    <text x="32" y="208" font-size="12" fill="#4A4B65">through the Node Graph for seamless fullscreen visual effects during gameplay.</text>
+  </g>
+
+  <text x="60" y="1876" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp02viyg2dg" target="_blank">
+    <text x="60" y="1902" font-size="13" fill="#2D6BE4" text-decoration="underline">Fullscreen UI Animation Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp02viyg2dg</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxyow9ocdz6" target="_blank">
+    <text x="60" y="1928" font-size="13" fill="#2D6BE4" text-decoration="underline">UI Animation Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxyow9ocdz6</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2oih9jou22" target="_blank">
+    <text x="60" y="1954" font-size="13" fill="#2D6BE4" text-decoration="underline">Image Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2oih9jou22</text>
+  </a>
+
+  <text x="600" y="1990" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+</svg>

@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2100" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B2E" flood-opacity="0.08"/>
+    </filter>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#1A1B2E" flood-opacity="0.06"/>
+    </filter>
+    <g id="pill-available">
+      <rect x="-48" y="-13" width="96" height="26" rx="13" fill="#E5F2E9"/>
+      <text x="0" y="1" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Available</text>
+    </g>
+    <g id="pill-unavailable">
+      <rect x="-52" y="-13" width="104" height="26" rx="13" fill="#FDE8E6"/>
+      <text x="0" y="1" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Unavailable</text>
+    </g>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="2100" fill="#F9F7F2"/>
+
+  <!-- Top gradient bar -->
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">01-Classic Mode: Classic Mode vs Beyond Mode</text>
+
+  <!-- ==================== SECTION I: OVERVIEW ==================== -->
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Overview</text>
+
+  <!-- Classic Mode Card -->
+  <g transform="translate(60, 164)">
+    <rect width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Classic Mode</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Classic Mode</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Allows players to use any characters they own</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">in Teyvat to enter levels for gameplay.</text>
+    <text x="16" y="130" font-size="13" fill="#4A4B65">Players bring multiple characters retaining all</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">attributes, skills, talents, weapons, artifacts,</text>
+    <text x="16" y="170" font-size="13" fill="#4A4B65">and constellations. Max 4 players.</text>
+    <text x="16" y="194" font-size="13" fill="#1A1B2E" font-weight="bold">Creator cannot modify character data.</text>
+  </g>
+
+  <!-- Beyond Mode Card -->
+  <g transform="translate(620, 164)">
+    <rect width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Beyond Mode</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Beyond Mode</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Only supports players using Manekins to enter</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">levels for gameplay.</text>
+    <text x="16" y="130" font-size="13" fill="#4A4B65">All data can be defined by the creator</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">(Craftsperson) within the level.</text>
+    <text x="16" y="174" font-size="13" fill="#1A1B2E" font-weight="bold">Maximum of 8 players.</text>
+  </g>
+
+  <!-- ==================== SECTION II: KEY DIFFERENCES ==================== -->
+  <circle cx="80" cy="400" r="16" fill="#2D6BE4"/>
+  <text x="80" y="401" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="401" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Key Differences</text>
+
+  <!-- Comparison Table Card -->
+  <g transform="translate(60, 426)">
+    <rect width="1080" height="646" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <!-- Table Header -->
+    <rect x="0" y="16" width="1080" height="38" fill="#2D6BE4" rx="0"/>
+    <rect x="0" y="16" width="16" height="38" fill="#2D6BE4" rx="0"/>
+    <text x="16" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Feature</text>
+    <text x="727" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Beyond Mode</text>
+    <text x="969" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Classic Mode</text>
+
+    <!-- Row backgrounds (alternating) -->
+    <rect x="0" y="54" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="126" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="198" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="270" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="342" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="414" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="486" width="1080" height="36" fill="#F9F7F2"/>
+    <rect x="0" y="558" width="1080" height="36" fill="#F9F7F2"/>
+
+    <!-- Row 0: Player Characters -->
+    <text x="16" y="72" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Player Characters</text>
+    <text x="727" y="72" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Manekins only</text>
+    <text x="969" y="72" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Any owned characters</text>
+
+    <!-- Row 1: Max Players -->
+    <text x="16" y="108" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Max Players</text>
+    <text x="727" y="108" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">8</text>
+    <text x="969" y="108" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">4</text>
+
+    <!-- Row 2: Data Control -->
+    <text x="16" y="144" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Data Control</text>
+    <text x="727" y="144" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Full creator control</text>
+    <text x="969" y="144" font-size="13" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Character data fixed</text>
+
+    <!-- Row 3: Class Settings -->
+    <text x="16" y="180" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Class Settings</text>
+    <use href="#pill-available" x="727" y="180"/>
+    <use href="#pill-unavailable" x="969" y="180"/>
+
+    <!-- Row 4: Character Skills -->
+    <text x="16" y="216" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Character Skills</text>
+    <use href="#pill-available" x="727" y="216"/>
+    <use href="#pill-unavailable" x="969" y="216"/>
+
+    <!-- Row 5: Custom Aggro Systems -->
+    <text x="16" y="252" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Custom Aggro Systems</text>
+    <use href="#pill-available" x="727" y="252"/>
+    <use href="#pill-unavailable" x="969" y="252"/>
+
+    <!-- Row 6: Load Optimization -->
+    <text x="16" y="288" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Load Optimization</text>
+    <use href="#pill-available" x="727" y="288"/>
+    <use href="#pill-unavailable" x="969" y="288"/>
+
+    <!-- Row 7: Shield Mechanisms -->
+    <text x="16" y="324" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Shield Mechanisms</text>
+    <use href="#pill-available" x="727" y="324"/>
+    <use href="#pill-unavailable" x="969" y="324"/>
+
+    <!-- Row 8: Wonderland Gift Boxes -->
+    <text x="16" y="360" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Wonderland Gift Boxes</text>
+    <use href="#pill-available" x="727" y="360"/>
+    <use href="#pill-unavailable" x="969" y="360"/>
+
+    <!-- Row 9: Character Level Adjustments -->
+    <text x="16" y="396" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Character Level Adjustments</text>
+    <use href="#pill-available" x="727" y="396"/>
+    <use href="#pill-unavailable" x="969" y="396"/>
+
+    <!-- Row 10: Scan Tags -->
+    <text x="16" y="432" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Scan Tags</text>
+    <use href="#pill-available" x="727" y="432"/>
+    <use href="#pill-unavailable" x="969" y="432"/>
+
+    <!-- Row 11: Main Camera Management -->
+    <text x="16" y="468" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Main Camera Management</text>
+    <use href="#pill-available" x="727" y="468"/>
+    <use href="#pill-unavailable" x="969" y="468"/>
+
+    <!-- Row 12: Skill Resource Management -->
+    <text x="16" y="504" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Skill Resource Management</text>
+    <use href="#pill-available" x="727" y="504"/>
+    <use href="#pill-unavailable" x="969" y="504"/>
+
+    <!-- Row 13: In-Level Save Management -->
+    <text x="16" y="540" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">In-Level Save Management</text>
+    <use href="#pill-available" x="727" y="540"/>
+    <use href="#pill-unavailable" x="969" y="540"/>
+
+    <!-- Row 14: Character Disruptor Devices -->
+    <text x="16" y="576" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Character Disruptor Devices</text>
+    <use href="#pill-available" x="727" y="576"/>
+    <use href="#pill-unavailable" x="969" y="576"/>
+
+    <!-- Row 15: Faction Creation & Dynamic Modification -->
+    <text x="16" y="612" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Faction Creation &amp; Dynamic Modification</text>
+    <use href="#pill-available" x="727" y="612"/>
+    <use href="#pill-unavailable" x="969" y="612"/>
+  </g>
+
+  <!-- ==================== SECTION III: FACTION SYSTEM ==================== -->
+  <circle cx="80" cy="1108" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1109" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1109" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Faction System in Classic Mode</text>
+
+  <!-- Faction Card -->
+  <g transform="translate(60, 1134)">
+    <rect width="1080" height="464" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <!-- Intro text -->
+    <text x="20" y="24" font-size="14" fill="#4A4B65">Compared to Beyond Mode, factions in Classic Mode are subject to certain restrictions:</text>
+
+    <!-- Restriction list -->
+    <text x="20" y="50" font-size="13" fill="#4A4B65">• All players and their characters belong to the Player Faction (cannot be modified).</text>
+    <text x="20" y="70" font-size="13" fill="#4A4B65">• All creations belong to the Creation Faction (cannot be modified).</text>
+    <text x="20" y="90" font-size="13" fill="#4A4B65">• Objects → Player Faction, Creation Faction, Object Faction 1, 2, or 3.</text>
+    <text x="20" y="110" font-size="13" fill="#4A4B65">• No dynamic faction changes; modification/event nodes cannot be used.</text>
+    <text x="20" y="130" font-size="13" fill="#4A4B65">• Faction relationships cannot be modified.</text>
+
+    <!-- Matrix header text -->
+    <text x="20" y="154" font-size="14" font-weight="bold" fill="#1A1B2E">The relationships between factions in Classic Mode are as follows:</text>
+    <text x="20" y="172" font-size="12" fill="#8B8DA0">Rows represent the initiating party, columns represent the receiving party.</text>
+
+    <!-- Faction Relationship Matrix -->
+    <!-- Matrix starts at y=194 -->
+    <g transform="translate(20, 194)">
+      <!-- Column widths: col0=80, col1-5=192 each -->
+      <!-- Row height: 32 -->
+
+      <!-- Corner cell -->
+      <rect x="0" y="0" width="80" height="32" fill="#F0F2F5"/>
+
+      <!-- Column headers -->
+      <rect x="80" y="0" width="192" height="32" fill="#F0F2F5"/>
+      <text x="176" y="16" font-size="11" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Player Faction</text>
+
+      <rect x="272" y="0" width="192" height="32" fill="#F0F2F5"/>
+      <text x="368" y="16" font-size="11" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Creation Faction</text>
+
+      <rect x="464" y="0" width="192" height="32" fill="#F0F2F5"/>
+      <text x="560" y="16" font-size="11" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Object Faction 1</text>
+
+      <rect x="656" y="0" width="192" height="32" fill="#F0F2F5"/>
+      <text x="752" y="16" font-size="11" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Object Faction 2</text>
+
+      <rect x="848" y="0" width="192" height="32" fill="#F0F2F5"/>
+      <text x="944" y="16" font-size="11" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Object Faction 3</text>
+
+      <!-- Row 1: Player Faction -->
+      <rect x="0" y="32" width="80" height="32" fill="#E8EEFB"/>
+      <text x="40" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Player</text>
+
+      <rect x="80" y="32" width="192" height="32" fill="#E5F2E9"/>
+      <text x="176" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="272" y="32" width="192" height="32" fill="#FDE8E6"/>
+      <text x="368" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="464" y="32" width="192" height="32" fill="#FDE8E6"/>
+      <text x="560" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="656" y="32" width="192" height="32" fill="#FDE8E6"/>
+      <text x="752" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="848" y="32" width="192" height="32" fill="#E5F2E9"/>
+      <text x="944" y="48" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <!-- Row 2: Creation Faction -->
+      <rect x="0" y="64" width="80" height="32" fill="#E8EEFB"/>
+      <text x="40" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Creation</text>
+
+      <rect x="80" y="64" width="192" height="32" fill="#FDE8E6"/>
+      <text x="176" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="272" y="64" width="192" height="32" fill="#E5F2E9"/>
+      <text x="368" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="464" y="64" width="192" height="32" fill="#E5F2E9"/>
+      <text x="560" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="656" y="64" width="192" height="32" fill="#E5F2E9"/>
+      <text x="752" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="848" y="64" width="192" height="32" fill="#FDE8E6"/>
+      <text x="944" y="80" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <!-- Row 3: Object Faction 1 -->
+      <rect x="0" y="96" width="80" height="32" fill="#E8EEFB"/>
+      <text x="40" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Obj F1</text>
+
+      <rect x="80" y="96" width="192" height="32" fill="#FDE8E6"/>
+      <text x="176" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="272" y="96" width="192" height="32" fill="#FDE8E6"/>
+      <text x="368" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="464" y="96" width="192" height="32" fill="#E5F2E9"/>
+      <text x="560" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="656" y="96" width="192" height="32" fill="#FDE8E6"/>
+      <text x="752" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="848" y="96" width="192" height="32" fill="#E5F2E9"/>
+      <text x="944" y="112" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <!-- Row 4: Object Faction 2 -->
+      <rect x="0" y="128" width="80" height="32" fill="#E8EEFB"/>
+      <text x="40" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Obj F2</text>
+
+      <rect x="80" y="128" width="192" height="32" fill="#FDE8E6"/>
+      <text x="176" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="272" y="128" width="192" height="32" fill="#FDE8E6"/>
+      <text x="368" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="464" y="128" width="192" height="32" fill="#FDE8E6"/>
+      <text x="560" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="656" y="128" width="192" height="32" fill="#E5F2E9"/>
+      <text x="752" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="848" y="128" width="192" height="32" fill="#E5F2E9"/>
+      <text x="944" y="144" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <!-- Row 5: Object Faction 3 -->
+      <rect x="0" y="160" width="80" height="32" fill="#E8EEFB"/>
+      <text x="40" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Obj F3</text>
+
+      <rect x="80" y="160" width="192" height="32" fill="#E5F2E9"/>
+      <text x="176" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="272" y="160" width="192" height="32" fill="#FDE8E6"/>
+      <text x="368" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="464" y="160" width="192" height="32" fill="#E5F2E9"/>
+      <text x="560" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+
+      <rect x="656" y="160" width="192" height="32" fill="#FDE8E6"/>
+      <text x="752" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+
+      <rect x="848" y="160" width="192" height="32" fill="#E5F2E9"/>
+      <text x="944" y="176" font-size="11" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    </g>
+
+    <!-- Explanatory text after matrix -->
+    <text x="20" y="412" font-size="13" fill="#4A4B65">Object Faction 3 is typically used for objects friendly to the Player Faction,</text>
+    <text x="20" y="432" font-size="13" fill="#4A4B65">assisting characters in attacking constructs. Object Faction 1 is used for regular objects.</text>
+    <text x="20" y="452" font-size="13" fill="#4A4B65">Object Faction 2 is generally used for objects hostile to Object Faction 1.</text>
+  </g>
+
+  <!-- ==================== SECTION IV: IMPORTANT NOTES ==================== -->
+  <circle cx="80" cy="1634" r="16" fill="#1B4FC0"/>
+  <text x="80" y="1635" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1635" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Important Notes</text>
+
+  <!-- Tip Box 1 -->
+  <g transform="translate(60, 1660)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Content Compatibility</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Content not mentioned in the differences above is available in both Beyond Mode and Classic Mode,</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">unless otherwise specified in the comprehensive guide.</text>
+  </g>
+
+  <!-- Tip Box 2 -->
+  <g transform="translate(60, 1754)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Faction Restrictions</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">In Classic Mode, all entities cannot dynamically change factions. Faction modification-related</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">execution and event nodes cannot be used. New factions cannot be created.</text>
+  </g>
+
+  <!-- Tip Box 3 -->
+  <g transform="translate(60, 1848)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Character Data Integrity</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Players use their own characters with full Teyvat data (attributes, skills, talents, weapons,</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">artifacts, and constellations). The creator (Craftsperson) cannot modify this data.</text>
+  </g>
+
+  <!-- ==================== SOURCE LINKS ==================== -->
+  <text x="60" y="1970" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdznsie9up8" target="_blank">
+    <text x="60" y="1996" font-size="13" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Before You Read</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhodorziqra" target="_blank">
+    <text x="60" y="2022" font-size="13" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Factions</text>
+  </a>
+
+  <!-- ==================== FOOTER ==================== -->
+  <text x="600" y="2058" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+
+</svg>

@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1900" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1900" fill="#F9F7F2"/>
+
+  <!-- Top gradient bar -->
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">10 - Stage Unit</text>
+
+  <!-- ==================== SECTION I: WHAT IS A STAGE UNIT ==================== -->
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What is a Stage Unit</text>
+
+  <!-- Definition card (left) -->
+  <g transform="translate(60, 164)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Definition</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Stage Entity</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Stages are special entities recommended</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">for handling stage-specific logic.</text>
+    <text x="16" y="130" font-size="13" fill="#4A4B65">When a new stage is created, a stage</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">entity is automatically generated in the</text>
+    <text x="16" y="170" font-size="13" fill="#4A4B65">scene, represented by a unique icon.</text>
+  </g>
+
+  <!-- Overview card (right) -->
+  <g transform="translate(620, 164)">
+    <rect width="520" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="86" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="59" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Overview</text>
+    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Role &amp; System</text>
+    <text x="16" y="86" font-size="13" fill="#4A4B65">Stage entities handle overarching</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">stage logic including event routing,</text>
+    <text x="16" y="126" font-size="13" fill="#4A4B65">global timers, and custom variables.</text>
+    <text x="16" y="150" font-size="13" fill="#4A4B65">They serve as the central controller</text>
+    <text x="16" y="170" font-size="13" fill="#4A4B65">for stage-wide behaviors.</text>
+  </g>
+
+  <!-- Characteristics card -->
+  <g transform="translate(60, 364)">
+    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Characteristics</text>
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Unique Stage Characteristics</text>
+
+    <!-- 4 characteristics in a grid -->
+    <g transform="translate(16, 80)">
+      <!-- Char 1 -->
+      <rect x="0" y="0" width="510" height="60" rx="8" fill="#F9F7F2"/>
+      <rect x="0" y="0" width="4" height="60" rx="2" fill="#2D6BE4"/>
+      <text x="14" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">1. Can Receive Special Events</text>
+      <text x="14" y="36" font-size="12" fill="#4A4B65">Some events only receivable by stage entities.</text>
+      <text x="14" y="52" font-size="12" fill="#4A4B65">Object/Creation removal events forward to stage.</text>
+
+      <!-- Char 2 -->
+      <rect x="530" y="0" width="510" height="60" rx="8" fill="#F9F7F2"/>
+      <rect x="530" y="0" width="4" height="60" rx="2" fill="#2D6BE4"/>
+      <text x="544" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">2. Non-Physical Entity</text>
+      <text x="544" y="36" font-size="12" fill="#4A4B65">Stage entity is a purely logical entity.</text>
+      <text x="544" y="52" font-size="12" fill="#4A4B65">No physical presence in the scene.</text>
+    </g>
+
+    <g transform="translate(16, 148)">
+      <!-- Char 3 -->
+      <rect x="0" y="0" width="510" height="60" rx="8" fill="#F9F7F2"/>
+      <rect x="0" y="0" width="4" height="60" rx="2" fill="#2D6BE4"/>
+      <text x="14" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">3. Incomplete Placement Info</text>
+      <text x="14" y="36" font-size="12" fill="#4A4B65">Stage entities only have position info.</text>
+      <text x="14" y="52" font-size="12" fill="#4A4B65">They lack rotation and scale information.</text>
+
+      <!-- Char 4 -->
+      <rect x="530" y="0" width="510" height="60" rx="8" fill="#F9F7F2"/>
+      <rect x="530" y="0" width="4" height="60" rx="2" fill="#2D6BE4"/>
+      <text x="544" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">4. Life Cycle</text>
+      <text x="544" y="36" font-size="12" fill="#4A4B65">Created when stage initializes.</text>
+      <text x="544" y="52" font-size="12" fill="#4A4B65">Destroyed when stage is removed.</text>
+    </g>
+  </g>
+
+  <!-- ==================== SECTION II: STAGE SETTINGS ==================== -->
+  <circle cx="80" cy="640" r="16" fill="#2D6BE4"/>
+  <text x="80" y="641" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="641" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Stage Settings</text>
+
+  <!-- Basic Information card -->
+  <g transform="translate(60, 668)">
+    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Configuration</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Basic Information Tab</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Switch to the Entity editing tab. Editing stage entities is similar to other entity types,</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">but configurable basic information and components differ.</text>
+
+    <text x="16" y="130" font-size="14" font-weight="bold" fill="#1A1B2E">Basic Information Parameters</text>
+
+    <rect x="16" y="148" width="250" height="28" rx="4" fill="#2D6BE4"/>
+    <rect x="280" y="148" width="330" height="28" rx="4" fill="#2D6BE4"/>
+    <rect x="624" y="148" width="440" height="28" rx="4" fill="#2D6BE4"/>
+    <text x="141" y="162" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="445" y="162" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Tab</text>
+    <text x="844" y="162" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <rect x="16" y="176" width="250" height="28" fill="#F9F7F2"/>
+    <rect x="280" y="176" width="330" height="28" fill="#F9F7F2"/>
+    <rect x="624" y="176" width="440" height="28" fill="#F9F7F2"/>
+    <text x="141" y="190" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Available Attributes</text>
+    <text x="445" y="190" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Basic Information</text>
+    <text x="844" y="190" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Configure all available attributes for stage</text>
+  </g>
+
+  <!-- Common Components card -->
+  <g transform="translate(60, 908)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="150" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="91" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Common Components</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Common Components Tab</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Add common component settings to stage entities.</text>
+
+    <text x="16" y="112" font-size="14" font-weight="bold" fill="#1A1B2E">Available Components:</text>
+    <rect x="200" y="100" width="130" height="28" rx="13" fill="#E8EEFB"/>
+    <text x="265" y="114" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Custom Variables</text>
+    <rect x="345" y="100" width="110" height="28" rx="13" fill="#E8EEFB"/>
+    <text x="400" y="114" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Global Timer</text>
+  </g>
+
+  <!-- Node Graph card -->
+  <g transform="translate(60, 1068)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Node Graph</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Node Graph Settings Tab</text>
+    <text x="16" y="82" font-size="13" fill="#4A4B65">Add node graphs to stage entities or view existing node graphs.</text>
+    <text x="16" y="102" font-size="13" fill="#4A4B65">Stage entities can use node graphs to define stage-wide logic flows,</text>
+    <text x="16" y="122" font-size="13" fill="#4A4B65">event handling, and automated stage behaviors.</text>
+  </g>
+
+  <!-- ==================== SECTION III: STAGE UNIT MANAGEMENT ==================== -->
+  <circle cx="80" cy="1244" r="16" fill="#1B4FC0"/>
+  <text x="80" y="1245" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1245" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Stage Unit Management</text>
+
+  <!-- Management card -->
+  <g transform="translate(60, 1272)">
+    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="140" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="86" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Management</text>
+
+    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">How Stage Units Work</text>
+
+    <text x="16" y="86" font-size="14" font-weight="bold" fill="#1A1B2E">Event Handling</text>
+    <text x="16" y="106" font-size="13" fill="#4A4B65">Stage entities can receive special events that other entities cannot.</text>
+    <text x="16" y="126" font-size="13" fill="#4A4B65">When object or creation entities are removed/destroyed, those entities</text>
+    <text x="16" y="146" font-size="13" fill="#4A4B65">cannot receive the corresponding events. Instead, these events are</text>
+    <text x="16" y="166" font-size="13" fill="#4A4B65">forwarded to the stage entity for processing.</text>
+
+    <text x="16" y="196" font-size="14" font-weight="bold" fill="#1A1B2E">Placement &amp; Behavior</text>
+    <text x="16" y="216" font-size="13" fill="#4A4B65">Stage entities are placed in the scene with position-only information.</text>
+    <text x="16" y="236" font-size="13" fill="#4A4B65">They lack rotation and scale — they are purely logical controllers.</text>
+    <text x="16" y="256" font-size="13" fill="#4A4B65">Lifecycle is tied to the stage: created on initialization,</text>
+    <text x="16" y="276" font-size="13" fill="#4A4B65">destroyed when the stage is removed.</text>
+
+    <text x="16" y="306" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Execution</text>
+    <text x="16" y="326" font-size="13" fill="#4A4B65">Stage entity node graphs execute stage-wide logic, including automated</text>
+    <text x="16" y="346" font-size="13" fill="#4A4B65">sequences, conditional triggers, and stage-level variable management.</text>
+  </g>
+
+  <!-- Tip Box -->
+  <g transform="translate(60, 1632)">
+    <rect width="1080" height="68" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Stage Entity Best Practice</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Use stage entities as central event routers and logic controllers. They are ideal for managing global timers, custom variables, and coordinating stage-wide behaviors.</text>
+  </g>
+
+  <!-- ==================== SOURCE LINKS ==================== -->
+  <text x="60" y="1740" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhd9urqpbl2" target="_blank">
+    <text x="60" y="1764" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Stage</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7sg60j65mw" target="_blank">
+    <text x="60" y="1786" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Stage Settings</text>
+  </a>
+
+  <!-- ==================== FOOTER ==================== -->
+  <text x="600" y="1880" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+
+</svg>

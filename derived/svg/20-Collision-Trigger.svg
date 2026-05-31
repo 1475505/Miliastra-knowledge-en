@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1420" width="1200" height="1420">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1420" fill="#F9F7F2"/>
+
+  <!-- Top Bar -->
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="60" y="20" width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="20" width="4" height="100" fill="#2D6BE4" rx="2"/>
+  <text x="90" y="60" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="bold" fill="#1A1B2E">Collision Trigger</text>
+  <text x="90" y="92" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Detection range and contact determination for stage runtime. Collision Trigger and Collision Trigger Source components enable event-driven collision detection.</text>
+
+  <!-- Section I -->
+  <text x="60" y="145" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. Overview</text>
+
+  <rect x="60" y="165" width="520" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="192" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Collision Trigger</text>
+  <text x="85" y="218" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0">Provides a detection range for collision</tspan>
+    <tspan x="85" dy="20">detection during stage runtime. Continuously</tspan>
+    <tspan x="85" dy="20">monitors other entities carrying Collision</tspan>
+    <tspan x="85" dy="20">Trigger Source Components. Supports multiple</tspan>
+    <tspan x="85" dy="20">collision triggers active simultaneously.</tspan>
+  </text>
+
+  <rect x="620" y="165" width="520" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="645" y="192" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Collision Trigger Source</text>
+  <text x="645" y="218" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="645" dy="0">Provides collision detection trigger sources.</tspan>
+    <tspan x="645" dy="20">Only one trigger source can be enabled at a</tspan>
+    <tspan x="645" dy="20">time per component. Creations and characters</tspan>
+    <tspan x="645" dy="20">contain collision trigger sources by default.</tspan>
+    <tspan x="645" dy="20">No physical collision barriers are created.</tspan>
+  </text>
+
+  <!-- Section II -->
+  <text x="60" y="355" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Collision Detection</text>
+
+  <rect x="60" y="375" width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="402" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Detection Mechanism</text>
+  <text x="85" y="428" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0">When a Collision Trigger Source enters or exits the range of a Collision Trigger, a node graph event</tspan>
+    <tspan x="85" dy="20">is sent to the entity configured with the Collision Trigger.</tspan>
+    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">When Entering Collision Trigger</tspan> - Source enters Trigger range</tspan>
+    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">When Exiting Collision Trigger</tspan> - Source exits Trigger range</tspan>
+    <tspan x="85" dy="20">Different Collision Triggers calculate independently without affecting each other.</tspan>
+  </text>
+
+  <!-- Section III -->
+  <text x="60" y="555" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">III. Shape &amp; Area Configuration</text>
+
+  <rect x="60" y="575" width="340" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="602" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Cuboid</text>
+  <text x="85" y="630" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0">Rectangular box shape.</tspan>
+    <tspan x="85" dy="20">Configurable Width, Height,</tspan>
+    <tspan x="85" dy="20">and Depth dimensions.</tspan>
+    <tspan x="85" dy="20">Supports scaling along</tspan>
+    <tspan x="85" dy="20">each axis independently.</tspan>
+  </text>
+
+  <rect x="430" y="575" width="340" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="455" y="602" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Sphere</text>
+  <text x="455" y="630" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="455" dy="0">Radial detection area.</tspan>
+    <tspan x="455" dy="20">Configurable Radius.</tspan>
+    <tspan x="455" dy="20">Uniform scaling from</tspan>
+    <tspan x="455" dy="20">center point.</tspan>
+  </text>
+
+  <rect x="800" y="575" width="340" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="825" y="602" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Capsule</text>
+  <text x="825" y="630" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="825" dy="0">Cylinder with hemispherical</tspan>
+    <tspan x="825" dy="20">ends. Configurable Radius</tspan>
+    <tspan x="825" dy="20">and Height. Supports</tspan>
+    <tspan x="825" dy="20">orientation along axes.</tspan>
+  </text>
+
+  <rect x="60" y="795" width="1080" height="80" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="822" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Common Parameters</text>
+  <text x="85" y="848" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0"><tspan fill="#1A1B2E" font-weight="bold">Center:</tspan> Offset relative to entity/prefab center  |  <tspan fill="#1A1B2E" font-weight="bold">Rotation:</tspan> Orientation adjustment along axes  |  <tspan fill="#1A1B2E" font-weight="bold">Zoom Multiplier:</tspan> Per-axis scaling</tspan>
+    <tspan x="85" dy="20">Multiple trigger areas under the same collision trigger are merged into a combined effective range.</tspan>
+  </text>
+
+  <!-- Section IV -->
+  <text x="60" y="905" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">IV. Parameters &amp; Filtering</text>
+
+  <rect x="60" y="925" width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="952" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Configuration Parameters</text>
+  <text x="85" y="978" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0"><tspan fill="#1A1B2E" font-weight="bold">Initially Effective:</tspan> Trigger takes effect immediately upon entity creation.</tspan>
+    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Effective Target:</tspan> Filter by entity type - Characters, Objects, or Creations.</tspan>
+    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Trigger ID:</tspan> Unique identifier for node graph input.  <tspan fill="#1A1B2E" font-weight="bold">Trigger List:</tspan> Enumerate all configured collision triggers.</tspan>
+  </text>
+
+  <!-- Section V -->
+  <text x="60" y="1085" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">V. Node Graph Integration</text>
+
+  <rect x="60" y="1105" width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="85" y="1132" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Node Graph Events &amp; Management</text>
+  <text x="85" y="1158" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
+    <tspan x="85" dy="0"><tspan fill="#1A1B2E" font-weight="bold">When Entering Collision Trigger:</tspan> Triggered when a Source enters a Trigger range. Sends event to</tspan>
+    <tspan x="85" dy="20">the entity configured with the Collision Trigger. Provides Source entity reference.</tspan>
+    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">When Exiting Collision Trigger:</tspan> Triggered when a Source exits a Trigger range.</tspan>
+    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Activate/Disable Collision Trigger:</tspan> Dynamically enable or disable triggers at runtime.</tspan>
+    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Activate/Disable Collision Trigger Source:</tspan> Dynamically enable or disable source at runtime.</tspan>
+  </text>
+
+  <!-- Footer -->
+  <text x="600" y="1280" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">Generated by AI based on official Miliastra Academy documentation. Version: Luminary</text>
+
+  <!-- Source Links -->
+  <text x="60" y="1320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh96ff0mujww" target="_blank">
+    <text x="60" y="1342" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Collision Trigger - Tutorial Detail</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhilp6rpz09y" target="_blank">
+    <text x="60" y="1364" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Collision Trigger Source - Tutorial Detail</text>
+  </a>
+</svg>
