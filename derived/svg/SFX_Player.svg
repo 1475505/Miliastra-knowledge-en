@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2300" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="2300" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">23-Sound Effect Player: Audio Configuration &amp; Playback Control</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Sound Effect Player Component Functions</text>
+
+  <rect x="60" y="164" width="1080" height="110" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="192" font-size="14" fill="#4A4B65">The Sound Effect Player component provides the ability for a Unit to play additional sound effects. The component supports two playback methods:</text>
+  <text x="80" y="218" font-size="13" fill="#4A4B65">1. When configured on the component by default, it plays automatically after the owning Unit is created</text>
+  <text x="80" y="242" font-size="13" fill="#4A4B65">2. Playback can be triggered via the Node Graph; the Unit must have the Sound Effect Player component mounted</text>
+
+  <circle cx="80" cy="310" r="16" fill="#2D6BE4"/>
+  <text x="80" y="311" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="311" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Sound Effect Player Component</text>
+
+  <rect x="60" y="338" width="1080" height="122" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="366" font-size="14" font-weight="bold" fill="#1A1B2E">Adding the Component</text>
+  <text x="80" y="392" font-size="13" fill="#4A4B65">(1) Switch to the Components tab of the entity or prefab</text>
+  <text x="80" y="414" font-size="13" fill="#4A4B65">(2) Find or create a Sound Effect Player component</text>
+  <text x="80" y="440" font-size="13" fill="#4A4B65">Click [Advanced Editing] to open the details editing tab. On the details tab, click [Add Sound Effect] to create a new sound effect configuration.</text>
+
+  <rect x="60" y="474" width="1080" height="310" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="500" font-size="14" font-weight="bold" fill="#1A1B2E">Sound Effect Configuration Parameters</text>
+
+  <g transform="translate(80, 522)">
+    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">ID</text>
+    <text x="240" y="0" font-size="13" fill="#4A4B65">Unique identification ID of the Sound Effect Player</text>
+    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Name</text>
+    <text x="240" y="22" font-size="13" fill="#4A4B65">Display name of the player</text>
+    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Sound Effect Assets</text>
+    <text x="240" y="44" font-size="13" fill="#4A4B65">Reference to the specific sound effect asset to play</text>
+    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Volume</text>
+    <text x="240" y="66" font-size="13" fill="#4A4B65">Controls the playback volume of the sound effect</text>
+    <text x="0" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Playback Speed</text>
+    <text x="240" y="88" font-size="13" fill="#4A4B65">Playback speed of the sound effect asset</text>
+    <text x="0" y="110" font-size="13" font-weight="bold" fill="#1A1B2E">Loop Playback</text>
+    <text x="240" y="110" font-size="13" fill="#4A4B65">When enabled, the asset loops after finishing</text>
+    <text x="0" y="132" font-size="13" font-weight="bold" fill="#1A1B2E">Loop Interval (s)</text>
+    <text x="240" y="132" font-size="13" fill="#4A4B65">Delay between loop iterations</text>
+    <text x="0" y="154" font-size="13" font-weight="bold" fill="#1A1B2E">3D Sound Effects</text>
+    <text x="240" y="154" font-size="13" fill="#4A4B65">Determines whether the sound is 3D; enables spatial audio options</text>
+    <text x="0" y="176" font-size="13" font-weight="bold" fill="#1A1B2E">Range Preview</text>
+    <text x="240" y="176" font-size="13" fill="#4A4B65">When enabled, shows the sound propagation range in the Scene</text>
+    <text x="0" y="198" font-size="13" font-weight="bold" fill="#1A1B2E">Range Radius (m)</text>
+    <text x="240" y="198" font-size="13" fill="#4A4B65">Propagation radius of the sound effect</text>
+    <text x="0" y="220" font-size="13" font-weight="bold" fill="#1A1B2E">Attachment Point</text>
+    <text x="240" y="220" font-size="13" fill="#4A4B65">Specifies the location used as the sound source</text>
+    <text x="0" y="242" font-size="13" font-weight="bold" fill="#1A1B2E">Offset</text>
+    <text x="240" y="242" font-size="13" fill="#4A4B65">Offsets the sound source's location</text>
+  </g>
+
+  <rect x="60" y="798" width="1080" height="152" rx="14" fill="#E8EEFB"/>
+  <rect x="60" y="798" width="4" height="152" rx="2" fill="#2D6BE4"/>
+  <text x="80" y="822" font-size="14" font-weight="bold" fill="#2D6BE4">Attenuation Modes (3D Sound)</text>
+  <text x="80" y="848" font-size="13" fill="#4A4B65">When using 3D sound effects, the farther the listener is from the source, the lower the volume</text>
+  <text x="80" y="868" font-size="13" fill="#4A4B65">becomes. Once distance exceeds the range, volume drops to 0.</text>
+  <text x="80" y="896" font-size="13" font-weight="bold" fill="#1A1B2E">Linear Attenuation</text>
+  <text x="240" y="896" font-size="13" fill="#4A4B65">Volume decreases linearly with distance</text>
+  <text x="80" y="918" font-size="13" font-weight="bold" fill="#1A1B2E">Fast Then Slow</text>
+  <text x="240" y="918" font-size="13" fill="#4A4B65">Attenuates quickly near source, then slowly</text>
+  <text x="80" y="940" font-size="13" font-weight="bold" fill="#1A1B2E">Slow Then Fast</text>
+  <text x="240" y="940" font-size="13" fill="#4A4B65">Attenuates slowly near source, then quickly</text>
+
+  <circle cx="80" cy="988" r="16" fill="#2D6BE4"/>
+  <text x="80" y="989" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="989" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Using Node Graph to Control Sound Effects</text>
+
+  <rect x="60" y="1016" width="1080" height="434" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="80" y="1044" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Execution Nodes</text>
+
+  <g transform="translate(80, 1072)">
+    <rect x="0" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Add Sound Effect Player</text>
+    <text x="16" y="38" font-size="12" fill="#4A4B65">Adds a sound effect player to the target entity</text>
+
+    <rect x="520" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Adjust Specified Sound Effect Player</text>
+    <text x="16" y="38" font-size="12" fill="#4A4B65">Modifies parameters of an active sound effect player</text>
+
+    <rect x="0" y="64" width="490" height="50" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="82" font-size="13" font-weight="bold" fill="#1A1B2E">Close Specified Sound Effect Player</text>
+    <text x="16" y="102" font-size="12" fill="#4A4B65">Stops and closes the specified sound effect player</text>
+
+    <rect x="520" y="64" width="490" height="50" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="82" font-size="13" font-weight="bold" fill="#1A1B2E">Start/Pause Specified Sound Effect Player</text>
+    <text x="16" y="102" font-size="12" fill="#4A4B65">Toggles playback state (start/pause)</text>
+
+    <rect x="0" y="128" width="490" height="50" rx="8" fill="#F0F2F5"/>
+    <text x="16" y="146" font-size="13" font-weight="bold" fill="#1A1B2E">Player Plays One-Shot 2D Sound Effect</text>
+    <text x="16" y="166" font-size="12" fill="#4A4B65">Plays a one-shot 2D sound effect on the player</text>
+  </g>
+
+  <rect x="60" y="1464" width="1080" height="82" rx="14" fill="#E8EEFB"/>
+  <rect x="60" y="1464" width="4" height="82" rx="2" fill="#2D6BE4"/>
+  <text x="80" y="1488" font-size="14" font-weight="bold" fill="#2D6BE4">Requirements</text>
+  <text x="80" y="1512" font-size="13" fill="#4A4B65">To control sound effects via the Node Graph, the target Unit must have the Sound Effect Player</text>
+  <text x="80" y="1532" font-size="13" fill="#4A4B65">component mounted. Sound effect configurations must be defined in the component first.</text>
+
+  <text x="60" y="2150" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbx2pi8x190" target="_blank">
+    <text x="60" y="2176" font-size="13" fill="#2D6BE4" text-decoration="underline">Sound Effect Player</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn95di01j84" target="_blank">
+    <text x="60" y="2200" font-size="13" fill="#2D6BE4" text-decoration="underline">Collision Trigger Source</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5n160t2b6w" target="_blank">
+    <text x="60" y="2224" font-size="13" fill="#2D6BE4" text-decoration="underline">Nameplate</text>
+  </a>
+  <text x="600" y="2260" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

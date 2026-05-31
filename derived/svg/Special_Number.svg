@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">50-Special Number: Number Display, Digit Styling, Count-Up/Down &amp; Formatting</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Special Number Features</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Special Numbers support displaying various types of skill-related data within the UI Layout.</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">They provide rich formatting options for numeric display.</text>
+    <text x="20" y="104" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Control</text>
+    <text x="20" y="130" font-size="13" fill="#4A4B65">During stage runtime, Special Number controls can be triggered and updated through Node Graphs.</text>
+  </g>
+
+  <circle cx="80" cy="360" r="16" fill="#2D6BE4"/>
+  <text x="80" y="361" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="361" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Special Numbers</text>
+
+  <g transform="translate(60, 388)">
+    <rect width="1080" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Configuration</text>
+
+    <text x="20" y="62" font-size="14" font-weight="bold" fill="#1A1B2E">1. Add Special Number</text>
+    <text x="20" y="86" font-size="13" fill="#4A4B65">In the UI Control Group Editor window, add the UI Control Template — Special Number.</text>
+
+    <text x="20" y="118" font-size="14" font-weight="bold" fill="#1A1B2E">2. Configuration Parameters</text>
+    <text x="20" y="144" font-size="13" fill="#1A1B2E" font-weight="bold">Data Source</text>
+    <text x="105" y="144" font-size="13" fill="#4A4B65">Default is Skill</text>
+    <text x="20" y="168" font-size="13" fill="#1A1B2E" font-weight="bold">Monitor Skill Slot</text>
+    <text x="140" y="168" font-size="13" fill="#4A4B65">Supports selecting any slot and monitoring skills based on the selected slot</text>
+
+    <text x="20" y="196" font-size="13" fill="#1A1B2E" font-weight="bold">Data Content</text>
+    <text x="110" y="196" font-size="13" fill="#4A4B65">Can display:</text>
+    <text x="20" y="218" font-size="13" fill="#4A4B65">Skill Remaining CD Time | Skill Usage(s) | Skill Resources | Skill Availability</text>
+
+    <text x="20" y="248" font-size="13" fill="#1A1B2E" font-weight="bold">Time Unit</text>
+    <text x="85" y="248" font-size="13" fill="#4A4B65">Seconds, Minutes, Hours</text>
+    <text x="20" y="272" font-size="13" fill="#1A1B2E" font-weight="bold">Font Size</text>
+    <text x="85" y="272" font-size="13" fill="#4A4B65">Sets the font size of the displayed number</text>
+
+    <rect x="16" y="300" width="1048" height="60" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="300" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="322" font-size="12" fill="#4A4B65">Special Number controls support digit styling, count-up and count-down animations,</text>
+    <text x="32" y="342" font-size="12" fill="#4A4B65">large number formatting, and color coding through configuration options.</text>
+  </g>
+
+  <circle cx="80" cy="904" r="16" fill="#2D6BE4"/>
+  <text x="80" y="905" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="905" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Number Formatting &amp; Digit Styling</text>
+
+  <g transform="translate(60, 932)">
+    <rect width="1080" height="460" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Digit Styling</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Configure the visual appearance of each digit in the number display:</text>
+
+    <rect x="20" y="72" width="330" height="54" rx="8" fill="#E8EEFB"/>
+    <text x="36" y="92" font-size="12" font-weight="bold" fill="#1A1B2E">Font &amp; Size</text>
+    <text x="36" y="110" font-size="11" fill="#4A4B65">Custom font family and font size</text>
+
+    <rect x="370" y="72" width="330" height="54" rx="8" fill="#E8EEFB"/>
+    <text x="386" y="92" font-size="12" font-weight="bold" fill="#1A1B2E">Color Coding</text>
+    <text x="386" y="110" font-size="11" fill="#4A4B65">Positive/negative/zero color options</text>
+
+    <rect x="720" y="72" width="340" height="54" rx="8" fill="#E8EEFB"/>
+    <text x="736" y="92" font-size="12" font-weight="bold" fill="#1A1B2E">Format</text>
+    <text x="736" y="110" font-size="11" fill="#4A4B65">Integer, Decimal, Percentage</text>
+
+    <text x="20" y="160" font-size="14" font-weight="bold" fill="#1A1B2E">Animations</text>
+    <text x="20" y="186" font-size="13" fill="#1A1B2E" font-weight="bold">Count-Up Animation</text>
+    <text x="145" y="186" font-size="13" fill="#4A4B65">Number increases with a smooth counting animation</text>
+    <text x="20" y="210" font-size="13" fill="#1A1B2E" font-weight="bold">Count-Down Animation</text>
+    <text x="155" y="210" font-size="13" fill="#4A4B65">Number decreases with a smooth counting animation</text>
+
+    <text x="20" y="244" font-size="14" font-weight="bold" fill="#1A1B2E">Large Number Formatting</text>
+    <text x="20" y="270" font-size="13" fill="#4A4B65">Automatically format large numbers with abbreviations (e.g., 1K, 1M, 1B).</text>
+    <text x="20" y="294" font-size="13" fill="#4A4B65">Configure threshold values and abbreviation suffixes.</text>
+
+    <text x="20" y="326" font-size="14" font-weight="bold" fill="#1A1B2E">Color Coding</text>
+    <text x="20" y="352" font-size="13" fill="#4A4B65">Configure color schemes based on value ranges:</text>
+    <text x="20" y="376" font-size="13" fill="#4A4B65">Threshold-based coloring | Positive/Negative colors | Conditional formatting</text>
+
+    <rect x="16" y="400" width="1048" height="46" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="400" width="4" height="46" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="420" font-size="12" fill="#4A4B65">Special Number formatting options allow creators to display numeric data in clear, visually</text>
+    <text x="32" y="438" font-size="12" fill="#4A4B65">appealing ways that match the overall UI design language.</text>
+  </g>
+
+  <circle cx="80" cy="1428" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1429" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1429" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Node Graph Integration</text>
+
+  <g transform="translate(60, 1456)">
+    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Control</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Special Number controls can be managed through Node Graph nodes during runtime.</text>
+
+    <text x="20" y="86" font-size="14" font-weight="bold" fill="#1A1B2E">Available Operations</text>
+    <rect x="20" y="106" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="185" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Set Special Number Value</text>
+
+    <rect x="365" y="106" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="530" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Get Special Number Value</text>
+
+    <rect x="710" y="106" width="350" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="885" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Configure Number Display</text>
+
+    <text x="20" y="180" font-size="14" font-weight="bold" fill="#1A1B2E">Event Triggers</text>
+    <text x="20" y="204" font-size="13" fill="#4A4B65">When Number Value Changes — Triggered whenever the displayed number value is updated.</text>
+    <text x="20" y="228" font-size="13" fill="#4A4B65">When Animation Completes — Triggered after count-up or count-down animation finishes.</text>
+  </g>
+
+  <text x="60" y="1796" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg70rrcygcu" target="_blank">
+    <text x="60" y="1822" font-size="13" fill="#2D6BE4" text-decoration="underline">Special Number Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg70rrcygcu</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6" target="_blank">
+    <text x="60" y="1848" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6</text>
+  </a>
+
+  <text x="600" y="1884" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

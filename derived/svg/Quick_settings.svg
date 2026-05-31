@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1180" width="1200" height="1180">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="1180" fill="#F9F7F2"/>
+
+  <!-- Top Gradient Bar -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Quick Settings</text>
+
+  <!-- Section I: Overview -->
+  <rect x="40" y="100" width="1120" height="108" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Overview</text>
+  <text x="68" y="162" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Quick Settings is accessed by clicking the gear (settings) icon in the top-right corner of the editor interface.</text>
+  <text x="68" y="186" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">It provides a collection of toggles, sliders, and controls for customizing camera, placement, display, and other editing preferences.</text>
+
+  <!-- Section II: Camera Settings -->
+  <rect x="40" y="228" width="1120" height="148" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="260" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Camera Settings</text>
+  <text x="68" y="292" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Camera Horizontal Speed:</tspan>
+    The horizontal movement speed of the camera in the editing interface.
+  </text>
+  <text x="68" y="316" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Camera Vertical Speed:</tspan>
+    The vertical movement speed of the camera in the editing interface.
+  </text>
+  <text x="68" y="340" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Horizontal Lock:</tspan>
+    When enabled, the camera moves parallel to the ground surface.
+  </text>
+
+  <!-- Section III: Placement Settings -->
+  <rect x="40" y="396" width="1120" height="256" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="428" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Placement Settings</text>
+  <text x="68" y="460" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Ground-Level Placement:</tspan>
+    When enabled, placed units are positioned flush with the terrain.
+  </text>
+  <text x="68" y="484" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Surface Adsorption:</tspan>
+    When enabled, placed units will snap to nearby units.
+  </text>
+  <text x="68" y="508" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Normalize Position After Surface Adsorption:</tspan>
+    Available only when Surface Adsorption is enabled.
+  </text>
+  <text x="68" y="532" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When enabled, units automatically rotate to align when snapping to other units.</text>
+  <text x="68" y="556" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Center Align:</tspan>
+    When enabled, the center point of the placed unit aligns automatically with nearby units.
+  </text>
+  <text x="68" y="580" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Alignment Position:</tspan>
+    Specifies the coordinate system used for Center Align.
+  </text>
+  <text x="68" y="604" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Alt Copy Quantity:</tspan>
+    The number of copies created when holding Alt for batch copying.
+  </text>
+
+  <!-- Section IV: Display Toggles -->
+  <rect x="40" y="672" width="1120" height="188" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="704" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Display Toggles</text>
+  <text x="68" y="736" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Show Distance When Moving:</tspan>
+    When enabled, displays the unit's relative movement at the bottom of the interface while moving.
+  </text>
+  <text x="68" y="760" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Creation Entering Battle Range:</tspan>
+    Toggle whether to display the battle range for creations.
+  </text>
+  <text x="68" y="784" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Always Show Preset Points:</tspan>
+    Toggle whether Preset Points are always shown.
+  </text>
+  <text x="68" y="808" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Empty Object Hint Model Permanent Visibility:</tspan>
+    Toggle whether the indicator model for empty objects is always shown.
+  </text>
+  <text x="68" y="832" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Always Show Path:</tspan>
+    Toggle whether paths are always shown.
+  </text>
+
+  <!-- Section V: Other Settings -->
+  <rect x="40" y="880" width="1120" height="116" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="912" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Other Settings</text>
+  <text x="68" y="944" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Environment Settings:</tspan>
+    Configure environment settings for the current scene, including background, lighting, and weather.
+  </text>
+  <text x="68" y="968" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+    <tspan font-weight="700" fill="#1A1B2E">Hotkey Overview:</tspan>
+    Click to view the list of available shortcut keys for the editing interface.
+  </text>
+
+  <!-- Tip Box -->
+  <rect x="40" y="1016" width="1120" height="68" rx="14" fill="#E8EEFB"/>
+  <rect x="40" y="1016" width="4" height="68" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="1044" font-size="14" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip</text>
+  <text x="68" y="1066" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Alt Copy Quantity controls the number of copies created when holding the Alt key while dragging a transform tool axis for batch copying.</text>
+
+  <!-- Related Documentation -->
+  <text x="68" y="1112" font-size="12" fill="#8B8DA0" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn4bsi5lb58" target="_blank">
+    <text x="68" y="1132" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Main Interface</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnffmieeqbg" target="_blank">
+    <text x="68" y="1150" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Entity Placement</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="1170" font-size="11" fill="#8B8DA0" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

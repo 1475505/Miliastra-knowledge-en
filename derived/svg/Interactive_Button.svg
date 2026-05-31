@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 4200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="4200" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">51-Interactive Button: States, Visual Config, Click Events &amp; Node Graph Handling</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Interactive Button Functions</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Interactive Buttons enable player interaction through clicks or external device inputs. They</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">support multiple interaction methods and can trigger Node Graph events.</text>
+    <text x="20" y="104" font-size="15" font-weight="bold" fill="#1A1B2E">Interaction Event</text>
+    <text x="20" y="130" font-size="13" fill="#4A4B65">When selecting "Interactive Event," a "When UI Control Group Is Triggered" event is sent to</text>
+    <text x="20" y="150" font-size="13" fill="#4A4B65">the node graph after the interaction. This event is sent only to the player who interacted.</text>
+  </g>
+
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Interactive Buttons</text>
+
+  <g transform="translate(60, 408)">
+    <rect width="1080" height="1000" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Button Config</text>
+
+    <text x="20" y="62" font-size="14" font-weight="bold" fill="#1A1B2E">Key Mapping</text>
+    <text x="20" y="86" font-size="13" fill="#1A1B2E" font-weight="bold">Keyboard &amp; Mouse</text>
+    <text x="140" y="86" font-size="13" fill="#4A4B65">Choose a numeric key for input. The selected key is displayed below the button.</text>
+    <text x="20" y="110" font-size="13" fill="#1A1B2E" font-weight="bold">Gamepad</text>
+    <text x="85" y="110" font-size="13" fill="#4A4B65">Choose a controller button for input.</text>
+
+    <text x="20" y="142" font-size="14" font-weight="bold" fill="#1A1B2E">Size</text>
+    <text x="20" y="166" font-size="13" fill="#4A4B65">Modify button size: Large (64x64) or Small (40.96x40.96).</text>
+
+    <text x="20" y="198" font-size="14" font-weight="bold" fill="#1A1B2E">Type</text>
+    <text x="20" y="222" font-size="13" fill="#1A1B2E" font-weight="bold">Button Skill</text>
+    <text x="105" y="222" font-size="13" fill="#4A4B65">Specify a skill. Icon and function details are edited in the character skill editor.</text>
+    <text x="20" y="246" font-size="13" fill="#1A1B2E" font-weight="bold">Interactive Event</text>
+    <text x="135" y="246" font-size="13" fill="#4A4B65">Sends trigger events to the node graph on interaction.</text>
+
+    <text x="20" y="278" font-size="14" font-weight="bold" fill="#1A1B2E">Skill Icon</text>
+    <text x="20" y="302" font-size="13" fill="#4A4B65">Configure the button's display graphics, shown in real-time in the edit window.</text>
+
+    <text x="20" y="334" font-size="14" font-weight="bold" fill="#1A1B2E">Button CD</text>
+    <text x="20" y="358" font-size="13" fill="#4A4B65">Once a skill is used, must wait for cooldown. During cooldown, button is grayed out.</text>
+
+    <text x="20" y="390" font-size="14" font-weight="bold" fill="#1A1B2E">Button Usage Limit</text>
+    <text x="20" y="414" font-size="13" fill="#4A4B65">Enable to activate usage count display. Different limits can be configured per player.</text>
+    <text x="20" y="438" font-size="13" fill="#4A4B65">Hide When No Usages Left — hides the button when configured count reaches 0.</text>
+
+    <text x="20" y="470" font-size="14" font-weight="bold" fill="#1A1B2E">Use Items</text>
+    <text x="20" y="494" font-size="13" fill="#4A4B65">Configure variable selection for item usage tracking.</text>
+
+    <text x="20" y="526" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior When No Items</text>
+    <text x="20" y="550" font-size="13" fill="#4A4B65">Three types: Icon Grayed Out | Do Not Show Icon | Hide Button</text>
+
+    <rect x="16" y="580" width="1048" height="50" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="580" width="4" height="50" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="600" font-size="12" fill="#4A4B65">Interactive Buttons support multiple visual states: Normal, Hover, Pressed, and Disabled.</text>
+    <text x="32" y="618" font-size="12" fill="#4A4B65">Each state can have a different background, icon, and text appearance.</text>
+  </g>
+
+  <circle cx="80" cy="1444" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1445" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1445" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Button States &amp; Visual Configuration</text>
+
+  <g transform="translate(60, 1472)">
+    <rect width="1080" height="460" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Button States</text>
+
+    <rect x="20" y="46" width="170" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="105" y="68" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Normal</text>
+    <text x="105" y="84" font-size="10" fill="#4A4B65" text-anchor="middle">Default appearance</text>
+
+    <rect x="205" y="46" width="170" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="290" y="68" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Hover</text>
+    <text x="290" y="84" font-size="10" fill="#4A4B65" text-anchor="middle">Mouse hover state</text>
+
+    <rect x="390" y="46" width="170" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="475" y="68" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Pressed</text>
+    <text x="475" y="84" font-size="10" fill="#4A4B65" text-anchor="middle">During click</text>
+
+    <rect x="575" y="46" width="170" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="660" y="68" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Disabled</text>
+    <text x="660" y="84" font-size="10" fill="#4A4B65" text-anchor="middle">Grayed out / inactive</text>
+
+    <text x="20" y="124" font-size="14" font-weight="bold" fill="#1A1B2E">Visual Configuration per State</text>
+    <text x="20" y="150" font-size="13" fill="#1A1B2E" font-weight="bold">Background</text>
+    <text x="110" y="150" font-size="13" fill="#4A4B65">Color, gradient, or image for the button background</text>
+    <text x="20" y="174" font-size="13" fill="#1A1B2E" font-weight="bold">Icon</text>
+    <text x="55" y="174" font-size="13" fill="#4A4B65">Skill icon or custom image displayed on the button</text>
+    <text x="20" y="198" font-size="13" fill="#1A1B2E" font-weight="bold">Text</text>
+    <text x="60" y="198" font-size="13" fill="#4A4B65">Label text, font color, and font size customization</text>
+
+    <text x="20" y="232" font-size="14" font-weight="bold" fill="#1A1B2E">Interaction Feedback</text>
+    <text x="20" y="258" font-size="13" fill="#4A4B65">Buttons provide visual and auditory feedback on interaction:</text>
+    <text x="20" y="282" font-size="13" fill="#4A4B65">Visual state transitions | Sound effects on click | Cooldown dimming effect</text>
+    <text x="20" y="306" font-size="13" fill="#4A4B65">Usage count display | Hide on zero configuration</text>
+
+    <rect x="16" y="330" width="1048" height="50" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="330" width="4" height="50" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="350" font-size="12" fill="#4A4B65">Each button state can be fully customized with different visual properties, providing clear</text>
+    <text x="32" y="368" font-size="12" fill="#4A4B65">feedback to players about the interactive state of the button.</text>
+  </g>
+
+  <circle cx="80" cy="1968" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1969" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1969" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Button Events &amp; Node Graph Integration</text>
+
+  <g transform="translate(60, 1996)">
+    <rect width="1080" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Click Events</text>
+    <text x="20" y="52" font-size="13" fill="#4A4B65">When a player interacts with a button UI control group, it triggers the "When UI Control Group</text>
+    <text x="20" y="72" font-size="13" fill="#4A4B65">Is Triggered" event. This event is sent only to the node graph of the player who interacted.</text>
+
+    <text x="20" y="104" font-size="14" font-weight="bold" fill="#1A1B2E">On-Hover Events</text>
+    <rect x="20" y="122" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="185" y="144" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">On Button Hover Start</text>
+
+    <rect x="365" y="122" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="530" y="144" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">On Button Hover End</text>
+
+    <text x="20" y="200" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Event Handling</text>
+    <text x="20" y="226" font-size="13" fill="#4A4B65">The triggered event carries information about which UI control group was interacted with,</text>
+    <text x="20" y="246" font-size="13" fill="#4A4B65">allowing different responses for different buttons in the same UI layout.</text>
+
+    <rect x="16" y="270" width="1048" height="50" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="270" width="4" height="50" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="290" font-size="12" fill="#4A4B65">Buttons can be configured to use custom variables for usage tracking. When the variable</text>
+    <text x="32" y="308" font-size="12" fill="#4A4B65">changes, the button's displayed usage count updates automatically via the node graph.</text>
+  </g>
+
+  <text x="60" y="2416" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume" target="_blank">
+    <text x="60" y="2442" font-size="13" fill="#2D6BE4" text-decoration="underline">Interactive Button UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k" target="_blank">
+    <text x="60" y="2468" font-size="13" fill="#2D6BE4" text-decoration="underline">Item Display UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k</text>
+  </a>
+
+  <text x="600" y="2504" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2800" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="2800" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">61-Rich Text: Rich Text Input Controls</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Features of the Rich Text Input Control</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="32" font-size="14" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">The Rich Text Input Control can be configured in a UI layout. It is suited for scenarios</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">where images and text are used together in a mixed layout.</text>
+    <text x="20" y="106" font-size="13" fill="#4A4B65">Within the rich text input control, images are dynamically adapted based on the actual</text>
+    <text x="20" y="126" font-size="13" fill="#4A4B65">length of the text content.</text>
+  </g>
+
+  <circle cx="80" cy="340" r="16" fill="#2D6BE4"/>
+  <text x="80" y="341" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="341" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Rich Text Input Control</text>
+
+  <g transform="translate(60, 368)">
+    <rect width="1080" height="880" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="15" font-weight="bold" fill="#1A1B2E">1. Adding the Rich Text Input Control</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">In the UI Control Group Editing Window, add a UI control template — Rich Text Input.</text>
+
+    <text x="20" y="96" font-size="15" font-weight="bold" fill="#1A1B2E">2. Text Box Settings</text>
+    <text x="30" y="124" font-size="13" fill="#1A1B2E" font-weight="bold">Font Size</text>
+    <text x="130" y="124" font-size="13" fill="#4A4B65">The font size of the text inside the rich text input control.</text>
+    <text x="30" y="152" font-size="13" fill="#1A1B2E" font-weight="bold">Line Spacing</text>
+    <text x="130" y="152" font-size="13" fill="#4A4B65">The line height within the control. Unit = control's font size:</text>
+    <text x="130" y="172" font-size="13" fill="#4A4B65">Actual line spacing = Current font size x Line spacing value</text>
+
+    <text x="20" y="212" font-size="15" font-weight="bold" fill="#1A1B2E">3. Image Settings</text>
+    <text x="20" y="238" font-size="13" fill="#4A4B65">Inside the rich text input control, click [Insert Image] to add an image.</text>
+
+    <g transform="translate(20, 256)">
+      <rect width="700" height="90" rx="8" fill="#E8EEFB"/>
+      <rect x="0" y="0" width="4" height="90" rx="2" fill="#2D6BE4"/>
+      <text x="16" y="22" font-size="12" font-weight="bold" fill="#1A1B2E">Note:</text>
+      <text x="16" y="44" font-size="12" fill="#4A4B65">Image colors cannot be modified.</text>
+      <text x="16" y="66" font-size="12" fill="#4A4B65">When the image source is set to Static Reference, Asset Groups cannot be used.</text>
+    </g>
+
+    <text x="20" y="372" font-size="13" fill="#1A1B2E" font-weight="bold">Position</text>
+    <text x="100" y="372" font-size="13" fill="#4A4B65">The position of the image within the control. Unit = control's font size:</text>
+    <text x="100" y="392" font-size="13" fill="#4A4B65">Actual offset = Current font size x Offset value</text>
+
+    <text x="20" y="432" font-size="15" font-weight="bold" fill="#1A1B2E">4. Text Formatting Options</text>
+    <text x="30" y="460" font-size="13" fill="#1A1B2E" font-weight="bold">Bold</text>
+    <text x="80" y="460" font-size="13" fill="#4A4B65">Applies bold weight to selected text</text>
+    <text x="30" y="484" font-size="13" fill="#1A1B2E" font-weight="bold">Italic</text>
+    <text x="80" y="484" font-size="13" fill="#4A4B65">Applies italic style to selected text</text>
+    <text x="30" y="508" font-size="13" fill="#1A1B2E" font-weight="bold">Underline</text>
+    <text x="100" y="508" font-size="13" fill="#4A4B65">Adds underline decoration</text>
+    <text x="30" y="532" font-size="13" fill="#1A1B2E" font-weight="bold">Color</text>
+    <text x="80" y="532" font-size="13" fill="#4A4B65">Changes text color via color picker</text>
+    <text x="30" y="556" font-size="13" fill="#1A1B2E" font-weight="bold">Size</text>
+    <text x="80" y="556" font-size="13" fill="#4A4B65">Adjusts font size for selected text range</text>
+  </g>
+
+  <circle cx="80" cy="1284" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1285" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1285" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Advanced Features</text>
+
+  <g transform="translate(60, 1312)">
+    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Inline Images &amp; Icons</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">Images and icons can be inserted inline with text. They flow naturally with text</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">wrapping and adjust position based on line height and text direction.</text>
+
+    <text x="20" y="112" font-size="14" font-weight="bold" fill="#1A1B2E">Hyperlinks</text>
+    <text x="20" y="138" font-size="13" fill="#4A4B65">Selected text can be linked to URLs. Links are rendered with underline and</text>
+    <text x="20" y="158" font-size="13" fill="#4A4B65">interactive color. Click handling is managed through the node graph.</text>
+
+    <text x="20" y="194" font-size="14" font-weight="bold" fill="#1A1B2E">Text Alignment</text>
+    <text x="20" y="220" font-size="13" fill="#4A4B65">Supports left, center, right, and justify alignment. Different alignments can be</text>
+    <text x="20" y="240" font-size="13" fill="#4A4B65">applied to individual paragraphs or the entire text block.</text>
+
+    <text x="20" y="276" font-size="14" font-weight="bold" fill="#1A1B2E">Variable Insertion</text>
+    <text x="20" y="302" font-size="13" fill="#4A4B65">Custom variables can be inserted into the rich text content. These variables are</text>
+    <text x="20" y="322" font-size="13" fill="#4A4B65">dynamically replaced with actual values during stage runtime.</text>
+  </g>
+
+  <g transform="translate(60, 1680)">
+    <rect width="1080" height="120" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="120" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Multi-Style Text Example</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Rich text supports applying multiple styles to a single text range simultaneously.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">For example: bold + italic + colored + larger font size can all be combined on</text>
+    <text x="24" y="96" font-size="13" fill="#4A4B65">the same selection for maximum visual flexibility.</text>
+  </g>
+
+  <g transform="translate(60, 1828)">
+    <rect width="1080" height="50" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  </g>
+  <a href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mh496c08hooo">
+    <text x="80" y="1908" font-size="12" fill="#2D6BE4" text-decoration="underline">Rich Text Input Controls</text>
+  </a>
+
+  <text x="600" y="1960" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

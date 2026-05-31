@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <!-- Title Card -->
+  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Global Timer</text>
+
+  <!-- Section I: Overview -->
+  <rect x="40" y="100" width="1120" height="175" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Global Timer Overview</text>
+  <text x="68" y="162" font-size="14" fill="#4A4B65">The <tspan font-weight="700" fill="#1A1B2E">Global Timer</tspan> component provides timing capabilities. It supports configuring multiple</text>
+  <text x="68" y="186" font-size="14" fill="#4A4B65">sets of static timer data. Timers run independently on different active entities.</text>
+  <text x="68" y="210" font-size="14" fill="#4A4B65">Two timer types: <tspan font-weight="700" fill="#1A1B2E">Countdown</tspan> (counts down from a set duration) and <tspan font-weight="700" fill="#1A1B2E">Stopwatch</tspan> (counts up).</text>
+  <text x="68" y="234" font-size="14" fill="#4A4B65">Two activation methods: (1) Reference timer set in entity component, activated on entity creation.</text>
+  <text x="68" y="258" font-size="14" fill="#4A4B65">(2) Node graph execution node activates the timer when executed.</text>
+
+  <!-- Section II: Timer Management Tool -->
+  <rect x="40" y="295" width="1120" height="175" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="327" font-size="18" font-weight="700" fill="#2D6BE4">II. Timer Management Tool</text>
+  <text x="68" y="357" font-size="14" fill="#4A4B65">Predefine all global timers via the <tspan font-weight="700" fill="#1A1B2E">Timer Management Tool</tspan>. The Global Timer List</text>
+  <text x="68" y="381" font-size="14" fill="#4A4B65">enumerates all predefined timers in the current stage. You can add new timers, set names</text>
+  <text x="68" y="405" font-size="14" fill="#4A4B65">and IDs, and configure basic parameters.</text>
+  <text x="68" y="429" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Parameters:</tspan> Global Timer Type (Countdown or Stopwatch), Duration in seconds (for countdown).</text>
+  <text x="68" y="453" font-size="14" fill="#4A4B65">Rename or delete timers using the icon next to each timer entry.</text>
+
+  <!-- Section III: Referencing Global Timers -->
+  <rect x="40" y="490" width="1120" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="522" font-size="18" font-weight="700" fill="#2D6BE4">III. Referencing Global Timers</text>
+
+  <text x="68" y="554" font-size="14" font-weight="700" fill="#1A1B2E">Via UI Controls</text>
+  <text x="68" y="578" font-size="14" fill="#4A4B65">Open the Interface Layout Management Tool and select <tspan font-weight="700" fill="#1A1B2E">Timer UI Controls</tspan>.</text>
+  <text x="68" y="602" font-size="14" fill="#4A4B65">Configure: Type (Stopwatch/Countdown), Specify Timer (select predefined timer),</text>
+  <text x="68" y="626" font-size="14" fill="#4A4B65">Source Entity (stage entity or player entity — must have a Global Timer component).</text>
+  <text x="68" y="646" font-size="13" fill="#8B8DA0">If inactive, UI displays 00:00. When active, UI shows the current timer time.</text>
+
+  <text x="68" y="674" font-size="14" font-weight="700" fill="#1A1B2E">Via Entity Component</text>
+  <text x="68" y="698" font-size="14" fill="#4A4B65">Add the Global Timer component via Add Common Component. Then add a timer reference</text>
+  <text x="68" y="722" font-size="14" fill="#4A4B65">by selecting from the predefined timer list. The timer activates when the entity is created.</text>
+
+  <!-- Section IV: Node Graph Integration -->
+  <rect x="40" y="750" width="1120" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="68" y="782" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+
+  <text x="68" y="814" font-size="14" font-weight="700" fill="#1A1B2E">Start Global Timer</text>
+  <text x="68" y="834" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="852" font-size="14" fill="#4A4B65">Activates a predefined global timer. Only timers defined in the management tool are valid.</text>
+  <text x="68" y="872" font-size="13" fill="#4A4B65">The running entity serves as the carrier for the timer.</text>
+
+  <text x="68" y="900" font-size="14" font-weight="700" fill="#1A1B2E">Stop Global Timer</text>
+  <text x="68" y="920" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="938" font-size="14" fill="#4A4B65">Stops a running global timer early.</text>
+
+  <text x="68" y="966" font-size="14" font-weight="700" fill="#1A1B2E">Pause Global Timer</text>
+  <text x="68" y="986" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="1004" font-size="14" fill="#4A4B65">Pauses a running global timer. Linked UI controls also pause their display.</text>
+
+  <text x="68" y="1032" font-size="14" font-weight="700" fill="#1A1B2E">Recover Global Timer</text>
+  <text x="68" y="1052" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="1070" font-size="14" fill="#4A4B65">Resumes a paused timer. UI control display resumes as well.</text>
+
+  <text x="68" y="1098" font-size="14" font-weight="700" fill="#1A1B2E">Increase Global Timer Value</text>
+  <text x="68" y="1118" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
+  <text x="68" y="1136" font-size="14" fill="#4A4B65">Adjusts a running timer's time. For countdown: positive adds remaining time, negative reduces.</text>
+  <text x="68" y="1156" font-size="13" fill="#4A4B65">For stopwatch: positive increases accumulated time, negative decreases it.</text>
+
+  <!-- Tip Box -->
+  <rect x="40" y="1210" width="1120" height="90" rx="14" fill="#E8EEFB"/>
+  <rect x="40" y="1210" width="4" height="90" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="1232" font-size="14" font-weight="700" fill="#1A1B2E">Additional Event &amp; Query Nodes</text>
+  <text x="68" y="1254" font-size="13" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">When Global Timer Is Triggered</tspan> (Event): Fires when a countdown timer reaches zero.</text>
+  <text x="68" y="1274" font-size="13" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Get Current Global Timer Time</tspan> (Query): Returns remaining time (countdown) or accumulated</text>
+  <text x="68" y="1292" font-size="13" fill="#4A4B65">time (stopwatch) as a Floating Point Number.</text>
+
+  <!-- Source Links -->
+  <text x="68" y="1340" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9bzc0r99i0" target="_blank">
+    <text x="68" y="1368" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Global Timer</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="1392" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="2400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">58-Progress Bar: Progress Bar UI Controls</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Progress Bar Functions</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="32" font-size="14" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">During stage runtime, displays a real-time fill percentage of the tracked variable within</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">its default configured range. Supports custom variables for players and stages.</text>
+  </g>
+
+  <circle cx="80" cy="300" r="16" fill="#2D6BE4"/>
+  <text x="80" y="301" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="301" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Progress Bar</text>
+
+  <g transform="translate(60, 328)">
+    <rect width="1080" height="520" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Shape</text>
+    <rect x="20" y="42" width="100" height="28" rx="8" fill="#E8EEFB"/>
+    <text x="70" y="56" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Horizontal</text>
+    <rect x="130" y="42" width="80" height="28" rx="8" fill="#E8EEFB"/>
+    <text x="170" y="56" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Vertical</text>
+    <rect x="220" y="42" width="70" height="28" rx="8" fill="#E8EEFB"/>
+    <text x="255" y="56" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Ring</text>
+
+    <text x="20" y="104" font-size="14" font-weight="bold" fill="#1A1B2E">Progress Bar Style</text>
+    <rect x="20" y="116" width="160" height="26" rx="6" fill="#F0F0F5"/>
+    <text x="30" y="129" font-size="12" fill="#1A1B2E" font-weight="bold">Not Displayed</text>
+    <text x="200" y="129" font-size="12" fill="#4A4B65">Hides progress hint text</text>
+    <rect x="20" y="150" width="160" height="26" rx="6" fill="#F0F0F5"/>
+    <text x="30" y="163" font-size="12" fill="#1A1B2E" font-weight="bold">Percentage</text>
+    <text x="200" y="163" font-size="12" fill="#4A4B65">Displays progress as a true proportional percentage</text>
+    <rect x="20" y="184" width="160" height="26" rx="6" fill="#F0F0F5"/>
+    <text x="30" y="197" font-size="12" fill="#1A1B2E" font-weight="bold">1:1 Scale</text>
+    <text x="200" y="197" font-size="12" fill="#4A4B65">Displays actual ratio in real-time</text>
+    <rect x="20" y="218" width="160" height="26" rx="6" fill="#F0F0F5"/>
+    <text x="30" y="231" font-size="12" fill="#1A1B2E" font-weight="bold">Current Value</text>
+    <text x="200" y="231" font-size="12" fill="#4A4B65">Displays current value in real-time</text>
+
+    <text x="20" y="276" font-size="14" font-weight="bold" fill="#1A1B2E">Color</text>
+    <text x="20" y="300" font-size="13" fill="#4A4B65">The background color of the filled portion in the progress bar.</text>
+
+    <text x="20" y="336" font-size="14" font-weight="bold" fill="#1A1B2E">Current Progress Value</text>
+    <text x="20" y="360" font-size="13" fill="#4A4B65">Supports custom variables for players and stages.</text>
+
+    <text x="20" y="396" font-size="14" font-weight="bold" fill="#1A1B2E">Minimum Value</text>
+    <text x="20" y="420" font-size="13" fill="#4A4B65">Supports custom variables for players and stages.</text>
+
+    <text x="20" y="456" font-size="14" font-weight="bold" fill="#1A1B2E">Maximum Value</text>
+    <text x="20" y="480" font-size="13" fill="#4A4B65">Supports custom variables for players and stages.</text>
+  </g>
+
+  <g transform="translate(60, 876)">
+    <rect width="1080" height="130" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="130" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Bar Styling &amp; Animation</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Progress bars support custom bar colors, gradients, and texture overlays to match UI themes.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Animation options include smooth fill transitions, pulse effects, and segmented fills for</text>
+    <text x="24" y="96" font-size="13" fill="#4A4B65">multi-stage progress indicators. Fill direction can be reversed for right-to-left layouts.</text>
+  </g>
+
+  <circle cx="80" cy="1042" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1043" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="1043" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Node Graph Control</text>
+
+  <g transform="translate(60, 1070)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Progress Bar Node Graph Binding</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">The progress bar can be linked to stage variables through the node graph system.</text>
+    <text x="20" y="80" font-size="13" fill="#4A4B65">Updates to the bound variable automatically reflect in the progress bar's fill level.</text>
+    <text x="20" y="108" font-size="13" font-weight="bold" fill="#1A1B2E">Key Node Graph Operations</text>
+    <text x="20" y="132" font-size="13" fill="#4A4B65">- Set Progress Value: Update the current value of the progress bar</text>
+    <text x="20" y="152" font-size="13" fill="#4A4B65">- Set Min/Max Range: Adjust the range boundaries dynamically</text>
+    <text x="20" y="172" font-size="13" fill="#4A4B65">- Toggle Visibility: Show or hide the progress bar during gameplay</text>
+  </g>
+
+  <g transform="translate(60, 1278)">
+    <rect width="1080" height="100" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="100" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Visual Preview Examples</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Horizontal: [============            ]  64%</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Vertical:   Ring: [&#x2B6F;] segments fill clockwise from 12 o'clock</text>
+  </g>
+
+  <g transform="translate(60, 1406)">
+    <rect width="1080" height="50" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  </g>
+  <a href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsc2si1wvt8">
+    <text x="80" y="1486" font-size="12" fill="#2D6BE4" text-decoration="underline">Progress Bar UI Controls</text>
+  </a>
+
+  <text x="600" y="1540" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

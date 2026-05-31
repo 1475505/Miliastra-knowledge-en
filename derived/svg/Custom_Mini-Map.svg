@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1180" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1180" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <rect x="40" y="24" width="1120" height="52" rx="8" filter="url(#elevated)" fill="#FFF"/>
+  <rect x="40" y="24" width="4" height="52" rx="2" fill="#2D6BE4"/>
+  <text x="60" y="56" font-size="22" font-weight="bold" fill="#1A1B2E">42-Custom Mini-Map Controls</text>
+
+  <rect x="40" y="100" width="1120" height="120" rx="14" filter="url(#elevated)" fill="#FFF"/>
+  <rect x="40" y="100" width="4" height="32" rx="2" fill="#2D6BE4"/>
+  <text x="60" y="122" font-size="18" font-weight="bold" fill="#2D6BE4">I. Features of the Custom Mini-Map</text>
+  <text x="60" y="152" font-size="14" fill="#4A4B65">The custom mini-map allows Craftspeople to upload custom map images based on gameplay requirements, and switch the mini-map displayed to each player via nodes.</text>
+  <text x="60" y="176" font-size="14" fill="#4A4B65">The correspondence between the map image and the actual stage scene (size, orientation, and position) can be fully customized.</text>
+  <text x="60" y="200" font-size="14" fill="#4A4B65">The custom mini-map supports displaying all markers defined in the Mini-Map Marker component.</text>
+
+  <rect x="40" y="244" width="1120" height="260" rx="14" filter="url(#elevated)" fill="#FFF"/>
+  <rect x="40" y="244" width="4" height="32" rx="2" fill="#2D6BE4"/>
+  <text x="60" y="266" font-size="18" font-weight="bold" fill="#2D6BE4">II. Custom Mini-Map Management</text>
+  <text x="60" y="298" font-size="14" fill="#4A4B65">Open the mini-map editing panel via UI Control Group Management, then Intrinsic Content, then Mini-Map.</text>
+
+  <text x="60" y="332" font-size="14" font-weight="bold" fill="#1A1B2E">Initial Visibility</text>
+  <text x="60" y="356" font-size="14" fill="#4A4B65">Determines whether the player using the current UI layout will see the mini-map.</text>
+
+  <text x="60" y="390" font-size="14" font-weight="bold" fill="#1A1B2E">Show Own View Range</text>
+  <text x="60" y="414" font-size="14" fill="#4A4B65">Determines whether the distance value displayed above the mini-map is shown.</text>
+
+  <text x="60" y="448" font-size="14" font-weight="bold" fill="#1A1B2E">Initially Active Map</text>
+  <text x="60" y="472" font-size="14" fill="#4A4B65">Selects the default active mini-map for the player. Note: switching a player's UI layout does not switch their active mini-map.</text>
+
+  <rect x="40" y="528" width="1120" height="520" rx="14" filter="url(#elevated)" fill="#FFF"/>
+  <rect x="40" y="528" width="4" height="32" rx="2" fill="#2D6BE4"/>
+  <text x="60" y="550" font-size="18" font-weight="bold" fill="#2D6BE4">III. Custom Mini-Map Editing</text>
+
+  <text x="60" y="584" font-size="14" font-weight="bold" fill="#1A1B2E">1. Adding a Custom Mini-Map</text>
+  <text x="60" y="608" font-size="14" fill="#4A4B65">Open the custom map editing panel via Edit Map, then click the + button to create a new custom map.</text>
+
+  <text x="60" y="642" font-size="14" font-weight="bold" fill="#1A1B2E">2. Uploading a Custom Image</text>
+  <text x="60" y="666" font-size="14" fill="#4A4B65">Click Select Map Image to open the Map Image Asset Manager, where players can upload and select the image they wish to use.</text>
+
+  <text x="60" y="700" font-size="14" font-weight="bold" fill="#1A1B2E">3. Mapping the Custom Image to the Stage Scene</text>
+  <text x="76" y="730" font-size="14" fill="#4A4B65">Origin Setup: enter origin point coordinates in the image, then align them with the corresponding preset point in the scene. This fixes the image's position.</text>
+  <text x="76" y="760" font-size="14" fill="#4A4B65">Direction Point Setup: enter direction point coordinates in the image, then align with the corresponding preset point. This determines the mapping direction.</text>
+  <text x="76" y="790" font-size="14" fill="#4A4B65">After configuring both, the anchor and rotation mapping is established. Only the scene's XZ axes map to the image's XY plane; the Y axis is ignored.</text>
+  <text x="76" y="820" font-size="14" fill="#4A4B65">10 Pixels Corresponds to Scene Distance (m): determines the scale ratio between image and scene.</text>
+
+  <text x="60" y="858" font-size="14" font-weight="bold" fill="#1A1B2E">4. Map Display Configuration</text>
+  <text x="60" y="882" font-size="14" fill="#4A4B65">Mini-Map Scale: determines the default zoom multiplier for the mini-map in the UI layout.</text>
+  <text x="60" y="906" font-size="14" fill="#4A4B65">Full Map Zoom Configuration: affects the adjustable zoom range for the full-screen M-key map. Minimum 0.1, maximum 2, adjustment granularity 0.1. Preview using the scale preview.</text>
+
+  <text x="60" y="942" font-size="14" font-weight="bold" fill="#1A1B2E">5. Switching the Custom Mini-Map</text>
+  <text x="60" y="966" font-size="14" fill="#4A4B65">Server Node: Switch Custom Map: switches the mini-map displayed in the target player's UI layout.</text>
+  <text x="60" y="990" font-size="14" fill="#4A4B65">Show Map: if true, the map is shown; if false, the map is hidden (same effect as having no map configuration).</text>
+
+  <text x="600" y="1136" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
+  <text x="40" y="1158" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mhls9miyjwjg"><text x="40" y="1178" font-size="12" fill="#2D6BE4" text-decoration="underline">Custom Mini-Map Controls</text></a>
+</svg>

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3400" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">64-UI Control Group Library</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition of UI Control Groups</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="32" font-size="14" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">UI Control Groups are custom data for UI controls created by Craftspeople.</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">A UI Control Group is data saved after combining and editing parameters for</text>
+    <text x="20" y="96" font-size="13" fill="#4A4B65">single or multiple prefab UI Controls.</text>
+    <text x="20" y="126" font-size="13" fill="#4A4B65">UI Control Groups include two types:</text>
+    <text x="30" y="150" font-size="13" fill="#4A4B65">- Individual UI Controls (single prefab controls)</text>
+    <text x="30" y="174" font-size="13" fill="#4A4B65">- Combined UI Controls (multiple controls grouped together)</text>
+  </g>
+
+  <circle cx="80" cy="400" r="16" fill="#2D6BE4"/>
+  <text x="80" y="401" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="401" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creating Reusable UI Groups</text>
+
+  <g transform="translate(60, 428)">
+    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">Group Templates</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">UI Control Group templates can be directly referenced in Interface Layout</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">configurations or managed through Node Graphs.</text>
+    <text x="20" y="100" font-size="13" fill="#4A4B65">Templates allow creators to define reusable UI components with consistent styling</text>
+    <text x="20" y="120" font-size="13" fill="#4A4B65">and behavior that can be instantiated across multiple layouts.</text>
+
+    <text x="20" y="154" font-size="14" font-weight="bold" fill="#1A1B2E">Parameter Exposure</text>
+    <text x="20" y="180" font-size="13" fill="#4A4B65">Templates can expose parameters (e.g. visibility, position, text content) that</text>
+    <text x="20" y="200" font-size="13" fill="#4A4B65">are configurable at each instance site, enabling flexible reuse.</text>
+  </g>
+
+  <circle cx="80" cy="684" r="16" fill="#2D6BE4"/>
+  <text x="80" y="685" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="685" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing UI Control Groups</text>
+
+  <g transform="translate(60, 712)">
+    <rect width="1080" height="800" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="15" font-weight="bold" fill="#1A1B2E">1. Naming and ID</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">In the UI Control Library Management Tool, each UI Control Group has its own ID,</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">which serves as an input parameter for the Node Graph.</text>
+    <text x="20" y="96" font-size="13" fill="#4A4B65">UI Control template combinations and combined controls each have their own identifying ID.</text>
+
+    <text x="20" y="136" font-size="15" font-weight="bold" fill="#1A1B2E">2. UI Control Group Statuses</text>
+
+    <text x="36" y="170" font-size="14" font-weight="bold" fill="#1A1B2E">Status: Active / Inactive</text>
+    <text x="36" y="196" font-size="13" fill="#1A1B2E" font-weight="bold">Active</text>
+    <text x="100" y="196" font-size="13" fill="#4A4B65">Exists in the Interface Layout, display state managed via node graph</text>
+    <text x="36" y="220" font-size="13" fill="#1A1B2E" font-weight="bold">Inactive</text>
+    <text x="110" y="220" font-size="13" fill="#4A4B65">Does not exist in the Interface Layout; display state cannot be manipulated</text>
+
+    <text x="36" y="260" font-size="14" font-weight="bold" fill="#1A1B2E">Display States (for activated groups)</text>
+    <text x="36" y="286" font-size="13" fill="#1A1B2E" font-weight="bold">Enabled</text>
+    <text x="110" y="286" font-size="13" fill="#4A4B65">Visibility turned on. From Hidden &rarr; Enabled: visibility turned on.</text>
+    <text x="140" y="306" font-size="13" fill="#4A4B65">From Disabled &rarr; Enabled: group reinitialized and visibility enabled</text>
+    <text x="36" y="334" font-size="13" fill="#1A1B2E" font-weight="bold">Disabled</text>
+    <text x="110" y="334" font-size="13" fill="#4A4B65">Visibility turned off; dynamically modified info not saved</text>
+    <text x="140" y="354" font-size="13" fill="#4A4B65">After reopening: display and data are reinitialized</text>
+    <text x="36" y="382" font-size="13" fill="#1A1B2E" font-weight="bold">Hidden</text>
+    <text x="110" y="382" font-size="13" fill="#4A4B65">Visibility turned off; dynamically modified info preserved</text>
+    <text x="140" y="402" font-size="13" fill="#4A4B65">After reopening: display and data remain consistent with pre-hide state</text>
+  </g>
+
+  <circle cx="80" cy="1548" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1549" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1549" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. UI Control Group Management</text>
+
+  <g transform="translate(60, 1576)">
+    <rect width="1080" height="560" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="20" y="30" font-size="15" font-weight="bold" fill="#1A1B2E">1. Reference by Interface Layout</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">UI Control Group templates referenced in the Interface Layout are activated</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">by default along with the layout. Their statuses cannot be modified —</text>
+    <text x="20" y="96" font-size="13" fill="#4A4B65">only their display state can be adjusted.</text>
+
+    <text x="20" y="136" font-size="15" font-weight="bold" fill="#1A1B2E">2. Manage with Node Graphs</text>
+    <text x="30" y="164" font-size="13" fill="#1A1B2E" font-weight="bold">Activate UI Control Group</text>
+    <text x="200" y="164" font-size="13" fill="#4A4B65">Creates group in player's current Interface Layout</text>
+    <text x="30" y="192" font-size="13" fill="#1A1B2E" font-weight="bold">Remove UI Control Group</text>
+    <text x="200" y="192" font-size="13" fill="#4A4B65">Removes group created by activation node</text>
+    <text x="30" y="220" font-size="13" fill="#1A1B2E" font-weight="bold">Modify UI Control Status</text>
+    <text x="200" y="220" font-size="13" fill="#4A4B65">Adjusts display state of activated groups</text>
+    <text x="30" y="248" font-size="13" fill="#1A1B2E" font-weight="bold">When UI Control Group Is Triggered</text>
+    <text x="220" y="248" font-size="13" fill="#4A4B65">Event sent when buttons/items are triggered</text>
+  </g>
+
+  <circle cx="80" cy="2172" r="16" fill="#2D6BE4"/>
+  <text x="80" y="2173" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="2173" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Management Interface</text>
+
+  <g transform="translate(60, 2200)">
+    <rect width="1080" height="320" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="30" font-size="14" font-weight="bold" fill="#1A1B2E">UI Control Groups Management Interface</text>
+    <text x="20" y="56" font-size="13" fill="#4A4B65">Provides unified management of Interface Layouts and UI Control Groups.</text>
+    <text x="20" y="76" font-size="13" fill="#4A4B65">Access via System menu &gt; [Manage UI Control Groups].</text>
+
+    <text x="20" y="110" font-size="14" font-weight="bold" fill="#1A1B2E">Interface Sections</text>
+    <text x="30" y="136" font-size="13" fill="#4A4B65">- Menu Bar</text>
+    <text x="30" y="160" font-size="13" fill="#4A4B65">- Library Window</text>
+    <text x="30" y="184" font-size="13" fill="#4A4B65">- Details Window</text>
+    <text x="30" y="208" font-size="13" fill="#4A4B65">- Preview Window</text>
+    <text x="30" y="232" font-size="13" fill="#4A4B65">- Editing Button Area</text>
+    <text x="30" y="256" font-size="13" fill="#4A4B65">- Parameter Configuration Window</text>
+  </g>
+
+  <g transform="translate(60, 2548)">
+    <rect width="1080" height="120" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="120" rx="2" fill="#2D6BE4"/>
+    <text x="24" y="28" font-size="13" font-weight="bold" fill="#1A1B2E">Interface Layout Details</text>
+    <text x="24" y="52" font-size="13" fill="#4A4B65">Inherent Content: Essential UI Control Groups, cannot be removed.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Custom: User-added controls, position and size adjustable.</text>
+    <text x="24" y="96" font-size="13" fill="#4A4B65">Layout Preview Window: View layout changes in real-time.</text>
+  </g>
+
+  <g transform="translate(60, 2696)">
+    <rect width="1080" height="50" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
+  </g>
+  <a href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh280b9i9gxm">
+    <text x="80" y="2776" font-size="12" fill="#2D6BE4" text-decoration="underline">UI Control Group</text>
+  </a>
+  <a href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjoklrktzdq">
+    <text x="80" y="2796" font-size="12" fill="#2D6BE4" text-decoration="underline">UI Control Groups Management</text>
+  </a>
+
+  <text x="600" y="2850" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1400" width="1200" height="1400">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card" xmlns="http://www.w3.org/2000/svg">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+
+<rect width="1200" height="1400" fill="#F9F7F2"/>
+
+<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+
+<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
+<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Floating Interaction Page Controls</text>
+<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Advanced UI page with tabs, single-choice windows, containers, and complex interaction flows</text>
+
+<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+
+<rect x="40" y="190" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The Floating Interaction Page provides advanced configuration options for complex UI interfaces:</text>
+<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Tabs</tspan> — Horizontal or vertical tab navigation with preset and custom styles</text>
+<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Single-Choice Windows</tspan> — List-based selection with custom styles and scroll directions</text>
+<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Page Containers</tspan> — Organize UI controls into pages, control initial visibility per container</text>
+<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Preset Backgrounds</tspan> — Choose preset backgrounds or use default styling</text>
+<text x="72" y="344" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Formal Variables</tspan> — Configure variable mapping for data binding across containers</text>
+
+<text x="72" y="400" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Page Layout &amp; Containers</text>
+
+<rect x="40" y="420" width="1120" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+<rect x="72" y="442" width="360" height="160" rx="10" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
+<rect x="72" y="442" width="360" height="32" rx="10" fill="#2D6BE4"/>
+<text x="252" y="462" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Floating Interaction Page</text>
+
+<rect x="84" y="486" width="160" height="100" rx="8" fill="#FFFFFF" stroke="#C0D0E8" stroke-width="1"/>
+<text x="164" y="510" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#2D6BE4" text-anchor="middle">Container A</text>
+<line x1="90" y1="520" x2="238" y2="520" stroke="#E0E0E0" stroke-width="1"/>
+<text x="164" y="540" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Buttons</text>
+<text x="164" y="556" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Switches</text>
+<text x="164" y="572" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Text</text>
+
+<rect x="256" y="486" width="160" height="100" rx="8" fill="#FFFFFF" stroke="#C0D0E8" stroke-width="1"/>
+<text x="336" y="510" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#2D6BE4" text-anchor="middle">Container B</text>
+<line x1="262" y1="520" x2="410" y2="520" stroke="#E0E0E0" stroke-width="1"/>
+<text x="336" y="540" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Lists</text>
+<text x="336" y="556" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Tabs</text>
+<text x="336" y="572" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Choices</text>
+
+<text x="500" y="465" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Page Container</text>
+<text x="500" y="485" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">A container organizes the information structure of UI</text>
+<text x="500" y="505" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">controls within a Floating Interaction Page.</text>
+
+<text x="500" y="535" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Initially Effective</text>
+<text x="500" y="555" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Determines which containers are visible when the</text>
+<text x="500" y="575" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">page is first opened.</text>
+
+<text x="72" y="660" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Interaction Components</text>
+
+<rect x="40" y="680" width="1120" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<text x="72" y="712" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Close Button</text>
+<text x="72" y="732" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Included by default. Cannot be removed from the Inherent Container. Closes via Esc key, controller button, or Node Graph.</text>
+<text x="72" y="762" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Tab Items</text>
+<text x="72" y="782" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Preconfigured tab items with name, ID, style selection, formal variable config, and container/control status settings.</text>
+<text x="72" y="812" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Single-Choice List Items</text>
+<text x="72" y="832" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Similar to tab items. Supports scroll direction, list item size, spacing, padding, and layout constraints.</text>
+
+<rect x="40" y="878" width="1120" height="50" rx="14" fill="#E8EEFB"/>
+<rect x="40" y="878" width="4" height="50" rx="2" fill="#2D6BE4"/>
+<text x="72" y="908" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Floating Interaction Pages support controller navigation with configurable hint styles, direction targets, and offsets.</text>
+
+<text x="72" y="970" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+
+<rect x="40" y="990" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<text x="72" y="1022" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Show / Close Floating Interaction Page</text>
+<text x="72" y="1042" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Trigger page visibility through dedicated Node Graph nodes.</text>
+<text x="72" y="1072" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Update List Data</text>
+<text x="72" y="1092" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Dynamically update tab and list item data through Node Graph during runtime.</text>
+<text x="72" y="1122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">When Floating Interaction Page is Triggered</text>
+<text x="72" y="1142" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Server Node Graph Event fires when tabs or single-choice windows are opened or closed.</text>
+
+<text x="72" y="1230" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
+<text x="72" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls</text>
+<text x="310" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk</text>
+
+<line x1="40" y1="1290" x2="1160" y2="1290" stroke="#E0E0E0" stroke-width="1"/>
+<text x="600" y="1320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

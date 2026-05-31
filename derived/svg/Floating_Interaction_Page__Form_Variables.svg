@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1720" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1720" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">69-Floating Interaction Page Form Variables</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Formal Variable Management</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="16" y="36" font-size="14" fill="#4A4B65">Each Floating Interaction Page supports configuring a set of formal variables. These variables</text>
+    <text x="16" y="60" font-size="14" fill="#4A4B65">act as configurable parameters that can be referenced by assets within the page. If a</text>
+    <text x="16" y="84" font-size="14" fill="#4A4B65">corresponding formal variable is referenced in the Asset Library, the value configured in</text>
+    <text x="16" y="108" font-size="14" fill="#4A4B65">the current Floating Interaction Page will be used.</text>
+
+    <rect x="16" y="130" width="1048" height="36" rx="10" fill="#E8EEFB"/>
+    <rect x="16" y="130" width="4" height="36" rx="2" fill="#2D6BE4"/>
+    <text x="30" y="154" font-size="13" fill="#4A4B65">For formal variable mapping, ensure that the data types match between the variable definition and its usage.</text>
+  </g>
+
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Variable Binding &amp; Configuration</text>
+
+  <g transform="translate(60, 408)">
+    <rect width="520" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Tab Items</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Formal Variable Configuration</text>
+    <text x="16" y="84" font-size="14" fill="#4A4B65">Link formal variables to specified data</text>
+    <text x="16" y="104" font-size="14" fill="#4A4B65">or Player Custom Variables. If any</text>
+    <text x="16" y="124" font-size="14" fill="#4A4B65">assets in a tab item reference formal</text>
+    <text x="16" y="144" font-size="14" fill="#4A4B65">variables, they will use the real-time</text>
+    <text x="16" y="164" font-size="14" fill="#4A4B65">data of the corresponding configured</text>
+    <text x="16" y="184" font-size="14" fill="#4A4B65">custom variables.</text>
+
+    <rect x="16" y="208" width="488" height="42" rx="10" fill="#E8EEFB"/>
+    <rect x="16" y="208" width="4" height="42" rx="2" fill="#2D6BE4"/>
+    <text x="30" y="228" font-size="13" font-weight="bold" fill="#2D6BE4">Variable Types</text>
+    <text x="30" y="246" font-size="11" fill="#4A4B65">Text, Number, Boolean — type must match between source and target</text>
+  </g>
+
+  <g transform="translate(620, 408)">
+    <rect width="520" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="140" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="86" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Single-Choice Items</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Formal Variable Configuration</text>
+    <text x="16" y="84" font-size="14" fill="#4A4B65">Link formal variables to specified data</text>
+    <text x="16" y="104" font-size="14" fill="#4A4B65">or Player Custom Variables. Assets</text>
+    <text x="16" y="124" font-size="14" fill="#4A4B65">referencing formal variables will use</text>
+    <text x="16" y="144" font-size="14" fill="#4A4B65">the real-time data of the linked</text>
+    <text x="16" y="164" font-size="14" fill="#4A4B65">custom variables.</text>
+
+    <rect x="16" y="208" width="488" height="60" rx="10" fill="#E8EEFB"/>
+    <rect x="16" y="208" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="30" y="228" font-size="13" font-weight="bold" fill="#2D6BE4">Data Type Matching</text>
+    <text x="30" y="248" font-size="11" fill="#4A4B65">When configuring formal variable mapping, the data type of the</text>
+    <text x="30" y="264" font-size="11" fill="#4A4B65">formal variable must match the type of the linked custom variable</text>
+  </g>
+
+  <circle cx="80" cy="774" r="16" fill="#2D6BE4"/>
+  <text x="80" y="775" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="775" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Asset Library Integration</text>
+
+  <g transform="translate(60, 802)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="16" y="36" font-size="14" font-weight="bold" fill="#1A1B2E">Text Box Variable Insertion</text>
+    <text x="16" y="64" font-size="14" fill="#4A4B65">The Insert Variable feature of the Text Box in the Asset Library supports configuring both</text>
+    <text x="16" y="88" font-size="14" fill="#4A4B65">basic player custom variables and formal variables declared in the Floating Interaction Page.</text>
+
+    <text x="16" y="120" font-size="14" fill="#4A4B65">If formal variables are configured, their values will be assigned based on the custom variables</text>
+    <text x="16" y="144" font-size="14" fill="#4A4B65">linked at the actual reference point in each Floating Interaction Page, so they do not need</text>
+    <text x="16" y="168" font-size="14" fill="#4A4B65">to be configured repeatedly across different pages.</text>
+  </g>
+
+  <circle cx="80" cy="1018" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1019" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1019" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Variable Types &amp; Node Graph Retrieval</text>
+
+  <g transform="translate(60, 1046)">
+    <rect width="520" height="310" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Types</text>
+
+    <rect x="0" y="52" width="520" height="30" fill="#F9F7F2"/>
+    <text x="16" y="72" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Boolean</text>
+    <text x="170" y="72" font-size="13" fill="#4A4B65" dominant-baseline="middle">true/false values (used by Custom Switches)</text>
+
+    <rect x="0" y="82" width="520" height="30" fill="#FFFFFF"/>
+    <text x="16" y="102" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Text / String</text>
+    <text x="170" y="102" font-size="13" fill="#4A4B65" dominant-baseline="middle">Text content for display or data storage</text>
+
+    <rect x="0" y="112" width="520" height="30" fill="#F9F7F2"/>
+    <text x="16" y="132" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Number</text>
+    <text x="170" y="132" font-size="13" fill="#4A4B65" dominant-baseline="middle">Numeric values (integer / float)</text>
+
+    <rect x="0" y="142" width="520" height="30" fill="#FFFFFF"/>
+    <text x="16" y="162" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Container / List</text>
+    <text x="170" y="162" font-size="13" fill="#4A4B65" dominant-baseline="middle">List, Dictionary, and Structure data types</text>
+
+    <text x="16" y="200" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Variable Nodes</text>
+    <text x="16" y="224" font-size="14" fill="#4A4B65">Use Get Custom Variable and Set Custom</text>
+    <text x="16" y="244" font-size="14" fill="#4A4B65">Variable nodes to read and write formal</text>
+    <text x="16" y="264" font-size="14" fill="#4A4B65">variables linked to Player Custom Variables.</text>
+    <text x="16" y="284" font-size="14" fill="#4A4B65">Variable values update in real-time.</text>
+  </g>
+
+  <g transform="translate(620, 1046)">
+    <rect width="520" height="310" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Related Controls</text>
+
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Custom Switch Controls</text>
+    <text x="16" y="84" font-size="14" fill="#4A4B65">Custom Switches can be toggled on and off</text>
+    <text x="16" y="104" font-size="14" fill="#4A4B65">either by clicking them or through their</text>
+    <text x="16" y="124" font-size="14" fill="#4A4B65">mapped custom variables, triggering different</text>
+    <text x="16" y="144" font-size="14" fill="#4A4B65">functional logic. Supports configuring a</text>
+    <text x="16" y="164" font-size="14" fill="#4A4B65">mapped Player Boolean Custom Variable.</text>
+
+    <text x="16" y="196" font-size="14" font-weight="bold" fill="#1A1B2E">Special Number Controls</text>
+    <text x="16" y="220" font-size="14" fill="#4A4B65">Special number displays for numeric values</text>
+    <text x="16" y="240" font-size="14" fill="#4A4B65">linked to custom variables, with rich visual</text>
+    <text x="16" y="260" font-size="14" fill="#4A4B65">presentation in the Floating Interaction Page.</text>
+
+    <rect x="16" y="280" width="488" height="18" rx="6" fill="#E8EEFB"/>
+    <rect x="16" y="280" width="4" height="18" rx="2" fill="#2D6BE4"/>
+    <text x="28" y="294" font-size="11" fill="#4A4B65">Both are supported as UI Control Templates</text>
+  </g>
+
+  <text x="60" y="1408" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk" target="_blank">
+    <text x="60" y="1434" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684" target="_blank">
+    <text x="60" y="1460" font-size="13" fill="#2D6BE4" text-decoration="underline">UI Controls</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhy48t9sr3ka" target="_blank">
+    <text x="60" y="1486" font-size="13" fill="#2D6BE4" text-decoration="underline">Custom Switch Controls</text>
+  </a>
+
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhso1b9wjica" target="_blank">
+    <text x="60" y="1512" font-size="13" fill="#2D6BE4" text-decoration="underline">Custom Variables</text>
+  </a>
+
+  <text x="600" y="1580" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
+</svg>

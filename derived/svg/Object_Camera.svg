@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1800" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1800" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">36-Object Camera</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Functions of Object Camera</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="110" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Lets you mount additional cameras to dynamic objects/creations and switch between cameras</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">while the stage is running for better visual presentation.</text>
+    <text x="20" y="100" font-size="13" fill="#4A4B65">Object Cameras are managed through the Manage Main Camera interface, using Object Camera Templates.</text>
+  </g>
+
+  <circle cx="80" cy="310" r="16" fill="#2D6BE4"/>
+  <text x="80" y="311" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="311" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Object Camera Components</text>
+
+  <g transform="translate(60, 338)">
+    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Adding Components</text>
+    <text x="20" y="62" font-size="13" fill="#4A4B65">1. In the Entity/Prefab Editing interface, open the Component Editing Tab</text>
+    <text x="20" y="86" font-size="13" fill="#4A4B65">2. Click "Add Common Component", select "Object Camera"</text>
+    <text x="20" y="110" font-size="13" fill="#4A4B65">3. Click "Edit Details" to expand the editing tab</text>
+
+    <text x="20" y="144" font-size="15" font-weight="bold" fill="#1A1B2E">Editing the Component</text>
+    <text x="20" y="170" font-size="13" fill="#4A4B65">• Click "+ New Object Camera" to create a new camera reference</text>
+    <text x="20" y="192" font-size="13" fill="#4A4B65">• Use "Select Camera" to choose a preconfigured Object Camera Template</text>
+    <text x="20" y="214" font-size="13" fill="#4A4B65">• Use [Manage Cameras] to open Main Camera Management for template editing</text>
+    <text x="20" y="236" font-size="13" fill="#4A4B65">• Select a camera and use [Enter Preview Mode] to preview it</text>
+  </g>
+
+  <circle cx="80" cy="714" r="16" fill="#2D6BE4"/>
+  <text x="80" y="715" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="715" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Object Camera Parameters</text>
+
+  <g transform="translate(60, 742)">
+    <rect width="520" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="90" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="61" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Template</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Camera Template Parameters</text>
+    <text x="16" y="84" font-size="13" fill="#4A4B65">Configured in the Main Camera Management editor.</text>
+    <text x="16" y="108" font-size="13" fill="#4A4B65">Mode: Currently only Third-Person Camera supported</text>
+    <text x="16" y="132" font-size="13" fill="#4A4B65">for Object Cameras.</text>
+    <text x="16" y="160" font-size="13" fill="#4A4B65">Movement Mode: Follow Object/Creation only</text>
+    <text x="16" y="186" font-size="14" font-weight="bold" fill="#1A1B2E">Advanced Settings</text>
+    <text x="16" y="210" font-size="13" fill="#4A4B65">Automatic Camera Correction: enabled/disabled</text>
+    <text x="16" y="232" font-size="13" fill="#4A4B65">Correction Speed ranges: [0, 360]</text>
+    <text x="16" y="254" font-size="13" fill="#4A4B65">Correction Reference ranges: [0, 180]</text>
+  </g>
+
+  <g transform="translate(620, 742)">
+    <rect width="520" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Component Params</text>
+    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Object Camera Component Parameters</text>
+    <text x="16" y="84" font-size="13" fill="#4A4B65">Position: Relative offset from the object/creation</text>
+    <text x="16" y="108" font-size="13" fill="#4A4B65">Rotation: Rotation relative to the object/creation</text>
+    <text x="16" y="132" font-size="13" fill="#4A4B65">FOV: Field of view for this camera</text>
+    <text x="16" y="160" font-size="13" fill="#4A4B65">Select Camera: Choose a preconfigured Object Camera</text>
+    <text x="16" y="180" font-size="13" fill="#4A4B65">Template from the Main Camera Management system</text>
+    <text x="16" y="208" font-size="13" fill="#4A4B65">Preview Mode: Enter to preview the camera view</text>
+    <text x="16" y="234" font-size="13" fill="#4A4B65">before the stage runs</text>
+  </g>
+
+  <circle cx="80" cy="1058" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1059" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1059" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Managing via Node Graph</text>
+
+  <g transform="translate(60, 1086)">
+    <rect width="1080" height="170" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Switching Object Cameras</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">During stage runtime, use Node Graphs to switch to the corresponding object camera.</text>
+    <text x="20" y="80" font-size="13" fill="#1A1B2E" font-weight="bold">Important:</text>
+    <text x="20" y="102" font-size="13" fill="#4A4B65">When switching object cameras, ensure the object/entity the target camera is attached</text>
+    <text x="20" y="122" font-size="13" fill="#4A4B65">to is present in the scene; otherwise the switch will fail.</text>
+  </g>
+
+  <g transform="translate(60, 1276)">
+    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Object Camera Workflow</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Create Object Camera Template in Main Camera Editor → Add Object Camera component to dynamic</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">entity → Select Template → At runtime: switch cameras via Node Graph</text>
+  </g>
+
+  <text x="60" y="1416" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6xax0e8pkw" target="_blank">
+    <text x="60" y="1442" font-size="13" fill="#2D6BE4" text-decoration="underline">Object Camera → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6xax0e8pkw</text>
+  </a>
+  <text x="600" y="1476" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

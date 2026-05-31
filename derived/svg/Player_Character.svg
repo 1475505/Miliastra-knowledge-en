@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1540">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
+
+<rect width="1200" height="1540" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
+
+<rect x="100" y="24" width="1000" height="70" rx="14" fill="#FFF" filter="url(#elevated)"/>
+<rect x="100" y="24" width="4" height="70" fill="#2D6BE4" rx="2"/>
+<text x="120" y="58" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="24" font-weight="bold" fill="#1A1B2E">Player &amp; Character</text>
+<text x="120" y="76" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#8B8DA0">Player entity configuration and character entity management in Miliastra</text>
+
+<text x="100" y="122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. Player</text>
+
+<rect x="100" y="140" width="1000" height="85" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="164" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Entity</text>
+<text x="120" y="184" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Player is a special abstract entity type used to describe the "Character Ownership Concept" in the game.</text>
+<text x="120" y="204" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In Teyvat mode, multiple characters can be added to the player's team. In Beyond Mode, each player corresponds to only one character.</text>
+
+<rect x="100" y="245" width="1000" height="50" rx="8" fill="#E8EEFB"/>
+<rect x="100" y="245" width="4" height="50" fill="#2D6BE4" rx="2"/>
+<text x="118" y="262" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="bold" fill="#1A1B2E">Multiplayer Support</text>
+<text x="118" y="280" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Player templates support configuration of effective targets, spawn points, and revive rules for multiplayer gameplay.</text>
+
+<rect x="100" y="315" width="1000" height="170" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="339" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Basic Information</text>
+<text x="120" y="363" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Effective Target:</tspan> Determines which players this template applies to</text>
+<text x="120" y="383" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Level:</tspan> Override the initial level of the class</text>
+<text x="120" y="403" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Spawn Point:</tspan> List of available spawn points for players</text>
+<text x="120" y="423" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initial Class:</tspan> The initial class for this player template</text>
+<text x="120" y="443" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Revive:</tspan> The revival rules that apply to the player</text>
+<text x="120" y="463" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Special Knockdown Damage:</tspan> HP percentage deducted from drowning or falling damage</text>
+
+<rect x="100" y="505" width="1000" height="95" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="529" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Components</text>
+<text x="120" y="553" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Available components that can be attached to the player entity include:</text>
+<text x="120" y="573" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Custom Variables</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Global Timer</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Unit Status</tspan></text>
+
+<rect x="100" y="620" width="1000" height="65" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="644" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Node Graph</text>
+<text x="120" y="668" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Node graphs attached to the player entity handle player-level logic and event processing.</text>
+
+<rect x="100" y="705" width="1000" height="130" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="729" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Characteristics</text>
+<text x="120" y="753" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Non-Physical Entity:</tspan> The player entity is a pure logical entity without a physical presence.</text>
+<text x="120" y="773" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">No Placement Information:</tspan> Player entities are not directly placed in the scene.</text>
+<text x="120" y="793" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Life Cycle:</tspan> Created during stage initialization and removed when the stage is destroyed.</text>
+<text x="120" y="813" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">When the user actively exits and returns to the lobby, the player entity will be removed.</text>
+
+<text x="100" y="880" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Character</text>
+
+<rect x="100" y="898" width="1000" height="70" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="922" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Entity</text>
+<text x="120" y="942" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Character entities are actual units that players control during gameplay, including walking, running, climbing, and flying units with physical presence.</text>
+
+<rect x="100" y="988" width="1000" height="165" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="1012" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Template Configuration</text>
+<text x="120" y="1036" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In Beyond Mode, the character template exists as part of the player template, accessible under the character editing tab.</text>
+<text x="120" y="1060" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Tab Overview:</text>
+<text x="140" y="1080" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Basic Information Tab:</tspan> Sound effect-related information</text>
+<text x="140" y="1100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Specialized Configuration Tab:</tspan> Combat-related parameters</text>
+<text x="140" y="1120" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Components Tab:</tspan> Add or view components on character entities</text>
+<text x="140" y="1140" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Node Graph Tab:</tspan> Add or view node graphs on character entities</text>
+
+<rect x="100" y="1173" width="1000" height="130" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="1197" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Available Character Components</text>
+<text x="120" y="1221" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Collision Trigger | Custom Variables | Global Timer | Unit Status | VFX Playing</text>
+<text x="120" y="1241" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Custom Attachment Points | Collision Trigger Source | Sound Effect Player | Inventory</text>
+<text x="120" y="1261" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Loots | Nameplate | Text Bubble | Scan Tag | Mini-Map Marker</text>
+<text x="120" y="1285" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Additionally, there are <tspan font-weight="bold" fill="#1A1B2E">equipment slot components</tspan> that can only be added to characters.</text>
+
+<rect x="100" y="1323" width="1000" height="115" rx="14" fill="#FFF" filter="url(#card)"/>
+<text x="120" y="1347" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Runtime Characteristics</text>
+<text x="120" y="1371" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Dynamic Initialization:</tspan> Characters are dynamically initialized from template configs during gameplay; no GUID is assigned.</text>
+<text x="120" y="1391" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">HP=0 Events:</tspan> The character entity receives both Entity Destroyed and Entity Removed/Destroyed events.</text>
+<text x="120" y="1411" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Co-Op Mode:</tspan> If a player actively returns to the lobby, the stage receives the character's removal event.</text>
+
+<text x="100" y="1476" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq6byic6xlo" target="_blank"><text x="100" y="1496" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Player</text></a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh7pxrmalzy" target="_blank"><text x="100" y="1516" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Character</text></a>
+
+<text x="600" y="1530" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>

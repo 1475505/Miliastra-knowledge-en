@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 4200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="4200" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
+  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">52-Item Display: Item Icons, Name, Quantity, Rarity &amp; Data Binding</text>
+
+  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
+  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
+  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Item Display Functions</text>
+
+  <g transform="translate(60, 164)">
+    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Purpose</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Item Display controls show item icons, names, quantities, and rarity in the UI Layout. They</text>
+    <text x="20" y="74" font-size="13" fill="#4A4B65">support player interaction and can trigger Node Graph events.</text>
+    <text x="20" y="104" font-size="15" font-weight="bold" fill="#1A1B2E">Interaction</text>
+    <text x="20" y="130" font-size="13" fill="#4A4B65">When selecting "Player's Current Equipment" or "Template Item," a "When UI Control Group Is</text>
+    <text x="20" y="150" font-size="13" fill="#4A4B65">Triggered" event is sent to the node graph after interaction.</text>
+  </g>
+
+  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
+  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
+  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Item Display — Basic Settings</text>
+
+  <g transform="translate(60, 408)">
+    <rect width="1080" height="520" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Config</text>
+
+    <text x="20" y="62" font-size="14" font-weight="bold" fill="#1A1B2E">Interactable?</text>
+    <text x="20" y="86" font-size="13" fill="#4A4B65">When enabled, configures the interaction method for the item display.</text>
+
+    <text x="20" y="118" font-size="14" font-weight="bold" fill="#1A1B2E">Key Mapping</text>
+    <text x="20" y="144" font-size="13" fill="#1A1B2E" font-weight="bold">Keyboard &amp; Mouse</text>
+    <text x="140" y="144" font-size="13" fill="#4A4B65">PC key options for input interaction. Selected key shown in Edit window.</text>
+    <text x="20" y="168" font-size="13" fill="#1A1B2E" font-weight="bold">Gamepad</text>
+    <text x="85" y="168" font-size="13" fill="#4A4B65">Controller button options for input interaction.</text>
+
+    <text x="20" y="200" font-size="14" font-weight="bold" fill="#1A1B2E">Type</text>
+    <text x="20" y="226" font-size="13" fill="#4A4B65">Three types: Player's Current Equipment | Template Item | Items in Inventory</text>
+
+    <rect x="16" y="256" width="1048" height="60" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="256" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="278" font-size="12" fill="#4A4B65">Item Display controls can bind to item data, showing item icons, names, quantities, and</text>
+    <text x="32" y="298" font-size="12" fill="#4A4B65">rarity indicators. They support tooltip integration for detailed item information.</text>
+  </g>
+
+  <circle cx="80" cy="964" r="16" fill="#2D6BE4"/>
+  <text x="80" y="965" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
+  <text x="108" y="965" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Item Display Types — Detailed Configuration</text>
+
+  <g transform="translate(60, 992)">
+    <rect width="1080" height="860" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Player's Current Equipment</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Displays the equipment currently equipped by the player.</text>
+    <text x="20" y="78" font-size="13" fill="#1A1B2E" font-weight="bold">Equipment Config ID Variable</text>
+    <text x="180" y="78" font-size="13" fill="#4A4B65">Select variables from the player</text>
+    <text x="20" y="102" font-size="13" fill="#1A1B2E" font-weight="bold">Behavior When Unequipped</text>
+    <text x="170" y="102" font-size="13" fill="#4A4B65">Show empty slots or hide the control</text>
+    <text x="20" y="126" font-size="13" fill="#1A1B2E" font-weight="bold">Slot Cooldown (s)</text>
+    <text x="125" y="126" font-size="13" fill="#4A4B65">Select player, Players 1-8, or custom variable</text>
+    <text x="20" y="150" font-size="13" fill="#1A1B2E" font-weight="bold">Slot Usage Count</text>
+    <text x="135" y="150" font-size="13" fill="#4A4B65">Hide control when count is zero | Set usage count</text>
+    <text x="20" y="174" font-size="13" fill="#1A1B2E" font-weight="bold">Hide When No Usages Left</text>
+    <text x="170" y="174" font-size="13" fill="#4A4B65">Hides control when no uses remain</text>
+
+    <text x="20" y="208" font-size="14" font-weight="bold" fill="#1A1B2E">Template Item</text>
+    <text x="20" y="234" font-size="13" fill="#4A4B65">Displays a specific template item configured in the control.</text>
+    <text x="20" y="258" font-size="13" fill="#1A1B2E" font-weight="bold">Item Config ID Variable</text>
+    <text x="160" y="258" font-size="13" fill="#4A4B65">Select player, Players 1-8, or custom variable</text>
+    <text x="20" y="282" font-size="13" fill="#1A1B2E" font-weight="bold">Item Quantity Display</text>
+    <text x="150" y="282" font-size="13" fill="#4A4B65">Show current item quantity below the icon</text>
+    <text x="20" y="306" font-size="13" fill="#1A1B2E" font-weight="bold">Hide When Quantity Is Zero</text>
+    <text x="170" y="306" font-size="13" fill="#4A4B65">Hide control when item quantity is zero</text>
+    <text x="20" y="330" font-size="13" fill="#1A1B2E" font-weight="bold">Item Quantity Variable</text>
+    <text x="155" y="330" font-size="13" fill="#4A4B65">Select player, Players 1-8, or custom variable</text>
+    <text x="20" y="354" font-size="13" fill="#1A1B2E" font-weight="bold">Slot Cooldown (s)</text>
+    <text x="125" y="354" font-size="13" fill="#4A4B65">Select player, Players 1-8, or custom variable</text>
+
+    <text x="20" y="388" font-size="14" font-weight="bold" fill="#1A1B2E">Items in Inventory</text>
+    <text x="20" y="414" font-size="13" fill="#4A4B65">Displays items from the player's inventory.</text>
+    <text x="20" y="438" font-size="13" fill="#1A1B2E" font-weight="bold">Item Config ID Variable</text>
+    <text x="160" y="438" font-size="13" fill="#4A4B65">Select a custom variable from the player</text>
+    <text x="20" y="462" font-size="13" fill="#1A1B2E" font-weight="bold">Behavior When No Items</text>
+    <text x="160" y="462" font-size="13" fill="#4A4B65">Show empty slots or hide the control</text>
+
+    <rect x="16" y="496" width="1048" height="50" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="496" width="4" height="50" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="516" font-size="12" fill="#4A4B65">Item rarity is displayed through visual indicators (color borders, backgrounds, or icons)</text>
+    <text x="32" y="534" font-size="12" fill="#4A4B65">that match the item's configured rarity level in the item database.</text>
+  </g>
+
+  <circle cx="80" cy="1888" r="16" fill="#2D6BE4"/>
+  <text x="80" y="1889" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
+  <text x="108" y="1889" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Item Tooltip Integration</text>
+
+  <g transform="translate(60, 1916)">
+    <rect width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Tooltip Display</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Item Display controls can show detailed tooltips on hover or interaction, displaying:</text>
+
+    <rect x="20" y="76" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="140" y="98" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Item Name</text>
+
+    <rect x="275" y="76" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="395" y="98" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Item Description</text>
+
+    <rect x="530" y="76" width="240" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="650" y="98" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Rarity Indicator</text>
+
+    <rect x="785" y="76" width="275" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="922" y="98" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Item Stats / Effects</text>
+
+    <text x="20" y="152" font-size="14" font-weight="bold" fill="#1A1B2E">Data Binding</text>
+    <text x="20" y="178" font-size="13" fill="#4A4B65">Tooltip data is automatically populated from the item's configuration data, including name,</text>
+    <text x="20" y="198" font-size="13" fill="#4A4B65">description, rarity tier, stat values, and any custom metadata associated with the item.</text>
+  </g>
+
+  <circle cx="80" cy="2212" r="16" fill="#2D6BE4"/>
+  <text x="80" y="2213" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
+  <text x="108" y="2213" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Node Graph Update &amp; Event Handling</text>
+
+  <g transform="translate(60, 2240)">
+    <rect width="1080" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Integration</text>
+    <text x="20" y="54" font-size="13" fill="#4A4B65">Item Display controls can be updated and managed through Node Graph nodes.</text>
+
+    <text x="20" y="86" font-size="14" font-weight="bold" fill="#1A1B2E">Available Operations</text>
+    <rect x="20" y="106" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="185" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Update Item Display</text>
+
+    <rect x="365" y="106" width="330" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="530" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Get Item Display Data</text>
+
+    <rect x="710" y="106" width="350" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="885" y="128" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Set Item Quantity Display</text>
+
+    <text x="20" y="180" font-size="14" font-weight="bold" fill="#1A1B2E">Event: When UI Control Group Is Triggered</text>
+    <text x="20" y="206" font-size="13" fill="#4A4B65">When a player interacts with an Item Display control, this event fires. It is sent only to</text>
+    <text x="20" y="226" font-size="13" fill="#4A4B65">the node graph of the player who performed the interaction.</text>
+
+    <rect x="16" y="250" width="1048" height="38" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="250" width="4" height="38" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="274" font-size="12" fill="#4A4B65">Item Display controls can be dynamically updated through the Node Graph to reflect changes in item state, quantity, and equipment.</text>
+  </g>
+
+  <text x="60" y="2600" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k" target="_blank">
+    <text x="60" y="2626" font-size="13" fill="#2D6BE4" text-decoration="underline">Item Display UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume" target="_blank">
+    <text x="60" y="2652" font-size="13" fill="#2D6BE4" text-decoration="underline">Interactive Button UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnltrr3g966" target="_blank">
+    <text x="60" y="2678" font-size="13" fill="#2D6BE4" text-decoration="underline">Text Box UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnltrr3g966</text>
+  </a>
+
+  <text x="600" y="2714" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+</svg>
