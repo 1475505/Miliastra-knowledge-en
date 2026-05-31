@@ -14,7 +14,7 @@ export async function fetchSvgContent(name: string): Promise<string> {
   return r.text()
 }
 
-export async function fetchDocList(scope: 'guide' | 'tutorial'): Promise<DocEntry[]> {
+export async function fetchDocList(scope: 'guide' | 'tutorial' | 'translation'): Promise<DocEntry[]> {
   const r = await fetch(`${BASE}/api/docs/list/${scope}`)
   if (!r.ok) throw new Error('Failed to fetch doc list')
   return r.json()

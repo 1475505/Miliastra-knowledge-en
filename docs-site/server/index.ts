@@ -31,6 +31,38 @@ interface DocEntry {
   localPath: string
 }
 
+function parseFrontmatter(content: string): Record<string, string> {
+  const result: Record<string, string> = {}
+  const match = content.match(/^---\n([\s\S]*?)\n---/)
+  if (!match) return result
+  const lines = match[1].split('\n')
+  for (const line of lines) {
+    const sep = line.indexOf(': ')
+    if (sep === -1) continue
+    result[line.slice(0, sep)] = line.slice(sep + 2)
+  }
+  return result
+}
+
+function loadTranslationEntries(): DocEntry[] {
+  const dir = path.join(DATA_ROOT, 'official/translation')
+  if (!fs.existsSync(dir)) return []
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith('.md'))
+    .map(f => {
+      const content = fs.readFileSync(path.join(dir, f), 'utf-8')
+      const fm = parseFrontmatter(content)
+      return {
+        id: fm.id || f.split('_')[0],
+        title: fm.title || f.replace('.md', ''),
+        url: fm.url || '',
+        scope: fm.scope || 'guide',
+        updated_at: fm.translatedAt || '',
+        localPath: path.join('official/translation', f),
+      }
+    })
+}
+
 function loadDocEntries(): DocEntry[] {
   const guidePath = path.join(DATA_ROOT, 'config/urls-guide.json')
   const tutorialPath = path.join(DATA_ROOT, 'config/urls-tutorial.json')
@@ -65,24 +97,40 @@ interface SvgSection {
 function parseSvgIndex(content: string, availableSvgs: Set<string>, allDocs: DocEntry[]): SvgSection[] {
   const lines = content.split('\n')
   const sections: SvgSection[] = []
+  const topSections: SvgSection[] = []
   let current: SvgSection | null = null
-  const seenIds = new Set<number>()   // deduplicate across Version Update sections
+  let afterContentList = false
+  let inTopSection = false
+  const seenIds = new Set<number>()
 
   for (const line of lines) {
-    // Stop at H1 update-log sections (e.g. "# Version Update: ...")
-    if (/^# .+/.test(line) && !/^# Content/.test(line)) break
-
-    const sectionMatch = line.match(/^## (.+)$/)
-    if (sectionMatch) {
-      current = { section: sectionMatch[1].trim(), entries: [] }
+    // Enter content list
+    if (!afterContentList && /^# Content/.test(line)) {
+      afterContentList = true
+      continue
+    }
+    // H1 headings after Content List are top sections (e.g. # Version Update: Luna 7)
+    if (afterContentList && /^#\s+(.+)$/.test(line)) {
+      const sectionName = line.match(/^#\s+(.+)$/)![1].trim()
+      current = { section: sectionName, entries: [] }
+      topSections.push(current)
+      inTopSection = true
+      continue
+    }
+    if (/^## (.+)$/.test(line)) {
+      current = { section: line.match(/^## (.+)$/)![1].trim(), entries: [] }
       sections.push(current)
+      inTopSection = false
       continue
     }
     const entryMatch = line.match(/^(\d+)-(.+)$/)
     if (entryMatch && current) {
       const entryId = parseInt(entryMatch[1])
-      if (seenIds.has(entryId)) continue
-      seenIds.add(entryId)
+      // Deduplicate across regular sections but allow duplicate display in top sections
+      if (!inTopSection) {
+        if (seenIds.has(entryId)) continue
+        seenIds.add(entryId)
+      }
       const rawTitle = entryMatch[2].trim()
       const parenMatch = rawTitle.match(/^(.+?)\s*\((.+)\)$/)
       const title = parenMatch ? parenMatch[1].trim() : rawTitle
@@ -109,7 +157,7 @@ function parseSvgIndex(content: string, availableSvgs: Set<string>, allDocs: Doc
       })
     }
   }
-  return sections
+  return [...topSections, ...sections]
 }
 
 // ─── Routes ─────────────────────────────────────────────────────────────────
@@ -147,6 +195,8 @@ app.get('/api/docs/list/:scope', (req, res) => {
     } else if (scope === 'tutorial') {
       const data = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/urls-tutorial.json'), 'utf-8'))
       res.json(data.entries)
+    } else if (scope === 'translation') {
+      res.json(loadTranslationEntries())
     } else {
       res.status(400).json({ error: 'Invalid scope' })
     }
@@ -157,6 +207,12 @@ app.get('/api/docs/list/:scope', (req, res) => {
 
 app.get('/api/docs/toc', (_req, res) => {
   try {
+    const translations = loadTranslationEntries()
+    const translationSection = translations.length > 0 ? [{
+      section: 'Translation',
+      id: 'translation',
+      entries: translations.map(e => ({ id: e.id, title: e.title, available: true })),
+    }] : []
     const toc = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/guide-toc.json'), 'utf-8'))
     const allDocs = loadDocEntries()
     const availableIds = new Set(allDocs.map((d: DocEntry) => d.id))
@@ -164,6 +220,9 @@ app.get('/api/docs/toc', (_req, res) => {
       ...section,
       entries: section.entries.map(e => ({ ...e, available: availableIds.has(e.id) })),
     }))
+    const beforeYouReadIdx = enriched.findIndex((s: any) => s.id === 'mhhvwcrb9v92' || s.section === 'Before You Read')
+    const insertAt = beforeYouReadIdx >= 0 ? beforeYouReadIdx + 1 : enriched.length
+    enriched.splice(insertAt, 0, ...translationSection)
     res.json(enriched)
   } catch (err) {
     res.status(500).json({ error: String(err) })
@@ -193,7 +252,7 @@ app.get('/api/docs/:id', (req, res) => {
   const { id } = req.params
   if (!/^[\w-]+$/.test(id)) return res.status(400).json({ error: 'Invalid ID' })
   try {
-    const allDocs = loadDocEntries()
+    const allDocs = [...loadDocEntries(), ...loadTranslationEntries()]
     const entry = allDocs.find(d => d.id === id)
     if (!entry) return res.status(404).json({ error: 'Not found' })
     const docPath = path.resolve(DATA_ROOT, entry.localPath)
