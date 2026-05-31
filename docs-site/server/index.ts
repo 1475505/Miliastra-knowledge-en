@@ -155,6 +155,21 @@ app.get('/api/docs/list/:scope', (req, res) => {
   }
 })
 
+app.get('/api/docs/toc', (_req, res) => {
+  try {
+    const toc = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/guide-toc.json'), 'utf-8'))
+    const allDocs = loadDocEntries()
+    const availableIds = new Set(allDocs.map((d: DocEntry) => d.id))
+    const enriched = toc.map((section: { section: string; id: string; entries: { id: string; title: string }[] }) => ({
+      ...section,
+      entries: section.entries.map(e => ({ ...e, available: availableIds.has(e.id) })),
+    }))
+    res.json(enriched)
+  } catch (err) {
+    res.status(500).json({ error: String(err) })
+  }
+})
+
 app.get('/api/docs/ids', (_req, res) => {
   try {
     // Only include English-available scopes (guide + translation).

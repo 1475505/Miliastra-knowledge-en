@@ -1,4 +1,4 @@
-import type { DocEntry, SvgSection } from './types'
+import type { DocEntry, SvgSection, DocTocSection } from './types'
 
 const BASE = ''
 
@@ -29,5 +29,11 @@ export async function fetchDocIds(): Promise<string[]> {
 export async function fetchDoc(id: string): Promise<{ content: string; meta: DocEntry }> {
   const r = await fetch(`${BASE}/api/docs/${encodeURIComponent(id)}`)
   if (!r.ok) throw new Error('Doc not found')
+  return r.json()
+}
+
+export async function fetchDocToc(): Promise<DocTocSection[]> {
+  const r = await fetch(`${BASE}/api/docs/toc`)
+  if (!r.ok) throw new Error('Failed to fetch doc TOC')
   return r.json()
 }

@@ -20,3 +20,15 @@ export interface SvgSection {
   section: string
   entries: SvgEntry[]
 }
+
+export interface DocTocEntry {
+  id: string
+  title: string
+  available: boolean
+}
+
+export interface DocTocSection {
+  section: string
+  id: string
+  entries: DocTocEntry[]
+}

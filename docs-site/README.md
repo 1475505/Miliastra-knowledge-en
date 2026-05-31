@@ -23,12 +23,13 @@ npm run build   # 编译前端到 dist/public/ + 打包服务端到 dist/server.
 npm start       # node dist/server.js
 ```
 
-## Railway 部署
+## Render 部署
 
-1. 在 Railway 创建新项目，连接此仓库
+1. 在 [Render Dashboard](https://dashboard.render.com) 创建 **Web Service**，连接此仓库
 2. **Root Directory** 设置为 `docs-site`
-3. 环境变量（可选）：
-   - `PORT` — 默认 3001
-   - `DATA_ROOT` — 数据根目录，默认为 `docs-site` 父目录（即仓库根）
+3. **Build Command**: `npm install && npm run build`
+4. **Start Command**: `npm start`
+5. 环境变量：
+   - `NODE_ENV` = `production`（必须）
 
-Railway 会自动执行 `railway.toml` 中的 `buildCommand` 和 `startCommand`。
+> `render.yaml` 已包含上述配置，也可通过 Blueprint 一键部署。
