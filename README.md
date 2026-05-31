@@ -1,6 +1,6 @@
 # Miliastra-knowledge-en
 
-English knowledge base for **Miliastra Sandbox** (奇境大陆), mirroring the structure of the Chinese knowledge base.
+English knowledge base for **Miliastra Wonderland** (千星奇域) Craftspeople Academy.
 
 ---
 

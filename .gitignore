@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+docs-site/dist/
+
+# Editor/tool directories
+.kilo/
+
+# OS
+.DS_Store
