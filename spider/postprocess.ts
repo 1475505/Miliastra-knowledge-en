@@ -83,15 +83,30 @@ function stripTutorialNav(body: string): string {
   }
 
   if (contentStart === -1) {
-    // 没找到真实内容标题 → 尝试用面包屑定位
-    // 面包屑格式: [Text](.../course/home?...)/[Title](url)
+    // 没找到真实内容 # 标题 → 尝试面包屑定位
     for (let i = 0; i < lines.length; i++) {
       if (/\]\(https?:\/\/act\.hoyoverse\.com\/ys\/ugc\/tutorial\/course\/home/.test(lines[i])) {
-        // 面包屑行，内容从下一个 # 开始
         for (let j = i + 1; j < lines.length; j++) {
           if (/^# /.test(lines[j])) { contentStart = j; break; }
         }
         break;
+      }
+    }
+  }
+
+  if (contentStart === -1) {
+    // 仍未找到 → 降级：文章内容可能以 ## 开头，找 nav 结束后第一个 ## 标题
+    // nav 结束标志：最后一个纯导航链接行之后
+    let lastNavLine = -1;
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      if (/^!\[Image \d+\]\(/.test(line)) lastNavLine = i;
+      if (NAV_TEXT_PATTERNS.some(re => re.test(line))) lastNavLine = i;
+      if (/^\[.+\]\(https?:\/\/act\.hoyoverse\.com\/ys\/ugc\/tutorial\/(detail|course)\//.test(line)) lastNavLine = i;
+    }
+    if (lastNavLine >= 0) {
+      for (let i = lastNavLine + 1; i < lines.length; i++) {
+        if (/^##? /.test(lines[i])) { contentStart = i; break; }
       }
     }
   }
@@ -149,9 +164,13 @@ async function processGuideFiles(): Promise<void> {
     // 剥离 nav（与 tutorial 相同的策略）
     const cleanedBody = stripTutorialNav(body);
 
-    // 修正 title：优先用正文第一个 # 标题（英文），其次用 catalog title
+    // 修正 title：优先用正文第一个 # 标题（英文，排除 nav 标题），其次用 catalog title
+    const NAV_TITLES = new Set(['Genshin Impact Miliastra Wonderland: General Guide', 'Tutorial']);
     const h1Match = cleanedBody.match(/^# (.+)$/m);
-    const articleTitle = h1Match ? h1Match[1].trim() : (catalogTitles.get(meta.id ?? '') ?? '');
+    const h1Title = h1Match ? h1Match[1].trim() : '';
+    const articleTitle = (h1Title && !NAV_TITLES.has(h1Title))
+      ? h1Title
+      : (catalogTitles.get(meta.id ?? '') ?? '');
 
     const bodyUnchanged = cleanedBody === body;
     const titleUnchanged = !articleTitle || meta.title === articleTitle;
@@ -194,9 +213,13 @@ async function processTutorialFiles(): Promise<void> {
     // 剥离 nav
     const cleanedBody = stripTutorialNav(body);
 
-    // 修正 title：优先用正文第一个 # 标题（英文），其次用 catalog title
+    // 修正 title：优先用正文第一个 # 标题（英文，排除 nav 标题），其次用 catalog title
+    const NAV_TITLES = new Set(['Genshin Impact Miliastra Wonderland: General Guide', 'Tutorial']);
     const h1Match = cleanedBody.match(/^# (.+)$/m);
-    const articleTitle = h1Match ? h1Match[1].trim() : (catalogTitles.get(meta.id ?? '') ?? '');
+    const h1Title = h1Match ? h1Match[1].trim() : '';
+    const articleTitle = (h1Title && !NAV_TITLES.has(h1Title))
+      ? h1Title
+      : (catalogTitles.get(meta.id ?? '') ?? '');
 
     const bodyUnchanged = cleanedBody === body;
     const titleUnchanged = !articleTitle || meta.title === articleTitle;

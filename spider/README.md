@@ -176,3 +176,120 @@ crawledAt: 2026-05-31T15:00:00.000Z
 |-------|-------------|---------|
 | guide | `https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/catalog.json` | `https://act.hoyoverse.com/ys/ugc/tutorial/detail/` |
 | tutorial | `https://act-webstatic.hoyoverse.com/ugc-tutorial/course/sea/zh-cn/catalog.json` | `https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/` |
+
+---
+
+## 质量检查 SOP
+
+每次爬取或重建完成后，按以下顺序核查：
+
+### 1. 跑后处理
+
+```bash
+npm run postprocess -- --scope=guide
+npm run postprocess -- --scope=tutorial
+```
+
+`postprocess` 会剥离页面导航（nav）并修正 frontmatter title，**每次 scrape 之后都必须执行**。
+
+---
+
+### 2. 检查 nav 残留
+
+```bash
+grep -rl "^# Genshin Impact Miliastra Wonderland\|^# Tutorial$" \
+  ../official/ | sed 's|.*/||'
+```
+
+预期结果：**无输出**（0 个文件）。
+
+若有输出，说明该文件抓到的页面只有 nav（正文内容缺失），原因通常是：
+- Jina 限速，当次请求返回了缓存/空响应
+- 页面以视频/图片为主，无可读文本
+
+处理方案：删除该文件后重跑 `npm run scrape`，再次后处理。如果多次重试仍只有 nav，则视为**无文本内容的空页**，直接删除该文件。
+
+---
+
+### 3. 检查超短文件（疑似内容缺失）
+
+```bash
+wc -l ../official/guide/*.md ../official/tutorial/*.md \
+  | awk '$1 <= 10 && $2 != "total"' | sort -n
+```
+
+行数 ≤ 10 的文件通常只有 frontmatter + 标题，正文为空。  
+可能是视频教程页（Jina 无法抓取视频内容）——保留 stub 即可；  
+也可能是 Jina 偶发失败——删除后重试。
+
+---
+
+### 4. 验证 frontmatter title
+
+```bash
+grep -rl "^title: Genshin Impact Miliastra Wonderland\|^title: Tutorial$" \
+  ../official/ | sed 's|.*/||'
+```
+
+预期结果：**无输出**。若有，说明 postprocess 未能从正文提取到有效标题（通常伴随 nav 残留），按步骤 2 处理。
+
+---
+
+### 5. 验证文件数
+
+```bash
+ls ../official/guide/ | wc -l
+ls ../official/tutorial/ | wc -l
+```
+
+对照当前 catalog 条目数（guide 184 可爬取，tutorial 75 可爬取；两个被 `updated_at` 过滤或已删除的除外）。若文件数明显偏少，说明有批量失败，重跑 scrape。
+
+---
+
+### 6. 中英文覆盖率对比（选做，季度检查）
+
+```python
+import json, urllib.request
+
+def fetch(url):
+    with urllib.request.urlopen(url, timeout=15) as r:
+        return json.load(r)
+
+def collect(node):
+    res = []
+    if isinstance(node, dict):
+        if 'path_id' in node: res.append(node)
+        for v in node.values(): res.extend(collect(v))
+    elif isinstance(node, list):
+        [res.extend(collect(i)) for i in node]
+    return res
+
+for scope, path in [('guide','knowledge'), ('tutorial','course')]:
+    cn = {x['path_id'] for x in collect(fetch(f'https://act-webstatic.hoyoverse.com/ugc-tutorial/{path}/sea/zh-cn/catalog.json'))}
+    en = {x['path_id'] for x in collect(fetch(f'https://act-webstatic.hoyoverse.com/ugc-tutorial/{path}/sea/en-us/catalog.json'))}
+    print(f"{scope}: CN={len(cn)} EN={len(en)} only_CN={len(cn-en)} only_EN={len(en-cn)}")
+```
+
+预期：`only_CN=0 only_EN=0`（中英文 catalog 完全一致）。若出现差异，说明官方新增/删除了文档，需要重跑 `npm run crawl` 并补爬。
+
+---
+
+## 已知陷阱
+
+### `path_id` vs `real_id`（EN 专属问题）
+
+EN catalog 中，guide 条目的 `path_id`（URL 路径）**不等于** `real_id`（内容 ID）：
+
+```json
+// EN guide 条目示例
+{ "real_id": "mhkgc6r6vjba", "path_id": "mh3abc123xyz", ... }
+```
+
+- **URL 必须用 `path_id`**，否则 SPA 找不到文章，Jina 只会返回默认的 Update Log 页面
+- **文件命名用 `real_id`**（稳定，不随 URL 变化）
+
+CN catalog 中 `path_id == real_id`，无此问题。`crawl.ts` 已做正确处理，**不要改回用 `real_id` 构造 URL**。
+
+### Jina 返回内容不稳定
+
+同一 URL 不同时间可能返回不同内容（有时完整，有时只有 nav）。出现 nav 残留时优先重试，而不是认为页面确实为空。多次重试后仍为空，才判定为无文本内容页。

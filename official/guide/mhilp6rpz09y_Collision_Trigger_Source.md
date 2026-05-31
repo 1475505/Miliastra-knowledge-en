@@ -1,394 +1,117 @@
 ---
 id: mhilp6rpz09y
-title: Genshin Impact Miliastra Wonderland: General Guide
+title: Collision Trigger Source
 url: https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn95di01j84
 language: en
 scope: guide
-crawledAt: 2026-05-31T16:19:01.362Z
+crawledAt: 2026-05-31T16:46:07.042Z
 ---
 
-# Genshin Impact Miliastra Wonderland: General Guide
+# Collision Trigger Source
 
-![Image 1](https://fastcdn.hoyoverse.com/mi18n/hk4eugc_global/m20250630hy4cyt23nk/upload/2535bbc0241a8997244ea07878f40a75_1078334870593309226.png)
+# I. Functions of Collision Trigger Source Component
 
- General Guide 
+The Collision Trigger Source component provides collision detection trigger sources during stage runtime and serves as a tool for determining logical range contact.
 
- Tutorial 
+The collision trigger source component can only have one collision trigger source enabled at a time.
 
- FAQ 
+## 1. Collision Detection between Collision Trigger Source and **Collision Triggers**
 
-Wander the Thousand Stars, Shape Myriads of Wonderlands
+During stage runtime, the “Collision Trigger” continuously monitors other entities carrying "Collision Trigger Source Components".
 
-[Update Log](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs2w008wf14)
+When the runtime entity's "Collision Trigger Source" enters or exits the range of another entity with a "Collision Trigger Component", a collision between the two component ranges will send a node graph event to the entity configured with the "Collision Trigger"
 
-[Before You Read](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh29wpicgvh0)
+This type of collision does not create physical collision barriers.
 
-[Interface Guide](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhz71urk21nq)
+## 2. Collision Trigger Components
 
-[Main Interface](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn4bsi5lb58)
+[Collision Trigger](https://act.hoyoverse.com/ys/ugc/tutorial//detail/mh8w69rzuc3i)
 
-[Terrain Editing](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwe1n94b1x6)
+# II. Editing Collision Trigger Source Components
 
-[Entity Placement](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnffmieeqbg)
+## 1. Add Components
 
-[Prefab Library](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwp5h9d4h3e)
+![Image 2](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/12985fac-22ea-4fa8-8ffc-6c2a1a3ebfad.png)
 
-[Combat Preset](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhexhcr1qjh2)
+(1) In the entity/prefab editing interface, open the Editing Components tab
 
-[Stage Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn9vpia00qc)
+(2) Click "Add Common Components" below, select and click "Collision Trigger Source Components" to add it
 
-[Test Play](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhie54ik9ovg)
+(3) Click "Advanced Editing" to expand the editing tab
 
-[Multiplayer Test Play](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9fj3rudd9q)
+## 2. Editing Collision Trigger Source Components
 
-[Miliastra Sandbox](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho777i0ga90)
+![Image 3](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/133b0862-86a6-4416-a6c2-3f0b509332cb.png)
 
-[Import/Export Assets](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxbd59urbfu)
+Use "Advanced Editing" to adjust the shape and size parameters of the collision trigger source
 
-[Undo and Restore](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq6wdimcd84)
+![Image 4](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/7a69d440-d3fd-4312-b704-12a7f5ef770c.png)
 
-[Wonderland Resource Center](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhf66q9jc4uq)
+Configuration Parameters Description
+_Initially Effective_ Whether to enable when the object is created
+_Trigger Area Shape_ Supports cuboid, sphere, and capsule shapes. Different size configuration parameters will be displayed based on the selected shape
+_Center_ Offset relative to the entity/prefab center
+_Rotation_ Supports orientation adjustment along different axes based on the center position
+_Zoom Multiplier_ The trigger area's shape supports defining scaling along different axes
 
-[Concept Introduction](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdtk89yhd6q)
+# III. Managing Collision Triggers Through Node Graph
 
-[Units](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2xoxrop0la)
+You can manage the collision trigger for runtime entities via the node graph during its runtime
 
-[Player](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhctmgi51lpo)
+
 
-[Revive](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh796lr44x0e)
+**When Entering Collision Trigger**
 
-[Character](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3ecor1x5cm)
+The active entity's "Collision Trigger Source" range enters the "Collision Trigger" range of another active entity.
 
-[Creations](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhufqo0c0tqw)
+Node graph events will be sent to the entity configured with "Collision Trigger"
 
-[Complex Creations](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb8nl0w8cao)
+![Image 5](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/a39a3929-8bd4-4a0f-8bcb-5b2bedebe5d0.png)
 
-[Objects](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhlh4n9m4i56)
+
 
-[Local Projectiles](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhciimiw86jg)
+**When Exiting Collision Trigger**
 
-[Stage](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3pgiraqkiu)
+The "Collision Trigger Source" range of a runtime entity exits the "Collision Trigger" range of another runtime entity.
 
-[Functions](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjx2miruaos)
+Node graph events will be sent to the entity configured with "Collision Trigger"
 
-[Basic Information](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3oxo0ojgxk)
+![Image 6](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/a90aa228-0c54-4d4c-bdc0-707b8fd9dca7.png)
 
-[Transform, Native Collision, Visibility and Create Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhuqbn9yn5bu)
+
 
-[Model](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrutdio6904)
+**Activate/Disable Collision Trigger Source**
 
-[Factions](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe1ixri46ta)
+The "Collision Trigger Source" component supports dynamic adjustment of the enabled parameters through node graphs
 
-[Unit Tag](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzldmiwdgu4)
+![Image 7](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/ea8bac40-ed11-4120-92ab-ae3dad11659e.png)
 
-[Entity Deployment Group](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqmrlr6h58e)
+# IV. Examples
 
-[Load Optimization](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhlb1vivioys)
+For entities that do not contain _collision trigger sources_, they cannot generate entry/collision range events through contact with _collision triggers_
 
-[Copy and Paste Data](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6fj30p2cmo)
+Creations and character entities contain collision trigger sources by default, no additional editing required.
 
-[Specialized Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtwkur42see)
+As shown in the graph,
 
-[Basic Battle Attributes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvyqz9xwu0q)
+
 
-[Aggro Configuration](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw9ut96q96y)
+Add a collision trigger source component to the "wooden box" and configure its size to match the box dimensions
 
-[Hurtbox Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvg40rc5w9i)
+
 
-[Combat Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha42r0cwx74)
+Add a collision trigger to the "Spiky Platform" and place it on the paving
 
-[Ability Units](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0ucw9e76f6)
+In the graph below, an empty object is used to demonstrate the range for clarity. This does not represent the actual appearance in the editor and is only meant as a visual guide
 
-[General Settings](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3rgo0c16c8)
+
 
-[Common Components](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhei6orvcbkm)
+The collision trigger source of the wooden box<->the collision trigger of the spiky platform. When they make contact, the spike platform will receive an _collision trigger entry event_
 
-[Tab](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5jko05fzyw)
+
 
-[Basic Motion Device](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnmcmipncrg)
+If there are logical requirements, you can edit in the node graph. For example, if you want the wooden box to take damage when it hits the spiky platform, you can edit it through this example
 
-[Collision Trigger](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8w69rzuc3i)
+![Image 8](https://act-webstatic.hoyoverse.com/ugc-tutorial/knowledge/sea/en-us/mhilp6rpz09y/d5f75775-abee-4bce-8259-adafde6fc8a0.png)
 
-[Custom Variables](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhso1b9wjica)
-
-[Projectile Motion Device](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhaqt9rgqv4u)
-
-[Character Disruptor Device](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhstl890y7xe)
-
-[Unit Status](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhd7nxrfa8im)
-
-[Global Timer](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhawd6rl5kpy)
-
-[Timer](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhufb90zbnts)
-
-[On-Hit Detection](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2pir0hat1s)
-
-[Extra Collisions](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhuiob9dg1dm)
-
-[Follow Motion Device](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhuts59m9gju)
-
-[VFX Playing](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ppo02m1o8)
-
-[Custom Attachment Points](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmshmimtegs)
-
-[Collision Trigger Source](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn95di01j84)
-
-[Sound Effect Player](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwiv89yra02)
-
-[Nameplate](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5n160t2b6w)
-
-[Text Bubble](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwtz297kp6a)
-
-[Inventory Component](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5y5001vqd4)
-
-[Loots](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh63ox06afy8)
-
-[Shop Component](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho6gviqhsqs)
-
-[Scan Tag](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfc0lr1tcke)
-
-[Mini-Map Marker](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0pppib5eyc)
-
-[Light Source](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgkan9wgil6)
-
-[Pathfinding Obstacle](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6c3uri84h2)
-
-[Object Camera](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhx9b60or59k)
-
-[Node Graphs](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjwjrr5n73i)
-
-[Basic Concepts](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk23ora1wom)
-
-[Node Graph Editing Guide](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb3ho0k5l2w)
-
-[Assets](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmzm3rltetq)
-
-[Special Effects](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe1030vx380)
-
-[Preset Status](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw3s1ig4g0k)
-
-[Skill Animation](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh57xz9afh7e)
-
-[UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnapxrumtzy)
-
-[Interactive Button UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwkfsitckrw)
-
-[Item Display UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjja1ipq9ck)
-
-[Text Box UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnltrr3g966)
-
-[Pop-Up UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhen7r0djxkg)
-
-[Progress Bar UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwpzpixrad0)
-
-[Timer UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnrdor7uyra)
-
-[Scoreboard UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhesro0hyn5k)
-
-[Deck Selector UI Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2teu0bmfbc)
-
-[UI Animation Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2iyk9fa4gy)
-
-[Fullscreen UI Animation Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbn4i09l5ns)
-
-[Image Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2oih9jou22)
-
-[Custom Button Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtpwgitsigc)
-
-[Custom Switch Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkrafr3w6um)
-
-[Floating Interaction Page Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6)
-
-[Special Number Controls](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkwucr8awfq)
-
-[Advanced Concepts](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mheybl0mdcqo)
-
-[UI Control Groups Management](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhewyi0fjfvs)
-
-[Interface Layout](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhozt0r74ng6)
-
-[UI Control Group](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg1700h8bug)
-
-[Main Camera](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfua005zpeg)
-
-[Peripheral System](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjsw9rluwou)
-
-[Leaderboard](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho2rt9ir6ay)
-
-[Rank](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhf45sisuup8)
-
-[Achievements](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh65jrr2yj3i)
-
-[Stage Settlement](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhx1du08nhwo)
-
-[Wonderland Gift Box](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjdhpi4sd10)
-
-[Resource System](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht8l59439d6)
-
-[Item](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbgx0rspbqu)
-
-[Equipment](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkl2yin0cxo)
-
-[Currency](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2cr30yeak0)
-
-[Inventory](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhogfq9bf86q)
-
-[Loot](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkfj1iilnck)
-
-[Shop](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi9s7isvp50)
-
-[Skills](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho81frl33im)
-
-[Skill Resources](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6ate95agb6)
-
-[Complex Creation Skill](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhftoirpwd46)
-
-[Key Behaviors](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapp3r8gkdq)
-
-[Skill Variables](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhzqw98264i)
-
-[Skill Attribute Groups](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0inr0jak34)
-
-[Classes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhodlcrpht3q)
-
-[Unit Status](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6rh59iil2i)
-
-[Preset Points](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfvn30ctm9c)
-
-[Shield](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhl0gire830)
-
-[Path](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh333vim2h44)
-
-[VFX Tools](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ejditwixg)
-
-[Other Concepts](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh5zgirw9cc)
-
-[In-game Save](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzcw29qjjma)
-
-[Multi-language Text](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk59aiqtwyk)
-
-[Voice and Text Chat](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhaneb9qnvay)
-
-[Background Music](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq9b601kh9k)
-
-[Environment Configuration](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdznsie9up8)
-
-[Prefab Group](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzhzb9rw0uy)
-
-[Scene Generation Templates](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjk3t996oiy)
-
-[Node Introduction](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsok60iqlxk)
-
-[Server Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhuto3r800b2)
-
-[Execution Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw66orrrfkm)
-
-[Event Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn7ko01v3yw)
-
-[Flow Control Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe8yn9bysd6)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwbqlrw655q)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnd4l069tk0)
-
-[Client Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhlv230i3opc)
-
-[Character Skill Node Graph](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhuf56rvxhgm)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mholjx05ji8w)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfmxw9fn6n6)
-
-[Execution Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6obvipqv1g)
-
-[Flow Control Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxppurzujfq)
-
-[Other Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhor3u09y7u0)
-
-[Creation Skill Node Graph](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhlgj60615uw)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpw06rvah3a)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7ys59fhtvu)
-
-[Execution Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhz064iplia4)
-
-[Flow Control Node](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq1k3rzp6oe)
-
-[Other Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh84c29jwjgy)
-
-[Creation Status Node Graph](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhchx59g4u96)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1w3z96rpne)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjyvxrqz2fy)
-
-[Execution Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb09x012qu8)
-
-[Flow Control Node](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh21nw9b6f8i)
-
-[Other Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht31vila3ms)
-
-[Creation Status Decision Node Graph](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhukp3r0c71q)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk4furvds12)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb5tu05hgfc)
-
-[Execution Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh277t9fl4tm)
-
-[Flow Control Node](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk9zrrzshm6)
-
-[Other Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbbdr09w60g)
-
-[Filter Node Graph](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhcnh29kjjua)
-
-[Query Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2crq9jzueq)
-
-[Operation Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhte5piu3it0)
-
-[Other Nodes](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbgxo0eavlk)
-
-[Support Function](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhoyplr76zr2)
-
-[Load Calculation Function](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho2hirgodxi)
-
-[Risk Check Function](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0xm3ryh9hq)
-
-[Appendix](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsumxr9cf3y)
-
-[Ability Unit Effect](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrvqvioautg)
-
-[Creation Behavior Archive](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhyg4i0inazs)
-
-[Creations Behavior Mode — Not-in-Battle Behavior](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpsmb91keka)
-
-[Creation Skill Description](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzys1ic5eok)
-
-[Unit Status Effect Pool](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhou93r2pxv2)
-
-[Node Graph Advanced Features](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk7nlregm9q)
-
-[Generic Pins](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkirfrna1fy)
-
-[Node Graph Variables](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtshailzs7w)
-
-[Composite Node](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhty17iqeht0)
-
-[Node Graph Logs](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhu951iz7wz8)
-
-[Client Server Node Graph Logs](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrnuz9izfne)
-
-[Composite Node Graph Logs](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhip8yit341o)
-
-[Signal](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhlaj0r9bldi)
-
-[Dictionary](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhubgk9yy8gy)
-
-[Structure](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3fmi0t99ns)
-
-[Edit Range Restrictions](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh74ae9fsg8i)
-
-[Classic Mode Character ID List](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4imrrhzdzi)
-
-1
+[Custom Attachment Points](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmshmimtegs)[Sound Effect Player](https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwiv89yra02)
