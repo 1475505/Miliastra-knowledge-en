@@ -1,0 +1,1686 @@
+{
+  "entries": [
+    {
+      "id": "mhkgc6r6vjba",
+      "title": "Ability Unit Effect",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkgc6r6vjba",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkgc6r6vjba",
+      "scope": "guide",
+      "updated_at": "2025-10-21 19:59:17",
+      "localPath": "official/guide/mhkgc6r6vjba_Ability_Unit_Effect.md"
+    },
+    {
+      "id": "mh90vi0ifubs",
+      "title": "Ability Units",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh90vi0ifubs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh90vi0ifubs",
+      "scope": "guide",
+      "updated_at": "2025-10-14 22:14:41",
+      "localPath": "official/guide/mh90vi0ifubs_Ability_Units.md"
+    },
+    {
+      "id": "mhbc690cki4g",
+      "title": "Achievements",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbc690cki4g",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbc690cki4g",
+      "scope": "guide",
+      "updated_at": "2025-10-20 18:25:58",
+      "localPath": "official/guide/mhbc690cki4g_Achievements.md"
+    },
+    {
+      "id": "mhz4xz92397e",
+      "title": "Advanced Concepts",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhz4xz92397e",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhz4xz92397e",
+      "scope": "guide",
+      "updated_at": "2025-10-19 16:46:18",
+      "localPath": "official/guide/mhz4xz92397e_Advanced_Concepts.md"
+    },
+    {
+      "id": "mhzwpk9o4t4y",
+      "title": "Aggro Configuration",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzwpk9o4t4y",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzwpk9o4t4y",
+      "scope": "guide",
+      "updated_at": "2025-11-19 21:54:51",
+      "localPath": "official/guide/mhzwpk9o4t4y_Aggro_Configuration.md"
+    },
+    {
+      "id": "mhgfycr0922e",
+      "title": "Appendix",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgfycr0922e",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgfycr0922e",
+      "scope": "guide",
+      "updated_at": "2025-10-19 18:25:59",
+      "localPath": "official/guide/mhgfycr0922e_Appendix.md"
+    },
+    {
+      "id": "mh83k00rzkt4",
+      "title": "Assets",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh83k00rzkt4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh83k00rzkt4",
+      "scope": "guide",
+      "updated_at": "2025-10-17 14:47:35",
+      "localPath": "official/guide/mh83k00rzkt4_Assets.md"
+    },
+    {
+      "id": "mh98e60u6ytk",
+      "title": "Background Music",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh98e60u6ytk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh98e60u6ytk",
+      "scope": "guide",
+      "updated_at": "2025-10-21 03:33:35",
+      "localPath": "official/guide/mh98e60u6ytk_Background_Music.md"
+    },
+    {
+      "id": "mh8vbl0e14qo",
+      "title": "Basic Battle Attributes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8vbl0e14qo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8vbl0e14qo",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:33:41",
+      "localPath": "official/guide/mh8vbl0e14qo_Basic_Battle_Attributes.md"
+    },
+    {
+      "id": "mh9y7008w3ug",
+      "title": "Basic Concepts",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9y7008w3ug",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9y7008w3ug",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:14:38",
+      "localPath": "official/guide/mh9y7008w3ug_Basic_Concepts.md"
+    },
+    {
+      "id": "mhzg1t9awodm",
+      "title": "Basic Information",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzg1t9awodm",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzg1t9awodm",
+      "scope": "guide",
+      "updated_at": "2025-09-11 17:00:57",
+      "localPath": "official/guide/mhzg1t9awodm_Basic_Information.md"
+    },
+    {
+      "id": "mhi51frcqvim",
+      "title": "Basic Motion Device",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi51frcqvim",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi51frcqvim",
+      "scope": "guide",
+      "updated_at": "2025-11-19 21:58:49",
+      "localPath": "official/guide/mhi51frcqvim_Basic_Motion_Device.md"
+    },
+    {
+      "id": "mhhvwcrb9v92",
+      "title": "Before You Read",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhvwcrb9v92",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhvwcrb9v92",
+      "scope": "guide",
+      "updated_at": "2026-01-14 09:02:58",
+      "localPath": "official/guide/mhhvwcrb9v92_Before_You_Read.md"
+    },
+    {
+      "id": "mhh7pxrmalzy",
+      "title": "Character",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh7pxrmalzy",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh7pxrmalzy",
+      "scope": "guide",
+      "updated_at": "2025-10-21 19:26:41",
+      "localPath": "official/guide/mhh7pxrmalzy_Character.md"
+    },
+    {
+      "id": "mhialcrh5l3q",
+      "title": "Character Disruptor Device",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhialcrh5l3q",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhialcrh5l3q",
+      "scope": "guide",
+      "updated_at": "2026-03-27 15:35:48",
+      "localPath": "official/guide/mhialcrh5l3q_Character_Disruptor_Device.md"
+    },
+    {
+      "id": "mhvlhf0c01e8",
+      "title": "Character Skill Node Graph",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvlhf0c01e8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvlhf0c01e8",
+      "scope": "guide",
+      "updated_at": "2025-12-16 18:04:13",
+      "localPath": "official/guide/mhvlhf0c01e8_Character_Skill_Node_Graph.md"
+    },
+    {
+      "id": "mhakeo0qiy6w",
+      "title": "Classes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhakeo0qiy6w",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhakeo0qiy6w",
+      "scope": "guide",
+      "updated_at": "2025-10-22 02:32:10",
+      "localPath": "official/guide/mhakeo0qiy6w_Classes.md"
+    },
+    {
+      "id": "mh62p3r9uv1q",
+      "title": "Classic Mode Character ID List",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh62p3r9uv1q",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh62p3r9uv1q",
+      "scope": "guide",
+      "updated_at": "2026-04-02 12:53:08",
+      "localPath": "official/guide/mh62p3r9uv1q_Classic_Mode_Character_ID_List.md"
+    },
+    {
+      "id": "mh0fc298pcsy",
+      "title": "Client Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0fc298pcsy",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0fc298pcsy",
+      "scope": "guide",
+      "updated_at": "2026-01-08 23:06:25",
+      "localPath": "official/guide/mh0fc298pcsy_Client_Nodes.md"
+    },
+    {
+      "id": "mh2u7z9zwba2",
+      "title": "Client Server Node Graph Logs",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u7z9zwba2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u7z9zwba2",
+      "scope": "guide",
+      "updated_at": "2025-10-22 03:21:00",
+      "localPath": "official/guide/mh2u7z9zwba2_Client_Server_Node_Graph_Logs.md"
+    },
+    {
+      "id": "mh96ff0mujww",
+      "title": "Collision Trigger",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh96ff0mujww",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh96ff0mujww",
+      "scope": "guide",
+      "updated_at": "2025-10-16 18:14:57",
+      "localPath": "official/guide/mh96ff0mujww_Collision_Trigger.md"
+    },
+    {
+      "id": "mhilp6rpz09y",
+      "title": "Collision Trigger Source",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhilp6rpz09y",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhilp6rpz09y",
+      "scope": "guide",
+      "updated_at": "2025-10-20 16:52:09",
+      "localPath": "official/guide/mhilp6rpz09y_Collision_Trigger_Source.md"
+    },
+    {
+      "id": "mhgr26r92h8m",
+      "title": "Combat Preset",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgr26r92h8m",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgr26r92h8m",
+      "scope": "guide",
+      "updated_at": "2025-10-13 22:52:58",
+      "localPath": "official/guide/mhgr26r92h8m_Combat_Preset.md"
+    },
+    {
+      "id": "mhhzhir8c5xi",
+      "title": "Combat Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhzhir8c5xi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhzhir8c5xi",
+      "scope": "guide",
+      "updated_at": "2026-02-10 21:56:27",
+      "localPath": "official/guide/mhhzhir8c5xi_Combat_Settings.md"
+    },
+    {
+      "id": "mhhitrrv4166",
+      "title": "Common Components",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhitrrv4166",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhitrrv4166",
+      "scope": "guide",
+      "updated_at": "2025-10-14 20:28:04",
+      "localPath": "official/guide/mhhitrrv4166_Common_Components.md"
+    },
+    {
+      "id": "mhmhbh9hp07e",
+      "title": "Complex Creation Skill",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmhbh9hp07e",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmhbh9hp07e",
+      "scope": "guide",
+      "updated_at": "2026-04-03 14:57:11",
+      "localPath": "official/guide/mhmhbh9hp07e_Complex_Creation_Skill.md"
+    },
+    {
+      "id": "mh4ejirxhneu",
+      "title": "Complex Creations",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ejirxhneu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ejirxhneu",
+      "scope": "guide",
+      "updated_at": "2026-02-06 16:48:21",
+      "localPath": "official/guide/mh4ejirxhneu_Complex_Creations.md"
+    },
+    {
+      "id": "mhkrg0rfoyhi",
+      "title": "Composite Node",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkrg0rfoyhi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkrg0rfoyhi",
+      "scope": "guide",
+      "updated_at": "2025-10-22 03:22:48",
+      "localPath": "official/guide/mhkrg0rfoyhi_Composite_Node.md"
+    },
+    {
+      "id": "mhtvlyi9zzoc",
+      "title": "Composite Node Graph Logs",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtvlyi9zzoc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtvlyi9zzoc",
+      "scope": "guide",
+      "updated_at": "2025-10-21 20:20:23",
+      "localPath": "official/guide/mhtvlyi9zzoc_Composite_Node_Graph_Logs.md"
+    },
+    {
+      "id": "mh7bsf05y0vk",
+      "title": "Concept Introduction",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7bsf05y0vk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7bsf05y0vk",
+      "scope": "guide",
+      "updated_at": "2025-10-14 16:33:03",
+      "localPath": "official/guide/mh7bsf05y0vk_Concept_Introduction.md"
+    },
+    {
+      "id": "mhhtxlr3xgce",
+      "title": "Copy and Paste Data",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhtxlr3xgce",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhtxlr3xgce",
+      "scope": "guide",
+      "updated_at": "2025-10-16 11:48:13",
+      "localPath": "official/guide/mhhtxlr3xgce_Copy_and_Paste_Data.md"
+    },
+    {
+      "id": "mhbhq60gz7pk",
+      "title": "Creation Behavior Archive",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbhq60gz7pk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbhq60gz7pk",
+      "scope": "guide",
+      "updated_at": "2026-01-07 12:20:41",
+      "localPath": "official/guide/mhbhq60gz7pk_Creation_Behavior_Archive.md"
+    },
+    {
+      "id": "mhtki4i16ki4",
+      "title": "Creation Skill Description",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtki4i16ki4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtki4i16ki4",
+      "scope": "guide",
+      "updated_at": "2026-01-07 12:25:16",
+      "localPath": "official/guide/mhtki4i16ki4_Creation_Skill_Description.md"
+    },
+    {
+      "id": "mhmmve9m3psi",
+      "title": "Creation Skill Node Graph",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmmve9m3psi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmmve9m3psi",
+      "scope": "guide",
+      "updated_at": "2026-01-09 00:17:43",
+      "localPath": "official/guide/mhmmve9m3psi_Creation_Skill_Node_Graph.md"
+    },
+    {
+      "id": "mh4pncr6b2l2",
+      "title": "Creation Status Decision Node Graph",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4pncr6b2l2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4pncr6b2l2",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:32:32",
+      "localPath": "official/guide/mh4pncr6b2l2_Creation_Status_Decision_Node_Graph.md"
+    },
+    {
+      "id": "mhdo9diw7e6s",
+      "title": "Creation Status Node Graph",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdo9diw7e6s",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdo9diw7e6s",
+      "scope": "guide",
+      "updated_at": "2026-02-10 23:51:40",
+      "localPath": "official/guide/mhdo9diw7e6s_Creation_Status_Node_Graph.md"
+    },
+    {
+      "id": "mh893x0weae8",
+      "title": "Creations",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh893x0weae8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh893x0weae8",
+      "scope": "guide",
+      "updated_at": "2025-10-21 19:42:08",
+      "localPath": "official/guide/mh893x0weae8_Creations.md"
+    },
+    {
+      "id": "mh2j459r2w3u",
+      "title": "Creations Behavior Mode — Not-in-Battle Behavior",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2j459r2w3u",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2j459r2w3u",
+      "scope": "guide",
+      "updated_at": "2025-10-21 20:34:28",
+      "localPath": "official/guide/mh2j459r2w3u_Creations_Behavior_Mode_—_Not-in-Battle_Behavior.md"
+    },
+    {
+      "id": "mhjzofrtnejy",
+      "title": "Currency",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjzofrtnejy",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjzofrtnejy",
+      "scope": "guide",
+      "updated_at": "2025-10-20 17:27:03",
+      "localPath": "official/guide/mhjzofrtnejy_Currency.md"
+    },
+    {
+      "id": "mhrkb7ifvbvo",
+      "title": "Custom Attachment Points",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrkb7ifvbvo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrkb7ifvbvo",
+      "scope": "guide",
+      "updated_at": "2025-10-20 16:18:18",
+      "localPath": "official/guide/mhrkb7ifvbvo_Custom_Attachment_Points.md"
+    },
+    {
+      "id": "mh72uu0inf60",
+      "title": "Custom Button Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh72uu0inf60",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh72uu0inf60",
+      "scope": "guide",
+      "updated_at": "2026-04-03 10:32:25",
+      "localPath": "official/guide/mh72uu0inf60_Custom_Button_Controls.md"
+    },
+    {
+      "id": "mhy48t9sr3ka",
+      "title": "Custom Switch Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhy48t9sr3ka",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhy48t9sr3ka",
+      "scope": "guide",
+      "updated_at": "2026-04-03 15:08:42",
+      "localPath": "official/guide/mhy48t9sr3ka_Custom_Switch_Controls.md"
+    },
+    {
+      "id": "mh07te9wy8b6",
+      "title": "Custom Variables",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh07te9wy8b6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh07te9wy8b6",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:51:12",
+      "localPath": "official/guide/mh07te9wy8b6_Custom_Variables.md"
+    },
+    {
+      "id": "mh1g8q9w7x02",
+      "title": "Deck Selector UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1g8q9w7x02",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1g8q9w7x02",
+      "scope": "guide",
+      "updated_at": "2026-03-27 16:26:19",
+      "localPath": "official/guide/mh1g8q9w7x02_Deck_Selector_UI_Controls.md"
+    },
+    {
+      "id": "mhbydx0u7cgw",
+      "title": "Dictionary",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbydx0u7cgw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbydx0u7cgw",
+      "scope": "guide",
+      "updated_at": "2025-10-22 03:18:48",
+      "localPath": "official/guide/mhbydx0u7cgw_Dictionary.md"
+    },
+    {
+      "id": "mh5hexrscmim",
+      "title": "Edit Range Restrictions",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5hexrscmim",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5hexrscmim",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:04:08",
+      "localPath": "official/guide/mh5hexrscmim_Edit_Range_Restrictions.md"
+    },
+    {
+      "id": "mhzr5n9jq3ju",
+      "title": "Entity Deployment Group",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzr5n9jq3ju",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzr5n9jq3ju",
+      "scope": "guide",
+      "updated_at": "2026-03-27 15:21:38",
+      "localPath": "official/guide/mhzr5n9jq3ju_Entity_Deployment_Group.md"
+    },
+    {
+      "id": "mhyoa89ov4g2",
+      "title": "Entity Placement",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhyoa89ov4g2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhyoa89ov4g2",
+      "scope": "guide",
+      "updated_at": "2026-03-27 13:58:10",
+      "localPath": "official/guide/mhyoa89ov4g2_Entity_Placement.md"
+    },
+    {
+      "id": "mh09s594an7u",
+      "title": "Environment Configuration",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh09s594an7u",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh09s594an7u",
+      "scope": "guide",
+      "updated_at": "2026-03-31 15:36:54",
+      "localPath": "official/guide/mh09s594an7u_Environment_Configuration.md"
+    },
+    {
+      "id": "mhsyagijjq5o",
+      "title": "Equipment",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsyagijjq5o",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsyagijjq5o",
+      "scope": "guide",
+      "updated_at": "2025-10-21 02:11:53",
+      "localPath": "official/guide/mhsyagijjq5o_Equipment.md"
+    },
+    {
+      "id": "mh9ji0030dzs",
+      "title": "Event Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9ji0030dzs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9ji0030dzs",
+      "scope": "guide",
+      "updated_at": "2026-03-30 15:18:19",
+      "localPath": "official/guide/mh9ji0030dzs_Event_Nodes.md"
+    },
+    {
+      "id": "mhrgq1iit178",
+      "title": "Execution Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrgq1iit178",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrgq1iit178",
+      "scope": "guide",
+      "updated_at": "2026-04-03 18:19:13",
+      "localPath": "official/guide/mhrgq1iit178_Execution_Nodes.md"
+    },
+    {
+      "id": "mhit7ur1q4rq",
+      "title": "Execution Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhit7ur1q4rq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhit7ur1q4rq",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:08:12",
+      "localPath": "official/guide/mhit7ur1q4rq_Execution_Nodes.md"
+    },
+    {
+      "id": "mh4v79raps66",
+      "title": "Execution Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4v79raps66",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4v79raps66",
+      "scope": "guide",
+      "updated_at": "2026-04-02 09:31:04",
+      "localPath": "official/guide/mh4v79raps66_Execution_Nodes.md"
+    },
+    {
+      "id": "mhw2560p865k",
+      "title": "Execution Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw2560p865k",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw2560p865k",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:29:37",
+      "localPath": "official/guide/mhw2560p865k_Execution_Nodes.md"
+    },
+    {
+      "id": "mhn93293qk4y",
+      "title": "Execution Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn93293qk4y",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn93293qk4y",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:43:35",
+      "localPath": "official/guide/mhn93293qk4y_Execution_Nodes.md"
+    },
+    {
+      "id": "mhreraibgmak",
+      "title": "Extra Collisions",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhreraibgmak",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhreraibgmak",
+      "scope": "guide",
+      "updated_at": "2025-10-20 14:51:02",
+      "localPath": "official/guide/mhreraibgmak_Extra_Collisions.md"
+    },
+    {
+      "id": "mhhodorziqra",
+      "title": "Factions",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhodorziqra",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhodorziqra",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:43:35",
+      "localPath": "official/guide/mhhodorziqra_Factions.md"
+    },
+    {
+      "id": "mhvr1c0geqzc",
+      "title": "Filter Node Graph",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvr1c0geqzc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvr1c0geqzc",
+      "scope": "guide",
+      "updated_at": "2026-01-27 17:39:36",
+      "localPath": "official/guide/mhvr1c0geqzc_Filter_Node_Graph.md"
+    },
+    {
+      "id": "mhp5msi2uryk",
+      "title": "Floating Interaction Page Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk",
+      "scope": "guide",
+      "updated_at": "2026-04-03 11:25:25",
+      "localPath": "official/guide/mhp5msi2uryk_Floating_Interaction_Page_Controls.md"
+    },
+    {
+      "id": "mhvwl90ktgkg",
+      "title": "Flow Control Node",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvwl90ktgkg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvwl90ktgkg",
+      "scope": "guide",
+      "updated_at": "2026-04-02 09:31:44",
+      "localPath": "official/guide/mhvwl90ktgkg_Flow_Control_Node.md"
+    },
+    {
+      "id": "mhn3j59zbuju",
+      "title": "Flow Control Node",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn3j59zbuju",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn3j59zbuju",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:30:26",
+      "localPath": "official/guide/mhn3j59zbuju_Flow_Control_Node.md"
+    },
+    {
+      "id": "mheah1idu8j8",
+      "title": "Flow Control Node",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mheah1idu8j8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mheah1idu8j8",
+      "scope": "guide",
+      "updated_at": "2026-02-12 17:37:48",
+      "localPath": "official/guide/mheah1idu8j8_Flow_Control_Node.md"
+    },
+    {
+      "id": "mh0kvz9d42e2",
+      "title": "Flow Control Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0kvz9d42e2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0kvz9d42e2",
+      "scope": "guide",
+      "updated_at": "2026-01-09 00:22:49",
+      "localPath": "official/guide/mh0kvz9d42e2_Flow_Control_Nodes.md"
+    },
+    {
+      "id": "mh9ulu0btt60",
+      "title": "Flow Control Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9ulu0btt60",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9ulu0btt60",
+      "scope": "guide",
+      "updated_at": "2026-04-02 09:30:31",
+      "localPath": "official/guide/mh9ulu0btt60_Flow_Control_Nodes.md"
+    },
+    {
+      "id": "mhig59rlkaou",
+      "title": "Follow Motion Device",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhig59rlkaou",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhig59rlkaou",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:53:11",
+      "localPath": "official/guide/mhig59rlkaou_Follow_Motion_Device.md"
+    },
+    {
+      "id": "mhp02viyg2dg",
+      "title": "Fullscreen UI Animation Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp02viyg2dg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp02viyg2dg",
+      "scope": "guide",
+      "updated_at": "2026-04-01 18:01:02",
+      "localPath": "official/guide/mhp02viyg2dg_Fullscreen_UI_Animation_Controls.md"
+    },
+    {
+      "id": "mhh260rhvweu",
+      "title": "Functions",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh260rhvweu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh260rhvweu",
+      "scope": "guide",
+      "updated_at": "2025-09-12 18:06:35",
+      "localPath": "official/guide/mhh260rhvweu_Functions.md"
+    },
+    {
+      "id": "mh029h9sjiq2",
+      "title": "General Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh029h9sjiq2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh029h9sjiq2",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:35:29",
+      "localPath": "official/guide/mh029h9sjiq2_General_Settings.md"
+    },
+    {
+      "id": "mh2oo29vhloy",
+      "title": "Generic Pins",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2oo29vhloy",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2oo29vhloy",
+      "scope": "guide",
+      "updated_at": "2025-10-21 05:36:39",
+      "localPath": "official/guide/mh2oo29vhloy_Generic_Pins.md"
+    },
+    {
+      "id": "mh9bzc0r99i0",
+      "title": "Global Timer",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9bzc0r99i0",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9bzc0r99i0",
+      "scope": "guide",
+      "updated_at": "2026-04-02 16:42:38",
+      "localPath": "official/guide/mh9bzc0r99i0_Global_Timer.md"
+    },
+    {
+      "id": "mhqy3jiy8hj8",
+      "title": "Hurtbox Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqy3jiy8hj8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqy3jiy8hj8",
+      "scope": "guide",
+      "updated_at": "2025-10-14 22:02:23",
+      "localPath": "official/guide/mhqy3jiy8hj8_Hurtbox_Settings.md"
+    },
+    {
+      "id": "mhg1gur8jqrq",
+      "title": "Image Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg1gur8jqrq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg1gur8jqrq",
+      "scope": "guide",
+      "updated_at": "2026-04-01 18:23:46",
+      "localPath": "official/guide/mhg1gur8jqrq_Image_Controls.md"
+    },
+    {
+      "id": "mh7y030nkv80",
+      "title": "Import/Export Assets",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7y030nkv80",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7y030nkv80",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:14:30",
+      "localPath": "official/guide/mh7y030nkv80_Import_Export_Assets.md"
+    },
+    {
+      "id": "mh92u90ps98g",
+      "title": "In-game Save",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh92u90ps98g",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh92u90ps98g",
+      "scope": "guide",
+      "updated_at": "2025-10-21 11:05:22",
+      "localPath": "official/guide/mh92u90ps98g_In-game_Save.md"
+    },
+    {
+      "id": "mhj7wur7lume",
+      "title": "Interactive Button UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj7wur7lume",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:18:23",
+      "localPath": "official/guide/mhj7wur7lume_Interactive_Button_UI_Controls.md"
+    },
+    {
+      "id": "mhgaefrvucha",
+      "title": "Interface Guide",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgaefrvucha",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgaefrvucha",
+      "scope": "guide",
+      "updated_at": "2026-01-14 08:54:25",
+      "localPath": "official/guide/mhgaefrvucha_Interface_Guide.md"
+    },
+    {
+      "id": "mhb6mc085sjc",
+      "title": "Interface Layout",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb6mc085sjc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb6mc085sjc",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:20:00",
+      "localPath": "official/guide/mhb6mc085sjc_Interface_Layout.md"
+    },
+    {
+      "id": "mhb12f03r2y8",
+      "title": "Inventory",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb12f03r2y8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb12f03r2y8",
+      "scope": "guide",
+      "updated_at": "2025-10-20 17:30:59",
+      "localPath": "official/guide/mhb12f03r2y8_Inventory.md"
+    },
+    {
+      "id": "mhir93rudpv2",
+      "title": "Inventory Component",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhir93rudpv2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhir93rudpv2",
+      "scope": "guide",
+      "updated_at": "2026-02-06 17:03:19",
+      "localPath": "official/guide/mhir93rudpv2_Inventory_Component.md"
+    },
+    {
+      "id": "mh1wwh99g1re",
+      "title": "Item",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1wwh99g1re",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1wwh99g1re",
+      "scope": "guide",
+      "updated_at": "2025-10-20 15:54:33",
+      "localPath": "official/guide/mh1wwh99g1re_Item.md"
+    },
+    {
+      "id": "mhtzuo0t4e1k",
+      "title": "Item Display UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtzuo0t4e1k",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:17:55",
+      "localPath": "official/guide/mhtzuo0t4e1k_Item_Display_UI_Controls.md"
+    },
+    {
+      "id": "mhpb6pi79hjo",
+      "title": "Key Behaviors",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpb6pi79hjo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpb6pi79hjo",
+      "scope": "guide",
+      "updated_at": "2026-04-03 15:02:32",
+      "localPath": "official/guide/mhpb6pi79hjo_Key_Behaviors.md"
+    },
+    {
+      "id": "mht9eaisd5bw",
+      "title": "Leaderboard",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht9eaisd5bw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht9eaisd5bw",
+      "scope": "guide",
+      "updated_at": "2025-10-20 18:07:23",
+      "localPath": "official/guide/mht9eaisd5bw_Leaderboard.md"
+    },
+    {
+      "id": "mh2ygorj0pna",
+      "title": "Light Source",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2ygorj0pna",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2ygorj0pna",
+      "scope": "guide",
+      "updated_at": "2025-10-21 15:16:03",
+      "localPath": "official/guide/mh2ygorj0pna_Light_Source.md"
+    },
+    {
+      "id": "mh2dk89mo6iq",
+      "title": "Load Calculation Function",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2dk89mo6iq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2dk89mo6iq",
+      "scope": "guide",
+      "updated_at": "2025-10-21 21:13:36",
+      "localPath": "official/guide/mh2dk89mo6iq_Load_Calculation_Function.md"
+    },
+    {
+      "id": "mhqsjmittry4",
+      "title": "Load Optimization",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqsjmittry4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqsjmittry4",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:47:11",
+      "localPath": "official/guide/mhqsjmittry4_Load_Optimization.md"
+    },
+    {
+      "id": "mhqbvvigln6s",
+      "title": "Local Projectiles",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s",
+      "scope": "guide",
+      "updated_at": "2025-10-14 20:50:36",
+      "localPath": "official/guide/mhqbvvigln6s_Local_Projectiles.md"
+    },
+    {
+      "id": "mh22ge9durci",
+      "title": "Loot",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh22ge9durci",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh22ge9durci",
+      "scope": "guide",
+      "updated_at": "2026-02-06 17:14:34",
+      "localPath": "official/guide/mh22ge9durci_Loot.md"
+    },
+    {
+      "id": "mh9sn304he9c",
+      "title": "Loots",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9sn304he9c",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9sn304he9c",
+      "scope": "guide",
+      "updated_at": "2025-10-20 21:12:26",
+      "localPath": "official/guide/mh9sn304he9c_Loots.md"
+    },
+    {
+      "id": "mhapyl0uxns0",
+      "title": "Main Camera",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0",
+      "scope": "guide",
+      "updated_at": "2026-04-03 14:08:33",
+      "localPath": "official/guide/mhapyl0uxns0_Main_Camera.md"
+    },
+    {
+      "id": "mhgli9r4nrni",
+      "title": "Main Interface",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgli9r4nrni",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgli9r4nrni",
+      "scope": "guide",
+      "updated_at": "2025-10-21 22:49:21",
+      "localPath": "official/guide/mhgli9r4nrni_Main_Interface.md"
+    },
+    {
+      "id": "mhgwm3rdh6tq",
+      "title": "Miliastra Sandbox",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgwm3rdh6tq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgwm3rdh6tq",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:17:41",
+      "localPath": "official/guide/mhgwm3rdh6tq_Miliastra_Sandbox.md"
+    },
+    {
+      "id": "mhiwt0rysfg6",
+      "title": "Mini-Map Marker",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhiwt0rysfg6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhiwt0rysfg6",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:44:07",
+      "localPath": "official/guide/mhiwt0rysfg6_Mini-Map_Marker.md"
+    },
+    {
+      "id": "mhqmzpipf2d0",
+      "title": "Model",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqmzpipf2d0",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqmzpipf2d0",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:31:41",
+      "localPath": "official/guide/mhqmzpipf2d0_Model.md"
+    },
+    {
+      "id": "mhr5m7i9zm10",
+      "title": "Multi-language Text",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr5m7i9zm10",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr5m7i9zm10",
+      "scope": "guide",
+      "updated_at": "2025-10-22 00:06:02",
+      "localPath": "official/guide/mhr5m7i9zm10_Multi-language_Text.md"
+    },
+    {
+      "id": "mhpv84i3difg",
+      "title": "Multiplayer Test Play",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpv84i3difg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpv84i3difg",
+      "scope": "guide",
+      "updated_at": "2025-10-13 23:21:33",
+      "localPath": "official/guide/mhpv84i3difg_Multiplayer_Test_Play.md"
+    },
+    {
+      "id": "mh0oh59a6d2i",
+      "title": "Nameplate",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0oh59a6d2i",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0oh59a6d2i",
+      "scope": "guide",
+      "updated_at": "2026-04-02 17:23:46",
+      "localPath": "official/guide/mh0oh59a6d2i_Nameplate.md"
+    },
+    {
+      "id": "mhbna30ldxao",
+      "title": "Node Graph Advanced Features",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbna30ldxao",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbna30ldxao",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:53:32",
+      "localPath": "official/guide/mhbna30ldxao_Node_Graph_Advanced_Features.md"
+    },
+    {
+      "id": "mh0zkz9izs8q",
+      "title": "Node Graph Editing Guide",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0zkz9izs8q",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0zkz9izs8q",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:46:59",
+      "localPath": "official/guide/mh0zkz9izs8q_Node_Graph_Editing_Guide.md"
+    },
+    {
+      "id": "mhbsu00psmvs",
+      "title": "Node Graph Logs",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbsu00psmvs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbsu00psmvs",
+      "scope": "guide",
+      "updated_at": "2025-10-22 03:21:59",
+      "localPath": "official/guide/mhbsu00psmvs_Node_Graph_Logs.md"
+    },
+    {
+      "id": "mhtq21i5la38",
+      "title": "Node Graph Variables",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtq21i5la38",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtq21i5la38",
+      "scope": "guide",
+      "updated_at": "2025-10-22 03:23:51",
+      "localPath": "official/guide/mhtq21i5la38_Node_Graph_Variables.md"
+    },
+    {
+      "id": "mh8k7r057pkg",
+      "title": "Node Graphs",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8k7r057pkg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8k7r057pkg",
+      "scope": "guide",
+      "updated_at": "2026-01-06 22:06:13",
+      "localPath": "official/guide/mh8k7r057pkg_Node_Graphs.md"
+    },
+    {
+      "id": "mhzyob9vh81m",
+      "title": "Node Introduction",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzyob9vh81m",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzyob9vh81m",
+      "scope": "guide",
+      "updated_at": "2025-10-14 18:34:12",
+      "localPath": "official/guide/mhzyob9vh81m_Node_Introduction.md"
+    },
+    {
+      "id": "mh6xax0e8pkw",
+      "title": "Object Camera",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6xax0e8pkw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6xax0e8pkw",
+      "scope": "guide",
+      "updated_at": "2026-03-27 15:49:48",
+      "localPath": "official/guide/mh6xax0e8pkw_Object_Camera.md"
+    },
+    {
+      "id": "mhzahw96hysi",
+      "title": "Objects",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzahw96hysi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzahw96hysi",
+      "scope": "guide",
+      "updated_at": "2025-10-14 20:45:03",
+      "localPath": "official/guide/mhzahw96hysi_Objects.md"
+    },
+    {
+      "id": "mh0ddb91cxwa",
+      "title": "On-Hit Detection",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0ddb91cxwa",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0ddb91cxwa",
+      "scope": "guide",
+      "updated_at": "2026-03-27 15:37:16",
+      "localPath": "official/guide/mh0ddb91cxwa_On-Hit_Detection.md"
+    },
+    {
+      "id": "mhinnxrxbf6m",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhinnxrxbf6m",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhinnxrxbf6m",
+      "scope": "guide",
+      "updated_at": "2026-03-27 18:49:10",
+      "localPath": "official/guide/mhinnxrxbf6m_Operation_Nodes.md"
+    },
+    {
+      "id": "mh0qfw9hirz6",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0qfw9hirz6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0qfw9hirz6",
+      "scope": "guide",
+      "updated_at": "2026-01-08 23:31:46",
+      "localPath": "official/guide/mh0qfw9hirz6_Operation_Nodes.md"
+    },
+    {
+      "id": "mhdttai0m3rw",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdttai0m3rw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdttai0m3rw",
+      "scope": "guide",
+      "updated_at": "2026-02-10 17:07:56",
+      "localPath": "official/guide/mhdttai0m3rw_Operation_Nodes.md"
+    },
+    {
+      "id": "mh50r6rf4hra",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh50r6rf4hra",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh50r6rf4hra",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:15:55",
+      "localPath": "official/guide/mh50r6rf4hra_Operation_Nodes.md"
+    },
+    {
+      "id": "mhw7p30tmvqo",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw7p30tmvqo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhw7p30tmvqo",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:42:31",
+      "localPath": "official/guide/mhw7p30tmvqo_Operation_Nodes.md"
+    },
+    {
+      "id": "mhnemz9859q2",
+      "title": "Operation Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnemz9859q2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnemz9859q2",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:58:17",
+      "localPath": "official/guide/mhnemz9859q2_Operation_Nodes.md"
+    },
+    {
+      "id": "mhi1g9rfoku6",
+      "title": "Other Concepts",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi1g9rfoku6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi1g9rfoku6",
+      "scope": "guide",
+      "updated_at": "2025-10-14 18:33:54",
+      "localPath": "official/guide/mhi1g9rfoku6_Other_Concepts.md"
+    },
+    {
+      "id": "mhrxdsiw15yk",
+      "title": "Other Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrxdsiw15yk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrxdsiw15yk",
+      "scope": "guide",
+      "updated_at": "2026-01-09 00:15:42",
+      "localPath": "official/guide/mhrxdsiw15yk_Other_Nodes.md"
+    },
+    {
+      "id": "mhmxz89ux4yq",
+      "title": "Other Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmxz89ux4yq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmxz89ux4yq",
+      "scope": "guide",
+      "updated_at": "2026-02-10 23:50:56",
+      "localPath": "official/guide/mhmxz89ux4yq_Other_Nodes.md"
+    },
+    {
+      "id": "mhe4x4i9fiy4",
+      "title": "Other Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe4x4i9fiy4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe4x4i9fiy4",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:31:23",
+      "localPath": "official/guide/mhe4x4i9fiy4_Other_Nodes.md"
+    },
+    {
+      "id": "mh5bv0rnxwxi",
+      "title": "Other Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5bv0rnxwxi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5bv0rnxwxi",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:45:27",
+      "localPath": "official/guide/mh5bv0rnxwxi_Other_Nodes.md"
+    },
+    {
+      "id": "mheg0yii8y4c",
+      "title": "Other Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mheg0yii8y4c",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mheg0yii8y4c",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:59:02",
+      "localPath": "official/guide/mheg0yii8y4c_Other_Nodes.md"
+    },
+    {
+      "id": "mhavii0zcdd4",
+      "title": "Path",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhavii0zcdd4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhavii0zcdd4",
+      "scope": "guide",
+      "updated_at": "2025-10-21 03:09:27",
+      "localPath": "official/guide/mhavii0zcdd4_Path.md"
+    },
+    {
+      "id": "mhvfxi07lbt4",
+      "title": "Pathfinding Obstacle",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvfxi07lbt4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhvfxi07lbt4",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:56:34",
+      "localPath": "official/guide/mhvfxi07lbt4_Pathfinding_Obstacle.md"
+    },
+    {
+      "id": "mht6lh9ue2a2",
+      "title": "Peripheral System",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht6lh9ue2a2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht6lh9ue2a2",
+      "scope": "guide",
+      "updated_at": "2025-10-19 17:19:14",
+      "localPath": "official/guide/mht6lh9ue2a2_Peripheral_System.md"
+    },
+    {
+      "id": "mhq6byic6xlo",
+      "title": "Player",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq6byic6xlo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq6byic6xlo",
+      "scope": "guide",
+      "updated_at": "2025-10-14 18:13:34",
+      "localPath": "official/guide/mhq6byic6xlo_Player.md"
+    },
+    {
+      "id": "mh1aot9rt7ey",
+      "title": "Pop-Up UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1aot9rt7ey",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1aot9rt7ey",
+      "scope": "guide",
+      "updated_at": "2025-10-19 14:39:04",
+      "localPath": "official/guide/mh1aot9rt7ey_Pop-Up_UI_Controls.md"
+    },
+    {
+      "id": "mhrb64ieebm4",
+      "title": "Prefab Group",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrb64ieebm4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrb64ieebm4",
+      "scope": "guide",
+      "updated_at": "2025-10-20 11:27:39",
+      "localPath": "official/guide/mhrb64ieebm4_Prefab_Group.md"
+    },
+    {
+      "id": "mhppo7iyysuc",
+      "title": "Prefab Library",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhppo7iyysuc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhppo7iyysuc",
+      "scope": "guide",
+      "updated_at": "2025-10-13 22:51:58",
+      "localPath": "official/guide/mhppo7iyysuc_Prefab_Library.md"
+    },
+    {
+      "id": "mhsn6miaqazg",
+      "title": "Preset Points",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsn6miaqazg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsn6miaqazg",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:04:22",
+      "localPath": "official/guide/mhsn6miaqazg_Preset_Points.md"
+    },
+    {
+      "id": "mha3qx0datfk",
+      "title": "Preset Status",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha3qx0datfk",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha3qx0datfk",
+      "scope": "guide",
+      "updated_at": "2025-10-17 15:00:46",
+      "localPath": "official/guide/mha3qx0datfk_Preset_Status.md"
+    },
+    {
+      "id": "mhsc2si1wvt8",
+      "title": "Progress Bar UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsc2si1wvt8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsc2si1wvt8",
+      "scope": "guide",
+      "updated_at": "2025-10-15 18:55:02",
+      "localPath": "official/guide/mhsc2si1wvt8_Progress_Bar_UI_Controls.md"
+    },
+    {
+      "id": "mhr97di71wpg",
+      "title": "Projectile Motion Device",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr97di71wpg",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr97di71wpg",
+      "scope": "guide",
+      "updated_at": "2025-10-16 21:27:03",
+      "localPath": "official/guide/mhr97di71wpg_Projectile_Motion_Device.md"
+    },
+    {
+      "id": "mhrm9yin7qsc",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrm9yin7qsc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrm9yin7qsc",
+      "scope": "guide",
+      "updated_at": "2026-03-30 15:39:23",
+      "localPath": "official/guide/mhrm9yin7qsc_Query_Nodes.md"
+    },
+    {
+      "id": "mh9p1x07f3kw",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9p1x07f3kw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9p1x07f3kw",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:08:48",
+      "localPath": "official/guide/mh9p1x07f3kw_Query_Nodes.md"
+    },
+    {
+      "id": "mhmsfb9qifdm",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmsfb9qifdm",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhmsfb9qifdm",
+      "scope": "guide",
+      "updated_at": "2026-02-12 17:47:14",
+      "localPath": "official/guide/mhmsfb9qifdm_Query_Nodes.md"
+    },
+    {
+      "id": "mhdzd7i50td0",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdzd7i50td0",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdzd7i50td0",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:10:57",
+      "localPath": "official/guide/mhdzd7i50td0_Query_Nodes.md"
+    },
+    {
+      "id": "mh56b3rjj7ce",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh56b3rjj7ce",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh56b3rjj7ce",
+      "scope": "guide",
+      "updated_at": "2026-02-16 15:38:14",
+      "localPath": "official/guide/mh56b3rjj7ce_Query_Nodes.md"
+    },
+    {
+      "id": "mhwd900y1lbs",
+      "title": "Query Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwd900y1lbs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwd900y1lbs",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:06:22",
+      "localPath": "official/guide/mhwd900y1lbs_Query_Nodes.md"
+    },
+    {
+      "id": "mhkas9r2gtq6",
+      "title": "Rank",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkas9r2gtq6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkas9r2gtq6",
+      "scope": "guide",
+      "updated_at": "2025-10-20 18:11:18",
+      "localPath": "official/guide/mhkas9r2gtq6_Rank.md"
+    },
+    {
+      "id": "mhshmpi6blec",
+      "title": "Resource System",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhshmpi6blec",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhshmpi6blec",
+      "scope": "guide",
+      "updated_at": "2025-10-19 18:01:58",
+      "localPath": "official/guide/mhshmpi6blec_Resource_System.md"
+    },
+    {
+      "id": "mh8enu00szzc",
+      "title": "Revive",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8enu00szzc",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8enu00szzc",
+      "scope": "guide",
+      "updated_at": "2026-03-27 14:56:52",
+      "localPath": "official/guide/mh8enu00szzc_Revive.md"
+    },
+    {
+      "id": "mhgi4lrlrvj2",
+      "title": "Risk Check Function",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgi4lrlrvj2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgi4lrlrvj2",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:05:51",
+      "localPath": "official/guide/mhgi4lrlrvj2_Risk_Check_Function.md"
+    },
+    {
+      "id": "mhrvf1ioor1w",
+      "title": "Scan Tag",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrvf1ioor1w",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrvf1ioor1w",
+      "scope": "guide",
+      "updated_at": "2025-10-21 22:53:01",
+      "localPath": "official/guide/mhrvf1ioor1w_Scan_Tag.md"
+    },
+    {
+      "id": "mhdipgirsolo",
+      "title": "Scene Generation Templates",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdipgirsolo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdipgirsolo",
+      "scope": "guide",
+      "updated_at": "2026-02-06 17:41:04",
+      "localPath": "official/guide/mhdipgirsolo_Scene_Generation_Templates.md"
+    },
+    {
+      "id": "mhaeur0m48ls",
+      "title": "Scoreboard UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhaeur0m48ls",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhaeur0m48ls",
+      "scope": "guide",
+      "updated_at": "2025-10-19 14:47:29",
+      "localPath": "official/guide/mhaeur0m48ls_Scoreboard_UI_Controls.md"
+    },
+    {
+      "id": "mh9dy30yloeo",
+      "title": "Server Nodes",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9dy30yloeo",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9dy30yloeo",
+      "scope": "guide",
+      "updated_at": "2025-10-21 03:40:58",
+      "localPath": "official/guide/mh9dy30yloeo_Server_Nodes.md"
+    },
+    {
+      "id": "mhju4irp8oyu",
+      "title": "Shield",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhju4irp8oyu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhju4irp8oyu",
+      "scope": "guide",
+      "updated_at": "2025-10-22 02:50:52",
+      "localPath": "official/guide/mhju4irp8oyu_Shield.md"
+    },
+    {
+      "id": "mht3udinyfqs",
+      "title": "Shop",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht3udinyfqs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mht3udinyfqs",
+      "scope": "guide",
+      "updated_at": "2025-10-21 02:20:30",
+      "localPath": "official/guide/mht3udinyfqs_Shop.md"
+    },
+    {
+      "id": "mh0u129el2nm",
+      "title": "Shop Component",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0u129el2nm",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0u129el2nm",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:43:11",
+      "localPath": "official/guide/mh0u129el2nm_Shop_Component.md"
+    },
+    {
+      "id": "mhkwzxrk3o2m",
+      "title": "Signal",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkwzxrk3o2m",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkwzxrk3o2m",
+      "scope": "guide",
+      "updated_at": "2025-10-21 16:38:25",
+      "localPath": "official/guide/mhkwzxrk3o2m_Signal.md"
+    },
+    {
+      "id": "mh154w9nehtu",
+      "title": "Skill Animation",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh154w9nehtu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh154w9nehtu",
+      "scope": "guide",
+      "updated_at": "2026-01-06 22:10:17",
+      "localPath": "official/guide/mh154w9nehtu_Skill_Animation.md"
+    },
+    {
+      "id": "mhyfcn91kiqi",
+      "title": "Skill Attribute Groups",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhyfcn91kiqi",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhyfcn91kiqi",
+      "scope": "guide",
+      "updated_at": "2026-04-03 15:26:26",
+      "localPath": "official/guide/mhyfcn91kiqi_Skill_Attribute_Groups.md"
+    },
+    {
+      "id": "mhk58cry2452",
+      "title": "Skill Resources",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk58cry2452",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk58cry2452",
+      "scope": "guide",
+      "updated_at": "2026-03-30 14:45:12",
+      "localPath": "official/guide/mhk58cry2452_Skill_Resources.md"
+    },
+    {
+      "id": "mh7dyo0rguc8",
+      "title": "Skill Variables",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7dyo0rguc8",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7dyo0rguc8",
+      "scope": "guide",
+      "updated_at": "2026-04-03 15:07:51",
+      "localPath": "official/guide/mh7dyo0rguc8_Skill_Variables.md"
+    },
+    {
+      "id": "mhjj0orgf9sm",
+      "title": "Skills",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjj0orgf9sm",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjj0orgf9sm",
+      "scope": "guide",
+      "updated_at": "2026-04-03 15:18:14",
+      "localPath": "official/guide/mhjj0orgf9sm_Skills.md"
+    },
+    {
+      "id": "mhbx2pi8x190",
+      "title": "Sound Effect Player",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbx2pi8x190",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbx2pi8x190",
+      "scope": "guide",
+      "updated_at": "2025-10-20 17:05:47",
+      "localPath": "official/guide/mhbx2pi8x190_Sound_Effect_Player.md"
+    },
+    {
+      "id": "mhj2cxr3751a",
+      "title": "Special Effects",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj2cxr3751a",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhj2cxr3751a",
+      "scope": "guide",
+      "updated_at": "2025-10-17 14:51:43",
+      "localPath": "official/guide/mhj2cxr3751a_Special_Effects.md"
+    },
+    {
+      "id": "mhg70rrcygcu",
+      "title": "Special Number Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg70rrcygcu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhg70rrcygcu",
+      "scope": "guide",
+      "updated_at": "2026-04-03 11:32:39",
+      "localPath": "official/guide/mhg70rrcygcu_Special_Number_Controls.md"
+    },
+    {
+      "id": "mhqhfsil0crw",
+      "title": "Specialized Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqhfsil0crw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqhfsil0crw",
+      "scope": "guide",
+      "updated_at": "2025-10-14 21:27:31",
+      "localPath": "official/guide/mhqhfsil0crw_Specialized_Settings.md"
+    },
+    {
+      "id": "mhhd9urqpbl2",
+      "title": "Stage",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhd9urqpbl2",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhd9urqpbl2",
+      "scope": "guide",
+      "updated_at": "2025-10-14 20:52:59",
+      "localPath": "official/guide/mhhd9urqpbl2_Stage.md"
+    },
+    {
+      "id": "mh7sg60j65mw",
+      "title": "Stage Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7sg60j65mw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7sg60j65mw",
+      "scope": "guide",
+      "updated_at": "2026-03-27 14:28:08",
+      "localPath": "official/guide/mh7sg60j65mw_Stage_Settings.md"
+    },
+    {
+      "id": "mh1rck951c6a",
+      "title": "Stage Settlement",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1rck951c6a",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1rck951c6a",
+      "scope": "guide",
+      "updated_at": "2025-10-21 15:00:39",
+      "localPath": "official/guide/mh1rck951c6a_Stage_Settlement.md"
+    },
+    {
+      "id": "mh2zrw94b0v6",
+      "title": "Structure",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2zrw94b0v6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2zrw94b0v6",
+      "scope": "guide",
+      "updated_at": "2026-01-06 23:08:27",
+      "localPath": "official/guide/mh2zrw94b0v6_Structure.md"
+    },
+    {
+      "id": "mhpekdiq5do4",
+      "title": "Support Function",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpekdiq5do4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhpekdiq5do4",
+      "scope": "guide",
+      "updated_at": "2025-10-19 18:27:00",
+      "localPath": "official/guide/mhpekdiq5do4_Support_Function.md"
+    },
+    {
+      "id": "mhr3ngi2n74c",
+      "title": "Tab",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr3ngi2n74c",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr3ngi2n74c",
+      "scope": "guide",
+      "updated_at": "2025-10-16 17:01:07",
+      "localPath": "official/guide/mhr3ngi2n74c_Tab.md"
+    },
+    {
+      "id": "mh7mw90erg1s",
+      "title": "Terrain Editing",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7mw90erg1s",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh7mw90erg1s",
+      "scope": "guide",
+      "updated_at": "2025-11-19 21:39:40",
+      "localPath": "official/guide/mh7mw90erg1s_Terrain_Editing.md"
+    },
+    {
+      "id": "mhytu59t9u16",
+      "title": "Test Play",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhytu59t9u16",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhytu59t9u16",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:16:26",
+      "localPath": "official/guide/mhytu59t9u16_Test_Play.md"
+    },
+    {
+      "id": "mha9au0hpj0o",
+      "title": "Text Box UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha9au0hpj0o",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha9au0hpj0o",
+      "scope": "guide",
+      "updated_at": "2025-10-19 14:38:16",
+      "localPath": "official/guide/mha9au0hpj0o_Text_Box_UI_Controls.md"
+    },
+    {
+      "id": "mhrpv4ika1gs",
+      "title": "Text Bubble",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrpv4ika1gs",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrpv4ika1gs",
+      "scope": "guide",
+      "updated_at": "2026-01-06 21:54:41",
+      "localPath": "official/guide/mhrpv4ika1gs_Text_Bubble.md"
+    },
+    {
+      "id": "mhk3sb99boca",
+      "title": "Timer",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk3sb99boca",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhk3sb99boca",
+      "scope": "guide",
+      "updated_at": "2025-11-19 22:06:31",
+      "localPath": "official/guide/mhk3sb99boca_Timer.md"
+    },
+    {
+      "id": "mhjdgrrc0k7i",
+      "title": "Timer UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjdgrrc0k7i",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjdgrrc0k7i",
+      "scope": "guide",
+      "updated_at": "2025-10-19 14:40:47",
+      "localPath": "official/guide/mhjdgrrc0k7i_Timer_UI_Controls.md"
+    },
+    {
+      "id": "mhzllq9fbdyq",
+      "title": "Transform, Native Collision, Visibility and Create Settings",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzllq9fbdyq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzllq9fbdyq",
+      "scope": "guide",
+      "updated_at": "2025-10-14 20:56:22",
+      "localPath": "official/guide/mhzllq9fbdyq_Transform,_Native_Collision,_Visibility_and_Create_Settings.md"
+    },
+    {
+      "id": "mhxyow9ocdz6",
+      "title": "UI Animation Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxyow9ocdz6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhxyow9ocdz6",
+      "scope": "guide",
+      "updated_at": "2026-04-01 17:56:43",
+      "localPath": "official/guide/mhxyow9ocdz6_UI_Animation_Controls.md"
+    },
+    {
+      "id": "mh280b9i9gxm",
+      "title": "UI Control Group",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh280b9i9gxm",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh280b9i9gxm",
+      "scope": "guide",
+      "updated_at": "2025-10-22 00:00:30",
+      "localPath": "official/guide/mh280b9i9gxm_UI_Control_Group.md"
+    },
+    {
+      "id": "mhjoklrktzdq",
+      "title": "UI Control Groups Management",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjoklrktzdq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjoklrktzdq",
+      "scope": "guide",
+      "updated_at": "2025-10-20 11:41:27",
+      "localPath": "official/guide/mhjoklrktzdq_UI_Control_Groups_Management.md"
+    },
+    {
+      "id": "mhs6ivixi684",
+      "title": "UI Controls",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684",
+      "scope": "guide",
+      "updated_at": "2026-04-01 18:11:50",
+      "localPath": "official/guide/mhs6ivixi684_UI_Controls.md"
+    },
+    {
+      "id": "mhr02ai5kwfw",
+      "title": "Undo and Restore",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr02ai5kwfw",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr02ai5kwfw",
+      "scope": "guide",
+      "updated_at": "2025-10-15 20:47:39",
+      "localPath": "official/guide/mhr02ai5kwfw_Undo_and_Restore.md"
+    },
+    {
+      "id": "mh9hj90vnz34",
+      "title": "Unit Status",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9hj90vnz34",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9hj90vnz34",
+      "scope": "guide",
+      "updated_at": "2025-10-20 15:56:22",
+      "localPath": "official/guide/mh9hj90vnz34_Unit_Status.md"
+    },
+    {
+      "id": "mh1lsn90mml6",
+      "title": "Unit Status",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1lsn90mml6",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1lsn90mml6",
+      "scope": "guide",
+      "updated_at": "2026-01-06 22:22:01",
+      "localPath": "official/guide/mh1lsn90mml6_Unit_Status.md"
+    },
+    {
+      "id": "mhklw3rba8we",
+      "title": "Unit Status Effect Pool",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhklw3rba8we",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhklw3rba8we",
+      "scope": "guide",
+      "updated_at": "2026-04-02 13:05:21",
+      "localPath": "official/guide/mhklw3rba8we_Unit_Status_Effect_Pool.md"
+    },
+    {
+      "id": "mh8pro09mf5k",
+      "title": "Unit Tag",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8pro09mf5k",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh8pro09mf5k",
+      "scope": "guide",
+      "updated_at": "2025-10-21 23:17:01",
+      "localPath": "official/guide/mh8pro09mf5k_Unit_Tag.md"
+    },
+    {
+      "id": "mhq0s1i7s80k",
+      "title": "Units",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq0s1i7s80k",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq0s1i7s80k",
+      "scope": "guide",
+      "updated_at": "2025-10-14 18:10:58",
+      "localPath": "official/guide/mhq0s1i7s80k_Units.md"
+    },
+    {
+      "id": "mh5tnfrrgrta",
+      "title": "Update Log",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5tnfrrgrta",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5tnfrrgrta",
+      "scope": "guide",
+      "updated_at": "2026-04-03 16:39:54",
+      "localPath": "official/guide/mh5tnfrrgrta_Update_Log.md"
+    },
+    {
+      "id": "mh0ix895rnhe",
+      "title": "VFX Playing",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0ix895rnhe",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0ix895rnhe",
+      "scope": "guide",
+      "updated_at": "2025-10-20 16:07:15",
+      "localPath": "official/guide/mh0ix895rnhe_VFX_Playing.md"
+    },
+    {
+      "id": "mh78er0n24r4",
+      "title": "VFX Tools",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh78er0n24r4",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh78er0n24r4",
+      "scope": "guide",
+      "updated_at": "2026-03-30 18:51:15",
+      "localPath": "official/guide/mh78er0n24r4_VFX_Tools.md"
+    },
+    {
+      "id": "mhi706rk3afa",
+      "title": "Voice and Text Chat",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi706rk3afa",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhi706rk3afa",
+      "scope": "guide",
+      "updated_at": "2026-04-02 21:26:09",
+      "localPath": "official/guide/mhi706rk3afa_Voice_and_Text_Chat.md"
+    },
+    {
+      "id": "mhl18n9382fu",
+      "title": "Wonderland Gift Box",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhl18n9382fu",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhl18n9382fu",
+      "scope": "guide",
+      "updated_at": "2025-10-21 14:39:17",
+      "localPath": "official/guide/mhl18n9382fu_Wonderland_Gift_Box.md"
+    },
+    {
+      "id": "mhfwwlrwzhlq",
+      "title": "Wonderland Resource Center",
+      "url": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfwwlrwzhlq",
+      "uniqueId": "https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfwwlrwzhlq",
+      "scope": "guide",
+      "updated_at": "2025-11-27 17:23:32",
+      "localPath": "official/guide/mhfwwlrwzhlq_Wonderland_Resource_Center.md"
+    }
+  ],
+  "metadata": {
+    "source": "guide",
+    "extractedAt": "2026-05-31T15:23:51.915Z",
+    "totalCount": 186,
+    "scopes": {
+      "guide": 186
+    }
+  }
+}
