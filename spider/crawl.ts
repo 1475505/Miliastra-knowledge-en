@@ -71,7 +71,9 @@ class URLGenerator {
     const entries: URLEntry[] = [];
     for (const item of items) {
       if (item.real_id) {
-        const url = `${baseUrl}${item.real_id}`;
+        // path_id is the navigable URL hash; real_id is the stable content ID used for file naming
+        const pathId = item.path_id ?? item.real_id;
+        const url = `${baseUrl}${pathId}`;
         entries.push({ id: item.real_id, title: item.title, url, uniqueId: url, scope, updated_at: item.updated_at });
       }
       if (item.children?.length > 0) {

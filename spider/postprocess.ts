@@ -128,6 +128,8 @@ async function loadCatalogTitles(scope: string): Promise<Map<string, string>> {
 
 async function processGuideFiles(): Promise<void> {
   const guideDir = path.join(KNOWLEDGE_DIR, 'official', 'guide');
+  const catalogTitles = await loadCatalogTitles('guide');
+
   let files: string[];
   try {
     files = (await fs.readdir(guideDir)).filter(f => f.endsWith('.md'));
@@ -136,13 +138,37 @@ async function processGuideFiles(): Promise<void> {
     return;
   }
 
-  console.log(`\n📁 Guide: deleting ${files.length} files (all contain identical SPA default content)`);
+  console.log(`\n📁 Guide: processing ${files.length} files`);
+  let fixed = 0, skipped = 0;
+
   for (const file of files) {
-    await fs.unlink(path.join(guideDir, file));
+    const filePath = path.join(guideDir, file);
+    const raw = await fs.readFile(filePath, 'utf-8');
+    const { meta, body } = parseFrontmatter(raw);
+
+    // 剥离 nav（与 tutorial 相同的策略）
+    const cleanedBody = stripTutorialNav(body);
+
+    // 修正 title：优先用正文第一个 # 标题（英文），其次用 catalog title
+    const h1Match = cleanedBody.match(/^# (.+)$/m);
+    const articleTitle = h1Match ? h1Match[1].trim() : (catalogTitles.get(meta.id ?? '') ?? '');
+
+    const bodyUnchanged = cleanedBody === body;
+    const titleUnchanged = !articleTitle || meta.title === articleTitle;
+
+    if (bodyUnchanged && titleUnchanged) {
+      skipped++;
+      continue;
+    }
+
+    if (articleTitle) meta.title = articleTitle;
+
+    const newContent = buildFrontmatter(meta) + cleanedBody;
+    await fs.writeFile(filePath, newContent, 'utf-8');
+    fixed++;
   }
-  // 删除目录本身
-  await fs.rmdir(guideDir);
-  console.log(`   ✓ Deleted official/guide/ (${files.length} files)`);
+
+  console.log(`   ✓ Cleaned: ${fixed} | Already clean: ${skipped}`);
 }
 
 async function processTutorialFiles(): Promise<void> {
