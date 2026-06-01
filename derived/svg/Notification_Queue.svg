@@ -18,14 +18,14 @@
   <!-- Title Card -->
   <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
   <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
-  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Message Queue</text>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Notification Queue</text>
   <text x="380" y="82" fill="#4A4B65" font-size="16">Controls</text>
 
   <!-- I. Features -->
-  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Features of the Message Queue</text>
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Features of the Notification Queue</text>
 
   <rect x="48" y="164" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
-  <text x="72" y="192" fill="#4A4B65" font-size="14">The Message Queue can be configured in a UI layout and pushes messages in a specified style in real time via the node graph.</text>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">The Notification Queue can be configured in a UI layout and pushes messages in a specified style in real time via the node graph.</text>
 
   <text x="72" y="218" fill="#4A4B65" font-size="14">Suitable for pushing and displaying various in-game information during gameplay, such as score updates, resource acquisition, and stage progress changes.</text>
 
@@ -38,14 +38,14 @@
   <text x="672" y="261" fill="#4A4B65" font-size="13">Played when messages are added or removed.</text>
 
   <!-- II. Editing -->
-  <text x="48" y="320" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Message Queue</text>
+  <text x="48" y="320" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Notification Queue</text>
 
   <!-- Step 1 -->
   <rect x="48" y="336" width="1104" height="52" rx="14" fill="#fff" filter="url(#card)"/>
   <circle cx="80" cy="362" r="14" fill="#2D6BE4"/>
   <text x="80" y="367" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">1</text>
-  <text x="106" y="358" fill="#1A1B2E" font-size="14" font-weight="500">Adding the Message Queue</text>
-  <text x="106" y="376" fill="#4A4B65" font-size="13">In the UI Control Group Editing Window, add a UI control template: Message Queue.</text>
+  <text x="106" y="358" fill="#1A1B2E" font-size="14" font-weight="500">Adding the Notification Queue</text>
+  <text x="106" y="376" fill="#4A4B65" font-size="13">In the UI Control Group Editing Window, add a UI control template: Notification Queue.</text>
 
   <!-- Step 2 -->
   <rect x="48" y="400" width="1104" height="104" rx="14" fill="#fff" filter="url(#card)"/>
@@ -64,7 +64,7 @@
   <rect x="48" y="516" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
   <circle cx="80" cy="546" r="14" fill="#2D6BE4"/>
   <text x="80" y="551" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">3</text>
-  <text x="106" y="550" fill="#1A1B2E" font-size="14" font-weight="500">Message Queue Function Settings</text>
+  <text x="106" y="550" fill="#1A1B2E" font-size="14" font-weight="500">Notification Queue Function Settings</text>
 
   <rect x="106" y="562" width="140" height="26" rx="6" fill="#E8EEFB"/>
   <text x="116" y="580" fill="#2D6BE4" font-size="12" font-weight="500">Initial Fill Point</text>
@@ -96,19 +96,19 @@
   <!-- Warning tip -->
   <rect x="48" y="808" width="1104" height="36" rx="6" fill="#FDE8E6"/>
   <rect x="48" y="808" width="4" height="36" rx="2" fill="#D93025"/>
-  <text x="68" y="831" fill="#D93025" font-size="13">Recommendation: It is not recommended to configure the maximum message count to exceed the size of the Message Queue control.</text>
+  <text x="68" y="831" fill="#D93025" font-size="13">Recommendation: It is not recommended to configure the maximum message count to exceed the size of the Notification Queue control.</text>
 
   <!-- III. Updating -->
-  <text x="48" y="880" fill="#2D6BE4" font-size="18" font-weight="700">III. Updating the Message Queue</text>
+  <text x="48" y="880" fill="#2D6BE4" font-size="18" font-weight="700">III. Updating the Notification Queue</text>
 
   <rect x="48" y="896" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
-  <text x="72" y="920" fill="#4A4B65" font-size="14">Use the server node Update Message Queue to push messages.</text>
-  <text x="72" y="940" fill="#1A1B2E" font-size="13" font-weight="500">Message queue updates can only push data as a complete struct: one struct per push operation.</text>
+  <text x="72" y="920" fill="#4A4B65" font-size="14">Use the server node Update Notification Queue to push messages.</text>
+  <text x="72" y="940" fill="#1A1B2E" font-size="13" font-weight="500">Notification Queue updates can only push data as a complete struct: one struct per push operation.</text>
 
   <!-- Related Documentation -->
   <text x="48" y="976" fill="#8B8DA0" font-size="12">Related Documentation:</text>
   <a xlink:href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs1f7ibtc6c" target="_blank">
-    <text x="48" y="992" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Message Queue Controls</text>
+    <text x="48" y="992" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Notification Queue Controls</text>
   </a>
 
   <text x="600" y="1012" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>

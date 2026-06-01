@@ -1,6 +1,6 @@
 ---
 id: mhs1f7ibtc6c
-title: Message Queue Controls
+title: Notification Queue Controls
 url: https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs1f7ibtc6c
 sourceURL: https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs1f7ibtc6c
 language: en
@@ -10,21 +10,21 @@ translatedAt: 2026-06-01T00:00:00.000Z
 note: No English equivalent published on act.hoyoverse.com. Translated from the Chinese official guide.
 ---
 
-# Message Queue Controls
+# Notification Queue Controls
 
-## I. Features of the Message Queue
+## I. Features of the Notification Queue
 
-The *Message Queue* can be configured in a UI layout and pushes messages in a specified style in real time via the node graph.
+The *Notification Queue* can be configured in a UI layout and pushes messages in a specified style in real time via the node graph.
 
 - Suitable for pushing and displaying various in-game information during gameplay, such as score updates, resource acquisition, and stage progress changes.
-- The Message Queue control is for **information display only** and cannot be interacted with.
+- The Notification Queue control is for **information display only** and cannot be interacted with.
 - When message items are added or removed from the queue, **additional animation effects** are played.
 
-## II. Editing the Message Queue
+## II. Editing the Notification Queue
 
-### 1. Adding the Message Queue
+### 1. Adding the Notification Queue
 
-In the *UI Control Group Editing Window*, add a UI control template — **Message Queue**.
+In the *UI Control Group Editing Window*, add a UI control template — **Notification Queue**.
 
 ### 2. Message Item Style Settings
 
@@ -34,7 +34,7 @@ Craftspeople can click **[Detail Edit]** to add any asset to the message item's 
 
 > **Note:** Messages default to fade-in and fade-out animations when updated. If a large number of messages are updated simultaneously, the animation may cause visible display delays.
 
-### 3. Message Queue Function Settings
+### 3. Notification Queue Function Settings
 
 - **Initial Fill Point**: The initial fill position when the first message item is added to the queue.
 - **Fill Direction**: The direction in which message items are filled.
@@ -48,12 +48,15 @@ Craftspeople can click **[Detail Edit]** to add any asset to the message item's 
 
 ### 4. Notes
 
-As illustrated, when the maximum number of messages in the Message Queue data exceeds the visible range of the Message Queue control, the UI animations added to the message item's Asset Group cannot be clipped.
+As illustrated, when the maximum number of messages in the Notification Queue data exceeds the visible range of the Notification Queue control, the UI animations added to the message item's Asset Group cannot be clipped.
 
-> **Recommendation:** It is **not recommended** to configure the maximum message count to exceed the size of the Message Queue control.
+![](https://act-webstatic.mihoyo.com/ugc-tutorial/knowledge/cn/zh-cn/mhs1f7ibtc6c/05ce5402-b3b5-46a9-a405-22d76f5d0f36.png)
 
-## III. Updating the Message Queue
+> **Recommendation:** It is **not recommended** to configure the maximum message count to exceed the size of the Notification Queue control.
+## III. Updating the Notification Queue
 
-Use the server node **Update Message Queue** to push messages.
+Use the server node **Update Notification Queue** to push messages.
 
-> **Note:** Message queue updates can only push data as a complete struct — one struct per push operation.
+> **Note:** Notification Queue updates can only push data as a complete struct — one struct per push operation.
+
+![](image/5.png)

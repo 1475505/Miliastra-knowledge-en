@@ -34,7 +34,7 @@
 
   <rect x="540" y="226" width="180" height="24" rx="12" fill="#E8EEFB"/>
   <text x="550" y="243" fill="#2D6BE4" font-size="12" font-weight="500">No animation effects</text>
-  <text x="732" y="243" fill="#4A4B65" font-size="13">Unlike Message Queue, no add/remove animations.</text>
+  <text x="732" y="243" fill="#4A4B65" font-size="13">Unlike Notification Queue, no add/remove animations.</text>
 
   <!-- II. Editing -->
   <text x="48" y="300" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Status Display Area</text>
@@ -87,7 +87,7 @@
   <text x="80" y="735" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">4</text>
   <text x="106" y="734" fill="#1A1B2E" font-size="14" font-weight="500">Notes: Layout Limit Behavior</text>
 
-  <text x="106" y="758" fill="#4A4B65" font-size="13">Unlike the Message Queue control, the Layout Limit parameter is affected by the fill direction:</text>
+  <text x="106" y="758" fill="#4A4B65" font-size="13">Unlike the Notification Queue control, the Layout Limit parameter is affected by the fill direction:</text>
 
   <rect x="106" y="770" width="120" height="22" rx="11" fill="#E8EEFB"/>
   <text x="116" y="785" fill="#2D6BE4" font-size="11" font-weight="500">Fixed Rows</text>

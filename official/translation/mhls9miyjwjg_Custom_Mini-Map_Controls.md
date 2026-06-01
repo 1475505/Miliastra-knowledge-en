@@ -60,6 +60,8 @@ The map scale that determines the scale ratio between the image and the scene. C
 
 ### 4. Map Display Configuration
 
+![](image/image.png)
+
 **Mini-Map Scale:**
 
 An existing configuration parameter. Determines the default zoom multiplier for the mini-map in the UI layout.
@@ -77,3 +79,4 @@ The zoomed map can be previewed using the scale preview below.
 Used to switch the mini-map displayed in the mini-map component within the UI layout of the target player and apply the related configuration.
 
 - **Show Map**: If `true`, the map is shown; if `false`, the map is hidden (same effect as having no map configuration).
+![](image/image1.png)

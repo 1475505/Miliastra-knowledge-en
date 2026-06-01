@@ -76,7 +76,7 @@
 60-Scoreboard
 61-Rich Text
 62-Status Display
-63-Message Queue
+63-Notification Queue
 
 64-UI Control Group Library
 65-Asset Library
@@ -90,5 +90,5 @@
 42-Custom Mini-Map
 61-Rich Text
 62-Status Display
-63-Message Queue
+63-Notification Queue
 65-Asset Library

@@ -17,7 +17,7 @@ note: No English equivalent published on act.hoyoverse.com. Translated from the 
 The *Status Display Area* can be configured in a UI layout. It monitors unit statuses on entities and displays them in a custom style.
 
 - The Status Display Area control is for **information display only** and cannot be interacted with.
-- Unlike the Message Queue, status items do **not** play additional animation effects when they are added or removed from the queue.
+- Unlike the Notification Queue, status items do **not** play additional animation effects when they are added or removed from the queue.
 
 ## II. Editing the Status Display Area
 
@@ -33,6 +33,8 @@ Craftspeople can click **[Detail Edit]** to add any asset to the status item's A
 
 ### 3. Status Display Area Function Settings
 
+![](image/image2.png)
+
 - **Initial Fill Point**: The initial fill position when the first status item is added to the queue.
 - **Fill Direction**: The direction in which status items are filled.
 - **New Status Insertion Position**: Can be combined with **Fill Direction** and **Initial Fill Point** to achieve different effects.
@@ -45,7 +47,7 @@ Craftspeople can click **[Detail Edit]** to add any asset to the status item's A
 
 ### 4. Notes
 
-Unlike the Message Queue control, the **Layout Limit** parameter of the Status Display Area is affected by the fill direction:
+Unlike the Notification Queue control, the **Layout Limit** parameter of the Status Display Area is affected by the fill direction:
 
 - **Layout Limit = Fixed Rows**: Status items fill the current column first, then wrap to a new column.
 - **Layout Limit = Fixed Columns**: Status items fill the current row first, then wrap to a new row.
@@ -60,8 +62,13 @@ In the **Status Item Configuration** under the **Function** tab, first specify t
 
 ### 2. Associate a Unit Status
 
-Click **Detail Edit** to open the interface, then click **[Associate Unit Status]** to select the unit status to display.
+![](image/4.png)
+
+Click **Edit Details** to open the interface, then click **[Link Unit Status]** to select the unit status to display.
 
 ### 3. Add a Control Push Effect to the Unit Status
 
-For each unit status that should be displayed in the control, add a **"Status Display Area: Add Status"** effect in its configuration, and select the target control to push to.
+![](image/3.png)
+
+
+For each unit status that should be displayed in the control, add a **"Add status to Status Display Area"** effect in its configuration, and select the target control to push to.

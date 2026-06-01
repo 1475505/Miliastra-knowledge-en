@@ -36,10 +36,14 @@ After creating the Asset Group, you can optionally enable a **Mask**. Enabling t
 
 Using the Status Display Area control as an example: in the reference asset area, an Asset Group can be referenced.
 
-Click **[Detail Edit]** to either create a new Asset Group or directly reference an already-created one.
+![alt text](image/7.png)
+
+Click **[Edit Details]** to either create a new Asset Group or directly reference an already-created one.
 
 ### 3. Preview Settings During Asset Group Editing
 
 After entering the Asset Group editing interface, the current Asset Group being edited is visually isolated from the canvas using a dimmed overlay. The position of the Asset Group on the canvas is for **editing preview purposes only** and does not affect the Asset Group's relative position based on its parent control.
 
 In the settings, you can configure the visibility of the mask and the source control of the Asset Group during the editing preview.
+
+![](image/6.png)

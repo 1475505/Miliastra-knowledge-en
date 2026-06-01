@@ -211,7 +211,7 @@ Currently translated (CN-only) documents:
 | `official/translation/mhls9miyjwjg_Custom_Mini-Map_Controls.md` | Custom Mini-Map Controls | `mhls9miyjwjg` |
 | `official/translation/mh496c08hooo_Rich_Text_Input_Controls.md` | Rich Text Input Controls | `mh496c08hooo` |
 | `official/translation/mh4ve00q4j14_Status_Display_Area_Controls.md` | Status Display Area Controls | `mh4ve00q4j14` |
-| `official/translation/mhs1f7ibtc6c_Message_Queue_Controls.md` | Message Queue Controls | `mhs1f7ibtc6c` |
+| `official/translation/mhs1f7ibtc6c_Message_Queue_Controls.md` | Notification Queue Controls | `mhs1f7ibtc6c` |
 | `official/translation/mhwylormozcm_Asset_Library.md` | Asset Library | `mhwylormozcm` |
 
 When generating SVGs from translation files, use the `url:` field from their frontmatter (which points to the CN source page) for the source link. The source link text should use the English title.
