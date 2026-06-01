@@ -31,6 +31,30 @@ interface DocEntry {
   localPath: string
 }
 
+function normalizeDocTitle(title: string): string {
+  return title.toLowerCase().replace(/[^a-z0-9]/g, '')
+}
+
+function readFrontmatterTitle(localPath: string): string | null {
+  try {
+    const abs = path.resolve(DATA_ROOT, localPath)
+    if (!abs.startsWith(path.resolve(DATA_ROOT)) || !fs.existsSync(abs)) return null
+    const content = fs.readFileSync(abs, 'utf-8')
+    const fm = parseFrontmatter(content)
+    return fm.title?.trim() || null
+  } catch {
+    return null
+  }
+}
+
+function extractDocIdsFromText(text: string): string[] {
+  const ids = new Set<string>()
+  const re = /act\.hoyoverse\.com\/ys\/ugc\/tutorial\/(?:course\/)?detail\/([\w-]+)/g
+  let match: RegExpExecArray | null
+  while ((match = re.exec(text)) !== null) ids.add(match[1])
+  return [...ids]
+}
+
 function parseFrontmatter(content: string): Record<string, string> {
   const result: Record<string, string> = {}
   const match = content.match(/^---\n([\s\S]*?)\n---/)
@@ -63,12 +87,22 @@ function loadTranslationEntries(): DocEntry[] {
     })
 }
 
+const TUTORIAL_TITLE_OVERRIDES: Record<string, string> = {
+  mh76jr0msx4g: '[Creator Tip] Inspiration Incentive Program Overview',
+  mhu04t9rm1xm: 'Miliastra Dev Team Sharing (1) | Gameplay Design Exchange',
+  mhyrrdiy2zis: 'Player Tutorial',
+}
+
 function loadDocEntries(): DocEntry[] {
   const guidePath = path.join(DATA_ROOT, 'config/urls-guide.json')
   const tutorialPath = path.join(DATA_ROOT, 'config/urls-tutorial.json')
   const guide: DocEntry[] = JSON.parse(fs.readFileSync(guidePath, 'utf-8')).entries
   const tutorial: DocEntry[] = JSON.parse(fs.readFileSync(tutorialPath, 'utf-8')).entries
-  return [...guide, ...tutorial]
+  return [...guide, ...tutorial].map(entry => {
+    const titleFromSource = readFrontmatterTitle(entry.localPath) || entry.title
+    const title = TUTORIAL_TITLE_OVERRIDES[entry.id] || titleFromSource
+    return { ...entry, title }
+  })
 }
 
 function titleToSvgFilename(rawTitle: string): string {
@@ -94,7 +128,12 @@ interface SvgSection {
   entries: SvgEntry[]
 }
 
-function parseSvgIndex(content: string, availableSvgs: Set<string>, allDocs: DocEntry[]): SvgSection[] {
+function parseSvgIndex(
+  content: string,
+  availableSvgs: Set<string>,
+  allDocs: DocEntry[],
+  svgRelations: Map<string, string[]>
+): SvgSection[] {
   const lines = content.split('\n')
   const sections: SvgSection[] = []
   const topSections: SvgSection[] = []
@@ -137,15 +176,16 @@ function parseSvgIndex(content: string, availableSvgs: Set<string>, allDocs: Doc
       const description = parenMatch ? parenMatch[2].trim() : undefined
       const svgFile = titleToSvgFilename(`${entryMatch[1]}-${rawTitle}`)
 
-      // Find related docs by title matching
-      const normalTitle = title.toLowerCase().replace(/[^a-z0-9]/g, '')
-      const relatedDocIds = allDocs
+      const explicit = svgRelations.get(svgFile) || []
+      const normalTitle = normalizeDocTitle(title)
+      const fallback = allDocs
         .filter(d => {
-          const norm = d.title.toLowerCase().replace(/[^a-z0-9]/g, '')
+          const norm = normalizeDocTitle(d.title)
           if (!norm || !normalTitle) return false
           return norm === normalTitle || norm.includes(normalTitle) || normalTitle.includes(norm)
         })
         .map(d => d.id)
+      const relatedDocIds = [...new Set([...explicit, ...fallback])]
 
       current.entries.push({
         id: entryId,
@@ -169,7 +209,17 @@ app.get('/api/svg/index', (_req, res) => {
     const files = fs.readdirSync(svgDir).filter(f => f.endsWith('.svg'))
     const availableSvgs = new Set(files.map(f => f.replace('.svg', '')))
     const allDocs = loadDocEntries()
-    const index = parseSvgIndex(content, availableSvgs, allDocs)
+    const allDocIds = new Set(allDocs.map(d => d.id))
+    const svgRelations = new Map<string, string[]>()
+
+    for (const file of files) {
+      const svgPath = path.join(svgDir, file)
+      const svgText = fs.readFileSync(svgPath, 'utf-8')
+      const ids = extractDocIdsFromText(svgText).filter(id => allDocIds.has(id))
+      if (ids.length > 0) svgRelations.set(file.replace('.svg', ''), ids)
+    }
+
+    const index = parseSvgIndex(content, availableSvgs, allDocs, svgRelations)
     res.json(index)
   } catch (err) {
     res.status(500).json({ error: String(err) })
@@ -190,11 +240,9 @@ app.get('/api/docs/list/:scope', (req, res) => {
   const { scope } = req.params
   try {
     if (scope === 'guide') {
-      const data = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/urls-guide.json'), 'utf-8'))
-      res.json(data.entries)
+      res.json(loadDocEntries().filter(d => d.scope === 'guide'))
     } else if (scope === 'tutorial') {
-      const data = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/urls-tutorial.json'), 'utf-8'))
-      res.json(data.entries)
+      res.json(loadDocEntries().filter(d => d.scope === 'tutorial'))
     } else if (scope === 'translation') {
       res.json(loadTranslationEntries())
     } else {
