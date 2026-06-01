@@ -14,6 +14,9 @@ const DATA_ROOT = process.env.DATA_ROOT
 
 const isProd = process.env.NODE_ENV === 'production'
 
+const SVG_FONT_STACK = "'HYWenHei 85W','汉仪文黑 85W','Roboto','Noto Sans','Segoe UI',sans-serif"
+const SVG_FONT_OVERRIDE_STYLE = `<style data-docs-site-font="hywenhei-85w">text, tspan, textPath { font-family: ${SVG_FONT_STACK} !important; }</style>`
+
 if (isProd) {
   app.use(express.static(path.join(__dirname, 'public')))
 } else {
@@ -78,6 +81,11 @@ function parseFrontmatter(content: string): Record<string, string> {
     result[line.slice(0, sep)] = line.slice(sep + 2)
   }
   return result
+}
+
+function enforceSvgFontFamily(svgText: string): string {
+  if (svgText.includes('data-docs-site-font="hywenhei-85w"')) return svgText
+  return svgText.replace(/<svg\b([^>]*)>/i, `<svg$1>${SVG_FONT_OVERRIDE_STYLE}`)
 }
 
 function loadTranslationEntries(): DocEntry[] {
@@ -354,8 +362,9 @@ app.get('/api/svg/file/:name', (req, res) => {
   const svgPath = path.resolve(DATA_ROOT, 'derived/svg', `${name}.svg`)
   if (!svgPath.startsWith(path.resolve(DATA_ROOT))) return res.status(403).json({ error: 'Forbidden' })
   if (!fs.existsSync(svgPath)) return res.status(404).json({ error: 'Not found' })
+  const svgText = fs.readFileSync(svgPath, 'utf-8')
   res.setHeader('Content-Type', 'image/svg+xml; charset=utf-8')
-  res.sendFile(svgPath)
+  res.send(enforceSvgFontFamily(svgText))
 })
 
 app.get('/api/docs/list/:scope', (req, res) => {

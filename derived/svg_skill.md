@@ -79,10 +79,10 @@ Blends Apple Human Interface Guidelines minimalist layout style. Minimal, clean,
 ### Typography
 
 ```
-font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif"
+font-family="'HYWenHei 85W','汉仪文黑 85W','Roboto','Noto Sans','Segoe UI',sans-serif"
 ```
 
-Primary font is Roboto (clean English sans-serif), with fallback to HYWenHei 85W for brand consistency.
+Primary font is HYWenHei 85W (汉仪文黑 85W), with Roboto retained as the Latin fallback.
 
 | Level | Size | Weight | Color |
 |-------|------|--------|-------|
@@ -256,5 +256,5 @@ Source links are directly above the footer. Footer text leaves 12–16px gap fro
 - [ ] viewBox height fits content, no large blank area at bottom
 - [ ] Top color bar (6px, blue→deep purple gradient), no bottom color bar
 - [ ] Every independent subtopic from source document has at least one independent row
-- [ ] Font uses `Roboto` as primary, `HYWenHei 85W` as fallback
+- [ ] Font uses `HYWenHei 85W` / `汉仪文黑 85W` as primary, with `Roboto` as fallback
 - [ ] Body content does not use blue text; blue is only for: section titles, numbered circles, title vertical bar, pill tag text, tip box text, bottom hyperlinks

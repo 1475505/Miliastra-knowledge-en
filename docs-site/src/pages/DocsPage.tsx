@@ -11,6 +11,7 @@ export function DocsPage() {
   const navigate = useNavigate()
 
   const [scope, setScope] = useState<Scope>('guide')
+  const [sidebarOpen, setSidebarOpen] = useState(true)
   const [guideToc, setGuideToc] = useState<DocTocSection[]>([])
   const [tutorialToc, setTutorialToc] = useState<DocTocSection[]>([])
   const [localDocIds, setLocalDocIds] = useState<Set<string>>(new Set())
@@ -155,7 +156,7 @@ export function DocsPage() {
   return (
     <div className="page-layout">
       {/* ── Sidebar ── */}
-      <aside className="sidebar">
+      <aside className={`sidebar${sidebarOpen ? '' : ' collapsed'}`}>
         <div className="tab-bar">
           <button
             className={`tab-btn${scope === 'guide' ? ' active' : ''}`}
@@ -234,38 +235,54 @@ export function DocsPage() {
       {/* ── Main ── */}
       <div className="docs-layout">
         <div className="docs-main">
-          {!id ? (
-            <div className="docs-empty">
-              <div className="docs-empty-icon">📚</div>
-              <div style={{ fontWeight: 500, fontSize: 15 }}>Select a document from the sidebar</div>
-              <div style={{ fontSize: 13 }}>
-                {guideTotalAvailable} guides · {tutorialDocs.length} tutorials
-              </div>
+          <div className="toolbar">
+            <button
+              className={`toolbar-btn${sidebarOpen ? ' active' : ''}`}
+              onClick={() => setSidebarOpen(v => !v)}
+              title="Toggle sidebar"
+            >
+              ☰
+            </button>
+            <div className="toolbar-divider" />
+            <div className="toolbar-zoom">
+              <span>{scope === 'guide' ? 'Guide' : 'Tutorial'} directory</span>
             </div>
-          ) : docLoading ? (
-            <div className="loading" style={{ flex: 1 }}>
-              <div className="spinner" /> Loading...
-            </div>
-          ) : docError ? (
-            <div className="docs-article">
-              <div className="error-msg">{docError}</div>
-            </div>
-          ) : (
-            <article className="docs-article">
-              <div className="docs-article-header">
-                <h1 className="docs-article-title">{docMeta?.title}</h1>
-                <div className="docs-article-meta">
-                  <span>Updated {docMeta?.updated_at?.slice(0, 10)}</span>
-                  {docMeta?.url && (
-                    <a href={docMeta.url} target="_blank" rel="noopener noreferrer">
-                      View source ↗
-                    </a>
-                  )}
+          </div>
+
+          <div className="docs-scroll">
+            {!id ? (
+              <div className="docs-empty">
+                <div className="docs-empty-icon">📚</div>
+                <div style={{ fontWeight: 500, fontSize: 15 }}>Select a document from the sidebar</div>
+                <div style={{ fontSize: 13 }}>
+                  {guideTotalAvailable} guides · {tutorialDocs.length} tutorials
                 </div>
               </div>
-              <MarkdownViewer content={docContent} localDocIds={localDocIds} />
-            </article>
-          )}
+            ) : docLoading ? (
+              <div className="loading" style={{ flex: 1 }}>
+                <div className="spinner" /> Loading...
+              </div>
+            ) : docError ? (
+              <div className="docs-article">
+                <div className="error-msg">{docError}</div>
+              </div>
+            ) : (
+              <article className="docs-article">
+                <div className="docs-article-header">
+                  <h1 className="docs-article-title">{docMeta?.title}</h1>
+                  <div className="docs-article-meta">
+                    <span>Updated {docMeta?.updated_at?.slice(0, 10)}</span>
+                    {docMeta?.url && (
+                      <a href={docMeta.url} target="_blank" rel="noopener noreferrer">
+                        View source ↗
+                      </a>
+                    )}
+                  </div>
+                </div>
+                <MarkdownViewer content={docContent} localDocIds={localDocIds} />
+              </article>
+            )}
+          </div>
         </div>
       </div>
     </div>
