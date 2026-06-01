@@ -1,132 +1,244 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="2400" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">32-Local Projectiles</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2288">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2288" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition &amp; Characteristics</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local Projectile</text>
+<text x="390" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Client-side entities for projectile and on-hit effects</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Local projectiles are entities that are computed and rendered locally to simulate projectile effects and on-hit effects.</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">They need to be predefined during editing before they can be referenced and created by skill node graphs.</text>
-    <text x="20" y="108" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Dependencies</text>
-    <text x="20" y="134" font-size="13" fill="#4A4B65">• Projectile Motion Device — determines runtime movement rules</text>
-    <text x="20" y="154" font-size="13" fill="#4A4B65">• On-Hit Detection — determines collision trigger rules and effects</text>
-    <text x="20" y="174" font-size="13" fill="#4A4B65">• Life Cycle — defines the overall execution flow from initialization to destruction</text>
-  </g>
+<!-- I. Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Definition of Local Projectiles</text>
 
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creating &amp; Editing Local Projectiles</text>
+<rect x="48" y="164" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local projectiles are entities computed and rendered locally (client-side) to simulate projectile effects and on-hit effects.</text>
+<text x="72" y="214" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Must be predefined during editing before being referenced and created by skill node graphs.</text>
+<text x="72" y="236" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Runtime depends on projectile motion device (movement rules) and on-hit detection (collision trigger rules).</text>
 
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Process</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">1. Enter the Combat Preset tab and select the Local Projectile tab</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">2. Manage tabs as needed, create corresponding local projectiles within the tab</text>
-    <text x="20" y="94" font-size="13" fill="#4A4B65">3. Click "Confirm Create" to create a new local projectile</text>
-    <text x="20" y="118" font-size="13" fill="#1A1B2E" font-weight="bold">Note: Each predefined local projectile name must be globally unique. A globally unique prefab ID is auto-generated.</text>
-  </g>
+<!-- II. Client vs Server Bullets -->
+<text x="48" y="280" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Client Bullets vs Server Bullets</text>
 
-  <circle cx="80" cy="574" r="16" fill="#2D6BE4"/>
-  <text x="80" y="575" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="575" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Base Attributes</text>
+<rect x="48" y="296" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="310" width="150" height="28" rx="14" fill="#E8EEFB"/>
+<text x="147" y="329" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local Projectile</text>
+<text x="72" y="352" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">"Client Bullet" - computed locally</text>
+<text x="72" y="372" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Created via skill config client node graphs</text>
+<text x="72" y="390" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Uses Fixed-Point Projectile Launch node</text>
 
-  <g transform="translate(60, 602)">
-    <rect width="520" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Settings</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Model Configuration</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">The model used by the local projectile during runtime.</text>
-    <text x="16" y="102" font-size="13" fill="#4A4B65">Supports X, Y, Z axis scaling (values persist after switching models).</text>
-    <text x="16" y="126" font-size="14" font-weight="bold" fill="#1A1B2E">Attribute Settings</text>
-    <text x="16" y="148" font-size="13" fill="#4A4B65">Two enumeration options:</text>
-    <text x="16" y="168" font-size="13" fill="#1A1B2E" font-weight="bold">Inherited from Creator</text>
-    <text x="16" y="186" font-size="13" fill="#4A4B65">HP, ATK, DEF identical to creator</text>
-    <text x="16" y="208" font-size="13" fill="#1A1B2E" font-weight="bold">Independent</text>
-    <text x="16" y="226" font-size="13" fill="#4A4B65">Configure HP, ATK, DEF as needed</text>
-    <text x="16" y="250" font-size="13" fill="#4A4B65">Whether Subsequent Settings Are Influenced by the Creator:</text>
-    <text x="16" y="270" font-size="13" fill="#4A4B65">If enabled, certain unit status effects on the creator will</text>
-    <text x="16" y="290" font-size="13" fill="#4A4B65">be synchronized to the projectile (only HP/ATK/DEF effects).</text>
-  </g>
+<rect x="604" y="296" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="628" y="310" width="220" height="28" rx="14" fill="#FFF3E0"/>
+<text x="738" y="329" fill="#1A1B2E" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Projectile Motion Device</text>
+<text x="628" y="352" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">"Server Bullet" - computed by server</text>
+<text x="628" y="372" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Created via server node graphs dynamically</text>
+<text x="628" y="390" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Uses Create Projectile node</text>
 
-  <g transform="translate(620, 602)">
-    <rect width="520" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Life Cycle Settings</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Duration</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Permanent Duration: If not enabled, specify duration time</text>
-    <text x="16" y="104" font-size="13" fill="#4A4B65">Duration: Max time from initialization to destruction</text>
-    <text x="16" y="126" font-size="13" fill="#4A4B65">without other influencing factors</text>
-    <text x="16" y="154" font-size="14" font-weight="bold" fill="#1A1B2E">Destruction Distance</text>
-    <text x="16" y="176" font-size="13" fill="#4A4B65">X/Z Axis Destruction Distance: Highest priority condition for</text>
-    <text x="16" y="196" font-size="13" fill="#4A4B65">destroying local projectiles during runtime (except Ability Units)</text>
-    <text x="16" y="218" font-size="13" fill="#4A4B65">Y-Axis Destruction Distance</text>
-    <text x="16" y="242" font-size="14" font-weight="bold" fill="#1A1B2E">End of Life Cycle Behavior</text>
-    <text x="16" y="264" font-size="13" fill="#4A4B65">When life cycle ends, executes configured ability units</text>
-    <text x="16" y="284" font-size="13" fill="#4A4B65">in order from top to bottom. Ability units referenced are</text>
-    <text x="16" y="304" font-size="13" fill="#4A4B65">those defined within the projectile's ability unit settings.</text>
-  </g>
+<!-- III. Editing Local Projectiles -->
+<text x="48" y="436" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Editing Local Projectiles</text>
+<text x="300" y="436" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combat Preset > Local Projectile tab</text>
 
-  <circle cx="80" cy="998" r="16" fill="#2D6BE4"/>
-  <text x="80" y="999" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="999" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Common Components</text>
+<!-- Naming and Indexing -->
+<rect x="48" y="452" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="478" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Naming and Indexing:</text>
+<text x="250" y="478" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each name must be globally unique. A globally unique Prefab ID is auto-generated.</text>
+<text x="72" y="498" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Confirm Create" to create a new local projectile.</text>
 
-  <g transform="translate(60, 1026)">
-    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Component Types</text>
-    <text x="20" y="64" font-size="14" font-weight="bold" fill="#1A1B2E">VFX Playing Component</text>
-    <text x="20" y="86" font-size="13" fill="#4A4B65">Plays visual effects associated with the projectile. Supports timed and looped effects.</text>
-    <text x="20" y="116" font-size="14" font-weight="bold" fill="#1A1B2E">Projectile Motion Device</text>
-    <text x="20" y="138" font-size="13" fill="#4A4B65">Defines the runtime movement rules for the projectile — speed, trajectory, homing behavior, etc.</text>
-    <text x="20" y="168" font-size="14" font-weight="bold" fill="#1A1B2E">On-Hit Detection</text>
-    <text x="20" y="190" font-size="13" fill="#4A4B65">Determines collision trigger rules and effects when the projectile hits a target.</text>
-    <text x="20" y="212" font-size="13" fill="#4A4B65">Can reference predefined ability units to execute on hit detection trigger.</text>
-    <text x="20" y="238" font-size="13" fill="#4A4B65">Ability units can be adjusted through "Advanced Editing".</text>
-  </g>
+<!-- IV. Base Attributes -->
+<text x="48" y="544" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Base Attributes (Column 1)</text>
 
-  <circle cx="80" cy="1342" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1343" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1343" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Ability Units</text>
+<!-- Basic Settings -->
+<rect x="48" y="560" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="586" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Settings</text>
+<text x="72" y="610" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Model from projectile model library provided by editor.</text>
+<text x="72" y="630" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Supports X, Y, Z axis scaling. Zoom values persist after switching models.</text>
 
-  <g transform="translate(60, 1370)">
-    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Ability Unit References</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Local projectiles can reference ability units from the third column of the editor. These units require</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">predefined editing and can be adjusted through "Advanced Editing".</text>
-    <text x="20" y="104" font-size="13" fill="#4A4B65">In the On-Hit Detection component, predefined ability units can be referenced and executed once</text>
-    <text x="20" y="124" font-size="13" fill="#4A4B65">hit detection is triggered. The execution order follows the configured list from top to bottom.</text>
-  </g>
+<!-- Combat Parameters -->
+<rect x="604" y="560" width="548" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="586" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combat Parameters</text>
 
-  <g transform="translate(60, 1540)">
-    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Local Projectile Life Cycle</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">All local projectiles follow this flow: Init → Motion Device (movement) → On-Hit Detection →</text>
-    <text x="20" y="64" font-size="13" fill="#4A4B65">Life Cycle End Conditions Check → Execute End-of-Life Ability Units → Destroy</text>
-  </g>
+<rect x="628" y="600" width="180" height="26" rx="13" fill="#E8EEFB"/>
+<text x="718" y="618" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attribute Settings</text>
+<text x="820" y="618" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inherited from Creator</text>
 
-  <text x="60" y="1680" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s" target="_blank">
-    <text x="60" y="1706" font-size="13" fill="#2D6BE4" text-decoration="underline">Local Projectiles → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhqbvvigln6s</text>
-  </a>
-  <text x="600" y="1740" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<text x="628" y="644" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">or Independent (configure HP, ATK, DEF as needed)</text>
+
+<rect x="628" y="654" width="380" height="26" rx="13" fill="#E8EEFB"/>
+<text x="818" y="672" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether Subsequent Settings Are Influenced by Creator</text>
+
+<!-- Life Cycle -->
+<rect x="48" y="652" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="678" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Life Cycle Settings</text>
+
+<rect x="72" y="692" width="170" height="26" rx="13" fill="#E8EEFB"/>
+<text x="157" y="710" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Permanent Duration</text>
+<text x="254" y="710" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If off, specify duration time</text>
+
+<rect x="72" y="724" width="100" height="26" rx="13" fill="#E8EEFB"/>
+<text x="122" y="742" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration</text>
+<text x="184" y="742" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Max time from init to destruction</text>
+
+<rect x="72" y="756" width="250" height="26" rx="13" fill="#E8EEFB"/>
+<text x="197" y="774" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X/Z Axis Destruction Distance</text>
+
+<!-- End of Life Cycle -->
+<rect x="48" y="784" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="810" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">End of Life Cycle Behavior</text>
+<text x="72" y="834" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When life cycle ends, executes configured ability units in order from top to bottom.</text>
+<text x="72" y="854" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Y-Axis Destruction Distance also applies. X/Z distance is highest priority destroy condition (except Ability Units).</text>
+
+<!-- V. Common Components -->
+<text x="48" y="904" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Common Components (Column 2)</text>
+
+<rect x="48" y="920" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="946" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VFX Playing</text>
+<text x="72" y="970" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visual effects component for the</text>
+<text x="72" y="988" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">projectile's appearance</text>
+
+<rect x="420" y="920" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="444" y="946" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Projectile Motion Device</text>
+<text x="444" y="970" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines runtime movement rules</text>
+<text x="444" y="988" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(linear, parabolic, tracking)</text>
+
+<rect x="792" y="920" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="816" y="946" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">On-Hit Detection</text>
+<text x="816" y="970" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines collision trigger rules</text>
+<text x="816" y="988" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">and effects on impact</text>
+
+<!-- VI. Ability Units -->
+<text x="48" y="1040" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Ability Units (Column 3)</text>
+
+<rect x="48" y="1056" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1082" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local projectiles can reference predefined ability units. Adjust through "Advanced Editing".</text>
+<text x="72" y="1104" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In On-Hit Detection component, predefined ability units can be referenced and executed once hit detection is triggered.</text>
+<text x="72" y="1126" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Ability units require predefined editing. See Ability Units documentation for details.</text>
+
+<!-- VII. Tutorial: Parabolic Bullet -->
+<text x="48" y="1172" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Tutorial: Parabolic Trajectory Bullet (Server Bullet)</text>
+
+<rect x="48" y="1188" width="1104" height="230" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1214" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Create a bullet with parabolic trajectory using Projectile Motion Device</text>
+
+<circle cx="72" cy="1242" r="14" fill="#2D6BE4"/>
+<text x="72" y="1247" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1247" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create prefab as bullet (empty object), add Projectile Motion Device component</text>
+
+<circle cx="72" cy="1272" r="14" fill="#2D6BE4"/>
+<text x="72" y="1277" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1277" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select "Parabolic Projectile". Set Initial Velocity: x=0, y=8, z=4 (60-degree launch angle)</text>
+
+<circle cx="72" cy="1302" r="14" fill="#2D6BE4"/>
+<text x="72" y="1307" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1307" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Speed auto-converts from initial velocity. Gravitational acceleration affects trajectory/distance.</text>
+
+<circle cx="72" cy="1332" r="14" fill="#2D6BE4"/>
+<text x="72" y="1337" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1337" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add looping VFX for bullet visibility. Click "Preview Current Motion" to verify trajectory.</text>
+
+<circle cx="72" cy="1362" r="14" fill="#2D6BE4"/>
+<text x="72" y="1367" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1367" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node graph: Event "When Tab Selected" -> Binary Branch -> Check Option ID = 1 -> Create Projectile</text>
+
+<circle cx="72" cy="1392" r="14" fill="#1B4FC0"/>
+<text x="72" y="1397" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">6</text>
+<text x="96" y="1397" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount node graph on turret, place prefabs in scene, test gameplay</text>
+
+<!-- VIII. Tutorial: Blade Wave Skill -->
+<text x="48" y="1458" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Tutorial: Blade Wave Skill (Client Bullet)</text>
+
+<rect x="48" y="1474" width="1104" height="300" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1500" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Create a skill that emits blade waves using Local Projectiles</text>
+
+<circle cx="72" cy="1528" r="14" fill="#2D6BE4"/>
+<text x="72" y="1533" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1533" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combat Preset > Local Projectiles > Create new. Select "Empty Model" for blade wave VFX.</text>
+
+<circle cx="72" cy="1558" r="14" fill="#2D6BE4"/>
+<text x="72" y="1563" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1563" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combat Parameters: Inherited from Creator. Life Cycle: Permanent enabled. XYZ Destroy Distance: 50.00</text>
+
+<circle cx="72" cy="1588" r="14" fill="#2D6BE4"/>
+<text x="72" y="1593" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1593" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VFX: Select loop effect + blade wave asset. Projectile Motion Device: Linear Projectile, accel rate/duration = 5</text>
+
+<circle cx="72" cy="1618" r="14" fill="#2D6BE4"/>
+<text x="72" y="1623" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1623" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hit Detection: Configure area matching effect width. Trigger Type: non-repeatable. Detection Delay: 0.5</text>
+
+<circle cx="72" cy="1648" r="14" fill="#2D6BE4"/>
+<text x="72" y="1653" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1653" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Ability Unit: Create "Direct Attack" ability unit with damage values</text>
+
+<circle cx="72" cy="1678" r="14" fill="#2D6BE4"/>
+<text x="72" y="1683" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">6</text>
+<text x="96" y="1683" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Skill animation: New Skill > "Sword Normal Attack" > Status Track: VFX Playing "Sword"</text>
+
+<circle cx="72" cy="1708" r="14" fill="#2D6BE4"/>
+<text x="72" y="1713" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">7</text>
+<text x="96" y="1713" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Skill node graph: Get attach point position/rotation > Fixed-Point Projectile Launch (use custom "FirePoint")</text>
+
+<circle cx="72" cy="1738" r="14" fill="#1B4FC0"/>
+<text x="72" y="1743" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">8</text>
+<text x="96" y="1743" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Insert logic into node graph event track at corresponding frame. Equip skill in class interface and test.</text>
+
+<!-- Tip Box -->
+<rect x="48" y="1788" width="1104" height="52" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="1788" width="4" height="52" rx="2" fill="#D93025"/>
+<text x="72" y="1810" fill="#D93025" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Warning: Do not set bullet speed too high. Bullets moving too fast may pass through creations</text>
+<text x="72" y="1830" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(monsters) without dealing damage. Set Detection Delay to avoid self-detection on creation.</text>
+
+<!-- IX. Extended: Loot Drop Visuals -->
+<text x="48" y="1880" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Extended: Loot Drop Visuals After Opening Chest</text>
+
+<rect x="48" y="1896" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1922" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Solution: Projectile A hits ground -> get coordinates -> generate entity B at landing position</text>
+
+<circle cx="72" cy="1950" r="14" fill="#2D6BE4"/>
+<text x="72" y="1955" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1955" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create prefab A with projectile component, configure parabolic motion</text>
+
+<circle cx="72" cy="1980" r="14" fill="#2D6BE4"/>
+<text x="72" y="1985" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1985" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure hit detection, disable scene/water surface ignoring to get ground hit coordinates</text>
+
+<circle cx="72" cy="2010" r="14" fill="#2D6BE4"/>
+<text x="72" y="2015" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="2015" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create prefab B with pickup logic (same appearance as A, different logic for player pickup)</text>
+
+<circle cx="72" cy="2040" r="14" fill="#2D6BE4"/>
+<text x="72" y="2045" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="2045" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Chest logic: generate 5 prefab A when entering collision box</text>
+
+<circle cx="72" cy="2070" r="14" fill="#1B4FC0"/>
+<text x="72" y="2075" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="2075" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prefab A node graph: "When Hit Detection Triggers" -> get hit position -> check if scene -> generate prefab B</text>
+
+<!-- Tip: Projectile Motion Device takes effect immediately -->
+<rect x="48" y="2112" width="1104" height="52" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2112" width="4" height="52" rx="2" fill="#2D6BE4"/>
+<text x="72" y="2134" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: The projectile motion device takes effect immediately when the object is created by default.</text>
+<text x="72" y="2154" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Other projectile types: Linear Projectile and Following Projectile. See Projectile Motion Device guide for details.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2200" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhciimiw86jg" target="_blank">
+<text x="48" y="2220" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Local Projectiles (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhn4nsiz7k18" target="_blank">
+<text x="48" y="2240" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: 3.8 Projectile Motion Device (Tutorial)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2272" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

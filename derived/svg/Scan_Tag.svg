@@ -1,213 +1,268 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#1A1B2E" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B2E" flood-opacity="0.08"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2460">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2460" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="3200" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag</text>
+<text x="260" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera-based entity selection with visual feedback</text>
 
-  <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">29-Scan Tag: Scan Function, Tags, Components &amp; Node Graphs</text>
+<!-- I. What Is the Scan Function -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. What Is the Scan Function</text>
 
-  <!-- I. What is the Scan Function -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What is the Scan Function</text>
+<rect x="48" y="164" width="1104" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The scan function allows players to select an entity during gameplay by using the camera.</text>
+<text x="72" y="214" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scanned targets can display special effects such as unique icons or VFX.</text>
+<text x="72" y="238" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In skill usage logic, scanned targets can be retrieved via node graph nodes to select specific skill targets.</text>
+<text x="72" y="262" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether an entity can be scanned and its post-scan display are defined through scan tags and implemented</text>
+<text x="72" y="282" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">through scan components assigned to prefabs and entities.</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">The scan function allows players to select an entity during gameplay by using the camera.</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The scanned target can be configured to display special effects, such as unique icons or effects.</text>
-    <text x="20" y="76" font-size="14" fill="#4A4B65">In skill usage logic, scanned targets can be retrieved via nodes from the relevant node graph,</text>
-    <text x="20" y="96" font-size="14" fill="#4A4B65">allowing selection of specific skill targets.</text>
-    <text x="20" y="124" font-size="14" fill="#4A4B65">Whether an entity can be scanned and its status display after being scanned can be defined</text>
-    <text x="20" y="144" font-size="14" fill="#4A4B65">through <tspan font-weight="bold" fill="#1A1B2E">scan tags</tspan> and implemented through <tspan font-weight="bold" fill="#1A1B2E">scan components</tspan> to assign logic</text>
-    <text x="20" y="164" font-size="14" fill="#4A4B65">to prefabs and entities.</text>
-  </g>
+<!-- II. Editing Scan Tags -->
+<text x="48" y="328" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Editing Scan Tags</text>
+<text x="230" y="328" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via "Scan Tag Management" in the system menu</text>
 
-  <!-- II. Editing Scan Tags -->
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Scan Tags</text>
+<!-- Scan Tag List -->
+<rect x="48" y="344" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="370" r="14" fill="#2D6BE4"/>
+<text x="72" y="375" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="375" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag List</text>
+<text x="96" y="400" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All defined scan tags are listed here for global filtering and searching. Click "Create New Scan Tag Template" to add.</text>
 
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="976" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">A scan tag defines the filtering logic and display settings for a scannable object. It must be</text>
-    <text x="20" y="48" font-size="14" fill="#4A4B65">defined globally in advance. Access via "Scan Tag Management" in the system menu.</text>
+<!-- Scan Tag Effect Preview -->
+<rect x="48" y="436" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="464" r="14" fill="#2D6BE4"/>
+<text x="72" y="469" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="469" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag Effect Preview</text>
+<text x="340" y="469" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visual preview of the scan tag effects in real time</text>
 
-    <text x="20" y="76" font-size="14" font-weight="bold" fill="#1A1B2E">1. Scan Tag List</text>
-    <text x="20" y="100" font-size="13" fill="#4A4B65">All defined scan tags can be found in this interface for filtering and searching globally.</text>
-    <text x="20" y="120" font-size="13" fill="#4A4B65">Click "Create New Scan Tag Template" to add a new scan tag.</text>
+<!-- Scan Tag Logic Configuration -->
+<rect x="48" y="504" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="532" r="14" fill="#2D6BE4"/>
+<text x="72" y="537" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="537" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag Logic Configuration</text>
+<text x="380" y="537" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines scanning rules and behaviors; has two tabs</text>
 
-    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">2. Scan Tag Logic Configuration</text>
-    <text x="20" y="172" font-size="13" fill="#4A4B65">Divided into two tabs: Status Performance and Effective Conditions.</text>
+<!-- Basic Definition -->
+<text x="48" y="596" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Basic Definition</text>
 
-    <text x="20" y="200" font-size="13" font-weight="bold" fill="#1A1B2E">Basic Definition</text>
-    <text x="20" y="224" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag Name</tspan> — The name of the scan tag, used for identification.</text>
-    <text x="20" y="244" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Configuration ID</tspan> — Unique identifier used to index this scan tag in the node graph.</text>
+<rect x="48" y="612" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="638" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag Name</text>
+<text x="72" y="660" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name of the scan tag, used for identification only</text>
+<text x="72" y="682" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Display-only, not used in logic</text>
 
-    <text x="20" y="276" font-size="13" font-weight="bold" fill="#1A1B2E">Status Performance</text>
-    <text x="20" y="300" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Icon Settings</tspan> — When a prefab/entity with this scan tag is selected, a hint icon appears.</text>
-    <text x="20" y="320" font-size="13" fill="#4A4B65">Configure icon resource groups for different selection states. Up to two icons on-screen.</text>
-    <text x="20" y="344" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Attachment Point</tspan> / <tspan font-weight="bold" fill="#1A1B2E">Offset</tspan> — Icon display position relative to entity attachment points.</text>
+<rect x="604" y="612" width="548" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="638" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configuration ID</text>
+<text x="628" y="660" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Data type serves as the unique identifier of this scan tag</text>
+<text x="628" y="682" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Used to index this scan tag within the node graph</text>
 
-    <text x="20" y="372" font-size="13" font-weight="bold" fill="#1A1B2E">Selection States (3 states)</text>
+<!-- IV. Status Performance -->
+<text x="48" y="728" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Status Performance</text>
+<text x="260" y="728" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icon and VFX settings per selection state</text>
 
-    <rect x="20" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Active State</text>
-    <text x="36" y="430" font-size="11" fill="#4A4B65">Currently selected by scan.</text>
-    <text x="36" y="444" font-size="11" fill="#4A4B65">Only one entity at a time.</text>
+<!-- Icon Settings -->
+<rect x="48" y="744" width="1104" height="170" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="770" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icon Settings</text>
 
-    <rect x="365" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="381" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Available State</text>
-    <text x="381" y="430" font-size="11" fill="#4A4B65">Meets conditions but not active.</text>
-    <text x="381" y="444" font-size="11" fill="#4A4B65">Higher priority target is active.</text>
+<rect x="72" y="784" width="120" height="28" rx="14" fill="#E8EEFB"/>
+<text x="132" y="803" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Icon</text>
+<text x="204" y="803" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure icon resource group for different selection states. Can be left empty (no icon). Up to 2 icons on-screen.</text>
 
-    <rect x="710" y="388" width="330" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="726" y="410" font-size="12" font-weight="bold" fill="#1A1B2E">Disabled State</text>
-    <text x="726" y="430" font-size="11" fill="#4A4B65">Effective conditions not met.</text>
+<rect x="72" y="820" width="140" height="28" rx="14" fill="#E8EEFB"/>
+<text x="142" y="839" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attachment Point</text>
+<text x="224" y="839" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The icon is displayed at the attachment point of the corresponding entity</text>
 
-    <text x="20" y="480" font-size="13" font-weight="bold" fill="#1A1B2E">Special Effects Settings</text>
-    <text x="20" y="504" font-size="13" fill="#4A4B65">Effect configurations applied based on state:</text>
-    <text x="40" y="528" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Activated Status Effects</tspan> — VFX when entity is in active state.</text>
-    <text x="40" y="548" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Available Status Effects</tspan> — VFX when entity is in available state.</text>
-    <text x="40" y="568" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Disable Status Effects</tspan> — VFX when entity is in disabled state.</text>
-    <text x="20" y="592" font-size="13" fill="#4A4B65">Configure: VFX Assets, Attachment Point, Zoom Factor, Offset, Rotation.</text>
+<rect x="72" y="856" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="112" y="875" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offset</text>
+<text x="164" y="875" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The offset position of the icon relative to the attachment point</text>
 
-    <text x="20" y="624" font-size="13" font-weight="bold" fill="#1A1B2E">Effective Conditions</text>
-    <text x="20" y="648" font-size="13" fill="#4A4B65">Describes conditions that must be met to put a scannable entity into the available state.</text>
+<!-- Selection States -->
+<text x="72" y="904" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Three Selection States:</text>
 
-    <rect x="20" y="664" width="500" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="686" font-size="12" font-weight="bold" fill="#1A1B2E">Local Filter</text>
-    <text x="36" y="706" font-size="11" fill="#4A4B65">Boolean/Integer filter with associated node graph.</text>
+<!-- State cards -->
+<rect x="72" y="918" width="340" height="78" rx="10" fill="#E5F2E9"/>
+<text x="88" y="940" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Active State</text>
+<text x="88" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currently selected by scan. Only one</text>
+<text x="88" y="978" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">entity can be active at any moment.</text>
 
-    <rect x="540" y="664" width="500" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="686" font-size="12" font-weight="bold" fill="#1A1B2E">Obstacle Detection</text>
-    <text x="556" y="706" font-size="11" fill="#4A4B65">Line-of-sight check with ray detection.</text>
+<rect x="428" y="918" width="340" height="78" rx="10" fill="#E8EEFB"/>
+<text x="444" y="940" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Available State</text>
+<text x="444" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Conditions met but not yet activated,</text>
+<text x="444" y="978" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">usually due to higher-priority targets.</text>
 
-    <rect x="20" y="740" width="500" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="762" font-size="12" font-weight="bold" fill="#1A1B2E">Distance Detection</text>
-    <text x="36" y="782" font-size="11" fill="#4A4B65">Defines available range of scannable entity.</text>
+<rect x="784" y="918" width="340" height="78" rx="10" fill="#FDE8E6"/>
+<text x="800" y="940" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Disabled State</text>
+<text x="800" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective conditions are not yet met.</text>
+<text x="800" y="978" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity excluded from scan results.</text>
 
-    <rect x="540" y="740" width="500" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="762" font-size="12" font-weight="bold" fill="#1A1B2E">Line of Sight Detection</text>
-    <text x="556" y="782" font-size="11" fill="#4A4B65">Obstacle check between camera and entity.</text>
+<!-- Special Effects Settings -->
+<rect x="48" y="1020" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1046" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Special Effects Settings</text>
+<text x="72" y="1068" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each state (Active, Available, Disabled) has an independent effect configuration with the same parameters:</text>
 
-    <rect x="20" y="816" width="500" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="838" font-size="12" font-weight="bold" fill="#1A1B2E">FOV Range Settings</text>
-    <text x="36" y="858" font-size="11" fill="#4A4B65">Elliptical area at screen center.</text>
+<text x="72" y="1096" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Per-State Parameters:</text>
 
-    <text x="20" y="912" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Ignore Water Surface</tspan> — Available for both Obstacle and Line of Sight detection.</text>
-    <text x="20" y="936" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">FOV:</tspan> Configure Ellipse Horizontal/Vertical Axis Ratio. Preview available.</text>
-    <text x="20" y="956" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Detection Range</tspan> — Can be previewed directly in the scene.</text>
-  </g>
+<rect x="72" y="1108" width="130" height="26" rx="13" fill="#E8EEFB"/>
+<text x="137" y="1126" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VFX Assets</text>
+<text x="214" y="1126" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select a special effect asset to apply</text>
 
-  <!-- III. Scan Tag Components -->
-  <circle cx="80" cy="1420" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1421" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="1421" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing Scan Tag Components</text>
+<rect x="72" y="1140" width="150" height="26" rx="13" fill="#E8EEFB"/>
+<text x="147" y="1158" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attachment Point</text>
+<text x="234" y="1158" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect follows the attachment point position and rotation</text>
 
-  <g transform="translate(60, 1448)">
-    <rect width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Adding Components</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">In the Entity or Prefab editing interface, open the Component Editing Tab. Click</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">"Add Components", then select and click "Scan Tag" to add it.</text>
+<rect x="600" y="1108" width="130" height="26" rx="13" fill="#E8EEFB"/>
+<text x="665" y="1126" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Zoom Factor</text>
+<text x="742" y="1126" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scale at which the effect is played</text>
 
-    <text x="20" y="100" font-size="14" font-weight="bold" fill="#1A1B2E">2. Scan Tag Component Settings</text>
-    <text x="20" y="124" font-size="13" fill="#4A4B65">The component can be configured with multiple alternative scan tag templates, but only</text>
-    <text x="20" y="144" font-size="13" fill="#4A4B65">one scan tag can take effect during gameplay. Can be dynamically switched via node graphs.</text>
-    <text x="20" y="168" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initially Effective</tspan> — Default active scan tag.</text>
-    <text x="20" y="192" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag List</tspan> — All scan tags contained in this component.</text>
-    <text x="20" y="216" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag ID</tspan> — Used as identifier when switching dynamically.</text>
-    <text x="20" y="240" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Reference Scan Tag</tspan> — Select and reference pre-defined global scan tags.</text>
-  </g>
+<rect x="600" y="1140" width="80" height="26" rx="13" fill="#E8EEFB"/>
+<text x="640" y="1158" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offset</text>
+<text x="692" y="1158" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Additional offset from attachment point</text>
 
-  <!-- IV. Scan Tag Filtering Logic -->
-  <circle cx="80" cy="1744" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1745" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1745" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Scan Tag Filtering Logic</text>
+<rect x="600" y="1172" width="100" height="26" rx="13" fill="#E8EEFB"/>
+<text x="650" y="1190" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Rotation</text>
+<text x="712" y="1190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Additional rotation relative to attachment point</text>
 
-  <g transform="translate(60, 1772)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">When multiple available scan objects are present simultaneously, only one scan object will be</text>
-    <text x="20" y="48" font-size="14" fill="#4A4B65">set to the active state. The filtering rules are defined by the class attribute</text>
-    <text x="20" y="68" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">"Scan Tag Recognition Rules"</tspan>.</text>
+<!-- V. Effective Conditions -->
+<text x="48" y="1240" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Effective Conditions</text>
+<text x="280" y="1240" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Conditions to put a scannable entity into available state</text>
 
-    <rect x="20" y="88" width="480" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="110" font-size="12" font-weight="bold" fill="#1A1B2E">Distance From Center of FOV</text>
-    <text x="36" y="130" font-size="11" fill="#4A4B65">Closest to FOV center gets priority.</text>
+<!-- Local Filter -->
+<rect x="48" y="1256" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1282" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local Filter</text>
+<text x="72" y="1304" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Boolean filter or integer filter can be selected.</text>
+<text x="72" y="1326" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Associate a local filter node graph. If the return</text>
+<text x="72" y="1346" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">value fails, entity is treated as non-scannable.</text>
 
-    <rect x="520" y="88" width="480" height="64" rx="8" fill="#E8EEFB"/>
-    <text x="536" y="110" font-size="12" font-weight="bold" fill="#1A1B2E">Actual Position Distance</text>
-    <text x="536" y="130" font-size="11" fill="#4A4B65">Nearest to player character gets priority.</text>
-  </g>
+<!-- Obstacle Detection -->
+<rect x="604" y="1256" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1282" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Obstacle Detection</text>
+<text x="628" y="1304" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Verifies line-of-sight between local character and</text>
+<text x="628" y="1326" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">scanned entity via ray detection. If ray fails, entity</text>
+<text x="628" y="1346" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">is disabled. Options: Detection Point, Ignore Water.</text>
 
-  <!-- V. Node Graph Nodes -->
-  <circle cx="80" cy="1988" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1989" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1989" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Scan Tag Node Graph Nodes</text>
+<!-- Distance Detection -->
+<rect x="48" y="1372" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1398" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Distance Detection</text>
+<text x="72" y="1420" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Defines the available range of a scannable entity.</text>
+<text x="72" y="1442" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Detection Point: attachment point for evaluation.</text>
+<text x="72" y="1462" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Detection Range: entity disabled if outside range.</text>
 
-  <g transform="translate(60, 2016)">
-    <rect width="1080" height="360" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Server Nodes</text>
+<!-- Line of Sight Detection -->
+<rect x="604" y="1372" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1398" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Line of Sight Detection</text>
+<text x="628" y="1420" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Detects obstacles between local camera and scanned</text>
+<text x="628" y="1442" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">object. Options: Detection Point, Ignore Water</text>
+<text x="628" y="1462" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Surface, Ignore Obstacles.</text>
 
-    <rect x="20" y="44" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="66" font-size="12" font-weight="bold" fill="#1A1B2E">Set Scan Tag Rules</text>
-    <text x="36" y="86" font-size="11" fill="#4A4B65">Sets the recognition rule for scan filtering.</text>
+<!-- FOV Range Settings -->
+<rect x="48" y="1488" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1514" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">FOV Range Settings</text>
+<text x="72" y="1536" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Requires scanned entity to be within an elliptical area at the center of the screen; otherwise disabled.</text>
+<text x="72" y="1558" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">FOV Detection Point: based on entity attachment point. Ellipse Horizontal/Vertical Axis Ratio: relative to screen width/height.</text>
+<text x="72" y="1578" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Preview FOV" to visually preview the effective range in the editor.</text>
 
-    <rect x="540" y="44" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="66" font-size="12" font-weight="bold" fill="#1A1B2E">Set Scan Component's Active Scan Tag ID</text>
-    <text x="556" y="86" font-size="11" fill="#4A4B65">Switches which scan tag is active.</text>
+<!-- VI. Editing Scan Tag Components -->
+<text x="48" y="1628" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Editing Scan Tag Components</text>
 
-    <rect x="20" y="116" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="138" font-size="12" font-weight="bold" fill="#1A1B2E">Get Current Active Scan Tag Config ID</text>
-    <text x="36" y="158" font-size="11" fill="#4A4B65">Returns the active scan tag config ID.</text>
+<!-- Adding Components -->
+<rect x="48" y="1644" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1670" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adding Components</text>
+<text x="72" y="1692" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. In the Entity or Prefab editing interface, open the Component Editing Tab</text>
+<text x="72" y="1712" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Click "Add Components" then select "Scan Tag" to add it</text>
 
-    <text x="20" y="208" font-size="14" font-weight="bold" fill="#1A1B2E">Client Nodes</text>
+<!-- Scan Tag Component Settings -->
+<rect x="48" y="1736" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1762" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag Component Settings</text>
+<text x="72" y="1786" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiple alternative scan tag templates can be configured, but only one takes effect during gameplay.</text>
+<text x="72" y="1808" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dynamically switched using node graphs.</text>
 
-    <rect x="20" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get All Valid Scannable Entities</text>
-    <text x="36" y="266" font-size="11" fill="#4A4B65">Returns all scannable entities.</text>
+<text x="72" y="1836" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Per-Tag Fields:</text>
+<rect x="72" y="1848" width="120" height="26" rx="13" fill="#E8EEFB"/>
+<text x="132" y="1866" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag ID</text>
+<text x="204" y="1866" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Identifier for dynamic switching in node graphs</text>
 
-    <rect x="370" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="386" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get Currently Scanned Entity</text>
-    <text x="386" y="266" font-size="11" fill="#4A4B65">Returns the active scanned entity.</text>
+<rect x="540" y="1848" width="150" height="26" rx="13" fill="#E8EEFB"/>
+<text x="615" y="1866" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Effective</text>
+<text x="702" y="1866" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether active initially (only one at a time)</text>
 
-    <rect x="720" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="736" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">Get Entity's Active Scan Tags</text>
-    <text x="736" y="266" font-size="11" fill="#4A4B65">Returns active state of all scan tags.</text>
+<rect x="72" y="1880" width="170" height="26" rx="13" fill="#E8EEFB"/>
+<text x="157" y="1898" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Reference Scan Tag</text>
+<text x="254" y="1898" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select and reference pre-defined global scan tags</text>
 
-    <rect x="20" y="296" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="318" font-size="12" font-weight="bold" fill="#1A1B2E">Get Entity's Scan Status</text>
-    <text x="36" y="338" font-size="11" fill="#4A4B65">Returns whether entity is scanned/available/disabled.</text>
-  </g>
+<!-- VII. Scan Tag Filtering Logic -->
+<text x="48" y="1940" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Scan Tag Filtering Logic</text>
+<text x="330" y="1940" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Rules for selecting active from available objects</text>
 
-  <!-- Source Links -->
-  <text x="60" y="2416" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrvf1ioor1w" target="_blank">
-    <text x="60" y="2442" font-size="13" fill="#2D6BE4" text-decoration="underline">Scan Tag</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhodlcrpht3q" target="_blank">
-    <text x="60" y="2468" font-size="13" fill="#2D6BE4" text-decoration="underline">Classes</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mho6gviqhsqs" target="_blank">
-    <text x="60" y="2494" font-size="13" fill="#2D6BE4" text-decoration="underline">Shop Component</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0pppib5eyc" target="_blank">
-    <text x="60" y="2520" font-size="13" fill="#2D6BE4" text-decoration="underline">Mini-Map Marker</text>
-  </a>
+<rect x="48" y="1956" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1982" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scan Tag Recognition Rules (Class Attribute)</text>
 
-  <!-- Footer -->
-  <text x="600" y="2560" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="72" y="1996" width="520" height="30" rx="10" fill="#E8EEFB"/>
+<text x="88" y="2016" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Distance From Center of FOV</text>
+<text x="340" y="2016" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prioritizes tags closest to view center</text>
+
+<rect x="608" y="1996" width="520" height="30" rx="10" fill="#E8EEFB"/>
+<text x="624" y="2016" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Actual Position Distance</text>
+<text x="848" y="2016" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prioritizes tags nearest to player</text>
+
+<!-- VIII. Node Graph Nodes -->
+<text x="48" y="2076" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Scan Tag Node Graph Nodes</text>
+
+<!-- Server Nodes -->
+<rect x="48" y="2092" width="540" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2118" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Server Nodes</text>
+
+<rect x="72" y="2132" width="492" height="30" rx="6" fill="#F4F1EA"/>
+<text x="88" y="2152" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Scan Tag Rules</text>
+
+<rect x="72" y="2168" width="492" height="30" rx="6" fill="#fff"/>
+<text x="88" y="2188" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Scan Component's Active Scan Tag ID</text>
+
+<rect x="72" y="2204" width="492" height="30" rx="6" fill="#F4F1EA"/>
+<text x="88" y="2224" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Current Active Scan Tag Config ID</text>
+
+<rect x="72" y="2240" width="492" height="26" rx="6" fill="#FFF3E0"/>
+<text x="88" y="2258" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All server nodes operate on scan tag configuration and state</text>
+
+<!-- Client Nodes -->
+<rect x="604" y="2092" width="548" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="2118" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Client Nodes</text>
+
+<rect x="628" y="2132" width="500" height="30" rx="6" fill="#F4F1EA"/>
+<text x="644" y="2152" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get All Valid Entities Scannable by Scan Component</text>
+
+<rect x="628" y="2168" width="500" height="30" rx="6" fill="#fff"/>
+<text x="644" y="2188" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Entity Currently Scanned by Scan Component</text>
+
+<rect x="628" y="2204" width="500" height="30" rx="6" fill="#F4F1EA"/>
+<text x="644" y="2224" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Entity's Current Active Scan Tags</text>
+
+<rect x="628" y="2240" width="500" height="30" rx="6" fill="#fff"/>
+<text x="644" y="2260" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Entity's Scan Status</text>
+
+<!-- Tip Box -->
+<rect x="48" y="2296" width="1104" height="52" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2296" width="4" height="52" rx="2" fill="#2D6BE4"/>
+<text x="72" y="2318" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: Scan tag components support multiple templates but only one is active at runtime.</text>
+<text x="72" y="2338" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use node graphs to dynamically switch the active scan tag via its Scan Tag ID.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2388" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfc0lr1tcke" target="_blank">
+<text x="48" y="2408" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Scan Tag</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2440" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

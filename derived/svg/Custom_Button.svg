@@ -1,87 +1,213 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1350" width="1200" height="1350">
-<defs>
-<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-</linearGradient>
-<filter id="card" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-</filter>
-<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2260" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="2260" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect width="1200" height="1350" fill="#F9F7F2"/>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" dominant-baseline="middle">Custom Button</text>
+  <text x="360" y="72" fill="#4A4B65" font-size="16" dominant-baseline="middle">Configurable Icon &amp; Text Interactive Buttons</text>
 
-<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <!-- I. Features -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Custom Button Features</text>
 
-<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
-<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Custom Button Controls</text>
-<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Fully customizable button UI control with preset and custom style options</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Definition</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Custom Buttons are a special type of Interactive Button whose icon and displayed text can be configured.</text>
+    <text x="24" y="84" font-size="13" fill="#4A4B65">The logic supported by Interactive Buttons also applies to Custom Buttons.</text>
+  </g>
 
-<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+  <!-- II. Editing -->
+  <text x="48" y="308" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing Custom Buttons</text>
 
-<rect x="40" y="190" width="1120" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Custom Buttons are interactive buttons whose icon and displayed text can be fully configured. They support:</text>
-<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Preset Styles</tspan> — Choose from a variety of preset button styles with customizable icons, colors, and text</text>
-<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Custom Styles</tspan> — Freely configure assets for Default, Hover, and Pressed states</text>
-<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Key Types</tspan> — Supports Skill, Interactive Event, and Item key types when using custom style</text>
-<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Click Response Area</tspan> — Configurable click area with match button size or custom size options</text>
-<text x="72" y="344" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Sound Effects</tspan> — Play configured sound effects on button trigger</text>
+  <!-- Add -->
+  <g transform="translate(48, 328)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Add: In the UI Control Group Editor window, add the UI Control Template - Custom Button</text>
+  </g>
 
-<rect x="40" y="388" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-<rect x="40" y="388" width="4" height="50" rx="2" fill="#2D6BE4"/>
-<text x="72" y="418" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">When Style is set to Preset Style, the Key Type is locked to Interactive Event and cannot be edited.</text>
+  <!-- Basics -->
+  <g transform="translate(48, 404)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Basics: Standard UI control position, size, and layer settings</text>
+  </g>
 
-<text x="72" y="478" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Visual States</text>
+  <!-- Styles -->
+  <text x="48" y="504" fill="#2D6BE4" font-size="18" font-weight="700">II-A. Styles</text>
 
-<rect x="40" y="498" width="1120" height="210" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="530" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Default</text>
-<text x="72" y="550" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Non-interactive state — the button at rest with no cursor or touch interaction.</text>
+  <g transform="translate(48, 524)">
+    <rect width="1104" height="320" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Style Options</text>
+    <rect x="24" y="44" width="140" height="28" rx="14" fill="#E8EEFB"/>
+    <text x="94" y="58" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Preset Style</text>
+    <rect x="180" y="44" width="100" height="28" rx="14" fill="#E5F2E9"/>
+    <text x="230" y="58" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Custom</text>
 
-<rect x="72" y="565" width="160" height="36" rx="8" fill="#2D6BE4"/>
-<text x="152" y="588" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Default Button</text>
+    <text x="24" y="100" font-size="14" font-weight="500" fill="#1A1B2E">Preset Styles</text>
+    <text x="24" y="124" font-size="13" fill="#4A4B65">Choose from a variety of preset button styles. Some preset styles support customizing the icon, color, text, etc.</text>
 
-<text x="72" y="630" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Hover</text>
-<text x="72" y="650" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Cursor hovers over the button — indicated by an outline, brighter color, or subtle size increase.</text>
+    <text x="24" y="158" font-size="14" font-weight="500" fill="#1A1B2E">Custom Styles - Three States</text>
 
-<rect x="72" y="665" width="160" height="36" rx="8" fill="#3B7BEE"/>
-<rect x="72" y="665" width="160" height="36" rx="8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
-<text x="152" y="688" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Hover Button</text>
+    <rect x="24" y="174" width="340" height="60" rx="8" fill="#F4F1EA"/>
+    <text x="36" y="194" font-size="13" font-weight="500" fill="#1A1B2E">Default</text>
+    <text x="36" y="214" font-size="12" fill="#4A4B65">Non-interactive state appearance</text>
 
-<rect x="420" y="530" width="160" height="36" rx="8" fill="#1B4FC0"/>
-<text x="500" y="553" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">Pressed Button</text>
-<text x="420" y="530" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Pressed</text>
-<text x="420" y="630" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Pressed</text>
-<text x="420" y="650" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Button is being pressed during mouse or touch input — color darkens and size decreases slightly.</text>
+    <rect x="380" y="174" width="340" height="60" rx="8" fill="#F4F1EA"/>
+    <text x="392" y="194" font-size="13" font-weight="500" fill="#1A1B2E">Hover</text>
+    <text x="392" y="214" font-size="12" fill="#4A4B65">Cursor hovers: outline, brighter color, or size increase</text>
 
-<text x="72" y="750" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Recommended Configuration</text>
+    <rect x="736" y="174" width="340" height="60" rx="8" fill="#F4F1EA"/>
+    <text x="748" y="194" font-size="13" font-weight="500" fill="#1A1B2E">Pressed</text>
+    <text x="748" y="214" font-size="12" fill="#4A4B65">Button pressed: color change, slight size decrease</text>
 
-<rect x="40" y="770" width="1120" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="802" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Level 1</text>
-<text x="72" y="822" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Core actions (upgrade equipment, enhance characters) — Height: 48–52</text>
-<text x="72" y="852" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Level 2</text>
-<text x="72" y="872" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Secondary actions (view details) — Height: 32–40</text>
-<text x="72" y="902" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Level 3</text>
-<text x="72" y="922" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Informational or hint buttons — Recommended 32 × 32</text>
+    <text x="24" y="264" font-size="13" fill="#4A4B65">Assets for Default, Hover, and Pressed states can be configured freely.</text>
+    <text x="24" y="288" font-size="13" fill="#4A4B65">Unavailable Assets can only be configured when Skill is selected under Functions - Key Type.</text>
 
-<rect x="40" y="968" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-<rect x="40" y="968" width="4" height="50" rx="2" fill="#2D6BE4"/>
-<text x="72" y="998" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Custom Buttons cannot respond to multiple mappings using the same key simultaneously. Response priority follows creation order.</text>
+    <rect x="16" y="302" width="1072" height="2" rx="1" fill="#E8E4DA"/>
+  </g>
 
-<text x="72" y="1060" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+  <!-- Functions -->
+  <text x="48" y="884" fill="#2D6BE4" font-size="18" font-weight="700">II-B. Functions - Key Settings</text>
 
-<rect x="40" y="1080" width="1120" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="1112" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• Custom Buttons can be dynamically added or removed during stage runtime through Node Graph logic</text>
-<text x="72" y="1136" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• Click and hover events can be captured and routed to Server Node Graph Events</text>
-<text x="72" y="1160" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• State changes affect response priority dynamically during runtime</text>
+  <g transform="translate(48, 904)">
+    <rect width="1104" height="300" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Key Type Behavior by Style</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Preset Style: Key Type is locked to Interactive Event and cannot be edited.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Custom Style: Choose 1 of 3 Key Types: Skill, Interactive Event, or Item.</text>
 
-<text x="72" y="1230" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
-<text x="72" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Custom Button Controls</text>
-<text x="290" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh72uu0inf60</text>
+    <text x="24" y="108" font-size="14" font-weight="500" fill="#1A1B2E">Configuration Parameters</text>
 
-<line x1="40" y1="1285" x2="1160" y2="1285" stroke="#E0E0E0" stroke-width="1"/>
-<text x="600" y="1310" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+    <rect x="24" y="122" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="180" y="136" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="600" y="136" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <text x="36" y="170" font-size="13" font-weight="500" fill="#1A1B2E">Key Type</text>
+    <text x="180" y="170" font-size="13" fill="#4A4B65">Skill: Configure skill slot | Interactive Event: Configure cooldown | Item: Configure item Config ID</text>
+
+    <line x1="24" y1="182" x2="1080" y2="182" stroke="#E8E4DA"/>
+
+    <text x="36" y="200" font-size="13" font-weight="500" fill="#1A1B2E">Key Mapping - KB&amp;M</text>
+    <text x="180" y="200" font-size="13" fill="#4A4B65">Configure the PC shortcut mapped to this button</text>
+
+    <line x1="24" y1="212" x2="1080" y2="212" stroke="#E8E4DA"/>
+
+    <text x="36" y="230" font-size="13" font-weight="500" fill="#1A1B2E">Hint Offset - KB&amp;M</text>
+    <text x="180" y="230" font-size="13" fill="#4A4B65">Display offset of the hint shown when cursor hovers over the button</text>
+
+    <line x1="24" y1="242" x2="1080" y2="242" stroke="#E8E4DA"/>
+
+    <text x="36" y="260" font-size="13" font-weight="500" fill="#1A1B2E">Key Mapping - Gamepad</text>
+    <text x="180" y="260" font-size="13" fill="#4A4B65">Configure the gamepad shortcut mapped to this button</text>
+
+    <line x1="24" y1="272" x2="1080" y2="272" stroke="#E8E4DA"/>
+
+    <text x="36" y="290" font-size="13" font-weight="500" fill="#1A1B2E">Hint Offset - Controller</text>
+    <text x="180" y="290" font-size="13" fill="#4A4B65">Display offset of the hint shown when button is focused with a controller</text>
+  </g>
+
+  <!-- Click Response Area -->
+  <text x="48" y="1244" fill="#2D6BE4" font-size="18" font-weight="700">II-C. Click Response Area</text>
+
+  <g transform="translate(48, 1264)">
+    <rect width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="13" fill="#4A4B65">The click area can be configured only when the Style is set to Custom.</text>
+    <text x="24" y="50" font-size="13" fill="#4A4B65">The click area can be adjusted by dragging it directly in the editing window.</text>
+    <text x="24" y="70" font-size="13" fill="#4A4B65">The actual trigger area is determined by the configured range of the click area.</text>
+
+    <rect x="24" y="88" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="180" y="102" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="600" y="102" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <text x="36" y="136" font-size="13" font-weight="500" fill="#1A1B2E">Clickable</text>
+    <text x="180" y="136" font-size="13" fill="#4A4B65">If disabled, this button cannot be clicked</text>
+    <line x1="24" y1="148" x2="1080" y2="148" stroke="#E8E4DA"/>
+
+    <text x="36" y="166" font-size="13" font-weight="500" fill="#1A1B2E">Click Area Preview</text>
+    <text x="180" y="166" font-size="13" fill="#4A4B65">When enabled, the light yellow area in the editing window indicates the click area</text>
+    <line x1="24" y1="178" x2="1080" y2="178" stroke="#E8E4DA"/>
+
+    <text x="36" y="196" font-size="13" font-weight="500" fill="#1A1B2E">Area Range</text>
+    <text x="180" y="196" font-size="13" fill="#4A4B65">Supports Match Button Size or Custom Size</text>
+    <line x1="24" y1="208" x2="1080" y2="208" stroke="#E8E4DA"/>
+
+    <text x="36" y="226" font-size="13" font-weight="500" fill="#1A1B2E">Location Offset / Dimensions</text>
+    <text x="250" y="226" font-size="13" fill="#4A4B65">When Custom Size: configure offset of click area center and its dimensions</text>
+  </g>
+
+  <!-- Recommended Config -->
+  <text x="48" y="1544" fill="#2D6BE4" font-size="18" font-weight="700">II-D. Recommended Button Sizes</text>
+
+  <g transform="translate(48, 1564)">
+    <rect width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+
+    <rect x="24" y="14" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="100" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Priority</text>
+    <text x="350" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+    <text x="700" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Recommended Size</text>
+    <text x="950" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Example</text>
+
+    <text x="36" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Level 1</text>
+    <text x="200" y="66" font-size="13" fill="#4A4B65">Core actions (upgrade, enhance)</text>
+    <text x="580" y="66" font-size="13" fill="#4A4B65">Width: As needed, Height: 48-52</text>
+    <text x="880" y="66" font-size="13" fill="#4A4B65">Primary action buttons</text>
+    <line x1="24" y1="80" x2="1080" y2="80" stroke="#E8E4DA"/>
+
+    <text x="36" y="104" font-size="13" font-weight="500" fill="#1A1B2E">Level 2</text>
+    <text x="200" y="104" font-size="13" fill="#4A4B65">Secondary actions (view details)</text>
+    <text x="580" y="104" font-size="13" fill="#4A4B65">Width: As needed, Height: 32-40</text>
+    <text x="880" y="104" font-size="13" fill="#4A4B65">Detail/info buttons</text>
+    <line x1="24" y1="118" x2="1080" y2="118" stroke="#E8E4DA"/>
+
+    <text x="36" y="142" font-size="13" font-weight="500" fill="#1A1B2E">Level 3</text>
+    <text x="200" y="142" font-size="13" fill="#4A4B65">Informational/hint buttons [?]</text>
+    <text x="580" y="142" font-size="13" fill="#4A4B65">Width x Height: 32 x 32</text>
+    <text x="880" y="142" font-size="13" fill="#4A4B65">Help/hint icons</text>
+
+    <rect x="16" y="164" width="1072" height="44" rx="8" fill="#FFF3E0"/>
+    <rect x="16" y="164" width="4" height="44" rx="2" fill="#D93025"/>
+    <text x="32" y="186" font-size="12" fill="#4A4B65">Lower priority number = higher priority. Define button sizes based on functional priority.</text>
+  </g>
+
+  <!-- III. Additional Notes -->
+  <text x="48" y="1804" fill="#2D6BE4" font-size="18" font-weight="700">III. Additional Notes</text>
+
+  <g transform="translate(48, 1824)">
+    <rect width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="1072" height="92" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="14" width="4" height="92" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="38" font-size="13" font-weight="500" fill="#1A1B2E">Key Mapping Priority Rule</text>
+    <text x="32" y="60" font-size="12" fill="#4A4B65">Custom Buttons cannot respond to multiple mappings that use the same key at the same time.</text>
+    <text x="32" y="78" font-size="12" fill="#4A4B65">By default, response priority is determined by creation order, with the most recently created button taking priority.</text>
+    <text x="32" y="96" font-size="12" fill="#4A4B65">If Custom Buttons are dynamically added or removed during stage runtime through Node Graph logic, this response priority will also change accordingly.</text>
+  </g>
+
+  <!-- Sound Effect note -->
+  <g transform="translate(48, 1960)">
+    <rect width="1104" height="50" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Sound Effect</text>
+    <text x="140" y="30" font-size="13" fill="#4A4B65" dominant-baseline="middle">Play the configured sound effect when the button is triggered.</text>
+  </g>
+
+  <text x="48" y="2048" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtpwgitsigc" target="_blank">
+    <text x="48" y="2070" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Custom Button Controls</text>
+  </a>
+
+  <text x="600" y="2250" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

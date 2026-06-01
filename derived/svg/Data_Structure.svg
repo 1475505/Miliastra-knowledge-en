@@ -1,114 +1,245 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1620" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2460">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
 
-  <rect width="1200" height="1620" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<rect width="1200" height="2460" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Data Structures</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Data Structure</text>
+<text x="310" y="72" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dictionary &amp; Structure</text>
 
-  <!-- Section I: Structure - Definition -->
-  <rect x="40" y="100" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Structure: Definition &amp; Key Concepts</text>
-  <text x="68" y="162" font-size="14" fill="#4A4B65">A <tspan font-weight="700" fill="#1A1B2E">Structure</tspan> is an advanced data type that groups different kinds of data into a single custom</text>
-  <text x="68" y="186" font-size="14" fill="#4A4B65">data type. Each Structure has a <tspan font-weight="700" fill="#1A1B2E">unique name</tspan> that identifies it. Fields within a Structure are</text>
-  <text x="68" y="210" font-size="14" fill="#4A4B65">called <tspan font-weight="700" fill="#1A1B2E">Members</tspan>, each with a unique field name and a data type.</text>
-  <text x="68" y="234" font-size="14" fill="#4A4B65">Structures support nesting — a Structure can contain other Structures and Structure Lists.</text>
-  <text x="68" y="258" font-size="13" fill="#4A4B65">Pass by Reference: Structure data in node graphs is passed by reference, similar to Lists.</text>
+<!-- I. What is a Dictionary -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. What is a Dictionary</text>
 
-  <!-- Section II: Structure - Creating & Editing -->
-  <rect x="40" y="280" width="1120" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="312" font-size="18" font-weight="700" fill="#2D6BE4">II. Structure: Creating &amp; Editing</text>
-  <text x="68" y="342" font-size="14" fill="#4A4B65">Access <tspan font-weight="700" fill="#1A1B2E">Advanced Data Management</tspan> from the editor menu to open the Structure Editing tab.</text>
-  <text x="68" y="366" font-size="14" fill="#4A4B65">View existing Structures, add new ones, define Members with names and types. Once created,</text>
-  <text x="68" y="390" font-size="14" fill="#4A4B65">Structures are available in Server Node Graphs, Custom Variables, and Node Graph Variables.</text>
+<rect x="48" y="162" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="188" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">A Dictionary is a data structure used to represent a set of mapping relationships. Each Dictionary</text>
+<text x="72" y="208" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">defines a mapping from data type A (Key) to data type B (Value). Each Key+Value is a Key-Value Pair.</text>
+<text x="72" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use Case:</text>
+<text x="150" y="234" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Store player scores on a Stage Entity without needing multiple Custom Variables.</text>
+<text x="72" y="256" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Map Entity to Integer: Entity stores Player, Integer records Score. Modify elements via Dictionary Operation Nodes.</text>
+<text x="72" y="276" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can be used in Server Node Graphs. Can be packaged as a data type for use and transfer.</text>
 
-  <!-- Section III: Structure - Node Graph Nodes -->
-  <rect x="40" y="400" width="1120" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="432" font-size="18" font-weight="700" fill="#2D6BE4">III. Structure Node Graph Nodes</text>
+<!-- II. Dictionary Key Points -->
+<text x="48" y="318" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Dictionary Key Points</text>
 
-  <!-- Assemble Structure -->
-  <text x="68" y="464" font-size="14" font-weight="700" fill="#1A1B2E">Assemble Structure</text>
-  <text x="68" y="484" font-size="13" fill="#8B8DA0">Node Type: Operation</text>
-  <text x="68" y="504" font-size="14" fill="#4A4B65">Fill in values for each Member parameter to generate Structure data. Select the Structure type</text>
-  <text x="68" y="528" font-size="14" fill="#4A4B65">via the Generic selection button first. All Members of the chosen Structure appear as inputs.</text>
+<rect x="48" y="332" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="358" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type Determination</text>
+<text x="72" y="380" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Strongly typed. Type uniquely defined by Key and</text>
+<text x="72" y="400" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Value types. [String to Float] cannot connect to</text>
+<text x="72" y="420" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">[String to Integer].</text>
+<text x="72" y="448" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Uniqueness</text>
+<text x="72" y="466" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">No duplicate Keys. Each Key must be unique.</text>
 
-  <!-- Split Structure -->
-  <text x="68" y="560" font-size="14" font-weight="700" fill="#1A1B2E">Split Structure</text>
-  <text x="68" y="580" font-size="13" fill="#8B8DA0">Node Type: Operation</text>
-  <text x="68" y="600" font-size="14" fill="#4A4B65">Pass in a Structure to obtain the values of each Member. Select the Structure type via Generic.</text>
+<rect x="604" y="332" width="548" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="358" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pass by Reference</text>
+<text x="628" y="380" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Like Lists, passed by reference. Modification nodes</text>
+<text x="628" y="400" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">directly affect data in Custom/Node Graph Variables.</text>
+<text x="628" y="420" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pre/Post-Change Value not provided in events.</text>
+<text x="628" y="448" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unordered Storage</text>
+<text x="628" y="466" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key-Value Pairs not stored in order. Treat as unordered.</text>
 
-  <!-- Modify Structure -->
-  <text x="68" y="632" font-size="14" font-weight="700" fill="#1A1B2E">Modify Structure</text>
-  <text x="68" y="652" font-size="13" fill="#8B8DA0">Node Type: Execution</text>
-  <text x="68" y="672" font-size="14" fill="#4A4B65">Edit selected Member values within a Structure. Use the dropdown to choose which Members</text>
-  <text x="68" y="696" font-size="14" fill="#4A4B65">to modify — unchecked Members retain their original values.</text>
+<!-- III. Available Data Types -->
+<text x="48" y="508" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Available Data Types for Dictionaries</text>
 
-  <!-- Section IV: Dictionary - Definition -->
-  <rect x="40" y="750" width="1120" height="225" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="782" font-size="18" font-weight="700" fill="#2D6BE4">IV. Dictionary: Definition &amp; Key Concepts</text>
-  <text x="68" y="812" font-size="14" fill="#4A4B65">A <tspan font-weight="700" fill="#1A1B2E">Dictionary</tspan> is a data structure representing a set of key-value mapping relationships.</text>
-  <text x="68" y="836" font-size="14" fill="#4A4B65">Each Dictionary maps data type A (<tspan font-weight="700" fill="#1A1B2E">Key</tspan>) to data type B (<tspan font-weight="700" fill="#1A1B2E">Value</tspan>). Keys must be unique.</text>
-  <text x="68" y="860" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Type Determination:</tspan> A Dictionary's type is defined by both its Key and Value types.</text>
-  <text x="68" y="884" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Pass by Reference:</tspan> Dictionaries are passed by reference in node graphs.</text>
-  <text x="68" y="908" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Unordered:</tspan> Key-Value Pairs are not stored in order. Do not rely on sequence.</text>
-  <text x="68" y="932" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Available Key Types:</tspan> Entity, GUID, Integer, String, Factions, Prefab ID, Configuration ID.</text>
-  <text x="68" y="956" font-size="13" fill="#8B8DA0">Value types include all basic types, list types, and custom Structures.</text>
+<rect x="48" y="522" width="540" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="548" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Types</text>
+<text x="72" y="570" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity, GUID, Integer, String, Factions,</text>
+<text x="72" y="590" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prefab ID, Configuration ID</text>
 
-  <!-- Section V: Dictionary - Node Graph Nodes -->
-  <rect x="40" y="995" width="1120" height="400" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="1027" font-size="18" font-weight="700" fill="#2D6BE4">V. Dictionary Node Graph Nodes</text>
+<text x="72" y="618" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Value Types (Basic)</text>
+<text x="72" y="640" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity, GUID, Integer, Boolean, Floating Point Numbers,</text>
+<text x="72" y="660" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">String, Faction, 3D Vector, Prefab ID, Configuration ID,</text>
+<text x="72" y="680" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom Structure</text>
+<text x="72" y="698" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All corresponding List types also supported as Values.</text>
 
-  <!-- Execution Nodes -->
-  <text x="68" y="1059" font-size="14" font-weight="700" fill="#1A1B2E">Execution Nodes</text>
-  <text x="88" y="1083" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Set or Add Key Value Pair:</tspan> Add a new pair or update an existing key's value.</text>
-  <text x="88" y="1107" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Remove Key Value Pair by Key:</tspan> Remove an entry from the dictionary by its key.</text>
-  <text x="88" y="1131" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Clear Dictionary:</tspan> Remove all entries from the dictionary.</text>
-  <text x="88" y="1155" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Sort Dictionary by Key / by Value:</tspan> Sort the dictionary entries.</text>
+<rect x="604" y="522" width="548" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="548" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Using Dictionaries in Generics</text>
+<text x="628" y="570" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dictionary is a special type of Generic Pin.</text>
+<text x="628" y="594" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Select [Dictionary] in Generic configuration</text>
+<text x="628" y="616" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Specify Key type</text>
+<text x="628" y="638" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3. Specify Value type</text>
+<text x="628" y="662" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type is only fully defined once both Key and Value</text>
+<text x="628" y="682" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">types are specified.</text>
 
-  <!-- Query Nodes -->
-  <text x="68" y="1189" font-size="14" font-weight="700" fill="#1A1B2E">Query Nodes</text>
-  <text x="88" y="1213" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query Dictionary Length:</tspan> Get the number of key-value pairs.</text>
-  <text x="88" y="1237" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query Dictionary Value by Key:</tspan> Retrieve a value using its key.</text>
-  <text x="88" y="1261" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Get List of Keys / Get List of Values:</tspan> Extract all keys or all values as a list.</text>
-  <text x="88" y="1285" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Query If Dictionary Contains Specific Key / Value:</tspan> Check for existence.</text>
+<!-- IV. Dictionary-Related Nodes -->
+<text x="48" y="738" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Dictionary-Related Nodes</text>
 
-  <!-- Operation Nodes -->
-  <text x="68" y="1317" font-size="14" font-weight="700" fill="#1A1B2E">Operation Nodes</text>
-  <text x="88" y="1341" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Create Dictionary:</tspan> Create a new empty dictionary of a specified key-value type.</text>
-  <text x="88" y="1365" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Assembly Dictionary:</tspan> Build a dictionary by specifying key-value pairs directly.</text>
+<rect x="48" y="752" width="1104" height="310" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="752" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="774" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="776" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node</text>
+<text x="380" y="776" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type</text>
+<text x="480" y="776" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <!-- Tip Box -->
-  <rect x="40" y="1415" width="1120" height="65" rx="14" fill="#E8EEFB"/>
-  <rect x="40" y="1415" width="4" height="65" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="1437" font-size="14" font-weight="700" fill="#1A1B2E">Generic Pin Usage</text>
-  <text x="68" y="1459" font-size="13" fill="#4A4B65">Both Structure and Dictionary types use Generic Pins. Select the specific type from the generic</text>
-  <text x="68" y="1477" font-size="13" fill="#4A4B65">dropdown before the node can be fully defined.</text>
+<text x="72" y="810" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set or Add Key Value Pair</text>
+<text x="380" y="810" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="480" y="810" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add or update a key-value pair in the dictionary.</text>
+<line x1="68" y1="820" x2="1132" y2="820" stroke="#E8E4DA" stroke-width="1"/>
 
-  <!-- Source Links -->
-  <text x="68" y="1520" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+<text x="72" y="840" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Remove Key-Value Pairs by Key</text>
+<text x="380" y="840" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="480" y="840" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Remove pairs matching specified key.</text>
+<line x1="68" y1="850" x2="1132" y2="850" stroke="#E8E4DA" stroke-width="1"/>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2zrw94b0v6" target="_blank">
-    <text x="68" y="1548" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Structure</text>
-  </a>
+<text x="72" y="870" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clear Dictionary</text>
+<text x="380" y="870" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="480" y="870" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Remove all key-value pairs.</text>
+<line x1="68" y1="880" x2="1132" y2="880" stroke="#E8E4DA" stroke-width="1"/>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbydx0u7cgw" target="_blank">
-    <text x="68" y="1574" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Dictionary</text>
-  </a>
+<text x="72" y="900" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sort by Key / Sort by Value</text>
+<text x="380" y="900" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="480" y="900" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sort dictionary entries by key or value.</text>
+<line x1="68" y1="910" x2="1132" y2="910" stroke="#E8E4DA" stroke-width="1"/>
 
-  <!-- Footer -->
-  <text x="600" y="1610" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<text x="72" y="930" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query Dictionary Length</text>
+<text x="380" y="930" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="480" y="930" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Returns number of key-value pairs.</text>
+<line x1="68" y1="940" x2="1132" y2="940" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="960" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query Value by Key</text>
+<text x="380" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="480" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get value associated with a specific key.</text>
+<line x1="68" y1="970" x2="1132" y2="970" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="990" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get List of Keys / Values</text>
+<text x="380" y="990" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="480" y="990" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Extract all keys or all values as a list.</text>
+<line x1="68" y1="1000" x2="1132" y2="1000" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1020" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Contains Key / Contains Value</text>
+<text x="380" y="1020" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="480" y="1020" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Check if dictionary contains specific key or value.</text>
+<line x1="68" y1="1030" x2="1132" y2="1030" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1050" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create / Assembly Dictionary</text>
+<text x="380" y="1050" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Operation</text>
+<text x="480" y="1050" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create new dictionary or assemble from parts.</text>
+
+<!-- V. What is a Structure -->
+<text x="48" y="1098" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. What is a Structure</text>
+
+<rect x="48" y="1112" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1138" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">A Structure is an advanced data type that groups different kinds of data into a single piece of</text>
+<text x="72" y="1158" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">custom data. Each Structure has a unique name and can contain multiple data entries (Members).</text>
+<text x="72" y="1184" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Example: "Weapon Data" Structure</text>
+<text x="72" y="1206" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name (String), ATK (Floating Point Numbers), Enhanced or Not (Boolean). Can be used as Custom Variable,</text>
+<text x="72" y="1226" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">combined with Dictionary (e.g., Integer ID to Weapon Data) to create a weapon database.</text>
+
+<!-- VI. Structure Key Points -->
+<text x="48" y="1268" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Structure Key Points</text>
+
+<rect x="48" y="1282" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1308" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structure Types</text>
+<text x="72" y="1330" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type determined by name. Even identical layouts</text>
+<text x="72" y="1350" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">are different if names differ. No duplicate names.</text>
+<text x="72" y="1374" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Nested Structures</text>
+<text x="72" y="1394" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structures can contain other Structures and Lists.</text>
+
+<rect x="604" y="1282" width="548" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1308" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pass by Reference</text>
+<text x="628" y="1330" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Like Lists, passed by reference. Modification nodes</text>
+<text x="628" y="1350" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">directly affect data in Custom/Node Graph Variables.</text>
+<text x="628" y="1374" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Member Data Types</text>
+<text x="628" y="1394" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Basic, List, Dictionary, and Structure types.</text>
+
+<!-- VII. Creating and Editing Structures -->
+<text x="48" y="1438" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Creating and Editing Structures</text>
+
+<rect x="48" y="1452" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1478" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Menu > Advanced Data Management > Structure Editing Tab. View existing structures, add new ones,</text>
+<text x="72" y="1498" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">edit member values. Add new structures and add new members within structures.</text>
+<text x="72" y="1522" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">After creation, use defined structures in Server Node Graph, Custom Variables, and Node Graph Variables.</text>
+
+<!-- VIII. Using Structures in Generics -->
+<text x="48" y="1568" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Using Structures in Generics</text>
+
+<rect x="48" y="1582" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1608" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structures and Structure Lists are special Generic Pin types. Select [Structure] or [Structure List] in</text>
+<text x="72" y="1628" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">the Generic dropdown. Expanding shows all Structure types defined in the Stage.</text>
+
+<!-- IX. Structure-Related Nodes -->
+<text x="48" y="1678" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Structure-Related Nodes</text>
+
+<rect x="48" y="1692" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="1692" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="1714" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="1716" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node</text>
+<text x="300" y="1716" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type</text>
+<text x="420" y="1716" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<text x="72" y="1750" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Assemble Structure</text>
+<text x="300" y="1750" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Operation</text>
+<text x="420" y="1750" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill in values for each parameter to generate Structure data.</text>
+<text x="420" y="1768" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Structure type via Generic button first. Displays all Members.</text>
+<line x1="68" y1="1778" x2="1132" y2="1778" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1800" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Split Structure</text>
+<text x="300" y="1800" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Operation</text>
+<text x="420" y="1800" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pass in a Structure to obtain values of each Member.</text>
+<text x="420" y="1818" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Structure type via Generic button first. Displays all Members.</text>
+<line x1="68" y1="1828" x2="1132" y2="1828" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1850" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Structure</text>
+<text x="300" y="1850" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1850" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Edit values of selected Members within Structure data.</text>
+<text x="420" y="1868" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use dropdown to choose which Members to edit. Only checked</text>
+<text x="420" y="1886" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Members are modified. Unselected Members remain unchanged.</text>
+
+<!-- X. Practical Example -->
+<text x="48" y="1988" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X. Practical Examples</text>
+
+<rect x="48" y="2002" width="540" height="170" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2028" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dictionary: Collectible Score System</text>
+<text x="72" y="2050" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Create collectible prefabs with name variables</text>
+<text x="72" y="2068" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Add Collision Trigger to each item</text>
+<text x="72" y="2086" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3. Create Dictionary (String to Integer) on Stage Entity</text>
+<text x="72" y="2104" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4. Add score/picked-up-item variables to Player</text>
+<text x="72" y="2122" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5. Node graph: query dictionary by item name, update</text>
+<text x="72" y="2140" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">   player score, display UI text, destroy item</text>
+<text x="72" y="2164" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Items: +1, +2, +3, +4 points respectively</text>
+
+<rect x="604" y="2002" width="548" height="170" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="2028" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structure: Equipment Attribute System</text>
+<text x="628" y="2050" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Create equipment prefabs with Level variable</text>
+<text x="628" y="2068" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Define Structure: ATK, DEF, HP (Float base values)</text>
+<text x="628" y="2086" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3. Add Collision Trigger for pickup event</text>
+<text x="628" y="2104" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4. Add player variables: Equipment Level, ATK/DEF/HP</text>
+<text x="628" y="2122" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5. Node graph: get Level, Split Structure for base values,</text>
+<text x="628" y="2140" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">   multiply Level x base = final bonus, update player</text>
+<text x="628" y="2164" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Lv.1: +10/+10/+100, Lv.2: +20/+20/+200, Lv.3: +30/+30/+300</text>
+
+<!-- Tip -->
+<rect x="48" y="2184" width="1104" height="56" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2184" width="4" height="56" rx="2" fill="#2D6BE4"/>
+<text x="68" y="2204" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combine Dictionary and Structure for complex data: e.g., Dictionary mapping Integer IDs to Weapon Data Structures</text>
+<text x="68" y="2222" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">creates a complete weapon database. Both are passed by reference, so modifications affect stored variables directly.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2268" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhubgk9yy8gy" target="_blank">
+  <text x="48" y="2286" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Dictionary</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3fmi0t99ns" target="_blank">
+  <text x="48" y="2304" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Structure</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhg6ak9g62oy" target="_blank">
+  <text x="48" y="2322" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Dictionaries and Structures - Data Structures with Mapping Relationships</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2346" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2540" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -12,281 +12,222 @@
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="2200" fill="#F9F7F2"/>
-
-  <!-- Top gradient bar -->
+  <rect width="1200" height="2540" fill="#F9F7F2"/>
   <rect width="1200" height="6" fill="url(#topGrad)"/>
 
   <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">09 - Loot</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Loot</text>
+  <text x="168" y="72" font-size="16" fill="#4A4B65" dominant-baseline="middle">Drop behavior, pickup rules, and loot components</text>
 
-  <!-- ==================== SECTION I: WHAT IS LOOT ==================== -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What is Loot</text>
+  <!-- I. Definition of Loot -->
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. Definition of Loot</text>
 
-  <!-- Definition card (left) -->
-  <g transform="translate(60, 164)">
-    <rect width="520" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Definition</text>
-    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Loot Definition</text>
-    <text x="16" y="86" font-size="13" fill="#4A4B65">When virtual items (items, equipment,</text>
-    <text x="16" y="106" font-size="13" fill="#4A4B65">currency, inventory) are dropped in the</text>
-    <text x="16" y="126" font-size="13" fill="#4A4B65">scene, they convert into a prefab entity</text>
-    <text x="16" y="146" font-size="13" fill="#1A1B2E" font-weight="bold">called the Loot.</text>
-    <text x="16" y="170" font-size="13" fill="#4A4B65">Loots are special prefabs that carry a</text>
-    <text x="16" y="190" font-size="13" fill="#1A1B2E" font-weight="bold">Loot Content Component</text>
-    <text x="16" y="210" font-size="13" fill="#4A4B65">defining drop behavior and pickup rules.</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">When virtual items (items, equipment, currency, inventory) are dropped in the scene,</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">they are converted into a prefab entity — the Loot.</text>
+
+    <text x="24" y="80" font-size="14" font-weight="500" fill="#1A1B2E">Key Requirements:</text>
+    <text x="24" y="104" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Template Relation</tspan> — Virtual item templates must be related with a Loot prefab. If no relation</text>
+    <text x="24" y="124" font-size="13" fill="#4A4B65">is established, the drop logic will be blocked.</text>
+    <text x="24" y="150" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Special Prefab</tspan> — Loots carry a Loot Content Component and have restricted component availability</text>
+    <text x="24" y="170" font-size="13" fill="#4A4B65">compared to standard dynamic unit prefabs.</text>
   </g>
 
-  <!-- Components card (right) -->
-  <g transform="translate(620, 164)">
-    <rect width="520" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Components</text>
-    <text x="16" y="60" font-size="17" font-weight="bold" fill="#1A1B2E">Loot Components &amp; Types</text>
-    <text x="16" y="88" font-size="13" fill="#1A1B2E" font-weight="bold">Loot Content Component</text>
-    <text x="16" y="108" font-size="13" fill="#4A4B65">Permanently carried by all loot prefabs.</text>
-    <text x="16" y="128" font-size="13" fill="#4A4B65">Configures pickup ranges (multiple</text>
-    <text x="16" y="148" font-size="13" fill="#4A4B65">supported, ranges stack).</text>
-    <text x="16" y="172" font-size="13" fill="#1A1B2E" font-weight="bold">Types of Loot</text>
-    <text x="16" y="192" font-size="13" fill="#4A4B65">Items, Currency, Equipment — each</text>
-    <text x="16" y="212" font-size="13" fill="#4A4B65">linked to a Loot prefab for scene display.</text>
+  <!-- II. Loot Content Component -->
+  <text x="48" y="388" font-size="18" font-weight="700" fill="#2D6BE4">II. Loot Content Component</text>
+  <text x="310" y="388" font-size="13" fill="#8B8DA0">Permanent component on all loot-type prefabs</text>
+
+  <g transform="translate(48, 408)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">All loot-type prefabs permanently carry a Loot Content component that cannot be removed.</text>
+    <text x="24" y="54" font-size="14" fill="#4A4B65">The Loot Content component defines the drop behavior and pickup rules of loots.</text>
+    <text x="24" y="78" font-size="14" fill="#4A4B65">Supports configuring multiple pickup ranges simultaneously — their effective ranges stack.</text>
+
+    <rect x="24" y="98" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+    <text x="24" y="124" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Location:</tspan> Prefab library editor &gt; Loot tab &gt; Click "Advanced Editing" to expand the editing tab.</text>
   </g>
 
-  <!-- Tip Box -->
-  <g transform="translate(60, 420)">
-    <rect width="1080" height="68" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="68" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Loot Requirements</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">Virtual item templates must be related with a Loot prefab. If no relation is established, the drop logic will be blocked.</text>
+  <!-- III. Pickup Rules -->
+  <text x="48" y="588" font-size="18" font-weight="700" fill="#2D6BE4">III. Pickup Rules</text>
+  <text x="218" y="588" font-size="13" fill="#8B8DA0">How players collect loots during gameplay</text>
+
+  <g transform="translate(48, 608)">
+    <rect width="1104" height="380" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <rect x="24" y="20" width="516" height="72" rx="10" fill="#E8EEFB"/>
+    <text x="40" y="42" font-size="14" font-weight="500" fill="#1A1B2E">Interactive Pickup</text>
+    <text x="40" y="62" font-size="12" fill="#4A4B65">Interaction button appears within range.</text>
+    <text x="40" y="78" font-size="12" fill="#4A4B65">Click to pick up the item directly.</text>
+
+    <rect x="564" y="20" width="516" height="72" rx="10" fill="#E8EEFB"/>
+    <text x="580" y="42" font-size="14" font-weight="500" fill="#1A1B2E">Auto Pickup</text>
+    <text x="580" y="62" font-size="12" fill="#4A4B65">Automatically triggers when character</text>
+    <text x="580" y="78" font-size="12" fill="#4A4B65">enters the pickup range.</text>
+
+    <rect x="24" y="108" width="516" height="88" rx="10" fill="#E8EEFB"/>
+    <text x="40" y="130" font-size="14" font-weight="500" fill="#1A1B2E">Open Pickup Interface</text>
+    <text x="40" y="150" font-size="12" fill="#4A4B65">Interaction button opens a loot pickup UI.</text>
+    <text x="40" y="166" font-size="12" fill="#4A4B65">Player selects items to pick up manually.</text>
+    <text x="40" y="182" font-size="12" fill="#4A4B65">Recommended when loot list has multiple items.</text>
+
+    <rect x="564" y="108" width="516" height="88" rx="10" fill="#E8EEFB"/>
+    <text x="580" y="130" font-size="14" font-weight="500" fill="#1A1B2E">Auto-Attract Pickup</text>
+    <text x="580" y="150" font-size="12" fill="#4A4B65">Dropped loot moves toward the character.</text>
+    <text x="580" y="166" font-size="12" fill="#4A4B65">Requires Auto-Attract Range configuration.</text>
+    <text x="580" y="182" font-size="12" fill="#4A4B65">Auto pickup triggers when entering pickup range.</text>
+
+    <rect x="24" y="212" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="240" font-size="14" font-weight="500" fill="#1A1B2E">Additional Settings:</text>
+    <text x="24" y="264" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Auto-Attract Pickup Range (m)</tspan> — Distance at which auto-attract triggers loot movement.</text>
+    <text x="24" y="288" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Local Filter</tspan> — Boolean or integer filters for conditional pickup logic.</text>
+    <text x="24" y="312" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Filter Node Graph</tspan> — Reference filter nodes to determine if conditions are met.</text>
+    <text x="24" y="336" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Loot Content</tspan> — Dictionary of virtual items in a loot. When placed directly, contains all configured items.</text>
+    <text x="24" y="356" font-size="13" fill="#4A4B65">When created as loot drop/trophies, only contains dropped items (overwrites default data).</text>
   </g>
 
-  <!-- ==================== SECTION II: LOOT CONFIGURATIONS ==================== -->
-  <circle cx="80" cy="524" r="16" fill="#2D6BE4"/>
-  <text x="80" y="525" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="525" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Loot Configurations</text>
+  <!-- IV. Pickup Range -->
+  <text x="48" y="1028" font-size="18" font-weight="700" fill="#2D6BE4">IV. Pickup Range</text>
 
-  <!-- Loot Table Settings card -->
-  <g transform="translate(60, 552)">
-    <rect width="1080" height="400" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="86" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="59" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Settings</text>
+  <g transform="translate(48, 1048)">
+    <rect width="1104" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Defines the range within which players can collect loots.</text>
+    <text x="24" y="54" font-size="14" font-weight="500" fill="#1A1B2E">Supported Shapes:</text>
 
-    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Loot Content Component Settings</text>
+    <rect x="200" y="38" width="200" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="300" y="58" font-size="13" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Cuboid</text>
 
-    <rect x="16" y="78" width="1048" height="28" rx="4" fill="#2D6BE4"/>
-    <text x="30" y="92" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Pickup Rules</text>
+    <rect x="420" y="38" width="200" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="520" y="58" font-size="13" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Sphere</text>
 
-    <rect x="16" y="106" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="356" y="106" width="724" height="28" fill="#F9F7F2"/>
-    <text x="30" y="120" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Interactive Pickup</text>
-    <text x="370" y="120" font-size="12" fill="#4A4B65" dominant-baseline="middle">Interaction button appears within range, click to pick up</text>
-
-    <rect x="16" y="134" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="356" y="134" width="724" height="28" fill="#FFFFFF"/>
-    <text x="30" y="148" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Auto Pickup</text>
-    <text x="370" y="148" font-size="12" fill="#4A4B65" dominant-baseline="middle">Automatically triggered when character enters pickup range</text>
-
-    <rect x="16" y="162" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="356" y="162" width="724" height="28" fill="#F9F7F2"/>
-    <text x="30" y="176" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Open Pickup Interface</text>
-    <text x="370" y="176" font-size="12" fill="#4A4B65" dominant-baseline="middle">Opens interface to select loot. Recommended for multiple items</text>
-
-    <rect x="16" y="190" width="340" height="42" fill="#FFFFFF"/>
-    <rect x="356" y="190" width="724" height="42" fill="#FFFFFF"/>
-    <text x="30" y="204" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Auto-Attract Pickup</text>
-    <text x="370" y="204" font-size="12" fill="#4A4B65" dominant-baseline="middle">Loot moves toward character when entering attract range,</text>
-    <text x="370" y="220" font-size="12" fill="#4A4B65" dominant-baseline="middle">auto-pickup triggers upon reaching pickup range</text>
-
-    <rect x="16" y="232" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="356" y="232" width="724" height="28" fill="#F9F7F2"/>
-    <text x="30" y="246" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Auto-Attract Pickup Range (m)</text>
-    <text x="370" y="246" font-size="12" fill="#4A4B65" dominant-baseline="middle">Distance at which Auto-Attract triggers loot movement</text>
-
-    <!-- Local Filter row -->
-    <rect x="16" y="268" width="1048" height="28" rx="4" fill="#2D6BE4"/>
-    <text x="30" y="282" font-size="12" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Local Filter &amp; Node Graph</text>
-
-    <rect x="16" y="296" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="356" y="296" width="724" height="28" fill="#F9F7F2"/>
-    <text x="30" y="310" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Local Filter</text>
-    <text x="370" y="310" font-size="12" fill="#4A4B65" dominant-baseline="middle">Boolean filters and integer filters</text>
-
-    <rect x="16" y="324" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="356" y="324" width="724" height="28" fill="#FFFFFF"/>
-    <text x="30" y="338" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Filter Node Graph</text>
-    <text x="370" y="338" font-size="12" fill="#4A4B65" dominant-baseline="middle">Reference filter nodes to determine if conditions are met</text>
-
-    <!-- Loot Content row -->
-    <rect x="16" y="360" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="356" y="360" width="724" height="28" fill="#F9F7F2"/>
-    <text x="30" y="374" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Loot Content</text>
-    <text x="370" y="374" font-size="12" fill="#4A4B65" dominant-baseline="middle">Dictionary of virtual items; overwritten when dropped as loot/trophies</text>
+    <rect x="640" y="38" width="200" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="740" y="58" font-size="13" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Capsule</text>
   </g>
 
-  <!-- Pickup Range card -->
-  <g transform="translate(60, 972)">
-    <rect width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Pickup Range</text>
-    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Pickup Range Shapes</text>
-    <text x="16" y="84" font-size="13" fill="#4A4B65">Defines the range within which players can collect loots. Supports three basic shapes:</text>
-    <text x="16" y="108" font-size="13" fill="#1A1B2E" font-weight="bold">Cuboid  |  Sphere  |  Capsule</text>
+  <!-- V. Loot Component (from Loots guide) -->
+  <text x="48" y="1188" font-size="18" font-weight="700" fill="#2D6BE4">V. Loot Component</text>
+  <text x="250" y="1188" font-size="13" fill="#8B8DA0">Component for drop-on-defeat behavior</text>
+
+  <g transform="translate(48, 1208)">
+    <rect width="1104" height="320" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="24" y="30" font-size="14" fill="#4A4B65">The Loot Component allows configuring a fixed Loot collection template. Loot is created</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">from this data template when the component holder is defeated. Supports one set of data.</text>
+
+    <text x="24" y="80" font-size="14" font-weight="500" fill="#1A1B2E">Adding the Component:</text>
+    <text x="24" y="104" font-size="13" fill="#4A4B65">Entity/Prefab editing &gt; Component Editing Tab &gt; Add Common Components &gt; Loot &gt; Advanced Editing</text>
+
+    <rect x="24" y="120" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="148" font-size="14" font-weight="500" fill="#1A1B2E">Basic Settings:</text>
+
+    <text x="24" y="172" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Destruction Debris</tspan> — How drop config is handled when component owner is defeated.</text>
+
+    <rect x="24" y="188" width="516" height="44" rx="8" fill="#F4F1EA"/>
+    <text x="40" y="204" font-size="13" font-weight="500" fill="#1A1B2E">Individual Drops</text>
+    <text x="40" y="222" font-size="12" fill="#4A4B65">Each virtual item dropped separately as its own loot.</text>
+
+    <rect x="564" y="188" width="516" height="44" rx="8" fill="#F4F1EA"/>
+    <text x="580" y="204" font-size="13" font-weight="500" fill="#1A1B2E">Combined Drops</text>
+    <text x="580" y="222" font-size="12" fill="#4A4B65">All items converted into a single loot entity.</text>
+
+    <text x="24" y="256" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Loot Drop Mechanics:</tspan></text>
+
+    <rect x="24" y="268" width="516" height="40" rx="8" fill="#E5F2E9"/>
+    <text x="40" y="288" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Shared Reward — All players share loot; once picked up, unavailable to others.</text>
+
+    <rect x="564" y="268" width="516" height="40" rx="8" fill="#E5F2E9"/>
+    <text x="580" y="288" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Individualized Reward — Each player gets independent copy; no interference.</text>
   </g>
 
-  <!-- ==================== SECTION III: LOOT PREFAB & ENTITY PLACEMENT ==================== -->
-  <circle cx="80" cy="1138" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1139" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="1139" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Loot Prefab &amp; Entity Placement</text>
+  <!-- VI. Loot Appearance and Content -->
+  <text x="48" y="1568" font-size="18" font-weight="700" fill="#2D6BE4">VI. Loot Appearance and Content</text>
 
-  <!-- Prefab creation card -->
-  <g transform="translate(60, 1166)">
-    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Prefab Placement</text>
+  <g transform="translate(48, 1588)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-    <text x="16" y="60" font-size="15" font-weight="bold" fill="#1A1B2E">Creating &amp; Placing Loot Prefabs</text>
-    <text x="16" y="84" font-size="13" fill="#4A4B65">Enter the prefab library editor to view the Loot tab. Click "Advanced Editing" to expand.</text>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Corresponding Loot Appearance:</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Configure a Loot prefab as the physical entity. When a virtual item is created in the scene,</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">it uses the model of the associated drop prefab.</text>
+    <text x="24" y="98" font-size="13" fill="#4A4B65">This setting only takes effect with Combined Drops. With Individual Drops, each drop uses</text>
+    <text x="24" y="118" font-size="13" fill="#4A4B65">the associated drop prefab configured in its own item or currency template.</text>
 
-    <text x="16" y="112" font-size="14" font-weight="bold" fill="#1A1B2E">Adding Loot Component to Entities</text>
-    <text x="16" y="134" font-size="13" fill="#4A4B65">In the Entity or Prefab editing interface, open the Component Editing Tab.</text>
-    <text x="16" y="154" font-size="13" fill="#4A4B65">Click "Add Common Components" then click "Loot" to add it.</text>
+    <rect x="24" y="134" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-    <text x="16" y="180" font-size="14" font-weight="bold" fill="#1A1B2E">Drop Mechanics</text>
-
-    <rect x="16" y="196" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="356" y="196" width="362" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="718" y="196" width="346" height="28" rx="4" fill="#2D6BE4"/>
-    <text x="186" y="210" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Category</text>
-    <text x="537" y="210" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Options</text>
-    <text x="891" y="210" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
-
-    <rect x="16" y="224" width="340" height="42" fill="#F9F7F2"/>
-    <rect x="356" y="224" width="362" height="42" fill="#F9F7F2"/>
-    <rect x="718" y="224" width="346" height="42" fill="#F9F7F2"/>
-    <text x="186" y="238" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Destruction Debris</text>
-    <text x="537" y="238" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Individual Drops</text>
-    <text x="891" y="238" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Each item dropped separately</text>
-    <text x="537" y="256" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Combined Drops</text>
-    <text x="891" y="256" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">All items in one loot entity</text>
-
-    <rect x="16" y="266" width="340" height="56" fill="#FFFFFF"/>
-    <rect x="356" y="266" width="362" height="56" fill="#FFFFFF"/>
-    <rect x="718" y="266" width="346" height="56" fill="#FFFFFF"/>
-    <text x="186" y="282" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Loot Drop Mechanics</text>
-    <text x="537" y="282" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Shared Reward</text>
-    <text x="891" y="282" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">One pick-up per item for all</text>
-    <text x="537" y="300" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Individualized Reward</text>
-    <text x="891" y="300" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Each player gets independent copy</text>
+    <text x="24" y="160" font-size="14" font-weight="500" fill="#1A1B2E">Loot Content:</text>
+    <text x="24" y="176" font-size="13" fill="#4A4B65">Click "Add Items" to configure a list of virtual items — select defined items, currency templates, and quantities.</text>
   </g>
 
-  <!-- ==================== SECTION IV: NODE GRAPH INTEGRATION ==================== -->
-  <circle cx="80" cy="1542" r="16" fill="#1B4FC0"/>
-  <text x="80" y="1543" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1543" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Node Graph Integration</text>
+  <!-- VII. Node Graph Operations -->
+  <text x="48" y="1808" font-size="18" font-weight="700" fill="#2D6BE4">VII. Node Graph Operations for Loot</text>
 
-  <!-- Execution Nodes card -->
-  <g transform="translate(60, 1570)">
-    <rect width="1080" height="170" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Execution Nodes</text>
+  <g transform="translate(48, 1828)">
+    <rect width="1104" height="580" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-    <rect x="16" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="370" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="724" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <text x="186" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Node</text>
-    <text x="540" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Source</text>
-    <text x="894" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">Loot Content Component — Execution Nodes</text>
 
-    <rect x="16" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="370" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="724" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <text x="186" y="94" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Increase Loot Item Quantity</text>
-    <text x="540" y="94" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Content Component</text>
-    <text x="894" y="94" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Increases item quantity in loot</text>
+    <rect x="24" y="46" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="40" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Increase Loot Component Item Quantity</text>
+    <text x="40" y="86" font-size="12" fill="#4A4B65">Adds to the quantity of an item in the loot.</text>
 
-    <rect x="16" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="370" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="724" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <text x="186" y="122" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Increase Loot Currency Quantity</text>
-    <text x="540" y="122" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Content Component</text>
-    <text x="894" y="122" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Increases currency quantity in loot</text>
+    <rect x="564" y="46" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="580" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Increase Loot Component Currency Quantity</text>
+    <text x="580" y="86" font-size="12" fill="#4A4B65">Adds to the currency amount in the loot.</text>
 
-    <rect x="16" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="370" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="724" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <text x="186" y="150" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Trigger Loot Drop</text>
-    <text x="540" y="150" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Component</text>
-    <text x="894" y="150" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Triggers loot drop on destruction</text>
+    <text x="24" y="128" font-size="16" font-weight="500" fill="#1A1B2E">Loot Content Component — Query Nodes</text>
+
+    <rect x="24" y="144" width="340" height="56" rx="8" fill="#E5F2E9"/>
+    <text x="40" y="164" font-size="13" font-weight="500" fill="#1A1B2E">Get Loot Item Component Quantity</text>
+    <text x="40" y="184" font-size="12" fill="#4A4B65">Query item quantity in loot.</text>
+
+    <rect x="380" y="144" width="360" height="56" rx="8" fill="#E5F2E9"/>
+    <text x="396" y="164" font-size="13" font-weight="500" fill="#1A1B2E">Get All Equipment from Loot Component</text>
+    <text x="396" y="184" font-size="12" fill="#4A4B65">Query all equipment in loot.</text>
+
+    <rect x="756" y="144" width="324" height="56" rx="8" fill="#E5F2E9"/>
+    <text x="772" y="164" font-size="13" font-weight="500" fill="#1A1B2E">Get Loot Currency Quantity</text>
+    <text x="772" y="184" font-size="12" fill="#4A4B65">Query currency amount in loot.</text>
+
+    <rect x="24" y="218" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="246" font-size="16" font-weight="500" fill="#1A1B2E">Loot Component — Execution Nodes (from Loots guide)</text>
+
+    <rect x="24" y="262" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="40" y="282" font-size="13" font-weight="500" fill="#1A1B2E">Trigger Loot Drop</text>
+    <text x="40" y="302" font-size="12" fill="#4A4B65">Triggers the loot drop from the component holder.</text>
+
+    <rect x="564" y="262" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="580" y="282" font-size="13" font-weight="500" fill="#1A1B2E">Set Loot Drop Content</text>
+    <text x="580" y="302" font-size="12" fill="#4A4B65">Overrides the loot content before dropping.</text>
+
+    <!-- Tip box -->
+    <rect x="24" y="340" width="1056" height="220" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="340" width="4" height="220" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="366" font-size="14" font-weight="500" fill="#2D6BE4">Loot Content vs Loot Component — Key Differences</text>
+
+    <text x="44" y="394" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Loot Content Component</tspan> — Permanently attached to loot-type prefabs. Defines pickup rules,</text>
+    <text x="44" y="414" font-size="13" fill="#4A4B65">pickup range, and filter logic. Used when items are dropped as physical loot entities.</text>
+
+    <text x="44" y="442" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Loot Component</tspan> — Can be added to any entity/prefab. Configures a drop template that</text>
+    <text x="44" y="462" font-size="13" fill="#4A4B65">spawns loot when the holder is defeated. Supports Individual vs Combined drops and</text>
+    <text x="44" y="482" font-size="13" fill="#4A4B65">Shared vs Individualized reward mechanics.</text>
+
+    <text x="44" y="510" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Design Recommendation:</tspan> Use Loot Component for defeat-based drops (enemies, destructibles).</text>
+    <text x="44" y="530" font-size="13" fill="#4A4B65">Use Loot Content Component for standalone loot prefabs placed in the scene.</text>
   </g>
 
-  <!-- Query Nodes card -->
-  <g transform="translate(60, 1760)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Query Nodes</text>
-
-    <rect x="16" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="370" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <rect x="724" y="52" width="340" height="28" rx="4" fill="#2D6BE4"/>
-    <text x="186" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Node</text>
-    <text x="540" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Source</text>
-    <text x="894" y="66" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
-
-    <rect x="16" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="370" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="724" y="80" width="340" height="28" fill="#F9F7F2"/>
-    <text x="186" y="94" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Get Loot Item Quantity</text>
-    <text x="540" y="94" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Content Component</text>
-    <text x="894" y="94" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Queries item quantity in loot</text>
-
-    <rect x="16" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="370" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="724" y="108" width="340" height="28" fill="#FFFFFF"/>
-    <text x="186" y="122" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Get All Equipment from Loot</text>
-    <text x="540" y="122" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Content Component</text>
-    <text x="894" y="122" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Returns all equipment in loot</text>
-
-    <rect x="16" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="370" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <rect x="724" y="136" width="340" height="28" fill="#F9F7F2"/>
-    <text x="186" y="150" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Get Loot Currency Quantity</text>
-    <text x="540" y="150" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Content Component</text>
-    <text x="894" y="150" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Queries currency quantity in loot</text>
-
-    <rect x="16" y="164" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="370" y="164" width="340" height="28" fill="#FFFFFF"/>
-    <rect x="724" y="164" width="340" height="28" fill="#FFFFFF"/>
-    <text x="186" y="178" font-size="12" fill="#1A1B2E" font-weight="bold" text-anchor="middle" dominant-baseline="middle">Set Loot Drop Content</text>
-    <text x="540" y="178" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Loot Component</text>
-    <text x="894" y="178" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Sets the loot content before drop</text>
-  </g>
-
-  <!-- Tip Box -->
-  <g transform="translate(60, 1980)">
-    <rect width="1080" height="68" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="68" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Loot Component Limitation</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">The Loot component only supports configuring one set of Loot template data per component. Combined Drops use the configured Loot prefab appearance.</text>
-  </g>
-
-  <!-- ==================== SOURCE LINKS ==================== -->
-  <text x="60" y="2090" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh22ge9durci" target="_blank">
-    <text x="60" y="2114" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Loot</text>
+  <!-- Related Documentation -->
+  <text x="48" y="2454" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkfj1iilnck" target="_blank">
+    <text x="48" y="2476" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Loot</text>
   </a>
-
   <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh63ox06afy8" target="_blank">
-    <text x="60" y="2136" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Loots</text>
+    <text x="48" y="2498" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Loots</text>
   </a>
 
-  <!-- ==================== FOOTER ==================== -->
-  <text x="600" y="2180" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
-
+  <!-- Footer -->
+  <text x="600" y="2524" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

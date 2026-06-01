@@ -1,143 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2124" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1700">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
       <stop offset="100%" stop-color="#4A3F6B"/>
     </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+    <filter id="card">
       <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
     </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+    <filter id="elevated">
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
+  <style>
+    text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+  </style>
 
-  <rect width="1200" height="2100" fill="#F9F7F2"/>
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="1700" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
   <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">07-Creations: Autonomous Entities with Behavior Modes</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Creations</text>
 
-  <!-- ==================== SECTION I ==================== -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition of Creations</text>
+  <!-- I. Definition -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Definition of Creations</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">What are Creations</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Creations is a collective term for humanoid beings, elemental beings,</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">abyssal monsters, mutant beasts, small animals, mechanical combat</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">units, and other entity types.</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">Creations can autonomously react to entities from hostile factions,</text>
-    <text x="20" y="140" font-size="14" fill="#4A4B65">including but not limited to entering battle or tracking targets.</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">Creations follow all general rules that apply to entities.</text>
-  </g>
+  <rect x="48" y="164" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">Creations is a collective term for humanoid beings, elemental beings, abyssal monsters, mutant beasts,</text>
+  <text x="72" y="214" fill="#4A4B65" font-size="14">small animals, mechanical combat units, etc.</text>
+  <text x="72" y="240" fill="#4A4B65" font-size="14">Creations can autonomously react to entities from hostile factions, including entering battle or tracking.</text>
+  <text x="72" y="258" fill="#4A4B65" font-size="14">See Factions documentation for more details on faction relationships.</text>
 
-  <!-- ==================== SECTION II ==================== -->
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creation Features</text>
+  <!-- II. Creation Features -->
+  <text x="48" y="304" fill="#2D6BE4" font-size="18" font-weight="700">II. Creation Features</text>
 
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior Logic</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The behavior logic of creation entities depends on the behavior mode</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">configured during editing and cannot be dynamically switched during</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">runtime. A creation entity adheres to a single behavior mode throughout</text>
-    <text x="20" y="112" font-size="14" fill="#4A4B65">its entire life cycle.</text>
-    <text x="20" y="140" font-size="14" font-weight="bold" fill="#1A1B2E">Hurtbox</text>
-    <text x="20" y="164" font-size="14" fill="#4A4B65">When a creation entity is running, it has a hurtbox matching its model</text>
-    <text x="20" y="184" font-size="14" fill="#4A4B65">size by default, allowing it to receive battle information accurately.</text>
-    <text x="20" y="212" font-size="14" fill="#4A4B65">Creation entities follow all general entity rules and can be edited with</text>
-    <text x="20" y="232" font-size="14" fill="#4A4B65">components, node graphs, and specialized settings.</text>
-  </g>
+  <rect x="48" y="320" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="348" fill="#4A4B65" font-size="14">Behavior logic depends on the behavior mode configured during editing. Cannot be dynamically switched during runtime.</text>
+  <text x="72" y="374" fill="#4A4B65" font-size="14">During runtime, a creation entity adheres to a single behavior mode throughout its entire life cycle.</text>
+  <text x="72" y="400" fill="#4A4B65" font-size="14">Has a hurtbox matching its model size by default, allowing it to receive battle information accurately.</text>
+  <text x="72" y="426" fill="#4A4B65" font-size="14">Creation entities follow all general rules that apply to entities.</text>
+  <rect x="72" y="438" width="180" height="26" rx="13" fill="#FFF3E0"/>
+  <text x="162" y="456" fill="#4A4B65" font-size="12" font-weight="500" text-anchor="middle">Single Behavior Mode</text>
 
-  <!-- ==================== SECTION III ==================== -->
-  <circle cx="80" cy="684" r="16" fill="#2D6BE4"/>
-  <text x="80" y="685" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="685" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Behavior Modes of Creations</text>
+  <!-- III. Behavior Modes -->
+  <text x="48" y="500" fill="#2D6BE4" font-size="18" font-weight="700">III. Behavior Modes of Creations</text>
 
-  <g transform="translate(60, 712)">
-    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Overview</text>
-    <text x="20" y="50" font-size="14" fill="#4A4B65">Behavior modes are drawn from a predefined behavior pool. The number</text>
-    <text x="20" y="70" font-size="14" fill="#4A4B65">and type of configurable modes vary per creation entity. Selection is</text>
-    <text x="20" y="90" font-size="14" fill="#4A4B65">supported during editing, but dynamic switching at runtime is not.</text>
-    <text x="20" y="118" font-size="14" fill="#4A4B65">Each behavior mode is divided into two parts:</text>
-    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">(1) Not-in-Battle</text>
-    <text x="20" y="172" font-size="14" fill="#4A4B65">After a creation is created, it is in a Not-in-Battle state by default.</text>
-    <text x="20" y="192" font-size="14" fill="#4A4B65">When a creation leaves battle for various reasons, it returns to this state.</text>
-    <text x="20" y="222" font-size="14" font-weight="bold" fill="#1A1B2E">(2) Entering Battle</text>
-    <text x="20" y="246" font-size="14" fill="#4A4B65">When a creation detects a character through Range Detection or FOV</text>
-    <text x="20" y="266" font-size="14" fill="#4A4B65">Detection, it will target that character and switch from the Not-in-Battle</text>
-    <text x="20" y="286" font-size="14" fill="#4A4B65">state to the Entering Battle state.</text>
-    <text x="20" y="314" font-size="14" fill="#4A4B65">Both parts provide corresponding pattern configurations with different</text>
-    <text x="20" y="334" font-size="14" fill="#4A4B65">configuration parameters offered for each behavior mode.</text>
-  </g>
+  <rect x="48" y="516" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="544" fill="#1A1B2E" font-size="16" font-weight="500">Not-in-Battle</text>
+  <text x="72" y="570" fill="#4A4B65" font-size="14">After creation, default state is Not-in-Battle.</text>
+  <text x="72" y="596" fill="#4A4B65" font-size="14">When creation enters then leaves battle,</text>
+  <text x="72" y="620" fill="#4A4B65" font-size="14">it returns to the Not-in-Battle state.</text>
+  <text x="72" y="646" fill="#4A4B65" font-size="14">Behavior pool varies per creation type.</text>
 
-  <!-- ==================== SECTION IV ==================== -->
-  <circle cx="80" cy="1088" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1089" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1089" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Editing Creations</text>
+  <rect x="612" y="516" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="544" fill="#1A1B2E" font-size="16" font-weight="500">Entering Battle</text>
+  <text x="636" y="570" fill="#4A4B65" font-size="14">When creation detects a character through</text>
+  <text x="636" y="594" fill="#4A4B65" font-size="14">Range Detection or FOV Detection,</text>
+  <text x="636" y="618" fill="#4A4B65" font-size="14">it targets that character and switches from</text>
+  <text x="636" y="642" fill="#4A4B65" font-size="14">Not-in-Battle to Entering Battle state.</text>
 
-  <g transform="translate(60, 1116)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">1. Basic Information</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The first section in the menu bar is for Basic Information. This includes</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">Transform settings — rotation on spatial X and Z axes is not supported,</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">only Y-axis (horizontal orientation) editing is allowed.</text>
-    <text x="20" y="120" font-size="14" font-weight="bold" fill="#1A1B2E">Other Basic attributes include:</text>
-    <text x="20" y="144" font-size="14" fill="#4A4B65">Model replacement, visibility settings, create settings (disable initial</text>
-    <text x="20" y="164" font-size="14" fill="#4A4B65">creation), faction assignment, unit tags, and deployment group management.</text>
-  </g>
+  <rect x="48" y="668" width="1104" height="44" rx="10" fill="#E8EEFB"/>
+  <rect x="48" y="668" width="4" height="44" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="694" fill="#4A4B65" font-size="13">Behavior modes drawn from predefined behavior pool. Number and type configurable per creation vary. Selection during editing only, no runtime switching.</text>
 
-  <g transform="translate(60, 1312)">
-    <rect width="1080" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">2. Specialized Settings</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The second section in the menu bar contains specialized settings.</text>
-    <text x="20" y="80" font-size="14" font-weight="bold" fill="#1A1B2E">(1) Basic Combat Attributes</text>
-    <text x="20" y="104" font-size="14" fill="#4A4B65">From both level attributes and fixed attributes, support creators in</text>
-    <text x="20" y="124" font-size="14" fill="#4A4B65">adjusting parameters and planning growth curves for creations.</text>
-    <text x="20" y="152" font-size="14" font-weight="bold" fill="#1A1B2E">(2) Aggro Configuration</text>
-    <text x="20" y="176" font-size="14" fill="#4A4B65">Configure how creations detect and target hostile entities.</text>
-    <text x="20" y="204" font-size="14" font-weight="bold" fill="#1A1B2E">(3) General Settings</text>
-    <text x="20" y="228" font-size="14" fill="#4A4B65">Additional configuration options for creation behavior and properties.</text>
-    <text x="20" y="256" font-size="14" fill="#4A4B65">Hurtbox settings, combat settings, and ability units can also be</text>
-    <text x="20" y="276" font-size="14" fill="#4A4B65">configured to add combat-related logic to entities.</text>
-  </g>
+  <!-- IV. Editing Creations -->
+  <text x="48" y="752" fill="#2D6BE4" font-size="18" font-weight="700">IV. Editing Creations</text>
 
-  <g transform="translate(60, 1628)">
-    <rect width="1080" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">3. Component Functions</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The third section in the menu bar is for common components. Use the</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">Add Components button to mount components as needed. Each component</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">can only be mounted once.</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">Available components include: Tab, Collision Trigger, Custom Variables,</text>
-    <text x="20" y="140" font-size="14" fill="#4A4B65">Global Timer, Unit Status, VFX Playing, Unit Attachment Points,</text>
-    <text x="20" y="160" font-size="14" fill="#4A4B65">Collision Trigger Source, Sound Effect Player, Inventory, Loot,</text>
-    <text x="20" y="180" font-size="14" fill="#4A4B65">Nameplate, Text Bubble, Shop, Scan Tag, and Mini-Map Marker.</text>
-    <text x="20" y="208" font-size="14" fill="#4A4B65">These components add diverse functionality to creation entities</text>
-    <text x="20" y="228" font-size="14" fill="#4A4B65">during runtime.</text>
-  </g>
+  <!-- Basic Information -->
+  <rect x="48" y="768" width="356" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="796" fill="#1A1B2E" font-size="16" font-weight="500">1. Basic Information</text>
+  <text x="72" y="822" fill="#1A1B2E" font-size="14" font-weight="500">Transform:</text>
+  <text x="72" y="844" fill="#4A4B65" font-size="14">Rotation on X and Z axes not supported.</text>
+  <text x="72" y="868" fill="#4A4B65" font-size="14">Only Y-axis (horizontal orientation) editable.</text>
+  <text x="72" y="896" fill="#4A4B65" font-size="14">Position (X, Y, Z) fully editable.</text>
 
-  <g transform="translate(60, 1884)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">4. Node Graph Functions</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The fourth section in the menu bar is for Node Graph configuration.</text>
-    <text x="20" y="76" font-size="14" fill="#4A4B65">Reference pre-configured entity node graphs to add custom logical</text>
-    <text x="20" y="96" font-size="14" fill="#4A4B65">functions to creations.</text>
-    <text x="20" y="124" font-size="14" fill="#4A4B65">Node graphs enable advanced behaviors beyond the built-in behavior modes.</text>
-  </g>
+  <!-- Specialized Settings -->
+  <rect x="422" y="768" width="356" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="446" y="796" fill="#1A1B2E" font-size="16" font-weight="500">2. Specialized Settings</text>
+  <text x="446" y="822" fill="#1A1B2E" font-size="14" font-weight="500">Basic Combat Attributes:</text>
+  <text x="446" y="844" fill="#4A4B65" font-size="14">Level attributes and fixed attributes.</text>
+  <text x="446" y="868" fill="#4A4B65" font-size="14">Adjust parameters and plan growth curves.</text>
+  <text x="446" y="896" fill="#1A1B2E" font-size="14" font-weight="500">Aggro Configuration / General Settings</text>
+
+  <!-- Components -->
+  <rect x="796" y="768" width="356" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="820" y="796" fill="#1A1B2E" font-size="16" font-weight="500">3. Component Functions</text>
+  <text x="820" y="822" fill="#4A4B65" font-size="14">"Add Components" button to mount.</text>
+  <text x="820" y="846" fill="#4A4B65" font-size="14">Each component mounted only once.</text>
+  <text x="820" y="872" fill="#4A4B65" font-size="14">Multiple component types supported.</text>
+  <text x="820" y="896" fill="#4A4B65" font-size="14">See component list below.</text>
+
+  <!-- V. Supported Components -->
+  <text x="48" y="948" fill="#2D6BE4" font-size="18" font-weight="700">V. Supported Components</text>
+
+  <rect x="48" y="964" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+
+  <!-- Column 1 -->
+  <text x="72" y="992" fill="#1A1B2E" font-size="14" font-weight="500">Interaction &amp; Trigger:</text>
+  <text x="72" y="1014" fill="#4A4B65" font-size="14">- Tab (interaction options)</text>
+  <text x="72" y="1036" fill="#4A4B65" font-size="14">- Collision Trigger</text>
+  <text x="72" y="1058" fill="#4A4B65" font-size="14">- Collision Trigger Source</text>
+
+  <text x="72" y="1088" fill="#1A1B2E" font-size="14" font-weight="500">Variables &amp; Timers:</text>
+  <text x="72" y="1110" fill="#4A4B65" font-size="14">- Custom Variables</text>
+  <text x="72" y="1132" fill="#4A4B65" font-size="14">- Global Timer</text>
+  <text x="72" y="1154" fill="#4A4B65" font-size="14">- Unit Status</text>
+
+  <!-- Column 2 -->
+  <text x="400" y="992" fill="#1A1B2E" font-size="14" font-weight="500">Visual &amp; Audio:</text>
+  <text x="400" y="1014" fill="#4A4B65" font-size="14">- VFX Playing</text>
+  <text x="400" y="1036" fill="#4A4B65" font-size="14">- Unit Attachment Points</text>
+  <text x="400" y="1058" fill="#4A4B65" font-size="14">- Sound Effect Player</text>
+
+  <text x="400" y="1088" fill="#1A1B2E" font-size="14" font-weight="500">UI &amp; Display:</text>
+  <text x="400" y="1110" fill="#4A4B65" font-size="14">- Nameplate</text>
+  <text x="400" y="1132" fill="#4A4B65" font-size="14">- Text Bubble</text>
+  <text x="400" y="1154" fill="#4A4B65" font-size="14">- Mini-Map Marker</text>
+
+  <!-- Column 3 -->
+  <text x="720" y="992" fill="#1A1B2E" font-size="14" font-weight="500">Inventory &amp; Loot:</text>
+  <text x="720" y="1014" fill="#4A4B65" font-size="14">- Inventory</text>
+  <text x="720" y="1036" fill="#4A4B65" font-size="14">- Loots</text>
+
+  <text x="720" y="1066" fill="#1A1B2E" font-size="14" font-weight="500">Commerce &amp; Scanning:</text>
+  <text x="720" y="1088" fill="#4A4B65" font-size="14">- Shop</text>
+  <text x="720" y="1110" fill="#4A4B65" font-size="14">- Scan Tag</text>
+
+  <rect x="720" y="1130" width="200" height="26" rx="13" fill="#E5F2E9"/>
+  <text x="820" y="1148" fill="#34A853" font-size="12" font-weight="500" text-anchor="middle">15 Component Types</text>
+
+  <!-- VI. Node Graph -->
+  <text x="48" y="1264" fill="#2D6BE4" font-size="18" font-weight="700">VI. Node Graph Functions</text>
+
+  <rect x="48" y="1280" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1308" fill="#4A4B65" font-size="14">Fourth section in the menu bar. Reference pre-configured entity node graphs to add logical functions to creations.</text>
+  <text x="72" y="1334" fill="#4A4B65" font-size="14">Node graphs are custom logic scripts created by creators (Craftspeople). Add, remove, or edit to enable additional functions.</text>
+  <text x="72" y="1354" fill="#4A4B65" font-size="14">Supports all standard entity node graph features including event handling, variable management, and execution flow.</text>
+
+  <!-- VII. Behavior Mode Details -->
+  <text x="48" y="1400" fill="#2D6BE4" font-size="18" font-weight="700">VII. Behavior Mode Structure</text>
+
+  <rect x="48" y="1416" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1444" fill="#4A4B65" font-size="14">Each behavior mode is divided into two parts: Not in Battle and Entering Battle.</text>
+  <text x="72" y="1470" fill="#4A4B65" font-size="14">Both parts provide corresponding pattern configurations with different parameters for each behavior mode.</text>
+  <text x="72" y="1496" fill="#4A4B65" font-size="14">The number and type of behavior modes configurable for each creation entity vary by creation type.</text>
+  <text x="72" y="1522" fill="#4A4B65" font-size="14">See General Settings (Quick Settings) for full parameter details on Battle Entry, Battle Exit, Territory, and Skills.</text>
+
+  <!-- Tip -->
+  <rect x="48" y="1548" width="1104" height="44" rx="10" fill="#E8EEFB"/>
+  <rect x="48" y="1548" width="4" height="44" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="1574" fill="#4A4B65" font-size="13">Creations follow all general entity rules. For combat attributes, aggro, behavior modes, patrol, and skills, refer to the General Settings (Quick Settings) page.</text>
 
   <!-- Source Links -->
-  <text x="60" y="2060" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <text x="48" y="1628" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhufqo0c0tqw" target="_blank">
+    <text x="48" y="1646" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Creations (Guide)</text>
+  </a>
 
-  <text x="60" y="2082" font-size="12" fill="#2D6BE4" text-decoration="underline">
-    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh893x0weae8">Miliastra Academy Documentation: Creations</a>
-  </text>
-
-  <text x="600" y="2100" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <!-- Footer -->
+  <text x="600" y="1680" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

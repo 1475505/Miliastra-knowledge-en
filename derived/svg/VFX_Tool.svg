@@ -1,220 +1,312 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3600" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="3600" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">34-VFX Tools</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2176">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2176" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What Are VFX Tools?</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VFX Tool</text>
+<text x="260" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Composite assets with VFX and SFX managed via timeline</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">VFX Tools are composite assets consisting of visual effects (VFX) and sound effects (SFX) managed</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">via a timeline. Craftspeople can Play or Mount them the same way as regular special effects.</text>
-    <text x="20" y="100" font-size="13" fill="#4A4B65">Access: Combat Preset tab → VFX Tool → [New VFX Tool]</text>
-  </g>
+<!-- I. What Are VFX Tools -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. What Are VFX Tools</text>
 
-  <circle cx="80" cy="320" r="16" fill="#2D6BE4"/>
-  <text x="80" y="321" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="321" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. VFX Tool Classification</text>
+<rect x="48" y="164" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VFX Tools are composite assets consisting of visual effects (VFX) and sound effects (SFX) managed via a timeline.</text>
+<text x="72" y="210" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can be played or mounted the same way as regular special effects. Access: Combat Preset > VFX Tool > New VFX Tool.</text>
 
-  <g transform="translate(60, 348)">
-    <rect width="520" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="80" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="56" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Timed</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Timed VFX Tools</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Fixed duration. Once playback reaches the Duration, the VFX</text>
-    <text x="16" y="102" font-size="13" fill="#4A4B65">Tool auto-destroys.</text>
-    <text x="16" y="126" font-size="13" fill="#4A4B65">Can only be triggered via [Play Timed Effects] node.</text>
-    <text x="16" y="150" font-size="13" fill="#1A1B2E" font-weight="bold">Choose type at creation — cannot be changed later.</text>
-    <text x="16" y="172" font-size="13" fill="#4A4B65">After creating a Timed VFX Tool, enter the editing</text>
-    <text x="16" y="192" font-size="13" fill="#4A4B65">interface to adjust its duration.</text>
-  </g>
+<!-- II. Classification -->
+<text x="48" y="256" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Classification of VFX Tools</text>
 
-  <g transform="translate(620, 348)">
-    <rect width="520" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Persistent</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Persistent VFX Tools</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Infinite duration — will not destroy itself.</text>
-    <text x="16" y="106" font-size="13" fill="#4A4B65">Can be destroyed in Node Graph using:</text>
-    <text x="16" y="126" font-size="13" fill="#4A4B65">• Special Effects Asset Configuration ID</text>
-    <text x="16" y="146" font-size="13" fill="#4A4B65">• Special Effect Instance ID</text>
-    <text x="16" y="170" font-size="13" fill="#4A4B65">Can only be mounted via [Mount Looping Effects] node.</text>
-    <text x="16" y="194" font-size="13" fill="#1A1B2E" font-weight="bold">Choose type at creation — cannot be changed later.</text>
-  </g>
+<rect x="48" y="272" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="286" width="160" height="28" rx="14" fill="#E8EEFB"/>
+<text x="152" y="305" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Timed VFX Tool</text>
+<text x="72" y="328" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fixed duration. Auto-destroys when duration reached.</text>
+<text x="72" y="348" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Triggered via [Play Timed Effects] node only.</text>
+<text x="72" y="366" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration adjustable in editing interface.</text>
 
-  <circle cx="80" cy="604" r="16" fill="#2D6BE4"/>
-  <text x="80" y="605" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="605" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Effect Tracks</text>
+<rect x="604" y="272" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="628" y="286" width="180" height="28" rx="14" fill="#FFF3E0"/>
+<text x="718" y="305" fill="#1A1B2E" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Persistent VFX Tool</text>
+<text x="628" y="328" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Infinite duration. Does not self-destruct.</text>
+<text x="628" y="348" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destroyed via Config ID or Instance ID in Node Graph.</text>
+<text x="628" y="366" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mounted via [Mount Looping Effects] node only.</text>
 
-  <g transform="translate(60, 632)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Track System</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">A VFX Tool can consist of multiple Effect Tracks. Click [New Track] to add a track to the timeline.</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">You can configure visual effects (VFX) or sound effects (SFX) on any track. The system plays these</text>
-    <text x="20" y="94" font-size="13" fill="#4A4B65">effects at their designated time points along the timeline. Click a specific track to modify its properties.</text>
-    <text x="20" y="124" font-size="15" font-weight="bold" fill="#1A1B2E">Visibility Settings</text>
-    <text x="20" y="148" font-size="13" fill="#4A4B65">Visible Faction List: Hostile / Allied / Own faction visibility filters (all selected = visible to all)</text>
-    <text x="20" y="168" font-size="13" fill="#4A4B65">Local Filter: Updated per-client; returns True = visible, False = hidden</text>
-  </g>
+<!-- Warning: Type cannot be changed -->
+<rect x="48" y="384" width="1104" height="44" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="384" width="4" height="44" rx="2" fill="#D93025"/>
+<text x="72" y="410" fill="#D93025" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Note: VFX Tool type must be chosen at creation time. It cannot be changed later.</text>
 
-  <circle cx="80" cy="848" r="16" fill="#2D6BE4"/>
-  <text x="80" y="849" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="849" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Loop Segment Settings</text>
+<!-- III. Effect Tracks -->
+<text x="48" y="468" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Effect Tracks</text>
+<text x="220" y="468" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiple tracks on timeline; click [New Track] to add</text>
 
-  <g transform="translate(60, 876)">
-    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Loop Configuration</text>
-    <text x="20" y="54" font-size="13" fill="#1A1B2E" font-weight="bold">Enable Loop Segment</text>
-    <text x="150" y="54" font-size="13" fill="#4A4B65">Turns track into a loop segment track</text>
-    <text x="20" y="78" font-size="13" fill="#1A1B2E" font-weight="bold">Loop Segment Start Time (s)</text>
-    <text x="185" y="78" font-size="13" fill="#4A4B65">Start position of loop on timeline</text>
-    <text x="20" y="102" font-size="13" fill="#1A1B2E" font-weight="bold">Loop Segment Duration (s)</text>
-    <text x="190" y="102" font-size="13" fill="#4A4B65">Duration from start to end of loop</text>
-    <text x="20" y="126" font-size="13" fill="#1A1B2E" font-weight="bold">Infinite Loop</text>
-    <text x="120" y="126" font-size="13" fill="#4A4B65">Keeps looping until VFX Tool's Life Cycle ends</text>
-    <text x="20" y="150" font-size="13" fill="#1A1B2E" font-weight="bold">Number of Loops</text>
-    <text x="140" y="150" font-size="13" fill="#4A4B65">Specifies exact loop count (when Infinite Loop disabled)</text>
-    <text x="20" y="178" font-size="13" fill="#4A4B65">A blue box marks the loop segment area on the track.</text>
-    <text x="20" y="198" font-size="13" fill="#4A4B65">Note: If Timed duration is reached, active loop effects are cut off.</text>
-  </g>
+<!-- Visibility Settings -->
+<rect x="48" y="484" width="540" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="510" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visibility Settings</text>
+<text x="72" y="534" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines whether effects in a track are visible to each player.</text>
+<text x="72" y="556" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If any condition is not met, all effects in that track are hidden.</text>
 
-  <circle cx="80" cy="1132" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1133" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1133" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Effect (SFX) Blocks</text>
+<text x="72" y="582" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visible Faction List:</text>
+<text x="72" y="602" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hostile Faction, Allied Faction, Own Faction</text>
+<text x="72" y="620" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Default: all selected (all players see effects)</text>
+<text x="72" y="638" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local Filter:</text>
+<text x="180" y="638" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Updates per client; True = visible, False = hidden</text>
 
-  <g transform="translate(60, 1160)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">SFX Block Configuration</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Place Effect (SFX) Blocks anywhere along an effect track. Each references a sound asset and</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">configures its duration within the track. The effect asset can be Timed or Continuous.</text>
-    <text x="20" y="104" font-size="14" font-weight="bold" fill="#1A1B2E">Life Cycle Settings</text>
-    <text x="20" y="128" font-size="13" fill="#4A4B65">Continuous Playback: Play until naturally finishes or VFX Tool is destroyed</text>
-    <text x="20" y="148" font-size="13" fill="#4A4B65">Non-Continuous: Configure Duration; effect destroyed when duration ends</text>
-    <text x="20" y="172" font-size="13" fill="#4A4B65">[Set to Asset Duration]: Matches effect duration to asset's duration</text>
-  </g>
+<!-- Loop Segment Settings -->
+<rect x="604" y="484" width="548" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="510" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Segment Settings</text>
 
-  <circle cx="80" cy="1396" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1397" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">VI</text>
-  <text x="108" y="1397" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">VI. Behavior on Destroy / Hide</text>
+<rect x="628" y="524" width="200" height="26" rx="13" fill="#E8EEFB"/>
+<text x="728" y="542" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enable Loop Segment</text>
+<text x="840" y="542" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Or create from New Track</text>
 
-  <g transform="translate(60, 1424)">
-    <rect width="520" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Timed Effects</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior When Destroyed</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Stop Particle Emission: Stops emission, existing</text>
-    <text x="16" y="100" font-size="13" fill="#4A4B65">particles continue until Life Cycle ends</text>
-    <text x="16" y="124" font-size="13" fill="#4A4B65">Stop and Clear Effects: Stops emission and removes</text>
-    <text x="16" y="142" font-size="13" fill="#4A4B65">all visual presentation instantly</text>
-    <text x="16" y="166" font-size="13" fill="#4A4B65">Has Behavior on Destruction disabled: Effect continues</text>
-    <text x="16" y="184" font-size="13" fill="#4A4B65">playing until its own lifecycle completes</text>
-    <text x="16" y="214" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior When Hidden</text>
-    <text x="16" y="236" font-size="13" fill="#4A4B65">None: Effect not affected when hidden</text>
-    <text x="16" y="256" font-size="13" fill="#4A4B65">Destroy Effect: Effect destroyed when hidden;</text>
-    <text x="16" y="274" font-size="13" fill="#4A4B65">will not resume when visible again</text>
-    <text x="16" y="304" font-size="13" fill="#1A1B2E" font-weight="bold">Special Note:</text>
-    <text x="16" y="324" font-size="13" fill="#4A4B65">If a Timed Effect has "Has Behavior on Destruction"</text>
-    <text x="16" y="344" font-size="13" fill="#4A4B65">disabled, it cannot be destroyed by the system — may</text>
-    <text x="16" y="364" font-size="13" fill="#4A4B65">continue playing even after VFX Tool is destroyed</text>
-  </g>
+<rect x="628" y="556" width="260" height="26" rx="13" fill="#E8EEFB"/>
+<text x="758" y="574" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Segment Start Time (s)</text>
+<text x="900" y="574" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Start position</text>
 
-  <g transform="translate(620, 1424)">
-    <rect width="520" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Looping Effects</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior When Destroyed</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Stop Particle Emission: Stops emission, existing</text>
-    <text x="16" y="100" font-size="13" fill="#4A4B65">particles continue until Life Cycle ends</text>
-    <text x="16" y="124" font-size="13" fill="#4A4B65">Stop and Clear Effects: Stops emission and removes</text>
-    <text x="16" y="142" font-size="13" fill="#4A4B65">all visual presentation instantly</text>
-    <text x="16" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">Behavior When Hidden</text>
-    <text x="16" y="194" font-size="13" fill="#4A4B65">None: Effect not affected when hidden</text>
-    <text x="16" y="218" font-size="13" fill="#4A4B65">Sync Hidden Effects: Looping effect hides when VFX</text>
-    <text x="16" y="236" font-size="13" fill="#4A4B65">Tool hidden; reappears when VFX Tool visible again</text>
-  </g>
+<rect x="628" y="588" width="260" height="26" rx="13" fill="#E8EEFB"/>
+<text x="758" y="606" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Segment Duration (s)</text>
+<text x="900" y="606" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration</text>
 
-  <circle cx="80" cy="1900" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1901" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">VII</text>
-  <text x="108" y="1901" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">VII. Regular Effect Blocks</text>
+<rect x="628" y="620" width="130" height="26" rx="13" fill="#E8EEFB"/>
+<text x="693" y="638" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Infinite Loop</text>
+<text x="770" y="638" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Until lifecycle ends</text>
 
-  <g transform="translate(60, 1928)">
-    <rect width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Adding Regular Effect Blocks</text>
-    <text x="20" y="52" font-size="13" fill="#4A4B65">Right-click the track → [Add Event] → [VFX Effect]</text>
-    <text x="20" y="82" font-size="14" font-weight="bold" fill="#1A1B2E">Parameters</text>
-    <text x="20" y="106" font-size="13" fill="#1A1B2E" font-weight="bold">Effect Asset</text>
-    <text x="110" y="106" font-size="13" fill="#4A4B65">Select any Regular Effect Asset (Timed / Looping)</text>
-    <text x="20" y="130" font-size="13" fill="#1A1B2E" font-weight="bold">Play VFX Default Sound Effect</text>
-    <text x="195" y="130" font-size="13" fill="#4A4B65">Enable/disable built-in default sound effect</text>
-    <text x="20" y="154" font-size="13" fill="#1A1B2E" font-weight="bold">Additional Element Type</text>
-    <text x="165" y="154" font-size="13" fill="#4A4B65">Modifies visual style to match Elemental Type</text>
-    <text x="20" y="178" font-size="13" fill="#1A1B2E" font-weight="bold">Effect Playback Speed</text>
-    <text x="150" y="178" font-size="13" fill="#4A4B65">Multiplier (default 1). Does not affect audio speed</text>
-    <text x="20" y="206" font-size="13" fill="#1A1B2E" font-weight="bold">General Parameters:</text>
-    <text x="150" y="206" font-size="13" fill="#4A4B65">Offset (location), Rotation, Zoom (uniform scale)</text>
-  </g>
+<!-- IV. Effect (SFX) Blocks -->
+<text x="48" y="684" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Effect (SFX) Blocks</text>
+<text x="260" y="684" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Placed on effect tracks; reference effect/sound assets</text>
 
-  <circle cx="80" cy="2224" r="16" fill="#2D6BE4"/>
-  <text x="80" y="2225" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">VIII</text>
-  <text x="108" y="2225" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">VIII. Warning Effect Blocks</text>
+<!-- Life Cycle Settings -->
+<rect x="48" y="700" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="726" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Life Cycle Settings for Effect Blocks</text>
 
-  <g transform="translate(60, 2252)">
-    <rect width="1080" height="620" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Shapes</text>
-    <text x="20" y="60" font-size="13" fill="#4A4B65">Warning effects allow free configuration of static parameters: Circular, Rectangular, and Sector.</text>
-    <text x="20" y="80" font-size="13" fill="#4A4B65">All warning effects are timed effects and can also be called directly as timed effects.</text>
+<text x="72" y="750" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Continuous Playback enabled:</text>
+<text x="320" y="750" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect plays until finished (Timed) or VFX Tool destroyed</text>
 
-    <text x="20" y="112" font-size="14" font-weight="bold" fill="#1A1B2E">Circular</text>
-    <text x="20" y="134" font-size="13" fill="#4A4B65">Outer Radius (m), Inner Radius (m), Fill Time (s), Duration, Ground Height, Fill Color</text>
+<text x="72" y="772" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Continuous Playback disabled:</text>
+<text x="340" y="772" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Must configure Duration. Effect destroyed at duration end.</text>
+<text x="72" y="792" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">[Set to Asset Duration] sets duration to asset duration (may vary due to random playback).</text>
 
-    <text x="20" y="164" font-size="14" font-weight="bold" fill="#1A1B2E">Rectangular</text>
-    <text x="20" y="186" font-size="13" fill="#4A4B65">X-Axis Length (m), Z-Axis Length (m), Fill Direction (Linear Fill / Inside Out),</text>
-    <text x="20" y="206" font-size="13" fill="#4A4B65">Fill Time (s), Duration, Ground Height, Fill Color</text>
+<!-- Behaviors on Destroy/Hide -->
+<text x="48" y="836" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Behaviors on Destroy / Hide</text>
 
-    <text x="20" y="236" font-size="14" font-weight="bold" fill="#1A1B2E">Sector</text>
-    <text x="20" y="258" font-size="13" fill="#4A4B65">Outer Radius (m), Inner Radius (m), Sector Angle, Fill Direction (Clockwise /</text>
-    <text x="20" y="278" font-size="13" fill="#4A4B65">Counterclockwise / Inside Out), Fill Time (s), Duration, Ground Height, Fill Color</text>
+<!-- Timed Effects -->
+<rect x="48" y="852" width="540" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="878" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Timed Effects</text>
 
-    <text x="20" y="308" font-size="14" font-weight="bold" fill="#1A1B2E">General Parameters (all shapes)</text>
-    <text x="20" y="330" font-size="13" fill="#4A4B65">Offset, Rotation, Zoom — adjust position/rotation/scale relative to VFX Tool origin</text>
-  </g>
+<text x="72" y="902" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Behavior When Destroyed:</text>
+<text x="72" y="922" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">"Has Behavior on Destruction" enabled:</text>
+<text x="72" y="942" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Stop Particle Emission: natural fade-out</text>
+<text x="72" y="960" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Stop and Clear Effects: instant removal</text>
+<text x="72" y="980" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Disabled: effect continues until lifecycle completes</text>
 
-  <circle cx="80" cy="2908" r="16" fill="#2D6BE4"/>
-  <text x="80" y="2909" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IX</text>
-  <text x="108" y="2909" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IX. Using VFX Tools</text>
+<text x="72" y="1004" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Behavior When Hidden:</text>
+<text x="72" y="1022" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">None (unaffected) or Destroy Effect (no restart)</text>
 
-  <g transform="translate(60, 2936)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Integration</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">VFX Tools are used the same way as regular effects. Use [Play Timed Effects] node:</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">• Effect Asset: Select a VFX Tool by configuration ID or search</text>
-    <text x="20" y="98" font-size="13" fill="#4A4B65">• Target Entity: Owner of the VFX Tool</text>
-    <text x="20" y="118" font-size="13" fill="#4A4B65">• Attachment Point Name: Origin placed at corresponding attachment point</text>
-    <text x="20" y="138" font-size="13" fill="#4A4B65">• Move/Rotate With the Target, Location/Rotation Offset, Zoom Ratio</text>
-    <text x="20" y="158" font-size="13" fill="#4A4B65">• Play Built-In Sound Effect: Yes = per-effect setting; No = no default sounds</text>
-  </g>
+<!-- Looping Effects -->
+<rect x="604" y="852" width="548" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="878" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Looping Effects</text>
 
-  <text x="60" y="3190" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh78er0n24r4" target="_blank">
-    <text x="60" y="3216" font-size="13" fill="#2D6BE4" text-decoration="underline">VFX Tools → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh78er0n24r4</text>
-  </a>
-  <text x="600" y="3250" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<text x="628" y="902" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Behavior When Destroyed (required):</text>
+<text x="628" y="922" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Stop Particle Emission: natural fade-out</text>
+<text x="628" y="942" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Stop and Clear Effects: instant removal</text>
+
+<text x="628" y="970" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Behavior When Hidden:</text>
+<text x="628" y="990" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">None (unaffected) or Sync Hidden Effects</text>
+<text x="628" y="1010" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(auto-hide, reappear when VFX Tool visible again)</text>
+
+<!-- VI. Regular Effect Blocks -->
+<text x="48" y="1072" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Regular Effect Blocks</text>
+<text x="280" y="1072" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Right-click track > Add Event > VFX Effect</text>
+
+<rect x="48" y="1088" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+
+<rect x="72" y="1104" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1123" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Asset</text>
+<text x="220" y="1123" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select any Regular Effect Asset (Timed Effect / Looping Effect)</text>
+
+<rect x="72" y="1136" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1155" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Play VFX Default Sound Effect</text>
+<text x="360" y="1155" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When enabled, built-in default sound plays simultaneously</text>
+
+<rect x="72" y="1168" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1187" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Additional Element Type</text>
+<text x="310" y="1187" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only for some effects; modifies visual style to match Elemental Type</text>
+
+<rect x="72" y="1200" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1219" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Playback Speed</text>
+<text x="300" y="1219" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Playback speed multiplier (default 1). Does not affect default audio speed.</text>
+
+<text x="72" y="1244" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">General Parameters:</text>
+<text x="240" y="1244" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offset (location), Rotation (rotation offset), Zoom (uniform scale only)</text>
+
+<!-- VII. Warning Effect Blocks -->
+<text x="48" y="1288" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Warning Effect Blocks</text>
+<text x="300" y="1288" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3 shapes: circular, rectangular, sector (all timed)</text>
+
+<!-- Circular -->
+<rect x="48" y="1304" width="360" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1330" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Circular Warning</text>
+
+<text x="72" y="1354" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Outer Radius (m):</text>
+<text x="220" y="1354" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Outer radius at Zoom=1</text>
+
+<text x="72" y="1374" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inner Radius (m):</text>
+<text x="220" y="1374" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">0 = expand from center</text>
+
+<text x="72" y="1394" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Time (s):</text>
+<text x="180" y="1394" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inner to full expansion</text>
+
+<text x="72" y="1414" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration:</text>
+<text x="150" y="1414" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time fully filled after expansion</text>
+
+<text x="72" y="1434" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Ground Height:</text>
+<text x="190" y="1434" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Snap to surface below</text>
+
+<text x="72" y="1454" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Color:</text>
+<text x="160" y="1454" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Warning effect color</text>
+
+<text x="72" y="1474" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Plus: Offset, Rotation, Zoom (general params)</text>
+<text x="72" y="1492" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">No surface within Ground Height = not shown</text>
+
+<!-- Rectangular -->
+<rect x="420" y="1304" width="360" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="444" y="1330" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Rectangular Warning</text>
+
+<text x="444" y="1354" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X-Axis Length (m):</text>
+<text x="600" y="1354" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Length along X-axis</text>
+
+<text x="444" y="1374" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Z-Axis Length (m):</text>
+<text x="600" y="1374" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Length along Z-axis</text>
+
+<text x="444" y="1394" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Direction:</text>
+<text x="560" y="1394" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Linear Fill (neg Z) or Inside Out (X)</text>
+
+<text x="444" y="1414" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Time (s):</text>
+<text x="560" y="1414" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time to fill entire rectangle</text>
+
+<text x="444" y="1434" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration / Ground Height / Fill Color</text>
+
+<text x="444" y="1454" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Plus: Offset, Rotation, Zoom (general params)</text>
+
+<!-- Sector -->
+<rect x="792" y="1304" width="360" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="816" y="1330" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sector Warning</text>
+
+<text x="816" y="1354" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Outer/Inner Radius (m)</text>
+
+<text x="816" y="1374" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sector Angle:</text>
+<text x="930" y="1374" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Angle of the sector</text>
+
+<text x="816" y="1394" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Direction:</text>
+<text x="816" y="1412" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clockwise, Counterclockwise, or Inside Out</text>
+
+<text x="816" y="1432" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Time / Duration / Ground Height</text>
+
+<text x="816" y="1452" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fill Color / Offset / Rotation / Zoom</text>
+
+<text x="816" y="1474" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clockwise: sweep from neg X-axis to angle</text>
+<text x="816" y="1492" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Counterclockwise: reverse sweep direction</text>
+
+<!-- VIII. SFX Blocks -->
+<text x="48" y="1544" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. SFX Blocks</text>
+<text x="210" y="1544" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Right-click track > Add Event > SFX</text>
+
+<rect x="48" y="1560" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+
+<rect x="72" y="1576" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1595" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sound Effect Asset</text>
+<text x="280" y="1595" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">References a sound effect asset</text>
+
+<rect x="72" y="1608" width="520" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1627" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Volume</text>
+<text x="170" y="1627" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts playback volume</text>
+
+<rect x="608" y="1608" width="520" height="28" rx="6" fill="#fff"/>
+<text x="624" y="1627" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Playback Speed</text>
+<text x="780" y="1627" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts playback speed</text>
+
+<rect x="72" y="1640" width="520" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1659" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Playback</text>
+<text x="230" y="1659" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Restart from beginning after loop interval</text>
+
+<rect x="608" y="1640" width="520" height="28" rx="6" fill="#F4F1EA"/>
+<text x="624" y="1659" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Interval (s)</text>
+<text x="790" y="1659" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Interval between loop cycles</text>
+
+<rect x="72" y="1672" width="520" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1691" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3D Sound Effect</text>
+<text x="250" y="1691" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Based on VFX Tool's origin</text>
+
+<rect x="608" y="1672" width="520" height="28" rx="6" fill="#fff"/>
+<text x="624" y="1691" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Range Radius (m)</text>
+<text x="800" y="1691" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Audible radius</text>
+
+<rect x="72" y="1704" width="520" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1723" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attenuation Mode</text>
+<text x="270" y="1723" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">How sound attenuates over distance</text>
+
+<text x="72" y="1738" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offset:</text>
+<text x="140" y="1738" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Location offset relative to VFX Tool's origin</text>
+
+<!-- IX. How to Use VFX Tools -->
+<text x="48" y="1784" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. How to Use VFX Tools</text>
+<text x="280" y="1784" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Same as regular effects; enter Config ID or search</text>
+
+<rect x="48" y="1800" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1826" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Play Timed Effects Node Parameters (when asset is VFX Tool)</text>
+
+<rect x="72" y="1840" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1859" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Asset</text>
+<text x="220" y="1859" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select a VFX Tool by Config ID or search box</text>
+
+<rect x="72" y="1872" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1891" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Target Entity</text>
+<text x="220" y="1891" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Owner entity of the VFX Tool</text>
+
+<rect x="72" y="1904" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1923" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attachment Point Name</text>
+<text x="300" y="1923" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Origin placed at corresponding attachment point position</text>
+
+<rect x="72" y="1936" width="520" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1955" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Move With the Target</text>
+<text x="290" y="1955" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effects follow target motion</text>
+
+<rect x="608" y="1936" width="520" height="28" rx="6" fill="#fff"/>
+<text x="624" y="1955" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Rotate With the Target</text>
+<text x="840" y="1955" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effects follow target rotation</text>
+
+<rect x="72" y="1968" width="520" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1987" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Location Offset / Rotation Offset</text>
+
+<rect x="608" y="1968" width="520" height="28" rx="6" fill="#F4F1EA"/>
+<text x="624" y="1987" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Zoom Ratio (combined with VFX Tool zoom)</text>
+
+<!-- Play Built-In Sound Effect -->
+<rect x="48" y="2012" width="1104" height="56" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2012" width="4" height="56" rx="2" fill="#2D6BE4"/>
+<text x="72" y="2034" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Play Built-In Sound Effect: Yes = each effect uses its own setting. No = no default sounds play.</text>
+<text x="72" y="2056" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If Timed VFX Tool duration is reached, active loop segment effects are cut off at lifecycle end.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2108" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh4ejditwixg" target="_blank">
+<text x="48" y="2128" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: VFX Tools</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2160" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

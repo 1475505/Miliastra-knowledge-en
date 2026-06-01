@@ -1,181 +1,195 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2800" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2182">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2182" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="2800" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currency &amp; Inventory</text>
+<text x="510" y="78" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Component</text>
 
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">24-Currency &amp; Inventory: Economy &amp; Item Management</text>
+<!-- I. Currency Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Currency Definition</text>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Currency</text>
+<rect x="48" y="162" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currency is a general item used in gameplay to determine the value of virtual items and evaluate whether</text>
+<text x="72" y="212" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">trades can be completed. Currency can be held by units and increases/decreases through trading or Node Graph logic.</text>
 
-  <rect x="60" y="164" width="1080" height="80" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="192" font-size="14" fill="#4A4B65">Currency is a general item used in gameplay to determine the value of virtual items and evaluate</text>
-  <text x="80" y="214" font-size="14" fill="#4A4B65">whether trades can be completed. Currency can be held by units and will increase or decrease through</text>
-  <text x="80" y="236" font-size="14" fill="#4A4B65">trading or Node Graph logic.</text>
+<!-- II. Editing Currency -->
+<text x="48" y="284" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Editing Currency</text>
+<text x="230" y="284" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via Currency and Inventory button</text>
 
-  <rect x="60" y="258" width="1080" height="364" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <rect x="60" y="258" width="4" height="364" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="286" font-size="14" font-weight="bold" fill="#1A1B2E">Currency Configuration</text>
+<rect x="48" y="298" width="1104" height="310" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="318" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="341" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="341" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <g transform="translate(84, 310)">
-    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Currency Name</text>
-    <text x="220" y="0" font-size="13" fill="#4A4B65">Name defined by the creator for the currency</text>
-    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Configuration ID</text>
-    <text x="220" y="22" font-size="13" fill="#4A4B65">Unique identifier for currency data</text>
-    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Icon</text>
-    <text x="220" y="44" font-size="13" fill="#4A4B65">Display style; select from prefabricated icons</text>
-    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Destruction Debris</text>
-    <text x="220" y="66" font-size="13" fill="#4A4B65">Logic when currency owner is defeated</text>
-    <text x="16" y="88" font-size="13" fill="#4A4B65">- Loot: Converted into loots and created in the scene</text>
-    <text x="16" y="108" font-size="13" fill="#4A4B65">- Destroy: Currency is destroyed</text>
-    <text x="16" y="128" font-size="13" fill="#4A4B65">- Save: Retained after revival (characters only)</text>
-    <text x="0" y="152" font-size="13" font-weight="bold" fill="#1A1B2E">Loot Drop Mechanics</text>
-    <text x="220" y="152" font-size="13" fill="#4A4B65">How currency drops behave in the scene</text>
-    <text x="16" y="174" font-size="13" fill="#4A4B65">- Shared Reward: One loot entity shared by all players</text>
-    <text x="16" y="194" font-size="13" fill="#4A4B65">- Individualized Reward: Each player has independent loot</text>
-    <text x="0" y="218" font-size="13" font-weight="bold" fill="#1A1B2E">Corresponding Loot Appearance</text>
-    <text x="220" y="218" font-size="13" fill="#4A4B65">Loot prefab with physical properties for scene display</text>
-    <text x="0" y="240" font-size="13" font-weight="bold" fill="#1A1B2E">Display Priority</text>
-    <text x="220" y="240" font-size="13" fill="#4A4B65">Higher numbers displayed first in the inventory</text>
-  </g>
+<rect x="72" y="354" width="1056" height="32" fill="#fff"/>
+<text x="100" y="375" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currency Name</text>
+<text x="380" y="375" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name defined by the creator for the currency</text>
+<line x1="72" y1="386" x2="1128" y2="386" stroke="#E8E4DA"/>
 
-  <circle cx="80" cy="660" r="16" fill="#2D6BE4"/>
-  <text x="80" y="661" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="661" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Inventory</text>
+<rect x="72" y="386" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="407" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configuration ID</text>
+<text x="380" y="407" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique identifier for currency data</text>
+<line x1="72" y1="418" x2="1128" y2="418" stroke="#E8E4DA"/>
 
-  <rect x="60" y="688" width="1080" height="80" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="716" font-size="14" fill="#4A4B65">The inventory is a container for the entire resource system, managing all virtual items, equipment,</text>
-  <text x="80" y="738" font-size="14" fill="#4A4B65">and currency owned by the inventory owner. Items are displayed in slots. Players can split, destroy,</text>
-  <text x="80" y="760" font-size="14" fill="#4A4B65">or discard items during gameplay.</text>
+<rect x="72" y="418" width="1056" height="32" fill="#fff"/>
+<text x="100" y="439" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icon</text>
+<text x="380" y="439" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Display style during gameplay; select from prefabricated icons</text>
+<line x1="72" y1="450" x2="1128" y2="450" stroke="#E8E4DA"/>
 
-  <rect x="60" y="782" width="1080" height="326" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <rect x="60" y="782" width="4" height="326" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="810" font-size="14" font-weight="bold" fill="#1A1B2E">Inventory Template Configuration</text>
+<rect x="72" y="450" width="1056" height="64" fill="#F4F1EA"/>
+<text x="100" y="471" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destruction Debris</text>
+<text x="380" y="471" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Logic executed when the currency owner is defeated:</text>
+<text x="400" y="493" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot: converted into loot entities  |  Destroy: currency destroyed  |  Save: retained after revival (characters only)</text>
+<line x1="72" y1="514" x2="1128" y2="514" stroke="#E8E4DA"/>
 
-  <g transform="translate(84, 838)">
-    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Inventory Template Name</text>
-    <text x="240" y="0" font-size="13" fill="#4A4B65">Name defined by the creator for the template</text>
-    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Inventory Slots</text>
-    <text x="240" y="22" font-size="13" fill="#4A4B65">Initial number of slots; each slot holds one item type</text>
-    <text x="0" y="48" font-size="13" font-weight="bold" fill="#1A1B2E">Destruction Debris</text>
-    <text x="240" y="48" font-size="13" fill="#4A4B65">Batch processing when the inventory owner is defeated</text>
-    <text x="16" y="70" font-size="13" fill="#4A4B65">- Loot: All items converted into loot entities in the scene</text>
-    <text x="16" y="90" font-size="13" fill="#4A4B65">- Destroy: All items destroyed</text>
-    <text x="16" y="110" font-size="13" fill="#4A4B65">- Save: Items saved in inventory (characters only)</text>
-    <text x="16" y="130" font-size="13" fill="#4A4B65">- Apply Item Drop Rules: Follow per-item configuration</text>
-    <text x="0" y="156" font-size="13" font-weight="bold" fill="#1A1B2E">Loot Drop Mechanics</text>
-    <text x="240" y="156" font-size="13" fill="#4A4B65">All items converted into a single drop entity</text>
-    <text x="16" y="178" font-size="13" fill="#4A4B65">- Shared Reward: One loot entity shared by all players</text>
-    <text x="16" y="198" font-size="13" fill="#4A4B65">- Individualized Reward: Independent loot per player</text>
-    <text x="0" y="224" font-size="13" font-weight="bold" fill="#1A1B2E">Corresponding Loot Appearance</text>
-    <text x="240" y="224" font-size="13" fill="#4A4B65">Loot prefab with physical properties for scene display</text>
-  </g>
+<rect x="72" y="514" width="1056" height="48" fill="#fff"/>
+<text x="100" y="535" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot Drop Mechanics</text>
+<text x="380" y="535" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shared Reward: all players share one loot entity  |  Individualized: each player gets independent loot</text>
+<line x1="72" y1="562" x2="1128" y2="562" stroke="#E8E4DA"/>
 
-  <circle cx="80" cy="1146" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1147" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="1147" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Inventory Component</text>
+<rect x="72" y="562" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="583" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Corresponding Loot Appearance</text>
+<text x="530" y="583" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure a loot prefab with physical properties for scene display</text>
 
-  <rect x="60" y="1174" width="1080" height="172" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1202" font-size="14" fill="#4A4B65">The Inventory component references an Inventory template and generates corresponding inventory</text>
-  <text x="80" y="1224" font-size="14" fill="#4A4B65">instances at runtime. It supports selecting only one inventory template at a time and can be mounted</text>
-  <text x="80" y="1246" font-size="14" fill="#4A4B65">on characters, creations, and dynamic objects.</text>
+<!-- III. Inventory Definition -->
+<text x="48" y="650" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Inventory Definition</text>
 
-  <g transform="translate(80, 1274)">
-    <rect x="0" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Inventory Template</text>
-    <text x="16" y="38" font-size="12" fill="#4A4B65">Reference to an inventory template</text>
-    <rect x="520" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Starting Items</text>
-    <text x="16" y="38" font-size="12" fill="#4A4B65">Default items carried when gameplay starts</text>
-  </g>
+<rect x="48" y="664" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="692" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The inventory is a container for the entire resource system, managing all virtual items, equipment, and currency</text>
+<text x="72" y="714" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">owned by the inventory owner. Items are displayed in slots; players can split, destroy, or discard items during gameplay.</text>
 
-  <circle cx="80" cy="1384" r="16" fill="#1B4FC0"/>
-  <text x="80" y="1385" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1385" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Node Graph Operations</text>
+<!-- IV. Editing Inventory Template -->
+<text x="48" y="786" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Editing Inventory Template</text>
+<text x="330" y="786" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via System Menu > Currency and Inventory</text>
 
-  <rect x="60" y="1412" width="1080" height="224" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1440" font-size="14" font-weight="bold" fill="#1A1B2E">Execution Nodes</text>
+<rect x="48" y="800" width="1104" height="280" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="820" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="843" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="843" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <g transform="translate(80, 1468)">
-    <rect x="0" y="0" width="490" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="13" fill="#4A4B65">Set Inventory Drop Items/Currency Amount</text>
-    <rect x="520" y="0" width="490" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="13" fill="#4A4B65">Set Inventory Item Drop Contents</text>
-    <rect x="0" y="44" width="490" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="13" fill="#4A4B65">Increase Inventory Item Quantity</text>
-    <rect x="520" y="44" width="490" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="13" fill="#4A4B65">Increase Inventory Currency Quantity</text>
-    <rect x="0" y="88" width="490" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="111" font-size="13" fill="#4A4B65">Increase Maximum Inventory Capacity</text>
-  </g>
+<rect x="72" y="856" width="1056" height="32" fill="#fff"/>
+<text x="100" y="877" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Template Name</text>
+<text x="380" y="877" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name defined by the creator for the inventory template</text>
+<line x1="72" y1="888" x2="1128" y2="888" stroke="#E8E4DA"/>
 
-  <rect x="60" y="1650" width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1678" font-size="14" font-weight="bold" fill="#1A1B2E">Event Nodes</text>
+<rect x="72" y="888" width="1056" height="48" fill="#F4F1EA"/>
+<text x="100" y="909" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Slots</text>
+<text x="380" y="909" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initial number of slots; each slot holds one item type, may stack based on item stack limit</text>
+<line x1="72" y1="936" x2="1128" y2="936" stroke="#E8E4DA"/>
 
-  <g transform="translate(80, 1706)">
-    <rect x="0" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">When Item Is Lost From Inventory</text>
-    <rect x="340" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">When Quantity of Inventory Item Changes</text>
-    <rect x="680" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">When Item Is Added to Inventory</text>
-    <rect x="0" y="44" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="12" fill="#4A4B65">When Quantity of Inventory Currency Changes</text>
-    <rect x="340" y="44" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="12" fill="#4A4B65">When Items in Inventory Are Used</text>
-  </g>
+<rect x="72" y="936" width="1056" height="68" fill="#fff"/>
+<text x="100" y="957" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destruction Debris</text>
+<text x="380" y="957" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When owner is defeated, batch-processes all inventory items:</text>
+<text x="400" y="979" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot | Destroy | Save (characters only) | Apply Item Drop Rules (follows per-item config)</text>
+<line x1="72" y1="1004" x2="1128" y2="1004" stroke="#E8E4DA"/>
 
-  <rect x="60" y="1844" width="1080" height="172" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1872" font-size="14" font-weight="bold" fill="#1A1B2E">Query Nodes</text>
+<rect x="72" y="1004" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1025" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot Drop Mechanics</text>
+<text x="380" y="1025" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shared Reward (one entity for all) or Individualized Reward (per-player entities)</text>
+<line x1="72" y1="1036" x2="1128" y2="1036" stroke="#E8E4DA"/>
 
-  <g transform="translate(80, 1900)">
-    <rect x="0" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">Get Inventory Item Quantity</text>
-    <rect x="340" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">Get Inventory Capacity</text>
-    <rect x="680" y="0" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="23" font-size="12" fill="#4A4B65">Get All Inventory Basic Items</text>
-    <rect x="0" y="44" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="12" fill="#4A4B65">Get All Inventory Equipment</text>
-    <rect x="340" y="44" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="12" fill="#4A4B65">Get All Inventory Currency</text>
-    <rect x="680" y="44" width="320" height="36" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="67" font-size="12" fill="#4A4B65">Get Inventory Currency Quantity</text>
-  </g>
+<rect x="72" y="1036" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1057" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Corresponding Loot Appearance</text>
+<text x="530" y="1057" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure a Loot Prefab for scene display when content is created</text>
 
-  <rect x="60" y="2030" width="1080" height="82" rx="14" fill="#E8EEFB"/>
-  <rect x="60" y="2030" width="4" height="82" rx="2" fill="#2D6BE4"/>
-  <text x="80" y="2054" font-size="14" font-weight="bold" fill="#2D6BE4">Currency Node Graph Operations</text>
-  <text x="80" y="2078" font-size="13" fill="#4A4B65">Currency can be added, removed, and checked via Node Graph nodes. The Inventory component must</text>
-  <text x="80" y="2098" font-size="13" fill="#4A4B65">be mounted on the target entity for currency operations to function.</text>
+<!-- V. Inventory Component -->
+<text x="48" y="1122" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Inventory Component</text>
+<text x="280" y="1122" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mounted on characters, creations, and dynamic objects</text>
 
-  <text x="60" y="2650" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjzofrtnejy" target="_blank">
-    <text x="60" y="2676" font-size="13" fill="#2D6BE4" text-decoration="underline">Currency</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb12f03r2y8" target="_blank">
-    <text x="60" y="2700" font-size="13" fill="#2D6BE4" text-decoration="underline">Inventory</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhir93rudpv2" target="_blank">
-    <text x="60" y="2724" font-size="13" fill="#2D6BE4" text-decoration="underline">Inventory Component</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkl2yin0cxo" target="_blank">
-    <text x="60" y="2748" font-size="13" fill="#2D6BE4" text-decoration="underline">Equipment</text>
-  </a>
-  <text x="600" y="2780" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="48" y="1136" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1164" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The Inventory component references an Inventory template and generates corresponding inventory instances at runtime.</text>
+<text x="72" y="1186" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Supports selecting only one inventory template at a time.</text>
+<rect x="72" y="1204" width="1056" height="52" rx="10" fill="#F4F1EA"/>
+<text x="100" y="1225" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Template</text>
+<text x="380" y="1225" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Reference an inventory template</text>
+<text x="100" y="1247" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Starting Items</text>
+<text x="380" y="1247" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Default item configuration carried when gameplay starts</text>
+
+<!-- VI. Node Graph: Execution Nodes -->
+<text x="48" y="1318" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Node Graph: Execution Nodes</text>
+
+<rect x="48" y="1332" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1352" width="492" height="140" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1376" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Execution Nodes</text>
+<text x="96" y="1400" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- Set Inventory Drop Items / Currency Amount</tspan>
+<tspan x="96" dy="22">- Set Inventory Item Drop Contents</tspan>
+<tspan x="96" dy="22">- Increase Inventory Item Quantity</tspan>
+<tspan x="96" dy="22">- Increase Inventory Currency Quantity</tspan>
+<tspan x="96" dy="22">- Increase Maximum Inventory Capacity</tspan>
+</text>
+
+<rect x="588" y="1352" width="540" height="140" rx="10" fill="#E8EEFB"/>
+<text x="612" y="1376" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query Nodes</text>
+<text x="612" y="1400" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="612" dy="0">- Get Inventory Item Quantity</tspan>
+<tspan x="612" dy="22">- Get Inventory Capacity</tspan>
+<tspan x="612" dy="22">- Get All Inventory Basic Items</tspan>
+<tspan x="612" dy="22">- Get All Inventory Equipment</tspan>
+<tspan x="612" dy="22">- Get All Inventory Currency / Currency Quantity</tspan>
+</text>
+
+<!-- VII. Node Graph: Event Nodes -->
+<text x="48" y="1554" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Node Graph: Event Nodes</text>
+
+<rect x="48" y="1568" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1588" width="1056" height="120" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1612" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Event Nodes</text>
+<text x="96" y="1636" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- When Item Is Lost From Inventory</tspan>
+<tspan x="96" dy="22">- When the Quantity of Inventory Item Changes</tspan>
+<tspan x="96" dy="22">- When Item Is Added to Inventory</tspan>
+<tspan x="96" dy="22">- When the Quantity of Inventory Currency Changes</tspan>
+<tspan x="96" dy="22">- When Items in the Inventory Are Used</tspan>
+</text>
+
+<!-- VIII. Inventory Runtime -->
+<text x="48" y="1770" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Inventory Runtime Instance</text>
+
+<rect x="48" y="1784" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1812" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">During actual gameplay, the inventory template definition is referenced and instantiated by the Inventory entity component.</text>
+<text x="72" y="1834" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The component generates a runtime inventory instance from the configured template.</text>
+
+<!-- Tip Box -->
+<rect x="48" y="1880" width="1104" height="76" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1880" width="4" height="76" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1904" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Notes</text>
+<text x="72" y="1926" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- "Save" destruction debris only applies to characters. For other entity types, it behaves as "Destroy".</text>
+<text x="72" y="1948" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- "Apply Item Drop Rules" follows individual item template "Destruction Debris" config instead of batch override.</text>
+
+<!-- Warning Box -->
+<rect x="48" y="1972" width="1104" height="56" rx="10" fill="#FDE8E6"/>
+<rect x="48" y="1972" width="4" height="56" rx="2" fill="#D93025"/>
+<text x="72" y="1996" fill="#D93025" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Important: Display Priority</text>
+<text x="72" y="2018" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The higher the number, the higher the item will be displayed in the inventory UI.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2068" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2cr30yeak0" target="_blank">
+<text x="48" y="2088" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Currency</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5y5001vqd4" target="_blank">
+<text x="48" y="2108" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Inventory Component</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhogfq9bf86q" target="_blank">
+<text x="48" y="2128" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Inventory</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2168" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

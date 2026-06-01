@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1850" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1480" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -12,199 +12,163 @@
     </filter>
   </defs>
 
-  <rect width="1200" height="1850" fill="#F9F7F2"/>
+  <rect width="1200" height="1480" fill="#F9F7F2"/>
   <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">68-Floating Interaction Page Single-Choice Window</text>
+  <!-- Title Card -->
+  <rect x="48" y="32" width="1104" height="96" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="96" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="76" fill="#1A1B2E" font-size="30" font-weight="bold">Floating Interaction Page</text>
+  <text x="72" y="106" fill="#4A4B65" font-size="16">Single-Choice Window</text>
+  <rect x="340" y="92" width="90" height="22" rx="11" fill="#FFF3E0"/>
+  <text x="350" y="107" fill="#E65100" font-size="11" font-weight="500">Sub-section</text>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Single-Choice Window Overview</text>
+  <!-- I. Overview -->
+  <text x="48" y="166" fill="#2D6BE4" font-size="18" font-weight="700">I. Single-Choice Window Overview</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="16" y="40" font-size="14" fill="#4A4B65">The Single-Choice Window allows players to select one option from a list within a Floating</text>
-    <text x="16" y="64" font-size="14" fill="#4A4B65">Interaction Page. It supports preconfigured list items and can be dynamically updated</text>
-    <text x="16" y="88" font-size="14" fill="#4A4B65">through Node Graphs during stage runtime for flexible content display.</text>
-  </g>
+  <rect x="48" y="182" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="210" fill="#4A4B65" font-size="14">Single-Choice Windows provide a list-based selection mechanism within a Floating Interaction Page.</text>
+  <text x="72" y="232" fill="#4A4B65" font-size="14">Tabs and single-choice windows have similar features; in Nodes or Output Parameters, both are collectively referred to as [List].</text>
 
-  <circle cx="80" cy="320" r="16" fill="#2D6BE4"/>
-  <text x="80" y="321" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="321" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Styles</text>
+  <!-- II. Styles -->
+  <text x="48" y="278" fill="#2D6BE4" font-size="18" font-weight="700">II. Single-Choice Window Styles</text>
 
-  <g transform="translate(60, 348)">
-    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="16" y="36" font-size="14" font-weight="bold" fill="#1A1B2E">Single-choice windows support only Custom Style</text>
-    <text x="16" y="64" font-size="14" fill="#4A4B65">Styles can be added to preconfigure multiple list item styles. Each style supports freely</text>
-    <text x="16" y="88" font-size="14" fill="#4A4B65">configuring the assets for the Default, Hover, Pressed, and Selected states, allowing</text>
-    <text x="16" y="112" font-size="14" fill="#4A4B65">full visual customization of each list item appearance.</text>
+  <rect x="48" y="294" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="322" fill="#1A1B2E" font-size="14" font-weight="500">Single-choice windows support only Custom Style.</text>
+  <text x="72" y="344" fill="#4A4B65" font-size="14">Styles can be added to preconfigure multiple list item styles.</text>
+  <text x="72" y="366" fill="#4A4B65" font-size="14">Each style supports freely configuring the assets for the Default, Hover, Pressed, and Selected states.</text>
 
-    <rect x="16" y="130" width="1048" height="12" rx="4" fill="#E8EEFB"/>
-  </g>
+  <!-- III. Functions -->
+  <text x="48" y="410" fill="#2D6BE4" font-size="18" font-weight="700">III. Single-Choice Window Functions</text>
 
-  <circle cx="80" cy="534" r="16" fill="#2D6BE4"/>
-  <text x="80" y="535" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="535" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. List Settings</text>
+  <!-- List Settings -->
+  <rect x="48" y="426" width="1104" height="196" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="456" r="14" fill="#2D6BE4"/>
+  <text x="80" y="461" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">a</text>
+  <text x="106" y="460" fill="#1A1B2E" font-size="14" font-weight="500">List Settings</text>
 
-  <g transform="translate(60, 562)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="0" y="16" width="1080" height="38" fill="#2D6BE4" rx="0"/>
-    <text x="16" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Parameter</text>
-    <text x="727" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
+  <rect x="106" y="472" width="150" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="490" fill="#2D6BE4" font-size="12" font-weight="500">Scroll Direction</text>
+  <text x="270" y="490" fill="#4A4B65" font-size="13">Horizontal or Vertical.</text>
 
-    <rect x="0" y="54" width="1080" height="24" fill="#F9F7F2"/>
-    <text x="16" y="71" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Scroll Direction</text>
-    <text x="380" y="71" font-size="13" fill="#4A4B65" dominant-baseline="middle">Horizontal or Vertical</text>
+  <rect x="106" y="504" width="140" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="522" fill="#2D6BE4" font-size="12" font-weight="500">List Item Size</text>
+  <text x="260" y="522" fill="#4A4B65" font-size="13">General settings for each list item.</text>
 
-    <rect x="0" y="78" width="1080" height="24" fill="#FFFFFF"/>
-    <text x="16" y="95" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">List Item Size</text>
-    <text x="380" y="95" font-size="13" fill="#4A4B65" dominant-baseline="middle">General size settings for each list item</text>
+  <rect x="106" y="536" width="160" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="554" fill="#2D6BE4" font-size="12" font-weight="500">List Item Spacing</text>
+  <text x="280" y="554" fill="#4A4B65" font-size="13">Spacing between list items.</text>
 
-    <rect x="0" y="102" width="1080" height="24" fill="#F9F7F2"/>
-    <text x="16" y="119" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">List Item Spacing</text>
-    <text x="380" y="119" font-size="13" fill="#4A4B65" dominant-baseline="middle">Spacing between list items</text>
+  <rect x="500" y="536" width="80" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="510" y="554" fill="#2D6BE4" font-size="12" font-weight="500">Padding</text>
+  <text x="594" y="554" fill="#4A4B65" font-size="13">Margin settings for top, bottom, left, right sides relative to the border.</text>
 
-    <rect x="0" y="126" width="1080" height="24" fill="#FFFFFF"/>
-    <text x="16" y="143" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Padding</text>
-    <text x="380" y="143" font-size="13" fill="#4A4B65" dominant-baseline="middle">Margin settings for top, bottom, left, right</text>
+  <rect x="106" y="568" width="110" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="586" fill="#2D6BE4" font-size="12" font-weight="500">Center Align</text>
+  <text x="230" y="586" fill="#4A4B65" font-size="13">If enabled, the list items will automatically be centered as a whole.</text>
 
-    <rect x="0" y="150" width="1080" height="24" fill="#F9F7F2"/>
-    <text x="16" y="167" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Center Align</text>
-    <text x="380" y="167" font-size="13" fill="#4A4B65" dominant-baseline="middle">Auto-centers list items when content is sparse</text>
+  <rect x="500" y="568" width="150" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="510" y="586" fill="#2D6BE4" font-size="12" font-weight="500">Layout Constraint</text>
+  <text x="664" y="586" fill="#4A4B65" font-size="13">Auto Wrap or Fixed Rows.</text>
 
-    <rect x="0" y="174" width="1080" height="24" fill="#FFFFFF"/>
-    <text x="16" y="191" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Layout Constraint</text>
-    <text x="380" y="191" font-size="13" fill="#4A4B65" dominant-baseline="middle">Auto Wrap or Fixed Rows</text>
-  </g>
+  <!-- List Item Configuration -->
+  <rect x="48" y="634" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="664" r="14" fill="#2D6BE4"/>
+  <text x="80" y="669" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">b</text>
+  <text x="106" y="668" fill="#1A1B2E" font-size="14" font-weight="500">List Item Configuration</text>
+  <text x="106" y="692" fill="#4A4B65" font-size="13">Supports preconfiguring list items, statically linking associated list items, and adjusting displayed content through Node Graphs.</text>
+  <text x="106" y="712" fill="#4A4B65" font-size="13">List items support click feedback configuration, including opening tabs and toggling control visibility.</text>
 
-  <circle cx="80" cy="798" r="16" fill="#2D6BE4"/>
-  <text x="80" y="799" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="799" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. List Item Configuration</text>
+  <!-- Add List Items -->
+  <text x="106" y="738" fill="#1A1B2E" font-size="14" font-weight="500">Add List Items:</text>
+  <text x="240" y="738" fill="#4A4B65" font-size="13">Click the plus sign in Edit Details to add a new List Item.</text>
+  <rect x="106" y="748" width="120" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="763" fill="#2D6BE4" font-size="11" font-weight="500">List Item Name</text>
+  <text x="236" y="763" fill="#4A4B65" font-size="12">Name of the List Item</text>
+  <rect x="420" y="748" width="30" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="430" y="763" fill="#2D6BE4" font-size="11" font-weight="500">ID</text>
+  <text x="460" y="763" fill="#4A4B65" font-size="12">Unique Identifier for the List Item</text>
 
-  <g transform="translate(60, 826)">
-    <rect width="520" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Adding Items</text>
-    <text x="16" y="60" font-size="14" fill="#4A4B65">In the Edit Details interface, click the</text>
-    <text x="16" y="80" font-size="14" fill="#4A4B65">plus sign (+) to add a new List Item.</text>
-    <text x="16" y="104" font-size="14" fill="#4A4B65">Supports preconfiguring list items, statically</text>
-    <text x="16" y="124" font-size="14" fill="#4A4B65">linking associated list items, and adjusting</text>
-    <text x="16" y="144" font-size="14" fill="#4A4B65">displayed content through Node Graphs</text>
-    <text x="16" y="164" font-size="14" fill="#4A4B65">during stage runtime.</text>
+  <!-- Basic Settings -->
+  <text x="106" y="792" fill="#1A1B2E" font-size="14" font-weight="500">Basic Settings:</text>
+  <rect x="240" y="780" width="120" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="250" y="795" fill="#2D6BE4" font-size="11" font-weight="500">List Item Name</text>
+  <rect x="370" y="780" width="110" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="380" y="795" fill="#2D6BE4" font-size="11" font-weight="500">List Item Style</text>
+  <rect x="490" y="780" width="170" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="500" y="795" fill="#2D6BE4" font-size="11" font-weight="500">Preview Selection State</text>
+  <rect x="670" y="780" width="180" height="22" rx="6" fill="#E8EEFB"/>
+  <text x="680" y="795" fill="#2D6BE4" font-size="11" font-weight="500">Return to Server Event</text>
+  <text x="106" y="820" fill="#4A4B65" font-size="12">List Item Style selects from the previous layer. Preview shows default display. Return to Server Event triggers [When Floating Interaction Page is Triggered].</text>
 
-    <rect x="16" y="184" width="488" height="60" rx="10" fill="#E8EEFB"/>
-    <rect x="16" y="184" width="4" height="60" rx="2" fill="#2D6BE4"/>
-    <text x="30" y="204" font-size="13" font-weight="bold" fill="#2D6BE4">Configuration Params</text>
-    <text x="30" y="226" font-size="11" fill="#4A4B65">List Item Name: Name of the list item</text>
-    <text x="30" y="242" font-size="11" fill="#4A4B65">ID: Unique identifier for the list item</text>
+  <!-- Sub-settings cards -->
+  <rect x="48" y="866" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="896" r="14" fill="#2D6BE4"/>
+  <text x="80" y="901" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">c</text>
+  <text x="106" y="900" fill="#1A1B2E" font-size="14" font-weight="500">Formal Variable Config</text>
+  <text x="72" y="924" fill="#4A4B65" font-size="13">Link formal variables to specified data</text>
+  <text x="72" y="942" fill="#4A4B65" font-size="13">or Player Custom Variables. Assets</text>
+  <text x="72" y="960" fill="#4A4B65" font-size="13">referencing formal variables use real-time data.</text>
 
-    <rect x="16" y="260" width="488" height="50" rx="10" fill="#E8EEFB"/>
-    <rect x="16" y="260" width="4" height="50" rx="2" fill="#2D6BE4"/>
-    <text x="30" y="280" font-size="13" font-weight="bold" fill="#2D6BE4">Click Feedback</text>
-    <text x="30" y="300" font-size="11" fill="#4A4B65">List items support opening tabs and toggling control visibility</text>
-  </g>
+  <rect x="424" y="866" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="456" cy="896" r="14" fill="#2D6BE4"/>
+  <text x="456" y="901" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">d</text>
+  <text x="482" y="900" fill="#1A1B2E" font-size="14" font-weight="500">Container Status Settings</text>
+  <text x="448" y="924" fill="#4A4B65" font-size="13">Add page containers and configure</text>
+  <text x="448" y="942" fill="#4A4B65" font-size="13">whether each is shown or hidden.</text>
+  <text x="448" y="960" fill="#4A4B65" font-size="13">Applied when this list item is selected.</text>
 
-  <g transform="translate(620, 826)">
-    <rect width="520" height="330" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Settings</text>
+  <rect x="800" y="866" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="832" cy="896" r="14" fill="#2D6BE4"/>
+  <text x="832" y="901" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">e</text>
+  <text x="858" y="900" fill="#1A1B2E" font-size="14" font-weight="500">Control Status Settings</text>
+  <text x="824" y="924" fill="#4A4B65" font-size="13">Add controls to page containers and</text>
+  <text x="824" y="942" fill="#4A4B65" font-size="13">configure show/hide for each one.</text>
+  <text x="824" y="960" fill="#4A4B65" font-size="13">Applied when this list item is selected.</text>
 
-    <rect x="0" y="52" width="520" height="26" fill="#F9F7F2"/>
-    <text x="16" y="69" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">List Item Name</text>
-    <text x="170" y="69" font-size="12" fill="#4A4B65" dominant-baseline="middle">Name displayed for the list item</text>
+  <!-- IV. Interaction Settings -->
+  <text x="48" y="1002" fill="#2D6BE4" font-size="18" font-weight="700">IV. Interaction Settings</text>
 
-    <rect x="0" y="78" width="520" height="26" fill="#FFFFFF"/>
-    <text x="16" y="95" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">List Item Style</text>
-    <text x="170" y="95" font-size="12" fill="#4A4B65" dominant-baseline="middle">Select a style from List Style settings</text>
+  <rect x="48" y="1018" width="1104" height="48" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1048" fill="#4A4B65" font-size="14">Interacting with this single-choice window triggers the configured sound effect.</text>
 
-    <rect x="0" y="104" width="520" height="26" fill="#F9F7F2"/>
-    <text x="16" y="121" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Preview Selection State</text>
-    <text x="200" y="121" font-size="12" fill="#4A4B65" dominant-baseline="middle">Show default display in editor</text>
+  <!-- V. Controller Navigation -->
+  <text x="48" y="1102" fill="#2D6BE4" font-size="18" font-weight="700">V. Controller Navigation</text>
 
-    <rect x="0" y="130" width="520" height="38" fill="#FFFFFF"/>
-    <text x="16" y="147" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Return to Server Event</text>
-    <text x="200" y="147" font-size="12" fill="#4A4B65" dominant-baseline="middle">Triggers [When Floating Interaction</text>
-    <text x="200" y="163" font-size="12" fill="#4A4B65">Page is Triggered] event on click</text>
+  <rect x="48" y="1118" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1146" fill="#4A4B65" font-size="14">When the controller joystick hovers over a button, you can configure a navigation hint.</text>
 
-    <text x="16" y="198" font-size="14" font-weight="bold" fill="#1A1B2E">Formal Variable Configuration</text>
-    <text x="16" y="222" font-size="14" fill="#4A4B65">Link formal variables to specified data</text>
-    <text x="16" y="242" font-size="14" fill="#4A4B65">or Player Custom Variables. Assets</text>
-    <text x="16" y="262" font-size="14" fill="#4A4B65">reference real-time variable data.</text>
+  <rect x="72" y="1158" width="360" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="82" y="1176" fill="#2D6BE4" font-size="12" font-weight="500">Selectable via Controller Joystick Navigation</text>
+  <text x="446" y="1176" fill="#4A4B65" font-size="13">Enable to display hints on focus.</text>
 
-    <text x="16" y="296" font-size="14" font-weight="bold" fill="#1A1B2E">Container &amp; Control Status</text>
-    <text x="16" y="320" font-size="14" fill="#4A4B65">Show or hide containers and controls</text>
-    <text x="16" y="340" font-size="14" fill="#4A4B65">when this list item is selected.</text>
-  </g>
+  <rect x="72" y="1190" width="240" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="82" y="1208" fill="#2D6BE4" font-size="12" font-weight="500">Controller Selection Behavior</text>
+  <text x="326" y="1208" fill="#4A4B65" font-size="13">Select on focus change or after pressing Confirm.</text>
 
-  <circle cx="80" cy="1192" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1193" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1193" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Interaction &amp; Controller Navigation</text>
+  <rect x="72" y="1222" width="260" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="82" y="1240" fill="#2D6BE4" font-size="12" font-weight="500">Controller Navigation Hint Style</text>
+  <text x="346" y="1240" fill="#4A4B65" font-size="13">Select a preset style.</text>
 
-  <g transform="translate(60, 1220)">
-    <rect width="520" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Interaction</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Sound Effect</text>
-    <text x="16" y="84" font-size="14" fill="#4A4B65">Interacting with the single-choice</text>
-    <text x="16" y="104" font-size="14" fill="#4A4B65">window triggers the configured</text>
-    <text x="16" y="124" font-size="14" fill="#4A4B65">sound effect.</text>
-    <text x="16" y="152" font-size="14" fill="#4A4B65">List items support click feedback</text>
-    <text x="16" y="172" font-size="14" fill="#4A4B65">configuration, including opening tabs</text>
-    <text x="16" y="192" font-size="14" fill="#4A4B65">and toggling control visibility.</text>
+  <rect x="72" y="1254" width="200" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="82" y="1272" fill="#2D6BE4" font-size="12" font-weight="500">Navigation Hint Target</text>
+  <text x="286" y="1272" fill="#4A4B65" font-size="13">Up, Down, Left, or Right direction.</text>
 
-    <rect x="16" y="210" width="488" height="18" rx="6" fill="#E8EEFB"/>
-    <rect x="16" y="210" width="4" height="18" rx="2" fill="#2D6BE4"/>
-    <text x="28" y="224" font-size="11" fill="#4A4B65">Single-choice windows and tabs are collectively referred to as [List]</text>
-  </g>
+  <rect x="72" y="1286" width="220" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="82" y="1304" fill="#2D6BE4" font-size="12" font-weight="500">Navigation Hint Offset</text>
+  <text x="306" y="1304" fill="#4A4B65" font-size="13">Configure X/Y offset values.</text>
 
-  <g transform="translate(620, 1220)">
-    <rect width="520" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Controller Nav</text>
+  <!-- Tip -->
+  <rect x="48" y="1350" width="1104" height="56" rx="6" fill="#E8EEFB"/>
+  <rect x="48" y="1350" width="4" height="56" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="1374" fill="#4A4B65" font-size="13">Left/Right/Up/Down: When controller focus moves from this control in the selected direction, it will prioritize snapping to the configured target.</text>
+  <text x="68" y="1394" fill="#4A4B65" font-size="13">By default, focus snaps to the nearest control. Supports selecting controls from all configured containers.</text>
 
-    <rect x="0" y="52" width="520" height="24" fill="#F9F7F2"/>
-    <text x="16" y="69" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Selectable via Controller Joystick Nav</text>
-    <text x="310" y="69" font-size="12" fill="#4A4B65" dominant-baseline="middle">Enable navigation hint display</text>
-
-    <rect x="0" y="76" width="520" height="38" fill="#FFFFFF"/>
-    <text x="16" y="93" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Controller Selection Behavior</text>
-    <text x="310" y="93" font-size="12" fill="#4A4B65" dominant-baseline="middle">On focus change</text>
-    <text x="310" y="109" font-size="12" fill="#4A4B65" dominant-baseline="middle">After pressing Confirm</text>
-
-    <rect x="0" y="114" width="520" height="24" fill="#F9F7F2"/>
-    <text x="16" y="131" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Navigation Hint Style</text>
-    <text x="310" y="131" font-size="12" fill="#4A4B65" dominant-baseline="middle">Preset hint styles</text>
-
-    <rect x="0" y="138" width="520" height="24" fill="#FFFFFF"/>
-    <text x="16" y="155" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Navigation Hint Target</text>
-    <text x="310" y="155" font-size="12" fill="#4A4B65" dominant-baseline="middle">Up, Down, Left, Right</text>
-
-    <rect x="0" y="162" width="520" height="24" fill="#F9F7F2"/>
-    <text x="16" y="179" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Navigation Hint Offset</text>
-    <text x="310" y="179" font-size="12" fill="#4A4B65" dominant-baseline="middle">X/Y offset values</text>
-
-    <rect x="0" y="186" width="520" height="46" fill="#FFFFFF"/>
-    <text x="16" y="204" font-size="12" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Directional Snapping</text>
-    <text x="310" y="204" font-size="12" fill="#4A4B65" dominant-baseline="middle">Prioritize snapping to configured</text>
-    <text x="310" y="224" font-size="12" fill="#4A4B65" dominant-baseline="middle">target; defaults to nearest control</text>
-  </g>
-
-  <text x="60" y="1512" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk" target="_blank">
-    <text x="60" y="1538" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls</text>
+  <!-- Related Documentation -->
+  <text x="48" y="1430" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6" target="_blank">
+    <text x="48" y="1446" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Floating Interaction Page Controls</text>
   </a>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhr3ngi2n74c" target="_blank">
-    <text x="60" y="1564" font-size="13" fill="#2D6BE4" text-decoration="underline">Tab Component Guide</text>
-  </a>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684" target="_blank">
-    <text x="60" y="1590" font-size="13" fill="#2D6BE4" text-decoration="underline">UI Controls</text>
-  </a>
-
-  <text x="600" y="1650" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
-
+  <text x="600" y="1466" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

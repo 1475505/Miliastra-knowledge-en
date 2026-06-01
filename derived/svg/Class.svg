@@ -1,105 +1,291 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1700">
-<defs>
-  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-  </linearGradient>
-  <filter id="card">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-  </filter>
-  <filter id="elevated">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-  </filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3340" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
 
-<rect width="1200" height="1700" fill="#F9F7F2"/>
-<rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="3340" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect x="100" y="24" width="1000" height="70" rx="14" fill="#FFF" filter="url(#elevated)"/>
-<rect x="100" y="24" width="4" height="70" fill="#2D6BE4" rx="2"/>
-<text x="120" y="58" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="24" font-weight="bold" fill="#1A1B2E">Class</text>
-<text x="120" y="76" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#8B8DA0">Player class configuration, attributes, skills, and node graph integration</text>
+  <!-- Title Card -->
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Class</text>
+  <text x="172" y="72" font-size="16" fill="#4A4B65" dominant-baseline="middle">Player attribute controlling character attributes, skills, and progression</text>
 
-<text x="100" y="124" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. What is a Class</text>
+  <!-- I. Definition of Classes -->
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. Definition of Classes</text>
 
-<rect x="100" y="142" width="1000" height="100" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="166" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Class Definition</text>
-<text x="120" y="190" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">A Class is a player attribute that primarily affects the player's character. It determines the initial attributes and skills of most player entities and character entities.</text>
-<text x="120" y="210" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Classes differentiate gameplay roles and categories, such as player abilities, character skills, and development paths.</text>
-<text x="120" y="230" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The main function is to coordinate and encapsulate the functionality of multiple modules, packaging a complete set of configurations that apply when switching classes.</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Class is a player attribute that primarily affects the player's character. It determines the</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">initial attributes and skills of most player entities and character entities.</text>
+    <text x="24" y="78" font-size="14" fill="#4A4B65">Classes differentiate player gameplay roles: abilities, character skills, and development paths.</text>
+    <text x="24" y="106" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Core Function:</tspan> Coordinates and encapsulates multiple modules — packages a complete set of</text>
+    <text x="24" y="126" font-size="13" fill="#4A4B65">configurations and uniformly modifies both player and character on class switch.</text>
+  </g>
 
-<text x="100" y="282" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Creating &amp; Editing Classes</text>
+  <!-- II. Class Behavior -->
+  <text x="48" y="348" font-size="18" font-weight="700" fill="#2D6BE4">II. How Classes Work</text>
 
-<rect x="100" y="300" width="1000" height="80" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="324" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Editing Entry Point</text>
-<text x="120" y="348" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The class editing entry point is located under the Class tab in Combat Preset settings.</text>
-<text x="120" y="368" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Click the "Create Class" button and confirm to create a new class template.</text>
+  <g transform="translate(48, 368)">
+    <rect width="1104" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Except for class level, other data is overwritten only once during class switching.</text>
+    <text x="24" y="54" font-size="14" fill="#4A4B65">Creators can still use Node Graphs to modify player and character data afterward.</text>
 
-<text x="100" y="420" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">III. Class Parameter Settings</text>
+    <rect x="24" y="74" width="1056" height="66" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="74" width="4" height="66" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="96" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Example:</tspan> When Class 1 is activated, Normal Attack is replaced with Skill 1 by default.</text>
+    <text x="44" y="116" font-size="13" fill="#4A4B65">You can still use Node Graphs to swap Skill 1 with other skills later.</text>
+    <text x="44" y="136" font-size="13" fill="#4A4B65">Using "Initialize Character Skills" restores skills to those configured in the class template.</text>
+  </g>
 
-<rect x="100" y="438" width="1000" height="195" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="462" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Basic Settings</text>
-<text x="120" y="486" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Select Camera:</tspan> Choose a camera template applied when switching to this class</text>
-<text x="120" y="506" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Select Layout:</tspan> Choose a main screen layout applied when switching to this class</text>
-<text x="120" y="526" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Scan Tag Recognition Rules:</tspan> Rules for filtering active units from scannable objects</text>
-<text x="140" y="546" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Distance From Center of FOV:</tspan> On-screen coordinate priority (closer to center = higher priority)</text>
-<text x="140" y="563" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Actual Position Distance:</tspan> World coordinate priority (closer to character = higher priority)</text>
-<text x="120" y="586" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Allow Jump:</tspan> Whether the character accepts jump inputs</text>
-<text x="120" y="606" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Allow Sprint:</tspan> Whether the character accepts sprint inputs</text>
-<text x="120" y="626" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Allow Climb:</tspan> Whether the character can climb (disabled prevents climbing even on climbable objects)</text>
+  <!-- III. Editing Classes -->
+  <text x="48" y="568" font-size="18" font-weight="700" fill="#2D6BE4">III. Editing Classes</text>
 
-<rect x="100" y="653" width="1000" height="44" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="675" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Allow Glide:</tspan> Whether characters of this class can deploy wind gliders and glide in the air</text>
+  <g transform="translate(48, 588)">
+    <rect width="1104" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Entry Point:</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Combat Preset &gt; Class tab &gt; Click "Create Class" &gt; Confirm to create a new class template.</text>
+    <text x="24" y="78" font-size="13" fill="#4A4B65">Multiple class templates can be created. Players can switch between them during gameplay.</text>
+  </g>
 
-<rect x="100" y="717" width="1000" height="155" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="741" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Level Settings</text>
-<text x="120" y="765" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Character level synchronizes with class level. When switching classes, the character's level changes accordingly.</text>
-<text x="120" y="785" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Levels are recorded per class: switching back restores the previous level and experience.</text>
-<text x="120" y="808" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Level:</tspan> The character's class level when first switching to this class during gameplay</text>
-<text x="120" y="828" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Maximum Level:</tspan> The highest level this class can reach</text>
-<text x="120" y="848" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Level-up EXP:</tspan> Experience required per level. Two configuration methods:</text>
-<text x="140" y="868" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Linear Formula:</tspan> EXP = current level x Constant 1 + Constant 2 (both configurable)</text>
+  <!-- IV. Class Parameter Settings -->
+  <text x="48" y="728" font-size="18" font-weight="700" fill="#2D6BE4">IV. Class Parameter Settings</text>
 
-<rect x="100" y="892" width="1000" height="30" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="140" y="912" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">List Configuration:</tspan> Use a two-dimensional table to precisely define EXP required per level</text>
+  <!-- IV.1 Basic Settings -->
+  <g transform="translate(48, 748)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">1. Basic Settings</text>
 
-<rect x="100" y="942" width="1000" height="200" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="966" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Basic Battle Attributes</text>
-<text x="120" y="990" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Class attributes directly affect the corresponding player's character. Base combat attributes cannot be configured on player templates.</text>
-<text x="120" y="1014" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Base HP:</tspan> Default HP value without attribute growth stacking</text>
-<text x="120" y="1034" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Base ATK:</tspan> Default ATK without attribute growth stacking</text>
-<text x="120" y="1054" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Base DEF:</tspan> Default DEF without attribute growth stacking</text>
-<text x="120" y="1077" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Attribute Growth:</tspan> Defines how attributes increase with level-ups. Three types:</text>
-<text x="140" y="1097" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">No Growth:</tspan> Attributes remain at base values regardless of level</text>
-<text x="140" y="1114" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Default Growth Curve:</tspan> Uses built-in growth curve (Final = Base x Level Multiplier)</text>
-<text x="140" y="1131" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Custom Growth Curve:</tspan> Same calculation rules, freely configurable by creators</text>
-<text x="120" y="1154" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Max Stamina:</tspan> The maximum stamina value this class can reach</text>
+    <text x="24" y="58" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Select Camera</tspan> — Camera template applied when player switches to this class.</text>
+    <text x="24" y="82" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Select Layout</tspan> — Main screen layout applied on class switch.</text>
+    <text x="24" y="106" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Scan Tag Recognition Rules</tspan> — Filters active units from scannable objects:</text>
 
-<rect x="100" y="1162" width="1000" height="80" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1186" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Aggro Configuration</text>
-<text x="120" y="1210" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">If "Custom" is selected as the aggro type in stage settings, the aggro multiplier can be configured for this class.</text>
+    <rect x="44" y="118" width="480" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="60" y="136" font-size="12" fill="#4A4B65" dominant-baseline="middle">Distance From Center of FOV — Closer to screen center = higher priority</text>
 
-<rect x="100" y="1262" width="1000" height="70" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1286" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Unit Status</text>
-<text x="120" y="1310" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The unit status added by the class automatically applies to the corresponding character when the player switches to that class.</text>
+    <rect x="540" y="118" width="540" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="556" y="136" font-size="12" fill="#4A4B65" dominant-baseline="middle">Actual Position Distance — Closer to character in world coords = higher priority</text>
 
-<rect x="100" y="1352" width="1000" height="180" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1376" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Interrupt Resistance Configuration</text>
-<text x="120" y="1400" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Characters have three Hyperarmor-related statuses:</text>
-<text x="120" y="1420" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Interrupt Resistance Status:</tspan> Default state. Interrupt Threshold starts at 0, increases when hit by interrupt attacks, decays per second.</text>
-<text x="120" y="1440" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Interrupt-Vulnerable State:</tspan> Threshold reaches maximum. Character may be knocked back or launched.</text>
-<text x="120" y="1460" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Protected Status:</tspan> Threshold stays at 0. Immune to knockback/launch. Duration configurable.</text>
-<text x="120" y="1483" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Interrupt Value Threshold:</tspan> Damage threshold before entering Vulnerable State</text>
-<text x="120" y="1503" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Interrupt Intake Decay Rate:</tspan> Value decay per second in Resistance Status</text>
-<text x="120" y="1523" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Interrupt Vulnerability Duration / Protected Duration:</tspan> Duration of each state phase</text>
+    <rect x="24" y="168" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-<text x="100" y="1568" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">IV. Node Graph Integration</text>
+    <text x="24" y="196" font-size="14" font-weight="500" fill="#1A1B2E">Movement Controls:</text>
 
-<rect x="100" y="1586" width="1000" height="80" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1610" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Class Node Graph</text>
-<text x="120" y="1634" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Class node graphs automatically apply to both player and character when switching to this class. Related nodes include: Modify Class Experience, Modify Player's Class, Query Class, and Class-related event nodes.</text>
-<text x="120" y="1654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Using "Initialize Character Skills" restores skills to those configured in the class template.</text>
+    <rect x="24" y="212" width="250" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="149" y="228" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Allow Jump</text>
+    <text x="149" y="246" font-size="11" fill="#4A4B65" text-anchor="middle">Accepts jump inputs</text>
 
-<text x="100" y="1676" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhakeo0qiy6w" target="_blank"><text x="100" y="1696" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Classes</text></a>
+    <rect x="290" y="212" width="250" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="415" y="228" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Allow Sprint</text>
+    <text x="415" y="246" font-size="11" fill="#4A4B65" text-anchor="middle">Accepts sprint inputs</text>
+
+    <rect x="556" y="212" width="250" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="681" y="228" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Allow Climb</text>
+    <text x="681" y="246" font-size="11" fill="#4A4B65" text-anchor="middle">Can climb surfaces</text>
+
+    <rect x="822" y="212" width="258" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="951" y="228" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Allow Glide</text>
+    <text x="951" y="246" font-size="11" fill="#4A4B65" text-anchor="middle">Deploy wind gliders in air</text>
+
+    <rect x="24" y="272" width="1056" height="52" rx="10" fill="#FDE8E6"/>
+    <rect x="24" y="272" width="4" height="52" rx="2" fill="#D93025"/>
+    <text x="44" y="294" font-size="12" fill="#D93025">When climbing is disabled for a class, the character cannot climb even if object collision</text>
+    <text x="44" y="312" font-size="12" fill="#D93025">is set to climbable. Class settings override object-level climb configuration.</text>
+  </g>
+
+  <!-- IV.2 Level Settings -->
+  <g transform="translate(48, 1108)">
+    <rect width="1104" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">2. Level Settings</text>
+
+    <text x="24" y="58" font-size="13" fill="#4A4B65">Class level is roughly the character's level. Character level syncs with class level.</text>
+
+    <text x="24" y="86" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Level</tspan> — Character's class level when first switching to this class during gameplay.</text>
+    <text x="24" y="110" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Maximum Level</tspan> — Highest level this class can reach.</text>
+
+    <text x="24" y="138" font-size="14" font-weight="500" fill="#1A1B2E">Level-up EXP Configuration (two methods):</text>
+
+    <rect x="24" y="154" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="40" y="174" font-size="13" font-weight="500" fill="#1A1B2E">Linear Formula</text>
+    <text x="40" y="194" font-size="12" fill="#4A4B65">EXP = current level x constant 1 + constant 2</text>
+
+    <rect x="564" y="154" width="516" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="580" y="174" font-size="13" font-weight="500" fill="#1A1B2E">List Configuration</text>
+    <text x="580" y="194" font-size="12" fill="#4A4B65">Two-dimensional table for precise per-level EXP.</text>
+
+    <rect x="24" y="226" width="1056" height="56" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="226" width="4" height="56" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="248" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Multi-class Level Persistence:</tspan> When switching between classes, each class's level is recorded.</text>
+    <text x="44" y="268" font-size="13" fill="#4A4B65">Switching back restores the level and experience to their previous values.</text>
+  </g>
+
+  <!-- IV.3 Basic Battle Attributes -->
+  <g transform="translate(48, 1428)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">3. Basic Battle Attributes</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Class attributes directly affect the corresponding player's character. Base combat attributes</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">cannot be configured on player templates — only through class settings.</text>
+
+    <rect x="24" y="92" width="340" height="56" rx="8" fill="#F4F1EA"/>
+    <text x="194" y="112" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Base HP</text>
+    <text x="194" y="132" font-size="12" fill="#4A4B65" text-anchor="middle">Default HP without growth stacking</text>
+
+    <rect x="380" y="92" width="340" height="56" rx="8" fill="#F4F1EA"/>
+    <text x="550" y="112" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Base ATK</text>
+    <text x="550" y="132" font-size="12" fill="#4A4B65" text-anchor="middle">Default ATK without growth stacking</text>
+
+    <rect x="736" y="92" width="340" height="56" rx="8" fill="#F4F1EA"/>
+    <text x="906" y="112" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Base DEF</text>
+    <text x="906" y="132" font-size="12" fill="#4A4B65" text-anchor="middle">Default DEF without growth stacking</text>
+
+    <text x="24" y="176" font-size="14" font-weight="500" fill="#1A1B2E">Attribute Growth (3 types):</text>
+
+    <rect x="24" y="192" width="340" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="194" y="212" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">No Growth</text>
+    <text x="194" y="232" font-size="11" fill="#4A4B65" text-anchor="middle">Attributes stay at base values.</text>
+
+    <rect x="380" y="192" width="340" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="550" y="212" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Default Growth Curve</text>
+    <text x="550" y="232" font-size="11" fill="#4A4B65" text-anchor="middle">Preview only, not modifiable.</text>
+
+    <rect x="736" y="192" width="340" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="906" y="212" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle">Custom Growth Curve</text>
+    <text x="906" y="232" font-size="11" fill="#4A4B65" text-anchor="middle">Fully configurable curve.</text>
+
+    <text x="24" y="272" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Growth Formula:</tspan> Final HP = Base HP x Level HP Multiplier (same for ATK and DEF)</text>
+    <text x="24" y="296" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Max Stamina</tspan> — Maximum stamina value for this class.</text>
+    <text x="24" y="320" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Aggro Configuration</tspan> — If "Custom" aggro type in stage settings, configure aggro multiplier.</text>
+  </g>
+
+  <!-- IV.4 Unit Status -->
+  <g transform="translate(48, 1788)">
+    <rect width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">4. Unit Status</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Unit status added by the class is automatically applied to the character when the player</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">switches to that class. See Unit Statuses documentation for configuration details.</text>
+  </g>
+
+  <!-- IV.5 Interrupt Resistance -->
+  <g transform="translate(48, 1888)">
+    <rect width="1104" height="560" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">5. Interrupt Resistance Configuration</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Characters have three Hyperarmor-related statuses and an Interrupt Threshold.</text>
+
+    <!-- Status 1 -->
+    <circle cx="44" cy="84" r="14" fill="#2D6BE4"/>
+    <text x="44" y="85" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">A</text>
+    <text x="68" y="85" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Interrupt Resistance Status</text>
+    <text x="68" y="108" font-size="13" fill="#4A4B65">Interrupt Threshold starts at 0. When hit by interrupt attacks (threshold &gt; 0) not exceeding</text>
+    <text x="68" y="128" font-size="13" fill="#4A4B65">the limit, character shows hit reactions only (no knockback/launch). Threshold increases by</text>
+    <text x="68" y="148" font-size="13" fill="#4A4B65">incoming attack value (affected by Interrupt Resistance multiplier of current status).</text>
+    <text x="68" y="168" font-size="13" fill="#4A4B65">Threshold decays per second at the configured rate until reaching 0.</text>
+
+    <rect x="24" y="184" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <!-- Status 2 -->
+    <circle cx="44" cy="210" r="14" fill="#2D6BE4"/>
+    <text x="44" y="211" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">B</text>
+    <text x="68" y="211" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Interrupt-Vulnerable State</text>
+    <text x="68" y="234" font-size="13" fill="#4A4B65">Triggered when Interrupt Threshold reaches maximum. Threshold stays at max (no increase/decrease).</text>
+    <text x="68" y="254" font-size="13" fill="#4A4B65">When hit, target may be knocked back or launched (depends on attack launch force).</text>
+    <text x="68" y="274" font-size="13" fill="#4A4B65">Lasts for configured Interrupt Vulnerability Duration, then transitions to Protected Status.</text>
+
+    <rect x="24" y="290" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <!-- Status 3 -->
+    <circle cx="44" cy="316" r="14" fill="#1B4FC0"/>
+    <text x="44" y="317" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">C</text>
+    <text x="68" y="317" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Protected Status</text>
+    <text x="68" y="340" font-size="13" fill="#4A4B65">After Interrupt-Vulnerable State ends. Threshold stays at 0 (no increase/decrease).</text>
+    <text x="68" y="360" font-size="13" fill="#4A4B65">No knockback or launch when hit. Lasts for configured Protected Duration.</text>
+    <text x="68" y="380" font-size="13" fill="#4A4B65">After Protected Status ends, returns to Interrupt Resistance Status (new cycle).</text>
+
+    <rect x="24" y="398" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="426" font-size="14" font-weight="500" fill="#1A1B2E">Parameters:</text>
+    <text x="24" y="450" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Interrupt Value Threshold</tspan> — Max interrupt damage before entering Vulnerable State.</text>
+    <text x="24" y="474" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Interrupt Intake Decay Rate</tspan> — Amount of interrupt value decayed per second in Resistance Status.</text>
+    <text x="24" y="498" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Interrupt Vulnerability Duration</tspan> — Duration of Vulnerable State (can be 0).</text>
+    <text x="24" y="522" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Protected Duration</tspan> — Duration of Protected Status (can be 0).</text>
+  </g>
+
+  <!-- V. Class Skills -->
+  <text x="48" y="2488" font-size="18" font-weight="700" fill="#2D6BE4">V. Class Skills</text>
+
+  <g transform="translate(48, 2508)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Class-specific skills attached to the class. When players switch to this class, the character's</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">skills automatically switch to the skills set for that class.</text>
+
+    <rect x="24" y="70" width="1056" height="52" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="70" width="4" height="52" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="92" font-size="13" fill="#4A4B65">Skills in the class template are default skills. After switching, you can still replace skills</text>
+    <text x="44" y="112" font-size="13" fill="#4A4B65">via Node Graphs. "Initialize Character Skills" restores the class template defaults.</text>
+  </g>
+
+  <!-- VI. Class Node Graph -->
+  <text x="48" y="2688" font-size="18" font-weight="700" fill="#2D6BE4">VI. Class Node Graph</text>
+
+  <g transform="translate(48, 2708)">
+    <rect width="1104" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">When switching to this class, the system automatically applies pre-configured node graphs</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">to both the player and character. Editing interface is under the Node Graph tab.</text>
+    <text x="24" y="78" font-size="13" fill="#4A4B65">Class Node Graphs apply unit support for both players and characters simultaneously.</text>
+  </g>
+
+  <!-- VII. Node Graph Operations for Classes -->
+  <text x="48" y="2848" font-size="18" font-weight="700" fill="#2D6BE4">VII. Using Node Graphs to Modify Classes</text>
+
+  <g transform="translate(48, 2868)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">Event Nodes:</text>
+    <rect x="24" y="46" width="516" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="282" y="68" font-size="12" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Class-related event triggers</text>
+
+    <rect x="24" y="100" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="128" font-size="16" font-weight="500" fill="#1A1B2E">Execution Nodes:</text>
+
+    <rect x="24" y="144" width="516" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="40" y="166" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Modify Class Experience</text>
+
+    <rect x="564" y="144" width="516" height="44" rx="8" fill="#E8EEFB"/>
+    <text x="580" y="166" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Modify Player's Class</text>
+
+    <rect x="24" y="204" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="232" font-size="16" font-weight="500" fill="#1A1B2E">Query Nodes:</text>
+
+    <rect x="24" y="248" width="516" height="44" rx="8" fill="#E5F2E9"/>
+    <text x="40" y="270" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Query Class information</text>
+
+    <rect x="564" y="248" width="516" height="44" rx="8" fill="#E5F2E9"/>
+    <text x="580" y="270" font-size="12" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Query Class Experience / Level</text>
+
+    <!-- Tip box -->
+    <rect x="24" y="308" width="1056" height="16" rx="8" fill="#E8EEFB"/>
+    <rect x="24" y="308" width="4" height="16" rx="2" fill="#2D6BE4"/>
+  </g>
+
+  <!-- Related Documentation -->
+  <text x="48" y="3254" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhodlcrpht3q" target="_blank">
+    <text x="48" y="3276" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Classes</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhgk8b99qiuy" target="_blank">
+    <text x="48" y="3298" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Skills and Classes</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="3324" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

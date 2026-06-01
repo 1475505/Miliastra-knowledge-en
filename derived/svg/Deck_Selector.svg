@@ -1,88 +1,188 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1350" width="1200" height="1350">
-<defs>
-<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-</linearGradient>
-<filter id="card" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-</filter>
-<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3580" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card"><feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/></filter>
+    <filter id="elevated"><feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/></filter>
+  </defs>
+  <rect width="1200" height="3580" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" dominant-baseline="middle">Deck Selector</text>
+  <text x="370" y="72" fill="#4A4B65" font-size="16" dominant-baseline="middle">Decision Pop-ups, Option Tabs and Card Selection</text>
 
-<rect width="1200" height="1350" fill="#F9F7F2"/>
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Deck Selector Functions</text>
+  <g transform="translate(48,168)">
+    <rect width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Purpose</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Provides a simple interface for editing decision interactions. Supports editing decision-making content</text>
+    <text x="24" y="72" font-size="13" fill="#4A4B65">including decision time, presentation of options, and interaction methods.</text>
+    <text x="24" y="102" font-size="14" font-weight="500" fill="#1A1B2E">Runtime Behavior</text>
+    <text x="24" y="126" font-size="13" fill="#4A4B65">Invoked through default configurations or the node graph. Sends Decision Pop-up Completion Event upon timeout or after interaction.</text>
+  </g>
 
-<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <text x="48" y="348" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing Deck Selector</text>
+  <g transform="translate(48,368)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Add: UI Control Group Editor Window, add UI control template - Deck Selector (default UI controls group)</text>
+  </g>
 
-<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
-<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Deck Selector UI Controls</text>
-<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Deck building interface for editing decision interactions with card selection and confirmation flow</text>
+  <g transform="translate(48,444)">
+    <rect width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="180" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="106" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Deck Selector Config</text>
+    <text x="24" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Visibility</text>
+    <text x="24" y="86" font-size="13" fill="#1A1B2E" font-weight="500">Index</text><text x="70" y="86" font-size="13" fill="#4A4B65">Parameters used to invoke the Deck Selector node</text>
+    <text x="24" y="106" font-size="13" fill="#1A1B2E" font-weight="500">Initially Visible</text><text x="140" y="106" font-size="13" fill="#4A4B65">If unchecked, not visible when activated. Adjustable via Node Graph</text>
+    <text x="560" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Transform</text>
+    <text x="560" y="86" font-size="13" fill="#1A1B2E" font-weight="500">Location</text><text x="630" y="86" font-size="13" fill="#4A4B65">Manual entry or drag</text>
+    <text x="560" y="106" font-size="13" fill="#1A1B2E" font-weight="500">Size</text><text x="600" y="106" font-size="13" fill="#4A4B65">Not configurable</text>
+    <text x="560" y="126" font-size="13" fill="#1A1B2E" font-weight="500">Layer</text><text x="610" y="126" font-size="13" fill="#4A4B65">Higher number = higher display layer</text>
+  </g>
 
-<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+  <text x="48" y="624" fill="#2D6BE4" font-size="18" font-weight="700">II-A. Decision Panel - Page Settings</text>
+  <g transform="translate(48,644)">
+    <rect width="1104" height="440" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Deck Selector Display</text>
+    <text x="24" y="54" font-size="13" fill="#1A1B2E" font-weight="500">Show Title</text><text x="120" y="54" font-size="13" fill="#4A4B65">Editable title at the top when checked</text>
+    <text x="24" y="74" font-size="13" fill="#1A1B2E" font-weight="500">Title Text</text><text x="110" y="74" font-size="13" fill="#4A4B65">Supports editing the display title text</text>
+    <text x="24" y="94" font-size="13" fill="#1A1B2E" font-weight="500">Interface Layout</text><text x="150" y="94" font-size="13" fill="#4A4B65">Two style options: List | Grid</text>
+    <line x1="24" y1="110" x2="1080" y2="110" stroke="#E8E4DA"/>
+    <text x="24" y="134" font-size="14" font-weight="500" fill="#1A1B2E">Show Selected Quantity</text>
+    <text x="24" y="158" font-size="13" fill="#4A4B65">Show the current number of selected items in the interface.</text>
+    <line x1="24" y1="174" x2="1080" y2="174" stroke="#E8E4DA"/>
+    <text x="24" y="198" font-size="14" font-weight="500" fill="#1A1B2E">Show Reset Count Limit</text>
+    <text x="24" y="222" font-size="13" fill="#4A4B65">Show the minimum and maximum number of resettable options.</text>
+    <line x1="24" y1="238" x2="1080" y2="238" stroke="#E8E4DA"/>
+    <text x="24" y="262" font-size="14" font-weight="500" fill="#1A1B2E">Show Remaining Time (s)</text>
+    <text x="24" y="286" font-size="13" fill="#4A4B65">Auto-closes when countdown ends. If player completes early, visibility depends on Decision Completion Style/Duration.</text>
+    <text x="24" y="310" font-size="13" fill="#1A1B2E" font-weight="500">Pre-End Warning Time (s)</text><text x="230" y="310" font-size="13" fill="#4A4B65">Flashing red warning effect when countdown reaches configured time.</text>
+    <line x1="24" y1="328" x2="1080" y2="328" stroke="#E8E4DA"/>
+    <text x="24" y="352" font-size="14" font-weight="500" fill="#1A1B2E">Other Settings</text>
+    <text x="24" y="376" font-size="13" fill="#1A1B2E" font-weight="500">Pause Game (Single-Player)</text><text x="250" y="376" font-size="13" fill="#4A4B65">Game pauses during selection</text>
+    <text x="24" y="396" font-size="13" fill="#1A1B2E" font-weight="500">Controls can collapse</text><text x="190" y="396" font-size="13" fill="#4A4B65">Manually collapse, postpone handling or wait for timeout</text>
+    <text x="24" y="416" font-size="13" fill="#1A1B2E" font-weight="500">Selection can be canceled</text><text x="220" y="416" font-size="13" fill="#4A4B65">Adds close control. Triggers Decision Completion - Closed manually event</text>
+  </g>
 
-<rect x="40" y="190" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The Deck Selector provides a simple interface for editing decision interactions during stage runtime:</text>
-<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Deck Building</tspan> — Select and configure decks with known or unknown card types</text>
-<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Card Selection</tspan> — Players choose from presented options with deck icon, title, and description</text>
-<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Layout Options</tspan> — List and Grid interface layout styles</text>
-<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Countdown &amp; Timeout</tspan> — Configurable countdown timer with pre-end warning flash effect</text>
-<text x="72" y="344" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Confirmation Flow</tspan> — Decision completion with reveal animations and result display</text>
+  <text x="48" y="1124" fill="#2D6BE4" font-size="18" font-weight="700">II-B. Option Configuration</text>
+  <g transform="translate(48,1144)">
+    <rect width="1104" height="400" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Known Deck Settings</text>
+    <text x="24" y="54" font-size="13" fill="#1A1B2E" font-weight="500">Display Deck Icon</text><text x="170" y="54" font-size="13" fill="#4A4B65">Card includes an icon (configurable)</text>
+    <text x="24" y="74" font-size="13" fill="#1A1B2E" font-weight="500">Display Deck Title</text><text x="170" y="74" font-size="13" fill="#4A4B65">Card includes a title (configurable)</text>
+    <text x="24" y="94" font-size="13" fill="#1A1B2E" font-weight="500">Display Deck Description</text><text x="220" y="94" font-size="13" fill="#4A4B65">Card includes a description (configurable)</text>
+    <line x1="24" y1="112" x2="1080" y2="112" stroke="#E8E4DA"/>
+    <text x="24" y="136" font-size="14" font-weight="500" fill="#1A1B2E">Unknown Deck Settings</text>
+    <text x="24" y="160" font-size="13" fill="#1A1B2E" font-weight="500">Reveal Result After Selection</text><text x="260" y="160" font-size="13" fill="#4A4B65">Play animation and switch to actual return value</text>
+    <text x="24" y="184" font-size="13" fill="#1A1B2E" font-weight="500">Result Page Closing Method</text><text x="240" y="184" font-size="13" fill="#4A4B65">Countdown auto-close | Closed Manually</text>
+    <text x="24" y="208" font-size="13" fill="#1A1B2E" font-weight="500">Countdown (s)</text><text x="150" y="208" font-size="13" fill="#4A4B65">Auto-closes after configured time post-decision</text>
+    <line x1="24" y1="228" x2="1080" y2="228" stroke="#E8E4DA"/>
+    <text x="24" y="252" font-size="14" font-weight="500" fill="#1A1B2E">Deck Settings (Edit Details)</text>
+    <rect x="24" y="268" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="120" y="282" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="550" y="282" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+    <text x="36" y="316" font-size="13" font-weight="500" fill="#1A1B2E">Deck ID</text><text x="200" y="316" font-size="13" fill="#4A4B65">For node graph invocation. Increments from 1, cannot be modified.</text>
+    <line x1="24" y1="328" x2="1080" y2="328" stroke="#E8E4DA"/>
+    <text x="36" y="346" font-size="13" font-weight="500" fill="#1A1B2E">Deck Types</text><text x="200" y="346" font-size="13" fill="#4A4B65">Known: configurable icon | Unknown: question mark, use with Reveal Result + countdown</text>
+    <line x1="24" y1="358" x2="1080" y2="358" stroke="#E8E4DA"/>
+    <text x="36" y="376" font-size="13" font-weight="500" fill="#1A1B2E">Deck Icon / Title / Description</text><text x="280" y="376" font-size="13" fill="#4A4B65">Icon when enabled in general settings. Title/Description are text configs.</text>
+    <line x1="24" y1="388" x2="1080" y2="388" stroke="#E8E4DA"/>
+    <text x="36" y="396" font-size="13" font-weight="500" fill="#1A1B2E">Tag Color / Tag Description</text>
+  </g>
 
-<text x="72" y="400" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Deck Configuration</text>
+  <text x="48" y="1584" fill="#2D6BE4" font-size="18" font-weight="700">III. Managing Deck Selector Through Node Graphs</text>
+  <g transform="translate(48,1604)">
+    <rect width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="24" y="14" width="240" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="144" y="34" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Invoke Deck Selector</text>
+    <rect x="280" y="14" width="240" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="400" y="34" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Close Deck Selector</text>
+    <rect x="24" y="68" width="300" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="174" y="88" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">When Deck Selector Is Complete</text>
+    <rect x="340" y="68" width="340" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="510" y="88" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Random Deck Selector Selection List</text>
+    <rect x="16" y="116" width="1072" height="16" rx="4" fill="#E8EEFB"/>
+    <text x="24" y="128" font-size="11" fill="#4A4B65">Decision result/option list = Card ID. Decision max/min limit affects selectable options count.</text>
+  </g>
 
-<rect x="40" y="420" width="1120" height="270" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <text x="48" y="1784" fill="#2D6BE4" font-size="18" font-weight="700">IV. Tutorial: Card Selector - Selection Pop-ups and Option Tabs</text>
+  <g transform="translate(48,1804)">
+    <rect width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Use Cases</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Random items in Roguelike games, random effects after level up. Examples: choose 1 from 3, choose 2 from 4.</text>
+  </g>
 
-<text x="72" y="452" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Known Deck</text>
-<text x="72" y="472" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Provides a clearly configurable icon, title, and description for the deck card.</text>
+  <g transform="translate(48,1900)">
+    <rect width="1104" height="460" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="200" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="116" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Example 1: 3-Choose-1</text>
+    <text x="24" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Step-by-Step Process</text>
+    <circle cx="40" cy="88" r="12" fill="#2D6BE4"/><text x="40" y="89" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="60" y="92" font-size="13" fill="#4A4B65">Add Card Selector in In-Game Editor via UI Control Group Library prefab template</text>
+    <circle cx="40" cy="118" r="12" fill="#2D6BE4"/><text x="40" y="119" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="60" y="122" font-size="13" fill="#4A4B65">Configure Page Settings: Title Text, disable Skip Selection</text>
+    <circle cx="40" cy="148" r="12" fill="#2D6BE4"/><text x="40" y="149" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">3</text>
+    <text x="60" y="152" font-size="13" fill="#4A4B65">Configure Deck Settings - Edit Details: add tabs, modify Type, Icon, Title, Description</text>
+    <circle cx="40" cy="178" r="12" fill="#2D6BE4"/><text x="40" y="179" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">4</text>
+    <text x="60" y="182" font-size="13" fill="#4A4B65">Add trigger: Interactive Button in Interface Layout to open the pop-up</text>
+    <circle cx="40" cy="208" r="12" fill="#2D6BE4"/><text x="40" y="209" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">5</text>
+    <text x="60" y="212" font-size="13" fill="#4A4B65">Configure Node Graph (mounted on Player):</text>
+    <text x="80" y="236" font-size="13" fill="#1A1B2E" font-weight="500">Trigger:</text><text x="145" y="236" font-size="13" fill="#4A4B65">When UI control group is triggered (button pressed)</text>
+    <text x="80" y="256" font-size="13" fill="#1A1B2E" font-weight="500">Action:</text><text x="140" y="256" font-size="13" fill="#4A4B65">Use Card Selector to create the pop-up effect</text>
+    <text x="80" y="280" font-size="13" fill="#1A1B2E" font-weight="500">After Selection - Condition Chain:</text>
+    <text x="80" y="300" font-size="13" fill="#4A4B65">Cond 1: Binary branch - check card selector index (needed when multiple selectors exist)</text>
+    <text x="80" y="320" font-size="13" fill="#4A4B65">Cond 2: Binary branch - determine completion reason (avoid timeout triggers)</text>
+    <text x="80" y="340" font-size="13" fill="#4A4B65">Cond 3: Multiple branch - determine selection result (list returned, take values from list)</text>
+    <text x="80" y="360" font-size="13" fill="#4A4B65">Result: Execute corresponding effect based on selected card</text>
+    <circle cx="40" cy="390" r="12" fill="#2D6BE4"/><text x="40" y="391" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">6</text>
+    <text x="60" y="394" font-size="13" fill="#4A4B65">Mount node graph on the player in In-Game Editor</text>
+    <circle cx="40" cy="420" r="12" fill="#1B4FC0"/><text x="40" y="421" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">7</text>
+    <text x="60" y="424" font-size="13" fill="#4A4B65">Enter Test Run to verify the feature</text>
+  </g>
 
-<rect x="72" y="486" width="220" height="120" rx="10" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
-<rect x="84" y="498" width="40" height="40" rx="6" fill="#2D6BE4"/>
-<text x="104" y="523" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">A</text>
-<text x="138" y="518" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#1A1B2E">Deck Title</text>
-<text x="138" y="538" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65">Deck description text</text>
-<text x="84" y="570" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0">Deck ID: 1</text>
+  <g transform="translate(48,2376)">
+    <rect width="1104" height="480" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="300" height="26" rx="13" fill="#FFF3E0"/>
+    <text x="166" y="27" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Example 2: 4-Choose-2 (with Random Effect)</text>
+    <text x="24" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Feature Description</text>
+    <text x="24" y="86" font-size="13" fill="#4A4B65">After opening a chest, a 4-choose-2 window pops up. One card has a random effect via node graph logic.</text>
+    <text x="24" y="116" font-size="14" font-weight="500" fill="#1A1B2E">Key Steps</text>
+    <circle cx="40" cy="142" r="12" fill="#2D6BE4"/><text x="40" y="143" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="60" y="146" font-size="13" fill="#4A4B65">Add new Card Selector in UI Control Group Library</text>
+    <circle cx="40" cy="172" r="12" fill="#2D6BE4"/><text x="40" y="173" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="60" y="176" font-size="13" fill="#4A4B65">Add Player Custom Variable: Effect of Unknown Card Obtained (Integer, Initial: 0)</text>
+    <circle cx="40" cy="202" r="12" fill="#2D6BE4"/><text x="40" y="203" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">3</text>
+    <text x="60" y="206" font-size="13" fill="#4A4B65">Add Text Box for effect hint showing random effect variable</text>
+    <circle cx="40" cy="232" r="12" fill="#2D6BE4"/><text x="40" y="233" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">4</text>
+    <text x="60" y="236" font-size="13" fill="#4A4B65">Configure card selector Page Settings and Option Configuration</text>
+    <circle cx="40" cy="262" r="12" fill="#2D6BE4"/><text x="40" y="263" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">5</text>
+    <text x="60" y="266" font-size="13" fill="#4A4B65">Create chest trigger prefab with Option Card component and trigger area</text>
+    <circle cx="40" cy="292" r="12" fill="#2D6BE4"/><text x="40" y="293" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">6</text>
+    <text x="60" y="296" font-size="13" fill="#4A4B65">Node Graph on Chest: When tab selected, invoke Card Selector, disable tab, set chest state</text>
+    <circle cx="40" cy="322" r="12" fill="#2D6BE4"/><text x="40" y="323" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">7</text>
+    <text x="60" y="326" font-size="13" fill="#4A4B65">Node Graph on Player: After selection, use List Iteration + Multiple Branches for 2 results</text>
+    <text x="80" y="350" font-size="13" fill="#4A4B65">Known card: add special effects. Unknown card: HP deduction displayed via UI text box.</text>
+    <circle cx="40" cy="380" r="12" fill="#2D6BE4"/><text x="40" y="381" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">8</text>
+    <text x="60" y="384" font-size="13" fill="#4A4B65">Mount node graphs on respective prefabs and save</text>
+    <circle cx="40" cy="410" r="12" fill="#1B4FC0"/><text x="40" y="411" font-size="11" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">9</text>
+    <text x="60" y="414" font-size="13" fill="#4A4B65">Place prefabs in scene and enter Test Mode</text>
+    <rect x="16" y="436" width="1072" height="32" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="436" width="4" height="32" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="456" font-size="12" fill="#4A4B65">Prerequisites: Collision/Interaction Triggering Events, UI Controls Display. Tutorial file: CardSelector.gil</text>
+  </g>
 
-<text x="380" y="452" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Unknown Deck</text>
-<text x="380" y="472" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Provides only a question mark icon. Recommended with reveal after selection.</text>
+  <text x="48" y="2896" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2teu0bmfbc" target="_blank">
+    <text x="48" y="2918" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Deck Selector UI Controls</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhfpf0rhlaeu" target="_blank">
+    <text x="48" y="2940" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Card Selector - Creating Selection Pop-ups and Option Tabs</text>
+  </a>
 
-<rect x="380" y="486" width="220" height="120" rx="10" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
-<circle cx="490" cy="518" r="20" fill="#CCCCCC"/>
-<text x="490" y="524" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="20" font-weight="700" fill="#FFFFFF" text-anchor="middle">?</text>
-<text x="490" y="550" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="700" fill="#1A1B2E" text-anchor="middle">Unknown</text>
-<text x="490" y="566" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle">???</text>
-<text x="392" y="598" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0">Deck ID: 2</text>
-
-<text x="72" y="642" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan fill="#1A1B2E" font-weight="700">Deck Settings:</tspan> Each deck has a Deck ID (sequential, starting from 1), Deck Type (Known/Unknown), optional icon, title, description, tag color, and tag description.</text>
-
-<rect x="40" y="708" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-<rect x="40" y="708" width="4" height="50" rx="2" fill="#2D6BE4"/>
-<text x="72" y="738" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">The Deck Selector supports selection cancellation, manual collapse, and game pause in single-player mode.</text>
-
-<text x="72" y="800" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Interface Controls</text>
-
-<rect x="40" y="820" width="1120" height="170" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="852" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Show Title</tspan> — Toggle editable title at the top of the selector</text>
-<text x="72" y="876" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Interface Layout</tspan> — Choose between List or Grid display</text>
-<text x="72" y="900" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Show Selected Quantity</tspan> — Display current number of selected items</text>
-<text x="72" y="924" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Show Reset Count Limit</tspan> — Display min/max resettable options</text>
-<text x="72" y="948" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Show Remaining Time</tspan> — Countdown timer with pre-end warning effect and auto-close</text>
-<text x="72" y="972" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Selection Can Be Canceled</tspan> — Add a close button, triggers Close Manually event</text>
-
-<text x="72" y="1040" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
-
-<rect x="40" y="1060" width="1120" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="1092" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Invoke Deck Selector</tspan> — Open the selector through Node Graph with configured deck data</text>
-<text x="72" y="1116" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Close Deck Selector</tspan> — Close the selector programmatically</text>
-<text x="72" y="1140" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">When Deck Selector Is Complete</tspan> — Event fires on timeout, selection made, or manual close</text>
-<text x="72" y="1164" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Random Deck Selector Selection List</tspan> — Randomize deck options through Node Graph logic</text>
-
-<text x="72" y="1230" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
-<text x="72" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Deck Selector UI Controls</text>
-<text x="300" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1g8q9w7x02</text>
-
-<line x1="40" y1="1285" x2="1160" y2="1285" stroke="#E0E0E0" stroke-width="1"/>
-<text x="600" y="1310" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <text x="600" y="3570" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

@@ -1,207 +1,264 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2480" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2132">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
+<style>
+  text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+</style>
 
-  <rect width="1200" height="2480" fill="#F9F7F2"/>
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Page Background -->
+<rect width="1200" height="2132" fill="#F9F7F2"/>
 
-  <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">44-Interface Layout: UI Canvas, Layout Structure &amp; Management</text>
+<!-- Top Color Bar -->
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- ==================== SECTION I ==================== -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition of Interface Layout</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Interface Layout</text>
+<text x="420" y="82" fill="#4A4B65" font-size="16">Screen layout for player information and interactions</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">What is the Interface Layout?</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The Interface Layout is the screen players use to obtain information and</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">perform interactions during stage runtime.</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">In addition to the Default Layout with basic features, players can customize</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">the Interface Layout. The Interface Layout runs per player; during runtime,</text>
-    <text x="20" y="140" font-size="14" fill="#4A4B65">each player has exactly one active Interface Layout.</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">UI Controls are the building blocks placed on the canvas to form the layout.</text>
-  </g>
+<!-- I. Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Definition of Interface Layout</text>
 
-  <!-- ==================== SECTION II ==================== -->
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Interface Layout Management</text>
+<rect x="48" y="162" width="1104" height="110" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14">The Interface Layout is the screen players use to obtain information and perform interactions during stage runtime.</text>
+<text x="72" y="216" fill="#4A4B65" font-size="14">In addition to the Default Layout with basic features, players can customize the Interface Layout.</text>
+<text x="72" y="242" fill="#4A4B65" font-size="14">The Interface Layout runs per player; during runtime, each player has exactly one active Interface Layout.</text>
 
-  <!-- Sub-card: Central Management -->
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Central Management</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The Interface Layout is centrally managed via Manage UI Control Groups —</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">Interface Layout. Only supports editing and referencing the interface that is</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">displayed during stage runtime. Does not support editing interfaces for</text>
-    <text x="20" y="112" font-size="14" fill="#4A4B65">essential processes such as matching and settlement.</text>
-    <text x="20" y="140" font-size="14" font-weight="bold" fill="#1A1B2E">Default Configuration:</text>
-    <text x="20" y="158" font-size="13" fill="#4A4B65">The Interface Layout used during Stage gameplay must be configured via Class → Select Layout.</text>
-  </g>
+<!-- II. Interface Layout Management -->
+<text x="48" y="308" fill="#2D6BE4" font-size="18" font-weight="700">II. Interface Layout Management</text>
+<text x="340" y="308" fill="#8B8DA0" font-size="13">Centrally managed via Manage UI Control Groups</text>
 
-  <!-- Sub-card: Manage with Node Graphs -->
-  <g transform="translate(60, 584)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Manage with Node Graphs</text>
+<!-- Management Overview Card -->
+<rect x="48" y="322" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="350" fill="#1A1B2E" font-size="14" font-weight="500">Management Scope</text>
+<text x="72" y="374" fill="#4A4B65" font-size="14">Only supports editing and referencing the interface displayed during stage runtime. Does not support editing interfaces for essential processes such as matching and settlement.</text>
 
-    <text x="20" y="56" font-size="14" font-weight="bold" fill="#1A1B2E">Switch Current Interface Layout</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">Uses the Layout ID to switch the Target Player's current Interface Layout as needed.</text>
-    <text x="20" y="100" font-size="13" fill="#8B8DA0">Parameters: Target Player (Player Entity), Layout Index (ID in UI Layout Management Tool)</text>
+<!-- Default Configuration Card -->
+<rect x="48" y="414" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="76" cy="442" r="14" fill="#2D6BE4"/>
+<text x="76" y="447" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">1</text>
+<text x="100" y="447" fill="#1A1B2E" font-size="16" font-weight="500">Default Configuration</text>
+<text x="72" y="474" fill="#4A4B65" font-size="14">The Interface Layout used during Stage gameplay</text>
+<text x="72" y="496" fill="#4A4B65" font-size="14">must be configured via Class.</text>
+<text x="72" y="522" fill="#4A4B65" font-size="14">Open Class editing, then use Select Layout to reference.</text>
 
-    <text x="20" y="130" font-size="14" font-weight="bold" fill="#1A1B2E">Get Current Interface Layout</text>
-    <text x="20" y="152" font-size="13" fill="#4A4B65">At runtime, retrieves the player's current Interface Layout ID.</text>
-    <text x="20" y="182" font-size="13" fill="#8B8DA0">Both nodes are available in the Node Graph editor for dynamic layout control.</text>
-  </g>
+<!-- Node Graph: Switch Layout Card -->
+<rect x="612" y="414" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="640" cy="442" r="14" fill="#2D6BE4"/>
+<text x="640" y="447" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">2</text>
+<text x="664" y="447" fill="#1A1B2E" font-size="16" font-weight="500">Switch Current Interface Layout</text>
+<text x="636" y="474" fill="#4A4B65" font-size="14">Use the Layout ID to switch the Target Player's</text>
+<text x="636" y="496" fill="#4A4B65" font-size="14">current Interface Layout as needed.</text>
+<rect x="636" y="508" width="100" height="20" rx="10" fill="#E8EEFB"/>
+<text x="686" y="522" fill="#2D6BE4" font-size="11" text-anchor="middle">Node Graph</text>
 
-  <!-- ==================== SECTION III ==================== -->
-  <circle cx="80" cy="820" r="16" fill="#2D6BE4"/>
-  <text x="80" y="821" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="821" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Interface Layout Adaptation Instructions</text>
+<!-- Node Graph Parameters Card -->
+<rect x="48" y="546" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="574" fill="#1A1B2E" font-size="14" font-weight="500">Switch Layout Parameters</text>
+<rect x="72" y="586" width="130" height="24" rx="12" fill="#E8EEFB"/>
+<text x="137" y="602" fill="#2D6BE4" font-size="12" text-anchor="middle">Target Player</text>
+<text x="212" y="602" fill="#4A4B65" font-size="13">The Player Entity that needs to switch</text>
+<rect x="72" y="616" width="110" height="24" rx="12" fill="#E8EEFB"/>
+<text x="127" y="632" fill="#2D6BE4" font-size="12" text-anchor="middle">Layout Index</text>
+<text x="192" y="632" fill="#4A4B65" font-size="13">The ID of the specified layout</text>
 
-  <!-- Device Selection -->
-  <g transform="translate(60, 848)">
-    <rect width="1080" height="310" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">1. Device Selection</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Due to differences in Interface Layouts across devices (resolution and button</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">arrangement), if you want to create Stages playable on PC/Mobile/Console,</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">you need to adjust UI Controls' Location, Size, and Waypoint for each device.</text>
+<!-- Get Current Layout Card -->
+<rect x="612" y="546" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="640" cy="574" r="14" fill="#2D6BE4"/>
+<text x="640" y="579" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">3</text>
+<text x="664" y="579" fill="#1A1B2E" font-size="16" font-weight="500">Get Current Interface Layout</text>
+<text x="636" y="606" fill="#4A4B65" font-size="14">At runtime, get the player's current Interface Layout ID.</text>
+<text x="636" y="628" fill="#4A4B65" font-size="14">Returns the layout index value for use in conditional logic.</text>
 
-    <text x="20" y="120" font-size="14" fill="#4A4B65">Two places where device settings can be adjusted:</text>
+<!-- III. Interface Layout Adaptation -->
+<text x="48" y="690" fill="#2D6BE4" font-size="18" font-weight="700">III. Interface Layout Adaptation Instructions</text>
 
-    <!-- Device list -->
-    <rect x="20" y="140" width="508" height="30" fill="#F9F7F2" rx="6"/>
-    <text x="32" y="159" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">(1) Top bar</text>
-    <text x="112" y="159" font-size="13" fill="#4A4B65" dominant-baseline="middle">Select device and resolution</text>
+<!-- Device Selection Card -->
+<rect x="48" y="704" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="732" fill="#1A1B2E" font-size="16" font-weight="500">1. Device Selection</text>
+<text x="72" y="756" fill="#4A4B65" font-size="14">Due to significant differences across devices (resolution and button arrangement), if you want to create Stages playable on PC/Mobile/Console,</text>
+<text x="72" y="776" fill="#4A4B65" font-size="14">you need to adjust UI Controls' Location, Size, and Waypoint for each device.</text>
 
-    <rect x="20" y="174" width="508" height="30" fill="#F9F7F2" rx="6"/>
-    <text x="32" y="193" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">(2) UI Control Details — Transform</text>
-    <text x="182" y="193" font-size="13" fill="#4A4B65" dominant-baseline="middle">Click to select a device</text>
+<text x="72" y="804" fill="#1A1B2E" font-size="14" font-weight="500">Two places to adjust device settings:</text>
+<rect x="72" y="816" width="20" height="20" rx="4" fill="#E8EEFB"/>
+<text x="82" y="830" fill="#2D6BE4" font-size="11" text-anchor="middle">A</text>
+<text x="100" y="830" fill="#4A4B65" font-size="14">Top bar: Select device and resolution</text>
+<rect x="72" y="844" width="20" height="20" rx="4" fill="#E8EEFB"/>
+<text x="82" y="858" fill="#2D6BE4" font-size="11" text-anchor="middle">B</text>
+<text x="100" y="858" fill="#4A4B65" font-size="14">UI Control Details — Transform: Click to select a device</text>
 
-    <text x="20" y="224" font-size="13" font-weight="bold" fill="#1A1B2E">Supported Devices:</text>
-    <text x="20" y="248" font-size="13" fill="#4A4B65">PC | Mobile | Console | Mobile Controller</text>
+<!-- Device Table -->
+<rect x="48" y="896" width="1104" height="44" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="926" width="1104" height="14" fill="#2D6BE4"/>
+<text x="200" y="924" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Device</text>
+<text x="600" y="924" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Main Interface (16:9 Resolution)</text>
+<text x="980" y="924" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Input Method</text>
 
-    <text x="20" y="278" font-size="13" fill="#8B8DA0">All devices use 16:9 resolution as reference for initial layout design.</text>
-  </g>
+<rect x="48" y="940" width="1104" height="36" fill="#fff"/>
+<line x1="48" y1="976" x2="1152" y2="976" stroke="#E8E4DA" stroke-width="1"/>
+<text x="200" y="964" fill="#1A1B2E" font-size="14" text-anchor="middle" font-weight="500">PC</text>
+<text x="600" y="964" fill="#4A4B65" font-size="14" text-anchor="middle">Standard desktop layout</text>
+<text x="980" y="964" fill="#4A4B65" font-size="14" text-anchor="middle">Keyboard + Mouse</text>
 
-  <!-- Location & Size sub-card -->
-  <g transform="translate(60, 1174)">
-    <rect width="1080" height="190" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">2. Adjust Location and Size</text>
+<rect x="48" y="976" width="1104" height="36" fill="#F4F1EA"/>
+<line x1="48" y1="1012" x2="1152" y2="1012" stroke="#E8E4DA" stroke-width="1"/>
+<text x="200" y="1000" fill="#1A1B2E" font-size="14" text-anchor="middle" font-weight="500">Mobile</text>
+<text x="600" y="1000" fill="#4A4B65" font-size="14" text-anchor="middle">Touch-optimized layout</text>
+<text x="980" y="1000" fill="#4A4B65" font-size="14" text-anchor="middle">Touch Screen</text>
 
-    <text x="20" y="56" font-size="14" font-weight="bold" fill="#1A1B2E">Location</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">Using the bottom-left corner of the canvas as the origin, displays the relative</text>
-    <text x="20" y="98" font-size="13" fill="#4A4B65">location of the UI Controls' center point to the origin. Each device must be</text>
-    <text x="20" y="118" font-size="13" fill="#4A4B65">set up separately.</text>
+<rect x="48" y="1012" width="1104" height="36" fill="#fff"/>
+<line x1="48" y1="1048" x2="1152" y2="1048" stroke="#E8E4DA" stroke-width="1"/>
+<text x="200" y="1036" fill="#1A1B2E" font-size="14" text-anchor="middle" font-weight="500">Console</text>
+<text x="600" y="1036" fill="#4A4B65" font-size="14" text-anchor="middle">Console-optimized layout</text>
+<text x="980" y="1036" fill="#4A4B65" font-size="14" text-anchor="middle">Gamepad</text>
 
-    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">Size</text>
-    <text x="20" y="170" font-size="13" fill="#4A4B65">Adjust the current size of the UI Control. Click the chain button to lock the</text>
-    <text x="20" y="188" font-size="13" fill="#4A4B65">current aspect ratio. Some UI Controls cannot be resized.</text>
-  </g>
+<rect x="48" y="1048" width="1104" height="36" rx="0" fill="#F4F1EA"/>
+<rect x="48" y="1070" width="1104" height="14" rx="14" fill="#F4F1EA"/>
+<text x="200" y="1072" fill="#1A1B2E" font-size="14" text-anchor="middle" font-weight="500">Mobile Controller</text>
+<text x="600" y="1072" fill="#4A4B65" font-size="14" text-anchor="middle">Mobile with controller overlay</text>
+<text x="980" y="1072" fill="#4A4B65" font-size="14" text-anchor="middle">Touch + Gamepad</text>
 
-  <!-- Waypoints sub-card -->
-  <g transform="translate(60, 1380)">
-    <rect width="1080" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">3. Waypoints</text>
+<!-- Location and Size Card -->
+<rect x="48" y="1100" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1128" fill="#1A1B2E" font-size="16" font-weight="500">2. Adjust Location</text>
+<text x="72" y="1154" fill="#4A4B65" font-size="14">Using the bottom-left corner of the canvas as the</text>
+<text x="72" y="1174" fill="#4A4B65" font-size="14">origin, displays the relative location of the UI Controls'</text>
+<text x="72" y="1194" fill="#4A4B65" font-size="14">center point to the origin.</text>
+<text x="72" y="1220" fill="#1A1B2E" font-size="14" font-weight="500">Each device needs to be set up separately.</text>
 
-    <text x="20" y="56" font-size="14" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">When resolution changes, UI Controls automatically adapt their location while</text>
-    <text x="20" y="98" font-size="13" fill="#4A4B65">maintaining their relative location to the set waypoint.</text>
+<rect x="612" y="1100" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="636" y="1128" fill="#1A1B2E" font-size="16" font-weight="500">3. Adjust Size</text>
+<text x="636" y="1154" fill="#4A4B65" font-size="14">Adjust the current size of the UI Control.</text>
+<text x="636" y="1178" fill="#4A4B65" font-size="14">Click the chain button in the top right corner to lock</text>
+<text x="636" y="1198" fill="#4A4B65" font-size="14">the current aspect ratio.</text>
+<text x="636" y="1224" fill="#1A1B2E" font-size="14" font-weight="500">Some UI Controls cannot be resized.</text>
 
-    <text x="20" y="126" font-size="14" font-weight="bold" fill="#1A1B2E">Waypoint Selection Guidelines</text>
-    <text x="20" y="152" font-size="13" fill="#4A4B65">(1) Based on UI Control Location: Select the waypoint corresponding to the</text>
-    <text x="20" y="172" font-size="13" fill="#4A4B65">section of the nine-grid where the element is placed.</text>
-    <text x="20" y="196" font-size="13" fill="#4A4B65">(2) Based on functional areas: Waypoint selections for quest descriptions</text>
-    <text x="20" y="216" font-size="13" fill="#4A4B65">and multiple text boxes should remain consistent.</text>
+<!-- Waypoints Card -->
+<rect x="48" y="1256" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1284" fill="#1A1B2E" font-size="16" font-weight="500">4. Waypoints (Anchors)</text>
+<text x="72" y="1310" fill="#1A1B2E" font-size="14" font-weight="500">Definition</text>
+<text x="72" y="1332" fill="#4A4B65" font-size="14">When resolution changes, UI Controls automatically adapt their location while maintaining their relative location to the set waypoint.</text>
 
-    <text x="20" y="246" font-size="14" fill="#4A4B65">The nine-grid system provides 9 anchor presets: top-left, top-center,</text>
-    <text x="20" y="266" font-size="14" fill="#4A4B65">top-right, middle-left, center, middle-right, bottom-left, bottom-center,</text>
-    <text x="20" y="286" font-size="14" fill="#4A4B65">bottom-right. See also: 45-Anchors for detailed anchor documentation.</text>
-  </g>
+<text x="72" y="1362" fill="#1A1B2E" font-size="14" font-weight="500">Waypoint Selection Guidelines</text>
+<rect x="72" y="1374" width="16" height="16" rx="8" fill="#2D6BE4"/>
+<text x="80" y="1386" fill="#fff" font-size="10" text-anchor="middle" font-weight="500">A</text>
+<text x="96" y="1386" fill="#4A4B65" font-size="14">Based on UI Control Location: Select the waypoint corresponding to the section of the nine-grid where the element is placed.</text>
+<rect x="72" y="1398" width="16" height="16" rx="8" fill="#2D6BE4"/>
+<text x="80" y="1410" fill="#fff" font-size="10" text-anchor="middle" font-weight="500">B</text>
+<text x="96" y="1410" fill="#4A4B65" font-size="14">Based on functional areas: For example, waypoint selections for quest descriptions and multiple text boxes should remain consistent.</text>
 
-  <!-- Interface Dead Zone -->
-  <g transform="translate(60, 1696)">
-    <rect width="1080" height="110" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">4. Interface Dead Zone</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">The mobile Interface has the smallest screen. Use the 16:9 mobile adaptation</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">as the baseline to ensure clickable UI Controls remain within the safe area.</text>
-    <text x="20" y="96" font-size="13" fill="#8B8DA0">Design critical UI elements within the safe zone to avoid cutoffs on smaller screens.</text>
-  </g>
+<!-- Waypoint Nine-Grid Reference -->
+<rect x="48" y="1448" width="1104" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1476" fill="#1A1B2E" font-size="14" font-weight="500">Nine-Grid Waypoint Reference</text>
 
-  <!-- ==================== SECTION IV ==================== -->
-  <circle cx="80" cy="1842" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1843" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1843" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Interface Specification Reference</text>
+<!-- Nine-grid visualization -->
+<rect x="72" y="1490" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="122" y="1510" fill="#2D6BE4" font-size="12" text-anchor="middle">Top-Left</text>
+<rect x="182" y="1490" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="232" y="1510" fill="#2D6BE4" font-size="12" text-anchor="middle">Top</text>
+<rect x="292" y="1490" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="342" y="1510" fill="#2D6BE4" font-size="12" text-anchor="middle">Top-Right</text>
 
-  <!-- Text Reference -->
-  <g transform="translate(60, 1870)">
-    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">1. Text Reference</text>
+<rect x="72" y="1526" width="100" height="30" rx="6" fill="#F4F1EA"/>
+<text x="122" y="1546" fill="#4A4B65" font-size="12" text-anchor="middle">Left</text>
+<rect x="182" y="1526" width="100" height="30" rx="6" fill="#F4F1EA"/>
+<text x="232" y="1546" fill="#4A4B65" font-size="12" text-anchor="middle">Center</text>
+<rect x="292" y="1526" width="100" height="30" rx="6" fill="#F4F1EA"/>
+<text x="342" y="1546" fill="#4A4B65" font-size="12" text-anchor="middle">Right</text>
 
-    <text x="20" y="56" font-size="14" font-weight="bold" fill="#1A1B2E">Font Size Recommendations</text>
+<rect x="72" y="1562" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="122" y="1582" fill="#2D6BE4" font-size="12" text-anchor="middle">Bottom-Left</text>
+<rect x="182" y="1562" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="232" y="1582" fill="#2D6BE4" font-size="12" text-anchor="middle">Bottom</text>
+<rect x="292" y="1562" width="100" height="30" rx="6" fill="#E8EEFB"/>
+<text x="342" y="1582" fill="#2D6BE4" font-size="12" text-anchor="middle">Bottom-Right</text>
 
-    <rect x="20" y="70" width="508" height="26" fill="#2D6BE4" rx="4"/>
-    <text x="32" y="88" font-size="11" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Type</text>
-    <text x="440" y="88" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="end" dominant-baseline="middle">Recommended Size</text>
+<text x="440" y="1510" fill="#4A4B65" font-size="13">Select the waypoint that matches where the UI element</text>
+<text x="440" y="1530" fill="#4A4B65" font-size="13">is positioned on screen. This ensures correct adaptation</text>
+<text x="440" y="1550" fill="#4A4B65" font-size="13">when resolution or aspect ratio changes.</text>
 
-    <rect x="20" y="96" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="112" font-size="12" fill="#4A4B65" dominant-baseline="middle">Large Title</text>
-    <text x="520" y="112" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">36-32</text>
+<!-- Interface Dead Zone Card -->
+<rect x="48" y="1608" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1636" fill="#1A1B2E" font-size="16" font-weight="500">5. Interface Dead Zone</text>
+<text x="72" y="1660" fill="#4A4B65" font-size="14">The mobile Interface has the smallest screen. Use the 16:9 mobile adaptation as the baseline to ensure clickable UI Controls remain within the safe area (red zone boundary).</text>
 
-    <rect x="20" y="120" width="508" height="24" fill="#FFFFFF"/>
-    <text x="32" y="136" font-size="12" fill="#4A4B65" dominant-baseline="middle">Subtitle / Button Text</text>
-    <text x="520" y="136" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">24</text>
+<!-- Tip Box -->
+<rect x="48" y="1700" width="1104" height="44" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1700" width="4" height="44" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1726" fill="#4A4B65" font-size="14">Tip: Always test your Interface Layout on all target devices and resolutions before publishing to ensure proper adaptation.</text>
 
-    <rect x="20" y="144" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="160" font-size="12" fill="#4A4B65" dominant-baseline="middle">Body Text (Most Common)</text>
-    <text x="520" y="160" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">20</text>
+<!-- IV. Interface Specification Reference -->
+<text x="48" y="1782" fill="#2D6BE4" font-size="18" font-weight="700">IV. Interface Specification Reference</text>
 
-    <rect x="20" y="168" width="508" height="24" fill="#FFFFFF"/>
-    <text x="32" y="184" font-size="12" fill="#4A4B65" dominant-baseline="middle">Secondary Text</text>
-    <text x="520" y="184" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">18</text>
+<!-- Font Size Card -->
+<rect x="48" y="1796" width="540" height="170" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1824" fill="#1A1B2E" font-size="16" font-weight="500">Font Size Reference</text>
 
-    <rect x="20" y="192" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="208" font-size="12" fill="#4A4B65" dominant-baseline="middle">Recommended Minimum</text>
-    <text x="520" y="208" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">16</text>
+<rect x="72" y="1838" width="160" height="24" rx="12" fill="#E8EEFB"/>
+<text x="152" y="1854" fill="#2D6BE4" font-size="12" text-anchor="middle">Large Title</text>
+<text x="242" y="1854" fill="#4A4B65" font-size="14">36 - 32</text>
 
-    <text x="20" y="242" font-size="14" font-weight="bold" fill="#1A1B2E">Text Color</text>
-    <text x="20" y="264" font-size="13" fill="#4A4B65">Use &lt;color=#XXXXXX&gt;Text&lt;/color&gt; to change text color. Supports elemental type</text>
-    <text x="20" y="282" font-size="13" fill="#4A4B65">colors (Hydro #80C0FF, Pyro #FF9999, Anemo #80FFD7, etc.) and semantic colors.</text>
-  </g>
+<rect x="72" y="1868" width="160" height="24" rx="12" fill="#E8EEFB"/>
+<text x="152" y="1884" fill="#2D6BE4" font-size="12" text-anchor="middle">Subtitle / Button</text>
+<text x="242" y="1884" fill="#4A4B65" font-size="14">24</text>
 
-  <!-- Interface Layout Reference -->
-  <g transform="translate(60, 2166)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">2. Interface Layout Reference</text>
-    <text x="20" y="56" font-size="14" font-weight="bold" fill="#1A1B2E">Quest Text</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">Main Quest: font size 20, waypoint at top left. Side Quest: font size 18.</text>
-    <text x="20" y="102" font-size="13" fill="#4A4B65">Success conditions: #ACFF44. Failure conditions: #FFFFFFBF.</text>
-    <text x="20" y="126" font-size="13" fill="#4A4B65">Quest Description: size 18 (consider size 16 for large text).</text>
-    <text x="20" y="154" font-size="14" font-weight="bold" fill="#1A1B2E">Hint Text</text>
-    <text x="20" y="176" font-size="13" fill="#4A4B65">Font size 20, center-aligned, length 5,000, waypoint at top.</text>
-    <text x="20" y="196" font-size="13" fill="#4A4B65">Pop-up: Subtitle #D3BC8E, emphasized text #FFCC33.</text>
-  </g>
+<rect x="72" y="1898" width="160" height="24" rx="12" fill="#E8EEFB"/>
+<text x="152" y="1914" fill="#2D6BE4" font-size="12" text-anchor="middle">Body Text</text>
+<text x="242" y="1914" fill="#1A1B2E" font-size="14" font-weight="500">20 (Most Common)</text>
 
-  <!-- Source Links -->
-  <text x="60" y="2400" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb6mc085sjc" target="_blank">
-    <text x="60" y="2424" font-size="12" fill="#2D6BE4" text-decoration="underline">Interface Layout → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhb6mc085sjc</text>
-  </a>
+<rect x="72" y="1928" width="160" height="24" rx="12" fill="#E8EEFB"/>
+<text x="152" y="1944" fill="#2D6BE4" font-size="12" text-anchor="middle">Secondary Text</text>
+<text x="242" y="1944" fill="#4A4B65" font-size="14">18</text>
 
-  <!-- Footer -->
-  <text x="600" y="2460" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<text x="72" y="1964" fill="#1A1B2E" font-size="13" font-weight="500">Recommended Minimum Font Size: 16</text>
+
+<!-- Text Color Card -->
+<rect x="612" y="1796" width="540" height="170" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="636" y="1824" fill="#1A1B2E" font-size="16" font-weight="500">Text Color Reference</text>
+
+<text x="636" y="1848" fill="#1A1B2E" font-size="13" font-weight="500">Dark Background (Pop-ups / Main Interface)</text>
+<text x="636" y="1868" fill="#4A4B65" font-size="13">Title / Secondary: #D3BC8E   |   Normal: #FFFFFF</text>
+<text x="636" y="1886" fill="#4A4B65" font-size="13">Keyword 1: #FFCC33   |   Keyword 2: #37FFFF   |   Warning: #FF5E41</text>
+
+<text x="636" y="1912" fill="#1A1B2E" font-size="13" font-weight="500">Light Background (Tips etc.)</text>
+<text x="636" y="1932" fill="#4A4B65" font-size="13">Normal: #4A5366   |   Secondary (75%): #4A5366BF</text>
+<text x="636" y="1950" fill="#4A4B65" font-size="13">Keyword 1: #F39000   |   Keyword 2: #3399CC   |   Warning: #FF5E41</text>
+
+<!-- Elemental Colors Card -->
+<rect x="48" y="1978" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2004" fill="#1A1B2E" font-size="14" font-weight="500">Elemental Type Colors:</text>
+<text x="260" y="2004" fill="#4A4B65" font-size="13">Hydro #80C0FF</text>
+<text x="380" y="2004" fill="#4A4B65" font-size="13">Pyro #FF9999</text>
+<text x="490" y="2004" fill="#4A4B65" font-size="13">Anemo #80FFD7</text>
+<text x="620" y="2004" fill="#4A4B65" font-size="13">Electro #FFACFF</text>
+<text x="750" y="2004" fill="#4A4B65" font-size="13">Dendro #99FF88</text>
+<text x="880" y="2004" fill="#4A4B65" font-size="13">Cryo #99FFFF</text>
+<text x="1000" y="2004" fill="#4A4B65" font-size="13">Geo #FFE699</text>
+<text x="72" y="2026" fill="#4A4B65" font-size="13">Quest: Main Quest font 20, Side Quest font 18, waypoint top-left. Hint: font 20, center-aligned, length 5000, waypoint top. Success: #ACFF44, Failure: #FFFFFFBF.</text>
+
+<!-- Related Documentation Label -->
+<text x="48" y="2058" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+
+<!-- Source Links -->
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhozt0r74ng6" target="_blank">
+  <text x="48" y="2076" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Interface Layout (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhpdaf0v84vk" target="_blank">
+  <text x="48" y="2094" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Interface Controls (Tutorial)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2118" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 
 </svg>

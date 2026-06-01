@@ -1,94 +1,259 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1400" width="1200" height="1400">
-<defs>
-<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-</linearGradient>
-<filter id="card" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-</filter>
-<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3440" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="3440" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect width="1200" height="1400" fill="#F9F7F2"/>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" dominant-baseline="middle">Floating Interaction</text>
+  <text x="440" y="72" fill="#4A4B65" font-size="16" dominant-baseline="middle">Advanced Page Controls with Tabs &amp; Single-Choice</text>
 
-<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <!-- I. Features -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Floating Interaction Page Features</text>
 
-<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
-<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Floating Interaction Page Controls</text>
-<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Advanced UI page with tabs, single-choice windows, containers, and complex interaction flows</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Purpose</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Floating Interaction Page UI controls provide advanced configuration options such as tabs and single-choice</text>
+    <text x="24" y="72" font-size="13" fill="#4A4B65">windows, making it easier to configure complex interfaces. Supports adding various buttons and switches.</text>
 
-<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+    <text x="24" y="102" font-size="14" font-weight="500" fill="#1A1B2E">Runtime Behavior</text>
+    <text x="24" y="126" font-size="13" fill="#4A4B65">Triggered through Node Graphs during stage runtime. Supports player interaction.</text>
+    <text x="24" y="146" font-size="13" fill="#4A4B65">Can trigger Server Node Graph Events when tabs or single-choice windows are opened or closed.</text>
 
-<rect x="40" y="190" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">The Floating Interaction Page provides advanced configuration options for complex UI interfaces:</text>
-<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Tabs</tspan> — Horizontal or vertical tab navigation with preset and custom styles</text>
-<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Single-Choice Windows</tspan> — List-based selection with custom styles and scroll directions</text>
-<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Page Containers</tspan> — Organize UI controls into pages, control initial visibility per container</text>
-<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Preset Backgrounds</tspan> — Choose preset backgrounds or use default styling</text>
-<text x="72" y="344" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Formal Variables</tspan> — Configure variable mapping for data binding across containers</text>
+    <rect x="16" y="164" width="1072" height="28" rx="8" fill="#FDE8E6"/>
+    <rect x="16" y="164" width="4" height="28" rx="2" fill="#D93025"/>
+    <text x="32" y="182" font-size="12" fill="#D93025">If the Floating Interaction Page encounters disconnection or reconnection, it will not be restored.</text>
+  </g>
 
-<text x="72" y="400" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Page Layout &amp; Containers</text>
+  <!-- II. Editing -->
+  <text x="48" y="408" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Floating Interaction Page</text>
 
-<rect x="40" y="420" width="1120" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <g transform="translate(48, 428)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Add: In the UI Control Group Editor window, add the UI Control Template - Floating Interaction Page</text>
+  </g>
 
-<rect x="72" y="442" width="360" height="160" rx="10" fill="#F0F4FA" stroke="#D0D8E8" stroke-width="1"/>
-<rect x="72" y="442" width="360" height="32" rx="10" fill="#2D6BE4"/>
-<text x="252" y="462" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Floating Interaction Page</text>
+  <!-- Styles -->
+  <g transform="translate(48, 504)">
+    <rect width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="70" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="51" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Styles</text>
 
-<rect x="84" y="486" width="160" height="100" rx="8" fill="#FFFFFF" stroke="#C0D0E8" stroke-width="1"/>
-<text x="164" y="510" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#2D6BE4" text-anchor="middle">Container A</text>
-<line x1="90" y1="520" x2="238" y2="520" stroke="#E0E0E0" stroke-width="1"/>
-<text x="164" y="540" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Buttons</text>
-<text x="164" y="556" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Switches</text>
-<text x="164" y="572" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Text</text>
+    <text x="24" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Use Preset Background</text>
+    <text x="24" y="86" font-size="13" fill="#4A4B65">When enabled, choose a preset background. When disabled, the default background is used.</text>
 
-<rect x="256" y="486" width="160" height="100" rx="8" fill="#FFFFFF" stroke="#C0D0E8" stroke-width="1"/>
-<text x="336" y="510" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" font-weight="700" fill="#2D6BE4" text-anchor="middle">Container B</text>
-<line x1="262" y1="520" x2="410" y2="520" stroke="#E0E0E0" stroke-width="1"/>
-<text x="336" y="540" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Lists</text>
-<text x="336" y="556" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Tabs</text>
-<text x="336" y="572" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="10" fill="#8B8DA0" text-anchor="middle">Choices</text>
+    <text x="24" y="116" font-size="14" font-weight="500" fill="#1A1B2E">Page Container</text>
+    <text x="24" y="140" font-size="13" fill="#4A4B65">A container organizes UI control information structure. Each container can be treated as a separate page.</text>
 
-<text x="500" y="465" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Page Container</text>
-<text x="500" y="485" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">A container organizes the information structure of UI</text>
-<text x="500" y="505" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">controls within a Floating Interaction Page.</text>
+    <text x="24" y="170" font-size="14" font-weight="500" fill="#1A1B2E">Initially Effective</text>
+    <text x="24" y="194" font-size="13" fill="#4A4B65">Determines which containers are initially effective when the page opens.</text>
 
-<text x="500" y="535" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Initially Effective</text>
-<text x="500" y="555" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Determines which containers are visible when the</text>
-<text x="500" y="575" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">page is first opened.</text>
+    <text x="560" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Window Container List</text>
+    <text x="560" y="86" font-size="13" fill="#4A4B65">Displays all current containers.</text>
+    <text x="560" y="116" font-size="14" font-weight="500" fill="#1A1B2E">Details Editing</text>
+    <text x="560" y="140" font-size="13" fill="#4A4B65">Click to enter the Floating Interaction Page editing interface.</text>
+  </g>
 
-<text x="72" y="660" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Interaction Components</text>
+  <!-- Functions -->
+  <g transform="translate(48, 760)">
+    <rect width="1104" height="280" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="90" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="61" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Functions</text>
 
-<rect x="40" y="680" width="1120" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="712" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Close Button</text>
-<text x="72" y="732" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Included by default. Cannot be removed from the Inherent Container. Closes via Esc key, controller button, or Node Graph.</text>
-<text x="72" y="762" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Tab Items</text>
-<text x="72" y="782" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Preconfigured tab items with name, ID, style selection, formal variable config, and container/control status settings.</text>
-<text x="72" y="812" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Single-Choice List Items</text>
-<text x="72" y="832" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Similar to tab items. Supports scroll direction, list item size, spacing, padding, and layout constraints.</text>
+    <text x="24" y="62" font-size="14" font-weight="500" fill="#1A1B2E">Pause Game on Page Open in Single-Player Mode</text>
+    <text x="24" y="86" font-size="13" fill="#4A4B65">If enabled, opening the page in a single-player stage will pause the game while the page is being used.</text>
 
-<rect x="40" y="878" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-<rect x="40" y="878" width="4" height="50" rx="2" fill="#2D6BE4"/>
-<text x="72" y="908" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Floating Interaction Pages support controller navigation with configurable hint styles, direction targets, and offsets.</text>
+    <rect x="16" y="100" width="1072" height="44" rx="8" fill="#FFF3E0"/>
+    <rect x="16" y="100" width="4" height="44" rx="2" fill="#D93025"/>
+    <text x="32" y="118" font-size="12" fill="#4A4B65">When paused, Sound Effect Assets under Environment, Creature &amp; Enemy Sounds, Character Actions, Combat,</text>
+    <text x="32" y="136" font-size="12" fill="#4A4B65">and Objects will also pause. However, UI Sound Effects will not pause and will continue playing.</text>
 
-<text x="72" y="970" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+    <text x="24" y="170" font-size="14" font-weight="500" fill="#1A1B2E">Controller Initial Selected Control</text>
+    <text x="24" y="194" font-size="13" fill="#4A4B65">Select one from the UI controls configured in the editing interface.</text>
 
-<rect x="40" y="990" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="1022" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Show / Close Floating Interaction Page</text>
-<text x="72" y="1042" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Trigger page visibility through dedicated Node Graph nodes.</text>
-<text x="72" y="1072" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Update List Data</text>
-<text x="72" y="1092" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Dynamically update tab and list item data through Node Graph during runtime.</text>
-<text x="72" y="1122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">When Floating Interaction Page is Triggered</text>
-<text x="72" y="1142" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Server Node Graph Event fires when tabs or single-choice windows are opened or closed.</text>
+    <text x="24" y="224" font-size="14" font-weight="500" fill="#1A1B2E">Enable SFX / Disable SFX</text>
+    <text x="24" y="248" font-size="13" fill="#4A4B65">Sound Effect Asset triggered when the page is opened / closed respectively.</text>
 
-<text x="72" y="1230" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
-<text x="72" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls</text>
-<text x="310" y="1250" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk</text>
+    <text x="560" y="170" font-size="14" font-weight="500" fill="#1A1B2E">Formal Variable Management</text>
+    <text x="560" y="194" font-size="13" fill="#4A4B65">Each page supports configuring a set of formal variables.</text>
+    <text x="560" y="214" font-size="13" fill="#4A4B65">If a formal variable is referenced in the Asset Library, the value</text>
+    <text x="560" y="234" font-size="13" fill="#4A4B65">configured in the current page will be used. Ensure data types match.</text>
+  </g>
 
-<line x1="40" y1="1290" x2="1160" y2="1290" stroke="#E0E0E0" stroke-width="1"/>
-<text x="600" y="1320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <!-- III. Editing Interface -->
+  <text x="48" y="1080" fill="#2D6BE4" font-size="18" font-weight="700">III. Floating Interaction Page Editing Interface</text>
+
+  <g transform="translate(48, 1100)">
+    <rect width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="13" fill="#4A4B65">Functions as a new "UI Layout." Add UI controls to this page and modify their settings.</text>
+    <text x="24" y="50" font-size="13" fill="#4A4B65">Some UI controls are exclusive to the Floating Interaction Page.</text>
+  </g>
+
+  <!-- Close Button -->
+  <text x="48" y="1220" fill="#2D6BE4" font-size="18" font-weight="700">III-A. Interaction Page Close Button</text>
+
+  <g transform="translate(48, 1240)">
+    <rect width="1104" height="320" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Default Behavior</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Included by default. Clicking it closes the entire Floating Interaction Page and all controls within it.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Cannot be removed from the Inherent Container.</text>
+
+    <rect x="16" y="90" width="1072" height="44" rx="8" fill="#FFF3E0"/>
+    <rect x="16" y="90" width="4" height="44" rx="2" fill="#D93025"/>
+    <text x="32" y="108" font-size="12" fill="#4A4B65">If the Inherent Container is not enabled (no Close Button), the page can still be closed with Esc on PC or the</text>
+    <text x="32" y="126" font-size="12" fill="#4A4B65">exit button on a controller. On mobile, the page must be closed through Node Graphs.</text>
+
+    <text x="24" y="162" font-size="14" font-weight="500" fill="#1A1B2E">Styles: Preset Style or Custom</text>
+    <text x="24" y="186" font-size="13" fill="#4A4B65">Custom: Assets for Default, Hover, and Pressed states can be configured freely.</text>
+
+    <text x="24" y="216" font-size="14" font-weight="500" fill="#1A1B2E">Key Settings</text>
+    <text x="24" y="240" font-size="13" fill="#4A4B65">Cannot be modified. Correspond to the close function on PC and controller.</text>
+
+    <text x="24" y="270" font-size="14" font-weight="500" fill="#1A1B2E">Click Response Area (Custom only)</text>
+    <text x="24" y="294" font-size="13" fill="#4A4B65">Clickable | Click Area Preview | Location Offset | Dimensions (Close button cannot modify offset/dimensions)</text>
+  </g>
+
+  <!-- Controller Navigation -->
+  <g transform="translate(48, 1576)">
+    <rect width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="14" width="160" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="96" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Controller Navigation</text>
+
+    <text x="24" y="62" font-size="13" fill="#4A4B65">Supports configuring a navigation hint when a button is focused with the controller joystick.</text>
+
+    <rect x="24" y="78" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="200" y="92" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="650" y="92" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <text x="36" y="126" font-size="12" font-weight="500" fill="#1A1B2E">Selectable via Controller Joystick</text>
+    <text x="300" y="126" font-size="12" fill="#4A4B65">If enabled, displays hint when button is focused through controller navigation</text>
+    <line x1="24" y1="138" x2="1080" y2="138" stroke="#E8E4DA"/>
+
+    <text x="36" y="156" font-size="12" font-weight="500" fill="#1A1B2E">Navigation Hint Style</text>
+    <text x="300" y="156" font-size="12" fill="#4A4B65">Select a preset style for the hint display</text>
+    <line x1="24" y1="168" x2="1080" y2="168" stroke="#E8E4DA"/>
+
+    <text x="36" y="186" font-size="12" font-weight="500" fill="#1A1B2E">Navigation Hint Target / Offset / L/R/U/D</text>
+    <text x="370" y="186" font-size="12" fill="#4A4B65">Up/Down/Left/Right targets, X/Y offset, directional focus snap to configured target</text>
+  </g>
+
+  <!-- Tab -->
+  <text x="48" y="1816" fill="#2D6BE4" font-size="18" font-weight="700">III-B. Tab</text>
+
+  <g transform="translate(48, 1836)">
+    <rect width="1104" height="440" rx="14" fill="#fff" filter="url(#card)"/>
+
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Styles: Preset Style or Custom</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Both styles require configuration of scroll direction: Horizontal or Vertical.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Custom: Supports adding styles to preconfigure multiple tab item styles. Each style allows Default, Hover, Pressed, and Selected states.</text>
+
+    <text x="24" y="108" font-size="14" font-weight="500" fill="#1A1B2E">Tab Settings</text>
+    <text x="24" y="132" font-size="13" fill="#1A1B2E" font-weight="500">Tab Item Size</text><text x="150" y="132" font-size="13" fill="#4A4B65">General settings for each tab item</text>
+    <text x="24" y="152" font-size="13" fill="#1A1B2E" font-weight="500">Spacing</text><text x="90" y="152" font-size="13" fill="#4A4B65">Spacing between tab items</text>
+    <text x="24" y="172" font-size="13" fill="#1A1B2E" font-weight="500">Padding</text><text x="90" y="172" font-size="13" fill="#4A4B65">Margin for top, bottom, left, right sides relative to border</text>
+    <text x="24" y="192" font-size="13" fill="#1A1B2E" font-weight="500">Center If Content Doesn't Fill</text><text x="270" y="192" font-size="13" fill="#4A4B65">Tab items auto-center as a whole</text>
+
+    <text x="24" y="222" font-size="14" font-weight="500" fill="#1A1B2E">Tab Item Configuration</text>
+    <text x="24" y="246" font-size="13" fill="#4A4B65">Preconfigure tab items, statically link associated items. Adjust content through Node Graphs at runtime.</text>
+    <text x="24" y="266" font-size="13" fill="#1A1B2E" font-weight="500">Tab Name / ID</text><text x="160" y="266" font-size="13" fill="#4A4B65">Name and unique identifier for each Tab Item</text>
+    <text x="24" y="286" font-size="13" fill="#1A1B2E" font-weight="500">Tab Style</text><text x="110" y="286" font-size="13" fill="#4A4B65">Select a style configured in the Tab Style settings</text>
+    <text x="24" y="306" font-size="13" fill="#1A1B2E" font-weight="500">Preview Selection State</text><text x="210" y="306" font-size="13" fill="#4A4B65">Shows default display config in editing window</text>
+    <text x="24" y="326" font-size="13" fill="#1A1B2E" font-weight="500">Return to Server Event</text><text x="200" y="326" font-size="13" fill="#4A4B65">Triggers [When Floating Interaction Page is Triggered] event</text>
+
+    <text x="560" y="222" font-size="14" font-weight="500" fill="#1A1B2E">Formal Variable Config</text>
+    <text x="560" y="246" font-size="13" fill="#4A4B65">Link formal variables to specified data or Player Custom Variables.</text>
+
+    <text x="560" y="276" font-size="14" font-weight="500" fill="#1A1B2E">Container Status Settings</text>
+    <text x="560" y="300" font-size="13" fill="#4A4B65">Add page containers, configure show/hide per tab.</text>
+
+    <text x="560" y="330" font-size="14" font-weight="500" fill="#1A1B2E">Control Status Settings</text>
+    <text x="560" y="354" font-size="13" fill="#4A4B65">Add controls to containers, configure show/hide per tab.</text>
+
+    <text x="24" y="380" font-size="14" font-weight="500" fill="#1A1B2E">Interaction Settings</text>
+    <text x="24" y="404" font-size="13" fill="#4A4B65">When hotkey is enabled, tab can be interacted with using the hotkey. Triggers configured sound effect.</text>
+
+    <text x="560" y="380" font-size="14" font-weight="500" fill="#1A1B2E">Controller Navigation</text>
+    <text x="560" y="404" font-size="13" fill="#4A4B65">When controller hotkeys are enabled, Controller Navigation cannot be triggered.</text>
+    <text x="560" y="424" font-size="13" fill="#4A4B65">If not enabled, refer to Close Button navigation config.</text>
+  </g>
+
+  <!-- Single-Choice Window -->
+  <text x="48" y="2316" fill="#2D6BE4" font-size="18" font-weight="700">III-C. Single-Choice Window</text>
+
+  <g transform="translate(48, 2336)">
+    <rect width="1104" height="440" rx="14" fill="#fff" filter="url(#card)"/>
+
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Styles: Custom Only</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Single-choice windows support only Custom Style. Styles can be added to preconfigure multiple list item styles.</text>
+    <text x="24" y="74" font-size="13" fill="#4A4B65">Each style supports Default, Hover, Pressed, and Selected states.</text>
+
+    <text x="24" y="108" font-size="14" font-weight="500" fill="#1A1B2E">List Settings</text>
+    <text x="24" y="132" font-size="13" fill="#1A1B2E" font-weight="500">Scroll Direction</text><text x="160" y="132" font-size="13" fill="#4A4B65">Horizontal or Vertical</text>
+    <text x="24" y="152" font-size="13" fill="#1A1B2E" font-weight="500">List Item Size / Spacing</text><text x="220" y="152" font-size="13" fill="#4A4B65">General settings and spacing between items</text>
+    <text x="24" y="172" font-size="13" fill="#1A1B2E" font-weight="500">Padding</text><text x="90" y="172" font-size="13" fill="#4A4B65">Top, bottom, left, right margins relative to border</text>
+    <text x="24" y="192" font-size="13" fill="#1A1B2E" font-weight="500">Center Align</text><text x="130" y="192" font-size="13" fill="#4A4B65">Items auto-center as a whole</text>
+    <text x="24" y="212" font-size="13" fill="#1A1B2E" font-weight="500">Layout Constraint</text><text x="170" y="212" font-size="13" fill="#4A4B65">Auto Wrap or Fixed Rows</text>
+
+    <text x="24" y="242" font-size="14" font-weight="500" fill="#1A1B2E">List Item Configuration</text>
+    <text x="24" y="266" font-size="13" fill="#1A1B2E" font-weight="500">List Item Name / ID</text><text x="200" y="266" font-size="13" fill="#4A4B65">Name and unique identifier</text>
+    <text x="24" y="286" font-size="13" fill="#1A1B2E" font-weight="500">List Item Style</text><text x="150" y="286" font-size="13" fill="#4A4B65">Select from configured list styles</text>
+    <text x="24" y="306" font-size="13" fill="#1A1B2E" font-weight="500">Preview Selection State</text><text x="210" y="306" font-size="13" fill="#4A4B65">Shows default display in editing window</text>
+    <text x="24" y="326" font-size="13" fill="#1A1B2E" font-weight="500">Return to Server Event</text><text x="200" y="326" font-size="13" fill="#4A4B65">Triggers [When Floating Interaction Page is Triggered]</text>
+
+    <text x="560" y="242" font-size="14" font-weight="500" fill="#1A1B2E">Formal Variable / Container / Control</text>
+    <text x="560" y="266" font-size="13" fill="#4A4B65">Same as Tab: formal variable linking, container show/hide, control show/hide.</text>
+
+    <text x="24" y="360" font-size="14" font-weight="500" fill="#1A1B2E">Interaction Settings</text>
+    <text x="24" y="384" font-size="13" fill="#4A4B65">Interacting with this single-choice window triggers the configured sound effect.</text>
+
+    <text x="24" y="414" font-size="14" font-weight="500" fill="#1A1B2E">Controller Navigation</text>
+    <text x="24" y="434" font-size="13" fill="#4A4B65">Controller Selection Behavior: Select on focus change or after pressing Confirm. Same hint/navigation config as Close Button.</text>
+  </g>
+
+  <!-- IV. Node Graph -->
+  <text x="48" y="2816" fill="#2D6BE4" font-size="18" font-weight="700">IV. Manage Floating Interaction Pages with Node Graphs</text>
+
+  <g transform="translate(48, 2836)">
+    <rect width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="13" fill="#4A4B65">Tabs and single-choice windows are collectively referred to as [List] when referenced in Nodes or Output Parameters.</text>
+
+    <rect x="24" y="50" width="250" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="149" y="70" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Show Floating Interaction Page</text>
+
+    <rect x="290" y="50" width="250" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="415" y="70" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Close Floating Interaction Page</text>
+
+    <rect x="24" y="106" width="350" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="199" y="126" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Update Floating Interaction Page List Data</text>
+
+    <rect x="390" y="106" width="350" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="565" y="126" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">When Floating Interaction Page is Triggered</text>
+
+    <rect x="16" y="164" width="1072" height="80" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="164" width="4" height="80" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="188" font-size="13" font-weight="500" fill="#1A1B2E">Node Graph Operations</text>
+    <text x="32" y="210" font-size="12" fill="#4A4B65">Show: Opens the page at runtime. Close: Closes the page programmatically.</text>
+    <text x="32" y="228" font-size="12" fill="#4A4B65">Update List Data: Dynamically update tab/list items. When Triggered: Server event fires on tab/list interaction.</text>
+  </g>
+
+  <text x="48" y="3136" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6" target="_blank">
+    <text x="48" y="3158" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Floating Interaction Page Controls</text>
+  </a>
+
+  <text x="600" y="3430" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

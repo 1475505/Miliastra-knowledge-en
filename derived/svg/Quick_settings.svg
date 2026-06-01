@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1180" width="1200" height="1180">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2310">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -11,122 +11,215 @@
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
+  <style>
+    text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+  </style>
 
-  <!-- Background -->
-  <rect x="0" y="0" width="1200" height="1180" fill="#F9F7F2"/>
-
-  <!-- Top Gradient Bar -->
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="2310" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
   <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Quick Settings</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Quick Settings</text>
+  <text x="380" y="82" fill="#4A4B65" font-size="16">Gear icon in top-right of editor</text>
 
-  <!-- Section I: Overview -->
-  <rect x="40" y="100" width="1120" height="108" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Overview</text>
-  <text x="68" y="162" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Quick Settings is accessed by clicking the gear (settings) icon in the top-right corner of the editor interface.</text>
-  <text x="68" y="186" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">It provides a collection of toggles, sliders, and controls for customizing camera, placement, display, and other editing preferences.</text>
+  <!-- I. Definition -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Definition</text>
 
-  <!-- Section II: Camera Settings -->
-  <rect x="40" y="228" width="1120" height="148" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="260" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Camera Settings</text>
-  <text x="68" y="292" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Camera Horizontal Speed:</tspan>
-    The horizontal movement speed of the camera in the editing interface.
-  </text>
-  <text x="68" y="316" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Camera Vertical Speed:</tspan>
-    The vertical movement speed of the camera in the editing interface.
-  </text>
-  <text x="68" y="340" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Horizontal Lock:</tspan>
-    When enabled, the camera moves parallel to the ground surface.
-  </text>
+  <rect x="48" y="164" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">Creation-specific settings divided into Behavior Modes, Not-in-Battle Behavior, and Battle Areas.</text>
+  <text x="72" y="214" fill="#4A4B65" font-size="14">Accessed via the gear icon in the top-right of the editor or through the entity details panel.</text>
 
-  <!-- Section III: Placement Settings -->
-  <rect x="40" y="396" width="1120" height="256" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="428" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Placement Settings</text>
-  <text x="68" y="460" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Ground-Level Placement:</tspan>
-    When enabled, placed units are positioned flush with the terrain.
-  </text>
-  <text x="68" y="484" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Surface Adsorption:</tspan>
-    When enabled, placed units will snap to nearby units.
-  </text>
-  <text x="68" y="508" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Normalize Position After Surface Adsorption:</tspan>
-    Available only when Surface Adsorption is enabled.
-  </text>
-  <text x="68" y="532" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When enabled, units automatically rotate to align when snapping to other units.</text>
-  <text x="68" y="556" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Center Align:</tspan>
-    When enabled, the center point of the placed unit aligns automatically with nearby units.
-  </text>
-  <text x="68" y="580" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Alignment Position:</tspan>
-    Specifies the coordinate system used for Center Align.
-  </text>
-  <text x="68" y="604" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Alt Copy Quantity:</tspan>
-    The number of copies created when holding Alt for batch copying.
-  </text>
+  <!-- II. Behavior Mode -->
+  <text x="48" y="260" fill="#2D6BE4" font-size="18" font-weight="700">II. Behavior Mode</text>
 
-  <!-- Section IV: Display Toggles -->
-  <rect x="40" y="672" width="1120" height="188" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="704" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Display Toggles</text>
-  <text x="68" y="736" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Show Distance When Moving:</tspan>
-    When enabled, displays the unit's relative movement at the bottom of the interface while moving.
-  </text>
-  <text x="68" y="760" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Creation Entering Battle Range:</tspan>
-    Toggle whether to display the battle range for creations.
-  </text>
-  <text x="68" y="784" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Always Show Preset Points:</tspan>
-    Toggle whether Preset Points are always shown.
-  </text>
-  <text x="68" y="808" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Empty Object Hint Model Permanent Visibility:</tspan>
-    Toggle whether the indicator model for empty objects is always shown.
-  </text>
-  <text x="68" y="832" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Always Show Path:</tspan>
-    Toggle whether paths are always shown.
-  </text>
+  <rect x="48" y="276" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="304" fill="#4A4B65" font-size="14">Supports Behavior Mode selection for Creation Entities. At runtime, Entities autonomously perform</text>
+  <text x="72" y="326" fill="#4A4B65" font-size="14">actions such as movement, battle entry/exit based on the configured Behavior Mode.</text>
+  <text x="72" y="348" fill="#4A4B65" font-size="14">Modes selected from enumerated options in pre-provided behavior mode pool. Each mode provides different optional actions for in-battle and not-in-battle.</text>
 
-  <!-- Section V: Other Settings -->
-  <rect x="40" y="880" width="1120" height="116" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="912" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Other Settings</text>
-  <text x="68" y="944" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Environment Settings:</tspan>
-    Configure environment settings for the current scene, including background, lighting, and weather.
-  </text>
-  <text x="68" y="968" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Hotkey Overview:</tspan>
-    Click to view the list of available shortcut keys for the editing interface.
-  </text>
+  <!-- III. Not-in-Battle Behavior -->
+  <text x="48" y="396" fill="#2D6BE4" font-size="18" font-weight="700">III. Not-in-Battle Behavior</text>
 
-  <!-- Tip Box -->
-  <rect x="40" y="1016" width="1120" height="68" rx="14" fill="#E8EEFB"/>
-  <rect x="40" y="1016" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="1044" font-size="14" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip</text>
-  <text x="68" y="1066" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Alt Copy Quantity controls the number of copies created when holding the Alt key while dragging a transform tool axis for batch copying.</text>
+  <!-- Wandering -->
+  <rect x="48" y="412" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="440" fill="#1A1B2E" font-size="16" font-weight="500">Wandering</text>
+  <text x="72" y="464" fill="#4A4B65" font-size="14">Supported by all Creations when not in battle.</text>
+  <text x="72" y="488" fill="#4A4B65" font-size="14">Randomly moves within Territory Range.</text>
 
-  <!-- Related Documentation -->
-  <text x="68" y="1112" font-size="12" fill="#8B8DA0" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+  <text x="72" y="516" fill="#1A1B2E" font-size="14" font-weight="500">Movement Area:</text>
+  <text x="72" y="538" fill="#4A4B65" font-size="14">Spherical range centered on spawn coordinates.</text>
+  <text x="72" y="560" fill="#1A1B2E" font-size="14" font-weight="500">Area Radius (m):</text>
+  <text x="72" y="582" fill="#4A4B65" font-size="14">Radius of the spherical movement area.</text>
+  <text x="72" y="604" fill="#1A1B2E" font-size="14" font-weight="500">Movement Interval (s) / Single Movement Distance (m)</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn4bsi5lb58" target="_blank">
-    <text x="68" y="1132" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Main Interface</text>
-  </a>
+  <!-- Patrol -->
+  <rect x="612" y="412" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="440" fill="#1A1B2E" font-size="16" font-weight="500">Patrol</text>
+  <text x="636" y="464" fill="#4A4B65" font-size="14">Some Creations support patrol when not in battle.</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnffmieeqbg" target="_blank">
-    <text x="68" y="1150" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Entity Placement</text>
+  <text x="636" y="492" fill="#1A1B2E" font-size="14" font-weight="500">Initial Effective Patrol Template:</text>
+  <text x="636" y="514" fill="#4A4B65" font-size="14">Dropdown enumerates patrol templates. Checkbox toggles active.</text>
+
+  <text x="636" y="542" fill="#1A1B2E" font-size="14" font-weight="500">Loop Type:</text>
+  <text x="636" y="564" fill="#4A4B65" font-size="14">One-Way / Round Trip / Loop</text>
+
+  <text x="636" y="590" fill="#1A1B2E" font-size="14" font-weight="500">Patrol Start Position:</text>
+  <text x="636" y="604" fill="#4A4B65" font-size="14">Nearest point / Starting point</text>
+
+  <!-- Patrol Template Details -->
+  <rect x="48" y="624" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="652" fill="#1A1B2E" font-size="16" font-weight="500">Patrol Template Configuration</text>
+
+  <text x="72" y="680" fill="#1A1B2E" font-size="14" font-weight="500">Initially Effective:</text>
+  <text x="280" y="680" fill="#4A4B65" font-size="14">If enabled, template takes effect when creation is created. Only one active per creation.</text>
+
+  <text x="72" y="706" fill="#1A1B2E" font-size="14" font-weight="500">Patrol Path:</text>
+  <text x="280" y="706" fill="#4A4B65" font-size="14">Select pre-configured paths from Path Management Tool.</text>
+
+  <text x="72" y="732" fill="#1A1B2E" font-size="14" font-weight="500">Travel Speed:</text>
+  <text x="280" y="732" fill="#4A4B65" font-size="14">Walk or Run options available.</text>
+
+  <text x="72" y="758" fill="#1A1B2E" font-size="14" font-weight="500">Arrival Detection Radius (m):</text>
+  <text x="280" y="758" fill="#4A4B65" font-size="14">If creation within radius of waypoint, considered arrived.</text>
+
+  <text x="72" y="784" fill="#1A1B2E" font-size="14" font-weight="500">Stay Duration (s):</text>
+  <text x="280" y="784" fill="#4A4B65" font-size="14">How long creation remains at waypoint after arrival.</text>
+
+  <text x="72" y="810" fill="#1A1B2E" font-size="14" font-weight="500">Turn After Reaching Waypoint / Notify Node Graph on Arrival:</text>
+  <text x="280" y="810" fill="#4A4B65" font-size="14">Optional toggles per waypoint.</text>
+
+  <!-- IV. Battle Area -->
+  <text x="48" y="864" fill="#2D6BE4" font-size="18" font-weight="700">IV. Battle Area</text>
+
+  <rect x="48" y="880" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="908" fill="#4A4B65" font-size="14">Entity's autonomous detection of hostile entities. If detection succeeds, enters battle with detected entity as target.</text>
+  <text x="72" y="934" fill="#4A4B65" font-size="14">All behavior modes include: Range Detection and FOV Detection.</text>
+  <text x="72" y="960" fill="#4A4B65" font-size="14">Preview Battle Area: Enable to observe Horizontal Range of Battle Area.</text>
+
+  <!-- V. Details Editor - Combat -->
+  <text x="48" y="1020" fill="#2D6BE4" font-size="18" font-weight="700">V. Details Editor - Combat Settings</text>
+
+  <!-- Battle Entry -->
+  <rect x="48" y="1036" width="540" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1064" fill="#1A1B2E" font-size="16" font-weight="500">Battle Entry Settings</text>
+
+  <text x="72" y="1092" fill="#1A1B2E" font-size="14" font-weight="500">Detection Range:</text>
+  <text x="72" y="1114" fill="#4A4B65" font-size="14">When hostile entities within range, creation targets and enters battle.</text>
+
+  <text x="72" y="1142" fill="#1A1B2E" font-size="14" font-weight="500">FOV Type:</text>
+  <text x="72" y="1164" fill="#4A4B65" font-size="14">Full FOV (sphere radius) or FOV Cone (cone distance).</text>
+
+  <text x="72" y="1192" fill="#1A1B2E" font-size="14" font-weight="500">Coordinated Engagement Distance (m):</text>
+  <text x="72" y="1214" fill="#4A4B65" font-size="14">Other Creations within this distance also join battle.</text>
+
+  <text x="72" y="1242" fill="#4A4B65" font-size="14">Preview Range available for both Detection and FOV.</text>
+
+  <!-- Battle Exit -->
+  <rect x="612" y="1036" width="540" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="1064" fill="#1A1B2E" font-size="16" font-weight="500">Battle Exit Settings</text>
+
+  <text x="636" y="1092" fill="#1A1B2E" font-size="14" font-weight="500">Out-of-Battle Distance (m):</text>
+  <text x="636" y="1114" fill="#4A4B65" font-size="14">If distance to target exceeds configured value, creation leaves battle.</text>
+
+  <text x="636" y="1142" fill="#1A1B2E" font-size="14" font-weight="500">Leave Battle on Pathfinding Failure:</text>
+  <text x="636" y="1164" fill="#4A4B65" font-size="14">When no valid path to target, creation leaves battle.</text>
+
+  <text x="636" y="1192" fill="#1A1B2E" font-size="14" font-weight="500">Leaving Battle Delay (s):</text>
+  <text x="636" y="1214" fill="#4A4B65" font-size="14">Delay before leaving battle after pathfinding failure.</text>
+
+  <text x="636" y="1242" fill="#4A4B65" font-size="14">Preview Out-of-Battle Distance available.</text>
+
+  <!-- Territory -->
+  <rect x="48" y="1268" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1296" fill="#1A1B2E" font-size="16" font-weight="500">Territory Settings</text>
+
+  <text x="72" y="1324" fill="#1A1B2E" font-size="14" font-weight="500">Territory:</text>
+  <text x="280" y="1324" fill="#4A4B65" font-size="14">None, Sphere, or Cylinder. Centered at creation Location, does not move with creation.</text>
+
+  <text x="72" y="1350" fill="#4A4B65" font-size="14">Creation's movement range is restricted within the Territory.</text>
+
+  <text x="72" y="1376" fill="#1A1B2E" font-size="14" font-weight="500">Leave Battle When Player Leaves Area:</text>
+  <text x="280" y="1376" fill="#4A4B65" font-size="14">If target leaves territory, creation leaves battle after delay.</text>
+
+  <text x="72" y="1400" fill="#1A1B2E" font-size="14" font-weight="500">Leaving Battle Delay (s):</text>
+  <text x="280" y="1400" fill="#4A4B65" font-size="14">Delay after target entity leaves territory range.</text>
+
+  <!-- VI. Skills -->
+  <text x="48" y="1448" fill="#2D6BE4" font-size="18" font-weight="700">VI. Details Editor - Skills</text>
+
+  <rect x="48" y="1464" width="540" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1492" fill="#1A1B2E" font-size="16" font-weight="500">Basic Settings</text>
+  <text x="72" y="1518" fill="#4A4B65" font-size="14">Some creation logic parameters are configurable.</text>
+  <text x="72" y="1542" fill="#4A4B65" font-size="14">Example: Abyss Mage "Powerful Elemental Ward" parameter adjusts elemental value of Ward.</text>
+  <text x="72" y="1568" fill="#4A4B65" font-size="14">Adjust behavior and logic during runtime per creation type.</text>
+  <rect x="72" y="1584" width="160" height="26" rx="13" fill="#FFF3E0"/>
+  <text x="152" y="1602" fill="#4A4B65" font-size="12" font-weight="500" text-anchor="middle">Varies by Creation</text>
+
+  <rect x="612" y="1464" width="540" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="1492" fill="#1A1B2E" font-size="16" font-weight="500">Skill Settings</text>
+  <text x="636" y="1518" fill="#4A4B65" font-size="14">Enumerates some Creation skills with adjustable cooldowns.</text>
+
+  <text x="636" y="1546" fill="#1A1B2E" font-size="14" font-weight="500">Enable This Skill:</text>
+  <text x="636" y="1568" fill="#4A4B65" font-size="14">If enabled and Behavior Mode includes skill, it will be used.</text>
+
+  <text x="636" y="1594" fill="#1A1B2E" font-size="14" font-weight="500">Initial CD Range (s):</text>
+  <text x="636" y="1616" fill="#4A4B65" font-size="14">Random time set as Effective Cooldown before first use.</text>
+
+  <!-- VII. Node Graph Management -->
+  <text x="48" y="1664" fill="#2D6BE4" font-size="18" font-weight="700">VII. Managing Creation Patrol via Node Graphs</text>
+
+  <rect x="48" y="1680" width="1104" height="340" rx="14" fill="#fff" filter="url(#card)"/>
+
+  <!-- Node 1 -->
+  <text x="72" y="1708" fill="#1A1B2E" font-size="14" font-weight="500">1. When Creation Reaches Patrol Waypoint</text>
+  <text x="72" y="1730" fill="#4A4B65" font-size="14">Event received when "Send Node Graph Event on Arrival" is checked for a waypoint.</text>
+  <text x="72" y="1752" fill="#4A4B65" font-size="14">Outputs: Creation Entity, Creation GUID, Current Patrol Template ID, Current Global Path ID, Current/Next Waypoint ID.</text>
+
+  <line x1="72" y1="1766" x2="1128" y2="1766" stroke="#E8E4DA" stroke-width="1"/>
+
+  <!-- Node 2 -->
+  <text x="72" y="1788" fill="#1A1B2E" font-size="14" font-weight="500">2. Switch Creation Patrol Template</text>
+  <text x="72" y="1810" fill="#4A4B65" font-size="14">Input: Creation Entity + Patrol Template ID. If template ID does not exist, no effect.</text>
+
+  <line x1="72" y1="1824" x2="1128" y2="1824" stroke="#E8E4DA" stroke-width="1"/>
+
+  <!-- Node 3 -->
+  <text x="72" y="1846" fill="#1A1B2E" font-size="14" font-weight="500">3. Get Current Creation's Patrol Template</text>
+  <text x="72" y="1868" fill="#4A4B65" font-size="14">Outputs: Creation Entity, Patrol Template ID, Global Path ID, Target Waypoint ID.</text>
+
+  <line x1="72" y1="1882" x2="1128" y2="1882" stroke="#E8E4DA" stroke-width="1"/>
+
+  <!-- Node 4 -->
+  <text x="72" y="1904" fill="#1A1B2E" font-size="14" font-weight="500">4. Get Aggro List of Creation in Default Mode</text>
+  <text x="72" y="1926" fill="#4A4B65" font-size="14">Only correct when hostility config is "Default Type". Output: unordered Entity List of current hostility targets.</text>
+
+  <line x1="72" y1="1940" x2="1128" y2="1940" stroke="#E8E4DA" stroke-width="1"/>
+
+  <!-- Node 5 -->
+  <text x="72" y="1962" fill="#1A1B2E" font-size="14" font-weight="500">5. Get Creation's Current Target</text>
+  <text x="72" y="1984" fill="#4A4B65" font-size="14">Output: Target Entity. May differ based on behavior (attacking enemy vs healing ally).</text>
+
+  <!-- Tip -->
+  <rect x="48" y="2032" width="1104" height="44" rx="10" fill="#E8EEFB"/>
+  <rect x="48" y="2032" width="4" height="44" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="2058" fill="#4A4B65" font-size="13">Full behavior mode enumeration: see Creation Behavior Mode Archive. Full skill details: see Creation Skills Description.</text>
+
+  <!-- VIII. Default CD Range -->
+  <text x="48" y="2112" fill="#2D6BE4" font-size="18" font-weight="700">VIII. Skill Cooldown Details</text>
+
+  <rect x="48" y="2128" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="2156" fill="#1A1B2E" font-size="14" font-weight="500">Default CD Range (s):</text>
+  <text x="72" y="2178" fill="#4A4B65" font-size="14">Random time within configured range set as actual cooldown. After using skill, cannot use again during cooldown.</text>
+  <text x="72" y="2200" fill="#4A4B65" font-size="14">Currently provides editing for some melee skills, ranged skills, and special skills.</text>
+
+  <!-- Source Links -->
+  <text x="48" y="2248" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3rgo0c16c8" target="_blank">
+    <text x="48" y="2266" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: General Settings (Guide)</text>
   </a>
 
   <!-- Footer -->
-  <text x="600" y="1170" font-size="11" fill="#8B8DA0" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <text x="600" y="2290" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

@@ -1,93 +1,227 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1540">
-<defs>
-  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-  </linearGradient>
-  <filter id="card">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-  </filter>
-  <filter id="elevated">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-  </filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2280" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
 
-<rect width="1200" height="1540" fill="#F9F7F2"/>
-<rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="2280" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect x="100" y="24" width="1000" height="70" rx="14" fill="#FFF" filter="url(#elevated)"/>
-<rect x="100" y="24" width="4" height="70" fill="#2D6BE4" rx="2"/>
-<text x="120" y="58" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="24" font-weight="bold" fill="#1A1B2E">Player &amp; Character</text>
-<text x="120" y="76" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#8B8DA0">Player entity configuration and character entity management in Miliastra</text>
+  <!-- Title Card -->
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Player &amp; Character</text>
+  <text x="420" y="72" font-size="16" fill="#4A4B65" dominant-baseline="middle">Abstract ownership vs physical control units</text>
 
-<text x="100" y="122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. Player</text>
+  <!-- I. The Concept of Player -->
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. The Concept of Player</text>
 
-<rect x="100" y="140" width="1000" height="85" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="164" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Entity</text>
-<text x="120" y="184" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Player is a special abstract entity type used to describe the "Character Ownership Concept" in the game.</text>
-<text x="120" y="204" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In Teyvat mode, multiple characters can be added to the player's team. In Beyond Mode, each player corresponds to only one character.</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Player is a special abstract entity type used to describe the "Character Ownership Concept."</text>
+    <text x="24" y="56" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">In Teyvat:</tspan> Multiple characters can be added to the player's team.</text>
+    <text x="24" y="80" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">In Beyond Mode:</tspan> Each player corresponds to only one character (1:1 mapping).</text>
+    <text x="24" y="108" font-size="13" fill="#4A4B65">The player entity is a pure logical entity — not directly placed in the scene, no placement information.</text>
+    <text x="24" y="132" font-size="13" fill="#4A4B65">Created during stage initialization, removed when stage is destroyed or user exits to lobby.</text>
+  </g>
 
-<rect x="100" y="245" width="1000" height="50" rx="8" fill="#E8EEFB"/>
-<rect x="100" y="245" width="4" height="50" fill="#2D6BE4" rx="2"/>
-<text x="118" y="262" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="bold" fill="#1A1B2E">Multiplayer Support</text>
-<text x="118" y="280" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Player templates support configuration of effective targets, spawn points, and revive rules for multiplayer gameplay.</text>
+  <!-- II. Player Configuration -->
+  <text x="48" y="348" font-size="18" font-weight="700" fill="#2D6BE4">II. Player Configuration</text>
+  <text x="280" y="348" font-size="13" fill="#8B8DA0">Via player template in Combat Preset</text>
 
-<rect x="100" y="315" width="1000" height="170" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="339" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Basic Information</text>
-<text x="120" y="363" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Effective Target:</tspan> Determines which players this template applies to</text>
-<text x="120" y="383" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Level:</tspan> Override the initial level of the class</text>
-<text x="120" y="403" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Spawn Point:</tspan> List of available spawn points for players</text>
-<text x="120" y="423" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initial Class:</tspan> The initial class for this player template</text>
-<text x="120" y="443" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Revive:</tspan> The revival rules that apply to the player</text>
-<text x="120" y="463" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Special Knockdown Damage:</tspan> HP percentage deducted from drowning or falling damage</text>
+  <g transform="translate(48, 368)">
+    <rect width="1104" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-<rect x="100" y="505" width="1000" height="95" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="529" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Components</text>
-<text x="120" y="553" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Available components that can be attached to the player entity include:</text>
-<text x="120" y="573" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Custom Variables</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Global Timer</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Unit Status</tspan></text>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">1. Basic Information</text>
 
-<rect x="100" y="620" width="1000" height="65" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="644" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Player Node Graph</text>
-<text x="120" y="668" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Node graphs attached to the player entity handle player-level logic and event processing.</text>
+    <text x="24" y="58" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Effective Target</tspan> — Determines which players this template applies to.</text>
+    <text x="24" y="82" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Level</tspan> — Override the initial level of the class.</text>
+    <text x="24" y="106" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Spawn Point</tspan> — List of available spawn points for players (see Preset Points).</text>
+    <text x="24" y="130" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Initial Class</tspan> — The initial class for this player template.</text>
+    <text x="24" y="154" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Revive</tspan> — The revival rules that apply to the player.</text>
+    <text x="24" y="178" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Special Knockdown Damage</tspan> — HP percentage deducted on defeat by special circumstances</text>
+    <text x="24" y="198" font-size="13" fill="#4A4B65">(drowning, falling damage, etc.).</text>
 
-<rect x="100" y="705" width="1000" height="130" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="729" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Runtime Characteristics</text>
-<text x="120" y="753" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Non-Physical Entity:</tspan> The player entity is a pure logical entity without a physical presence.</text>
-<text x="120" y="773" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">No Placement Information:</tspan> Player entities are not directly placed in the scene.</text>
-<text x="120" y="793" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Life Cycle:</tspan> Created during stage initialization and removed when the stage is destroyed.</text>
-<text x="120" y="813" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">When the user actively exits and returns to the lobby, the player entity will be removed.</text>
+    <rect x="24" y="214" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-<text x="100" y="880" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Character</text>
+    <text x="24" y="242" font-size="16" font-weight="500" fill="#1A1B2E">2. Components</text>
+    <text x="24" y="266" font-size="14" fill="#4A4B65">Available Components for Player Entity:</text>
 
-<rect x="100" y="898" width="1000" height="70" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="922" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Entity</text>
-<text x="120" y="942" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Character entities are actual units that players control during gameplay, including walking, running, climbing, and flying units with physical presence.</text>
+    <rect x="24" y="282" width="340" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="194" y="302" font-size="12" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Custom Variables</text>
 
-<rect x="100" y="988" width="1000" height="165" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1012" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Template Configuration</text>
-<text x="120" y="1036" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In Beyond Mode, the character template exists as part of the player template, accessible under the character editing tab.</text>
-<text x="120" y="1060" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Tab Overview:</text>
-<text x="140" y="1080" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Basic Information Tab:</tspan> Sound effect-related information</text>
-<text x="140" y="1100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Specialized Configuration Tab:</tspan> Combat-related parameters</text>
-<text x="140" y="1120" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Components Tab:</tspan> Add or view components on character entities</text>
-<text x="140" y="1140" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Node Graph Tab:</tspan> Add or view node graphs on character entities</text>
+    <rect x="380" y="282" width="340" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="550" y="302" font-size="12" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Global Timer</text>
 
-<rect x="100" y="1173" width="1000" height="130" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1197" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Available Character Components</text>
-<text x="120" y="1221" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Collision Trigger | Custom Variables | Global Timer | Unit Status | VFX Playing</text>
-<text x="120" y="1241" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Custom Attachment Points | Collision Trigger Source | Sound Effect Player | Inventory</text>
-<text x="120" y="1261" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Loots | Nameplate | Text Bubble | Scan Tag | Mini-Map Marker</text>
-<text x="120" y="1285" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Additionally, there are <tspan font-weight="bold" fill="#1A1B2E">equipment slot components</tspan> that can only be added to characters.</text>
+    <rect x="736" y="282" width="340" height="40" rx="8" fill="#E8EEFB"/>
+    <text x="906" y="302" font-size="12" font-weight="500" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Unit Status</text>
 
-<rect x="100" y="1323" width="1000" height="115" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1347" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Character Runtime Characteristics</text>
-<text x="120" y="1371" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Dynamic Initialization:</tspan> Characters are dynamically initialized from template configs during gameplay; no GUID is assigned.</text>
-<text x="120" y="1391" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">HP=0 Events:</tspan> The character entity receives both Entity Destroyed and Entity Removed/Destroyed events.</text>
-<text x="120" y="1411" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Co-Op Mode:</tspan> If a player actively returns to the lobby, the stage receives the character's removal event.</text>
+    <rect x="24" y="338" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-<text x="100" y="1476" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq6byic6xlo" target="_blank"><text x="100" y="1496" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Player</text></a>
-<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhh7pxrmalzy" target="_blank"><text x="100" y="1516" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Character</text></a>
+    <text x="24" y="366" font-size="16" font-weight="500" fill="#1A1B2E">3. Node Graph</text>
+    <text x="24" y="390" font-size="14" fill="#4A4B65">Node Graph Configuration Tab — add or view node graphs attached to the player entity.</text>
+    <text x="24" y="414" font-size="13" fill="#4A4B65">Player entities persist throughout the stage lifecycle and can drive stage-wide logic.</text>
+  </g>
 
-<text x="600" y="1530" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <!-- III. Player Runtime Characteristics -->
+  <text x="48" y="848" font-size="18" font-weight="700" fill="#2D6BE4">III. Player Runtime Characteristics</text>
+
+  <g transform="translate(48, 868)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <rect x="24" y="16" width="340" height="56" rx="10" fill="#F4F1EA"/>
+    <text x="194" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Non-Physical Entity</text>
+    <text x="194" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Pure logical entity, no physical form.</text>
+
+    <rect x="380" y="16" width="340" height="56" rx="10" fill="#F4F1EA"/>
+    <text x="550" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">No Placement Information</text>
+    <text x="550" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Not placed in scene directly.</text>
+
+    <rect x="736" y="16" width="340" height="56" rx="10" fill="#F4F1EA"/>
+    <text x="906" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Life Cycle</text>
+    <text x="906" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Created at init, removed on destroy/exit.</text>
+
+    <text x="24" y="96" font-size="13" fill="#4A4B65">When the user actively exits and returns to the lobby, the player entity will be removed.</text>
+    <text x="24" y="120" font-size="13" fill="#4A4B65">Player entity is created during stage initialization and removed when the stage is destroyed.</text>
+  </g>
+
+  <!-- IV. Character Concept -->
+  <text x="48" y="1048" font-size="18" font-weight="700" fill="#2D6BE4">IV. Character — The Physical Control Unit</text>
+
+  <g transform="translate(48, 1068)">
+    <rect width="1104" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Unlike player entities, character entities are the actual units that players control during</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">the game — walking, running, climbing, flying units with physical presence.</text>
+
+    <text x="24" y="80" font-size="14" font-weight="500" fill="#1A1B2E">Player-Character Mapping:</text>
+    <text x="24" y="104" font-size="13" fill="#4A4B65">In Beyond Mode, players and characters are mapped one-to-one. The template configuration</text>
+    <text x="24" y="124" font-size="13" fill="#4A4B65">of characters exists as part of the player template, under the character editing tab.</text>
+  </g>
+
+  <!-- V. Character Template Tabs -->
+  <text x="48" y="1248" font-size="18" font-weight="700" fill="#2D6BE4">V. Character Template Configuration</text>
+
+  <g transform="translate(48, 1268)">
+    <rect width="1104" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <rect x="24" y="16" width="516" height="64" rx="10" fill="#E8EEFB"/>
+    <text x="40" y="36" font-size="13" font-weight="500" fill="#1A1B2E">Basic Information Tab</text>
+    <text x="40" y="56" font-size="12" fill="#4A4B65">Character section contains only sound effect-related info</text>
+    <text x="40" y="72" font-size="12" fill="#4A4B65">compared to other entity types.</text>
+
+    <rect x="564" y="16" width="516" height="64" rx="10" fill="#E8EEFB"/>
+    <text x="580" y="36" font-size="13" font-weight="500" fill="#1A1B2E">Specialized Configuration Tab</text>
+    <text x="580" y="56" font-size="12" fill="#4A4B65">Character section contains only combat-related</text>
+    <text x="580" y="72" font-size="12" fill="#4A4B65">parameters compared to other entity types.</text>
+
+    <rect x="24" y="96" width="516" height="56" rx="10" fill="#E8EEFB"/>
+    <text x="40" y="116" font-size="13" font-weight="500" fill="#1A1B2E">Components Tab</text>
+    <text x="40" y="136" font-size="12" fill="#4A4B65">Add or view components attached to character entities.</text>
+
+    <rect x="564" y="96" width="516" height="56" rx="10" fill="#E8EEFB"/>
+    <text x="580" y="116" font-size="13" font-weight="500" fill="#1A1B2E">Node Graph Tab</text>
+    <text x="580" y="136" font-size="12" fill="#4A4B65">Add or view node graphs for character entities.</text>
+
+    <rect x="24" y="168" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <text x="24" y="196" font-size="14" font-weight="500" fill="#1A1B2E">Available Components for Character Entities:</text>
+
+    <rect x="24" y="212" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="149" y="230" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Collision Trigger</text>
+    <rect x="286" y="212" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="411" y="230" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Custom Variables</text>
+    <rect x="548" y="212" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="673" y="230" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Global Timer</text>
+    <rect x="810" y="212" width="266" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="943" y="230" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Unit Status</text>
+
+    <rect x="24" y="256" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="149" y="274" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">VFX Playing</text>
+    <rect x="286" y="256" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="411" y="274" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Custom Attachment Points</text>
+    <rect x="548" y="256" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="673" y="274" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Collision Trigger Source</text>
+    <rect x="810" y="256" width="266" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="943" y="274" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Sound Effect Player</text>
+  </g>
+
+  <!-- VI. More Character Components -->
+  <text x="48" y="1588" font-size="18" font-weight="700" fill="#2D6BE4">VI. Additional Character Components</text>
+
+  <g transform="translate(48, 1608)">
+    <rect width="1104" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <rect x="24" y="16" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="149" y="34" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Inventory</text>
+    <rect x="286" y="16" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="411" y="34" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Loots</text>
+    <rect x="548" y="16" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="673" y="34" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Nameplate</text>
+    <rect x="810" y="16" width="266" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="943" y="34" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Text Bubble</text>
+
+    <rect x="24" y="60" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="149" y="78" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Scan Tag</text>
+    <rect x="286" y="60" width="250" height="36" rx="8" fill="#F4F1EA"/>
+    <text x="411" y="78" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Mini-Map Marker</text>
+    <rect x="548" y="60" width="250" height="36" rx="8" fill="#FFF3E0"/>
+    <text x="673" y="78" font-size="11" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Equipment Slots (Character-only)</text>
+
+    <text x="24" y="120" font-size="13" fill="#4A4B65">Equipment slot components can only be added to character entities — not to other entity types.</text>
+    <text x="24" y="144" font-size="13" fill="#4A4B65">See the Equipment documentation for details on slot configuration.</text>
+  </g>
+
+  <!-- VII. Character Runtime Characteristics -->
+  <text x="48" y="1808" font-size="18" font-weight="700" fill="#2D6BE4">VII. Character Runtime Characteristics</text>
+
+  <g transform="translate(48, 1828)">
+    <rect width="1104" height="320" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <circle cx="44" cy="32" r="14" fill="#2D6BE4"/>
+    <text x="44" y="33" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="68" y="33" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">No GUID</text>
+    <text x="68" y="56" font-size="13" fill="#4A4B65">Characters are dynamically initialized from template configs — no corresponding GUID.</text>
+
+    <rect x="24" y="72" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <circle cx="44" cy="98" r="14" fill="#2D6BE4"/>
+    <text x="44" y="99" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="68" y="99" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">HP Zero Events</text>
+    <text x="68" y="122" font-size="13" fill="#4A4B65">When a character's HP reaches zero, the node graph on the character entity can receive</text>
+    <text x="68" y="142" font-size="13" fill="#4A4B65">both the Entity Destroyed event and the Entity Removed/Destroyed event.</text>
+    <text x="68" y="166" font-size="13" fill="#4A4B65">In contrast, when an object is destroyed, the event is dispatched to the stage entity.</text>
+
+    <rect x="24" y="182" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+
+    <circle cx="44" cy="208" r="14" fill="#1B4FC0"/>
+    <text x="44" y="209" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">3</text>
+    <text x="68" y="209" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Co-Op Mode Behavior</text>
+    <text x="68" y="232" font-size="13" fill="#4A4B65">During Co-Op Mode, if a player actively returns to the lobby, the stage will receive</text>
+    <text x="68" y="252" font-size="13" fill="#4A4B65">the character's removal event.</text>
+
+    <!-- Tip box -->
+    <rect x="24" y="272" width="1056" height="32" rx="10" fill="#FDE8E6"/>
+    <rect x="24" y="272" width="4" height="32" rx="2" fill="#D93025"/>
+    <text x="44" y="292" font-size="12" fill="#D93025" dominant-baseline="middle">Character destruction events stay on the character entity, unlike objects where they forward to the stage.</text>
+  </g>
+
+  <!-- Related Documentation -->
+  <text x="48" y="2194" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhctmgi51lpo" target="_blank">
+    <text x="48" y="2216" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Player</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh3ecor1x5cm" target="_blank">
+    <text x="48" y="2238" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Character</text>
+  </a>
+
+  <!-- Footer -->
+  <text x="600" y="2264" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

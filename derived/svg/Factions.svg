@@ -1,184 +1,227 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1320">
-<defs>
-  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-  </linearGradient>
-  <filter id="card">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-  </filter>
-  <filter id="elevated">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-  </filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2040" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
 
-<rect width="1200" height="1320" fill="#F9F7F2"/>
-<rect width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="2040" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect x="100" y="24" width="1000" height="70" rx="14" fill="#FFF" filter="url(#elevated)"/>
-<rect x="100" y="24" width="4" height="70" fill="#2D6BE4" rx="2"/>
-<text x="120" y="58" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="24" font-weight="bold" fill="#1A1B2E">Factions</text>
-<text x="120" y="76" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#8B8DA0">Faction system for competitive gameplay, relationships, and faction management</text>
+  <!-- Title Card -->
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Factions</text>
+  <text x="240" y="72" font-size="16" fill="#4A4B65" dominant-baseline="middle">Team groups for competitive gameplay and attack logic</text>
 
-<text x="100" y="124" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. What are Factions</text>
+  <!-- I. Global Definition of Factions -->
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. Global Definition of Factions</text>
 
-<rect x="100" y="142" width="1000" height="75" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="166" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Faction Definition</text>
-<text x="120" y="190" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In competitive gameplay, entities are divided into groups where players sharing the same group have the same game objectives. These groups are called factions.</text>
-<text x="120" y="210" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">In team-based games, factions serve as criteria for settlement objectives and score calculation.</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Entities are divided into groups (factions) where members share the same game objectives.</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">In team-based competitive games, factions serve as criteria for settlement or score calculation.</text>
 
-<text x="100" y="257" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Default Factions</text>
+    <text x="24" y="80" font-size="14" font-weight="500" fill="#1A1B2E">Faction Definition (Stage Settings &gt; Faction Tab):</text>
 
-<rect x="100" y="275" width="1000" height="155" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="299" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Global Faction Configuration</text>
-<text x="120" y="323" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Factions are defined in the faction tab of stage settings before selection in Basic Info.</text>
-<text x="120" y="346" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Faction Name:</tspan> The name given to this faction</text>
-<text x="120" y="366" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Default Faction Unit:</tspan> New players/objects/creations are categorized into this default faction</text>
-<text x="120" y="386" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Players Included:</tspan> List of players initially belonging to this faction</text>
-<text x="120" y="406" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Entities Included:</tspan> List of objects and creations initially belonging to this faction</text>
+    <text x="24" y="108" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Faction Name</tspan> — The name given to this faction.</text>
+    <text x="24" y="132" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Default Faction Unit</tspan> — New players/objects/creations are categorized into the corresponding default faction.</text>
+    <text x="24" y="156" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Players Included</tspan> — List of players who initially belong to this faction.</text>
+    <text x="24" y="180" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Entities Included</tspan> — List of objects and creations that initially belong to this faction.</text>
 
-<text x="100" y="470" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">III. Faction Relations</text>
+    <rect x="24" y="200" width="1056" height="44" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="200" width="4" height="44" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="222" font-size="13" fill="#4A4B65" dominant-baseline="middle">Factions must be defined in the faction tab of stage settings before selecting them in Basic Info.</text>
+  </g>
 
-<rect x="100" y="488" width="1000" height="70" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="512" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Relationship Types</text>
-<text x="120" y="536" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Between any two factions, two relationship types exist: <tspan font-weight="bold" fill="#1A1B2E">Hostile</tspan> and <tspan font-weight="bold" fill="#1A1B2E">Friendly</tspan>. Faction relations are one-way: Faction 1 may be hostile to Faction 2 while Faction 2 is friendly to Faction 1.</text>
-<text x="120" y="550" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Faction relationships affect targeting in other systems such as ability targeting and combat AI.</text>
+  <!-- II. Faction Relations -->
+  <text x="48" y="468" font-size="18" font-weight="700" fill="#2D6BE4">II. Faction Relations</text>
+  <text x="248" y="468" font-size="13" fill="#8B8DA0">One-way relationships between any two factions</text>
 
-<rect x="100" y="578" width="1000" height="200" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="602" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Classic Mode Faction Relationship Matrix</text>
-<text x="120" y="622" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">Rows = initiating party, Columns = receiving party</text>
+  <g transform="translate(48, 488)">
+    <rect width="1104" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-<rect x="130" y="634" width="155" height="30" fill="#E8EEFB" rx="4"/>
-<text x="207" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Faction</text>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Between any two factions, there exist two relationship types: Hostile and Friendly.</text>
+    <text x="24" y="54" font-size="14" fill="#4A4B65">Configured through Faction Relations in stage settings.</text>
 
-<rect x="285" y="634" width="150" height="30" fill="#E8EEFB" rx="4"/>
-<text x="360" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Player</text>
+    <rect x="24" y="72" width="516" height="56" rx="10" fill="#FDE8E6"/>
+    <text x="40" y="92" font-size="14" font-weight="500" fill="#D93025">Hostile</text>
+    <text x="40" y="112" font-size="12" fill="#4A4B65">Entities can attack the target faction.</text>
 
-<rect x="435" y="634" width="150" height="30" fill="#E8EEFB" rx="4"/>
-<text x="510" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Creation</text>
+    <rect x="564" y="72" width="516" height="56" rx="10" fill="#E5F2E9"/>
+    <text x="580" y="92" font-size="14" font-weight="500" fill="#34A853">Friendly</text>
+    <text x="580" y="112" font-size="12" fill="#4A4B65">Entities cannot attack the target faction.</text>
 
-<rect x="585" y="634" width="150" height="30" fill="#E8EEFB" rx="4"/>
-<text x="660" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Faction 1</text>
+    <rect x="24" y="144" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-<rect x="735" y="634" width="150" height="30" fill="#E8EEFB" rx="4"/>
-<text x="810" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Faction 2</text>
+    <text x="24" y="172" font-size="14" font-weight="500" fill="#1A1B2E">Relations Are One-Way</text>
+    <text x="24" y="196" font-size="13" fill="#4A4B65">Faction 1 may be hostile towards Faction 2, but Faction 2 is not necessarily hostile towards Faction 1.</text>
+    <text x="24" y="220" font-size="13" fill="#4A4B65">Example: If Faction 2 is friendly towards Faction 1, only Faction 1 entities can attack Faction 2,</text>
+    <text x="24" y="240" font-size="13" fill="#4A4B65">while Faction 2 entities cannot attack Faction 1.</text>
 
-<rect x="885" y="634" width="155" height="30" fill="#E8EEFB" rx="4"/>
-<text x="962" y="654" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Faction 3</text>
+    <rect x="24" y="256" width="1056" height="32" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="256" width="4" height="32" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="276" font-size="12" fill="#4A4B65" dominant-baseline="middle">Ability units and attack logic automatically respect faction relations for target filtering.</text>
+  </g>
 
-<rect x="130" y="664" width="155" height="30" fill="#F5F3ED" rx="0"/>
-<text x="207" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Player</text>
+  <!-- III. Default Faction Configuration -->
+  <text x="48" y="828" font-size="18" font-weight="700" fill="#2D6BE4">III. Default Faction Configuration</text>
 
-<rect x="285" y="664" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="360" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+  <g transform="translate(48, 848)">
+    <rect width="1104" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" fill="#4A4B65">Each faction can be configured with a Default Faction Unit. When an entity (player, object,</text>
+    <text x="24" y="50" font-size="14" fill="#4A4B65">creation) is created with a default faction (faction value = 0), it is assigned to the default</text>
+    <text x="24" y="70" font-size="14" fill="#4A4B65">faction for that entity type.</text>
 
-<rect x="435" y="664" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="510" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <text x="24" y="100" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Example:</tspan> If no faction is overridden for a Stone Ball prefab when created, it will be created</text>
+    <text x="24" y="120" font-size="13" fill="#4A4B65">with [Initial Object Faction] because the default faction for objects is Initial Object Faction.</text>
 
-<rect x="585" y="664" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="660" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <rect x="24" y="136" width="1056" height="2" rx="1" fill="#E8E4DA"/>
+    <text x="24" y="156" font-size="12" fill="#8B8DA0">Default faction assignment is per entity type (players, objects, creations each have their own default).</text>
+  </g>
 
-<rect x="735" y="664" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="810" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+  <!-- IV. Node Graph Control -->
+  <text x="48" y="1048" font-size="18" font-weight="700" fill="#2D6BE4">IV. Using Node Graph to Control Factions</text>
 
-<rect x="885" y="664" width="155" height="30" fill="#E8F5E9" rx="0"/>
-<text x="962" y="684" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+  <g transform="translate(48, 1068)">
+    <rect width="1104" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-<rect x="130" y="694" width="155" height="30" fill="#F5F3ED" rx="0"/>
-<text x="207" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Creation</text>
+    <text x="24" y="30" font-size="16" font-weight="500" fill="#1A1B2E">Faction-Related Nodes:</text>
 
-<rect x="285" y="694" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="360" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <rect x="24" y="46" width="340" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="40" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Entity Faction Change Event</text>
+    <text x="40" y="86" font-size="12" fill="#4A4B65">Fires when an entity's faction changes.</text>
 
-<rect x="435" y="694" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="510" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <rect x="380" y="46" width="340" height="56" rx="8" fill="#E8EEFB"/>
+    <text x="396" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Modify Entity Faction</text>
+    <text x="396" y="86" font-size="12" fill="#4A4B65">Changes an entity's faction at runtime.</text>
 
-<rect x="585" y="694" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="660" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <rect x="736" y="46" width="340" height="56" rx="8" fill="#E5F2E9"/>
+    <text x="752" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Query Entity Faction</text>
+    <text x="752" y="86" font-size="12" fill="#4A4B65">Returns the current faction of an entity.</text>
 
-<rect x="735" y="694" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="810" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <!-- Tip box -->
+    <rect x="24" y="120" width="1056" height="60" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="120" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="142" font-size="14" font-weight="500" fill="#2D6BE4">Tutorial: Faction Switch</text>
+    <text x="44" y="162" font-size="12" fill="#4A4B65">Use a Tab component with options to trigger faction changes. Map option selection to</text>
+    <text x="44" y="176" font-size="12" fill="#4A4B65">"Change Entity Faction" nodes for dynamic team switching during gameplay.</text>
+  </g>
 
-<rect x="885" y="694" width="155" height="30" fill="#FFEBEE" rx="0"/>
-<text x="962" y="714" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+  <!-- V. Factions in Classic Mode -->
+  <text x="48" y="1308" font-size="18" font-weight="700" fill="#2D6BE4">V. Factions in Classic Mode</text>
+  <text x="310" y="1308" font-size="13" fill="#8B8DA0">Restricted compared to Beyond Mode</text>
 
-<rect x="130" y="724" width="155" height="30" fill="#F5F3ED" rx="0"/>
-<text x="207" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Fac 1</text>
+  <g transform="translate(48, 1328)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-<rect x="285" y="724" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="360" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Classic Mode Restrictions:</text>
 
-<rect x="435" y="724" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="510" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <text x="24" y="58" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Players/Characters</tspan> — All belong to the Player Faction. Cannot be modified.</text>
+    <text x="24" y="82" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Creations</tspan> — All belong to the Creation Faction. Cannot be modified.</text>
+    <text x="24" y="106" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Objects</tspan> — Can belong to Player Faction, Creation Faction, Object Faction 1, 2, or 3.</text>
+    <text x="24" y="130" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Dynamic Changes</tspan> — Entities cannot dynamically change factions. Modification nodes are disabled.</text>
+    <text x="24" y="154" font-size="13" fill="#4A4B65"><tspan font-weight="500" fill="#1A1B2E">Relations</tspan> — Relationships between factions cannot be modified.</text>
 
-<rect x="585" y="724" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="660" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <rect x="24" y="172" width="1056" height="2" rx="1" fill="#E8E4DA"/>
 
-<rect x="735" y="724" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="810" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <text x="24" y="200" font-size="14" font-weight="500" fill="#1A1B2E">Classic Mode Faction Relations Table (Row = Initiator, Column = Target):</text>
 
-<rect x="885" y="724" width="155" height="30" fill="#E8F5E9" rx="0"/>
-<text x="962" y="744" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <!-- Table header -->
+    <rect x="24" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="112" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Initiator \ Target</text>
+    <rect x="200" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="288" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Player Faction</text>
+    <rect x="376" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="464" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Creation Faction</text>
+    <rect x="552" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="640" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Object Faction 1</text>
+    <rect x="728" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="816" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Object Faction 2</text>
+    <rect x="904" y="216" width="176" height="32" rx="6" fill="#2D6BE4"/>
+    <text x="992" y="232" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Object Faction 3</text>
 
-<rect x="130" y="754" width="155" height="30" fill="#F5F3ED" rx="0"/>
-<text x="207" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Fac 2</text>
+    <!-- Row 1: Player Faction -->
+    <rect x="24" y="248" width="176" height="24" fill="#F4F1EA"/>
+    <text x="112" y="260" font-size="10" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Player Faction</text>
+    <text x="288" y="260" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="464" y="260" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="640" y="260" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="816" y="260" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="992" y="260" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
 
-<rect x="285" y="754" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="360" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <!-- Row 2: Creation Faction -->
+    <rect x="24" y="272" width="176" height="24" fill="#FFFFFF"/>
+    <text x="112" y="284" font-size="10" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Creation Faction</text>
+    <text x="288" y="284" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="464" y="284" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="640" y="284" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="816" y="284" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="992" y="284" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
 
-<rect x="435" y="754" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="510" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <!-- Row 3: Object Faction 1 -->
+    <rect x="24" y="296" width="176" height="24" fill="#F4F1EA"/>
+    <text x="112" y="308" font-size="10" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Object Faction 1</text>
+    <text x="288" y="308" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="464" y="308" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="640" y="308" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="816" y="308" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="992" y="308" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
 
-<rect x="585" y="754" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="660" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <!-- Row 4: Object Faction 2 -->
+    <rect x="24" y="320" width="176" height="24" fill="#FFFFFF"/>
+    <text x="112" y="332" font-size="10" font-weight="500" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Object Faction 2</text>
+    <text x="288" y="332" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="464" y="332" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="640" y="332" font-size="10" fill="#D93025" text-anchor="middle" dominant-baseline="middle">Hostile</text>
+    <text x="816" y="332" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+    <text x="992" y="332" font-size="10" fill="#34A853" text-anchor="middle" dominant-baseline="middle">Friendly</text>
+  </g>
 
-<rect x="735" y="754" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="810" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+  <!-- VI. Classic Mode Object Faction Usage -->
+  <text x="48" y="1708" font-size="18" font-weight="700" fill="#2D6BE4">VI. Object Faction Usage Guidelines</text>
 
-<rect x="885" y="754" width="155" height="30" fill="#E8F5E9" rx="0"/>
-<text x="962" y="774" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+  <g transform="translate(48, 1728)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-<rect x="130" y="784" width="155" height="30" fill="#F5F3ED" rx="0"/>
-<text x="207" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#4A4B65" text-anchor="middle" font-weight="bold">Obj Fac 3</text>
+    <rect x="24" y="16" width="340" height="72" rx="10" fill="#E8EEFB"/>
+    <text x="194" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Object Faction 3</text>
+    <text x="194" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Friendly to Player Faction.</text>
+    <text x="194" y="72" font-size="12" fill="#4A4B65" text-anchor="middle">Assists characters in attacking creations.</text>
 
-<rect x="285" y="784" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="360" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <rect x="380" y="16" width="340" height="72" rx="10" fill="#F4F1EA"/>
+    <text x="550" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Object Faction 1</text>
+    <text x="550" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Used for regular objects.</text>
+    <text x="550" y="72" font-size="12" fill="#4A4B65" text-anchor="middle">Hostile to Player and Creation factions.</text>
 
-<rect x="435" y="784" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="510" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+    <rect x="736" y="16" width="340" height="72" rx="10" fill="#FFF3E0"/>
+    <text x="906" y="36" font-size="13" font-weight="500" fill="#1A1B2E" text-anchor="middle">Object Faction 2</text>
+    <text x="906" y="56" font-size="12" fill="#4A4B65" text-anchor="middle">Used for objects hostile to Faction 1.</text>
+    <text x="906" y="72" font-size="12" fill="#4A4B65" text-anchor="middle">Generally used for special interactions.</text>
 
-<rect x="585" y="784" width="150" height="30" fill="#E8F5E9" rx="0"/>
-<text x="660" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
+    <rect x="24" y="104" width="1056" height="60" rx="10" fill="#E8EEFB"/>
+    <rect x="24" y="104" width="4" height="60" rx="2" fill="#2D6BE4"/>
+    <text x="44" y="126" font-size="14" font-weight="500" fill="#2D6BE4">Tutorial: Friendly Creations (Summon-type)</text>
+    <text x="44" y="146" font-size="12" fill="#4A4B65">Assign a creation to the Player Faction to make it friendly — it will not attack the player</text>
+    <text x="44" y="160" font-size="12" fill="#4A4B65">but will help attack other creations. Useful for NPC allies and summon skills.</text>
+  </g>
 
-<rect x="735" y="784" width="150" height="30" fill="#FFEBEE" rx="0"/>
-<text x="810" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#C62828" text-anchor="middle">Hostile</text>
+  <!-- Related Documentation -->
+  <text x="48" y="1954" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhe1ixri46ta" target="_blank">
+    <text x="48" y="1976" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Factions</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mh99bn93wjzu" target="_blank">
+    <text x="48" y="1998" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Faction Settings — Tag Detection and Attack Logic</text>
+  </a>
 
-<rect x="885" y="784" width="155" height="30" fill="#E8F5E9" rx="0"/>
-<text x="962" y="804" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#2E7D32" text-anchor="middle">Friendly</text>
-
-<text x="100" y="854" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">IV. Classic Mode Restrictions</text>
-
-<rect x="100" y="872" width="1000" height="105" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="896" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Classic Mode Limitations</text>
-<text x="120" y="920" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">All players and characters belong to the Player Faction (cannot be modified).</text>
-<text x="120" y="940" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">All creations belong to the Creation Faction (cannot be modified).</text>
-<text x="120" y="960" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Objects can be assigned to Player, Creation, or Object Factions 1-3.</text>
-<text x="120" y="977" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#8B8DA0">Dynamic faction changes and relationship modifications are not available in Classic Mode.</text>
-
-<text x="100" y="1017" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">V. Beyond Mode Dynamic Factions</text>
-
-<rect x="100" y="1035" width="1000" height="85" rx="14" fill="#FFF" filter="url(#card)"/>
-<text x="120" y="1059" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Dynamic Faction Control (Beyond Mode Only)</text>
-<text x="120" y="1083" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Entity factions can be changed dynamically using node graphs. Available nodes include:</text>
-<text x="120" y="1103" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Entity Faction Change Events</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Modify Entity Faction</tspan> | <tspan font-weight="bold" fill="#1A1B2E">Query Entity Faction</tspan></text>
-
-<rect x="100" y="1140" width="1000" height="50" rx="8" fill="#E8EEFB"/>
-<rect x="100" y="1140" width="4" height="50" fill="#2D6BE4" rx="2"/>
-<text x="118" y="1158" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="bold" fill="#1A1B2E">Object Faction 3 Note</text>
-<text x="118" y="1176" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Object Faction 3 is typically used for objects friendly to the Player Faction that can assist in attacking constructs.</text>
-
-<text x="100" y="1228" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhodorziqra" target="_blank"><text x="100" y="1248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Factions</text></a>
-
-<text x="600" y="1310" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <!-- Footer -->
+  <text x="600" y="2024" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

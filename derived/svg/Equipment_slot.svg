@@ -1,220 +1,275 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3000" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#1A1B2E" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B2E" flood-opacity="0.08"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3440">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="3440" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="3000" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Slot</text>
 
-  <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">28-Equipment Slot: Equipment Definition, Slots &amp; Node Graphs</text>
+<!-- I. Equipment Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Equipment Definition</text>
 
-  <!-- I. Definition -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition of Equipment</text>
+<rect x="48" y="162" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment is a sub-type of items managed through the inventory. Unlike regular items, equipment can be</text>
+<text x="72" y="212" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">equipped in Equip Slots to provide attribute bonuses or additional logic functions for the wearer.</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">Equipment is a sub-type of items managed through the inventory like regular items. The key difference</text>
-    <text x="20" y="50" font-size="14" fill="#4A4B65">is that equipment can be equipped in <tspan font-weight="bold" fill="#1A1B2E">Equip Slots</tspan> to provide attribute bonuses or additional</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">logic functions for the wearer. Equipment supports affixes, types, tags, and node graph integration.</text>
-    <text x="20" y="98" font-size="13" fill="#4A4B65">• Equipment does not support stacking configuration</text>
-    <text x="360" y="98" font-size="13" fill="#4A4B65">• Equipment can have multiple affixes</text>
-    <text x="700" y="98" font-size="13" fill="#4A4B65">• Equipment slots are character-only components</text>
-  </g>
+<!-- II. Creating Equipment -->
+<text x="48" y="284" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Creating Equipment</text>
 
-  <!-- II. Editing Equipment -->
-  <circle cx="80" cy="320" r="16" fill="#2D6BE4"/>
-  <text x="80" y="321" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="321" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Equipment</text>
+<rect x="48" y="298" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="84" cy="330" r="16" fill="#2D6BE4"/>
+<text x="84" y="335" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="112" y="335" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "New Item" in the item editing tab</text>
 
-  <g transform="translate(60, 348)">
-    <rect width="1080" height="364" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Create New Equipment</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">In the item editing tab, click "New Item". In the popup, scroll down to Select Type and choose</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">Equipment to create a new equipment template.</text>
+<circle cx="84" cy="366" r="16" fill="#2D6BE4"/>
+<text x="84" y="371" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="112" y="371" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In the popup, scroll to "Select Type" and choose "Equipment"</text>
 
-    <text x="20" y="100" font-size="14" font-weight="bold" fill="#1A1B2E">2. Basic Settings &amp; Interaction Settings</text>
-    <text x="20" y="124" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Equipment Type</tspan> — Defined in the Equipment Type tab. An Equipment Slot must support</text>
-    <text x="20" y="144" font-size="13" fill="#4A4B65">the equipment type for equipping to succeed.</text>
-    <text x="20" y="168" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Show Type in Details</tspan> — Whether to display equipment type in the gameplay interface.</text>
-    <text x="20" y="192" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Show Tags in Details</tspan> — Whether to display tag information on the interface.</text>
-    <text x="20" y="216" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Select Tag</tspan> — Choose tags for this equipment from all pre-configured equipment tags.</text>
-    <text x="20" y="240" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Select Initial Affixes</tspan> — Choose initial affixes that the equipment should carry.</text>
+<circle cx="84" cy="402" r="16" fill="#1B4FC0"/>
+<text x="84" y="407" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="112" y="407" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure basic settings (similar to items, but stacking not supported)</text>
 
-    <text x="20" y="272" font-size="14" font-weight="bold" fill="#1A1B2E">3. Equipment Type</text>
-    <text x="20" y="296" font-size="13" fill="#4A4B65">Equipment type is an attribute referenced by two working functions:</text>
-    <text x="20" y="320" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Equipment Template</tspan> — Defines the type of the equipment itself.</text>
-    <text x="20" y="340" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Equipment Slot Template</tspan> — Defines which types can be equipped in each slot.</text>
-  </g>
+<!-- III. Interaction Settings -->
+<text x="48" y="460" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Interaction Settings</text>
 
-  <!-- III. Equipment Tags & Affixes -->
-  <circle cx="80" cy="748" r="16" fill="#2D6BE4"/>
-  <text x="80" y="749" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="749" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Equipment Tags &amp; Affixes</text>
+<rect x="48" y="474" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="494" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="517" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="517" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <g transform="translate(60, 776)">
-    <rect width="1080" height="576" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Equipment Tags</text>
-    <text x="20" y="52" font-size="13" fill="#4A4B65">Tags are visible annotations for equipment that convey characteristics to players.</text>
-    <text x="20" y="76" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Tag Name</tspan> — Name defined by the creator for the tag.</text>
-    <text x="20" y="96" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Configuration ID</tspan> — Unique identifier of the equipment tag data.</text>
-    <text x="20" y="116" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Reference List</tspan> — View all equipment templates using this tag.</text>
+<rect x="72" y="530" width="1056" height="48" fill="#fff"/>
+<text x="100" y="551" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Type</text>
+<text x="380" y="551" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Defined in Equipment Type tab; Equipment Slot must support this type to equip</text>
+<line x1="72" y1="578" x2="1128" y2="578" stroke="#E8E4DA"/>
 
-    <text x="20" y="148" font-size="14" font-weight="bold" fill="#1A1B2E">2. Equipment Affixes</text>
-    <text x="20" y="172" font-size="13" fill="#4A4B65">Equipment affixes are the only source of equipment attribute bonuses and mechanical bonuses.</text>
-    <text x="20" y="192" font-size="13" fill="#4A4B65">Each piece of equipment can have multiple affixes. When the equipment enters the inventory or</text>
-    <text x="20" y="212" font-size="13" fill="#4A4B65">is equipped, the bonuses provided by the affixes will be applied to the owner or wearer entity.</text>
+<rect x="72" y="578" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="599" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Show Type in Details</text>
+<text x="380" y="599" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether to display equipment type info in gameplay UI</text>
+<line x1="72" y1="610" x2="1128" y2="610" stroke="#E8E4DA"/>
 
-    <text x="20" y="240" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Effective Timing</tspan> — When the affix's bonus effects come into effect:</text>
-    <text x="40" y="264" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Effective When Obtained</tspan> — Takes effect as soon as equipment enters inventory.</text>
-    <text x="40" y="284" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Effective When Equipped</tspan> — Only takes effect when equipped in a slot.</text>
+<rect x="72" y="610" width="1056" height="32" fill="#fff"/>
+<text x="100" y="631" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Show Tags in Details</text>
+<text x="380" y="631" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether to display equipment tag info in gameplay UI</text>
+<line x1="72" y1="642" x2="1128" y2="642" stroke="#E8E4DA"/>
 
-    <text x="20" y="312" font-size="13" font-weight="bold" fill="#1A1B2E">Affix Types:</text>
+<rect x="72" y="642" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="663" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Tag</text>
+<text x="380" y="663" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select tags from all pre-configured equipment tags</text>
+<line x1="72" y1="674" x2="1128" y2="674" stroke="#E8E4DA"/>
 
-    <rect x="20" y="324" width="500" height="80" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="346" font-size="13" font-weight="bold" fill="#1A1B2E">Base Attributes Bonus</text>
-    <text x="36" y="366" font-size="12" fill="#4A4B65">Provides basic combat attribute bonuses.</text>
-    <text x="36" y="386" font-size="12" fill="#4A4B65">Supports Random Value or Fixed Value types.</text>
+<rect x="72" y="674" width="1056" height="20" fill="#fff"/>
+<text x="100" y="689" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Initial Affixes</text>
+<text x="380" y="689" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select initial affixes from all pre-configured equipment affixes</text>
 
-    <rect x="540" y="324" width="520" height="80" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="346" font-size="13" font-weight="bold" fill="#1A1B2E">Apply Node Graph</text>
-    <text x="556" y="366" font-size="12" fill="#4A4B65">Provides creator-defined node graph logic.</text>
-    <text x="556" y="386" font-size="12" fill="#4A4B65">Select the Node Graph to be assigned.</text>
+<!-- IV. Equipment Type -->
+<text x="48" y="736" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Equipment Type</text>
+<text x="240" y="736" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via Manage Equipment Data</text>
 
-    <rect x="20" y="416" width="500" height="80" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="438" font-size="13" font-weight="bold" fill="#1A1B2E">Apply Unit Status</text>
-    <text x="36" y="458" font-size="12" fill="#4A4B65">Affixes can be bound to a unit status.</text>
-    <text x="36" y="478" font-size="12" fill="#4A4B65">Select the unit status to be related.</text>
+<rect x="48" y="750" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="778" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment type is referenced by two functions: Equipment Template (defines type of the item) and Equipment Slot</text>
+<text x="72" y="800" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Template (defines which types can be equipped). Equipment can be equipped when there is a non-empty intersection.</text>
+<rect x="72" y="818" width="1056" height="52" rx="10" fill="#F4F1EA"/>
+<text x="96" y="840" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan font-weight="500" fill="#1A1B2E">Type Name:</tspan> User-defined name  |  <tspan font-weight="500" fill="#1A1B2E">Configuration ID:</tspan> Unique identifier  |  <tspan font-weight="500" fill="#1A1B2E">Reference List:</tspan> View all templates using this type
+</text>
 
-    <text x="20" y="528" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Description Type</tspan> — Fixed Description (preset text) or Custom Description (creator-defined).</text>
-    <text x="20" y="552" font-size="13" fill="#4A4B65">Supports variable insertion for displaying bonus range and actual bonus values.</text>
-  </g>
+<!-- V. Equipment Tags -->
+<text x="48" y="932" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Equipment Tags</text>
 
-  <!-- IV. Equipment Entities -->
-  <circle cx="80" cy="1388" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1389" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1389" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Equipment Entities</text>
+<rect x="48" y="946" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="974" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tags are visible annotations for equipment that convey characteristics to players.</text>
+<rect x="72" y="990" width="1056" height="36" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1013" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan font-weight="500" fill="#1A1B2E">Tag Name:</tspan> Creator-defined  |  <tspan font-weight="500" fill="#1A1B2E">Configuration ID:</tspan> Unique identifier  |  <tspan font-weight="500" fill="#1A1B2E">Reference List:</tspan> All templates using this tag
+</text>
 
-  <g transform="translate(60, 1416)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">When equipment is not picked up, it exists as a template in the loot component. When the equipment</text>
-    <text x="20" y="50" font-size="14" fill="#4A4B65">template is first obtained and enters the inventory, it will be initialized. At this time:</text>
-    <text x="20" y="76" font-size="13" fill="#4A4B65">• Affix values will be randomized</text>
-    <text x="20" y="96" font-size="13" fill="#4A4B65">• A "When Equipment Is Initialized" event is triggered, returning the unique index of the equipment</text>
-    <text x="20" y="116" font-size="13" fill="#4A4B65">  entity through which attribute affixes can be dynamically modified</text>
-  </g>
+<!-- VI. Equipment Affixes -->
+<text x="48" y="1088" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Equipment Affixes</text>
+<text x="260" y="1088" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only source of attribute and mechanical bonuses</text>
 
-  <!-- V. Equipment Slots -->
-  <circle cx="80" cy="1592" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1593" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1593" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Equipment Slots</text>
+<rect x="48" y="1102" width="1104" height="360" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1130" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each piece of equipment can have multiple affixes. Bonuses apply to owner/wearer based on affix configuration.</text>
 
-  <g transform="translate(60, 1620)">
-    <rect width="1080" height="320" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Equipment Slot Template</text>
-    <text x="20" y="52" font-size="13" fill="#4A4B65">Used to define the style, quantity, and equipment tags for each Equipment Slot. Accessible</text>
-    <text x="20" y="72" font-size="13" fill="#4A4B65">through the Currency and Inventory button, then the Equipment Slots tab.</text>
-    <text x="20" y="96" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Template Name</tspan> — Creator-defined name for the equipment slot template.</text>
-    <text x="20" y="116" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Configuration ID</tspan> — Unique identifier for the Equip Slot template data.</text>
-    <text x="20" y="136" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Equipment Slot Style</tspan> — Dynamically stack and configure detailed settings per slot.</text>
+<rect x="72" y="1148" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="1171" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affix Parameter</text>
+<text x="700" y="1171" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-    <text x="20" y="164" font-size="13" font-weight="bold" fill="#1A1B2E">Slot Settings (per slot):</text>
-    <text x="40" y="188" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Current Slot Name</tspan> — Displayed at the bottom of the slot interface.</text>
-    <text x="40" y="208" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Equippable Types</tspan> — Select the types of equipment that can be equipped.</text>
-    <text x="40" y="228" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Icon</tspan> — Background displayed in the slot when no equipment is equipped.</text>
+<rect x="72" y="1184" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1205" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affix Name / Config ID</text>
+<text x="380" y="1205" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">User-defined name and unique identifier</text>
+<line x1="72" y1="1216" x2="1128" y2="1216" stroke="#E8E4DA"/>
 
-    <text x="20" y="260" font-size="14" font-weight="bold" fill="#1A1B2E">2. Equipment Slot Component</text>
-    <text x="20" y="284" font-size="13" fill="#4A4B65">Can only be added to characters. Add via Add Common Component → Add Equipment Slot</text>
-    <text x="20" y="304" font-size="13" fill="#4A4B65">Component. References pre-defined Equip Slot templates.</text>
-  </g>
+<rect x="72" y="1216" width="1056" height="48" fill="#F4F1EA"/>
+<text x="100" y="1237" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective Timing</text>
+<text x="380" y="1237" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective When Obtained: takes effect on inventory owner immediately</text>
+<text x="380" y="1257" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective When Equipped: only takes effect on wearer when in Equipment Slot</text>
+<line x1="72" y1="1264" x2="1128" y2="1264" stroke="#E8E4DA"/>
 
-  <!-- VI. Node Graph Operations -->
-  <circle cx="80" cy="1976" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1977" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">VI</text>
-  <text x="108" y="1977" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">VI. Modifying Equipment Attributes in Node Graphs</text>
+<rect x="72" y="1264" width="1056" height="80" fill="#fff"/>
+<text x="100" y="1285" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Base Attributes Bonus</text>
+<text x="380" y="1285" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Attributes: choose specific combat attribute</text>
+<text x="380" y="1307" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Bonus Type: Random Value (range) or Fixed Value</text>
+<text x="380" y="1329" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Random Value Range / Fixed Bonus Value: configurable</text>
+<line x1="72" y1="1344" x2="1128" y2="1344" stroke="#E8E4DA"/>
 
-  <g transform="translate(60, 2004)">
-    <rect width="1080" height="584" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Execution Nodes</text>
+<rect x="72" y="1344" width="1056" height="48" fill="#F4F1EA"/>
+<text x="100" y="1365" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description Type</text>
+<text x="380" y="1365" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fixed Description (preset, with optional random range display)</text>
+<text x="380" y="1385" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom Description: creator-defined text with Insert Variable support</text>
+<line x1="72" y1="1392" x2="1128" y2="1392" stroke="#E8E4DA"/>
 
-    <rect x="20" y="44" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Modify Equipment Affix Value</text>
-    <text x="36" y="86" font-size="12" fill="#4A4B65">Dynamically modifies an affix value on equipment.</text>
+<rect x="72" y="1392" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1413" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Apply Node Graph</text>
+<text x="380" y="1413" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Assign custom node graph logic to the affix</text>
+<line x1="72" y1="1424" x2="1128" y2="1424" stroke="#E8E4DA"/>
 
-    <rect x="540" y="44" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Remove Equipment Affix</text>
-    <text x="556" y="86" font-size="12" fill="#4A4B65">Removes a specific affix from equipment.</text>
+<rect x="72" y="1424" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1445" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Apply Unit Status</text>
+<text x="380" y="1445" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Bind affix to a unit status effect</text>
 
-    <rect x="20" y="116" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="138" font-size="13" font-weight="bold" fill="#1A1B2E">Add Affix to Equipment</text>
-    <text x="36" y="158" font-size="12" fill="#4A4B65">Adds a new affix to the target equipment.</text>
+<!-- VII. Equipment Entities -->
+<text x="48" y="1504" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Equipment Entities</text>
 
-    <rect x="540" y="116" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="138" font-size="13" font-weight="bold" fill="#1A1B2E">Add Affix to Equipment at Specified ID</text>
-    <text x="556" y="158" font-size="12" fill="#4A4B65">Adds an affix to equipment at a specific position.</text>
+<rect x="48" y="1518" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1546" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When equipment first enters inventory, it initializes: affix values are randomized and a "When Equipment Is</text>
+<text x="72" y="1568" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initialized" event fires. The event returns a unique equipment index for dynamic affix modification. Creators can</text>
+<text x="72" y="1590" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">override preset random rules with custom initialization logic in this event.</text>
 
-    <text x="20" y="208" font-size="14" font-weight="bold" fill="#1A1B2E">Event Nodes</text>
+<!-- VIII. Equipment Slot Template -->
+<text x="48" y="1660" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Equipment Slot Template</text>
+<text x="340" y="1660" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via Currency and Inventory</text>
 
-    <rect x="20" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">When Equipment Is Initialized</text>
-    <text x="36" y="266" font-size="11" fill="#4A4B65">Triggered on first inventory entry.</text>
+<rect x="48" y="1674" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1694" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="1717" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="1717" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-    <rect x="370" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="386" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">When Equipment Affix Value Changes</text>
-    <text x="386" y="266" font-size="11" fill="#4A4B65">Triggered when an affix value is modified.</text>
+<rect x="72" y="1730" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1751" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Template Name</text>
+<text x="380" y="1751" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Creator-defined name for the equipment slot template</text>
+<line x1="72" y1="1762" x2="1128" y2="1762" stroke="#E8E4DA"/>
 
-    <rect x="720" y="224" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="736" y="246" font-size="12" font-weight="bold" fill="#1A1B2E">When Equipment Is Equipped</text>
-    <text x="736" y="266" font-size="11" fill="#4A4B65">Triggered when equipment is equipped.</text>
+<rect x="72" y="1762" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1783" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configuration ID</text>
+<text x="380" y="1783" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique identifier for Equip Slot template data</text>
+<line x1="72" y1="1794" x2="1128" y2="1794" stroke="#E8E4DA"/>
 
-    <rect x="20" y="296" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="318" font-size="12" font-weight="bold" fill="#1A1B2E">When Equipment Is Unequipped</text>
-    <text x="36" y="338" font-size="11" fill="#4A4B65">Triggered when equipment is removed from a slot.</text>
+<rect x="72" y="1794" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1815" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Slot Style</text>
+<text x="380" y="1815" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "+" to dynamically add Equipment Slots</text>
+<line x1="72" y1="1826" x2="1128" y2="1826" stroke="#E8E4DA"/>
 
-    <text x="20" y="388" font-size="14" font-weight="bold" fill="#1A1B2E">Search Nodes</text>
+<rect x="72" y="1826" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1847" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Current Slot Name</text>
+<text x="380" y="1847" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Displayed at the bottom of the slot interface</text>
+<line x1="72" y1="1858" x2="1128" y2="1858" stroke="#E8E4DA"/>
 
-    <rect x="20" y="404" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="426" font-size="12" font-weight="bold" fill="#1A1B2E">Query Equipment Tag List</text>
-    <text x="36" y="446" font-size="11" fill="#4A4B65">Returns all tags on the equipment.</text>
+<rect x="72" y="1858" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1879" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equippable Types</text>
+<text x="380" y="1879" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select equipment types accepted by this slot</text>
 
-    <rect x="370" y="404" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="386" y="426" font-size="12" font-weight="bold" fill="#1A1B2E">Get Equipment Affix Config ID</text>
-    <text x="386" y="446" font-size="11" fill="#4A4B65">Returns the config ID of an affix.</text>
+<!-- IX. Equipment Slot Component -->
+<text x="48" y="1936" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Equipment Slot Component</text>
 
-    <rect x="720" y="404" width="330" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="736" y="426" font-size="12" font-weight="bold" fill="#1A1B2E">Get Equipment Affix List</text>
-    <text x="736" y="446" font-size="11" fill="#4A4B65">Returns all affixes on equipment.</text>
+<rect x="48" y="1950" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1978" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can only be added to characters.</text>
+<text x="72" y="2000" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add via: Add Common Component > Equipment Slot Component. References a pre-defined Equipment Slot Template.</text>
+<rect x="72" y="2016" width="1056" height="20" rx="6" fill="#E8EEFB"/>
+<text x="96" y="2032" fill="#2D6BE4" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Also accessible via: ESC Panel > Currency and Inventory > Equipment Slot</text>
 
-    <rect x="20" y="476" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="498" font-size="12" font-weight="bold" fill="#1A1B2E">Get Equipment Affix Value</text>
-    <text x="36" y="518" font-size="11" fill="#4A4B65">Returns the current value of a specific affix.</text>
-  </g>
+<!-- X. Node Graph: Execution Nodes -->
+<text x="48" y="2092" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X. Node Graph: Execution Nodes</text>
 
-  <!-- Source Links -->
-  <text x="60" y="2628" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsyagijjq5o" target="_blank">
-    <text x="60" y="2654" font-size="13" fill="#2D6BE4" text-decoration="underline">Equipment</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbgx0rspbqu" target="_blank">
-    <text x="60" y="2680" font-size="13" fill="#2D6BE4" text-decoration="underline">Item</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2cr30yeak0" target="_blank">
-    <text x="60" y="2706" font-size="13" fill="#2D6BE4" text-decoration="underline">Currency</text>
-  </a>
+<rect x="48" y="2106" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="2126" width="1056" height="100" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2150" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Execution Nodes</text>
+<text x="96" y="2174" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- Modify Equipment Affix Value</tspan>
+<tspan x="96" dy="22">- Remove Equipment Affix</tspan>
+<tspan x="96" dy="22">- Add Affix to Equipment  |  Add Affix to Equipment at Specified ID</tspan>
+</text>
 
-  <!-- Footer -->
-  <text x="600" y="2740" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<!-- XI. Node Graph: Event Nodes -->
+<text x="48" y="2288" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">XI. Node Graph: Event Nodes</text>
+
+<rect x="48" y="2302" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="2322" width="1056" height="100" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2346" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Event Nodes</text>
+<text x="96" y="2370" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- When Equipment Is Initialized</tspan>
+<tspan x="96" dy="22">- When Equipment Affix Value Changes</tspan>
+<tspan x="96" dy="22">- When Equipment Is Equipped  |  When Equipment Is Unequipped</tspan>
+</text>
+
+<!-- XII. Node Graph: Query Nodes -->
+<text x="48" y="2484" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">XII. Node Graph: Query Nodes</text>
+
+<rect x="48" y="2498" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="2518" width="1056" height="100" rx="10" fill="#E8EEFB"/>
+<text x="96" y="2542" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Query Nodes</text>
+<text x="96" y="2566" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- Query Equipment Tag List</tspan>
+<tspan x="96" dy="22">- Get Equipment Affix Config ID  |  Get Equipment Affix List</tspan>
+<tspan x="96" dy="22">- Get Equipment Affix Value</tspan>
+</text>
+
+<!-- XIII. Tutorial: Creating Armor -->
+<text x="48" y="2680" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">XIII. Tutorial: Creating Wearable Equipment</text>
+
+<rect x="48" y="2694" width="1104" height="300" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2722" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Example: Armor That Increases Max HP When Equipped</text>
+<rect x="72" y="2736" width="1056" height="240" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2760" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">1. Attach Equipment Slot Component to Character (Combat Preset > Player > Edit Character)</tspan>
+<tspan x="96" dy="22">2. Create Equipment Slot Template with slots (e.g., "Weapon" and "Armor" types)</tspan>
+<tspan x="96" dy="22">3. Create Equipment item: New Item > Select Type "Equipment" > Set name, icon, rarity</tspan>
+<tspan x="96" dy="22">4. Configure Affix: Interaction Settings > Equip Settings > Add Affix</tspan>
+<tspan x="96" dy="22">   - Effective Timing: "Effective when equipped"</tspan>
+<tspan x="96" dy="22">   - Select Attribute: "HP Correction Value" > Bonus Type: "Fixed Value"</tspan>
+<tspan x="96" dy="22">5. Set Equipment Type in Equipment Settings to match slot's equippable type</tspan>
+<tspan x="96" dy="22">6. Add Inventory Component to character, configure template, add Starting Items</tspan>
+<tspan x="96" dy="22">7. Test: Press [C] for equipment slots or [B] for inventory, equip the item</tspan>
+</text>
+
+<!-- Extended Application -->
+<rect x="48" y="3010" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="3038" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Extended: Equipment With Custom Logic (Weapon Model in Hand)</text>
+<rect x="72" y="3052" width="1056" height="80" rx="10" fill="#E8EEFB"/>
+<text x="96" y="3076" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">1. Create "Sword" equipment, add tag "Sword" in interaction settings</tspan>
+<tspan x="96" dy="22">2. Node graph: When Equipment Equipped > Query Tag List > Check if "Sword"</tspan>
+<tspan x="96" dy="22">3. If match: mount looping VFX of sword model to character's attachment point</tspan>
+</text>
+
+<!-- Tip Box -->
+<rect x="48" y="3166" width="1104" height="76" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="3166" width="4" height="76" rx="2" fill="#2D6BE4"/>
+<text x="72" y="3190" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment Bonuses Summary</text>
+<text x="72" y="3212" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Base stat bonuses (HP, ATK, etc.)  |  2. Custom logic via node graphs  |  3. Unit status effects</text>
+<text x="72" y="3234" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment type matching: non-empty intersection between equipment template type list and slot type list required.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="3282" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkl2yin0cxo" target="_blank">
+<text x="48" y="3302" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Equipment (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhsuhyi2b61o" target="_blank">
+<text x="48" y="3322" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Equipment Tutorial</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="3426" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

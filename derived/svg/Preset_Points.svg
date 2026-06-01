@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 880" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1680" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -11,54 +11,147 @@
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
-
-  <rect width="1200" height="880" fill="#F9F7F2"/>
+  <rect width="1200" height="1680" fill="#F9F7F2"/>
   <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect x="40" y="24" width="1120" height="52" rx="8" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="24" width="4" height="52" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="56" font-size="22" font-weight="bold" fill="#1A1B2E">38-Preset Points</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Preset Points</text>
 
-  <rect x="40" y="100" width="1120" height="90" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="100" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="122" font-size="18" font-weight="bold" fill="#2D6BE4">I. What is a Preset Point?</text>
-  <text x="60" y="152" font-size="14" fill="#4A4B65">A Preset Point is a data record of location and orientation within a Scene. Preset Points can be referenced by features that require points data, such as Spawn Points, Revive Points, and Node Graph retrieval points.</text>
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. What is a Preset Point?</text>
 
-  <rect x="40" y="214" width="1120" height="360" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="214" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="236" font-size="18" font-weight="bold" fill="#2D6BE4">II. Editing Preset Points</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="28" font-size="15" font-weight="500" fill="#1A1B2E">Definition</text>
+    <text x="24" y="52" font-size="14" fill="#4A4B65">A Preset Point is a data record of location and orientation within a Scene.</text>
+    <text x="24" y="76" font-size="14" fill="#4A4B65">Referenced by features requiring points data: Spawn Points, Revive Points, and Node Graph retrieval points.</text>
+  </g>
 
-  <text x="60" y="266" font-size="14" font-weight="bold" fill="#1A1B2E">Preset Point Library</text>
-  <text x="60" y="290" font-size="14" fill="#4A4B65">All Preset Points are listed in the library window. Visibility of each point can be toggled in the Layout Scene.</text>
+  <text x="48" y="308" font-size="18" font-weight="700" fill="#2D6BE4">II. Editing Preset Points</text>
 
-  <text x="60" y="322" font-size="14" font-weight="bold" fill="#1A1B2E">Persistent Display Toggle</text>
-  <text x="60" y="346" font-size="14" fill="#4A4B65">When on: all Preset Points remain visible even if the management tool is disabled. When off: points become invisible when the tool is disabled.</text>
+  <g transform="translate(48, 328)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="20" y="14" width="140" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="90" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Preset Point Library</text>
+    <text x="24" y="60" font-size="14" fill="#4A4B65">All Preset Points are listed in the library window.</text>
+    <text x="24" y="84" font-size="14" fill="#4A4B65">Manage visibility of corresponding Preset Points in the Layout Scene.</text>
 
-  <text x="60" y="378" font-size="14" font-weight="bold" fill="#1A1B2E">Creating a Preset Point</text>
-  <text x="60" y="402" font-size="14" fill="#4A4B65">Click "Create Preset Point" to generate a new Preset Point at the center of the current Edit Window, with naming editing mode enabled automatically.</text>
+    <line x1="24" y1="106" x2="1080" y2="106" stroke="#E8E4DA" stroke-width="1"/>
 
-  <text x="60" y="434" font-size="14" font-weight="bold" fill="#1A1B2E">Preset Point Parameters</text>
-  <text x="60" y="458" font-size="14" fill="#4A4B65">Preset Point Name: customizable name for the point.</text>
-  <text x="60" y="482" font-size="14" fill="#4A4B65">Preset Point Index: unique identifier used as an input parameter for Nodes.</text>
-  <text x="60" y="506" font-size="14" fill="#4A4B65">Lock Transform: when enabled, position and rotation cannot be adjusted.</text>
-  <text x="60" y="530" font-size="14" fill="#4A4B65">Display in Scene: when unchecked, only coordinate axes remain visible.</text>
-  <text x="60" y="554" font-size="14" fill="#4A4B65">Location and Rotation: sets the position and orientation data of the Preset Point.</text>
+    <rect x="20" y="116" width="160" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="100" y="129" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Visibility in Edit Window</text>
+    <text x="24" y="160" font-size="14" fill="#1A1B2E" font-weight="500">Persistent Display ON:</text>
+    <text x="190" y="160" font-size="14" fill="#4A4B65">All Preset Points remain visible even if the management tool is disabled</text>
+  </g>
 
-  <rect x="40" y="598" width="1120" height="210" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="598" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="620" font-size="18" font-weight="bold" fill="#2D6BE4">III. Referencing Preset Points</text>
+  <g transform="translate(48, 528)">
+    <rect width="1104" height="56" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="22" font-size="14" fill="#1A1B2E" font-weight="500">Persistent Display OFF:</text>
+    <text x="200" y="22" font-size="14" fill="#4A4B65">If the Preset Point management tool is disabled, all Preset Points become invisible</text>
+  </g>
 
-  <text x="60" y="652" font-size="14" font-weight="bold" fill="#1A1B2E">Spawn Points</text>
-  <text x="60" y="676" font-size="14" fill="#4A4B65">In Stage Settings, configure Spawn Point by selecting a Preset Point as the spawn location.</text>
+  <g transform="translate(48, 600)">
+    <rect width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="20" y="14" width="160" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="100" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Create Preset Point</text>
+    <text x="24" y="60" font-size="14" fill="#4A4B65">Click "Create Preset Point" — a new point is generated at the center of the current Edit Window with naming editing mode enabled.</text>
+  </g>
 
-  <text x="60" y="708" font-size="14" font-weight="bold" fill="#1A1B2E">Revive Points</text>
-  <text x="60" y="732" font-size="14" fill="#4A4B65">In Stage Settings, configure Revive Point by selecting a Preset Point as the revive location.</text>
+  <text x="48" y="720" font-size="18" font-weight="700" fill="#2D6BE4">III. Preset Point Parameters</text>
 
-  <text x="60" y="764" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph</text>
-  <text x="60" y="788" font-size="14" fill="#4A4B65">Query Preset Point Position Rotation by Index, or get a Preset Point List filtered by Unit Tag.</text>
+  <g transform="translate(48, 740)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-  <text x="600" y="838" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+    <rect x="16" y="14" width="1072" height="44" rx="14" fill="#2D6BE4"/>
+    <rect x="16" y="46" width="1072" height="12" fill="#2D6BE4"/>
+    <text x="160" y="38" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="600" y="38" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
 
-  <text x="40" y="858" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhsn6miaqazg"><text x="40" y="878" font-size="12" fill="#2D6BE4" text-decoration="underline">Preset Points</text></a>
+    <text x="24" y="84" font-size="14" fill="#1A1B2E" font-weight="500">Preset Point Name</text>
+    <text x="200" y="84" font-size="14" fill="#4A4B65">The name of the Preset Point, which can be modified</text>
+    <line x1="24" y1="98" x2="1080" y2="98" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="118" font-size="14" fill="#1A1B2E" font-weight="500">Preset Point Index</text>
+    <text x="200" y="118" font-size="14" fill="#4A4B65">Input parameter for Nodes; serves as the unique identifier of the Preset Point</text>
+    <line x1="24" y1="132" x2="1080" y2="132" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="152" font-size="14" fill="#1A1B2E" font-weight="500">Lock Transform</text>
+    <text x="200" y="152" font-size="14" fill="#4A4B65">When checked, the Preset Point's position and rotation cannot be adjusted</text>
+    <line x1="24" y1="166" x2="1080" y2="166" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="186" font-size="14" fill="#1A1B2E" font-weight="500">Display in Scene</text>
+    <text x="200" y="186" font-size="14" fill="#4A4B65">When unchecked, only coordinate axes remain visible; the Preset Point model is hidden</text>
+    <line x1="24" y1="200" x2="1080" y2="200" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="220" font-size="14" fill="#1A1B2E" font-weight="500">Location</text>
+    <text x="200" y="220" font-size="14" fill="#4A4B65">The Location data of the Preset Point</text>
+    <line x1="24" y1="234" x2="1080" y2="234" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="254" font-size="14" fill="#1A1B2E" font-weight="500">Rotation</text>
+    <text x="200" y="254" font-size="14" fill="#4A4B65">The orientation data of the Preset Point</text>
+    <line x1="24" y1="268" x2="1080" y2="268" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="288" font-size="14" fill="#1A1B2E" font-weight="500">Unit Tags</text>
+    <text x="200" y="288" font-size="14" fill="#4A4B65">Add unit tags to preset points for categorization and retrieval</text>
+    <line x1="24" y1="302" x2="1080" y2="302" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="322" font-size="14" fill="#1A1B2E" font-weight="500">Reference Relationship</text>
+    <text x="200" y="322" font-size="14" fill="#4A4B65">Visual indicator showing the reference relationship of the point in the scene</text>
+  </g>
+
+  <text x="48" y="1120" font-size="18" font-weight="700" fill="#2D6BE4">IV. Referencing Preset Points</text>
+
+  <g transform="translate(48, 1140)">
+    <rect width="530" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Spawn Point</text>
+    <text x="20" y="60" font-size="14" fill="#4A4B65">In "Stage Settings" → Spawn Point</text>
+    <text x="20" y="80" font-size="14" fill="#4A4B65">configuration, use "Select Point" to</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">reference a Preset Point as Spawn Point.</text>
+  </g>
+
+  <g transform="translate(622, 1140)">
+    <rect width="530" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Revive Point</text>
+    <text x="20" y="60" font-size="14" fill="#4A4B65">In "Stage Settings" → Revive Point</text>
+    <text x="20" y="80" font-size="14" fill="#4A4B65">configuration, use "Select Point" to</text>
+    <text x="20" y="100" font-size="14" fill="#4A4B65">reference a Preset Point as Revive Point.</text>
+  </g>
+
+  <text x="48" y="1300" font-size="18" font-weight="700" fill="#2D6BE4">V. Node Graph Operations</text>
+
+  <g transform="translate(48, 1320)">
+    <rect width="530" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="240" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="136" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Query Preset Point Position/Rotation</text>
+    <text x="20" y="60" font-size="14" fill="#4A4B65">Through the Preset Point Index, search for</text>
+    <text x="20" y="80" font-size="14" fill="#4A4B65">its location and rotation data.</text>
+    <text x="20" y="104" font-size="14" fill="#4A4B65">Click the expand icon to browse all Preset</text>
+    <text x="20" y="124" font-size="14" fill="#4A4B65">Point enumerations for selection as input.</text>
+  </g>
+
+  <g transform="translate(622, 1320)">
+    <rect width="530" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="16" y="14" width="260" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="146" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Get Preset Point List by Unit Tag</text>
+    <text x="20" y="60" font-size="14" fill="#4A4B65">Retrieve a list of Preset Points filtered</text>
+    <text x="20" y="80" font-size="14" fill="#4A4B65">by their assigned Unit Tag.</text>
+    <text x="20" y="104" font-size="14" fill="#4A4B65">Useful for batch operations on groups of</text>
+    <text x="20" y="124" font-size="14" fill="#4A4B65">points sharing the same tag.</text>
+  </g>
+
+  <g transform="translate(48, 1484)">
+    <rect width="1104" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Preset Point Workflow</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Open Preset Point Editor → Create Preset Point → Configure Name, Index, Location, Rotation →</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">Assign Unit Tags → Reference in Spawn/Revive Points or Query via Node Graph</text>
+  </g>
+
+  <text x="48" y="1610" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfvn30ctm9c" target="_blank">
+    <text x="48" y="1632" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Preset Points</text>
+  </a>
+  <text x="600" y="1660" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

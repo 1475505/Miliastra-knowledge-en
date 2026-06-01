@@ -1,189 +1,273 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2900" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3460">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="3460" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="2900" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Nameplate</text>
 
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">26-Nameplate: Visual Information Display &amp; HUD System</text>
+<!-- I. Component Functions -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Component Functions</text>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Functions of Nameplate Component</text>
+<rect x="48" y="162" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="72" dy="0">Nameplate Components display visual information for specified entities during stage runtime, including</tspan>
+<tspan x="72" dy="22">entity HP, level, directional guidance, distance display, and other visual indicators.</tspan>
+<tspan x="72" dy="30" font-weight="500" fill="#1A1B2E">Supported entity types: Characters, Objects, and Creations</tspan>
+<tspan x="72" dy="22">- Multiple nameplates can be active simultaneously</tspan>
+<tspan x="72" dy="22">- Controlled via default config, node graph, or local filter for visibility</tspan>
+</text>
 
-  <rect x="60" y="164" width="1080" height="184" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="192" font-size="14" fill="#4A4B65">Nameplate Components support displaying visual information for specified entities during stage</text>
-  <text x="80" y="214" font-size="14" fill="#4A4B65">runtime, providing entity HP, level, directional guidance, distance display, and other details.</text>
+<!-- Nameplate vs Navigation Indicator -->
+<rect x="48" y="338" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="358" width="100" height="28" rx="14" fill="#E8EEFB"/>
+<text x="122" y="377" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Nameplate</text>
+<text x="72" y="404" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can be occluded by environment</text>
+<text x="72" y="426" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">On the same physics layer as the entity</text>
 
-  <g transform="translate(80, 246)">
-    <rect x="0" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Mounting</text>
-    <text x="16" y="44" font-size="12" fill="#4A4B65">Supports characters, objects,</text>
-    <text x="16" y="60" font-size="12" fill="#4A4B65">and creations</text>
+<rect x="612" y="338" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="636" y="358" width="140" height="28" rx="14" fill="#E5F2E9"/>
+<text x="706" y="377" fill="#34A853" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Nav Indicator</text>
+<text x="636" y="404" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Not occluded by environment</text>
+<text x="636" y="426" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Above Interface Layout layer</text>
 
-    <rect x="340" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Multiple Nameplates</text>
-    <text x="16" y="44" font-size="12" fill="#4A4B65">Multiple nameplates can be</text>
-    <text x="16" y="60" font-size="12" fill="#4A4B65">active simultaneously</text>
+<!-- II. Adding the Component -->
+<text x="48" y="480" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Adding the Component</text>
 
-    <rect x="680" y="0" width="320" height="80" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Visibility Control</text>
-    <text x="16" y="44" font-size="12" fill="#4A4B65">Enable/disable via default config,</text>
-    <text x="16" y="60" font-size="12" fill="#4A4B65">node graph, or local filter</text>
-  </g>
+<rect x="48" y="494" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="84" cy="526" r="16" fill="#2D6BE4"/>
+<text x="84" y="531" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="112" y="531" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In entity/prefab editing interface, open the Editing Components tab</text>
 
-  <rect x="60" y="362" width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <rect x="60" y="362" width="4" height="100" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="390" font-size="14" font-weight="bold" fill="#1A1B2E">Nameplate vs Navigation Indicator</text>
-  <text x="84" y="416" font-size="13" fill="#4A4B65">Nameplates can be occluded by the environment and exist on the same physics layer as the entity.</text>
-  <text x="84" y="438" font-size="13" fill="#4A4B65">Navigation indicators are not occluded by the environment and are rendered above the Interface Layout layer.</text>
+<circle cx="84" cy="562" r="16" fill="#2D6BE4"/>
+<text x="84" y="567" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="112" y="567" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Add Components", select "Nameplate" to add</text>
 
-  <circle cx="80" cy="500" r="16" fill="#2D6BE4"/>
-  <text x="80" y="501" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="501" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Nameplate Components</text>
+<circle cx="84" cy="598" r="16" fill="#1B4FC0"/>
+<text x="84" y="603" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="112" y="603" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Advanced Editing" to expand the editing tab</text>
 
-  <rect x="60" y="528" width="1080" height="182" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="556" font-size="14" font-weight="bold" fill="#1A1B2E">Adding &amp; Configuring the Component</text>
-  <text x="80" y="582" font-size="13" fill="#4A4B65">(1) In the entity/prefab editing interface, open the Editing Components tab</text>
-  <text x="80" y="604" font-size="13" fill="#4A4B65">(2) Click [Add Components], select "Nameplate" to add it</text>
-  <text x="80" y="626" font-size="13" fill="#4A4B65">(3) Click [Advanced Editing] to expand the editing tab</text>
+<!-- III. Component Configuration -->
+<text x="48" y="656" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Component Configuration</text>
 
-  <g transform="translate(80, 654)">
-    <rect x="0" y="0" width="490" height="44" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">Initially Effective Nameplate</text>
-    <text x="12" y="34" font-size="12" fill="#4A4B65">Dropdown menu with checkboxes to set effective status</text>
-    <rect x="520" y="0" width="490" height="44" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="16" font-size="13" font-weight="bold" fill="#1A1B2E">Nameplate List</text>
-    <text x="12" y="34" font-size="12" fill="#4A4B65">Enumerates all nameplates configured for the entity</text>
-  </g>
+<rect x="48" y="670" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="690" width="1056" height="60" rx="10" fill="#F4F1EA"/>
+<text x="100" y="711" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Effective Nameplate</text>
+<text x="380" y="711" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dropdown enumeration; checkbox toggles effective status (synced to editing tab)</text>
+<text x="100" y="741" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Nameplate List</text>
+<text x="380" y="741" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enumerates all nameplates configured for the entity</text>
 
-  <circle cx="80" cy="748" r="16" fill="#2D6BE4"/>
-  <text x="80" y="749" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="749" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing Nameplates</text>
+<!-- IV. Nameplate Basic Settings -->
+<text x="48" y="812" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Nameplate Basic Settings</text>
 
-  <rect x="60" y="776" width="1080" height="174" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="804" font-size="14" font-weight="bold" fill="#1A1B2E">Basic Settings</text>
-  <g transform="translate(80, 830)">
-    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Select Attachment Points</text>
-    <text x="240" y="0" font-size="13" fill="#4A4B65">Preset or custom attachment point; nameplate position bases on this</text>
-    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Visible Radius (m)</text>
-    <text x="240" y="22" font-size="13" fill="#4A4B65">Effective range; nameplate logic runs only within this distance</text>
-    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Filter Node Graph</text>
-    <text x="240" y="44" font-size="13" fill="#4A4B65">Local filter to determine visibility per client</text>
-    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Initially Effective</text>
-    <text x="240" y="66" font-size="13" fill="#4A4B65">Whether to enable simultaneously with object creation</text>
-  </g>
+<rect x="48" y="826" width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="846" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="869" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="869" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <rect x="60" y="964" width="1080" height="348" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <rect x="60" y="964" width="4" height="348" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="992" font-size="14" font-weight="bold" fill="#1A1B2E">Nameplate Content Types</text>
-  <text x="84" y="1016" font-size="13" fill="#4A4B65">The nameplate offers independent editable content types, usable separately or combined,</text>
-  <text x="84" y="1036" font-size="13" fill="#4A4B65">with adjustable position, size, and detailed data for each item.</text>
+<rect x="72" y="882" width="1056" height="48" fill="#fff"/>
+<text x="100" y="903" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Attachment Points</text>
+<text x="380" y="903" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Preset or custom attachment point; nameplate position uses this as base</text>
+<line x1="72" y1="930" x2="1128" y2="930" stroke="#E8E4DA"/>
 
-  <g transform="translate(84, 1064)">
-    <rect x="0" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Text Box</text>
-    <text x="12" y="40" font-size="12" fill="#4A4B65">Text with variable insertion support</text>
-    <rect x="340" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Icons</text>
-    <text x="12" y="40" font-size="12" fill="#4A4B65">Custom icon or entity Faction Icon</text>
-    <rect x="680" y="0" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Progress Bar</text>
-    <text x="12" y="40" font-size="12" fill="#4A4B65">Horizontal, Vertical, or Ring shape</text>
-    <rect x="0" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Timer</text>
-    <text x="12" y="108" font-size="12" fill="#4A4B65">Stopwatch or Countdown</text>
-    <rect x="340" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">HP and Shield</text>
-    <text x="12" y="108" font-size="12" fill="#4A4B65">HP bar, shield display options</text>
-    <rect x="680" y="68" width="320" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Interrupt Intake Value</text>
-    <text x="12" y="108" font-size="12" fill="#4A4B65">Interruption gauge with color config</text>
-  </g>
+<rect x="72" y="930" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="951" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visible Radius (m)</text>
+<text x="380" y="951" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective range; nameplate logic runs only within this distance</text>
+<line x1="72" y1="962" x2="1128" y2="962" stroke="#E8E4DA"/>
 
-  <rect x="60" y="1326" width="1080" height="192" rx="14" fill="#E8EEFB"/>
-  <rect x="60" y="1326" width="4" height="192" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="1354" font-size="14" font-weight="bold" fill="#2D6BE4">Variable Insertion Format</text>
-  <text x="84" y="1382" font-size="13" fill="#4A4B65">Text content supports variable insertion: {Type:Prefix.VariableName}</text>
-  <text x="84" y="1410" font-size="13" font-weight="bold" fill="#1A1B2E">Type:</text>
-  <text x="180" y="1410" font-size="13" fill="#4A4B65">1 = custom variable of the entity itself, 2 = attribute of the entity</text>
-  <text x="84" y="1432" font-size="13" font-weight="bold" fill="#1A1B2E">Prefix:</text>
-  <text x="180" y="1432" font-size="13" fill="#4A4B65">s = non-character entity, a = character entity, p = player entity</text>
-  <text x="84" y="1458" font-size="13" font-weight="bold" fill="#1A1B2E">Available Attributes:</text>
-  <text x="200" y="1458" font-size="13" fill="#4A4B65">HpCur, HpMax, AtkCur, DefCur, LvCur, PName, PDist</text>
+<rect x="72" y="962" width="1056" height="64" fill="#fff"/>
+<text x="100" y="983" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Filter Node Graph</text>
+<text x="380" y="983" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Local filter to determine visibility on local client</text>
+<text x="400" y="1005" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Boolean: visible when "true"  |  Integer: visible when within effective integer range</text>
+<line x1="72" y1="1026" x2="1128" y2="1026" stroke="#E8E4DA"/>
 
-  <circle cx="80" cy="1556" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1557" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1557" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Navigation Indicators</text>
+<rect x="72" y="1026" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1047" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Effective</text>
+<text x="380" y="1047" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enable simultaneously with object creation (may cause overlapping)</text>
 
-  <rect x="60" y="1584" width="1080" height="162" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1612" font-size="14" font-weight="bold" fill="#1A1B2E">Navigation Indicator Settings</text>
-  <g transform="translate(80, 1640)">
-    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">Offset</text>
-    <text x="240" y="0" font-size="13" fill="#4A4B65">Adjustable relative to the attachment point</text>
-    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Maximum Visible Radius (m)</text>
-    <text x="240" y="22" font-size="13" fill="#4A4B65">Maximum effective range of the indicator</text>
-    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Minimum Visible Radius (m)</text>
-    <text x="240" y="44" font-size="13" fill="#4A4B65">Minimum effective range of the indicator</text>
-    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Hide When Nameplate Is Displayed</text>
-    <text x="240" y="66" font-size="13" fill="#4A4B65">Smooth transition between indicator and nameplate</text>
-  </g>
+<!-- V. Nameplate Content Types -->
+<text x="48" y="1108" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Nameplate Content Types</text>
+<text x="310" y="1108" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add via "Add Content", combine freely</text>
 
-  <rect x="60" y="1760" width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <rect x="60" y="1760" width="4" height="130" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="1788" font-size="14" font-weight="bold" fill="#1A1B2E">Navigation Indicator Content Types</text>
-  <g transform="translate(84, 1816)">
-    <rect x="0" y="0" width="490" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Text Box</text>
-    <text x="12" y="40" font-size="12" fill="#4A4B65">Display text with variable insertion support</text>
-    <rect x="520" y="0" width="490" height="56" rx="6" fill="#F0F2F5"/>
-    <text x="12" y="20" font-size="13" font-weight="bold" fill="#1A1B2E">Icons</text>
-    <text x="12" y="40" font-size="12" fill="#4A4B65">Custom icon or entity Faction Icon</text>
-  </g>
+<!-- a. Text Box -->
+<rect x="48" y="1122" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1142" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="112" y="1161" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">a. Text</text>
+<text x="168" y="1161" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Text Box</text>
+<rect x="72" y="1178" width="1056" height="144" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1200" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset:</tspan><tspan> Adjustable offset from attachment point</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Size:</tspan><tspan> Adjust text box dimensions</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Background Color:</tspan><tspan> Transparent or black semi-transparent</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Font Size:</tspan><tspan> Configurable</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Text Content:</tspan><tspan> Supports alignment, variable insertion ({Type:Prefix.VariableName})</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Note:</tspan><tspan> Text exceeding box range will not be displayed</tspan>
+</text>
 
-  <circle cx="80" cy="1928" r="16" fill="#1B4FC0"/>
-  <text x="80" y="1929" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1929" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Managing Nameplates Through Node Graph</text>
+<!-- Variable Insertion Format -->
+<rect x="48" y="1358" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1386" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variable Insertion Format: {Type:Prefix.VariableName}</text>
+<rect x="72" y="1400" width="500" height="120" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1422" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type</text>
+<text x="96" y="1442" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1: Entity's own custom variable</text>
+<text x="96" y="1462" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2: Entity attribute</text>
+<text x="96" y="1486" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prefix</text>
+<text x="96" y="1506" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">s: non-character  |  a: character  |  p: player</text>
 
-  <rect x="60" y="1956" width="1080" height="130" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1984" font-size="13" fill="#4A4B65">During entity runtime, active nameplates can be managed through the node graph.</text>
+<rect x="596" y="1400" width="532" height="120" rx="10" fill="#E8EEFB"/>
+<text x="620" y="1422" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Built-in Variable Names</text>
+<text x="620" y="1444" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">HpCur / HpMax / AtkCur / DefCur / LvCur</text>
+<text x="620" y="1466" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">PName (Player Nickname)</text>
+<text x="620" y="1488" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">PDist (Distance to Player)</text>
 
-  <g transform="translate(80, 2014)">
-    <rect x="0" y="0" width="490" height="60" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Set Entity Active Nameplate</text>
-    <text x="16" y="44" font-size="12" fill="#4A4B65">Nameplate Config ID List overrides the target entity's active nameplate</text>
-    <rect x="520" y="0" width="490" height="60" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Parameters</text>
-    <text x="16" y="44" font-size="12" fill="#4A4B65">Target Entity (runtime) + Nameplate Config ID List</text>
-  </g>
+<!-- b. Icons -->
+<rect x="48" y="1554" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1574" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="112" y="1593" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">b. Icon</text>
+<text x="96" y="1620" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset, Size</tspan><tspan>: Configurable</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Custom Icon:</tspan><tspan> Must be additionally selected</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Faction Icon:</tspan><tspan> Reads entity's faction icon automatically</tspan>
+</text>
 
-  <rect x="60" y="2100" width="1080" height="96" rx="14" fill="#E8EEFB"/>
-  <rect x="60" y="2100" width="4" height="96" rx="2" fill="#2D6BE4"/>
-  <text x="80" y="2124" font-size="14" font-weight="bold" fill="#2D6BE4">Filter Node Graph Local Variables</text>
-  <text x="80" y="2150" font-size="13" fill="#4A4B65">Get Self Entity: Outputs the entity with the nameplate component mounted</text>
-  <text x="80" y="2172" font-size="13" fill="#4A4B65">Get Current Character: Outputs the local character entity</text>
+<!-- c. Progress Bar -->
+<rect x="612" y="1554" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="636" y="1574" width="110" height="28" rx="14" fill="#E8EEFB"/>
+<text x="691" y="1593" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">c. Progress</text>
+<text x="660" y="1620" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="660" dy="0" font-weight="500" fill="#1A1B2E">Shape:</tspan><tspan> Horizontal | Vertical | Ring</tspan>
+<tspan x="660" dy="20" font-weight="500" fill="#1A1B2E">Style:</tspan><tspan> Percentage | No Text | Current Value | 1:1 Scale</tspan>
+<tspan x="660" dy="20" font-weight="500" fill="#1A1B2E">Color:</tspan><tspan> Preset colors available</tspan>
+<tspan x="660" dy="20" font-weight="500" fill="#1A1B2E">Progress Value:</tspan><tspan> Custom variables for current/min/max</tspan>
+<tspan x="660" dy="20" font-weight="500" fill="#1A1B2E">Smooth Transition:</tspan><tspan> Animated over configured duration (s)</tspan>
+</text>
 
-  <text x="60" y="2750" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0oh59a6d2i" target="_blank">
-    <text x="60" y="2776" font-size="13" fill="#2D6BE4" text-decoration="underline">Nameplate</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwiv89yra02" target="_blank">
-    <text x="60" y="2800" font-size="13" fill="#2D6BE4" text-decoration="underline">Sound Effect Player</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwtz297kp6a" target="_blank">
-    <text x="60" y="2824" font-size="13" fill="#2D6BE4" text-decoration="underline">Text Bubble</text>
-  </a>
-  <text x="600" y="2880" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<!-- d. Timer -->
+<rect x="48" y="1690" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1710" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="112" y="1729" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">d. Timer</text>
+<text x="96" y="1756" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset:</tspan><tspan> Adjustable</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Type:</tspan><tspan> Stopwatch | Countdown</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Specify Timer:</tspan><tspan> Enumerates predefined global timers</tspan>
+</text>
+
+<!-- e. HP and Shield -->
+<rect x="48" y="1806" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="1826" width="120" height="28" rx="14" fill="#E8EEFB"/>
+<text x="132" y="1845" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">e. HP &amp; Shield</text>
+<rect x="72" y="1862" width="1056" height="184" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1884" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset, Size:</tspan><tspan> Configurable</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">HP Display Style:</tspan><tspan> Do Not Show | Progress Bar | Progress Bar + Value (2 decimal places)</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">HP Color:</tspan><tspan> Selectable from preset colors</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Shield Display:</tspan><tspan> Do Not Show | Display Separately (shield bar below HP) | Mixed Display (combined bar)</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Mixed Display:</tspan><tspan> Shield value right, HP value left, according to deduction priority</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Show Shield Max Value:</tspan><tspan> When checked, shield bar displays as full if exceeding configured max</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Shield Display Max Value:</tspan><tspan> Limit value; deduction shown only when shield drops below this</tspan>
+</text>
+
+<!-- f. Interrupt Intake Value -->
+<rect x="48" y="2082" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="2102" width="130" height="28" rx="14" fill="#E8EEFB"/>
+<text x="137" y="2121" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">f. Interrupt Gauge</text>
+<text x="96" y="2148" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset, Size:</tspan><tspan> Configurable</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Calculation:</tspan><tspan> Can be increased or decreased</tspan>
+<tspan x="96" dy="20" font-weight="500" fill="#1A1B2E">Color:</tspan><tspan> Selectable from preset colors</tspan>
+</text>
+
+<!-- VI. Navigation Indicator -->
+<text x="48" y="2244" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Navigation Indicator</text>
+
+<rect x="48" y="2258" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2286" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Settings</text>
+<rect x="72" y="2298" width="1056" height="120" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2320" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Offset:</tspan><tspan> Adjustable from attachment point</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Maximum Visible Radius (m):</tspan><tspan> Maximum effective range of indicator</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Minimum Visible Radius (m):</tspan><tspan> Minimum effective range of indicator</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Hide When Nameplate Displayed:</tspan><tspan> Smooth transition between nameplate and indicator</tspan>
+</text>
+
+<!-- Navigation Indicator Content -->
+<rect x="48" y="2454" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2482" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Navigation Indicator Content Types</text>
+<rect x="72" y="2496" width="500" height="56" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2518" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Text Box</text>
+<text x="96" y="2540" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Size, Background Color, Font Size, Text (variable insertion)</text>
+
+<rect x="596" y="2496" width="532" height="56" rx="10" fill="#E8EEFB"/>
+<text x="620" y="2518" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icons</text>
+<text x="620" y="2540" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Size, Icon Type: Custom Icon or Use Faction Icon</text>
+
+<!-- VII. Local Filter Nodes -->
+<text x="48" y="2616" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Local Filter Nodes</text>
+
+<rect x="48" y="2630" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="2650" width="1056" height="80" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2674" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0" font-weight="500" fill="#1A1B2E">Get Self Entity:</tspan><tspan> Output is the entity with nameplate component mounted</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Get Target Entity:</tspan><tspan> Output is the character entity within effective range (succeeds only if local client character)</tspan>
+<tspan x="96" dy="22" font-weight="500" fill="#1A1B2E">Get Current Character:</tspan><tspan> Output is the local character</tspan>
+</text>
+
+<!-- VIII. Node Graph Management -->
+<text x="48" y="2792" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Node Graph Management</text>
+
+<rect x="48" y="2806" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2834" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Entity Active Nameplate</text>
+<rect x="72" y="2848" width="1056" height="40" rx="10" fill="#F4F1EA"/>
+<text x="96" y="2870" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan font-weight="500" fill="#1A1B2E">Target Entity:</tspan> Runtime entity  |  <tspan font-weight="500" fill="#1A1B2E">Nameplate Config ID List:</tspan> Completely overrides active nameplates
+</text>
+
+<!-- Tutorial: Practical Steps -->
+<text x="48" y="2948" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Tutorial: Quest Guide Nameplate</text>
+
+<rect x="48" y="2962" width="1104" height="280" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2990" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Creating Permanent On-Screen Guidance</text>
+<rect x="72" y="3004" width="1056" height="220" rx="10" fill="#F4F1EA"/>
+<text x="96" y="3028" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">1. Create NPC prefab, add Nameplate component + Custom Attachment Point component</tspan>
+<tspan x="96" dy="22">2. Add custom attachment point (set Name, Offset, Scale as needed)</tspan>
+<tspan x="96" dy="22">3. Add nameplate, configure Attachment Point, Visible Radius, Type, Navigation Indicator</tspan>
+<tspan x="96" dy="22">4. Nameplate content: Text Box (quest info) + Icon</tspan>
+<tspan x="96" dy="22">5. Enable Navigation Indicator: set Max/Min Visible Radius</tspan>
+<tspan x="96" dy="22">6. Nav indicator content: Text Box (distance via Insert Variable - PDist) + Icon</tspan>
+<tspan x="96" dy="22">7. Place prefab in scene and enter Test Mode</tspan>
+<tspan x="96" dy="30" font-weight="500" fill="#1A1B2E">Combined Usage: Nameplate + Speech Bubble on same NPC for interaction-triggered dialogue</tspan>
+</text>
+
+<!-- Tip Box -->
+<rect x="48" y="3258" width="1104" height="76" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="3258" width="4" height="76" rx="2" fill="#2D6BE4"/>
+<text x="72" y="3282" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tips</text>
+<text x="72" y="3304" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Nameplate ID (e.g., "Nameplate X") can be used as node input to adjust activation parameters.</text>
+<text x="72" y="3326" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Use Custom Attachment Points for precise nameplate positioning above entity heads.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="3374" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5n160t2b6w" target="_blank">
+<text x="48" y="3394" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Nameplate (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mh0mrr0c4xps" target="_blank">
+<text x="48" y="3414" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Nameplates and Speech Bubbles Tutorial</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="3446" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

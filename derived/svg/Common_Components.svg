@@ -1,55 +1,74 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 600" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 660">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
 
-  <rect width="1200" height="600" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<rect width="1200" height="660" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Common Components</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Common Components</text>
 
-  <!-- Section I: Editing Common Components -->
-  <rect x="40" y="100" width="1120" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Editing Common Components</text>
-  <text x="68" y="162" font-size="14" fill="#4A4B65">Components are functions that add capabilities to entities. After adding a component, entities</text>
-  <text x="68" y="186" font-size="14" fill="#4A4B65">can use the corresponding functions, and data can be modified through the node graph.</text>
-  <text x="68" y="210" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Configuration:</tspan> View, add, or delete components in the Common Components tab on the right</text>
-  <text x="68" y="234" font-size="14" fill="#4A4B65">panel when a prefab or entity is selected. Some units have default components.</text>
+<!-- I. What Are Components -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. What Are Components</text>
 
-  <!-- Section II: Component Life Cycle -->
-  <rect x="40" y="270" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="302" font-size="18" font-weight="700" fill="#2D6BE4">II. Component Life Cycle</text>
-  <text x="68" y="332" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Edit-Time Only:</tspan> Components can only be added or removed during editing. They cannot</text>
-  <text x="68" y="356" font-size="14" fill="#4A4B65">be dynamically added or removed during gameplay.</text>
-  <text x="68" y="380" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Runtime Control:</tspan> Some components can be enabled or disabled through node graphs.</text>
-  <text x="68" y="404" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Active Duration:</tspan> Component functions remain active while the entity exists in the scene.</text>
-  <text x="68" y="428" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Destruction:</tspan> When an entity is destroyed or removed, its component functions stop.</text>
+<rect x="48" y="162" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="188" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Definition</text>
+<text x="72" y="210" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Components are functions that can be added to entities. After adding components, the entity</text>
+<text x="72" y="230" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">can use the corresponding functions, and you can modify the component's data and logic through the node graph.</text>
+<text x="72" y="258" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Common Components</text>
+<text x="228" y="258" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">can be freely added and deleted on prefabs or entities.</text>
+<text x="72" y="278" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Some units come with their commonly used components by default.</text>
 
-  <!-- Tip Box -->
-  <rect x="40" y="450" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-  <rect x="40" y="450" width="4" height="50" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="472" font-size="14" font-weight="700" fill="#1A1B2E">Tip</text>
-  <text x="68" y="490" font-size="13" fill="#4A4B65">Modify component data and logic through the node graph. Component editing is done on prefabs and entities, not at runtime.</text>
+<!-- II. Editing Common Components -->
+<text x="48" y="318" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Editing Common Components</text>
 
-  <!-- Source Links -->
-  <text x="68" y="530" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+<rect x="48" y="332" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="358" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">After selecting a prefab or entity, view configured components or add/delete components</text>
+<text x="72" y="378" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">in the Common Components tab on the right side of the editor.</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhhitrrv4166" target="_blank">
-    <text x="68" y="554" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Common Components</text>
-  </a>
+<!-- III. Component Life Cycle -->
+<text x="48" y="428" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Component Life Cycle</text>
 
-  <!-- Footer -->
-  <text x="600" y="588" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="48" y="442" width="540" height="110" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="468" r="12" fill="#2D6BE4"/>
+<text x="72" y="473" fill="#fff" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="92" y="472" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Editing Phase Only</text>
+<text x="72" y="496" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Components can only be added or removed during</text>
+<text x="72" y="516" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">editing. Cannot be dynamically added or removed</text>
+<text x="72" y="536" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">during gameplay.</text>
+
+<rect x="604" y="442" width="548" height="110" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="628" cy="468" r="12" fill="#1B4FC0"/>
+<text x="628" y="473" fill="#fff" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="648" y="472" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Runtime Behavior</text>
+<text x="628" y="496" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When an entity exists in the scene, its component</text>
+<text x="628" y="516" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">functions remain active until the entity is destroyed.</text>
+<text x="628" y="536" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Some components can be enabled/disabled via node graphs.</text>
+
+<!-- Tip box -->
+<rect x="48" y="564" width="1104" height="36" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="564" width="4" height="36" rx="2" fill="#2D6BE4"/>
+<text x="68" y="587" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">See also: Specialized Settings and Node Graphs for advanced component configuration.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="624" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhei6orvcbkm" target="_blank">
+  <text x="48" y="642" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Common Components</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="656" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
 </svg>

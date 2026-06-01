@@ -1,122 +1,285 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1580" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2700">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
 
-  <rect width="1200" height="1580" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<rect width="1200" height="2700" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Variables</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variables</text>
+<text x="220" y="72" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom Variables, Node Graph Variables, Local Variables</text>
 
-  <!-- Section I: Custom Variables - Definition & Types -->
-  <rect x="40" y="100" width="1120" height="210" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Custom Variables: Definition &amp; Types</text>
-  <text x="68" y="162" font-size="14" fill="#4A4B65">Custom variables are data structures stored in an entity's <tspan font-weight="700" fill="#1A1B2E">custom variable component</tspan>.</text>
-  <text x="68" y="186" font-size="14" fill="#4A4B65">They use <tspan font-weight="700" fill="#1A1B2E">custom variable names</tspan> (string type) as unique identifiers within the same entity.</text>
-  <text x="68" y="210" font-size="14" fill="#4A4B65">Supported data types: Integer, Float, String, Boolean, 3D Vector, Entities, GUID,</text>
-  <text x="68" y="234" font-size="14" fill="#4A4B65">Prefab ID, Configuration ID, Structure, and their List variants, plus Dictionary types.</text>
-  <text x="68" y="258" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Life Cycle:</tspan> Follows the entity. Variables are destroyed when the entity is destroyed.</text>
-  <text x="68" y="282" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Scope:</tspan> Global for both reading and writing — any entity can access any other entity's variables.</text>
+<!-- I. What Are Custom Variables -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. What Are Custom Variables</text>
 
-  <!-- Section II: Custom Variable Component & Editing -->
-  <rect x="40" y="330" width="1120" height="185" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="362" font-size="18" font-weight="700" fill="#2D6BE4">II. Custom Variable Component &amp; Editing</text>
-  <text x="68" y="392" font-size="14" fill="#4A4B65">The custom variable component is the data carrier. An entity must have this component before</text>
-  <text x="68" y="416" font-size="14" fill="#4A4B65">custom variable operations can be performed. All units have this component by default.</text>
-  <text x="68" y="440" font-size="14" fill="#4A4B65">In the <tspan font-weight="700" fill="#1A1B2E">Advanced Editing</tspan> tab, you can view, add, and modify custom variables including their</text>
-  <text x="68" y="464" font-size="14" fill="#4A4B65">names, types, and default values. The <tspan font-weight="700" fill="#1A1B2E">Stage Overview</tspan> lets you view all variables on stage.</text>
-  <text x="68" y="488" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Caution:</tspan> Changing a variable's name or type after use in node graphs may cause nodes to fail.</text>
+<rect x="48" y="162" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="188" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom variables are data structures stored in an entity's custom variable component. Creators can</text>
+<text x="72" y="208" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">define and use them. Common uses: recording player scores, hit counts, mechanism states, etc.</text>
+<text x="72" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique Identifier:</text>
+<text x="210" y="234" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom variable names (string type). Cannot share the same name within the same entity.</text>
+<text x="72" y="254" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Operations: reading, modifying, and monitoring events all rely on custom variable names.</text>
 
-  <!-- Section III: Custom Variable Node Graph Nodes -->
-  <rect x="40" y="535" width="1120" height="375" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="567" font-size="18" font-weight="700" fill="#2D6BE4">III. Custom Variable Node Graph Nodes</text>
+<!-- Supported Data Types -->
+<text x="48" y="298" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Supported Data Types</text>
 
-  <!-- Node 1: Set Custom Variable -->
-  <text x="68" y="599" font-size="14" font-weight="700" fill="#1A1B2E">Set Custom Variable</text>
-  <text x="68" y="619" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="639" font-size="14" fill="#4A4B65">Sets a named custom variable on the target entity. Creates a new variable if none exists.</text>
-  <text x="68" y="663" font-size="14" fill="#4A4B65">Supports generic input. Parameters: Target Entity, Variable Name, Value, Trigger Event.</text>
+<rect x="48" y="312" width="356" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="338" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Data Types</text>
+<text x="72" y="360" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Integer</text>
+<text x="72" y="378" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Floating Point Numbers</text>
+<text x="72" y="396" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">String</text>
+<text x="72" y="414" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Boolean</text>
+<text x="72" y="432" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3D Vector</text>
+<text x="72" y="450" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entities</text>
+<text x="72" y="468" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">GUID</text>
+<text x="72" y="486" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prefab ID / Configuration ID</text>
+<text x="72" y="504" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structure</text>
 
-  <!-- Node 2: Get Custom Variable -->
-  <text x="68" y="695" font-size="14" font-weight="700" fill="#1A1B2E">Get Custom Variable</text>
-  <text x="68" y="715" font-size="13" fill="#8B8DA0">Node Type: Query</text>
-  <text x="68" y="735" font-size="14" fill="#4A4B65">Retrieves a custom variable value by name from the target entity. The output is generic and</text>
-  <text x="68" y="759" font-size="14" fill="#4A4B65">requires connection or manual type specification before use.</text>
+<rect x="420" y="312" width="356" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="444" y="338" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">List Data Types</text>
+<text x="444" y="360" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Integer List</text>
+<text x="444" y="378" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Floating Point Numbers List</text>
+<text x="444" y="396" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">String List</text>
+<text x="444" y="414" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Boolean List</text>
+<text x="444" y="432" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3D Vector List</text>
+<text x="444" y="450" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity List</text>
+<text x="444" y="468" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">GUID List</text>
+<text x="444" y="486" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prefab ID List / Config ID List</text>
+<text x="444" y="504" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Structure List</text>
 
-  <!-- Node 3: When Custom Variable Changes -->
-  <text x="68" y="791" font-size="14" font-weight="700" fill="#1A1B2E">When Custom Variable Changes</text>
-  <text x="68" y="811" font-size="13" fill="#8B8DA0">Node Type: Event</text>
-  <text x="68" y="831" font-size="14" fill="#4A4B65">Triggers when any custom variable on the entity changes. Fires even if the value remains</text>
-  <text x="68" y="855" font-size="14" fill="#4A4B65">identical. Filter by variable name for specific monitoring.</text>
-  <text x="68" y="879" font-size="13" fill="#4A4B65">Outputs: Event Source Entity, Source GUID, Variable Name, Pre-Change Value, Post-Change Value</text>
-  <text x="68" y="897" font-size="13" fill="#8B8DA0">Note: Container types (List, Dictionary, Structure) omit pre/post change values.</text>
+<rect x="792" y="312" width="360" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="816" y="338" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dictionary Data Types</text>
+<text x="816" y="360" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Dictionary Data Types supported</text>
+<text x="816" y="390" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Constraints</text>
+<text x="816" y="414" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Integer range: -2147483647 to 2147483647</text>
+<text x="816" y="434" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(cannot be -2147483648)</text>
+<text x="816" y="458" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Floating Point precision: 0.0001</text>
+<text x="816" y="482" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Out-of-range input returns last valid value</text>
 
-  <!-- Section IV: Node Graph Variables -->
-  <rect x="40" y="930" width="1120" height="290" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="962" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Variables: Definition &amp; Scope</text>
-  <text x="68" y="992" font-size="14" fill="#4A4B65">Node Graph Variables have a <tspan font-weight="700" fill="#1A1B2E">life cycle that follows the node graph</tspan>, and are only valid in</text>
-  <text x="68" y="1016" font-size="14" fill="#4A4B65">Server Node Graphs. They can only be accessed within the node graph they reside in.</text>
-  <text x="68" y="1040" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Why use them:</tspan> Lightweight, allow duplicate names across graphs, support modular design.</text>
+<!-- III. Life Cycle and Scope -->
+<text x="48" y="548" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Life Cycle and Scope</text>
 
-  <!-- Comparison mini-table -->
-  <rect x="68" y="1064" width="1064" height="34" fill="#2D6BE4"/>
-  <text x="80" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" dominant-baseline="middle">Aspect</text>
-  <text x="360" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Node Graph Variables</text>
-  <text x="830" y="1085" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Custom Variables</text>
+<rect x="48" y="562" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="588" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Life Cycle</text>
+<text x="72" y="610" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follows the component (and entity). When entity</text>
+<text x="72" y="630" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">is destroyed, custom variables are destroyed too.</text>
+<text x="72" y="650" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot be accessed or modified after destruction.</text>
 
-  <rect x="68" y="1098" width="1064" height="30" fill="#F9F7F2"/>
-  <text x="80" y="1117" font-size="12" fill="#4A4B65" dominant-baseline="middle">Life Cycle</text>
-  <text x="360" y="1117" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Follows Node Graph</text>
-  <text x="830" y="1117" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Follows Entity</text>
+<rect x="604" y="562" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="588" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scope</text>
+<text x="628" y="610" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Global read/write: any entity can read and modify</text>
+<text x="628" y="630" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">custom variables on any other entity.</text>
+<text x="628" y="650" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Events only pushed to the entity where node graph is mounted.</text>
 
-  <rect x="68" y="1128" width="1064" height="30" fill="#FFFFFF"/>
-  <text x="80" y="1147" font-size="12" fill="#4A4B65" dominant-baseline="middle">Scope</text>
-  <text x="360" y="1147" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Within node graph only</text>
-  <text x="830" y="1147" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Global (any entity)</text>
+<!-- IV. Custom Variable Component -->
+<text x="48" y="698" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Custom Variable Component</text>
 
-  <rect x="68" y="1158" width="1064" height="30" fill="#F9F7F2"/>
-  <text x="80" y="1177" font-size="12" fill="#4A4B65" dominant-baseline="middle">Naming &amp; Override</text>
-  <text x="360" y="1177" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Unique in graph, expose to stage</text>
-  <text x="830" y="1177" font-size="12" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Unique in entity, general override</text>
+<rect x="48" y="712" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="738" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The custom variable component is the data carrier. Supports configuring multiple variables simultaneously.</text>
+<text x="72" y="762" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Definition Requirements (all must be specified):</text>
+<text x="72" y="786" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Custom variable name: unique identifier, no duplicates within same component</text>
+<text x="72" y="806" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Data type: strong typing, all variables must have types explicitly defined</text>
+<text x="72" y="826" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Default value: variable created with this value when entity is created</text>
+<text x="72" y="854" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variables do NOT need to be defined before use. "Set Custom Variable" node can dynamically create new variables.</text>
+<text x="72" y="868" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only default-configured variables are synchronized locally for Interface and local filters.</text>
 
-  <!-- Section V: Node Graph Variables - Editing & Exposing -->
-  <rect x="40" y="1240" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="1272" font-size="18" font-weight="700" fill="#2D6BE4">V. Node Graph Variables: Editing &amp; Exposing</text>
-  <text x="68" y="1302" font-size="14" fill="#4A4B65">Access the <tspan font-weight="700" fill="#1A1B2E">Node Graph Variables</tspan> tab from the node graph editing shortcut menu.</text>
-  <text x="68" y="1326" font-size="14" fill="#4A4B65">Create and edit variables directly in the tab. Drag a variable into the editing area to quickly</text>
-  <text x="68" y="1350" font-size="14" fill="#4A4B65">create Set or Get operation nodes. Click the <tspan font-weight="700" fill="#1A1B2E">Expose</tspan> button to allow stage-level</text>
-  <text x="68" y="1374" font-size="14" fill="#4A4B65">value overwriting on different entity instances for the same Node Graph Variable.</text>
+<!-- V. Editing Entry Point -->
+<text x="48" y="908" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Editing Entry Point</text>
 
-  <!-- Tip Box -->
-  <rect x="40" y="1420" width="1120" height="65" rx="14" fill="#E8EEFB"/>
-  <rect x="40" y="1420" width="4" height="65" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="1442" font-size="14" font-weight="700" fill="#1A1B2E">Container Type Pass-by-Reference</text>
-  <text x="68" y="1464" font-size="13" fill="#4A4B65">For List, Dictionary, and Structure types, Get Custom Variable returns a reference, not a copy.</text>
-  <text x="68" y="1482" font-size="13" fill="#4A4B65">Modifications via reference do not trigger When Custom Variable Changes. Use Set to trigger events.</text>
+<rect x="48" y="922" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="948" r="12" fill="#2D6BE4"/>
+<text x="72" y="953" fill="#fff" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="92" y="952" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Find or Add Component</text>
+<text x="92" y="974" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Components tab > Find custom variable component</text>
+<text x="92" y="994" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(default for all units) or Add Common Components.</text>
+<text x="92" y="1014" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click [Advanced Editing] for details.</text>
+<text x="92" y="1034" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">View count of defined variables on Components tab.</text>
 
-  <!-- Source Links -->
-  <text x="68" y="1515" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+<rect x="604" y="922" width="548" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="628" cy="948" r="12" fill="#1B4FC0"/>
+<text x="628" y="953" fill="#fff" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="648" y="952" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Advanced Editing Tab</text>
+<text x="648" y="974" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Predefined Variables: view/modify names, types, defaults</text>
+<text x="648" y="994" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add Custom Variable: add single or multiple variables</text>
+<text x="648" y="1014" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stage Variables Overview: view all on stage entities</text>
+<text x="648" y="1034" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Filter by type; Batch Delete mode available</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh07te9wy8b6" target="_blank">
-    <text x="68" y="1543" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Custom Variables</text>
-  </a>
+<!-- Warning -->
+<rect x="48" y="1054" width="1104" height="48" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="1054" width="4" height="48" rx="2" fill="#D93025"/>
+<text x="68" y="1074" fill="#D93025" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Warning: Modifying name or type of predefined variables, or batch deleting, may cause related</text>
+<text x="68" y="1092" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">custom variable nodes in the node graph to fail to run because they cannot find the corresponding variable.</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtq21i5la38" target="_blank">
-    <text x="68" y="1569" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Node Graph Variables</text>
-  </a>
+<!-- VI. Node Graph Operations (Server) -->
+<text x="48" y="1138" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Node Graph Operations (Server)</text>
 
-  <!-- Footer -->
-  <text x="600" y="1570" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="48" y="1152" width="1104" height="280" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="1152" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="1174" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="1176" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node</text>
+<text x="280" y="1176" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type</text>
+<text x="380" y="1176" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameters</text>
+
+<!-- Set Custom Variable -->
+<text x="72" y="1210" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Custom Variable</text>
+<text x="280" y="1210" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="380" y="1210" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Target Entity (Entity), Variable Name (String),</text>
+<text x="380" y="1228" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variable Value (Generic), Trigger Event (Boolean)</text>
+<text x="380" y="1246" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Creates new variable if name not found. Supports generic input.</text>
+<line x1="68" y1="1256" x2="1132" y2="1256" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Get Custom Variable -->
+<text x="72" y="1276" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Custom Variable</text>
+<text x="280" y="1276" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="380" y="1276" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Input: Target Entity (Entity), Variable Name (String)</text>
+<text x="380" y="1294" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Output: Variable Value (Generic, requires connection)</text>
+<line x1="68" y1="1304" x2="1132" y2="1304" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- When Custom Variable Changes -->
+<text x="72" y="1324" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Custom Variable</text>
+<text x="72" y="1342" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Changes</text>
+<text x="280" y="1324" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Event</text>
+<text x="380" y="1324" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Output: Event Source Entity, Event Source GUID,</text>
+<text x="380" y="1342" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variable Name, Pre-Change Value, Post-Change Value</text>
+<text x="380" y="1360" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Triggered even if value unchanged. Filter by variable name recommended.</text>
+
+<!-- Local Node Graph -->
+<text x="48" y="1468" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Local Node Graph Access</text>
+
+<rect x="48" y="1482" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1508" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Custom Variable (Local)</text>
+<text x="300" y="1508" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query node. Same parameters as server version. Read-only from local node graph.</text>
+<text x="72" y="1530" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only variables configured by default in the component are synchronized locally.</text>
+
+<!-- VIII. Container Types and Pass by Reference -->
+<text x="48" y="1578" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Container Types and Pass by Reference</text>
+
+<rect x="48" y="1592" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1618" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Container Types (Pass by Reference)</text>
+<text x="72" y="1640" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All List, Dictionary, and Structure data types.</text>
+<text x="72" y="1662" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get outputs a reference. Modifications directly</text>
+<text x="72" y="1682" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">change the stored custom variable value.</text>
+<text x="72" y="1704" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Does NOT trigger "When Custom Variable Changes".</text>
+<text x="72" y="1724" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use Get Custom Variable to obtain updated value.</text>
+
+<rect x="604" y="1592" width="548" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1618" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Non-Container Types (Pass by Value)</text>
+<text x="628" y="1640" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic data types (Integer, Float, String, etc.).</text>
+<text x="628" y="1662" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get outputs the value itself. Modifying this value</text>
+<text x="628" y="1682" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">does NOT affect the stored custom variable.</text>
+<text x="628" y="1704" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only Set Custom Variable node can trigger the</text>
+<text x="628" y="1724" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Custom Variable Changes event.</text>
+
+<!-- Tip for container events -->
+<rect x="48" y="1744" width="1104" height="48" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1744" width="4" height="48" rx="2" fill="#2D6BE4"/>
+<text x="68" y="1764" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">For container types, the "When Custom Variable Changes" event Pre-Change Value and Post-Change Value</text>
+<text x="68" y="1782" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">outputs do NOT have values when triggered by Set Custom Variable. Use Get Custom Variable for updated value.</text>
+
+<!-- IX. Node Graph Variables -->
+<text x="48" y="1828" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Node Graph Variables</text>
+
+<rect x="48" y="1842" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1868" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Life Cycle follows the Node Graph. Only valid in Server Node Graphs. Functionality similar to Custom</text>
+<text x="72" y="1888" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variables but with different life cycle and scope. Can only be accessed within the Node Graph it resides in.</text>
+<text x="72" y="1910" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Names must be unique within same Node Graph. Multiple Node Graphs on same entity can share variable names.</text>
+
+<!-- Comparison Table -->
+<text x="48" y="1958" fill="#2D6BE4" font-size="16" font-weight="600" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Comparison: Node Graph Variables vs Custom Variables</text>
+
+<rect x="48" y="1972" width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="1972" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="1994" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="1996" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Aspect</text>
+<text x="360" y="1996" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph Variables</text>
+<text x="720" y="1996" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom Variables</text>
+
+<text x="72" y="2030" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Life Cycle</text>
+<text x="360" y="2030" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follow Node Graph</text>
+<text x="720" y="2030" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follow Entity</text>
+<line x1="68" y1="2040" x2="1132" y2="2040" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2060" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Scope</text>
+<text x="360" y="2060" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only within the Node Graph</text>
+<text x="720" y="2060" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Globally accessible, specify Entity</text>
+<line x1="68" y1="2070" x2="1132" y2="2070" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2090" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Naming</text>
+<text x="360" y="2090" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique within same Node Graph</text>
+<text x="720" y="2090" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique within same Component</text>
+<line x1="68" y1="2100" x2="1132" y2="2100" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2120" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity Override</text>
+<text x="360" y="2120" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Yes, must be manually exposed</text>
+<text x="720" y="2120" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Yes, following Component rules</text>
+<line x1="68" y1="2130" x2="1132" y2="2130" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2150" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Data Types</text>
+<text x="360" y="2150" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Basic and List Data Types</text>
+<text x="720" y="2150" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Basic and List Data Types</text>
+<line x1="68" y1="2160" x2="1132" y2="2160" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2180" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Actions</text>
+<text x="360" y="2180" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set, Obtain, Monitor Changes</text>
+<text x="720" y="2180" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set, Obtain, Monitor Changes</text>
+
+<!-- X. Why Use Node Graph Variables -->
+<text x="48" y="2248" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X. When to Use Each Variable Type</text>
+
+<rect x="48" y="2262" width="540" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="60" y="2274" width="140" height="28" rx="14" fill="#E8EEFB"/>
+<text x="130" y="2293" fill="#2D6BE4" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Custom Variables</text>
+<text x="72" y="2318" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Store general-purpose data belonging to an Entity.</text>
+<text x="72" y="2338" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Globally accessible. E.g., hit count of a mechanism</text>
+<text x="72" y="2358" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">that other Entities/Node Graphs may access.</text>
+<text x="72" y="2378" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Lightweight, defined in component editing.</text>
+
+<rect x="604" y="2262" width="548" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="616" y="2274" width="160" height="28" rx="14" fill="#E8EEFB"/>
+<text x="696" y="2293" fill="#2D6BE4" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph Variables</text>
+<text x="628" y="2318" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Store local, temporary variables belonging to the</text>
+<text x="628" y="2338" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph. E.g., temporary Player List in a function.</text>
+<text x="628" y="2358" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents exposing internal variables externally.</text>
+<text x="628" y="2378" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enables modular design, fully within sandbox.</text>
+
+<!-- XI. Exposing Node Graph Variables -->
+<text x="48" y="2418" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">XI. Exposing Node Graph Variables to Stages</text>
+
+<rect x="48" y="2432" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2458" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click the Expose button beside a Node Graph Variable and save to expose it to the Stage layer.</text>
+<text x="72" y="2480" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In the Stage's Node Graph, view exposed variable count. Click Edit Variable Count to adjust overwrite</text>
+<text x="72" y="2500" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">values per entity. E.g., different DMG values for different Explosive Barrel entities from same prefab.</text>
+
+<!-- XII. Editing Node Graph Variables -->
+<text x="48" y="2536" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">XII. Editing Node Graph Variables</text>
+
+<rect x="48" y="2550" width="1104" height="40" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2576" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph Editing Tab > Shortcut menu > Node Graph Variables tab. Drag variables into editing area to create Set/Get nodes.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2614" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhso1b9wjica" target="_blank">
+  <text x="48" y="2632" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Custom Variables</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhtshailzs7w" target="_blank">
+  <text x="48" y="2650" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Node Graph Variables</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mh6d6yikkikc" target="_blank">
+  <text x="48" y="2668" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Defining and Updating Custom Variables</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2690" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
 </svg>

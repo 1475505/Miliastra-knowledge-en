@@ -1,129 +1,177 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2300" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1640">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="1640" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="2300" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">SFX Player</text>
+<text x="290" y="78" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sound Effect Player</text>
 
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">23-Sound Effect Player: Audio Configuration &amp; Playback Control</text>
+<!-- I. Component Functions -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Component Functions</text>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Sound Effect Player Component Functions</text>
+<rect x="48" y="162" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Provides the ability for a Unit to play additional sound effects. Supports two playback methods:</text>
+<rect x="72" y="210" width="520" height="52" rx="10" fill="#E8EEFB"/>
+<text x="96" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Auto-Play</text>
+<text x="96" y="254" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Plays automatically after the Unit is created</text>
+<rect x="612" y="210" width="520" height="52" rx="10" fill="#E5F2E9"/>
+<text x="636" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph Trigger</text>
+<text x="636" y="254" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Playback triggered via Node Graph (requires component)</text>
 
-  <rect x="60" y="164" width="1080" height="110" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="192" font-size="14" fill="#4A4B65">The Sound Effect Player component provides the ability for a Unit to play additional sound effects. The component supports two playback methods:</text>
-  <text x="80" y="218" font-size="13" fill="#4A4B65">1. When configured on the component by default, it plays automatically after the owning Unit is created</text>
-  <text x="80" y="242" font-size="13" fill="#4A4B65">2. Playback can be triggered via the Node Graph; the Unit must have the Sound Effect Player component mounted</text>
+<!-- II. Adding the Component -->
+<text x="48" y="324" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Adding the Component</text>
+<text x="290" y="324" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Setup steps</text>
 
-  <circle cx="80" cy="310" r="16" fill="#2D6BE4"/>
-  <text x="80" y="311" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="311" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Sound Effect Player Component</text>
+<rect x="48" y="338" width="1104" height="148" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="84" cy="370" r="16" fill="#2D6BE4"/>
+<text x="84" y="375" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="112" y="375" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Switch to Components tab of the entity or prefab</text>
 
-  <rect x="60" y="338" width="1080" height="122" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="366" font-size="14" font-weight="bold" fill="#1A1B2E">Adding the Component</text>
-  <text x="80" y="392" font-size="13" fill="#4A4B65">(1) Switch to the Components tab of the entity or prefab</text>
-  <text x="80" y="414" font-size="13" fill="#4A4B65">(2) Find or create a Sound Effect Player component</text>
-  <text x="80" y="440" font-size="13" fill="#4A4B65">Click [Advanced Editing] to open the details editing tab. On the details tab, click [Add Sound Effect] to create a new sound effect configuration.</text>
+<circle cx="84" cy="410" r="16" fill="#2D6BE4"/>
+<text x="84" y="415" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="112" y="415" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Find or create a Sound Effect Player component</text>
 
-  <rect x="60" y="474" width="1080" height="310" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="500" font-size="14" font-weight="bold" fill="#1A1B2E">Sound Effect Configuration Parameters</text>
+<circle cx="84" cy="450" r="16" fill="#2D6BE4"/>
+<text x="84" y="455" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="112" y="455" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Advanced Editing" to open the details editing tab</text>
+<text x="112" y="475" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Add Sound Effect" on the details tab to create a new sound effect configuration.</text>
 
-  <g transform="translate(80, 522)">
-    <text x="0" y="0" font-size="13" font-weight="bold" fill="#1A1B2E">ID</text>
-    <text x="240" y="0" font-size="13" fill="#4A4B65">Unique identification ID of the Sound Effect Player</text>
-    <text x="0" y="22" font-size="13" font-weight="bold" fill="#1A1B2E">Name</text>
-    <text x="240" y="22" font-size="13" fill="#4A4B65">Display name of the player</text>
-    <text x="0" y="44" font-size="13" font-weight="bold" fill="#1A1B2E">Sound Effect Assets</text>
-    <text x="240" y="44" font-size="13" fill="#4A4B65">Reference to the specific sound effect asset to play</text>
-    <text x="0" y="66" font-size="13" font-weight="bold" fill="#1A1B2E">Volume</text>
-    <text x="240" y="66" font-size="13" fill="#4A4B65">Controls the playback volume of the sound effect</text>
-    <text x="0" y="88" font-size="13" font-weight="bold" fill="#1A1B2E">Playback Speed</text>
-    <text x="240" y="88" font-size="13" fill="#4A4B65">Playback speed of the sound effect asset</text>
-    <text x="0" y="110" font-size="13" font-weight="bold" fill="#1A1B2E">Loop Playback</text>
-    <text x="240" y="110" font-size="13" fill="#4A4B65">When enabled, the asset loops after finishing</text>
-    <text x="0" y="132" font-size="13" font-weight="bold" fill="#1A1B2E">Loop Interval (s)</text>
-    <text x="240" y="132" font-size="13" fill="#4A4B65">Delay between loop iterations</text>
-    <text x="0" y="154" font-size="13" font-weight="bold" fill="#1A1B2E">3D Sound Effects</text>
-    <text x="240" y="154" font-size="13" fill="#4A4B65">Determines whether the sound is 3D; enables spatial audio options</text>
-    <text x="0" y="176" font-size="13" font-weight="bold" fill="#1A1B2E">Range Preview</text>
-    <text x="240" y="176" font-size="13" fill="#4A4B65">When enabled, shows the sound propagation range in the Scene</text>
-    <text x="0" y="198" font-size="13" font-weight="bold" fill="#1A1B2E">Range Radius (m)</text>
-    <text x="240" y="198" font-size="13" fill="#4A4B65">Propagation radius of the sound effect</text>
-    <text x="0" y="220" font-size="13" font-weight="bold" fill="#1A1B2E">Attachment Point</text>
-    <text x="240" y="220" font-size="13" fill="#4A4B65">Specifies the location used as the sound source</text>
-    <text x="0" y="242" font-size="13" font-weight="bold" fill="#1A1B2E">Offset</text>
-    <text x="240" y="242" font-size="13" fill="#4A4B65">Offsets the sound source's location</text>
-  </g>
+<!-- III. Configuration Parameters -->
+<text x="48" y="528" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Configuration Parameters</text>
 
-  <rect x="60" y="798" width="1080" height="152" rx="14" fill="#E8EEFB"/>
-  <rect x="60" y="798" width="4" height="152" rx="2" fill="#2D6BE4"/>
-  <text x="80" y="822" font-size="14" font-weight="bold" fill="#2D6BE4">Attenuation Modes (3D Sound)</text>
-  <text x="80" y="848" font-size="13" fill="#4A4B65">When using 3D sound effects, the farther the listener is from the source, the lower the volume</text>
-  <text x="80" y="868" font-size="13" fill="#4A4B65">becomes. Once distance exceeds the range, volume drops to 0.</text>
-  <text x="80" y="896" font-size="13" font-weight="bold" fill="#1A1B2E">Linear Attenuation</text>
-  <text x="240" y="896" font-size="13" fill="#4A4B65">Volume decreases linearly with distance</text>
-  <text x="80" y="918" font-size="13" font-weight="bold" fill="#1A1B2E">Fast Then Slow</text>
-  <text x="240" y="918" font-size="13" fill="#4A4B65">Attenuates quickly near source, then slowly</text>
-  <text x="80" y="940" font-size="13" font-weight="bold" fill="#1A1B2E">Slow Then Fast</text>
-  <text x="240" y="940" font-size="13" fill="#4A4B65">Attenuates slowly near source, then quickly</text>
+<rect x="48" y="542" width="1104" height="340" rx="14" fill="#fff" filter="url(#card)"/>
+<!-- Table header -->
+<rect x="72" y="562" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="585" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="585" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <circle cx="80" cy="988" r="16" fill="#2D6BE4"/>
-  <text x="80" y="989" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="989" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Using Node Graph to Control Sound Effects</text>
+<rect x="72" y="598" width="1056" height="32" fill="#fff"/>
+<text x="100" y="619" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">ID</text>
+<text x="380" y="619" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Identification ID of the Sound Effect Player</text>
+<line x1="72" y1="630" x2="1128" y2="630" stroke="#E8E4DA"/>
 
-  <rect x="60" y="1016" width="1080" height="434" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="80" y="1044" font-size="14" font-weight="bold" fill="#1A1B2E">Node Graph Execution Nodes</text>
+<rect x="72" y="630" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="651" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name</text>
+<text x="380" y="651" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name of the player</text>
+<line x1="72" y1="662" x2="1128" y2="662" stroke="#E8E4DA"/>
 
-  <g transform="translate(80, 1072)">
-    <rect x="0" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Add Sound Effect Player</text>
-    <text x="16" y="38" font-size="12" fill="#4A4B65">Adds a sound effect player to the target entity</text>
+<rect x="72" y="662" width="1056" height="32" fill="#fff"/>
+<text x="100" y="683" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sound Effect Assets</text>
+<text x="380" y="683" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Reference to the specific sound effect asset to play</text>
+<line x1="72" y1="694" x2="1128" y2="694" stroke="#E8E4DA"/>
 
-    <rect x="520" y="0" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="18" font-size="13" font-weight="bold" fill="#1A1B2E">Adjust Specified Sound Effect Player</text>
-    <text x="16" y="38" font-size="12" fill="#4A4B65">Modifies parameters of an active sound effect player</text>
+<rect x="72" y="694" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="715" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Volume</text>
+<text x="380" y="715" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Controls the playback volume of the sound effect</text>
+<line x1="72" y1="726" x2="1128" y2="726" stroke="#E8E4DA"/>
 
-    <rect x="0" y="64" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="82" font-size="13" font-weight="bold" fill="#1A1B2E">Close Specified Sound Effect Player</text>
-    <text x="16" y="102" font-size="12" fill="#4A4B65">Stops and closes the specified sound effect player</text>
+<rect x="72" y="726" width="1056" height="32" fill="#fff"/>
+<text x="100" y="747" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Playback Speed</text>
+<text x="380" y="747" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The playback speed of the sound effect asset</text>
+<line x1="72" y1="758" x2="1128" y2="758" stroke="#E8E4DA"/>
 
-    <rect x="520" y="64" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="82" font-size="13" font-weight="bold" fill="#1A1B2E">Start/Pause Specified Sound Effect Player</text>
-    <text x="16" y="102" font-size="12" fill="#4A4B65">Toggles playback state (start/pause)</text>
+<rect x="72" y="758" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="779" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Playback</text>
+<text x="380" y="779" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When enabled, asset plays again after finishing</text>
+<line x1="72" y1="790" x2="1128" y2="790" stroke="#E8E4DA"/>
 
-    <rect x="0" y="128" width="490" height="50" rx="8" fill="#F0F2F5"/>
-    <text x="16" y="146" font-size="13" font-weight="bold" fill="#1A1B2E">Player Plays One-Shot 2D Sound Effect</text>
-    <text x="16" y="166" font-size="12" fill="#4A4B65">Plays a one-shot 2D sound effect on the player</text>
-  </g>
+<rect x="72" y="790" width="1056" height="32" fill="#fff"/>
+<text x="100" y="811" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loop Interval (s)</text>
+<text x="380" y="811" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Delay between end of one playback and start of next when looping</text>
+<line x1="72" y1="822" x2="1128" y2="822" stroke="#E8E4DA"/>
 
-  <rect x="60" y="1464" width="1080" height="82" rx="14" fill="#E8EEFB"/>
-  <rect x="60" y="1464" width="4" height="82" rx="2" fill="#2D6BE4"/>
-  <text x="80" y="1488" font-size="14" font-weight="bold" fill="#2D6BE4">Requirements</text>
-  <text x="80" y="1512" font-size="13" fill="#4A4B65">To control sound effects via the Node Graph, the target Unit must have the Sound Effect Player</text>
-  <text x="80" y="1532" font-size="13" fill="#4A4B65">component mounted. Sound effect configurations must be defined in the component first.</text>
+<rect x="72" y="822" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="843" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3D Sound Effects</text>
+<text x="380" y="843" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enables 3D sound; unlocks additional configuration options</text>
+<line x1="72" y1="854" x2="1128" y2="854" stroke="#E8E4DA"/>
 
-  <text x="60" y="2150" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbx2pi8x190" target="_blank">
-    <text x="60" y="2176" font-size="13" fill="#2D6BE4" text-decoration="underline">Sound Effect Player</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhn95di01j84" target="_blank">
-    <text x="60" y="2200" font-size="13" fill="#2D6BE4" text-decoration="underline">Collision Trigger Source</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh5n160t2b6w" target="_blank">
-    <text x="60" y="2224" font-size="13" fill="#2D6BE4" text-decoration="underline">Nameplate</text>
-  </a>
-  <text x="600" y="2260" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="72" y="854" width="1056" height="28" fill="#fff"/>
+<text x="100" y="873" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">*Range Preview</text>
+<text x="380" y="873" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shows the propagation range of the sound effect in the Scene</text>
+
+<!-- IV. 3D Sound Settings -->
+<text x="48" y="924" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. 3D Sound Settings</text>
+<text x="260" y="924" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Available when 3D Sound is enabled</text>
+
+<rect x="48" y="938" width="1104" height="220" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="958" width="1056" height="36" rx="10" fill="#2D6BE4"/>
+<text x="200" y="981" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="700" y="981" fill="#fff" font-size="14" font-weight="500" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<rect x="72" y="994" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1015" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Range Radius (m)</text>
+<text x="380" y="1015" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configures the propagation radius of the sound effect</text>
+<line x1="72" y1="1026" x2="1128" y2="1026" stroke="#E8E4DA"/>
+
+<rect x="72" y="1026" width="1056" height="32" fill="#F4F1EA"/>
+<text x="100" y="1047" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attachment Point</text>
+<text x="380" y="1047" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Specifies an Attachment Point as the sound effect's source location</text>
+<line x1="72" y1="1058" x2="1128" y2="1058" stroke="#E8E4DA"/>
+
+<rect x="72" y="1058" width="1056" height="32" fill="#fff"/>
+<text x="100" y="1079" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offset</text>
+<text x="380" y="1079" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Offsets the sound source's location</text>
+<line x1="72" y1="1090" x2="1128" y2="1090" stroke="#E8E4DA"/>
+
+<rect x="72" y="1090" width="1056" height="68" fill="#F4F1EA"/>
+<text x="100" y="1111" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attenuation Mode</text>
+<text x="380" y="1111" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines how volume decreases over distance (beyond range = 0 volume)</text>
+<text x="400" y="1133" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Linear: volume decreases linearly  |  Fast Then Slow: quick near source, slow far  |  Slow Then Fast: slow near, fast far</text>
+
+<!-- V. Node Graph Control -->
+<text x="48" y="1200" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Node Graph Control</text>
+<text x="280" y="1200" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Available node graph operations</text>
+
+<rect x="48" y="1214" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1242" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execution Nodes</text>
+<rect x="72" y="1256" width="492" height="140" rx="10" fill="#F4F1EA"/>
+<text x="96" y="1280" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="96" dy="0">- Add Sound Effect Player</tspan>
+<tspan x="96" dy="22">- Adjust Specified Sound Effect Player</tspan>
+<tspan x="96" dy="22">- Close Specified Sound Effect Player</tspan>
+<tspan x="96" dy="22">- Start / Pause Specified Sound Effect Player</tspan>
+<tspan x="96" dy="22">- Player Plays One-Shot 2D Sound Effect</tspan>
+</text>
+
+<rect x="612" y="1214" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="636" y="1242" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Usage Notes</text>
+<rect x="636" y="1256" width="492" height="140" rx="10" fill="#E8EEFB"/>
+<text x="660" y="1280" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
+<tspan x="660" dy="0" fill="#2D6BE4" font-weight="500">One-Shot 2D Sound:</tspan>
+<tspan x="660" dy="22">Plays a sound without needing a pre-configured</tspan>
+<tspan x="660" dy="22">Sound Effect Player component on the unit.</tspan>
+<tspan x="660" dy="30" fill="#2D6BE4" font-weight="500">All other nodes require:</tspan>
+<tspan x="660" dy="22">The Unit must have the Sound Effect Player</tspan>
+<tspan x="660" dy="22">component already mounted.</tspan>
+</text>
+
+<!-- Tip Box -->
+<rect x="48" y="1430" width="1104" height="76" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1430" width="4" height="76" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1454" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: 3D Sound Attenuation</text>
+<text x="72" y="1476" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The farther the listener (usually the character) is from the source, the lower the volume. Once distance exceeds</text>
+<text x="72" y="1496" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">the range, volume drops to 0. Choose attenuation mode to shape the volume-distance curve.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="1540" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwiv89yra02" target="_blank">
+<text x="48" y="1560" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Sound Effect Player</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="1626" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

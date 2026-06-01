@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2700" width="1200" height="2700">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2260">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -11,273 +11,193 @@
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
+  <style>
+    text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+  </style>
 
-  <!-- Background -->
-  <rect x="0" y="0" width="1200" height="2700" fill="#F9F7F2"/>
-
-  <!-- Top Gradient Bar -->
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="2260" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
   <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="46" font-size="22" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">03 Environment Configuration</text>
-  <text x="68" y="72" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Sandbox — official tutorial documentation</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Environment Configuration</text>
 
-  <!-- Section I: Definition -->
-  <rect x="40" y="110" width="1120" height="136" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <circle cx="68" cy="137" r="16" fill="#2D6BE4"/>
-  <text x="68" y="142" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I</text>
-  <text x="92" y="142" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Definition of Environment Configuration</text>
-  <text x="68" y="174" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment Configuration includes a series of environment-related parameters that enrich how elements in the Scene are presented.</text>
-  <text x="68" y="196" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment Configurations must be predefined and applied to each player's client.</text>
-  <text x="68" y="218" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access: Switch to the Terrain Editing tab, select Environment Configurations on the left.</text>
-  <text x="68" y="240" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click [New Environment] → [Confirm Create] to create a new Environment Configuration.</text>
+  <!-- I. Definition -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Definition</text>
 
-  <!-- Section II: Editing Environment Configuration -->
-  <rect x="40" y="266" width="1120" height="1840" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <circle cx="68" cy="293" r="16" fill="#2D6BE4"/>
-  <text x="68" y="298" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II</text>
-  <text x="92" y="298" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Editing Environment Configuration</text>
+  <rect x="48" y="164" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">Environment Configuration includes environment-related parameters that enrich how Scene elements are presented.</text>
+  <text x="72" y="214" fill="#4A4B65" font-size="14">Configurations must be predefined and applied to each player's client.</text>
 
-  <!-- II.1 Environment Configuration -->
-  <text x="68" y="340" font-size="15" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Environment Configuration</text>
+  <rect x="48" y="236" width="1104" height="40" rx="10" fill="#E8EEFB"/>
+  <rect x="48" y="236" width="4" height="40" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="261" fill="#4A4B65" font-size="13">Entry: Terrain Editing tab &gt; Environment Configuration on the left &gt; New Environment &gt; Confirm Create.</text>
+
+  <!-- II. Environment Configuration Parameters -->
+  <text x="48" y="312" fill="#2D6BE4" font-size="18" font-weight="700">II. Environment Configuration Parameters</text>
 
   <!-- Effective Target -->
-  <rect x="68" y="366" width="130" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="383" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(1) Effective Target</text>
-  <text x="68" y="412" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select which players this environment configuration will apply to.</text>
+  <rect x="48" y="328" width="540" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="356" fill="#1A1B2E" font-size="16" font-weight="500">Effective Target</text>
+  <text x="72" y="378" fill="#4A4B65" font-size="14">Select which players this configuration applies to.</text>
 
   <!-- Background Preset -->
-  <rect x="68" y="440" width="150" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="457" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(2) Background Preset</text>
-  <text x="68" y="486" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select a background preset to determine the general visual style of the scene.</text>
+  <rect x="612" y="328" width="540" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="356" fill="#1A1B2E" font-size="16" font-weight="500">Background Preset</text>
+  <text x="636" y="378" fill="#4A4B65" font-size="14">Select preset for general visual style of the scene.</text>
 
-  <!-- Background Preset table -->
-  <rect x="52" y="514" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="533" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Auto switch with time</text>
-  <text x="290" y="533" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When enabled, background elements transition dynamically over time. When disabled, they remain static.</text>
+  <!-- Time Controls -->
+  <rect x="48" y="400" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="428" fill="#1A1B2E" font-size="16" font-weight="500">Time Controls</text>
+  <text x="72" y="454" fill="#1A1B2E" font-size="14" font-weight="500">Auto switch with time:</text>
+  <text x="72" y="476" fill="#4A4B65" font-size="14">On = background elements transition dynamically. Off = elements remain static at fixed values.</text>
+  <text x="72" y="502" fill="#1A1B2E" font-size="14" font-weight="500">Set Time Point:</text>
+  <text x="72" y="524" fill="#4A4B65" font-size="14">Defines specific timepoint for current background settings. Different settings at different timepoints enable dynamic transitions.</text>
 
-  <rect x="52" y="542" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="561" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Time Point</text>
-  <text x="290" y="561" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Defines the specific timepoint for saving current background settings.</text>
+  <!-- Preview Controls -->
+  <rect x="48" y="552" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="580" fill="#1A1B2E" font-size="16" font-weight="500">Preview Controls</text>
+  <text x="72" y="606" fill="#1A1B2E" font-size="14" font-weight="500">Dynamic Preview:</text>
+  <text x="72" y="628" fill="#4A4B65" font-size="14">Toggle to observe environment transitions when "Auto switch" is enabled.</text>
+  <text x="72" y="644" fill="#1A1B2E" font-size="14" font-weight="500">Time Elapsed Per Second (min):</text>
+  <text x="72" y="644" fill="#4A4B65" font-size="14" dx="260">In-game time per real second. 24 = Teyvat time. Range [0, 60].</text>
 
-  <rect x="52" y="570" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="589" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dynamic Preview</text>
-  <text x="290" y="589" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Toggle to observe environmental transitions (requires Auto switch enabled).</text>
+  <!-- III. Background Settings -->
+  <text x="48" y="692" fill="#2D6BE4" font-size="18" font-weight="700">III. Background Settings</text>
 
-  <rect x="52" y="598" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="617" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Reference Timepoint List</text>
-  <text x="290" y="617" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select saved timepoints to view their specific background settings.</text>
+  <rect x="48" y="708" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
 
-  <rect x="52" y="626" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="645" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Weather Configuration</text>
-  <text x="290" y="645" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select pre-configured weather to associate with the current timepoint.</text>
+  <text x="72" y="736" fill="#1A1B2E" font-size="14" font-weight="500">Background Rotation</text>
+  <text x="350" y="736" fill="#4A4B65" font-size="14">Adjusts the rotation of the background</text>
 
-  <rect x="52" y="654" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="673" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time Elapsed Per Second (min)</text>
-  <text x="290" y="673" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Real-time to in-game time ratio. Range [0, 60], default 24 (Teyvat time).</text>
+  <text x="72" y="762" fill="#1A1B2E" font-size="14" font-weight="500">Direct Angle</text>
+  <text x="350" y="762" fill="#4A4B65" font-size="14">Incident angle of the primary ambient light source</text>
 
-  <rect x="52" y="682" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="701" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Current Preview Timepoint</text>
-  <text x="290" y="701" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Displays the current timepoint during dynamic preview.</text>
+  <text x="72" y="788" fill="#1A1B2E" font-size="14" font-weight="500">Intensity</text>
+  <text x="350" y="788" fill="#4A4B65" font-size="14">Brightness of primary ambient light. Higher = brighter</text>
 
-  <rect x="52" y="710" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="729" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Preview</text>
-  <text x="290" y="729" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click to start the environment clock and observe transitions over a 24-hour cycle.</text>
+  <text x="72" y="814" fill="#1A1B2E" font-size="14" font-weight="500">Blur</text>
+  <text x="350" y="814" fill="#4A4B65" font-size="14">Diffusion of primary ambient light. Higher = more blurred</text>
 
-  <!-- Background Settings -->
-  <rect x="68" y="758" width="160" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="775" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(3) Background Settings</text>
+  <text x="72" y="840" fill="#1A1B2E" font-size="14" font-weight="500">Light Color</text>
+  <text x="350" y="840" fill="#4A4B65" font-size="14">Color of the light received by the environment</text>
 
-  <!-- Background Settings table -->
-  <rect x="52" y="804" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="823" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Background Rotation</text>
-  <text x="290" y="823" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts rotation of the background.</text>
+  <text x="72" y="866" fill="#1A1B2E" font-size="14" font-weight="500">Filter Style</text>
+  <text x="350" y="866" fill="#4A4B65" font-size="14">Adds a filter effect at the camera layer</text>
 
-  <rect x="52" y="832" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="851" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Direct Angle</text>
-  <text x="290" y="851" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Incident angle of the primary ambient light source.</text>
+  <text x="72" y="892" fill="#1A1B2E" font-size="14" font-weight="500">Halo Color / Intensity</text>
+  <text x="350" y="892" fill="#4A4B65" font-size="14">Sets halo color and intensity. Higher intensity = more visible halo</text>
 
-  <rect x="52" y="860" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="879" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Intensity</text>
-  <text x="290" y="879" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Brightness of the primary ambient light source. Higher = brighter.</text>
+  <text x="72" y="918" fill="#1A1B2E" font-size="14" font-weight="500">Horizon Intensity</text>
+  <text x="350" y="918" fill="#4A4B65" font-size="14">Adjusts horizon visibility. Higher = more defined silhouette</text>
 
-  <rect x="52" y="888" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="907" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Blur</text>
-  <text x="290" y="907" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Diffusion of the primary ambient light source. Higher = more blurred.</text>
+  <text x="72" y="944" fill="#1A1B2E" font-size="14" font-weight="500">Sky Background Color</text>
+  <text x="350" y="944" fill="#4A4B65" font-size="14">Adjusts upper / lower sunny side sky colors</text>
 
-  <rect x="52" y="916" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="935" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Light Color</text>
-  <text x="290" y="935" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Color of light received by the environment.</text>
+  <text x="72" y="960" fill="#1A1B2E" font-size="14" font-weight="500">Environment Color</text>
+  <text x="350" y="960" fill="#4A4B65" font-size="14">Adjusts top / side / ground surface colors. Color selector with transparency.</text>
 
-  <rect x="52" y="944" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="963" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Filter Style</text>
-  <text x="290" y="963" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adds a filter effect at the camera layer.</text>
+  <!-- IV. Environmental Elements -->
+  <text x="48" y="1008" fill="#2D6BE4" font-size="18" font-weight="700">IV. Environmental Elements</text>
 
-  <rect x="52" y="972" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="991" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Halo Color</text>
-  <text x="290" y="991" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sets the halo color of the environment.</text>
+  <rect x="48" y="1024" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
 
-  <rect x="52" y="1000" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1019" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Halo Intensity</text>
-  <text x="290" y="1019" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visibility of the halo. Higher = more visible.</text>
+  <text x="72" y="1052" fill="#1A1B2E" font-size="14" font-weight="500">Sun</text>
+  <text x="200" y="1052" fill="#4A4B65" font-size="14">Enabled by default. Parameters: color, brightness, angle, orbit tile angle, size</text>
 
-  <rect x="52" y="1028" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1047" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Horizon Intensity</text>
-  <text x="290" y="1047" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visibility of the horizon silhouette. Higher = more defined.</text>
+  <text x="72" y="1078" fill="#1A1B2E" font-size="14" font-weight="500">Moon</text>
+  <text x="200" y="1078" fill="#4A4B65" font-size="14">Enabled by default. Parameters: color, brightness, angle, orbit tile angle, size, fullness</text>
 
-  <rect x="52" y="1056" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1075" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sky Background Color</text>
-  <text x="290" y="1075" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts upper / lower sunny side sky background colors.</text>
+  <text x="72" y="1104" fill="#1A1B2E" font-size="14" font-weight="500">Stars</text>
+  <text x="200" y="1104" fill="#4A4B65" font-size="14">When enabled: adjust density and intensity</text>
 
-  <rect x="52" y="1084" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1103" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment Color</text>
-  <text x="290" y="1103" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts top / side / ground surface colors of the environment.</text>
+  <text x="72" y="1130" fill="#1A1B2E" font-size="14" font-weight="500">Galaxy</text>
+  <text x="200" y="1130" fill="#4A4B65" font-size="14">When enabled: adjust intensity and light color</text>
 
-  <text x="68" y="1140" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Supports configurable color parameters with a color selector for color and transparency adjustment.</text>
-  <text x="68" y="1162" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When [Auto Switch with Time] is enabled, you can inspect parameter values associated with the current timepoint.</text>
+  <text x="72" y="1156" fill="#1A1B2E" font-size="14" font-weight="500">Clouds</text>
+  <text x="200" y="1156" fill="#4A4B65" font-size="14">When enabled: set type (high / mid / low / faint clouds), intensity, and light color</text>
 
-  <!-- Environmental Elements -->
-  <rect x="68" y="1196" width="180" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="1213" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(4) Environmental Elements</text>
+  <text x="72" y="1186" fill="#1A1B2E" font-size="14" font-weight="500">Weather Configuration:</text>
+  <text x="72" y="1210" fill="#4A4B65" font-size="14">Select a pre-configured weather configuration to associate with the current timepoint.</text>
 
-  <circle cx="72" cy="1241" r="4" fill="#2D6BE4"/>
-  <text x="84" y="1245" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sun</text>
-  <text x="116" y="1245" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(default enabled) — color, brightness, angle, orbit tilt, size</text>
+  <!-- V. Light Source List -->
+  <text x="48" y="1260" fill="#2D6BE4" font-size="18" font-weight="700">V. Light Source Configuration</text>
 
-  <circle cx="72" cy="1271" r="4" fill="#2D6BE4"/>
-  <text x="84" y="1275" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Moon</text>
-  <text x="124" y="1275" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(default enabled) — color, brightness, angle, orbit tilt, size, fullness</text>
+  <rect x="48" y="1276" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1304" fill="#4A4B65" font-size="14">Light sources bound to this Environment Configuration are activated together with the Configuration.</text>
 
-  <circle cx="72" cy="1301" r="4" fill="#2D6BE4"/>
-  <text x="84" y="1305" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stars</text>
-  <text x="120" y="1305" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(toggle) — density, intensity</text>
+  <text x="72" y="1334" fill="#1A1B2E" font-size="14" font-weight="500">Entry Points:</text>
+  <text x="72" y="1356" fill="#4A4B65" font-size="14">- "Add Light Source" &gt; "Open Light Source Manager"</text>
+  <text x="72" y="1378" fill="#4A4B65" font-size="14">- System menu (top left) &gt; Manage Light Source</text>
 
-  <circle cx="72" cy="1331" r="4" fill="#2D6BE4"/>
-  <text x="84" y="1335" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Galaxy</text>
-  <text x="128" y="1335" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(toggle) — intensity, light color</text>
+  <text x="72" y="1408" fill="#1A1B2E" font-size="14" font-weight="500">Light Source Parameters:</text>
 
-  <circle cx="72" cy="1361" r="4" fill="#2D6BE4"/>
-  <text x="84" y="1365" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clouds</text>
-  <text x="136" y="1365" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(toggle) — type (high/mid/low/faint), intensity, light color</text>
+  <text x="72" y="1434" fill="#1A1B2E" font-size="14" font-weight="500">Source File</text>
+  <text x="280" y="1434" fill="#4A4B65" font-size="14">Which Environment Configurations reference this light source</text>
 
-  <!-- II.2 Light Source List -->
-  <text x="68" y="1406" font-size="15" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Light Source List</text>
-  <text x="68" y="1432" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The light sources bound to this Environment Configuration activate together with the Configuration.</text>
+  <text x="72" y="1458" fill="#1A1B2E" font-size="14" font-weight="500">Location, Rotation</text>
+  <text x="280" y="1458" fill="#4A4B65" font-size="14">Position and rotation in the Scene</text>
 
-  <!-- Light Source Configuration Entry Point -->
-  <rect x="68" y="1464" width="250" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="1481" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(1) Light Source Configuration Entry Point</text>
+  <text x="72" y="1482" fill="#1A1B2E" font-size="14" font-weight="500">Light Source Type</text>
+  <text x="280" y="1482" fill="#4A4B65" font-size="14">Point Light or Spotlight</text>
 
-  <text x="68" y="1510" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Method 1:</tspan>
-    Click [Add Light Source] → [Open Light Source Manager]
-  </text>
-  <text x="68" y="1532" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
-    <tspan font-weight="700" fill="#1A1B2E">Method 2:</tspan>
-    System menu (top-left corner) → [Manage Light Source]
-  </text>
+  <text x="72" y="1506" fill="#1A1B2E" font-size="14" font-weight="500">Color</text>
+  <text x="280" y="1506" fill="#4A4B65" font-size="14">Color shown on illuminated models</text>
 
-  <!-- Light Source Configuration -->
-  <rect x="68" y="1568" width="185" height="26" rx="13" fill="#E8EEFB"/>
-  <text x="84" y="1585" font-size="12" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">(2) Light Source Configuration</text>
-  <text x="68" y="1614" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Light Source Parameter Settings:</text>
+  <text x="72" y="1530" fill="#1A1B2E" font-size="14" font-weight="500">Radius / Intensity</text>
+  <text x="280" y="1530" fill="#4A4B65" font-size="14">Illumination radius and brightness change on illuminated model</text>
 
-  <!-- Light Source Configuration table -->
-  <rect x="52" y="1642" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1661" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Source File</text>
-  <text x="290" y="1661" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Indicates which Environment Configurations reference this light source.</text>
+  <!-- VI. Weather -->
+  <text x="48" y="1576" fill="#2D6BE4" font-size="18" font-weight="700">VI. Weather Configuration</text>
 
-  <rect x="52" y="1670" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1689" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Location / Rotation</text>
-  <text x="290" y="1689" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Controls position and orientation of the light source in the Scene.</text>
+  <rect x="48" y="1592" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1620" fill="#4A4B65" font-size="14">Multiple Weather configurations can be set within a single Environment Configuration.</text>
 
-  <rect x="52" y="1698" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1717" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Light Source Type</text>
-  <text x="290" y="1717" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currently supports Point Light and Spotlight.</text>
+  <text x="72" y="1650" fill="#1A1B2E" font-size="14" font-weight="500">Initially Effective:</text>
+  <text x="280" y="1650" fill="#4A4B65" font-size="14">Whether this configuration is active upon startup</text>
 
-  <rect x="52" y="1726" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1745" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Color</text>
-  <text x="290" y="1745" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sets the color shown on illuminated models.</text>
+  <text x="72" y="1676" fill="#1A1B2E" font-size="14" font-weight="500">Weather Type:</text>
+  <text x="280" y="1676" fill="#4A4B65" font-size="14">Currently only supports fog</text>
 
-  <rect x="52" y="1754" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1773" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Radius</text>
-  <text x="290" y="1773" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Illumination radius of the light source.</text>
+  <text x="72" y="1702" fill="#1A1B2E" font-size="14" font-weight="500">Auto Switch with Time:</text>
+  <text x="280" y="1702" fill="#4A4B65" font-size="14">On = weather changes over time. Off = locked to fixed values</text>
 
-  <rect x="52" y="1782" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1801" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Intensity</text>
-  <text x="290" y="1801" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Degree of color or brightness change on the illuminated model.</text>
+  <text x="72" y="1728" fill="#1A1B2E" font-size="14" font-weight="500">Distance Fog Settings:</text>
+  <text x="280" y="1728" fill="#4A4B65" font-size="14">Based on Camera Location, fog occludes distant models and skybox</text>
 
-  <rect x="52" y="1810" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1829" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective Range</text>
-  <text x="290" y="1829" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loaded only when a character enters this range. Used for performance optimization.</text>
+  <text x="72" y="1754" fill="#1A1B2E" font-size="14" font-weight="500">High Fog Settings:</text>
+  <text x="280" y="1754" fill="#4A4B65" font-size="14">Based on Scene height, fog occludes distant models and skybox</text>
 
-  <!-- II.3 Weather -->
-  <text x="68" y="1878" font-size="15" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3. Weather</text>
-  <text x="68" y="1904" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiple Weather configurations can be set within a single Environment Configuration and enabled together with it.</text>
+  <!-- VII. Environment Time -->
+  <text x="48" y="1812" fill="#2D6BE4" font-size="18" font-weight="700">VII. Environment Time</text>
 
-  <!-- Weather table -->
-  <rect x="52" y="1932" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="1951" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Effective</text>
-  <text x="290" y="1951" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Defines whether this configuration is active upon startup.</text>
+  <rect x="48" y="1828" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="1856" fill="#4A4B65" font-size="14">Stage settings define initial timepoint and time passage speed, both adjustable via nodes.</text>
+  <text x="72" y="1880" fill="#4A4B65" font-size="14">Environment time is globally unique; server continuously advances clock regardless of player configs.</text>
+  <text x="72" y="1904" fill="#4A4B65" font-size="14">Visual transitions only visible when "Auto Switch with Time" is enabled.</text>
 
-  <rect x="52" y="1960" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="1979" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Weather Type</text>
-  <text x="290" y="1979" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Currently only supports fog.</text>
+  <rect x="48" y="1940" width="1104" height="44" rx="10" fill="#FFF3E0"/>
+  <rect x="48" y="1940" width="4" height="44" rx="2" fill="#D93025"/>
+  <text x="72" y="1966" fill="#4A4B65" font-size="13">Time passage in stage settings = actual gameplay speed. Time passage in environment config = editor preview only.</text>
 
-  <rect x="52" y="1988" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="2007" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Auto Switch with Time</text>
-  <text x="290" y="2007" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Weather changes over time when enabled; locked to fixed values when disabled.</text>
+  <!-- VIII. Node Graph Control -->
+  <text x="48" y="2020" fill="#2D6BE4" font-size="18" font-weight="700">VIII. Manage via Node Graphs</text>
 
-  <rect x="52" y="2016" width="1096" height="28" fill="#FFFFFF" rx="4"/>
-  <text x="72" y="2035" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Distance Fog Settings</text>
-  <text x="290" y="2035" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera-based fog effect that occludes distant models and the skybox.</text>
+  <rect x="48" y="2036" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="2064" fill="#4A4B65" font-size="14">Use "Modify Environment Configuration" node to switch environments dynamically during runtime.</text>
+  <text x="72" y="2088" fill="#4A4B65" font-size="14">Use "Get List of Player Entities on the Field" to obtain all present players as targets.</text>
+  <text x="72" y="2108" fill="#4A4B65" font-size="14">Environment configuration indices found in the Environment Configuration details page.</text>
 
-  <rect x="52" y="2044" width="1096" height="28" fill="#F9F7F2" rx="4"/>
-  <text x="72" y="2063" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">High Fog Settings</text>
-  <text x="290" y="2063" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Height-based fog effect that occludes distant models and the skybox.</text>
-
-  <!-- Section III: Environment Time -->
-  <rect x="40" y="2130" width="1120" height="244" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <circle cx="68" cy="2157" r="16" fill="#2D6BE4"/>
-  <text x="68" y="2162" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III</text>
-  <text x="92" y="2162" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment Time</text>
-
-  <text x="68" y="2194" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stage settings allow you to define the initial timepoint and the time passage speed, both adjustable via nodes.</text>
-  <text x="68" y="2216" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment time is a globally unique runtime value; the server continuously advances this clock regardless of individual player configurations.</text>
-  <text x="68" y="2238" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Visual transitions driven by time are visible only when [Auto Switch with Time] is enabled in the environment configuration.</text>
-
-  <!-- Tip box: Key Distinction -->
-  <rect x="68" y="2266" width="1064" height="82" rx="8" fill="#E8EEFB"/>
-  <rect x="68" y="2266" width="4" height="82" rx="2" fill="#2D6BE4"/>
-  <text x="88" y="2290" font-size="13" font-weight="700" fill="#1A1B2E" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Distinction</text>
-  <text x="88" y="2312" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time passage in stage settings → Dictates actual time passage speed during gameplay.</text>
-  <text x="88" y="2334" font-size="13" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time passage in environment config → Editor preview only, does NOT affect gameplay speed.</text>
-
-  <!-- Section IV: Manage via Node Graphs -->
-  <rect x="40" y="2398" width="1120" height="128" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <circle cx="68" cy="2425" r="16" fill="#2D6BE4"/>
-  <text x="68" y="2430" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV</text>
-  <text x="92" y="2430" font-size="18" font-weight="700" fill="#2D6BE4" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Manage Environment Configuration via Node Graphs</text>
-  <text x="68" y="2462" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Environment Configurations can be managed and controlled via Node Graphs.</text>
-  <text x="68" y="2484" font-size="14" fill="#4A4B65" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graphs enable dynamic transitions and complex behavior through visual scripting.</text>
-
-  <!-- Related Documentation -->
-  <text x="68" y="2546" font-size="12" fill="#8B8DA0" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
-
+  <!-- Source Links -->
+  <text x="48" y="2152" fill="#8B8DA0" font-size="12">Related Documentation:</text>
   <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdznsie9up8" target="_blank">
-    <text x="68" y="2568" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Environment Configuration</text>
+    <text x="48" y="2170" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Environment Configuration (Guide)</text>
   </a>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhq9b601kh9k" target="_blank">
-    <text x="68" y="2588" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Background Music</text>
-  </a>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzhzb9rw0uy" target="_blank">
-    <text x="68" y="2608" font-size="12" fill="#2D6BE4" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Prefab Group</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhw64cr51fue" target="_blank">
+    <text x="48" y="2188" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: 2.10 Environment Configuration: Sky Backgrounds, Filters, and Light Sources (Tutorial)</text>
   </a>
 
   <!-- Footer -->
-  <text x="600" y="2650" font-size="11" fill="#8B8DA0" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <text x="600" y="2240" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

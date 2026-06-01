@@ -1,158 +1,248 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="3200" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">33-Item System</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2196">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2196" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Definition &amp; Classification</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item</text>
+<text x="150" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Virtual objects players can obtain, use, or equip via inventory</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Items are virtual objects that players can obtain, use, or equip during gameplay. In Miliastra Wonderland,</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">items are categorized into multiple types and managed uniformly through the inventory.</text>
-    <text x="20" y="104" font-size="15" font-weight="bold" fill="#1A1B2E">Item Classification</text>
-    <text x="20" y="130" font-size="13" fill="#1A1B2E" font-weight="bold">Equipment</text>
-    <text x="20" y="148" font-size="13" fill="#4A4B65">Items that can be equipped by characters to provide stat bonuses or special abilities</text>
-    <text x="20" y="170" font-size="13" fill="#1A1B2E" font-weight="bold">Materials  |  Consumables  |  Very Special Items</text>
-  </g>
+<!-- I. Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Definition of Items</text>
 
-  <circle cx="80" cy="400" r="16" fill="#2D6BE4"/>
-  <text x="80" y="401" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="401" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creating Items</text>
+<rect x="48" y="164" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Items are virtual objects that players can obtain, use, or equip during gameplay.</text>
+<text x="72" y="210" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Categorized into multiple types and managed uniformly through the inventory system.</text>
 
-  <g transform="translate(60, 428)">
-    <rect width="1080" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Creation Process</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">1. Navigate to the Item tab in the editor</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">2. Click "New Item" button</text>
-    <text x="20" y="94" font-size="13" fill="#4A4B65">3. Click Confirm in the pop-up to create a new item template</text>
-    <text x="20" y="118" font-size="13" fill="#1A1B2E" font-weight="bold">Item Name</text>
-    <text x="110" y="118" font-size="13" fill="#4A4B65">The name displayed in the interface during gameplay</text>
-    <text x="20" y="138" font-size="13" fill="#1A1B2E" font-weight="bold">Configuration ID</text>
-    <text x="135" y="138" font-size="13" fill="#4A4B65">The unique identifier used in Node Graphs</text>
-  </g>
+<!-- II. Item Classification -->
+<text x="48" y="256" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Item Classification</text>
 
-  <circle cx="80" cy="614" r="16" fill="#2D6BE4"/>
-  <text x="80" y="615" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="615" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Basic Settings</text>
+<rect x="48" y="272" width="264" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="286" width="110" height="28" rx="14" fill="#E8EEFB"/>
+<text x="127" y="305" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Equipment</text>
+<text x="194" y="305" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Wearable items</text>
 
-  <g transform="translate(60, 642)">
-    <rect width="520" height="400" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Display Info</text>
-    <text x="16" y="60" font-size="13" fill="#1A1B2E" font-weight="bold">Rarity</text>
-    <text x="80" y="60" font-size="13" fill="#4A4B65">Determines icon bg color: Gray, Green, Blue, Purple, Orange</text>
-    <text x="16" y="84" font-size="13" fill="#1A1B2E" font-weight="bold">Stack Limit</text>
-    <text x="105" y="84" font-size="13" fill="#4A4B65">Max items per inventory slot</text>
-    <text x="16" y="108" font-size="13" fill="#1A1B2E" font-weight="bold">Item Icon</text>
-    <text x="85" y="108" font-size="13" fill="#4A4B65">Icon displayed in the interface during gameplay</text>
-    <text x="16" y="132" font-size="13" fill="#1A1B2E" font-weight="bold">Description</text>
-    <text x="100" y="132" font-size="13" fill="#4A4B65">Item description shown during gameplay</text>
-    <text x="16" y="160" font-size="13" fill="#1A1B2E" font-weight="bold">Associated Item Node Graph</text>
-    <text x="16" y="180" font-size="13" fill="#4A4B65">When item enters inventory, the related Node Graph is</text>
-    <text x="16" y="200" font-size="13" fill="#4A4B65">attached to the character unit</text>
-    <text x="16" y="228" font-size="13" fill="#1A1B2E" font-weight="bold">Inventory Ownership Tab</text>
-    <text x="16" y="248" font-size="13" fill="#4A4B65">Determines which tab the item sorts into in inventory</text>
-    <text x="16" y="276" font-size="13" fill="#1A1B2E" font-weight="bold">Has Currency Value</text>
-    <text x="16" y="296" font-size="13" fill="#4A4B65">Set "True" to relate currency value to item for shop module</text>
-    <text x="16" y="318" font-size="13" fill="#4A4B65">transactions</text>
-    <text x="16" y="342" font-size="13" fill="#1A1B2E" font-weight="bold">Display Currency Value</text>
-    <text x="16" y="362" font-size="13" fill="#4A4B65">Show currency value in inventory</text>
-  </g>
+<rect x="328" y="272" width="264" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="352" y="286" width="100" height="28" rx="14" fill="#E5F2E9"/>
+<text x="402" y="305" fill="#34A853" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Materials</text>
+<text x="464" y="305" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Crafting resources</text>
 
-  <g transform="translate(620, 642)">
-    <rect width="520" height="400" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Drop Settings</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Destruction Behavior (on defeat)</text>
-    <text x="16" y="84" font-size="13" fill="#1A1B2E" font-weight="bold">Destruction Debris</text>
-    <text x="130" y="84" font-size="13" fill="#4A4B65">Process when owner is defeated</text>
-    <text x="16" y="108" font-size="13" fill="#1A1B2E" font-weight="bold">Loot</text>
-    <text x="55" y="108" font-size="13" fill="#4A4B65">Items converted to loot entities in scene</text>
-    <text x="16" y="132" font-size="13" fill="#1A1B2E" font-weight="bold">Destroy</text>
-    <text x="75" y="132" font-size="13" fill="#4A4B65">Items are destroyed</text>
-    <text x="16" y="156" font-size="13" fill="#1A1B2E" font-weight="bold">Save</text>
-    <text x="60" y="156" font-size="13" fill="#4A4B65">Items saved in inventory (character only)</text>
-    <text x="16" y="188" font-size="14" font-weight="bold" fill="#1A1B2E">Loot Drop Mechanics</text>
-    <text x="16" y="212" font-size="13" fill="#1A1B2E" font-weight="bold">Shared Reward</text>
-    <text x="120" y="212" font-size="13" fill="#4A4B65">All players share same loot; one pickup = gone</text>
-    <text x="16" y="236" font-size="13" fill="#1A1B2E" font-weight="bold">Individualized Reward</text>
-    <text x="145" y="236" font-size="13" fill="#4A4B65">Each player gets independent copy</text>
-    <text x="16" y="264" font-size="14" font-weight="bold" fill="#1A1B2E">Corresponding Loot Appearance</text>
-    <text x="16" y="286" font-size="13" fill="#4A4B65">Configure a loot prefab — a physical entity component.</text>
-    <text x="16" y="306" font-size="13" fill="#4A4B65">When the virtual item is created in the scene, it will be</text>
-    <text x="16" y="326" font-size="13" fill="#4A4B65">displayed using the corresponding loot model.</text>
-  </g>
+<rect x="608" y="272" width="264" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="632" y="286" width="130" height="28" rx="14" fill="#FFF3E0"/>
+<text x="697" y="305" fill="#1A1B2E" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Consumables</text>
+<text x="774" y="305" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Usable items</text>
 
-  <circle cx="80" cy="1078" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1079" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1079" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Interaction Settings</text>
+<rect x="888" y="272" width="264" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="912" y="286" width="160" height="28" rx="14" fill="#FDE8E6"/>
+<text x="992" y="305" fill="#D93025" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Very Special Items</text>
 
-  <g transform="translate(60, 1106)">
-    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Player Interaction</text>
+<!-- III. Editing Items -->
+<text x="48" y="368" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Editing Items</text>
+<text x="210" y="368" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item tab in Combat Preset; click "New Item" to create</text>
 
-    <text x="20" y="62" font-size="13" fill="#1A1B2E" font-weight="bold">Destructible</text>
-    <text x="110" y="62" font-size="13" fill="#4A4B65">Players can destroy this item in inventory via interface</text>
-    <text x="20" y="86" font-size="13" fill="#1A1B2E" font-weight="bold">Tradable</text>
-    <text x="85" y="86" font-size="13" fill="#4A4B65">Item can be sold in the shop</text>
-    <text x="20" y="110" font-size="13" fill="#1A1B2E" font-weight="bold">Usable</text>
-    <text x="75" y="110" font-size="13" fill="#4A4B65">Players can use item through interface actions</text>
-    <text x="20" y="134" font-size="13" fill="#1A1B2E" font-weight="bold">Allow Bulk Use</text>
-    <text x="120" y="134" font-size="13" fill="#4A4B65">Multiple items can be used in a single operation</text>
-    <text x="20" y="158" font-size="13" fill="#1A1B2E" font-weight="bold">Auto Use Upon Pickup</text>
-    <text x="155" y="158" font-size="13" fill="#4A4B65">Item is automatically used upon acquisition</text>
+<rect x="48" y="384" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="410" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item Name:</text>
+<text x="170" y="410" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Displayed in interface during gameplay</text>
+<text x="540" y="410" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item Icon:</text>
+<text x="630" y="410" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icon displayed in interface</text>
+<text x="72" y="434" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configuration ID:</text>
+<text x="220" y="434" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unique identifier of the item template, used in Node Graphs</text>
 
-    <text x="20" y="194" font-size="14" font-weight="bold" fill="#1A1B2E">Cooldown Settings</text>
-    <text x="20" y="220" font-size="13" fill="#1A1B2E" font-weight="bold">Cooldown (s)</text>
-    <text x="110" y="220" font-size="13" fill="#4A4B65">After using, item enters cooldown — cannot be used during this period</text>
-    <text x="20" y="246" font-size="13" fill="#1A1B2E" font-weight="bold">Group Cooldown (s)</text>
-    <text x="140" y="246" font-size="13" fill="#4A4B65">When item enters cooldown, all items in the Linked Cooldown Group</text>
-    <text x="160" y="266" font-size="13" fill="#4A4B65">enter cooldown simultaneously with this duration</text>
-    <text x="20" y="294" font-size="13" fill="#1A1B2E" font-weight="bold">Linked Cooldown Group</text>
-    <text x="155" y="294" font-size="13" fill="#4A4B65">List of items that share the cooldown group</text>
-  </g>
+<!-- IV. Basic Settings -->
+<text x="48" y="504" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Basic Settings</text>
+<text x="220" y="504" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Display info and inventory behavior</text>
 
-  <circle cx="80" cy="1482" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1483" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1483" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Inventory Integration</text>
+<rect x="48" y="520" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
 
-  <g transform="translate(60, 1510)">
-    <rect width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Inventory System</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">All items are managed uniformly through the inventory. Each item type is sorted into its designated</text>
-    <text x="20" y="74" font-size="13" fill="#4A4B65">tab based on the "Inventory Ownership Tab" setting. Stack limit controls how many of the same item</text>
-    <text x="20" y="94" font-size="13" fill="#4A4B65">can occupy a single slot. Items can enter inventory via loot, Node Graph triggers, or shop purchases.</text>
-  </g>
+<rect x="72" y="536" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="555" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Rarity</text>
+<text x="200" y="555" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines icon background color: gray, green, blue, purple, orange</text>
 
-  <g transform="translate(60, 1650)">
-    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Item Flow Overview</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">Create Item Template → Configure Basic/Drop/Interaction Settings → Item enters Inventory →</text>
-    <text x="20" y="64" font-size="13" fill="#4A4B65">Player can Use, Equip, Trade, or Destroy → Node Graph triggers and cooldowns apply</text>
-  </g>
+<rect x="72" y="568" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="587" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stack Limit</text>
+<text x="200" y="587" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Maximum number of items in a single inventory slot</text>
 
-  <text x="60" y="1790" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1wwh99g1re" target="_blank">
-    <text x="60" y="1816" font-size="13" fill="#2D6BE4" text-decoration="underline">Item → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1wwh99g1re</text>
-  </a>
-  <text x="600" y="1850" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="72" y="600" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="619" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Associated Item Node Graph</text>
+<text x="360" y="619" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node Graph attached to character when item enters inventory</text>
+
+<rect x="72" y="632" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="651" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Inventory Ownership Tab</text>
+<text x="310" y="651" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Determines which tab the item is sorted into in inventory</text>
+
+<rect x="72" y="664" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="683" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+<text x="200" y="683" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item description displayed in interface during gameplay</text>
+
+<rect x="72" y="696" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="715" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Has Currency Value / Display Currency Value / Currency Value</text>
+<text x="600" y="715" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Relates currency value for shop transactions</text>
+
+<!-- V. Drop Settings -->
+<text x="48" y="760" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Drop Settings</text>
+<text x="210" y="760" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Logic when items drop from inventory into scene</text>
+
+<rect x="48" y="776" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="802" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destruction Debris (when owner is defeated)</text>
+
+<rect x="72" y="816" width="160" height="28" rx="14" fill="#E5F2E9"/>
+<text x="152" y="835" fill="#34A853" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot</text>
+<text x="244" y="835" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Items converted into loot entities in the scene</text>
+
+<rect x="72" y="850" width="160" height="28" rx="14" fill="#FDE8E6"/>
+<text x="152" y="869" fill="#D93025" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destroy</text>
+<text x="244" y="869" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Items are destroyed on owner defeat</text>
+
+<rect x="72" y="884" width="160" height="28" rx="14" fill="#E8EEFB"/>
+<text x="152" y="903" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Save</text>
+<text x="244" y="903" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Saved in inventory (only meaningful for characters)</text>
+
+<text x="72" y="934" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot Drop Mechanics</text>
+
+<rect x="72" y="948" width="500" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="967" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shared Reward</text>
+<text x="230" y="967" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All players share loot; once picked up, unavailable to others</text>
+
+<!-- VI. Interaction Settings -->
+<text x="48" y="1016" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Interaction Settings</text>
+<text x="260" y="1016" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">What players can do with items in inventory</text>
+
+<rect x="48" y="1032" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+
+<rect x="72" y="1048" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1067" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Destructible</text>
+<text x="220" y="1067" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether players can destroy this item in inventory via interface</text>
+
+<rect x="72" y="1080" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1099" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tradable</text>
+<text x="220" y="1099" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether the item can be sold in the shop</text>
+
+<rect x="72" y="1112" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1131" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Usable</text>
+<text x="220" y="1131" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether players can use the item through interface actions</text>
+
+<rect x="72" y="1144" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1163" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Allow Bulk Use</text>
+<text x="240" y="1163" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Whether multiple items can be used in a single operation</text>
+
+<rect x="72" y="1176" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1195" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Auto Use Upon Pickup</text>
+<text x="290" y="1195" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When "Yes", item auto-used on acquisition</text>
+
+<rect x="72" y="1208" width="520" height="28" rx="6" fill="#fff"/>
+<text x="88" y="1227" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cooldown (s)</text>
+<text x="220" y="1227" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time before item can be used again</text>
+
+<!-- Group Cooldown -->
+<rect x="48" y="1244" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1270" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Group Cooldown System</text>
+<rect x="72" y="1284" width="180" height="26" rx="13" fill="#E8EEFB"/>
+<text x="162" y="1302" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Group Cooldown (s)</text>
+<text x="264" y="1302" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All items in Linked Cooldown Group enter cooldown simultaneously</text>
+<text x="72" y="1318" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Linked Cooldown Group: Configure a list of items that defines all items within the cooldown group.</text>
+
+<!-- VII. Tutorial: Droppable Item -->
+<text x="48" y="1364" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Tutorial: Creating a Destructible Mechanism That Drops Items</text>
+
+<rect x="48" y="1380" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1406" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Create a destructible mechanism that drops fowl when destroyed</text>
+
+<circle cx="72" cy="1434" r="14" fill="#2D6BE4"/>
+<text x="72" y="1439" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1439" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create loot item: Prefab Library > Loot > Preset > select model (e.g. "Fowl") > Save</text>
+
+<circle cx="72" cy="1464" r="14" fill="#2D6BE4"/>
+<text x="72" y="1469" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1469" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Loot Component: Pickup Rules = "Interactive Pickup", Enable Drop Animation = "Enable"</text>
+
+<circle cx="72" cy="1494" r="14" fill="#2D6BE4"/>
+<text x="72" y="1499" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1499" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create item: Combat Preset > Items > New Item. Set icon, name, type, rarity (green). Inventory Category = Consumable</text>
+
+<circle cx="72" cy="1524" r="14" fill="#2D6BE4"/>
+<text x="72" y="1529" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1529" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Item Details: Drop Settings = "Drop", Loot Type = "Shared Loot", Corresponding Loot = select "Fowl" loot</text>
+
+<circle cx="72" cy="1554" r="14" fill="#2D6BE4"/>
+<text x="72" y="1559" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1559" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create mechanism prefab (e.g. Finchball). Add Fixed Loot Component: Group Drop, Shared Loot, Fowl x3</text>
+
+<circle cx="72" cy="1584" r="14" fill="#2D6BE4"/>
+<text x="72" y="1589" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">6</text>
+<text x="96" y="1589" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add Collision Trigger. Node graph: "When Entering Collision Trigger" -> Destroy Entity (self)</text>
+
+<circle cx="72" cy="1614" r="14" fill="#1B4FC0"/>
+<text x="72" y="1619" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">7</text>
+<text x="96" y="1619" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Place prefab in scene, enter Test Mode to verify drops</text>
+
+<!-- VIII. Tutorial: Inventory and Usage -->
+<text x="48" y="1680" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Tutorial: Picking Up Loot and Using Items to Restore HP</text>
+
+<rect x="48" y="1696" width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1722" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Pick up dropped fowl, store in inventory, use to restore HP</text>
+
+<circle cx="72" cy="1750" r="14" fill="#2D6BE4"/>
+<text x="72" y="1755" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1755" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add Inventory Component to character via Combat Preset > Edit Character > Components</text>
+
+<circle cx="72" cy="1780" r="14" fill="#2D6BE4"/>
+<text x="72" y="1785" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1785" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure Inventory Template: Advanced Editing > Open Inventory Template Editor > Add Template</text>
+
+<circle cx="72" cy="1810" r="14" fill="#2D6BE4"/>
+<text x="72" y="1815" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1815" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Press [B] during gameplay to open inventory. Loot items are collected via interaction.</text>
+
+<circle cx="72" cy="1840" r="14" fill="#2D6BE4"/>
+<text x="72" y="1845" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1845" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure item usage logic: Auxiliary Editor > Item Node Graph > "Fowl: Restores HP"</text>
+
+<circle cx="72" cy="1870" r="14" fill="#2D6BE4"/>
+<text x="72" y="1875" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1875" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node graph: "When Items Used" -> Binary Branch (check item ID = Fowl) -> Identify inventory owner</text>
+
+<circle cx="72" cy="1895" r="14" fill="#2D6BE4"/>
+<text x="72" y="1900" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">6</text>
+<text x="96" y="1900" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiply item quantity for total HP restoration -> Directly Restore HP execution node</text>
+
+<circle cx="72" cy="1920" r="14" fill="#1B4FC0"/>
+<text x="72" y="1925" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">7</text>
+<text x="96" y="1925" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount node graph: Combat Preset > Items > Fowl > Associated Item Node Graph > select "Fowl: Restores HP"</text>
+
+<!-- Tip Box -->
+<rect x="48" y="1952" width="1104" height="52" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="1952" width="4" height="52" rx="2" fill="#D93025"/>
+<text x="72" y="1974" fill="#D93025" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Note: Loot cannot be picked up without an Inventory Component mounted on the character.</text>
+<text x="72" y="1994" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">For loot placed directly in stage, configure Loot Content to enable interaction. For drops from destroyed objects, use Fixed Loot Component.</text>
+
+<!-- Tip: Individualized Reward -->
+<rect x="48" y="2018" width="1104" height="52" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2018" width="4" height="52" rx="2" fill="#2D6BE4"/>
+<text x="72" y="2040" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: Individualized Reward gives each player an independent copy of dropped loot.</text>
+<text x="72" y="2060" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Players' pickup actions do not affect each other. Use Shared Reward for competitive loot scenarios.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2108" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhbgx0rspbqu" target="_blank">
+<text x="48" y="2128" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Item (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mh1t3z9s7hne" target="_blank">
+<text x="48" y="2148" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: 3.14 Loot, Items, and Inventory (Tutorial)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2180" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

@@ -1,98 +1,173 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1560">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
 
-  <rect width="1200" height="1400" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<rect width="1200" height="1560" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- Title Card -->
-  <rect x="40" y="14" width="1120" height="68" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="40" y="14" width="4" height="68" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="58" font-size="26" font-weight="700" fill="#1A1B2E">Global Timer</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Global Timer</text>
 
-  <!-- Section I: Overview -->
-  <rect x="40" y="100" width="1120" height="175" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="132" font-size="18" font-weight="700" fill="#2D6BE4">I. Global Timer Overview</text>
-  <text x="68" y="162" font-size="14" fill="#4A4B65">The <tspan font-weight="700" fill="#1A1B2E">Global Timer</tspan> component provides timing capabilities. It supports configuring multiple</text>
-  <text x="68" y="186" font-size="14" fill="#4A4B65">sets of static timer data. Timers run independently on different active entities.</text>
-  <text x="68" y="210" font-size="14" fill="#4A4B65">Two timer types: <tspan font-weight="700" fill="#1A1B2E">Countdown</tspan> (counts down from a set duration) and <tspan font-weight="700" fill="#1A1B2E">Stopwatch</tspan> (counts up).</text>
-  <text x="68" y="234" font-size="14" fill="#4A4B65">Two activation methods: (1) Reference timer set in entity component, activated on entity creation.</text>
-  <text x="68" y="258" font-size="14" fill="#4A4B65">(2) Node graph execution node activates the timer when executed.</text>
+<!-- I. Component Functions -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Global Timer Component Functions</text>
 
-  <!-- Section II: Timer Management Tool -->
-  <rect x="40" y="295" width="1120" height="175" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="327" font-size="18" font-weight="700" fill="#2D6BE4">II. Timer Management Tool</text>
-  <text x="68" y="357" font-size="14" fill="#4A4B65">Predefine all global timers via the <tspan font-weight="700" fill="#1A1B2E">Timer Management Tool</tspan>. The Global Timer List</text>
-  <text x="68" y="381" font-size="14" fill="#4A4B65">enumerates all predefined timers in the current stage. You can add new timers, set names</text>
-  <text x="68" y="405" font-size="14" fill="#4A4B65">and IDs, and configure basic parameters.</text>
-  <text x="68" y="429" font-size="14" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Parameters:</tspan> Global Timer Type (Countdown or Stopwatch), Duration in seconds (for countdown).</text>
-  <text x="68" y="453" font-size="14" fill="#4A4B65">Rename or delete timers using the icon next to each timer entry.</text>
+<rect x="48" y="162" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="188" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The global timer component provides timing capabilities. It supports pausing, restarting,</text>
+<text x="72" y="208" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">and modifying timers, and can synchronize with UI controls to display the timer's time.</text>
+<text x="72" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Properties:</text>
+<text x="200" y="234" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Supports configuring multiple sets of static timer data. Global timers run</text>
+<text x="72" y="254" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">independently on different active entities.</text>
 
-  <!-- Section III: Referencing Global Timers -->
-  <rect x="40" y="490" width="1120" height="240" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="522" font-size="18" font-weight="700" fill="#2D6BE4">III. Referencing Global Timers</text>
+<!-- II. How to Use -->
+<text x="48" y="298" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. How to Use Global Timers</text>
 
-  <text x="68" y="554" font-size="14" font-weight="700" fill="#1A1B2E">Via UI Controls</text>
-  <text x="68" y="578" font-size="14" fill="#4A4B65">Open the Interface Layout Management Tool and select <tspan font-weight="700" fill="#1A1B2E">Timer UI Controls</tspan>.</text>
-  <text x="68" y="602" font-size="14" fill="#4A4B65">Configure: Type (Stopwatch/Countdown), Specify Timer (select predefined timer),</text>
-  <text x="68" y="626" font-size="14" fill="#4A4B65">Source Entity (stage entity or player entity — must have a Global Timer component).</text>
-  <text x="68" y="646" font-size="13" fill="#8B8DA0">If inactive, UI displays 00:00. When active, UI shows the current timer time.</text>
+<rect x="48" y="312" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="60" y="324" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="100" y="343" fill="#2D6BE4" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Method 1</text>
+<text x="72" y="372" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity editing component: set a reference timer that</text>
+<text x="72" y="388" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">will be activated when the entity is created.</text>
 
-  <text x="68" y="674" font-size="14" font-weight="700" fill="#1A1B2E">Via Entity Component</text>
-  <text x="68" y="698" font-size="14" fill="#4A4B65">Add the Global Timer component via Add Common Component. Then add a timer reference</text>
-  <text x="68" y="722" font-size="14" fill="#4A4B65">by selecting from the predefined timer list. The timer activates when the entity is created.</text>
+<rect x="604" y="312" width="548" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="616" y="324" width="80" height="28" rx="14" fill="#E8EEFB"/>
+<text x="656" y="343" fill="#2D6BE4" font-size="12" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Method 2</text>
+<text x="628" y="372" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node graph execution node: activate the timer when</text>
+<text x="628" y="388" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">the node is executed during gameplay.</text>
 
-  <!-- Section IV: Node Graph Integration -->
-  <rect x="40" y="750" width="1120" height="440" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="68" y="782" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+<!-- III. Global Timer Management Tool -->
+<text x="48" y="428" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Global Timer Management Tool</text>
 
-  <text x="68" y="814" font-size="14" font-weight="700" fill="#1A1B2E">Start Global Timer</text>
-  <text x="68" y="834" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="852" font-size="14" fill="#4A4B65">Activates a predefined global timer. Only timers defined in the management tool are valid.</text>
-  <text x="68" y="872" font-size="13" fill="#4A4B65">The running entity serves as the carrier for the timer.</text>
+<rect x="48" y="442" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="468" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Predefine all global timers via the timer management tool. The Global Timer List enumerates</text>
+<text x="72" y="488" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">all predefined global timers in the current stage. Use the Add Timer button to create new timers.</text>
+<text x="72" y="512" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name and ID:</text>
+<text x="172" y="512" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click the icon to rename or delete a specified timer. The name is the global timer's reference.</text>
 
-  <text x="68" y="900" font-size="14" font-weight="700" fill="#1A1B2E">Stop Global Timer</text>
-  <text x="68" y="920" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="938" font-size="14" fill="#4A4B65">Stops a running global timer early.</text>
+<!-- IV. Editing Global Timers -->
+<text x="48" y="558" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Editing Global Timers</text>
+<text x="260" y="558" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Information Parameters</text>
 
-  <text x="68" y="966" font-size="14" font-weight="700" fill="#1A1B2E">Pause Global Timer</text>
-  <text x="68" y="986" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="1004" font-size="14" fill="#4A4B65">Pauses a running global timer. Linked UI controls also pause their display.</text>
+<rect x="48" y="572" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
 
-  <text x="68" y="1032" font-size="14" font-weight="700" fill="#1A1B2E">Recover Global Timer</text>
-  <text x="68" y="1052" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="1070" font-size="14" fill="#4A4B65">Resumes a paused timer. UI control display resumes as well.</text>
+<!-- Table header -->
+<rect x="48" y="572" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="594" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="596" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter</text>
+<text x="360" y="596" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
 
-  <text x="68" y="1098" font-size="14" font-weight="700" fill="#1A1B2E">Increase Global Timer Value</text>
-  <text x="68" y="1118" font-size="13" fill="#8B8DA0">Node Type: Execute</text>
-  <text x="68" y="1136" font-size="14" fill="#4A4B65">Adjusts a running timer's time. For countdown: positive adds remaining time, negative reduces.</text>
-  <text x="68" y="1156" font-size="13" fill="#4A4B65">For stopwatch: positive increases accumulated time, negative decreases it.</text>
+<text x="72" y="630" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Global Timer Type</text>
+<text x="360" y="630" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Provides two types: Countdown and Stopwatch.</text>
+<line x1="68" y1="640" x2="1132" y2="640" stroke="#E8E4DA" stroke-width="1"/>
 
-  <!-- Tip Box -->
-  <rect x="40" y="1210" width="1120" height="90" rx="14" fill="#E8EEFB"/>
-  <rect x="40" y="1210" width="4" height="90" rx="2" fill="#2D6BE4"/>
-  <text x="68" y="1232" font-size="14" font-weight="700" fill="#1A1B2E">Additional Event &amp; Query Nodes</text>
-  <text x="68" y="1254" font-size="13" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">When Global Timer Is Triggered</tspan> (Event): Fires when a countdown timer reaches zero.</text>
-  <text x="68" y="1274" font-size="13" fill="#4A4B65"><tspan font-weight="700" fill="#1A1B2E">Get Current Global Timer Time</tspan> (Query): Returns remaining time (countdown) or accumulated</text>
-  <text x="68" y="1292" font-size="13" fill="#4A4B65">time (stopwatch) as a Floating Point Number.</text>
+<text x="72" y="660" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Duration (s)</text>
+<text x="360" y="660" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When the timer type is Countdown, a duration needs to be set.</text>
 
-  <!-- Source Links -->
-  <text x="68" y="1340" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+<!-- V. Global Timer Reference -->
+<text x="48" y="708" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Global Timer Reference</text>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh9bzc0r99i0" target="_blank">
-    <text x="68" y="1368" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Global Timer</text>
-  </a>
+<rect x="48" y="722" width="540" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="748" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Via UI Controls</text>
+<text x="72" y="770" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Timer UI Controls "Timer" to execute logic.</text>
+<text x="72" y="792" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type:</text>
+<text x="110" y="792" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stopwatch or Countdown</text>
+<text x="72" y="812" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Specify Timer:</text>
+<text x="175" y="812" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enumerates all predefined timers matching Type</text>
+<text x="72" y="832" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Source Entity:</text>
+<text x="175" y="832" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stage entity (default) or player entity</text>
+<text x="72" y="848" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Source entity needs a global timer component.</text>
 
-  <!-- Footer -->
-  <text x="600" y="1392" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="604" y="722" width="548" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="748" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Via Component</text>
+<text x="628" y="770" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add Global Timer component to entity/prefab.</text>
+<text x="628" y="792" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Add Timer" to select from predefined timers.</text>
+<text x="628" y="814" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">A referenced timer is activated when the entity is created.</text>
+<text x="628" y="836" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Manage Timer" to open the management tool.</text>
+
+<!-- Tip -->
+<rect x="48" y="864" width="1104" height="36" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="864" width="4" height="36" rx="2" fill="#2D6BE4"/>
+<text x="68" y="887" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If the timer is not active when the source entity is running, UI controls display default value 00:00.</text>
+
+<!-- VI. Node Graph Operations -->
+<text x="48" y="936" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Node Graph Operations</text>
+<text x="270" y="936" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only predefined timers are valid as references</text>
+
+<rect x="48" y="950" width="1104" height="480" rx="14" fill="#fff" filter="url(#card)"/>
+
+<!-- Table header -->
+<rect x="48" y="950" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="972" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="974" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node</text>
+<text x="300" y="974" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Type</text>
+<text x="420" y="974" fill="#fff" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<!-- Row 1 -->
+<text x="72" y="1008" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Start Global Timer</text>
+<text x="300" y="1008" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1008" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Reference and start a global timer with the running entity as carrier.</text>
+<line x1="68" y1="1018" x2="1132" y2="1018" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 2 -->
+<text x="72" y="1040" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stop Global Timer</text>
+<text x="300" y="1040" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1040" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stop running a global timer early.</text>
+<line x1="68" y1="1050" x2="1132" y2="1050" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 3 -->
+<text x="72" y="1072" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pause Global Timer</text>
+<text x="300" y="1072" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1072" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pause a running timer. Linked UI controls also pause display.</text>
+<line x1="68" y1="1082" x2="1132" y2="1082" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 4 -->
+<text x="72" y="1104" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Recover Global Timer</text>
+<text x="300" y="1104" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1104" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Resume a timer paused by "Pause Global Timer". UI display resumes.</text>
+<line x1="68" y1="1114" x2="1132" y2="1114" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 5 -->
+<text x="72" y="1136" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Increase Timer Value</text>
+<text x="300" y="1136" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Execute</text>
+<text x="420" y="1136" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjust a running timer. Countdown: positive = more remaining time,</text>
+<text x="420" y="1154" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">negative = less. Stopwatch: positive = more accumulated, negative = less.</text>
+<line x1="68" y1="1164" x2="1132" y2="1164" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 6 -->
+<text x="72" y="1186" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Timer Triggered</text>
+<text x="300" y="1186" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Event</text>
+<text x="420" y="1186" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When countdown ends, sends event to the node graph.</text>
+<line x1="68" y1="1196" x2="1132" y2="1196" stroke="#E8E4DA" stroke-width="1"/>
+
+<!-- Row 7 -->
+<text x="72" y="1218" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Get Current Time</text>
+<text x="300" y="1218" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query</text>
+<text x="420" y="1218" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Countdown: returns remaining time. Stopwatch: returns accumulated time.</text>
+
+<!-- Warning tip -->
+<rect x="48" y="1442" width="1104" height="56" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="1442" width="4" height="56" rx="2" fill="#D93025"/>
+<text x="68" y="1462" fill="#D93025" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Important: Increase Timer Value Edge Cases</text>
+<text x="68" y="1482" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If paused then reduced to 0s, resuming triggers "When Timer Triggered". But if paused, reduced to 0s,</text>
+<text x="68" y="1494" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">then increased again before resuming, the event will NOT be triggered. Minimum modified time is 0 seconds.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="1524" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhawd6rl5kpy" target="_blank">
+  <text x="48" y="1542" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Global Timer (Guide)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="1556" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
 </svg>

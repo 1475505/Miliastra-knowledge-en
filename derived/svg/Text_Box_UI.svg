@@ -1,196 +1,156 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2180" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1256">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
+<style>
+  text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+</style>
 
-  <rect width="1200" height="2180" fill="#F9F7F2"/>
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Page Background -->
+<rect width="1200" height="1256" fill="#F9F7F2"/>
 
-  <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">46-Text Box UI: Text Content, Font Settings &amp; Dynamic Binding</text>
+<!-- Top Color Bar -->
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- ==================== SECTION I ==================== -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Text Box Functions</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Text Box UI</text>
+<text x="340" y="82" fill="#4A4B65" font-size="16">Display and manage text content in the UI Layout</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">What is a Text Box UI Control?</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">A Text Box is a Prefabricated UI Control that displays pre-edited text</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">content during stage runtime.</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">If the text content contains custom variables, it will update the display</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">in real-time as the variable values change.</text>
-  </g>
+<!-- I. Text Box Functions -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Text Box Functions</text>
 
-  <!-- ==================== SECTION II ==================== -->
-  <circle cx="80" cy="340" r="16" fill="#2D6BE4"/>
-  <text x="80" y="341" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="341" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing the Text Box</text>
+<rect x="48" y="162" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14">During stage runtime, display pre-edited text content. If the text content contains custom variables,</text>
+<text x="72" y="212" fill="#4A4B65" font-size="14">it will update the display in real-time as the variable values change.</text>
 
-  <!-- Background Color -->
-  <g transform="translate(60, 368)">
-    <rect width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Background Color</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Choose a transparent or semi-transparent black background for the text box.</text>
-    <text x="20" y="76" font-size="13" fill="#8B8DA0">Semi-transparent backgrounds improve readability over changing in-game scenery.</text>
-  </g>
+<!-- II. Editing the Text Box -->
+<text x="48" y="278" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Text Box</text>
 
-  <!-- Font Size -->
-  <g transform="translate(60, 484)">
-    <rect width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Font Size</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Configure the font size of the text content. Recommended sizes:</text>
+<!-- Background Color Card -->
+<rect x="48" y="292" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="76" cy="320" r="14" fill="#2D6BE4"/>
+<text x="76" y="325" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">1</text>
+<text x="100" y="325" fill="#1A1B2E" font-size="16" font-weight="500">Background Color</text>
+<text x="72" y="352" fill="#4A4B65" font-size="14">Choose a transparent or</text>
+<text x="72" y="374" fill="#4A4B65" font-size="14">semi-transparent black background.</text>
 
-    <rect x="20" y="68" width="508" height="24" fill="#F9F7F2" rx="4"/>
-    <text x="32" y="84" font-size="12" fill="#4A4B65" dominant-baseline="middle">Body Text (Most Common): 20</text>
-    <text x="520" y="84" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Subtitle / Button: 24</text>
+<!-- Font Size Card -->
+<rect x="424" y="292" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="452" cy="320" r="14" fill="#2D6BE4"/>
+<text x="452" y="325" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">2</text>
+<text x="476" y="325" fill="#1A1B2E" font-size="16" font-weight="500">Font Size</text>
+<text x="448" y="352" fill="#4A4B65" font-size="14">Configure the font size for the</text>
+<text x="448" y="374" fill="#4A4B65" font-size="14">text box content display.</text>
 
-    <rect x="20" y="92" width="508" height="24" fill="#F9F7F2" rx="4"/>
-    <text x="32" y="108" font-size="12" fill="#4A4B65" dominant-baseline="middle">Large Title: 36-32</text>
-    <text x="520" y="108" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Secondary Text: 18</text>
-  </g>
+<!-- Align Card -->
+<rect x="800" y="292" width="352" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="828" cy="320" r="14" fill="#2D6BE4"/>
+<text x="828" y="325" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">3</text>
+<text x="852" y="325" fill="#1A1B2E" font-size="16" font-weight="500">Alignment</text>
+<text x="824" y="352" fill="#4A4B65" font-size="14">Choose alignment based on the</text>
+<text x="824" y="374" fill="#4A4B65" font-size="14">position and content of the text.</text>
 
-  <!-- Text Content -->
-  <g transform="translate(60, 620)">
-    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Text Content &amp; Custom Variables</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Edit the text box's content; supports characters, text, numbers, and</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">custom variables. Insert variables by selecting custom variables predefined</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">on stage entities and player entities.</text>
+<!-- Text Content Card -->
+<rect x="48" y="404" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="76" cy="432" r="14" fill="#2D6BE4"/>
+<text x="76" y="437" fill="#fff" font-size="13" text-anchor="middle" font-weight="500">4</text>
+<text x="100" y="437" fill="#1A1B2E" font-size="16" font-weight="500">Text Content</text>
+<text x="72" y="464" fill="#4A4B65" font-size="14">Edit the text box's content; supports characters, text, numbers, and custom variables.</text>
+<text x="72" y="488" fill="#4A4B65" font-size="14">By inserting variables, you can select custom variables predefined on stage entities and player entities.</text>
+<text x="72" y="512" fill="#4A4B65" font-size="14">When an inserted custom variable changes, the displayed text updates at runtime.</text>
 
-    <text x="20" y="120" font-size="13" font-weight="bold" fill="#1A1B2E">Custom Variable Format:</text>
-    <text x="20" y="142" font-size="14" fill="#4A4B65" font-family="monospace">\u007bType:Prefix.VariableName\u007d</text>
+<text x="72" y="540" fill="#1A1B2E" font-size="14" font-weight="500">Rich Text Variable Format:  {Type:Prefix.VariableName}</text>
+<rect x="72" y="554" width="60" height="22" rx="11" fill="#E8EEFB"/>
+<text x="102" y="569" fill="#2D6BE4" font-size="11" text-anchor="middle">Type</text>
+<text x="142" y="569" fill="#4A4B65" font-size="13">= 1 (when referencing a custom variable)</text>
 
-    <text x="20" y="170" font-size="13" font-weight="bold" fill="#1A1B2E">Type:</text>
-    <text x="20" y="190" font-size="13" fill="#4A4B65">1 when referencing a custom variable</text>
+<!-- Variable Prefix Table -->
+<rect x="48" y="596" width="1104" height="44" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="626" width="1104" height="14" fill="#2D6BE4"/>
+<text x="300" y="624" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Custom Variable Target</text>
+<text x="700" y="624" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Prefix</text>
+<text x="1000" y="624" fill="#fff" font-size="15" text-anchor="middle" font-weight="500">Example</text>
 
-    <text x="20" y="218" font-size="13" font-weight="bold" fill="#1A1B2E">Prefix Reference:</text>
+<rect x="48" y="640" width="1104" height="36" fill="#fff"/>
+<line x1="48" y1="676" x2="1152" y2="676" stroke="#E8E4DA" stroke-width="1"/>
+<text x="300" y="664" fill="#1A1B2E" font-size="14" text-anchor="middle">Players 1 - 8</text>
+<text x="700" y="664" fill="#4A4B65" font-size="14" text-anchor="middle">p1 ~ p8</text>
+<text x="1000" y="664" fill="#4A4B65" font-size="14" text-anchor="middle">{1:p4.Test2}</text>
 
-    <rect x="20" y="234" width="508" height="20" fill="#F9F7F2"/>
-    <text x="32" y="249" font-size="11" fill="#4A4B65" dominant-baseline="middle">Players 1-8: p1~8</text>
-    <text x="280" y="249" font-size="11" fill="#4A4B65" text-anchor="middle" dominant-baseline="middle">Stage Entity: lv</text>
+<rect x="48" y="676" width="1104" height="36" fill="#F4F1EA"/>
+<line x1="48" y1="712" x2="1152" y2="712" stroke="#E8E4DA" stroke-width="1"/>
+<text x="300" y="700" fill="#1A1B2E" font-size="14" text-anchor="middle">Stage Entity</text>
+<text x="700" y="700" fill="#4A4B65" font-size="14" text-anchor="middle">lv</text>
+<text x="1000" y="700" fill="#4A4B65" font-size="14" text-anchor="middle">{1:lv.Score}</text>
 
-    <rect x="20" y="254" width="508" height="20" fill="#F9F7F2"/>
-    <text x="32" y="269" font-size="11" fill="#4A4B65" dominant-baseline="middle">Player's Own Entity: ps</text>
+<rect x="48" y="712" width="1104" height="36" rx="0" fill="#fff"/>
+<rect x="48" y="734" width="1104" height="14" rx="14" fill="#fff"/>
+<text x="300" y="736" fill="#1A1B2E" font-size="14" text-anchor="middle">Player's Own Entity</text>
+<text x="700" y="736" fill="#4A4B65" font-size="14" text-anchor="middle">ps</text>
+<text x="1000" y="736" fill="#4A4B65" font-size="14" text-anchor="middle">{1:ps.Health}</text>
 
-    <text x="20" y="290" font-size="13" fill="#4A4B65">Example: {1:p4.Test2} references custom variable "Test2" on Player 4.</text>
-  </g>
+<!-- Alignment Details Card -->
+<rect x="48" y="764" width="1104" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="792" fill="#1A1B2E" font-size="16" font-weight="500">Alignment Options</text>
 
-  <!-- Alignment -->
-  <g transform="translate(60, 916)">
-    <rect width="1080" height="280" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Alignment</text>
-    <text x="20" y="50" font-size="14" fill="#4A4B65">Choose an appropriate alignment based on the position and content of the text.</text>
+<text x="72" y="820" fill="#1A1B2E" font-size="14" font-weight="500">Horizontal Alignment</text>
+<rect x="72" y="832" width="100" height="24" rx="12" fill="#E8EEFB"/>
+<text x="122" y="848" fill="#2D6BE4" font-size="12" text-anchor="middle">Left Align</text>
+<rect x="182" y="832" width="140" height="24" rx="12" fill="#E8EEFB"/>
+<text x="252" y="848" fill="#2D6BE4" font-size="12" text-anchor="middle">Horizontal Center</text>
+<rect x="332" y="832" width="100" height="24" rx="12" fill="#E8EEFB"/>
+<text x="382" y="848" fill="#2D6BE4" font-size="12" text-anchor="middle">Right Align</text>
 
-    <!-- Alignment table -->
-    <rect x="20" y="66" width="508" height="26" fill="#2D6BE4" rx="4"/>
-    <text x="32" y="84" font-size="11" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Alignment</text>
-    <text x="520" y="84" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="end" dominant-baseline="middle">Description</text>
+<text x="72" y="884" fill="#1A1B2E" font-size="14" font-weight="500">Vertical Alignment</text>
+<rect x="72" y="896" width="100" height="24" rx="12" fill="#E8EEFB"/>
+<text x="122" y="912" fill="#2D6BE4" font-size="12" text-anchor="middle">Top Align</text>
+<rect x="182" y="896" width="130" height="24" rx="12" fill="#E8EEFB"/>
+<text x="247" y="912" fill="#2D6BE4" font-size="12" text-anchor="middle">Vertical Center</text>
+<rect x="322" y="896" width="120" height="24" rx="12" fill="#E8EEFB"/>
+<text x="382" y="912" fill="#2D6BE4" font-size="12" text-anchor="middle">Bottom Align</text>
 
-    <rect x="20" y="92" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="108" font-size="12" fill="#4A4B65" dominant-baseline="middle">Left Align</text>
-    <text x="520" y="108" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text aligns to the left edge</text>
+<text x="520" y="850" fill="#4A4B65" font-size="14">Choose the appropriate horizontal alignment based on</text>
+<text x="520" y="872" fill="#4A4B65" font-size="14">where the text box is positioned and its content flow.</text>
+<text x="520" y="912" fill="#4A4B65" font-size="14">Vertical alignment controls how text is positioned</text>
+<text x="520" y="934" fill="#4A4B65" font-size="14">within the text box boundaries vertically.</text>
 
-    <rect x="20" y="116" width="508" height="24" fill="#FFFFFF"/>
-    <text x="32" y="132" font-size="12" fill="#4A4B65" dominant-baseline="middle">Horizontal Center</text>
-    <text x="520" y="132" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text is centered horizontally</text>
+<!-- III. Adjusting Text Box Layout -->
+<text x="48" y="984" fill="#2D6BE4" font-size="18" font-weight="700">III. Adjusting Text Box Layout in the UI</text>
 
-    <rect x="20" y="140" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="156" font-size="12" fill="#4A4B65" dominant-baseline="middle">Right Align</text>
-    <text x="520" y="156" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text aligns to the right edge</text>
+<rect x="48" y="998" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1026" fill="#4A4B65" font-size="14">Resize the text box by dragging its borders in the edit window when the cursor changes to a resize arrow.</text>
+<text x="72" y="1050" fill="#4A4B65" font-size="14">Its position and size update automatically after adjustment.</text>
 
-    <rect x="20" y="164" width="508" height="24" fill="#FFFFFF"/>
-    <text x="32" y="180" font-size="12" fill="#4A4B65" dominant-baseline="middle">Top Align</text>
-    <text x="520" y="180" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text aligns to the top</text>
+<rect x="72" y="1066" width="100" height="22" rx="11" fill="#FFF3E0"/>
+<text x="122" y="1081" fill="#D93025" font-size="12" text-anchor="middle">Note</text>
+<text x="182" y="1081" fill="#4A4B65" font-size="13">Position and size values are automatically saved and reflected in the Transform properties panel.</text>
 
-    <rect x="20" y="188" width="508" height="24" fill="#F9F7F2"/>
-    <text x="32" y="204" font-size="12" fill="#4A4B65" dominant-baseline="middle">Vertical Center</text>
-    <text x="520" y="204" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text is centered vertically</text>
+<!-- Tip Box -->
+<rect x="48" y="1116" width="1104" height="60" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1116" width="4" height="60" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1142" fill="#4A4B65" font-size="14">Tip: When inserting custom variables, use the rich text format {1:Prefix.VariableName} to ensure proper real-time</text>
+<text x="72" y="1164" fill="#4A4B65" font-size="14">updates. Test variable references at runtime to confirm they display the correct values for each player.</text>
 
-    <rect x="20" y="212" width="508" height="24" fill="#FFFFFF"/>
-    <text x="32" y="228" font-size="12" fill="#4A4B65" dominant-baseline="middle">Bottom Align</text>
-    <text x="520" y="228" font-size="12" fill="#4A4B65" text-anchor="end" dominant-baseline="middle">Text aligns to the bottom</text>
+<!-- Related Documentation Label -->
+<text x="48" y="1200" fill="#8B8DA0" font-size="12">Related Documentation:</text>
 
-    <text x="20" y="262" font-size="13" fill="#4A4B65">Combining horizontal and vertical alignment controls precise text positioning.</text>
-  </g>
+<!-- Source Links -->
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhnltrr3g966" target="_blank">
+  <text x="48" y="1218" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Text Box UI Controls</text>
+</a>
 
-  <!-- ==================== SECTION III ==================== -->
-  <circle cx="80" cy="1232" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1233" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="1233" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Adjusting Text Box Layout in the UI</text>
-
-  <g transform="translate(60, 1260)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Resizing and Positioning</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Resize the text box by dragging its borders in the edit window when the</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">cursor changes to a resize arrow.</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">The position and size update automatically after adjustment.</text>
-    <text x="20" y="128" font-size="14" fill="#4A4B65">Supports dynamic text binding: when an inserted custom variable changes,</text>
-    <text x="20" y="148" font-size="14" fill="#4A4B65">the displayed text updates at runtime without recompiling the layout.</text>
-    <text x="20" y="172" font-size="13" fill="#8B8DA0">Rich text formatting allows inline color and style changes via &lt;color&gt; tags.</text>
-  </g>
-
-  <!-- ==================== SECTION IV ==================== -->
-  <circle cx="80" cy="1476" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1477" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1477" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Rich Text &amp; Multi-Language Support</text>
-
-  <g transform="translate(60, 1504)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Rich Text Support</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Text content supports HTML-like rich text tags for formatting. Use</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">&lt;color=#XXXXXX&gt; tags to change text color inline.</text>
-
-    <text x="20" y="100" font-size="13" fill="#4A4B65">Common color codes: #D3BC8E (gold accent), #FFCC33 (keyword yellow),</text>
-    <text x="20" y="120" font-size="13" fill="#4A4B65">#37FFFF (cyan keyword), #FFFFFF (white normal text), #FF5E41 (warning).</text>
-
-    <text x="20" y="152" font-size="14" fill="#4A4B65">Multi-language text is supported through the platform's localization system,</text>
-    <text x="20" y="172" font-size="14" fill="#4A4B65">allowing different text content per locale without layout changes.</text>
-  </g>
-
-  <!-- Tip Box -->
-  <g transform="translate(60, 1700)">
-    <rect width="1080" height="90" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="90" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Text Overflow</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">If text content exceeds the text box bounds, consider increasing the box size</text>
-    <text x="20" y="64" font-size="13" fill="#4A4B65">or reducing font size. Set text box length to 5,000 for adaptive sizing across</text>
-    <text x="20" y="84" font-size="13" fill="#4A4B65">various screen sizes without showing the boundary.</text>
-  </g>
-
-  <!-- Tip Box 2 -->
-  <g transform="translate(60, 1802)">
-    <rect width="1080" height="70" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="70" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Node Graph Update</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">Use node graph nodes to dynamically modify text box content at runtime,</text>
-    <text x="20" y="64" font-size="13" fill="#4A4B65">enabling quest updates, score displays, and real-time variable feedback.</text>
-  </g>
-
-  <!-- Source Links -->
-  <text x="60" y="1920" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha9au0hpj0o" target="_blank">
-    <text x="60" y="1946" font-size="12" fill="#2D6BE4" text-decoration="underline">Text Box UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mha9au0hpj0o</text>
-  </a>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684" target="_blank">
-    <text x="60" y="1970" font-size="12" fill="#2D6BE4" text-decoration="underline">UI Controls → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684</text>
-  </a>
-
-  <!-- Footer -->
-  <text x="600" y="2160" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<!-- Footer -->
+<text x="600" y="1242" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 
 </svg>

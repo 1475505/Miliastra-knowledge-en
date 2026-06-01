@@ -1,192 +1,256 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3000" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#1A1B2E" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1A1B2E" flood-opacity="0.08"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2484">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="2484" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect width="1200" height="3000" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mini-Map Marker</text>
+<text x="380" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Displaying entity locations on the map via icons and ranges</text>
 
-  <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">30-Mini-Map Marker: Component, Marker Types &amp; Node Graph Control</text>
+<!-- I. Component Functions -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Mini-Map Marker Component Functions</text>
 
-  <!-- I. Functions -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Mini-Map Marker Component Functions</text>
+<rect x="48" y="164" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">The Mini-Map Marker Component supports displaying entities on the prefabricated Mini-Map UI Controls</text>
+<text x="72" y="212" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">through visual indicators such as icons and ranges.</text>
+<text x="72" y="236" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Must be mounted on entities; supports players, objects, and creations.</text>
+<text x="72" y="256" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can be enabled/disabled through default settings or controlled through node graphs.</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" fill="#4A4B65">The Mini-Map Marker Component supports displaying entities on the prefabricated Mini-Map UI</text>
-    <text x="20" y="48" font-size="14" fill="#4A4B65">Controls through visual indicators such as icons/ranges.</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">The component must be mounted on entities. Supports <tspan font-weight="bold" fill="#1A1B2E">players</tspan>, <tspan font-weight="bold" fill="#1A1B2E">objects</tspan>, and</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">creations</tspan>.</text>
-    <text x="20" y="116" font-size="14" fill="#4A4B65">Markers can be enabled/disabled through default settings, or controlled through node graphs.</text>
-    <text x="20" y="144" font-size="14" font-weight="bold" fill="#1A1B2E">Key Capabilities:</text>
-    <text x="20" y="168" font-size="13" fill="#4A4B65">• Mountable on players, objects, creations</text>
-    <text x="370" y="168" font-size="13" fill="#4A4B65">• Multiple marker types (Icon, AoE, Marker, etc.)</text>
-    <text x="720" y="168" font-size="13" fill="#4A4B65">• Node graph activation/visibility control</text>
-  </g>
+<!-- II. Adding Components -->
+<text x="48" y="300" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Adding Components</text>
 
-  <!-- II. Editing Components -->
-  <circle cx="80" cy="360" r="16" fill="#2D6BE4"/>
-  <text x="80" y="361" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="361" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Editing Mini-Map Marker Components</text>
+<rect x="48" y="316" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<circle cx="72" cy="342" r="14" fill="#2D6BE4"/>
+<text x="72" y="347" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="347" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In the Entity or Prefab editing interface, open the Component Editing Tab</text>
+<circle cx="72" cy="372" r="14" fill="#2D6BE4"/>
+<text x="72" y="377" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="377" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Add Components" then select "Mini-map Marker" to add it</text>
+<circle cx="72" cy="402" r="14" fill="#1B4FC0"/>
+<text x="72" y="407" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="407" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click "Advanced Editing" to expand the Editing Tab and add/configure markers</text>
 
-  <g transform="translate(60, 388)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">1. Adding Components</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">In the Entity or Prefab editing interface, open the Component Editing Tab. Click</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">"Add Components", then select "Mini-map Marker". Click "Advanced Editing" to expand.</text>
+<!-- III. Basic Information -->
+<text x="48" y="456" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Basic Information and Marker Management</text>
 
-    <text x="20" y="100" font-size="14" font-weight="bold" fill="#1A1B2E">2. Basic Information</text>
-    <text x="20" y="124" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initially Effective</tspan> — Dropdown menu providing a list of mini-map markers.</text>
-    <text x="20" y="144" font-size="13" fill="#4A4B65">Use the checkbox to toggle the marker's active state.</text>
-    <text x="20" y="168" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Mini-Map Marker List</tspan> — Enumerates all mini-map markers for entity configuration.</text>
-  </g>
+<rect x="48" y="472" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="498" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Effective</text>
+<text x="72" y="520" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Drop-down menu lists mini-map markers. Use checkbox</text>
+<text x="72" y="540" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">to toggle active state; syncs to Advanced Editing tab.</text>
 
-  <!-- III. Marker Parameters -->
-  <circle cx="80" cy="604" r="16" fill="#2D6BE4"/>
-  <text x="80" y="605" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="605" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Mini-Map Marker Parameter Descriptions</text>
+<rect x="604" y="472" width="548" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="498" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mini-Map Marker List</text>
+<text x="628" y="520" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enumerates all mini-map markers for entity configuration.</text>
+<text x="628" y="540" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Marker X (ID) used as node input for activation params.</text>
 
-  <g transform="translate(60, 632)">
-    <rect width="1080" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="14" font-weight="bold" fill="#1A1B2E">Display Settings</text>
-    <text x="20" y="52" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Initially Visible to All Players</tspan> — When enabled, marker visible to all eligible players.</text>
-    <text x="20" y="76" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Follow Object Visibility</tspan> — When entity is hidden, mini-map marker hides too.</text>
-    <text x="20" y="100" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Display Priority</tspan> — Higher number = higher priority when markers overlap.</text>
+<!-- IV. Display Settings -->
+<text x="48" y="592" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Marker Parameter Configuration</text>
 
-    <text x="20" y="132" font-size="14" font-weight="bold" fill="#1A1B2E">Marker Style</text>
-    <text x="20" y="156" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Select Type</tspan> — Divided into Icon, Range (AoE), Marker, Player's Marker, Creation Icon.</text>
-    <text x="20" y="180" font-size="13" fill="#4A4B65">Each type has different configuration parameters.</text>
-    <text x="20" y="204" font-size="13" fill="#4A4B65"><tspan font-weight="bold" fill="#1A1B2E">Show Height Difference</tspan> — When enabled, entities with height differences exceeding 10m</text>
-    <text x="20" y="224" font-size="13" fill="#4A4B65">are also marked on the mini-map.</text>
+<rect x="48" y="608" width="1104" height="110" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="634" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Display Settings</text>
 
-    <text x="20" y="256" font-size="14" font-weight="bold" fill="#1A1B2E">Logic-Driven Colors</text>
-    <text x="20" y="280" font-size="13" fill="#4A4B65">Background border color supports specific colors and logic-driven colors:</text>
-    <text x="40" y="304" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Hostility</tspan> — Enemies red, friends green, self blue</text>
-    <text x="40" y="324" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Follow Own Faction</tspan> — Based on current faction's colors</text>
-    <text x="40" y="344" font-size="13" fill="#4A4B65">• <tspan font-weight="bold" fill="#1A1B2E">Follow Owner's Faction</tspan> — Based on owner entity's faction colors</text>
-  </g>
+<rect x="72" y="648" width="1060" height="28" rx="6" fill="#F4F1EA"/>
+<text x="88" y="667" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initially Visible to All Players</text>
+<text x="380" y="667" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Marker visible on mini-map of all eligible players once active</text>
 
-  <!-- IV. Selection Types -->
-  <circle cx="80" cy="1008" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1009" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1009" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Classification of Selection Types</text>
+<rect x="72" y="680" width="1060" height="28" rx="6" fill="#fff"/>
+<text x="88" y="699" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follow Object Visibility</text>
+<text x="380" y="699" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When entity is hidden, the mini-map marker is hidden as well</text>
 
-  <g transform="translate(60, 1036)">
-    <rect width="1080" height="540" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<!-- Marker Style -->
+<rect x="48" y="730" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="756" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Marker Style</text>
 
-    <!-- Icon -->
-    <rect x="20" y="20" width="500" height="100" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="42" font-size="13" font-weight="bold" fill="#1A1B2E">Icon</text>
-    <text x="36" y="64" font-size="12" fill="#4A4B65">Select from a variety of icons.</text>
-    <text x="36" y="82" font-size="12" fill="#4A4B65">Background: None or Circle.</text>
-    <text x="36" y="100" font-size="12" fill="#4A4B65">Supports Clickable option + Text Content.</text>
+<rect x="72" y="770" width="100" height="26" rx="13" fill="#E8EEFB"/>
+<text x="122" y="788" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Type</text>
+<text x="184" y="788" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icon, Range (AoE), Marker, Player's Marker, Creation Icon - each with different config parameters</text>
 
-    <!-- Range/AoE -->
-    <rect x="540" y="20" width="500" height="100" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="42" font-size="13" font-weight="bold" fill="#1A1B2E">Range (AoE)</text>
-    <text x="556" y="64" font-size="12" fill="#4A4B65">Border: solid or dotted line.</text>
-    <text x="556" y="82" font-size="12" fill="#4A4B65">Color: specific or logic-driven.</text>
-    <text x="556" y="100" font-size="12" fill="#4A4B65">Area Size (m) displayed proportionally.</text>
+<!-- V. Selection Type Details -->
+<text x="48" y="848" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Selection Type Details</text>
 
-    <!-- Marker -->
-    <rect x="20" y="132" width="500" height="100" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="154" font-size="13" font-weight="bold" fill="#1A1B2E">Marker</text>
-    <text x="36" y="176" font-size="12" fill="#4A4B65">Fixed style, not modifiable.</text>
-    <text x="36" y="194" font-size="12" fill="#4A4B65">Not clickable on world map.</text>
-    <text x="36" y="212" font-size="12" fill="#4A4B65">Color: specific or logic-driven.</text>
+<!-- Icons -->
+<rect x="48" y="864" width="540" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="890" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Icons</text>
 
-    <!-- Player's Marker -->
-    <rect x="540" y="132" width="500" height="100" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="154" font-size="13" font-weight="bold" fill="#1A1B2E">Player's Marker</text>
-    <text x="556" y="176" font-size="12" fill="#4A4B65">Icon needs to be passed through nodes.</text>
-    <text x="556" y="194" font-size="12" fill="#4A4B65">Not clickable on world map.</text>
-    <text x="556" y="212" font-size="12" fill="#4A4B65">Color: specific or logic-driven.</text>
+<text x="72" y="914" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Select Icon:</text>
+<text x="180" y="914" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Variety of icons to choose from</text>
 
-    <!-- Creation Icon -->
-    <rect x="20" y="244" width="500" height="100" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="266" font-size="13" font-weight="bold" fill="#1A1B2E">Creation Icon</text>
-    <text x="36" y="288" font-size="12" fill="#4A4B65">Only set for creations.</text>
-    <text x="36" y="306" font-size="12" fill="#4A4B65">Supports Clickable option.</text>
-    <text x="36" y="324" font-size="12" fill="#4A4B65">Marker Name + Text Content configurable.</text>
+<text x="72" y="938" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Background:</text>
+<text x="180" y="938" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">None or Circle</text>
 
-    <text x="20" y="380" font-size="14" fill="#4A4B65">Marker X (where X is an ID) can be used as a node input to adjust the initial activation</text>
-    <text x="20" y="400" font-size="14" fill="#4A4B65">parameters of the mini-map marker.</text>
-    <text x="20" y="424" font-size="13" fill="#4A4B65">• Added markers are initially effective by default</text>
-    <text x="20" y="448" font-size="13" fill="#4A4B65">• Use checkbox to toggle effective status, synchronized to advanced editing</text>
-    <text x="20" y="472" font-size="13" fill="#4A4B65">• Each entity can have multiple markers configured</text>
-    <text x="20" y="496" font-size="13" fill="#4A4B65">• Clickable markers open settings info on the world map</text>
-  </g>
+<text x="72" y="962" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Background Border Color:</text>
+<text x="72" y="982" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Specific colors or logic-driven: Hostility (enemies red,</text>
+<text x="72" y="1000" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">friends green, self blue), Follow Own Faction, Follow</text>
+<text x="72" y="1018" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Owner's Faction</text>
 
-  <!-- V. Node Graph Management -->
-  <circle cx="80" cy="1612" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1613" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1613" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Managing Mini-Map Markers Through Node Graphs</text>
+<text x="72" y="1042" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clickable:</text>
+<text x="160" y="1042" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Click on map to display settings info</text>
 
-  <g transform="translate(60, 1640)">
-    <rect width="1080" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+<!-- AoE -->
+<rect x="604" y="864" width="548" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="890" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AoE (Range)</text>
 
-    <rect x="20" y="20" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="42" font-size="12" font-weight="bold" fill="#1A1B2E">Modify Mini-Map Marker Activation Status</text>
-    <text x="36" y="62" font-size="11" fill="#4A4B65">Batch modify states via marker ID input list.</text>
+<text x="628" y="914" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Area Style:</text>
+<text x="730" y="914" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Solid line or dotted line border</text>
 
-    <rect x="540" y="20" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="42" font-size="12" font-weight="bold" fill="#1A1B2E">Modify Player List for Visible Markers</text>
-    <text x="556" y="62" font-size="11" fill="#4A4B65">Control which players see which markers.</text>
+<text x="628" y="938" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Color:</text>
+<text x="690" y="938" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Specific or logic-driven colors (same options as Icons)</text>
 
-    <rect x="20" y="92" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="114" font-size="12" font-weight="bold" fill="#1A1B2E">Modify Player Markers on the Mini-Map</text>
-    <text x="36" y="134" font-size="11" fill="#4A4B65">Update player icon markers.</text>
+<text x="628" y="962" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Area Size (m):</text>
+<text x="760" y="962" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Displays proportionally in Mini-Map UI</text>
 
-    <rect x="540" y="92" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="114" font-size="12" font-weight="bold" fill="#1A1B2E">Modify Mini-Map Zoom</text>
-    <text x="556" y="134" font-size="11" fill="#4A4B65">Adjust the zoom level of the mini-map.</text>
+<text x="628" y="996" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Marker</text>
+<text x="628" y="1020" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Point style (not modifiable). Not clickable on world map.</text>
+<text x="628" y="1042" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Color: specific or logic-driven (same options).</text>
 
-    <rect x="20" y="164" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="186" font-size="12" font-weight="bold" fill="#1A1B2E">Modify Player List for Tracking Markers</text>
-    <text x="36" y="206" font-size="11" fill="#4A4B65">Set which markers are tracked for which players.</text>
+<!-- Player's Marker and Creation Icon -->
+<rect x="48" y="1076" width="540" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1102" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Player's Marker</text>
+<text x="72" y="1126" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Preview shows creator's current icon (passed via nodes).</text>
+<text x="72" y="1148" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Not clickable on world map.</text>
+<text x="72" y="1170" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Background Border Color: specific or logic-driven colors.</text>
+<text x="72" y="1192" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Show Height Difference: entities exceeding 10m marked.</text>
 
-    <rect x="540" y="164" width="520" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="556" y="186" font-size="12" font-weight="bold" fill="#1A1B2E">Query Specified Mini-Map Marker Info</text>
-    <text x="556" y="206" font-size="11" fill="#4A4B65">Retrieve marker configuration details.</text>
+<rect x="604" y="1076" width="548" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1102" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Creation Icon</text>
+<text x="628" y="1126" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only for creations. Preview only, not editable.</text>
+<text x="628" y="1148" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Background Border Color: specific or logic-driven.</text>
+<text x="628" y="1170" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Clickable: click on map to display settings info.</text>
+<text x="628" y="1192" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Marker Name and Text Content configurable.</text>
 
-    <rect x="20" y="236" width="500" height="60" rx="8" fill="#E8EEFB"/>
-    <text x="36" y="258" font-size="12" font-weight="bold" fill="#1A1B2E">Get Entity's Mini-Map Marker Status</text>
-    <text x="36" y="278" font-size="11" fill="#4A4B65">Returns active/visible status of markers.</text>
+<!-- Display Priority -->
+<rect x="48" y="1218" width="1104" height="52" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1218" width="4" height="52" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1240" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Display Priority: When markers overlap, higher priority number appears on top.</text>
+<text x="72" y="1260" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Show Height Difference: When enabled, entities with height differences exceeding 10m are also marked on the mini-map.</text>
 
-    <text x="20" y="340" font-size="14" font-weight="bold" fill="#1A1B2E">Summary</text>
-    <text x="20" y="364" font-size="13" fill="#4A4B65">Mini-Map Markers provide flexible visual representation on the mini-map:</text>
-    <text x="40" y="388" font-size="13" fill="#4A4B65">• 5 distinct marker types for different use cases</text>
-    <text x="40" y="408" font-size="13" fill="#4A4B65">• Logic-driven colors via hostility/faction</text>
-    <text x="40" y="428" font-size="13" fill="#4A4B65">• 7 node graph operations for runtime control</text>
-    <text x="40" y="448" font-size="13" fill="#4A4B65">• Height difference, display priority, visibility management</text>
-  </g>
+<!-- VI. Managing Through Node Graphs -->
+<text x="48" y="1310" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Managing Mini-Map Markers Through Node Graphs</text>
 
-  <!-- Source Links -->
-  <text x="60" y="2160" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhiwt0rysfg6" target="_blank">
-    <text x="60" y="2186" font-size="13" fill="#2D6BE4" text-decoration="underline">Mini-Map Marker</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfc0lr1tcke" target="_blank">
-    <text x="60" y="2212" font-size="13" fill="#2D6BE4" text-decoration="underline">Scan Tag</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhgkan9wgil6" target="_blank">
-    <text x="60" y="2238" font-size="13" fill="#2D6BE4" text-decoration="underline">Light Source</text>
-  </a>
+<rect x="48" y="1326" width="1104" height="230" rx="14" fill="#fff" filter="url(#card)"/>
 
-  <!-- Footer -->
-  <text x="600" y="2280" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<rect x="72" y="1342" width="1060" height="30" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1362" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Mini-Map Marker Activation Status</text>
+<text x="480" y="1362" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Batch modify marker states via input list of marker IDs</text>
+
+<rect x="72" y="1378" width="1060" height="30" rx="6" fill="#fff"/>
+<text x="88" y="1398" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Player List for Visible Mini-Map Markers</text>
+<text x="520" y="1398" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Control which players can see specific markers</text>
+
+<rect x="72" y="1414" width="1060" height="30" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1434" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Player Markers on the Mini-Map</text>
+<text x="460" y="1434" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Change player-specific marker configurations</text>
+
+<rect x="72" y="1450" width="1060" height="30" rx="6" fill="#fff"/>
+<text x="88" y="1470" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Mini-Map Zoom</text>
+<text x="310" y="1470" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjust the zoom level of the mini-map display</text>
+
+<rect x="72" y="1486" width="1060" height="30" rx="6" fill="#F4F1EA"/>
+<text x="88" y="1506" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modify Player List for Tracking Mini-Map Markers</text>
+<text x="530" y="1506" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set which players track specific markers</text>
+
+<rect x="72" y="1522" width="1060" height="30" rx="6" fill="#fff"/>
+<text x="88" y="1542" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query Specified Mini-Map Marker Information</text>
+<text x="490" y="1542" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Retrieve marker data and properties</text>
+
+<!-- VII. Tutorial: Display Quest Objectives -->
+<text x="48" y="1600" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Tutorial: Display Quest Objectives on the Mini-Map</text>
+
+<rect x="48" y="1616" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1642" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Create a mechanism and display its icon and location on the mini-map</text>
+
+<circle cx="72" cy="1670" r="14" fill="#2D6BE4"/>
+<text x="72" y="1675" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1675" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create a prefab as the target mechanism, add Mini-Map Marker component</text>
+
+<circle cx="72" cy="1700" r="14" fill="#2D6BE4"/>
+<text x="72" y="1705" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1705" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add a new marker in the component (multiple markers can be added for switching effects)</text>
+
+<circle cx="72" cy="1730" r="14" fill="#2D6BE4"/>
+<text x="72" y="1735" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1735" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure: Initially Visible to All Players, Select Icon, Show Height Difference: Enabled</text>
+
+<circle cx="72" cy="1760" r="14" fill="#2D6BE4"/>
+<text x="72" y="1765" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1765" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Marker Name (e.g. "Mechanism") and Description (e.g. "A common mechanism.")</text>
+
+<circle cx="72" cy="1790" r="14" fill="#1B4FC0"/>
+<text x="72" y="1795" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1795" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Place the prefab in the scene and enter Test Mode to verify</text>
+
+<!-- VIII. Tutorial: Track Target Object -->
+<text x="48" y="1856" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Tutorial: Track Target Object via Interaction</text>
+
+<rect x="48" y="1872" width="1104" height="260" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1898" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Walk up to mechanism to enable tracking of creation icon on mini-map</text>
+
+<circle cx="72" cy="1926" r="14" fill="#2D6BE4"/>
+<text x="72" y="1931" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1931" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create creation prefab (e.g. Ruin Grader), add Mini-Map Marker component and new marker</text>
+
+<circle cx="72" cy="1956" r="14" fill="#2D6BE4"/>
+<text x="72" y="1961" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1961" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure: Initially Visible to All Players, Select Type: "Creation Icon", Show Height Difference: Enabled</text>
+
+<circle cx="72" cy="1986" r="14" fill="#2D6BE4"/>
+<text x="72" y="1991" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1991" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add Collision Trigger to mechanism: Initially Effective, Effective on Characters/Objects/Creations, Zoom x3</text>
+
+<circle cx="72" cy="2016" r="14" fill="#2D6BE4"/>
+<text x="72" y="2021" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="2021" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure node graph: Event "When Entering Collision Trigger" -> "Modify List of Players Tracking Mini-Map Markers"</text>
+
+<circle cx="72" cy="2046" r="14" fill="#2D6BE4"/>
+<text x="72" y="2051" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="2051" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount node graph on mechanism prefab and save</text>
+
+<circle cx="72" cy="2076" r="14" fill="#1B4FC0"/>
+<text x="72" y="2081" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">6</text>
+<text x="96" y="2081" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Place creation and prefab in scene, enter Test Mode to verify tracking behavior</text>
+
+<!-- Tip Box -->
+<rect x="48" y="2104" width="1104" height="52" rx="10" fill="#FFF3E0"/>
+<rect x="48" y="2104" width="4" height="52" rx="2" fill="#D93025"/>
+<text x="72" y="2126" fill="#D93025" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Note: Tracking relies on events. Use collision triggers or other event sources to activate tracking nodes.</text>
+<text x="72" y="2146" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Refer to "Collision and Interaction: Triggering an Event" for trigger configuration details.</text>
+
+<!-- IX. Get Entity's Marker Status -->
+<text x="48" y="2196" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Query Node: Get Entity's Mini-Map Marker Status</text>
+
+<rect x="48" y="2212" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="2238" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use the "Get Entity's Mini-Map Marker Status" node to query whether a specific marker is currently active,</text>
+<text x="72" y="2258" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">visible, or being tracked. Useful for conditional logic in node graphs.</text>
+
+<!-- Tip Box: Logic-Driven Colors -->
+<rect x="48" y="2284" width="1104" height="72" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="2284" width="4" height="72" rx="2" fill="#2D6BE4"/>
+<text x="72" y="2306" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: Logic-Driven Color Options (available across all marker types)</text>
+<text x="72" y="2328" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hostility: Enemies in red, friends in green, self in blue</text>
+<text x="72" y="2346" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follow Own Faction: Based on current faction colors  |  Follow Owner's Faction: Based on entity owner's faction colors</text>
+
+<!-- Related Documentation -->
+<text x="48" y="2396" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh0pppib5eyc" target="_blank">
+<text x="48" y="2416" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Mini-Map Marker (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhw6purbjsrq" target="_blank">
+<text x="48" y="2436" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: 3.17 Mini-Map Markers (Tutorial)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="2468" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

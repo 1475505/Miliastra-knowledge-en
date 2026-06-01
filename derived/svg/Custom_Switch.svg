@@ -1,95 +1,175 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1300" width="1200" height="1300">
-<defs>
-<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-    <stop offset="0%" stop-color="#2D6BE4"/>
-    <stop offset="100%" stop-color="#4A3F6B"/>
-</linearGradient>
-<filter id="card" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-</filter>
-<filter id="elevated" xmlns="http://www.w3.org/2000/svg">
-    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-</filter>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1980" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+  <defs>
+    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2D6BE4"/>
+      <stop offset="100%" stop-color="#4A3F6B"/>
+    </linearGradient>
+    <filter id="card">
+      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+    </filter>
+    <filter id="elevated">
+      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="1980" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-<rect width="1200" height="1300" fill="#F9F7F2"/>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" dominant-baseline="middle">Custom Switch</text>
+  <text x="370" y="72" fill="#4A4B65" font-size="16" dominant-baseline="middle">Toggle On/Off Controls with Variable Mapping</text>
 
-<rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <!-- I. Features -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Custom Switch Features</text>
 
-<rect x="40" y="30" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-<rect x="40" y="30" width="4" height="90" rx="2" fill="#2D6BE4"/>
-<text x="72" y="74" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="700" fill="#1A1B2E">Custom Switch Controls</text>
-<text x="72" y="100" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#8B8DA0">Toggleable UI switch with customizable on/off states, visual styling, and node graph binding</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Definition</text>
+    <text x="24" y="54" font-size="13" fill="#4A4B65">Custom Switches can be toggled on and off either by clicking them or through their mapped custom variables,</text>
+    <text x="24" y="72" font-size="13" fill="#4A4B65">thereby triggering different functional logic.</text>
+  </g>
 
-<text x="72" y="170" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">I. Features</text>
+  <!-- II. Editing -->
+  <text x="48" y="288" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing Custom Switches</text>
 
-<rect x="40" y="190" width="1120" height="150" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="222" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Custom Switches can be toggled on and off by clicking or through mapped custom variables, triggering different functional logic:</text>
-<text x="72" y="248" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Toggle Behavior</tspan> — Switch on/off via click, keyboard, gamepad, or custom variable mapping</text>
-<text x="72" y="272" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Preset Styles</tspan> — Choose from preset designs with customizable icon, color, and text</text>
-<text x="72" y="296" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Custom Styles</tspan> — Configure assets for each visual state: Default, Hover, and Pressed</text>
-<text x="72" y="320" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Sound Effects</tspan> — Separate SFX configuration for enabling and disabling the switch</text>
+  <g transform="translate(48, 308)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Add: In the UI Control Group Editor window, add the UI Control Template - Custom Switch</text>
+  </g>
 
-<text x="72" y="390" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">II. Toggle States</text>
+  <g transform="translate(48, 384)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <circle cx="40" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="40" y="31" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="64" y="30" font-size="14" font-weight="500" fill="#1A1B2E" dominant-baseline="middle">Basics: Standard UI control position, size, and layer settings</text>
+  </g>
 
-<rect x="40" y="410" width="1120" height="270" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+  <!-- Styles -->
+  <text x="48" y="484" fill="#2D6BE4" font-size="18" font-weight="700">II-A. Styles</text>
 
-<text x="72" y="442" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">On State</text>
-<text x="72" y="462" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">When the switch is active/enabled:</text>
+  <g transform="translate(48, 504)">
+    <rect width="1104" height="400" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="14" font-weight="500" fill="#1A1B2E">Style Options</text>
+    <rect x="24" y="44" width="140" height="28" rx="14" fill="#E8EEFB"/>
+    <text x="94" y="58" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Preset Style</text>
+    <rect x="180" y="44" width="100" height="28" rx="14" fill="#E5F2E9"/>
+    <text x="230" y="58" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle" dominant-baseline="middle">Custom</text>
 
-<rect x="72" y="476" width="88" height="38" rx="19" fill="#2D6BE4"/>
-<circle cx="146" cy="495" r="14" fill="#FFFFFF"/>
-<text x="72" y="498" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">On — Default</text>
+    <text x="24" y="100" font-size="14" font-weight="500" fill="#1A1B2E">Preset Styles</text>
+    <text x="24" y="124" font-size="13" fill="#4A4B65">Choose from a variety of preset styles. Some preset styles support customizing the icon, color, text, etc.</text>
 
-<rect x="72" y="526" width="88" height="38" rx="19" fill="#3B7BEE"/>
-<circle cx="146" cy="545" r="14" fill="#FFFFFF"/>
-<rect x="72" y="526" width="88" height="38" rx="19" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<text x="72" y="548" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">On — Hover</text>
+    <text x="24" y="158" font-size="14" font-weight="500" fill="#1A1B2E">Custom Styles - Six States (On x 3 + Off x 3)</text>
 
-<rect x="72" y="576" width="88" height="38" rx="19" fill="#1B4FC0"/>
-<circle cx="146" cy="595" r="14" fill="#E0E0E0"/>
-<text x="72" y="598" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">On — Pressed</text>
+    <rect x="24" y="174" width="170" height="50" rx="8" fill="#E5F2E9"/>
+    <text x="109" y="194" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">On - Default</text>
+    <text x="109" y="212" font-size="10" fill="#4A4B65" text-anchor="middle">Non-interactive</text>
 
-<text x="420" y="442" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="700" fill="#1A1B2E">Off State</text>
-<text x="420" y="462" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">When the switch is inactive/disabled:</text>
+    <rect x="208" y="174" width="170" height="50" rx="8" fill="#E5F2E9"/>
+    <text x="293" y="194" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">On - Hover</text>
+    <text x="293" y="212" font-size="10" fill="#4A4B65" text-anchor="middle">Cursor hover</text>
 
-<rect x="420" y="476" width="88" height="38" rx="19" fill="#CCCCCC"/>
-<circle cx="434" cy="495" r="14" fill="#FFFFFF"/>
-<text x="420" y="498" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">Off — Default</text>
+    <rect x="392" y="174" width="170" height="50" rx="8" fill="#E5F2E9"/>
+    <text x="477" y="194" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">On - Pressed</text>
+    <text x="477" y="212" font-size="10" fill="#4A4B65" text-anchor="middle">Button pressed</text>
 
-<rect x="420" y="526" width="88" height="38" rx="19" fill="#BBBBBB"/>
-<circle cx="434" cy="545" r="14" fill="#FFFFFF"/>
-<rect x="420" y="526" width="88" height="38" rx="19" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
-<text x="420" y="548" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">Off — Hover</text>
+    <rect x="24" y="238" width="170" height="50" rx="8" fill="#FDE8E6"/>
+    <text x="109" y="258" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Off - Default</text>
+    <text x="109" y="276" font-size="10" fill="#4A4B65" text-anchor="middle">Non-interactive</text>
 
-<rect x="420" y="576" width="88" height="38" rx="19" fill="#AAAAAA"/>
-<circle cx="434" cy="595" r="14" fill="#E0E0E0"/>
-<text x="420" y="598" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#4A4B65">Off — Pressed</text>
+    <rect x="208" y="238" width="170" height="50" rx="8" fill="#FDE8E6"/>
+    <text x="293" y="258" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Off - Hover</text>
+    <text x="293" y="276" font-size="10" fill="#4A4B65" text-anchor="middle">Cursor hover</text>
 
-<rect x="40" y="698" width="1120" height="50" rx="14" fill="#E8EEFB"/>
-<rect x="40" y="698" width="4" height="50" rx="2" fill="#2D6BE4"/>
-<text x="72" y="728" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">The switch updates automatically when its mapped Player Boolean Custom Variable changes. Variable and switch state stay synchronized.</text>
+    <rect x="392" y="238" width="170" height="50" rx="8" fill="#FDE8E6"/>
+    <text x="477" y="258" font-size="12" font-weight="bold" fill="#1A1B2E" text-anchor="middle">Off - Pressed</text>
+    <text x="477" y="276" font-size="10" fill="#4A4B65" text-anchor="middle">Button pressed</text>
 
-<text x="72" y="790" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">III. Key Settings</text>
+    <text x="24" y="318" font-size="13" fill="#4A4B65">Hover: outline, brighter color, or subtle size increase to signal interactivity.</text>
+    <text x="24" y="340" font-size="13" fill="#4A4B65">Pressed: color change and slight size decrease. Returns to Default on release.</text>
+    <text x="24" y="362" font-size="13" fill="#4A4B65">Assets for all six states can be configured freely in Custom mode.</text>
+  </g>
 
-<rect x="40" y="810" width="1120" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="842" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Switch Custom Variable Mapping</tspan> — Link to a Player Boolean Custom Variable for automatic state sync</text>
-<text x="72" y="866" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Key Mapping</tspan> — Configure keyboard, mouse, and gamepad shortcuts</text>
-<text x="72" y="890" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Click Response Area</tspan> — Match button size or custom size with location offset and dimensions</text>
-<text x="72" y="914" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Enable/Disable SFX</tspan> — Separate sound effects for turning the switch on and off</text>
-<text x="72" y="938" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• <tspan fill="#1A1B2E" font-weight="700">Hint Offsets</tspan> — Display offset configuration for keyboard, mouse, and controller hints</text>
+  <!-- Functions -->
+  <text x="48" y="944" fill="#2D6BE4" font-size="18" font-weight="700">II-B. Functions - Key Settings</text>
 
-<text x="72" y="1020" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="700" fill="#2D6BE4">IV. Node Graph Integration</text>
+  <g transform="translate(48, 964)">
+    <rect width="1104" height="300" rx="14" fill="#fff" filter="url(#card)"/>
 
-<rect x="40" y="1040" width="1120" height="90" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-<text x="72" y="1072" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• Read and write switch state through mapped custom variables in the Node Graph</text>
-<text x="72" y="1096" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• State change events propagate through the Node Graph for complex conditional logic</text>
-<text x="72" y="1120" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">• Dynamic switch state affects UI control group behavior during stage runtime</text>
+    <rect x="24" y="14" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="200" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="650" y="28" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
 
-<text x="72" y="1180" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="600" fill="#8B8DA0">Related Documentation:</text>
-<text x="72" y="1200" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#2D6BE4" text-decoration="underline">Custom Switch Controls</text>
-<text x="290" y="1200" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#8B8DA0">https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhy48t9sr3ka</text>
+    <text x="36" y="66" font-size="13" font-weight="500" fill="#1A1B2E">Switch Custom Variable Mapping</text>
+    <text x="280" y="66" font-size="13" fill="#4A4B65">Configure a mapped Player Boolean Custom Variable. When the variable changes, the switch updates.</text>
+    <line x1="24" y1="78" x2="1080" y2="78" stroke="#E8E4DA"/>
 
-<line x1="40" y1="1235" x2="1160" y2="1235" stroke="#E0E0E0" stroke-width="1"/>
-<text x="600" y="1260" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+    <text x="36" y="96" font-size="13" font-weight="500" fill="#1A1B2E">Key Mapping - KB&amp;M</text>
+    <text x="280" y="96" font-size="13" fill="#4A4B65">Configure the PC shortcut mapped to this switch</text>
+    <line x1="24" y1="108" x2="1080" y2="108" stroke="#E8E4DA"/>
+
+    <text x="36" y="126" font-size="13" font-weight="500" fill="#1A1B2E">Hint Offset - KB&amp;M</text>
+    <text x="280" y="126" font-size="13" fill="#4A4B65">Display offset of the hint shown when cursor hovers over the switch</text>
+    <line x1="24" y1="138" x2="1080" y2="138" stroke="#E8E4DA"/>
+
+    <text x="36" y="156" font-size="13" font-weight="500" fill="#1A1B2E">Key Mapping - Gamepad</text>
+    <text x="280" y="156" font-size="13" fill="#4A4B65">Configure the gamepad shortcut mapped to this switch</text>
+    <line x1="24" y1="168" x2="1080" y2="168" stroke="#E8E4DA"/>
+
+    <text x="36" y="186" font-size="13" font-weight="500" fill="#1A1B2E">Hint Offset - Controller</text>
+    <text x="280" y="186" font-size="13" fill="#4A4B65">Display offset of the hint shown when switch is focused with a controller</text>
+    <line x1="24" y1="198" x2="1080" y2="198" stroke="#E8E4DA"/>
+
+    <text x="36" y="216" font-size="13" font-weight="500" fill="#1A1B2E">Enable SFX</text>
+    <text x="280" y="216" font-size="13" fill="#4A4B65">Plays the configured sound effect when the switch is turned on</text>
+    <line x1="24" y1="228" x2="1080" y2="228" stroke="#E8E4DA"/>
+
+    <text x="36" y="246" font-size="13" font-weight="500" fill="#1A1B2E">Disable SFX</text>
+    <text x="280" y="246" font-size="13" fill="#4A4B65">Plays the configured sound effect when the switch is turned off</text>
+  </g>
+
+  <!-- Click Response Area -->
+  <text x="48" y="1304" fill="#2D6BE4" font-size="18" font-weight="700">II-C. Click Response Area</text>
+
+  <g transform="translate(48, 1324)">
+    <rect width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+    <text x="24" y="30" font-size="13" fill="#4A4B65">The click area can be configured only when the Style is set to Custom.</text>
+    <text x="24" y="50" font-size="13" fill="#4A4B65">The click area can be adjusted by dragging it directly in the editing window.</text>
+    <text x="24" y="70" font-size="13" fill="#4A4B65">The actual trigger area is determined by the configured range of the click area.</text>
+
+    <rect x="24" y="88" width="1056" height="28" rx="6" fill="#2D6BE4"/>
+    <text x="200" y="102" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Parameter</text>
+    <text x="650" y="102" font-size="12" font-weight="500" fill="#fff" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <text x="36" y="136" font-size="13" font-weight="500" fill="#1A1B2E">Clickable</text>
+    <text x="280" y="136" font-size="13" fill="#4A4B65">If disabled, this switch cannot be clicked</text>
+    <line x1="24" y1="148" x2="1080" y2="148" stroke="#E8E4DA"/>
+
+    <text x="36" y="166" font-size="13" font-weight="500" fill="#1A1B2E">Click Area Preview</text>
+    <text x="280" y="166" font-size="13" fill="#4A4B65">When enabled, the light yellow area in the editing window indicates the click area</text>
+    <line x1="24" y1="178" x2="1080" y2="178" stroke="#E8E4DA"/>
+
+    <text x="36" y="196" font-size="13" font-weight="500" fill="#1A1B2E">Area Range</text>
+    <text x="280" y="196" font-size="13" fill="#4A4B65">Supports Match Button Size or Custom Size</text>
+    <line x1="24" y1="208" x2="1080" y2="208" stroke="#E8E4DA"/>
+
+    <text x="36" y="226" font-size="13" font-weight="500" fill="#1A1B2E">Location Offset / Dimensions</text>
+    <text x="280" y="226" font-size="13" fill="#4A4B65">When Custom Size: configure offset of click area center and its dimensions</text>
+  </g>
+
+  <!-- Tip -->
+  <g transform="translate(48, 1584)">
+    <rect width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+    <rect x="16" y="10" width="1072" height="40" rx="8" fill="#E8EEFB"/>
+    <rect x="16" y="10" width="4" height="40" rx="2" fill="#2D6BE4"/>
+    <text x="32" y="34" font-size="12" fill="#4A4B65">The Switch Custom Variable Mapping enables two-way binding: clicking the switch updates the variable, and changing the variable updates the switch state.</text>
+  </g>
+
+  <text x="48" y="1684" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhkrafr3w6um" target="_blank">
+    <text x="48" y="1706" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Custom Switch Controls</text>
+  </a>
+
+  <text x="600" y="1970" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

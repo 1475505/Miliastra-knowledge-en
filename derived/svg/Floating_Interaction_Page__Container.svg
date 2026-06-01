@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1720" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 920" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -12,144 +12,98 @@
     </filter>
   </defs>
 
-  <rect width="1200" height="1720" fill="#F9F7F2"/>
+  <rect width="1200" height="920" fill="#F9F7F2"/>
   <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">66-Floating Interaction Page Container</text>
+  <!-- Title Card -->
+  <rect x="48" y="32" width="1104" height="96" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="96" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="76" fill="#1A1B2E" font-size="30" font-weight="bold">Floating Interaction Page</text>
+  <text x="72" y="106" fill="#4A4B65" font-size="16">Container</text>
+  <rect x="200" y="92" width="90" height="22" rx="11" fill="#FFF3E0"/>
+  <text x="210" y="107" fill="#E65100" font-size="11" font-weight="500">Sub-section</text>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Container Overview</text>
+  <!-- I. Container Overview -->
+  <text x="48" y="166" fill="#2D6BE4" font-size="18" font-weight="700">I. Container Overview</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Container</text>
-    <text x="16" y="64" font-size="14" fill="#4A4B65">A container is used to organize the information structure of UI controls within a Floating Interaction Page.</text>
-    <text x="16" y="88" font-size="14" fill="#4A4B65">Containers can be divided based on the interface's information structure, and each container can be</text>
-    <text x="16" y="112" font-size="14" fill="#4A4B65">treated as a separate page. The Floating Interaction Page functions as a new UI Layout where you</text>
-    <text x="16" y="136" font-size="14" fill="#4A4B65">can add UI controls and modify their settings accordingly. Some UI controls are exclusive to the</text>
-    <text x="16" y="160" font-size="14" fill="#4A4B65">Floating Interaction Page and cannot be used in regular UI layouts.</text>
-  </g>
+  <rect x="48" y="182" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="210" fill="#4A4B65" font-size="14">A container is used to organize the information structure of UI controls within a Floating Interaction Page.</text>
+  <text x="72" y="232" fill="#4A4B65" font-size="14">Containers can be divided based on the interface's information structure, and each container can be treated as a separate page.</text>
+  <text x="72" y="254" fill="#1A1B2E" font-size="14" font-weight="500">The Floating Interaction Page functions as a new "UI Layout" where you can add UI controls and modify their settings.</text>
 
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Container Properties</text>
+  <!-- II. Container Configuration -->
+  <text x="48" y="298" fill="#2D6BE4" font-size="18" font-weight="700">II. Container Configuration</text>
 
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="420" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="0" y="16" width="1080" height="38" fill="#2D6BE4" rx="0"/>
-    <text x="16" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Property</text>
-    <text x="727" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
+  <!-- Page Container -->
+  <rect x="48" y="314" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="344" r="14" fill="#2D6BE4"/>
+  <text x="80" y="349" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">1</text>
+  <text x="106" y="348" fill="#1A1B2E" font-size="14" font-weight="500">Page Container</text>
 
-    <rect x="0" y="54" width="1080" height="52" fill="#F9F7F2"/>
-    <text x="16" y="72" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Page Container</text>
-    <text x="380" y="72" font-size="13" fill="#4A4B65" dominant-baseline="middle">Organizes UI controls; each container acts as a separate page</text>
+  <rect x="106" y="360" width="180" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="378" fill="#2D6BE4" font-size="12" font-weight="500">Initially Effective</text>
+  <text x="300" y="378" fill="#4A4B65" font-size="13">Determines which containers are initially effective when the page opens.</text>
 
-    <rect x="0" y="106" width="1080" height="52" fill="#FFFFFF"/>
-    <text x="16" y="124" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Initially Effective</text>
-    <text x="380" y="124" font-size="13" fill="#4A4B65" dominant-baseline="middle">Determines which containers are initially effective when the page opens</text>
+  <rect x="106" y="394" width="200" height="26" rx="6" fill="#E8EEFB"/>
+  <text x="116" y="412" fill="#2D6BE4" font-size="12" font-weight="500">Window Container List</text>
+  <text x="320" y="412" fill="#4A4B65" font-size="13">Displays all current containers in the Floating Interaction Page.</text>
 
-    <rect x="0" y="158" width="1080" height="52" fill="#F9F7F2"/>
-    <text x="16" y="176" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Window Container List</text>
-    <text x="380" y="176" font-size="13" fill="#4A4B65" dominant-baseline="middle">Displays all current containers configured for the page</text>
+  <!-- Preset Background -->
+  <rect x="48" y="446" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="476" r="14" fill="#2D6BE4"/>
+  <text x="80" y="481" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">2</text>
+  <text x="106" y="480" fill="#1A1B2E" font-size="14" font-weight="500">Preset Background</text>
+  <text x="72" y="504" fill="#4A4B65" font-size="13">Use Preset Background: When enabled,</text>
+  <text x="72" y="520" fill="#4A4B65" font-size="13">choose a preset. Disabled = default background.</text>
 
-    <rect x="0" y="210" width="1080" height="52" fill="#FFFFFF"/>
-    <text x="16" y="228" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Inherent Container</text>
-    <text x="380" y="228" font-size="13" fill="#4A4B65" dominant-baseline="middle">Contains the Close Button by default; cannot be removed</text>
+  <!-- Preset Style -->
+  <rect x="612" y="446" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="644" cy="476" r="14" fill="#2D6BE4"/>
+  <text x="644" y="481" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">3</text>
+  <text x="672" y="480" fill="#1A1B2E" font-size="14" font-weight="500">Preset Style</text>
+  <text x="636" y="504" fill="#4A4B65" font-size="13">Select Preset Style: Select one of the</text>
+  <text x="636" y="520" fill="#4A4B65" font-size="13">preset styles for the Floating Interaction Page.</text>
 
-    <rect x="0" y="262" width="1080" height="52" fill="#F9F7F2"/>
-    <text x="16" y="280" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Use Preset Background</text>
-    <text x="380" y="280" font-size="13" fill="#4A4B65" dominant-baseline="middle">Choose a preset background or use the default when disabled</text>
+  <!-- Details Editing -->
+  <rect x="48" y="538" width="1104" height="52" rx="14" fill="#fff" filter="url(#card)"/>
+  <circle cx="80" cy="564" r="14" fill="#1B4FC0"/>
+  <text x="80" y="569" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">4</text>
+  <text x="106" y="560" fill="#1A1B2E" font-size="14" font-weight="500">Details Editing</text>
+  <text x="106" y="578" fill="#4A4B65" font-size="13">Click [Details Editing] to enter the Floating Interaction Page editing interface.</text>
 
-    <rect x="0" y="314" width="1080" height="52" fill="#FFFFFF"/>
-    <text x="16" y="332" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Select Preset Style</text>
-    <text x="380" y="332" font-size="13" fill="#4A4B65" dominant-baseline="middle">Select one of the available preset styles for the page</text>
+  <!-- III. Container within Editing Interface -->
+  <text x="48" y="626" fill="#2D6BE4" font-size="18" font-weight="700">III. Container within the Editing Interface</text>
 
-    <rect x="0" y="366" width="1080" height="52" fill="#F9F7F2"/>
-    <text x="16" y="384" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Container Status</text>
-    <text x="380" y="384" font-size="13" fill="#4A4B65" dominant-baseline="middle">Each container can be shown or hidden independently</text>
-  </g>
+  <rect x="48" y="642" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="670" fill="#4A4B65" font-size="14">A Floating Interaction Page functions as a new "UI Layout." You can add UI controls to this page and modify their settings.</text>
+  <text x="72" y="694" fill="#1A1B2E" font-size="14" font-weight="500">Some UI controls are exclusive to the Floating Interaction Page (e.g., Tabs, Single-Choice Windows, Close Button).</text>
 
-  <circle cx="80" cy="864" r="16" fill="#2D6BE4"/>
-  <text x="80" y="865" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="865" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Container Management</text>
+  <!-- Tip -->
+  <rect x="48" y="734" width="1104" height="60" rx="6" fill="#E8EEFB"/>
+  <rect x="48" y="734" width="4" height="60" rx="2" fill="#2D6BE4"/>
+  <text x="68" y="758" fill="#4A4B65" font-size="13">The Interaction Page Close Button is included by default in the Inherent Container. It cannot be removed from the Inherent Container.</text>
+  <text x="68" y="778" fill="#4A4B65" font-size="13">If the Inherent Container is not enabled, the page can still be closed with Esc (PC) or exit button (controller). On mobile, close via Node Graphs.</text>
 
-  <g transform="translate(60, 892)">
-    <rect width="520" height="230" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Details Editing</text>
-    <text x="16" y="60" font-size="14" fill="#4A4B65">Click [Details Editing] to enter the</text>
-    <text x="16" y="80" font-size="14" fill="#4A4B65">Floating Interaction Page editing interface,</text>
-    <text x="16" y="100" font-size="14" fill="#4A4B65">where you can add UI controls to the</text>
-    <text x="16" y="120" font-size="14" fill="#4A4B65">container and modify their settings.</text>
+  <!-- IV. Node Graph Management -->
+  <text x="48" y="830" fill="#2D6BE4" font-size="18" font-weight="700">IV. Node Graph Management</text>
 
-    <rect x="16" y="144" width="488" height="62" rx="10" fill="#E8EEFB"/>
-    <rect x="16" y="144" width="4" height="62" rx="2" fill="#2D6BE4"/>
-    <text x="30" y="166" font-size="13" font-weight="bold" fill="#2D6BE4">Editing</text>
-    <text x="30" y="188" font-size="11" fill="#4A4B65">Use the editing interface to add, remove, and configure</text>
-    <text x="30" y="202" font-size="11" fill="#4A4B65">containers and their child UI controls</text>
-  </g>
+  <rect x="48" y="846" width="264" height="40" rx="10" fill="#E8EEFB"/>
+  <text x="68" y="871" fill="#2D6BE4" font-size="13" font-weight="500">Show Floating Interaction Page</text>
 
-  <g transform="translate(620, 892)">
-    <rect width="520" height="230" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="110" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="71" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Close Button</text>
-    <text x="16" y="60" font-size="14" fill="#4A4B65">The Interaction Page Close Button is</text>
-    <text x="16" y="80" font-size="14" fill="#4A4B65">included by default and cannot be removed</text>
-    <text x="16" y="100" font-size="14" fill="#4A4B65">from the Inherent Container.</text>
-    <text x="16" y="124" font-size="14" fill="#4A4B65">If Inherent Container is not enabled, use</text>
-    <text x="16" y="144" font-size="14" fill="#4A4B65">Esc / controller exit / Node Graphs to close.</text>
+  <rect x="328" y="846" width="264" height="40" rx="10" fill="#FDE8E6"/>
+  <text x="348" y="871" fill="#D93025" font-size="13" font-weight="500">Close Floating Interaction Page</text>
 
-    <rect x="16" y="166" width="488" height="42" rx="10" fill="#E8EEFB"/>
-    <rect x="16" y="166" width="4" height="42" rx="2" fill="#2D6BE4"/>
-    <text x="30" y="185" font-size="11" fill="#4A4B65">On mobile, the page must be closed through Node Graphs</text>
-    <text x="30" y="199" font-size="11" fill="#4A4B65">when the Inherent Container (Close Button) is not enabled</text>
-  </g>
+  <rect x="608" y="846" width="300" height="40" rx="10" fill="#FFF3E0"/>
+  <text x="628" y="871" fill="#E65100" font-size="13" font-weight="500">Update Floating Interaction Page List</text>
 
-  <circle cx="80" cy="1158" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1159" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1159" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Node Graph Integration</text>
+  <rect x="924" y="846" width="228" height="40" rx="10" fill="#E5F2E9"/>
+  <text x="944" y="871" fill="#34A853" font-size="13" font-weight="500">When Page Is Triggered</text>
 
-  <g transform="translate(60, 1186)">
-    <rect width="1080" height="260" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="0" y="16" width="1080" height="38" fill="#2D6BE4" rx="0"/>
-    <text x="16" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" dominant-baseline="middle">Node</text>
-    <text x="727" y="35" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
-
-    <rect x="0" y="54" width="1080" height="46" fill="#F9F7F2"/>
-    <text x="16" y="77" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Show Floating Interaction Page</text>
-    <text x="380" y="77" font-size="13" fill="#4A4B65" dominant-baseline="middle">Opens the Floating Interaction Page with configured containers</text>
-
-    <rect x="0" y="100" width="1080" height="46" fill="#FFFFFF"/>
-    <text x="16" y="123" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Close Floating Interaction Page</text>
-    <text x="380" y="123" font-size="13" fill="#4A4B65" dominant-baseline="middle">Closes the entire Floating Interaction Page and all containers</text>
-
-    <rect x="0" y="146" width="1080" height="46" fill="#F9F7F2"/>
-    <text x="16" y="169" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Update Floating Interaction Page List Data</text>
-    <text x="380" y="169" font-size="13" fill="#4A4B65" dominant-baseline="middle">Updates list data for tabs and single-choice windows within containers</text>
-
-    <rect x="0" y="192" width="1080" height="46" fill="#FFFFFF"/>
-    <text x="16" y="215" font-size="13" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">When Floating Interaction Page is Triggered</text>
-    <text x="380" y="215" font-size="13" fill="#4A4B65" dominant-baseline="middle">Server Node Graph Event triggered on tab selection or window open/close</text>
-  </g>
-
-  <text x="60" y="1498" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhp5msi2uryk" target="_blank">
-    <text x="60" y="1524" font-size="13" fill="#2D6BE4" text-decoration="underline">Floating Interaction Page Controls</text>
+  <!-- Related Documentation -->
+  <text x="48" y="910" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh2u2e9o3jn6" target="_blank">
+    <text x="48" y="926" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Floating Interaction Page Controls</text>
   </a>
 
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhs6ivixi684" target="_blank">
-    <text x="60" y="1550" font-size="13" fill="#2D6BE4" text-decoration="underline">UI Controls</text>
-  </a>
-
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhso1b9wjica" target="_blank">
-    <text x="60" y="1576" font-size="13" fill="#2D6BE4" text-decoration="underline">Custom Variables</text>
-  </a>
-
-  <text x="600" y="1640" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
-
+  <text x="600" y="946" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

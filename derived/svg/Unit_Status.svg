@@ -1,150 +1,442 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1620" width="1200" height="1620">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3800">
+<defs>
+  <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#2D6BE4"/>
+    <stop offset="100%" stop-color="#4A3F6B"/>
+  </linearGradient>
+  <filter id="card">
+    <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+  </filter>
+  <filter id="elevated">
+    <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+  </filter>
+</defs>
 
-  <!-- Background -->
-  <rect width="1200" height="1620" fill="#F9F7F2"/>
+<rect width="1200" height="3800" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <!-- Top Bar -->
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="72" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unit Status</text>
+<text x="260" y="72" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unit Status Effect Pool</text>
 
-  <!-- Title Card -->
-  <rect x="60" y="20" width="1080" height="100" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="20" width="4" height="100" fill="#2D6BE4" rx="2"/>
-  <text x="90" y="60" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="26" font-weight="bold" fill="#1A1B2E">Unit Status</text>
-  <text x="90" y="92" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">Status management module for managing additional functions and attributes of Entities during Stage runtime.</text>
+<!-- I. Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Definition of Unit Status</text>
 
-  <!-- Section I -->
-  <text x="60" y="145" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">I. Unit Status Overview</text>
+<rect x="48" y="162" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="188" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Unit Status is a status management module for managing additional functions and attributes of Entities</text>
+<text x="72" y="208" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">during Stage runtime. Entities can be applied with Unit Statuses, each with a defined Applier Entity.</text>
+<text x="72" y="234" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Key Concepts:</text>
+<text x="72" y="256" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Entities dynamically hold multiple statuses. Each status has Runtime Duration, Additional Effects, Additional Node Graph.</text>
+<text x="72" y="276" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Each active status has independent Stack Layers. Some functions scale with stack count.</text>
+<text x="72" y="296" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Status ends when Runtime Duration expires or all Stack Layers are depleted. Must be predefined at editing time.</text>
 
-  <rect x="60" y="165" width="1080" height="120" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="192" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" fill="#4A4B65">
-    <tspan x="85" dy="0">Unit Status is a status management module for Entities during runtime. Each Unit Status</tspan>
-    <tspan x="85" dy="22">must have a defined <tspan fill="#1A1B2E" font-weight="bold">Applier Entity</tspan>. Entities can dynamically hold multiple statuses.</tspan>
-    <tspan x="85" dy="22">Each status has a defined <tspan fill="#1A1B2E" font-weight="bold">Runtime Duration</tspan> and grants <tspan fill="#1A1B2E" font-weight="bold">Additional Effects</tspan></tspan>
-    <tspan x="85" dy="22">plus <tspan fill="#1A1B2E" font-weight="bold">Additional Node Graph</tspan> functionality while active. Each active status</tspan>
-    <tspan x="85" dy="22">has independent <tspan fill="#1A1B2E" font-weight="bold">Stack Layers</tspan>. A status ends when its duration expires or all stacks are depleted.</tspan>
-  </text>
+<!-- II. Additional Effects -->
+<text x="48" y="338" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Additional Effects</text>
 
-  <!-- Section II -->
-  <text x="60" y="315" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">II. Status Effects &amp; Effect Pool</text>
+<rect x="48" y="352" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="378" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Additional Effects come from the predefined Effect Pool (e.g., "Mount Looping Effects", "Motion Speed Change").</text>
+<text x="72" y="404" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effective Target:</text>
+<text x="200" y="404" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each effect applies to one or several of "Characters", "Creations", or "Objects". If a target</text>
+<text x="72" y="424" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">entity cannot hold an effect type, it fails to acquire the status. E.g., "Mount Screen Effect" only on Characters.</text>
+<text x="72" y="450" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Intensity:</text>
+<text x="200" y="450" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiple effects of same type can apply, but final effect is capped. E.g., Motion Speed Change</text>
+<text x="72" y="470" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">limited to -40% to +40%. Some effects are mutually exclusive (e.g., only one Elemental Effect; last takes precedence).</text>
 
-  <rect x="60" y="335" width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="362" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Additional Effects</text>
-  <text x="85" y="390" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="85" dy="0">All effects come from the predefined Effect Pool:</tspan>
-    <tspan x="85" dy="20">- Mount Looping Effects (visual)</tspan>
-    <tspan x="85" dy="20">- Motion Speed Change (-40% to +40%)</tspan>
-    <tspan x="85" dy="20">- Elemental Effects (one per status)</tspan>
-    <tspan x="85" dy="20">- Max HP, ATK, DEF adjustment</tspan>
-    <tspan x="85" dy="20">- Special Statuses: Invincible, HP Locked, Struggle</tspan>
-  </text>
+<!-- III. Additional Node Graph -->
+<text x="48" y="508" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Additional Node Graph</text>
 
-  <rect x="620" y="335" width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="645" y="362" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Effective Target &amp; Intensity</text>
-  <text x="645" y="390" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="645" dy="0"><tspan fill="#1A1B2E" font-weight="bold">Effective Target:</tspan> Each effect applies to one</tspan>
-    <tspan x="645" dy="20">or more of Characters, Creations, or Objects.</tspan>
-    <tspan x="645" dy="24">If a target type mismatches, the status fails.</tspan>
-    <tspan x="645" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Effect Intensity:</tspan> Multiple same-type effects</tspan>
-    <tspan x="645" dy="20">stack within a valid range (e.g., Speed Change</tspan>
-    <tspan x="645" dy="20">is clamped between -40% and +40%).</tspan>
-  </text>
+<rect x="48" y="522" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="548" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each Unit Status can be related with a server Node Graph. When Entity holds status, Node Graph is added to Entity;</text>
+<text x="72" y="568" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">removed when status ends. Related Node Graph can only come from a Status Node Graph (Composite Nodes allowed).</text>
+<text x="72" y="594" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If multiple statuses relate the same Node Graph, it is related only once; lost only when all related statuses end.</text>
 
-  <!-- Tip Box -->
-  <rect x="60" y="555" width="1080" height="60" rx="8" fill="#E8EEFB"/>
-  <rect x="60" y="555" width="4" height="60" fill="#2D6BE4" rx="2"/>
-  <text x="85" y="578" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" font-weight="bold" fill="#1A1B2E">Effect Pool Formula</text>
-  <text x="85" y="598" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Final Value = (Base Value + Change Value) x (1 + Adjustment Rate) x Multiplier + Correction Value</text>
+<!-- IV. Editing Unit Statuses -->
+<text x="48" y="638" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Editing Unit Statuses</text>
+<text x="270" y="638" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Combat Preset > Unit Status bar > Create Tabs > Create Statuses</text>
 
-  <!-- Section III -->
-  <text x="60" y="645" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">III. Configuration Rules</text>
+<!-- Naming -->
+<rect x="48" y="652" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="678" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Naming and Identification</text>
+<text x="72" y="700" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Name must be globally unique. Auto-generated Config ID.</text>
+<text x="72" y="720" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Copy button for quick Config ID copy. Custom icon available.</text>
 
-  <rect x="60" y="665" width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="692" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Stacking Rules</text>
-  <text x="85" y="720" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="85" dy="0">New stack layers add to existing, capped at</tspan>
-    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Maximum Stack Layers</tspan>. When exceeding limit:</tspan>
-    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Overlapping Data Update</tspan>: replace oldest</tspan>
-    <tspan x="85" dy="20">Or discard overlapping data. No change = invalid.</tspan>
-  </text>
+<!-- Stacking Rules -->
+<rect x="604" y="652" width="548" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="678" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stacking Rules</text>
+<text x="628" y="700" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">New stacks add to existing, capped at Maximum Stack Layers.</text>
+<text x="628" y="720" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Overlapping Data Update: replaces earliest stack data or discards.</text>
 
-  <rect x="620" y="665" width="520" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="645" y="692" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Timing Rules</text>
-  <text x="645" y="720" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="645" dy="0">Each status has a <tspan fill="#1A1B2E" font-weight="bold">Life Cycle</tspan>. Enable Infinite</tspan>
-    <tspan x="645" dy="20">Duration to prevent auto-removal.</tspan>
-    <tspan x="645" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Stack Shared Duration:</tspan> When disabled, each</tspan>
-    <tspan x="645" dy="20">stack expires independently. When enabled,</tspan>
-    <tspan x="645" dy="20">all stacks are removed together on expiry.</tspan>
-    <tspan x="645" dy="20">Extended Duration can be limited by Max Duration.</tspan>
-  </text>
+<!-- Timing Rules -->
+<rect x="48" y="744" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="770" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Timing Rules</text>
+<text x="72" y="792" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Infinite Duration: prevents removal on expiry; updates no longer affect Initial Runtime Duration.</text>
+<text x="72" y="814" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stack Shared Duration (disabled):</text>
+<text x="310" y="814" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Each stack calculates duration independently. Stack expires individually.</text>
+<text x="72" y="836" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Max Stack Layers: 10 in this mode.</text>
+<text x="72" y="858" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stack Shared Duration (enabled):</text>
+<text x="310" y="858" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All stacks removed together on expiry. Each new stack may extend</text>
+<text x="72" y="878" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Time Remaining by Extended Duration. Maximum Extended Duration Limit caps the extended time. Max Stacks: 1000.</text>
+<text x="72" y="898" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Node Graph: Status Node Graph related with Entity while it holds the status.</text>
 
-  <rect x="60" y="885" width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="912" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Status Coexistence &amp; Replacement</text>
-  <text x="85" y="940" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="85" dy="0"><tspan fill="#1A1B2E" font-weight="bold">Coexistence Limit:</tspan> When same-name statuses from different Appliers, set a limit and</tspan>
-    <tspan x="85" dy="20">update strategy: Cannot Update, Min Time Remaining, Earliest Update Time, Earliest Application.</tspan>
-    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Yielding Status List:</tspan> If target holds any yielding status, new application fails.</tspan>
-    <tspan x="85" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Replacement Status List:</tspan> Existing matching statuses are removed before applying new one.</tspan>
-    <tspan x="85" dy="24">Same Applier cannot apply two instances of the same-name status to one target.</tspan>
-  </text>
+<!-- Status Coexistence -->
+<rect x="48" y="916" width="1104" height="160" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="942" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Status Coexistence</text>
+<text x="72" y="964" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Same Applier cannot apply two same-name statuses; instead adds to existing status.</text>
+<text x="72" y="986" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Different Appliers - Stackable:</text>
+<text x="310" y="986" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Can enable Record Latest Applier after stacking.</text>
+<text x="72" y="1008" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Different Appliers - Not Stackable:</text>
+<text x="340" y="1008" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set Coexistence Limit. When reached, Same Name Status Update Strategy:</text>
+<text x="72" y="1032" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Cannot Update: application fails  |  - Minimum Time Remaining: remove shortest remaining, apply new</text>
+<text x="72" y="1052" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">- Earliest Update Time: remove earliest updated, apply new  |  - Earliest Application Time: remove oldest, apply new</text>
+<text x="72" y="1072" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Records most recent update time for each status instance.</text>
 
-  <!-- Section IV -->
-  <text x="60" y="1075" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="18" font-weight="bold" fill="#2D6BE4">IV. Execution &amp; Node Graph Integration</text>
+<!-- Yielding and Replacement -->
+<rect x="48" y="1088" width="1104" height="60" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1114" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Yielding and Replacement</text>
+<text x="72" y="1136" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Yielding Status List: if target holds any listed status, application immediately fails. Replacement Status List: if target holds</text>
+<text x="72" y="1144" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif"> </text>
 
-  <rect x="60" y="1095" width="520" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="1122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Apply via Component &amp; Server Nodes</text>
-  <text x="85" y="1150" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="85" dy="0"><tspan fill="#1A1B2E" font-weight="bold">Unit Status Component:</tspan> Configure default</tspan>
-    <tspan x="85" dy="20">statuses applied on entity creation.</tspan>
-    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Add Unit Status node:</tspan> Apply status to target.</tspan>
-    <tspan x="85" dy="20">Returns: New status applied / Slot stacking /</tspan>
-    <tspan x="85" dy="20">Failed (unexpected error, paused, limit, full stacks).</tspan>
-    <tspan x="85" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Remove Unit Status node:</tspan> Remove by remover</tspan>
-    <tspan x="85" dy="20">entity. Options: all coexisting, fastest stack loss,</tspan>
-    <tspan x="85" dy="20">or self-applied removal.</tspan>
-  </text>
+<!-- V. Unit Status Execution -->
+<text x="48" y="1188" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Unit Status Execution</text>
 
-  <rect x="620" y="1095" width="520" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="645" y="1122" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="15" font-weight="bold" fill="#1A1B2E">Events &amp; Other Execution Methods</text>
-  <text x="645" y="1150" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">
-    <tspan x="645" dy="0"><tspan fill="#1A1B2E" font-weight="bold">When Status Added node:</tspan> Triggered when</tspan>
-    <tspan x="645" dy="20">target gains or updates a unit status.</tspan>
-    <tspan x="645" dy="24"><tspan fill="#1A1B2E" font-weight="bold">When Status Removed node:</tspan> Triggered when</tspan>
-    <tspan x="645" dy="20">target loses a status (replaced, expired, dispelled,</tspan>
-    <tspan x="645" dy="20">class changed, duration exceeded).</tspan>
-    <tspan x="645" dy="24"><tspan fill="#1A1B2E" font-weight="bold">Ability Units:</tspan> Add/remove statuses on</tspan>
-    <tspan x="645" dy="20">projectile hit.</tspan>
-    <tspan x="645" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Skill Node Graphs:</tspan> Apply/remove by name.</tspan>
-    <tspan x="645" dy="20"><tspan fill="#1A1B2E" font-weight="bold">Has Status node:</tspan> Check if target holds a status.</tspan>
-  </text>
+<rect x="48" y="1202" width="540" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1228" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Apply via Component</text>
+<text x="72" y="1250" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Preset status in Unit Status Component applied by</text>
+<text x="72" y="1270" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stage Entity on creation. Configurable stack layers.</text>
 
-  <!-- Parameter Dictionary note -->
-  <rect x="60" y="1335" width="1080" height="65" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-  <text x="85" y="1360" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="14" font-weight="bold" fill="#1A1B2E">Unit Status Parameter Dictionary</text>
-  <text x="85" y="1382" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="13" fill="#4A4B65">Statuses can have override tags. The Add Unit Status node accepts a parameter dictionary to dynamically override configuration values at runtime.</text>
+<rect x="604" y="1202" width="548" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1228" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Manage with Ability Units</text>
+<text x="628" y="1250" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Add/remove statuses in Local Projectile's Ability Unit.</text>
+<text x="628" y="1270" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">On hit, add/remove statuses on Target.</text>
 
-  <!-- Footer -->
-  <text x="600" y="1470" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<!-- Server Node Management -->
+<rect x="48" y="1294" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1320" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Manage with Server Nodes</text>
 
-  <!-- Source Links -->
-  <text x="60" y="1510" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" font-weight="bold" fill="#1A1B2E">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh1lsn90mml6" target="_blank">
-    <text x="60" y="1532" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Unit Status - Tutorial Detail</text>
-  </a>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhklw3rba8we" target="_blank">
-    <text x="60" y="1554" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif" font-size="12" fill="#2D6BE4" text-decoration="underline">Unit Status Effect Pool - Tutorial Detail</text>
-  </a>
+<text x="72" y="1346" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Apply Unit Status - Results:</text>
+<text x="72" y="1366" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Failed: Unexpected error | Failed: Paused for another process (Yielding List)</text>
+<text x="72" y="1384" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Failed: Max coexistence reached | Failed: Unable to add stack | Success: New applied | Success: Slot stacking</text>
+
+<text x="72" y="1410" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Parameter Dictionary:</text>
+<text x="220" y="1410" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Pass dynamic override tags. If dictionary key matches override tag, config value is replaced.</text>
+<text x="72" y="1428" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Dynamic modifications cannot coexist with original version; only one can be set.</text>
+
+<text x="72" y="1454" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Remove Unit Status - Options:</text>
+<text x="72" y="1472" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">All Coexisting Same Name | Status With Fastest Stack Loss | (Not available) Statuses applied by self</text>
+
+<!-- Events -->
+<rect x="48" y="1506" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1532" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Events</text>
+<text x="72" y="1554" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Unit Status Gained/Updated:</text>
+<text x="310" y="1554" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Triggered when target gains new status or existing is updated.</text>
+<text x="72" y="1576" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Unit Status Lost:</text>
+<text x="250" y="1576" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Removal reasons: Replaced | Duration exceeded | Dispelled | Status expired | Class changed</text>
+<text x="72" y="1598" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Query Status:</text>
+<text x="170" y="1598" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Search whether Target Entity in scene already holds a given Unit Status.</text>
+<text x="72" y="1618" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">If multiple coexisting statuses removed, same number of Events received. Skill Node Graphs also support add/remove.</text>
+
+<!-- VI. Effect Pool Formula -->
+<text x="48" y="1664" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Effect Pool Formula</text>
+
+<rect x="48" y="1678" width="1104" height="48" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1678" width="4" height="48" rx="2" fill="#2D6BE4"/>
+<text x="68" y="1700" fill="#1A1B2E" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Final Value = (Base Value + Change Value) * (1 + Adjustment Rate) * Multiplier + Correction Value</text>
+<text x="68" y="1720" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Change Value = base change  |  Adjustment Rate = scaling coefficient  |  Multiplier = overall scaling  |  Correction Value = final increment</text>
+
+<!-- VII. Effect Pool - Numeric Effects -->
+<text x="48" y="1762" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Effect Pool - Numeric Effects</text>
+
+<rect x="48" y="1776" width="1104" height="700" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="1776" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="1798" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="1800" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Name</text>
+<text x="380" y="1800" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<text x="72" y="1830" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Interrupt Intake Multiplier</text>
+<text x="380" y="1830" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Multiplier for interrupt value when attacked. 0 = invincibility (dominant body).</text>
+<line x1="68" y1="1838" x2="1132" y2="1838" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1854" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fall Efficiency Change Value</text>
+<text x="380" y="1854" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects fall acceleration. Default 200%; -200% ignores gravity.</text>
+<line x1="68" y1="1862" x2="1132" y2="1862" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1878" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fall DMG Adjustment Rate</text>
+<text x="380" y="1878" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects fall damage. -100 = no fall damage.</text>
+<line x1="68" y1="1886" x2="1132" y2="1886" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1902" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Max HP Adj. Rate / Correction</text>
+<text x="380" y="1902" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's Max HP via adjustment rate or correction value.</text>
+<line x1="68" y1="1910" x2="1132" y2="1910" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1926" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Movement SPD Adj. Rate</text>
+<text x="380" y="1926" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects movement speed of characters and creations.</text>
+<line x1="68" y1="1934" x2="1132" y2="1934" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1950" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attack SPD Adj. Rate</text>
+<text x="380" y="1950" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects character attack speed.</text>
+<line x1="68" y1="1958" x2="1132" y2="1958" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1974" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stamina Consumption Adj. Rate</text>
+<text x="380" y="1974" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts stamina consumption. -100% removes stamina cost.</text>
+<line x1="68" y1="1982" x2="1132" y2="1982" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="1998" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Stamina Recovery Adj. Rate</text>
+<text x="380" y="1998" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Adjusts recovery efficiency. -100% disables recovery.</text>
+<line x1="68" y1="2006" x2="1132" y2="2006" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2022" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">DEF Adj. Rate / Correction</text>
+<text x="380" y="2022" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's DEF via adjustment rate or correction value.</text>
+<line x1="68" y1="2030" x2="1132" y2="2030" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2046" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">ATK Adj. Rate / Correction</text>
+<text x="380" y="2046" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's ATK via adjustment rate or correction value.</text>
+<line x1="68" y1="2054" x2="1132" y2="2054" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2070" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">CRIT Hit Trigger Change Value</text>
+<text x="380" y="2070" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's CRIT Rate.</text>
+<line x1="68" y1="2078" x2="1132" y2="2078" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2094" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">CRIT Hit RES Trigger Change</text>
+<text x="380" y="2094" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects attacker's CRIT Rate when this entity is hit.</text>
+<line x1="68" y1="2102" x2="1132" y2="2102" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2118" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">CRIT DMG Change Value</text>
+<text x="380" y="2118" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's CRIT DMG.</text>
+<line x1="68" y1="2126" x2="1132" y2="2126" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2142" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Attack DMG Boost Adj. Rate</text>
+<text x="380" y="2142" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's Attack DMG Bonus.</text>
+<line x1="68" y1="2150" x2="1132" y2="2150" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2166" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Damage Reduction Adj. Rate</text>
+<text x="380" y="2166" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects incoming DMG reduction.</text>
+<line x1="68" y1="2174" x2="1132" y2="2174" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2190" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Recovery / Healing Effect Adj.</text>
+<text x="380" y="2190" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Recovery: healing applied by entity. Healing: healing received by entity.</text>
+<line x1="68" y1="2198" x2="1132" y2="2198" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2214" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental DMG Bonus Adj. Rate</text>
+<text x="380" y="2214" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects elemental damage dealt (Physical + seven elements).</text>
+<line x1="68" y1="2222" x2="1132" y2="2222" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2238" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental RES Adj. Rate</text>
+<text x="380" y="2238" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects elemental damage received (Physical + seven elements).</text>
+<line x1="68" y1="2246" x2="1132" y2="2246" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2262" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental Mastery Correction</text>
+<text x="380" y="2262" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects entity's Elemental Mastery.</text>
+<line x1="68" y1="2270" x2="1132" y2="2270" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2286" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Transformative Reaction DMG</text>
+<text x="380" y="2286" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Swirl, Superconduct, Electro-Charged, Firestarter, Frozen, Overloaded,</text>
+<text x="380" y="2302" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shatter, Bloom, Burgeon, Hyperbloom.</text>
+<line x1="68" y1="2310" x2="1132" y2="2310" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2326" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Amplifying Reaction DMG</text>
+<text x="380" y="2326" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Vaporize, Melt.</text>
+<line x1="68" y1="2334" x2="1132" y2="2334" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2350" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Catalyze Reaction DMG</text>
+<text x="380" y="2350" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Aggravate, Spread.</text>
+<line x1="68" y1="2358" x2="1132" y2="2358" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2374" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">DEF Ignore Adj. Rate / Correction</text>
+<text x="380" y="2374" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Percentage and flat amount of DEF ignored when dealing DMG.</text>
+<line x1="68" y1="2382" x2="1132" y2="2382" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2398" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Skill Cooldown Efficiency Change</text>
+<text x="380" y="2398" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Higher value = faster skill cooldown reduction.</text>
+<line x1="68" y1="2406" x2="1132" y2="2406" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2422" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Knockback Efficiency Adj. Rate</text>
+<text x="380" y="2422" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Affects knockback force magnitude when attacked.</text>
+<line x1="68" y1="2430" x2="1132" y2="2430" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2446" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Aggro Multiplier Adj. Rate</text>
+<text x="380" y="2446" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modifier applied when gaining Aggro Value.</text>
+<line x1="68" y1="2454" x2="1132" y2="2454" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2470" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shield Power Adj. Rate</text>
+<text x="380" y="2470" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Modifies shield amount by adjustment rate when gaining Shield.</text>
+
+<!-- VIII. Special Status Effects -->
+<text x="48" y="2512" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Special Status Effects</text>
+
+<rect x="48" y="2526" width="1104" height="450" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="2526" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="2548" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="2550" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect Name</text>
+<text x="380" y="2550" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<text x="72" y="2580" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Invincible</text>
+<text x="380" y="2580" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot take damage; being hit does not trigger [When Attacked] event.</text>
+<line x1="68" y1="2588" x2="1132" y2="2588" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2604" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot be Locked</text>
+<text x="380" y="2604" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Auto-locking attacks and skills cannot lock onto this entity.</text>
+<line x1="68" y1="2612" x2="1132" y2="2612" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2628" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">HP Locked</text>
+<text x="380" y="2628" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">HP cannot decrease; being hit still triggers [When Attacked].</text>
+<line x1="68" y1="2636" x2="1132" y2="2636" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2652" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Struggle</text>
+<text x="380" y="2652" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot act. Players escape by rapidly tapping Struggle key. Not available with some creations.</text>
+<line x1="68" y1="2660" x2="1132" y2="2660" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2676" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot Recover HP</text>
+<text x="380" y="2676" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Entity cannot restore HP.</text>
+<line x1="68" y1="2684" x2="1132" y2="2684" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2700" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">HP Min Threshold</text>
+<text x="380" y="2700" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">HP cannot fall below configured threshold percentage.</text>
+<line x1="68" y1="2708" x2="1132" y2="2708" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2724" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental DMG Immunity</text>
+<text x="380" y="2724" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Immune to damage of specified element (Physical + seven elements).</text>
+<line x1="68" y1="2732" x2="1132" y2="2732" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2748" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental Effects</text>
+<text x="380" y="2748" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Applies element to entity. Does not decay naturally; consumed by Elemental Reactions.</text>
+<line x1="68" y1="2756" x2="1132" y2="2756" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2772" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Super Jump</text>
+<text x="380" y="2772" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enhanced jumping. xz multiplier = horizontal distance; y multiplier = vertical height.</text>
+<line x1="68" y1="2780" x2="1132" y2="2780" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2796" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Shield</text>
+<text x="380" y="2796" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Grants a Shield; parameters from Shield configuration.</text>
+<line x1="68" y1="2804" x2="1132" y2="2804" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2820" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount Special Effects</text>
+<text x="380" y="2820" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount a looping effect on the entity.</text>
+<line x1="68" y1="2828" x2="1132" y2="2828" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2844" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Immune to Taunt</text>
+<text x="380" y="2844" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Immune to taunts in Classic and Custom Aggro modes.</text>
+<line x1="68" y1="2852" x2="1132" y2="2852" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2868" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Invisible to Other Players</text>
+<text x="380" y="2868" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Other players cannot see the character under this effect.</text>
+<line x1="68" y1="2876" x2="1132" y2="2876" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2892" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevent Elemental Application</text>
+<text x="380" y="2892" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Elemental attacks by creations cannot apply elements.</text>
+<line x1="68" y1="2900" x2="1132" y2="2900" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2916" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Fix Mini-Map Orientation</text>
+<text x="380" y="2916" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set character facing or specified angle as top of mini-map.</text>
+<line x1="68" y1="2924" x2="1132" y2="2924" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2940" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Monitor Movement Rate</text>
+<text x="380" y="2940" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Triggers [When Character Movement SPD Meets Condition] event. Query movement speed/direction.</text>
+<line x1="68" y1="2948" x2="1132" y2="2948" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="2964" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Monitor Elemental Reaction</text>
+<text x="380" y="2964" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Triggers [When Elemental Reaction Event Occurs] on target entity for specified reaction type.</text>
+
+<!-- IX. Movement and Action Restrictions -->
+<text x="48" y="3012" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IX. Movement and Action Restrictions</text>
+
+<rect x="48" y="3026" width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="3026" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="3048" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="3050" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect</text>
+<text x="380" y="3050" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<text x="72" y="3080" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Disable Gliding</text>
+<text x="380" y="3080" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents the character from gliding.</text>
+<line x1="68" y1="3088" x2="1132" y2="3088" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3104" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Disable Climbing</text>
+<text x="380" y="3104" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents the character from climbing.</text>
+<line x1="68" y1="3112" x2="1132" y2="3112" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3128" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Sprint Disabled</text>
+<text x="380" y="3128" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents the character from sprinting.</text>
+<line x1="68" y1="3136" x2="1132" y2="3136" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3152" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Jump Disabled</text>
+<text x="380" y="3152" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents the character from jumping.</text>
+<line x1="68" y1="3160" x2="1132" y2="3160" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3176" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Creation Silenced</text>
+<text x="380" y="3176" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Prevents creations from casting skills.</text>
+<line x1="68" y1="3184" x2="1132" y2="3184" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3200" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Immobilize</text>
+<text x="380" y="3200" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Restricts normal movement. Does not affect movement during skills. May affect disengagement.</text>
+<line x1="68" y1="3208" x2="1132" y2="3208" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3224" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Disable Struggle Button</text>
+<text x="380" y="3224" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Cannot escape Struggle state early using the Struggle button.</text>
+<line x1="68" y1="3232" x2="1132" y2="3232" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3248" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Keep Hurtbox During Sprint</text>
+<text x="380" y="3248" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hitbox not disabled during sprinting (default: briefly disabled).</text>
+
+<!-- X. Visual and Display Effects -->
+<text x="48" y="3302" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">X. Visual and Display Effects</text>
+
+<rect x="48" y="3316" width="1104" height="240" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="48" y="3316" width="1104" height="36" rx="14" fill="#2D6BE4"/>
+<rect x="48" y="3338" width="1104" height="14" fill="#2D6BE4"/>
+<text x="72" y="3340" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Effect</text>
+<text x="380" y="3340" fill="#fff" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Description</text>
+
+<text x="72" y="3370" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hide Nameplate</text>
+<text x="380" y="3370" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hides this unit's nameplate.</text>
+<line x1="68" y1="3378" x2="1132" y2="3378" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3394" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hide Mini-Map Markers</text>
+<text x="380" y="3394" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Hides entity's marker on the mini-map.</text>
+<line x1="68" y1="3402" x2="1132" y2="3402" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3418" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enable Transparency Effect</text>
+<text x="380" y="3418" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When filter TRUE and obscured, displayed with configured color penetrating obstruction.</text>
+<line x1="68" y1="3426" x2="1132" y2="3426" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3442" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enable Outline Effect</text>
+<text x="380" y="3442" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Edges outlined with configured color. Boolean filter configurable.</text>
+<line x1="68" y1="3450" x2="1132" y2="3450" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3466" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Object / Creation Invisible</text>
+<text x="380" y="3466" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When Boolean filter TRUE, entity/creation is not visible.</text>
+<line x1="68" y1="3474" x2="1132" y2="3474" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3490" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Character Hidden</text>
+<text x="380" y="3490" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Semi/fully transparent. Mute effects and audio per settings. Filter controls visibility.</text>
+<line x1="68" y1="3498" x2="1132" y2="3498" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3514" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Always Animate</text>
+<text x="380" y="3514" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Animations play regardless of visibility or camera view.</text>
+<line x1="68" y1="3522" x2="1132" y2="3522" stroke="#E8E4DA" stroke-width="1"/>
+
+<text x="72" y="3538" fill="#1A1B2E" font-size="12" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Overwrite Scan Tag Data</text>
+<text x="380" y="3538" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Character's scan tag component data takes effect per set parameters.</text>
+
+<!-- Tip -->
+<rect x="48" y="3568" width="1104" height="56" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="3568" width="4" height="56" rx="2" fill="#2D6BE4"/>
+<text x="68" y="3588" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tutorial Example: Create a unit status that increases Max HP, stacks up to 5 times, infinite duration. Each stack adds</text>
+<text x="68" y="3606" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Max HP Correction Value of 1000. Apply via Skill Node Graph using [Apply Unit Status] when player casts a skill.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="3652" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mh6rh59iil2i" target="_blank">
+  <text x="48" y="3670" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Unit Status</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhou93r2pxv2" target="_blank">
+  <text x="48" y="3688" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Unit Status Effect Pool</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhtbbb9hr32y" target="_blank">
+  <text x="48" y="3706" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Unit Status - Applying Buff and Debuff Effects to Objects</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="3730" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+
 </svg>

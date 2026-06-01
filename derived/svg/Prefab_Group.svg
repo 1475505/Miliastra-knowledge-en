@@ -1,107 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1400" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1090">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
       <stop offset="100%" stop-color="#4A3F6B"/>
     </linearGradient>
-    <filter id="card" x="-5%" y="-5%" width="115%" height="115%">
+    <filter id="card">
       <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
     </filter>
-    <filter id="elevated" x="-5%" y="-5%" width="115%" height="115%">
+    <filter id="elevated">
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
+  <style>
+    text { font-family: 'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif; }
+  </style>
 
-  <rect width="1200" height="1400" fill="#F9F7F2"/>
-  <rect x="0" y="0" width="1200" height="6" fill="url(#topGrad)"/>
+  <rect width="1200" height="1090" fill="#F9F7F2"/>
+  <rect width="1200" height="6" fill="url(#topGrad)"/>
 
   <!-- Title Card -->
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">06-Prefab Groups: Grouping Multiple Prefabs Together</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Prefab Group</text>
 
-  <!-- ==================== SECTION I ==================== -->
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. What is a Prefab Group</text>
+  <!-- I. Functions -->
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Functions of Prefab Groups</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Prefab Groups can reference multiple Prefabs, including each Prefab's</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">Location and Rotation relative to the group center.</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">Prefab Groups can be created directly or via the Node Graph during stage</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">runtime. This is equivalent to creating multiple Prefabs simultaneously.</text>
-    <text x="20" y="148" font-size="14" fill="#4A4B65">Prefab Groups make Entity placement more convenient. When you edit the</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">group's location, all Prefabs inside move accordingly.</text>
-  </g>
+  <rect x="48" y="164" width="1104" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">Prefab Groups can reference multiple Prefabs, including each Prefab's Location and Rotation (relative to group center).</text>
+  <text x="72" y="218" fill="#4A4B65" font-size="14">Can be created directly in the editor, or via Node Graph during Stage runtime.</text>
+  <text x="72" y="244" fill="#4A4B65" font-size="14">Creating via Node Graph is equivalent to creating multiple Prefabs simultaneously.</text>
+  <text x="72" y="270" fill="#4A4B65" font-size="14">Prefab Groups make Entity placement more convenient; editing the group's location moves all Prefabs inside accordingly.</text>
+  <rect x="72" y="282" width="180" height="26" rx="13" fill="#E8EEFB"/>
+  <text x="162" y="300" fill="#2D6BE4" font-size="12" font-weight="500" text-anchor="middle">Batch Placement</text>
 
-  <!-- ==================== SECTION II ==================== -->
-  <circle cx="80" cy="380" r="16" fill="#2D6BE4"/>
-  <text x="80" y="381" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="381" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Creating Prefab Groups</text>
+  <!-- II. Editing -->
+  <text x="48" y="344" fill="#2D6BE4" font-size="18" font-weight="700">II. Prefab Group Editing</text>
 
-  <g transform="translate(60, 408)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">In the Prefab Library</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Select multiple Prefabs in the Prefab Library, then right-click to create</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">a Prefab Group (or merge Prefab Groups).</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">The group's center location is calculated automatically based on the</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">positions of the selected Prefabs.</text>
-    <text x="20" y="148" font-size="14" fill="#4A4B65">This method is ideal for assembling a group from library assets before</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">placement into the scene.</text>
-  </g>
+  <rect x="48" y="360" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="388" fill="#1A1B2E" font-size="16" font-weight="500">Prefab Library Editing</text>
+  <text x="72" y="414" fill="#4A4B65" font-size="14">Select multiple Prefabs in the Prefab Library.</text>
+  <text x="72" y="438" fill="#4A4B65" font-size="14">Right-click to create a Prefab Group</text>
+  <text x="72" y="462" fill="#4A4B65" font-size="14">(or merge existing Prefab Groups).</text>
+  <text x="72" y="486" fill="#4A4B65" font-size="14">Group center Location calculated automatically.</text>
 
-  <g transform="translate(60, 604)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">In the Entity Placement Scene</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Select multiple placed Entities in the placement scene, then right-click</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">to create a Prefab Group (or merge Prefab Groups).</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">The group's center location is calculated automatically based on the</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">current positions of the selected entities.</text>
-    <text x="20" y="148" font-size="14" fill="#4A4B65">This method is useful for grouping entities already placed and arranged</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">in the scene.</text>
-  </g>
+  <rect x="612" y="360" width="540" height="140" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="636" y="388" fill="#1A1B2E" font-size="16" font-weight="500">Entity Placement Scene Editing</text>
+  <text x="636" y="414" fill="#4A4B65" font-size="14">Select multiple placed Entities in the scene.</text>
+  <text x="636" y="438" fill="#4A4B65" font-size="14">Right-click to create a Prefab Group</text>
+  <text x="636" y="462" fill="#4A4B65" font-size="14">(or merge existing Prefab Groups).</text>
+  <text x="636" y="486" fill="#4A4B65" font-size="14">Group center Location calculated automatically.</text>
 
-  <!-- ==================== SECTION III ==================== -->
-  <circle cx="80" cy="820" r="16" fill="#2D6BE4"/>
-  <text x="80" y="821" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="821" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Editing Prefab Groups</text>
+  <!-- III. Edit Group Information -->
+  <text x="48" y="540" fill="#2D6BE4" font-size="18" font-weight="700">III. Edit Prefab Group Information</text>
 
-  <g transform="translate(60, 848)">
-    <rect width="1080" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Adjusting Group Contents</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">After selecting a Prefab Group, you can adjust each Prefab's Location</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">and Rotation relative to the group's center.</text>
-    <text x="20" y="100" font-size="14" fill="#4A4B65">The group transforms as a single unit when you move, rotate, or scale</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">the entire group, while individual prefab offsets are preserved.</text>
-    <text x="20" y="148" font-size="14" fill="#4A4B65">Each prefab within the group maintains its own relative position and</text>
-    <text x="20" y="168" font-size="14" fill="#4A4B65">rotation to the group center.</text>
-  </g>
+  <rect x="48" y="556" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="584" fill="#4A4B65" font-size="14">After selecting a Prefab Group, adjust each Prefab's Location and Rotation relative to the group's center.</text>
+  <text x="72" y="610" fill="#4A4B65" font-size="14">Example: A Prefab Group containing two Prefabs shows individual offset parameters for each member.</text>
+  <text x="72" y="628" fill="#4A4B65" font-size="14">Moving the group moves all contained prefabs together while preserving relative positions.</text>
 
-  <!-- ==================== SECTION IV ==================== -->
-  <circle cx="80" cy="1064" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1065" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="1065" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Creating Prefab Groups via Node Graph</text>
+  <!-- IV. Node Graph Creation -->
+  <text x="48" y="676" fill="#2D6BE4" font-size="18" font-weight="700">IV. Creating Prefab Groups with Node Graph</text>
 
-  <g transform="translate(60, 1092)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="26" font-size="14" font-weight="bold" fill="#1A1B2E">Create Prefab Group Node</text>
-    <text x="20" y="52" font-size="14" fill="#4A4B65">Use the Create Prefab Group node in the Node Graph to create a group</text>
-    <text x="20" y="72" font-size="14" fill="#4A4B65">during stage runtime. Creating a Prefab Group via node is equivalent</text>
-    <text x="20" y="92" font-size="14" fill="#4A4B65">to creating each Prefab individually.</text>
-    <text x="20" y="120" font-size="14" fill="#4A4B65">This enables dynamic spawning of complex multi-prefab arrangements.</text>
-  </g>
+  <rect x="48" y="692" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="720" fill="#4A4B65" font-size="14">Creating a Prefab Group directly via nodes is equivalent to creating each Prefab separately.</text>
+  <text x="72" y="746" fill="#4A4B65" font-size="14">Use the "Create Prefab Group" node in entity node graphs to spawn grouped entities during runtime.</text>
+  <text x="72" y="764" fill="#4A4B65" font-size="14">All prefabs in the group are instantiated simultaneously with their relative positions preserved.</text>
+
+  <!-- V. Creating Prefabs (Tutorial Reference) -->
+  <text x="48" y="812" fill="#2D6BE4" font-size="18" font-weight="700">V. Creating Prefabs (Related Tutorial)</text>
+
+  <rect x="48" y="828" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+  <text x="72" y="856" fill="#4A4B65" font-size="14">The "Creating Prefabs" tutorial covers video-based instruction on prefab creation workflows.</text>
+  <text x="72" y="882" fill="#4A4B65" font-size="14">Covers: creating prefabs from basic modules, editing attributes/components/node graphs, and saving.</text>
+  <text x="72" y="900" fill="#4A4B65" font-size="14">Prerequisite for: Defining and Updating Custom Variables, Embarking On Your Creative Journey.</text>
+
+  <!-- Tip -->
+  <rect x="48" y="920" width="1104" height="44" rx="10" fill="#E8EEFB"/>
+  <rect x="48" y="920" width="4" height="44" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="946" fill="#4A4B65" font-size="13">Prefab Groups are especially useful for repeatedly placing the same arrangement of objects (e.g., furniture sets, enemy formations).</text>
 
   <!-- Source Links -->
-  <text x="60" y="1270" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <text x="48" y="1000" fill="#8B8DA0" font-size="12">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhzhzb9rw0uy" target="_blank">
+    <text x="48" y="1018" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Prefab Group (Guide)</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhfbsz9agu62" target="_blank">
+    <text x="48" y="1036" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Creating Prefabs (Tutorial)</text>
+  </a>
 
-  <text x="60" y="1292" font-size="12" fill="#2D6BE4" text-decoration="underline">
-    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhrb64ieebm4">Miliastra Academy Documentation: Prefab Group</a>
-  </text>
-  <text x="60" y="1314" font-size="12" fill="#2D6BE4" text-decoration="underline">
-    <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhwp5h9d4h3e">Miliastra Academy Documentation: Prefab Library</a>
-  </text>
-
-  <text x="600" y="1380" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <!-- Footer -->
+  <text x="600" y="1070" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1620" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 2520" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
   <defs>
     <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
       <stop offset="0%" stop-color="#2D6BE4"/>
@@ -11,107 +11,200 @@
       <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
     </filter>
   </defs>
-
-  <rect width="1200" height="1620" fill="#F9F7F2"/>
+  <rect width="1200" height="2520" fill="#F9F7F2"/>
   <rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <rect x="40" y="24" width="1120" height="52" rx="8" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="24" width="4" height="52" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="56" font-size="22" font-weight="bold" fill="#1A1B2E">41-Scene Generation Templates</text>
+  <rect x="48" y="32" width="1104" height="80" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
+  <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+  <text x="72" y="72" font-size="34" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">Scene Generation Templates</text>
 
-  <rect x="40" y="100" width="1120" height="70" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="100" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="122" font-size="18" font-weight="bold" fill="#2D6BE4">I. Function Overview</text>
-  <text x="60" y="150" font-size="14" fill="#4A4B65">Scene Generation Templates let creators quickly generate large-scale scenes. These templates allow customization of what gets generated and their quantities, facilitating rapid construction of diverse scenes.</text>
+  <text x="48" y="148" font-size="18" font-weight="700" fill="#2D6BE4">I. Function Overview</text>
 
-  <rect x="40" y="194" width="1120" height="270" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="194" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="216" font-size="18" font-weight="bold" fill="#2D6BE4">II. Using Preset Templates</text>
+  <g transform="translate(48, 168)">
+    <rect width="1104" height="100" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <text x="24" y="28" font-size="15" font-weight="500" fill="#1A1B2E">Purpose</text>
+    <text x="24" y="52" font-size="14" fill="#4A4B65">Quickly generate large-scale scenes. Templates allow customization of what gets generated and their quantities,</text>
+    <text x="24" y="72" font-size="14" fill="#4A4B65">facilitating rapid construction of diverse scenes. Preset templates are provided for immediate use.</text>
+  </g>
 
-  <text x="60" y="248" font-size="14" font-weight="bold" fill="#1A1B2E">1. Entry Point</text>
-  <text x="60" y="272" font-size="14" fill="#4A4B65">Go to Entity Placement, open Scene Generation Templates, then Preset Templates. Pick a template and confirm to import.</text>
+  <text x="48" y="308" font-size="18" font-weight="700" fill="#2D6BE4">II. Using Preset Templates</text>
+  <text x="300" y="308" font-size="13" fill="#8B8DA0">Step-by-step workflow</text>
 
-  <text x="60" y="304" font-size="14" font-weight="bold" fill="#1A1B2E">2. Generate Entities</text>
-  <text x="60" y="328" font-size="14" fill="#4A4B65">In the template tab, click or drag a template to place an entity in the scene.</text>
+  <g transform="translate(48, 328)">
+    <rect width="1104" height="300" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-  <text x="60" y="360" font-size="14" font-weight="bold" fill="#1A1B2E">3. Adjust Entity Parameters</text>
-  <text x="60" y="384" font-size="14" fill="#4A4B65">Select the entity. In Base Attributes, configure generation rules and generation range. Open Asset Configuration to fine-tune asset types, density, and other parameters.</text>
+    <circle cx="36" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="36" y="31" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="60" y="31" font-size="14" fill="#1A1B2E" font-weight="500" dominant-baseline="middle">Import Template</text>
+    <text x="60" y="51" font-size="14" fill="#4A4B65">Entity Placement → Scene Generation Templates → Preset Templates → Pick a template → Confirm to import</text>
 
-  <text x="60" y="416" font-size="14" font-weight="bold" fill="#1A1B2E">4. Generate and Adjust</text>
-  <text x="60" y="440" font-size="14" fill="#4A4B65">Click Random Preview to preview the result. Click Confirm Generation to create objects. After generation, use Select All or Delete to batch manage generated objects.</text>
+    <circle cx="36" cy="84" r="14" fill="#2D6BE4"/>
+    <text x="36" y="85" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="60" y="85" font-size="14" fill="#1A1B2E" font-weight="500" dominant-baseline="middle">Generate Entities</text>
+    <text x="60" y="105" font-size="14" fill="#4A4B65">In the "Uncategorized" tab (or any tab), click or drag a template to place an entity in the scene</text>
 
-  <rect x="40" y="488" width="1120" height="170" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="488" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="510" font-size="18" font-weight="bold" fill="#2D6BE4">III. Creating Scene Generation Templates</text>
+    <circle cx="36" cy="138" r="14" fill="#2D6BE4"/>
+    <text x="36" y="139" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">3</text>
+    <text x="60" y="139" font-size="14" fill="#1A1B2E" font-weight="500" dominant-baseline="middle">Adjust Entity Parameters</text>
+    <text x="60" y="159" font-size="14" fill="#4A4B65">Select entity → Base Attributes: configure generation rules and generation range</text>
+    <text x="60" y="179" font-size="14" fill="#4A4B65">Open "Asset Configuration" to fine-tune asset types, density, etc.</text>
 
-  <text x="60" y="542" font-size="14" font-weight="bold" fill="#1A1B2E">1. Function Entry</text>
-  <text x="60" y="566" font-size="14" fill="#4A4B65">Go to Entity Placement, open Scene Generation Templates, then click Manage Template. Or open the system menu and click Scene Generation Template Management.</text>
+    <circle cx="36" cy="212" r="14" fill="#2D6BE4"/>
+    <text x="36" y="213" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">4</text>
+    <text x="60" y="213" font-size="14" fill="#1A1B2E" font-weight="500" dominant-baseline="middle">Generate Scenes</text>
+    <text x="60" y="233" font-size="14" fill="#4A4B65">Click "Random Preview" to preview → If satisfactory, click "Confirm Generation" to create objects</text>
 
-  <text x="60" y="598" font-size="14" font-weight="bold" fill="#1A1B2E">2. Create and Configure</text>
-  <text x="60" y="622" font-size="14" fill="#4A4B65">Click New Scene Generation Template. Click Asset Configuration to set parameters. After saving, the template is available in the Asset panel under Scene Generation Templates.</text>
+    <circle cx="36" cy="266" r="14" fill="#1B4FC0"/>
+    <text x="36" y="267" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">5</text>
+    <text x="60" y="267" font-size="14" fill="#1A1B2E" font-weight="500" dominant-baseline="middle">Adjust Generated Objects</text>
+    <text x="60" y="287" font-size="14" fill="#4A4B65">Use Scene Entity Group upper-right button → "Select All" or "Delete" to manage generated objects</text>
+  </g>
 
-  <rect x="40" y="682" width="1120" height="620" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="682" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="704" font-size="18" font-weight="bold" fill="#2D6BE4">IV. Parameters Introduction</text>
+  <text x="48" y="668" font-size="18" font-weight="700" fill="#2D6BE4">III. Creating Custom Templates</text>
 
-  <text x="60" y="736" font-size="14" font-weight="bold" fill="#1A1B2E">Base Attributes Panel</text>
-  <text x="60" y="760" font-size="14" fill="#4A4B65">Contains Generation Rules and Generation Range.</text>
+  <g transform="translate(48, 688)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
 
-  <rect x="60" y="770" width="1080" height="4" rx="2" fill="#E8EEFB"/>
+    <circle cx="36" cy="30" r="14" fill="#2D6BE4"/>
+    <text x="36" y="31" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">1</text>
+    <text x="60" y="31" font-size="14" fill="#4A4B65" dominant-baseline="middle">Entity Placement → Scene Generation Templates tab → Click "Manage Template"</text>
+    <text x="60" y="51" font-size="14" fill="#4A4B65">Or: System Menu → Scene Generation Template Management</text>
 
-  <text x="60" y="794" font-size="14" font-weight="bold" fill="#1A1B2E">Generation Rules</text>
-  <text x="60" y="818" font-size="14" fill="#4A4B65">Scatter Rule Preset List: click Random Preview to preview scattering. Save the rule and reuse it from the preset list.</text>
-  <text x="60" y="842" font-size="14" fill="#4A4B65">Lock Generation Result: when enabled, every generation repeats the previous result exactly.</text>
+    <circle cx="36" cy="84" r="14" fill="#2D6BE4"/>
+    <text x="36" y="85" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">2</text>
+    <text x="60" y="85" font-size="14" fill="#4A4B65" dominant-baseline="middle">Click "New Scene Generation Template"</text>
 
-  <text x="60" y="874" font-size="14" font-weight="bold" fill="#1A1B2E">Generation Range</text>
-  <text x="60" y="898" font-size="14" fill="#4A4B65">Spawn Area Shape: sets the shape of the spawn area. Two options: Cuboid and Cylinder.</text>
+    <circle cx="36" cy="118" r="14" fill="#2D6BE4"/>
+    <text x="36" y="119" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">3</text>
+    <text x="60" y="119" font-size="14" fill="#4A4B65" dominant-baseline="middle">Click "Asset Configuration" to set parameters</text>
 
-  <rect x="60" y="910" width="1080" height="4" rx="2" fill="#E8EEFB"/>
+    <circle cx="36" cy="152" r="14" fill="#1B4FC0"/>
+    <text x="36" y="153" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">4</text>
+    <text x="60" y="153" font-size="14" fill="#4A4B65" dominant-baseline="middle">Save template — available in Asset panel under "Scene Generation Templates" tab</text>
+  </g>
 
-  <text x="60" y="934" font-size="14" font-weight="bold" fill="#1A1B2E">Asset Configuration Panel</text>
-  <text x="60" y="958" font-size="14" fill="#4A4B65">Edit parameters for each spawn layer. Five default layers: Rock, Building, Tree, Vegetation, Decoration. Custom layers can also be added.</text>
+  <text x="48" y="908" font-size="18" font-weight="700" fill="#2D6BE4">IV. Parameters Introduction</text>
 
-  <text x="60" y="990" font-size="14" font-weight="bold" fill="#1A1B2E">Layer Parameters</text>
+  <g transform="translate(48, 928)">
+    <rect width="1104" height="200" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="20" y="14" width="160" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="100" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Base Attributes Panel</text>
 
-  <rect x="76" y="1004" width="4" height="16" rx="2" fill="#2D6BE4"/>
-  <rect x="72" y="1000" width="1060" height="28" rx="2" fill="#E8EEFB"/>
-  <text x="88" y="1018" font-size="13" fill="#4A4B65">Generation Density: controls crowding. Lower values = sparser, higher values = denser.</text>
+    <text x="24" y="60" font-size="14" fill="#1A1B2E" font-weight="500">Generation Rules</text>
+    <text x="24" y="84" font-size="14" fill="#4A4B65">Scatter Rule Preset List: Click "Random Preview" to preview, then "Save Scatter Rule" to save.</text>
+    <text x="24" y="104" font-size="14" fill="#4A4B65">Saved rules can be selected from the preset list for future generation.</text>
+    <text x="24" y="128" font-size="14" fill="#1A1B2E" font-weight="500">Lock Generation Result</text>
+    <text x="220" y="128" font-size="14" fill="#4A4B65">When enabled, every generation repeats the previous result exactly.</text>
 
-  <rect x="76" y="1036" width="4" height="16" rx="2" fill="#2D6BE4"/>
-  <rect x="72" y="1032" width="1060" height="28" rx="2" fill="#E8EEFB"/>
-  <text x="88" y="1050" font-size="13" fill="#4A4B65">Generation Randomness: controls sampling-point jitter. 0 = more uniform, 1 = more chaotic.</text>
+    <text x="24" y="156" font-size="14" fill="#1A1B2E" font-weight="500">Generation Range</text>
+    <text x="24" y="180" font-size="14" fill="#4A4B65">Spawn Area Shape: Cuboid or Cylinder — sets the shape of the spawn area.</text>
+  </g>
 
-  <rect x="76" y="1068" width="4" height="16" rx="2" fill="#2D6BE4"/>
-  <rect x="72" y="1064" width="1060" height="28" rx="2" fill="#E8EEFB"/>
-  <text x="88" y="1078" font-size="13" fill="#4A4B65">Generate Based on Terrain: Rock Layer only. Controls whether rocks generate based on scene terrain.</text>
+  <g transform="translate(48, 1148)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="20" y="14" width="180" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="110" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Asset Configuration Panel</text>
 
-  <rect x="76" y="1100" width="4" height="16" rx="2" fill="#2D6BE4"/>
-  <rect x="72" y="1096" width="1060" height="28" rx="2" fill="#E8EEFB"/>
-  <text x="88" y="1110" font-size="13" fill="#4A4B65">Associated Range: Vegetation Layer only. Defines generation radius around Tree Layer objects.</text>
+    <text x="24" y="60" font-size="14" fill="#4A4B65">Five default layers: Rock, Building, Tree, Vegetation, Decoration. Custom layers can be added.</text>
 
-  <text x="60" y="1146" font-size="14" font-weight="bold" fill="#1A1B2E">Detailed Layer Editing</text>
-  <text x="60" y="1170" font-size="14" fill="#4A4B65">To fine-tune a layer (asset types, weights, spawn interval, transform ranges), click Details Editing.</text>
+    <rect x="16" y="78" width="1072" height="44" rx="14" fill="#2D6BE4"/>
+    <rect x="16" y="110" width="1072" height="12" fill="#2D6BE4"/>
+    <text x="160" y="102" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Layer Parameter</text>
+    <text x="600" y="102" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
 
-  <text x="60" y="1202" font-size="14" fill="#4A4B65">Weight: controls how often each model is chosen within the same layer.</text>
-  <text x="60" y="1226" font-size="14" fill="#4A4B65">Generate Interval Distance: controls offset distance between current model and objects generated in the next layer.</text>
-  <text x="60" y="1250" font-size="14" fill="#4A4B65">Model Assets: click Add Assets to add more assets from the Model Asset Library.</text>
-  <text x="60" y="1274" font-size="14" fill="#4A4B65">Transform Range: sets the jitter range for location, rotation, and scale.</text>
+    <text x="24" y="146" font-size="14" fill="#1A1B2E" font-weight="500">Generation Density</text>
+    <text x="200" y="146" font-size="14" fill="#4A4B65">Controls crowding. Lower = sparser, Higher = denser</text>
+    <line x1="24" y1="160" x2="1080" y2="160" stroke="#E8E4DA" stroke-width="1"/>
 
-  <rect x="40" y="1326" width="1120" height="170" rx="14" filter="url(#elevated)" fill="#FFF"/>
-  <rect x="40" y="1326" width="4" height="32" rx="2" fill="#2D6BE4"/>
-  <text x="60" y="1348" font-size="18" font-weight="bold" fill="#2D6BE4">V. Special Notes</text>
+    <text x="24" y="180" font-size="14" fill="#1A1B2E" font-weight="500">Generation Randomness</text>
+    <text x="240" y="180" font-size="14" fill="#4A4B65">Sampling-point jitter. 0 = uniform, 1 = chaotic</text>
+    <line x1="24" y1="194" x2="1080" y2="194" stroke="#E8E4DA" stroke-width="1"/>
 
-  <text x="60" y="1380" font-size="14" font-weight="bold" fill="#1A1B2E">Generation Order</text>
-  <text x="60" y="1404" font-size="14" fill="#4A4B65">Layers generate in order: Rock first, then Building, Tree, Vegetation, and so on.</text>
+    <text x="24" y="214" font-size="14" fill="#1A1B2E" font-weight="500">Generate Based on Terrain</text>
+    <text x="280" y="214" font-size="14" fill="#4A4B65">Rock Layer only. Controls whether rocks generate based on terrain</text>
+    <line x1="24" y1="228" x2="1080" y2="228" stroke="#E8E4DA" stroke-width="1"/>
 
-  <text x="60" y="1436" font-size="14" font-weight="bold" fill="#1A1B2E">Exclusion Rule</text>
-  <text x="60" y="1460" font-size="14" fill="#4A4B65">Except for Rock, each layer generates only in empty space after excluding the previous layer's objects. If a layer is too dense, later layers may have nowhere to spawn.</text>
+    <text x="24" y="248" font-size="14" fill="#1A1B2E" font-weight="500">Associated Range</text>
+    <text x="200" y="248" font-size="14" fill="#4A4B65">Vegetation Layer only. Effective radius using Tree Layer objects as center</text>
+    <line x1="24" y1="262" x2="1080" y2="262" stroke="#E8E4DA" stroke-width="1"/>
 
-  <text x="60" y="1492" font-size="14" font-weight="bold" fill="#1A1B2E">Vegetation Association</text>
-  <text x="60" y="1516" font-size="14" fill="#4A4B65">The Vegetation Layer follows the Associated Rule and spawns with the Tree Layer. If the Tree layer does not generate, the Vegetation layer will not generate either.</text>
+    <text x="24" y="282" font-size="14" fill="#1A1B2E" font-weight="500">Initially Effective</text>
+    <text x="200" y="282" font-size="14" fill="#4A4B65">Toggle to enable/disable this layer when applied</text>
+  </g>
 
-  <text x="600" y="1576" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+  <g transform="translate(48, 1508)">
+    <rect width="1104" height="340" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+    <rect x="20" y="14" width="170" height="26" rx="13" fill="#E8EEFB"/>
+    <text x="105" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Detailed Layer Editing</text>
 
-  <text x="40" y="1598" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhdipgirsolo"><text x="40" y="1618" font-size="12" fill="#2D6BE4" text-decoration="underline">Scene Generation Templates</text></a>
+    <text x="24" y="60" font-size="14" fill="#4A4B65">Click "Details Editing" on a layer to fine-tune asset types, weights, spawn interval distance, and transform ranges.</text>
+
+    <rect x="16" y="78" width="1072" height="44" rx="14" fill="#2D6BE4"/>
+    <rect x="16" y="110" width="1072" height="12" fill="#2D6BE4"/>
+    <text x="160" y="102" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Detail Parameter</text>
+    <text x="600" y="102" font-size="15" font-weight="500" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">Description</text>
+
+    <text x="24" y="146" font-size="14" fill="#1A1B2E" font-weight="500">Weight</text>
+    <text x="200" y="146" font-size="14" fill="#4A4B65">Controls how often each model is chosen within the same layer</text>
+    <line x1="24" y1="160" x2="1080" y2="160" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="180" font-size="14" fill="#1A1B2E" font-weight="500">Generate Interval Distance</text>
+    <text x="280" y="180" font-size="14" fill="#4A4B65">Offset distance between current model and next layer objects (supports +/-)</text>
+    <line x1="24" y1="194" x2="1080" y2="194" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="214" font-size="14" fill="#1A1B2E" font-weight="500">Model Assets</text>
+    <text x="200" y="214" font-size="14" fill="#4A4B65">Click "Add Assets" to add more assets from the Model Asset Library</text>
+    <line x1="24" y1="228" x2="1080" y2="228" stroke="#E8E4DA" stroke-width="1"/>
+
+    <text x="24" y="248" font-size="14" fill="#1A1B2E" font-weight="500">Transform Range</text>
+    <text x="200" y="248" font-size="14" fill="#4A4B65">Sets the jitter range for location, rotation, and scale</text>
+  </g>
+
+  <g transform="translate(48, 1868)">
+    <rect width="1104" height="68" rx="14" fill="#FDE8E6"/>
+    <rect x="0" y="0" width="4" height="68" rx="2" fill="#D93025"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#D93025">Generate Interval Distance Detail</text>
+    <text x="20" y="46" font-size="13" fill="#D93025">A circle is drawn with the current object's center as origin, radius = bounding box radius + this value. Within this circle, generation of objects in the next layer is prohibited.</text>
+  </g>
+
+  <text x="48" y="1976" font-size="18" font-weight="700" fill="#2D6BE4">V. Special Notes</text>
+
+  <g transform="translate(48, 1996)">
+    <rect width="1104" height="180" rx="14" fill="#FFFFFF" filter="url(#card)"/>
+
+    <rect x="20" y="14" width="120" height="26" rx="13" fill="#FFF3E0"/>
+    <text x="80" y="27" font-size="12" font-weight="bold" fill="#E8840C" text-anchor="middle" dominant-baseline="middle">Layer Order</text>
+    <text x="24" y="60" font-size="14" fill="#4A4B65">Layers generate in order: Rock first, then Building, Tree, Vegetation, and so on.</text>
+    <text x="24" y="80" font-size="14" fill="#4A4B65">Except for Rock, layers follow the "Exclusion Rule": each layer generates only in empty space after</text>
+    <text x="24" y="100" font-size="14" fill="#4A4B65">excluding the previous layer's objects. If a layer is too dense, later layers may have nowhere to spawn.</text>
+
+    <rect x="20" y="120" width="140" height="26" rx="13" fill="#FFF3E0"/>
+    <text x="90" y="133" font-size="12" font-weight="bold" fill="#E8840C" text-anchor="middle" dominant-baseline="middle">Vegetation Rule</text>
+    <text x="24" y="166" font-size="14" fill="#4A4B65">Vegetation Layer follows the "Associated Rule" and spawns with the Tree Layer. If Tree layer does not generate, Vegetation will not either.</text>
+  </g>
+
+  <g transform="translate(48, 2196)">
+    <rect width="1104" height="82" rx="14" fill="#E5F2E9"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#34A853"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#34A853">Vegetation Layer Troubleshooting</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">If Vegetation Layer fails to spawn: a) Reduce Generate Interval Distance of Tree-Layer objects (negative values allowed)</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">b) Increase the Associated Range of the Vegetation Layer</text>
+  </g>
+
+  <g transform="translate(48, 2302)">
+    <rect width="1104" height="82" rx="14" fill="#E8EEFB"/>
+    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
+    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Scene Generation Template Workflow</text>
+    <text x="20" y="44" font-size="13" fill="#4A4B65">Import Preset or Create Custom Template → Configure Base Attributes (Rules, Range) →</text>
+    <text x="20" y="64" font-size="13" fill="#4A4B65">Configure Asset Layers (Density, Randomness, Assets) → Random Preview → Confirm Generation</text>
+  </g>
+
+  <text x="48" y="2428" font-size="12" fill="#8B8DA0">Related Documentation:</text>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhjk3t996oiy" target="_blank">
+    <text x="48" y="2450" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Scene Generation Templates</text>
+  </a>
+  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhz6s29zzonm" target="_blank">
+    <text x="48" y="2470" font-size="12" fill="#2D6BE4" text-decoration="underline">Miliastra Academy Documentation: Scene Generation Template Management Tutorial</text>
+  </a>
+  <text x="600" y="2498" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>

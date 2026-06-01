@@ -1,157 +1,226 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 3200" width="100%" height="100%" style="background:#F9F7F2;font-family:'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif;">
-  <defs>
-    <linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2D6BE4"/>
-      <stop offset="100%" stop-color="#4A3F6B"/>
-    </linearGradient>
-    <filter id="card">
-      <feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
-    </filter>
-    <filter id="elevated">
-      <feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
-    </filter>
-  </defs>
-  <rect width="1200" height="3200" fill="#F9F7F2"/>
-  <rect width="1200" height="6" fill="url(#topGrad)"/>
-  <rect x="60" y="24" width="1080" height="76" rx="14" fill="#FFFFFF" filter="url(#elevated)"/>
-  <rect x="60" y="24" width="4" height="76" rx="2" fill="#2D6BE4"/>
-  <text x="84" y="68" font-size="22" font-weight="bold" fill="#1A1B2E" dominant-baseline="middle">35-Main Camera</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 1900">
+<defs>
+<linearGradient id="topGrad" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+<stop offset="0%" stop-color="#2D6BE4"/>
+<stop offset="100%" stop-color="#4A3F6B"/>
+</linearGradient>
+<filter id="card">
+<feDropShadow dx="0" dy="1" stdDeviation="4" flood-color="#2D6BE4" flood-opacity="0.06"/>
+</filter>
+<filter id="elevated">
+<feDropShadow dx="0" dy="4" stdDeviation="14" flood-color="#000" flood-opacity="0.07"/>
+</filter>
+</defs>
+<rect width="1200" height="1900" fill="#F9F7F2"/>
+<rect width="1200" height="6" fill="url(#topGrad)"/>
 
-  <circle cx="80" cy="136" r="16" fill="#2D6BE4"/>
-  <text x="80" y="137" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">I</text>
-  <text x="108" y="137" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">I. Camera Definition</text>
+<!-- Title Card -->
+<rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
+<rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
+<text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Main Camera</text>
+<text x="340" y="80" fill="#4A4B65" font-size="16" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Defining player perspective via camera templates</text>
 
-  <g transform="translate(60, 164)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Definition</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Camera renders the Player's perspective in the game — it defines what the Player sees on screen.</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">In Beyond Mode, creators define camera rules through camera templates. Each template represents</text>
-    <text x="20" y="98" font-size="13" fill="#4A4B65">a distinct Camera State. At runtime, each player always has one active Camera Template.</text>
-    <text x="20" y="122" font-size="13" fill="#4A4B65">Active templates can differ between players (e.g., Co-Op: Player A uses Template 1, B uses Template 2).</text>
-  </g>
+<!-- I. Definition -->
+<text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">I. Definition</text>
 
-  <circle cx="80" cy="340" r="16" fill="#2D6BE4"/>
-  <text x="80" y="341" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">II</text>
-  <text x="108" y="341" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">II. Camera Template Editor</text>
+<rect x="48" y="164" width="1104" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="190" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera renders the Player's perspective in the game, defining what the Player sees on screen.</text>
+<text x="72" y="214" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">In Beyond Mode, camera rules are defined through camera templates. Each template represents a distinct Camera State.</text>
+<text x="72" y="238" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">At runtime, each Player always has one active template. Active templates can differ between Players (Co-Op Mode).</text>
+<text x="72" y="256" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Switch active template via Node Graph at runtime; template parameters cannot be modified dynamically.</text>
 
-  <g transform="translate(60, 368)">
-    <rect width="1080" height="160" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Editor Layout</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">Opening the Main Camera editor displays three sections:</text>
-    <text x="20" y="80" font-size="13" fill="#1A1B2E" font-weight="bold">Section 1</text>
-    <text x="85" y="80" font-size="13" fill="#4A4B65">Preview and configure parameters of the current Camera Template</text>
-    <text x="20" y="104" font-size="13" fill="#1A1B2E" font-weight="bold">Section 2</text>
-    <text x="85" y="104" font-size="13" fill="#4A4B65">Preview of camera position and character position relationship in the scene</text>
-    <text x="20" y="128" font-size="13" fill="#1A1B2E" font-weight="bold">Section 3</text>
-    <text x="85" y="128" font-size="13" fill="#4A4B65">Preview of actual in-game screen during gameplay</text>
-  </g>
+<!-- II. Editing Camera Templates -->
+<text x="48" y="300" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">II. Editing Camera Templates</text>
+<text x="320" y="300" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Access via Manage Main Camera in system menu</text>
 
-  <circle cx="80" cy="564" r="16" fill="#2D6BE4"/>
-  <text x="80" y="565" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">III</text>
-  <text x="108" y="565" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">III. Template Parameter Configuration</text>
+<rect x="48" y="316" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="342" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Editor interface divided into three sections:</text>
+<circle cx="72" cy="366" r="14" fill="#2D6BE4"/>
+<text x="72" y="371" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="371" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Preview and configure parameters of current Camera Template</text>
+<circle cx="540" cy="366" r="14" fill="#2D6BE4"/>
+<text x="540" y="371" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="564" y="371" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera/character position preview in scene</text>
+<circle cx="920" cy="366" r="14" fill="#2D6BE4"/>
+<text x="920" y="371" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="944" y="371" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Actual in-game screen preview</text>
 
-  <g transform="translate(60, 592)">
-    <rect width="1080" height="220" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Basic Parameters</text>
-    <text x="20" y="62" font-size="13" fill="#1A1B2E" font-weight="bold">Template Name</text>
-    <text x="130" y="62" font-size="13" fill="#4A4B65">Name indicating the Template's role; also used as reference in Node Graphs</text>
-    <text x="20" y="88" font-size="13" fill="#1A1B2E" font-weight="bold">Movement Mode</text>
-    <text x="130" y="88" font-size="13" fill="#4A4B65">Currently supports camera following character entities</text>
-    <text x="20" y="114" font-size="13" fill="#1A1B2E" font-weight="bold">Mode</text>
-    <text x="65" y="114" font-size="13" fill="#4A4B65">Key parameter defining the Camera Template type. Determines core rules</text>
-    <text x="85" y="134" font-size="13" fill="#4A4B65">and which adjustable parameters are available</text>
-    <text x="20" y="160" font-size="13" fill="#1A1B2E" font-weight="bold">Default Effective Target</text>
-    <text x="160" y="160" font-size="13" fill="#4A4B65">Specifies which Classes the template initially applies to</text>
-    <text x="20" y="186" font-size="13" fill="#4A4B65">Location Information: Relative location between Camera and Character</text>
-    <text x="20" y="206" font-size="13" fill="#4A4B65">(editing parameters, collapsed by default, values shown in preview)</text>
-  </g>
+<!-- III. Template Parameters -->
+<text x="48" y="436" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">III. Camera Template Parameter Configuration</text>
 
-  <circle cx="80" cy="848" r="16" fill="#2D6BE4"/>
-  <text x="80" y="849" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">IV</text>
-  <text x="108" y="849" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">IV. Camera Modes</text>
+<!-- Template Name -->
+<rect x="48" y="452" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="478" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Template Name</text>
+<text x="72" y="500" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Indicates role in gameplay; used as</text>
+<text x="72" y="520" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">reference in Node Graph operations</text>
 
-  <g transform="translate(60, 876)">
-    <rect width="520" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Classic Camera</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">Classic Camera</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Matches Classic Mode. Parameters are grayed out —</text>
-    <text x="16" y="102" font-size="13" fill="#4A4B65">supports preview only, cannot be edited.</text>
+<!-- Location Information -->
+<rect x="420" y="452" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="444" y="478" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Location Information</text>
+<text x="444" y="500" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Relative location between Camera and</text>
+<text x="444" y="520" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Character. Editing params, collapsed by default.</text>
 
-    <rect x="16" y="130" width="120" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="76" y="143" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">3D Back Camera</text>
-    <text x="16" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">3D Back Camera</text>
-    <text x="16" y="194" font-size="13" fill="#4A4B65">Over-the-shoulder view positioned behind and to</text>
-    <text x="16" y="214" font-size="13" fill="#4A4B65">the right of the Character.</text>
-    <text x="16" y="238" font-size="13" fill="#1A1B2E" font-weight="bold">Key Parameters:</text>
-    <text x="16" y="256" font-size="13" fill="#4A4B65">• Camera FOV Detection (viewing cone)</text>
-    <text x="16" y="274" font-size="13" fill="#4A4B65">• Viewpoint Offset (world coordinate offset)</text>
-    <text x="16" y="292" font-size="13" fill="#4A4B65">• Viewpoint Follows Rotation (camera rotates with character)</text>
-    <text x="16" y="310" font-size="13" fill="#4A4B65">• Default Line of Sight (initial distance)</text>
-    <text x="16" y="328" font-size="13" fill="#4A4B65">• Line of Sight Range (adjustable range)</text>
-    <text x="16" y="346" font-size="13" fill="#4A4B65">• Horizontal Angle Range (left-right rotation, degrees)</text>
-    <text x="16" y="364" font-size="13" fill="#4A4B65">• Pitch Angle Range (up-down rotation, degrees)</text>
+<!-- Basic Camera Config -->
+<rect x="792" y="452" width="360" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="816" y="478" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Camera Configuration</text>
+<text x="816" y="500" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Movement Mode: Follow character entity</text>
+<text x="816" y="520" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Default Effective Target: assigned via Class</text>
 
-    <rect x="16" y="392" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="405" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">2.5D</text>
-    <text x="16" y="432" font-size="14" font-weight="bold" fill="#1A1B2E">2.5D Camera</text>
-    <text x="16" y="454" font-size="13" fill="#4A4B65">Traditional 2.5D game camera. Supports Ignore</text>
-    <text x="16" y="472" font-size="13" fill="#4A4B65">Camera Collision toggle.</text>
-  </g>
+<!-- IV. Camera Modes -->
+<text x="48" y="572" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">IV. Camera Modes (Detailed Settings)</text>
+<text x="400" y="572" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mode determines core camera rules; params vary by mode</text>
 
-  <g transform="translate(620, 876)">
-    <rect width="520" height="480" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <rect x="16" y="14" width="140" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="86" y="27" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">First-Person</text>
-    <text x="16" y="60" font-size="14" font-weight="bold" fill="#1A1B2E">First-Person Camera</text>
-    <text x="16" y="82" font-size="13" fill="#4A4B65">Camera positioned at the Character's eye level,</text>
-    <text x="16" y="102" font-size="13" fill="#4A4B65">simulating first-person perspective view.</text>
+<!-- Classic Camera -->
+<rect x="48" y="588" width="264" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="602" width="160" height="28" rx="14" fill="#E8EEFB"/>
+<text x="152" y="621" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Classic Camera</text>
+<text x="72" y="646" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Matches Classic Mode. Preview</text>
+<text x="72" y="662" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">only, parameters not editable.</text>
 
-    <rect x="16" y="130" width="130" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="81" y="143" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Third Person</text>
-    <text x="16" y="172" font-size="14" font-weight="bold" fill="#1A1B2E">Third Person Camera</text>
-    <text x="16" y="194" font-size="13" fill="#4A4B65">Similar to Classic Mode but with editable detailed</text>
-    <text x="16" y="214" font-size="13" fill="#4A4B65">settings available to the user.</text>
+<!-- 3D Back Camera -->
+<rect x="328" y="588" width="420" height="180" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="352" y="602" width="160" height="28" rx="14" fill="#E8EEFB"/>
+<text x="432" y="621" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3D Back Camera</text>
+<text x="352" y="648" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Over-the-shoulder view, behind and right of character.</text>
 
-    <rect x="16" y="242" width="100" height="26" rx="13" fill="#E8EEFB"/>
-    <text x="66" y="255" font-size="12" font-weight="bold" fill="#2D6BE4" text-anchor="middle" dominant-baseline="middle">Object</text>
-    <text x="16" y="284" font-size="14" font-weight="bold" fill="#1A1B2E">Object Camera (via Main Camera)</text>
-    <text x="16" y="306" font-size="13" fill="#4A4B65">Movement Mode: Follow Object/Creation.</text>
-    <text x="16" y="326" font-size="13" fill="#4A4B65">Supports Object Cameras following object/creation</text>
-    <text x="16" y="346" font-size="13" fill="#4A4B65">entities. Currently only Third-Person Camera</text>
-    <text x="16" y="366" font-size="13" fill="#4A4B65">mode is supported for object cameras.</text>
-    <text x="16" y="394" font-size="14" font-weight="bold" fill="#1A1B2E">Advanced Camera Settings</text>
-    <text x="16" y="416" font-size="13" fill="#4A4B65">Automatic Camera Correction: When disabled,</text>
-    <text x="16" y="436" font-size="13" fill="#4A4B65">correction parameters cannot be modified.</text>
-    <text x="16" y="456" font-size="13" fill="#4A4B65">Horizontal/Pitch Correction Speed: [0, 360]</text>
-    <text x="16" y="474" font-size="13" fill="#4A4B65">Horizontal/Pitch Correction Reference: [0, 180]</text>
-  </g>
+<text x="352" y="672" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera FOV Detection:</text>
+<text x="520" y="672" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Field of view (viewing cone)</text>
 
-  <circle cx="80" cy="1392" r="16" fill="#2D6BE4"/>
-  <text x="80" y="1393" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle" dominant-baseline="middle">V</text>
-  <text x="108" y="1393" font-size="18" font-weight="bold" fill="#2D6BE4" dominant-baseline="middle">V. Camera Template Switching</text>
+<text x="352" y="694" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Viewpoint Offset:</text>
+<text x="490" y="694" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Additional location offset (World Coords)</text>
 
-  <g transform="translate(60, 1420)">
-    <rect width="1080" height="140" rx="14" fill="#FFFFFF" filter="url(#card)"/>
-    <text x="20" y="28" font-size="15" font-weight="bold" fill="#1A1B2E">Node Graph Control</text>
-    <text x="20" y="54" font-size="13" fill="#4A4B65">You can use Node Graphs to dynamically switch Camera Templates at runtime.</text>
-    <text x="20" y="78" font-size="13" fill="#4A4B65">Target Units are a list of Player Entities.</text>
-    <text x="20" y="104" font-size="13" fill="#4A4B65">Template parameters themselves cannot be modified dynamically — only the active template</text>
-    <text x="20" y="124" font-size="13" fill="#4A4B65">can be switched via Node Graph for a specific Player Entity.</text>
-  </g>
+<text x="352" y="716" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Viewpoint Follows Rotation:</text>
+<text x="560" y="716" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera rotates with character</text>
 
-  <g transform="translate(60, 1580)">
-    <rect width="1080" height="82" rx="14" fill="#E8EEFB"/>
-    <rect x="0" y="0" width="4" height="82" rx="2" fill="#2D6BE4"/>
-    <text x="20" y="22" font-size="14" font-weight="bold" fill="#2D6BE4">Camera Template Lifecycle</text>
-    <text x="20" y="44" font-size="13" fill="#4A4B65">Define Template in Main Camera Editor → Configure Parameters → Assign Default Targets →</text>
-    <text x="20" y="64" font-size="13" fill="#4A4B65">At Runtime: Switch active templates via Node Graph as needed</text>
-  </g>
+<text x="352" y="738" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Default Line of Sight:</text>
+<text x="520" y="738" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Initial camera-viewpoint distance</text>
 
-  <text x="60" y="1720" font-size="12" fill="#8B8DA0">Related Documentation:</text>
-  <a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0" target="_blank">
-    <text x="60" y="1746" font-size="13" fill="#2D6BE4" text-decoration="underline">Main Camera → https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhapyl0uxns0</text>
-  </a>
-  <text x="600" y="1780" font-size="11" fill="#8B8DA0" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
+<text x="352" y="758" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Line of Sight Range / Horizontal Angle / Pitch Angle Range</text>
+
+<!-- 2.5D Camera -->
+<rect x="764" y="588" width="388" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="788" y="602" width="130" height="28" rx="14" fill="#E8EEFB"/>
+<text x="853" y="621" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2.5D Camera</text>
+<text x="788" y="648" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Traditional 2.5D top-down game camera.</text>
+
+<text x="788" y="672" fill="#1A1B2E" font-size="13" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Ignore Camera Collision:</text>
+<text x="788" y="692" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">No: Camera may be pushed by collisions (stutter/shifts).</text>
+<text x="788" y="708" fill="#4A4B65" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Yes: Ignores collisions but may move inside models.</text>
+
+<!-- First-Person Camera -->
+<rect x="48" y="780" width="540" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="72" y="794" width="180" height="28" rx="14" fill="#E8EEFB"/>
+<text x="162" y="813" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">First-Person Camera</text>
+<text x="72" y="840" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera at character's eye level, simulating first-person view.</text>
+<text x="72" y="862" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Same editable parameters as other camera modes (FOV, offset, etc.)</text>
+
+<!-- Third Person Camera -->
+<rect x="604" y="780" width="548" height="100" rx="14" fill="#fff" filter="url(#card)"/>
+<rect x="628" y="794" width="180" height="28" rx="14" fill="#E8EEFB"/>
+<text x="718" y="813" fill="#2D6BE4" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Third Person Camera</text>
+<text x="628" y="840" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Similar to Classic Mode but with editable detailed settings.</text>
+<text x="628" y="862" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Full parameter customization available for the user.</text>
+
+<!-- V. Camera Template Switching -->
+<text x="48" y="920" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">V. Camera Template Switching</text>
+
+<rect x="48" y="936" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="962" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Use Node Graphs to dynamically switch Camera Templates at runtime.</text>
+<text x="72" y="982" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Target Units are a list of Player Entities. Reference template by name.</text>
+
+<!-- VI. Object Camera -->
+<text x="48" y="1032" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VI. Object Camera</text>
+<text x="220" y="1032" fill="#8B8DA0" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera following object/creation entities</text>
+
+<rect x="48" y="1048" width="540" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1074" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Basic Camera Settings</text>
+
+<rect x="72" y="1088" width="80" height="26" rx="13" fill="#E8EEFB"/>
+<text x="112" y="1106" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mode</text>
+<text x="164" y="1106" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Only Third-Person Camera supported</text>
+
+<rect x="72" y="1120" width="160" height="26" rx="13" fill="#E8EEFB"/>
+<text x="152" y="1138" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Movement Mode</text>
+<text x="244" y="1138" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Follow Object/Creation only</text>
+
+<text x="72" y="1168" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Distinguishes camera template types.</text>
+
+<rect x="604" y="1048" width="548" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="628" y="1074" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Advanced Camera Settings</text>
+
+<rect x="628" y="1088" width="240" height="26" rx="13" fill="#E8EEFB"/>
+<text x="748" y="1106" fill="#2D6BE4" font-size="12" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Automatic Camera Correction</text>
+<text x="880" y="1106" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Enable/disable</text>
+
+<text x="628" y="1132" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">When disabled, following params cannot be modified.</text>
+<text x="628" y="1152" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Horizontal/Pitch Correction Speed: [0, 360]</text>
+<text x="628" y="1170" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Horizontal/Pitch Correction Reference: [0, 180]</text>
+
+<!-- How to Use Object Camera -->
+<rect x="48" y="1190" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1216" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">How to Use Object Cameras</text>
+<text x="72" y="1240" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1. Add [Object Camera] general component to a dynamic object or creation</text>
+<text x="72" y="1260" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2. Choose a preconfigured object camera template in the Select Camera field. Use Node Graphs to switch to it at runtime.</text>
+
+<!-- VII. Tutorial: Different Perspectives -->
+<text x="48" y="1310" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VII. Tutorial: Creating Game Cameras in Different Perspectives</text>
+
+<rect x="48" y="1326" width="1104" height="130" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1352" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Create different camera angles (e.g. top-down view)</text>
+
+<circle cx="72" cy="1380" r="14" fill="#2D6BE4"/>
+<text x="72" y="1385" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1385" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Open in-game editor > ESC menu > Manage Main Camera editing interface</text>
+
+<circle cx="72" cy="1410" r="14" fill="#2D6BE4"/>
+<text x="72" y="1415" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1415" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set [Basic Settings - Mode] to desired camera (e.g. 2.5D Camera for top-down)</text>
+
+<circle cx="72" cy="1440" r="14" fill="#1B4FC0"/>
+<text x="72" y="1445" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1445" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Set [Default Target] to the class that needs modification. Alternatively, configure in Class settings.</text>
+
+<!-- VIII. Tutorial: Camera Switching -->
+<text x="48" y="1492" fill="#2D6BE4" font-size="18" font-weight="700" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">VIII. Extended: Switching Camera After Interaction</text>
+
+<rect x="48" y="1508" width="1104" height="200" rx="14" fill="#fff" filter="url(#card)"/>
+<text x="72" y="1534" fill="#1A1B2E" font-size="16" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Feature: Camera switching mechanism (first-person / top-down via interaction)</text>
+
+<circle cx="72" cy="1562" r="14" fill="#2D6BE4"/>
+<text x="72" y="1567" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">1</text>
+<text x="96" y="1567" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Configure 2 main cameras: [First-Person Camera] and [2.5D Camera] with custom names</text>
+
+<circle cx="72" cy="1592" r="14" fill="#2D6BE4"/>
+<text x="72" y="1597" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">2</text>
+<text x="96" y="1597" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Create prefab as interactive object. Add [Component > Tab] with options and trigger area</text>
+
+<circle cx="72" cy="1622" r="14" fill="#2D6BE4"/>
+<text x="72" y="1627" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">3</text>
+<text x="96" y="1627" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Node graph: When Tab Selected -> Binary Branch -> Check Option ID -> Switch Camera Template by name</text>
+
+<circle cx="72" cy="1652" r="14" fill="#2D6BE4"/>
+<text x="72" y="1657" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">4</text>
+<text x="96" y="1657" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Camera Template Name in node = custom camera name from Step 1</text>
+
+<circle cx="72" cy="1682" r="14" fill="#1B4FC0"/>
+<text x="72" y="1687" fill="#fff" font-size="13" text-anchor="middle" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">5</text>
+<text x="96" y="1687" fill="#4A4B65" font-size="14" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Mount node graph on prefab, save, place in scene, test in Test Play</text>
+
+<!-- Tip Box -->
+<rect x="48" y="1724" width="1104" height="52" rx="10" fill="#E8EEFB"/>
+<rect x="48" y="1724" width="4" height="52" rx="2" fill="#2D6BE4"/>
+<text x="72" y="1746" fill="#2D6BE4" font-size="14" font-weight="500" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Tip: Camera can also be configured in Class settings (same result as Main Camera editor).</text>
+<text x="72" y="1766" fill="#4A4B65" font-size="13" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Template parameters cannot be modified dynamically at runtime; only template switching is supported via Node Graphs.</text>
+
+<!-- Related Documentation -->
+<text x="48" y="1812" fill="#8B8DA0" font-size="12" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Related Documentation:</text>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/detail/mhfua005zpeg" target="_blank">
+<text x="48" y="1832" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: Main Camera (Guide)</text>
+</a>
+<a xlink:href="https://act.hoyoverse.com/ys/ugc/tutorial/course/detail/mhi2dr0pe60g" target="_blank">
+<text x="48" y="1852" fill="#2D6BE4" font-size="12" text-decoration="underline" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">Miliastra Academy Documentation: 2.3 Camera Settings (Tutorial)</text>
+</a>
+
+<!-- Footer -->
+<text x="600" y="1884" fill="#8B8DA0" font-size="11" text-anchor="middle" font-family="'Roboto','HYWenHei 85W','Noto Sans','Segoe UI',sans-serif">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
 </svg>
