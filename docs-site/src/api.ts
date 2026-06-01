@@ -32,8 +32,8 @@ export async function fetchDoc(id: string): Promise<{ content: string; meta: Doc
   return r.json()
 }
 
-export async function fetchDocToc(): Promise<DocTocSection[]> {
-  const r = await fetch(`${BASE}/api/docs/toc`)
+export async function fetchDocToc(scope: 'guide' | 'tutorial' = 'guide'): Promise<DocTocSection[]> {
+  const r = await fetch(`${BASE}/api/docs/toc?scope=${encodeURIComponent(scope)}`)
   if (!r.ok) throw new Error('Failed to fetch doc TOC')
   return r.json()
 }

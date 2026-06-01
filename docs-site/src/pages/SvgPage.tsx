@@ -4,6 +4,7 @@ import type { SvgEntry, SvgSection } from '../types'
 import { fetchDocIds, fetchDocList, fetchSvgContent, fetchSvgIndex } from '../api'
 
 const HOYO_URL_RE = /act\.hoyoverse\.com\/ys\/ugc\/tutorial\/(?:course\/)?detail\/(\w+)/
+const CRAFTSPEOPLE_ACADEMY_URL = 'https://act.hoyoverse.com/ys/ugc/tutorial/index.html?utm_source=ugc&utm_medium=creatorcenter&utm_campaign=tbicon&lang=en-us'
 
 export function SvgPage() {
   const { id } = useParams<{ id: string }>()
@@ -250,7 +251,12 @@ export function SvgPage() {
             </div>
             <div className="related-panel-content">
               {currentEntry?.relatedDocIds.length === 0 ? (
-                <div className="related-empty">No related docs</div>
+                <div className="related-empty">
+                  <div style={{ marginBottom: 8 }}>No related docs</div>
+                  <a href={CRAFTSPEOPLE_ACADEMY_URL} target="_blank" rel="noopener noreferrer">
+                    CraftsPeople Academy ↗
+                  </a>
+                </div>
               ) : (
                 currentEntry?.relatedDocIds.map(docId => (
                   <Link key={docId} className="related-item" to={`/docs/${docId}`}>

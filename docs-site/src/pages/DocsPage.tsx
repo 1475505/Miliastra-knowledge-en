@@ -12,7 +12,7 @@ export function DocsPage() {
 
   const [scope, setScope] = useState<Scope>('guide')
   const [guideToc, setGuideToc] = useState<DocTocSection[]>([])
-  const [tutorialDocs, setTutorialDocs] = useState<DocEntry[]>([])
+  const [tutorialToc, setTutorialToc] = useState<DocTocSection[]>([])
   const [localDocIds, setLocalDocIds] = useState<Set<string>>(new Set())
   const [listLoading, setListLoading] = useState(true)
   const [collapsedSections, setCollapsedSections] = useState<Set<string>>(new Set())
@@ -25,12 +25,12 @@ export function DocsPage() {
 
   useEffect(() => {
     Promise.all([
-      fetchDocToc(),
-      fetchDocList('tutorial'),
+      fetchDocToc('guide'),
+      fetchDocToc('tutorial'),
       fetchDocIds(),
-    ]).then(([toc, tutorial, ids]) => {
-      setGuideToc(toc)
-      setTutorialDocs(tutorial)
+    ]).then(([guide, tutorial, ids]) => {
+      setGuideToc(guide)
+      setTutorialToc(tutorial)
       setLocalDocIds(new Set(ids))
       setListLoading(false)
     })
@@ -87,12 +87,70 @@ export function DocsPage() {
     return entries
   }, [guideToc, search])
 
+  const tutorialDocs = useMemo(
+    () => tutorialToc.flatMap(section => section.entries.map(entry => ({
+      id: entry.id,
+      title: entry.title,
+      url: '',
+      scope: 'tutorial' as const,
+      updated_at: '',
+      localPath: '',
+    }))),
+    [tutorialToc]
+  )
+
   // Filtered tutorial entries when searching
   const tutorialFiltered = useMemo(() => {
     const q = search.trim().toLowerCase()
     if (!q) return tutorialDocs
     return tutorialDocs.filter(d => d.title.toLowerCase().includes(q))
   }, [tutorialDocs, search])
+
+  const renderGroupedToc = (sections: DocTocSection[]) => sections.map(section => {
+    const available = section.entries.filter(e => e.available)
+    if (available.length === 0 && !section.id) return null
+    const sectionKey = section.id || section.section
+    const isCollapsed = collapsedSections.has(sectionKey)
+    return (
+      <div key={sectionKey}>
+        {section.entries.length === 0 ? (
+          <div
+            className={`sidebar-entry has-svg${section.id === id ? ' active' : ''}`}
+            onClick={() => section.id && navigate(`/docs/${section.id}`)}
+            title={section.section}
+          >
+            <span className="sidebar-entry-dot" />
+            <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{section.section}</span>
+          </div>
+        ) : (
+          <>
+            <div
+              className="sidebar-section-header"
+              onClick={() => toggleSection(sectionKey)}
+            >
+              <span>{section.section}</span>
+              <span className={`sidebar-section-chevron${isCollapsed ? '' : ' open'}`}>▶</span>
+            </div>
+            {!isCollapsed && (
+              <div className="sidebar-entries">
+                {available.map(e => (
+                  <div
+                    key={e.id}
+                    className={`sidebar-entry has-svg${e.id === id ? ' active' : ''}`}
+                    onClick={() => navigate(`/docs/${e.id}`)}
+                    title={e.title}
+                  >
+                    <span className="sidebar-entry-dot" />
+                    <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.title}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </>
+        )}
+      </div>
+    )
+  })
 
   return (
     <div className="page-layout">
@@ -149,58 +207,12 @@ export function DocsPage() {
                 ))
               )
             ) : (
-              guideToc.map(section => {
-                const available = section.entries.filter(e => e.available)
-                if (available.length === 0 && !section.id) return null
-                const isCollapsed = collapsedSections.has(section.id || section.section)
-                const sectionKey = section.id || section.section
-                return (
-                  <div key={sectionKey}>
-                    {/* Section header — leaf sections with no children are just clickable entries */}
-                    {section.entries.length === 0 ? (
-                      <div
-                        className={`sidebar-entry has-svg${section.id === id ? ' active' : ''}`}
-                        onClick={() => section.id && navigate(`/docs/${section.id}`)}
-                        title={section.section}
-                      >
-                        <span className="sidebar-entry-dot" />
-                        <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{section.section}</span>
-                      </div>
-                    ) : (
-                      <>
-                        <div
-                          className="sidebar-section-header"
-                          onClick={() => toggleSection(sectionKey)}
-                        >
-                          <span>{section.section}</span>
-                          <span className={`sidebar-section-chevron${isCollapsed ? '' : ' open'}`}>▶</span>
-                        </div>
-                        {!isCollapsed && (
-                          <div className="sidebar-entries">
-                            {available.map(e => (
-                              <div
-                                key={e.id}
-                                className={`sidebar-entry has-svg${e.id === id ? ' active' : ''}`}
-                                onClick={() => navigate(`/docs/${e.id}`)}
-                                title={e.title}
-                              >
-                                <span className="sidebar-entry-dot" />
-                                <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.title}</span>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </>
-                    )}
-                  </div>
-                )
-              })
+              renderGroupedToc(guideToc)
             )
           ) : (
-            /* ── Tutorial: flat list ── */
             tutorialFiltered.length === 0 ? (
               <div style={{ padding: '16px', fontSize: 13, color: 'var(--text-muted)', textAlign: 'center' }}>No results</div>
-            ) : (
+            ) : search.trim() ? (
               tutorialFiltered.map(doc => (
                 <div
                   key={doc.id}
@@ -212,6 +224,8 @@ export function DocsPage() {
                   <span style={{ flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{doc.title}</span>
                 </div>
               ))
+            ) : (
+              renderGroupedToc(tutorialToc)
             )
           )}
         </div>

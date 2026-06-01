@@ -31,6 +31,18 @@ interface DocEntry {
   localPath: string
 }
 
+interface DocTocEntry {
+  id: string
+  title: string
+  available: boolean
+}
+
+interface DocTocSection {
+  section: string
+  id: string
+  entries: DocTocEntry[]
+}
+
 function normalizeDocTitle(title: string): string {
   return title.toLowerCase().replace(/[^a-z0-9]/g, '')
 }
@@ -93,6 +105,55 @@ const TUTORIAL_TITLE_OVERRIDES: Record<string, string> = {
   mhyrrdiy2zis: 'Player Tutorial',
 }
 
+const TUTORIAL_SECTION_ORDER = [
+  'Academy Essentials',
+  'New Features',
+  'General Concepts',
+  'Beginner Must-Read',
+  'Advanced Examples',
+  'Party Game Walkthrough',
+  'Video Tutorials',
+] as const
+
+const TUTORIAL_SECTION_LABELS: Record<(typeof TUTORIAL_SECTION_ORDER)[number], string> = {
+  'Academy Essentials': 'academy-essentials',
+  'New Features': 'new-features',
+  'General Concepts': 'general-concepts',
+  'Beginner Must-Read': 'beginner-must-read',
+  'Advanced Examples': 'advanced-examples',
+  'Party Game Walkthrough': 'party-game-walkthrough',
+  'Video Tutorials': 'video-tutorials',
+}
+
+const TUTORIAL_ACADEMY_TITLES = new Set([
+  '关卡导出',
+  '更新日志',
+  '学习导览&读前须知',
+  '创作者中心入驻指引',
+  '【奇匠小贴士】灵感激励计划一页流',
+])
+
+const TUTORIAL_VIDEO_TITLE_PATTERNS = [
+  /^交互界面的搭建$/,
+  /^信号$/,
+  /^元件的制作$/,
+  /^全局计时器$/,
+  /^制作我的第一个奇域组件$/,
+  /^基础功能逻辑&玩法流程$/,
+  /^如何在千星奇域开启创作之旅$/,
+  /^定时器$/,
+  /^建成我的第一个奇域$/,
+  /^新手入门系列视频教程$/,
+  /^流程逻辑设置$/,
+  /^玩家节点图搭建$/,
+  /^玩法功能进阶实例$/,
+  /^玩法整合：/,
+  /^组件设置：/,
+  /^编辑器通识$/,
+  /^自定义变量的设置与变化$/,
+  /^项目案例实战$/,
+]
+
 function loadDocEntries(): DocEntry[] {
   const guidePath = path.join(DATA_ROOT, 'config/urls-guide.json')
   const tutorialPath = path.join(DATA_ROOT, 'config/urls-tutorial.json')
@@ -103,6 +164,67 @@ function loadDocEntries(): DocEntry[] {
     const title = TUTORIAL_TITLE_OVERRIDES[entry.id] || titleFromSource
     return { ...entry, title }
   })
+}
+
+function classifyTutorialSection(rawTitle: string): (typeof TUTORIAL_SECTION_ORDER)[number] {
+  const title = rawTitle.trim()
+  if (/^1\./.test(title)) return 'General Concepts'
+  if (/^2\./.test(title)) return 'Beginner Must-Read'
+  if (/^3\./.test(title)) return 'Advanced Examples'
+  if (/^4\./.test(title)) return 'Party Game Walkthrough'
+  if (TUTORIAL_ACADEMY_TITLES.has(title)) return 'Academy Essentials'
+  if (TUTORIAL_VIDEO_TITLE_PATTERNS.some(pattern => pattern.test(title))) return 'Video Tutorials'
+  return 'New Features'
+}
+
+function loadTutorialToc(): DocTocSection[] {
+  const tutorialPath = path.join(DATA_ROOT, 'config/urls-tutorial.json')
+  const tutorialEntries: DocEntry[] = JSON.parse(fs.readFileSync(tutorialPath, 'utf-8')).entries
+  const sections = new Map<string, DocTocSection>()
+
+  for (const section of TUTORIAL_SECTION_ORDER) {
+    sections.set(section, {
+      section,
+      id: TUTORIAL_SECTION_LABELS[section],
+      entries: [],
+    })
+  }
+
+  for (const entry of tutorialEntries) {
+    const sectionName = classifyTutorialSection(entry.title)
+    const section = sections.get(sectionName)
+    if (!section) continue
+    const title = TUTORIAL_TITLE_OVERRIDES[entry.id] || readFrontmatterTitle(entry.localPath) || entry.title
+    section.entries.push({
+      id: entry.id,
+      title,
+      available: true,
+    })
+  }
+
+  return TUTORIAL_SECTION_ORDER
+    .map(section => sections.get(section)!)
+    .filter(section => section.entries.length > 0)
+}
+
+function loadGuideToc(): DocTocSection[] {
+  const translations = loadTranslationEntries()
+  const translationSection = translations.length > 0 ? [{
+    section: 'Translation',
+    id: 'translation',
+    entries: translations.map(e => ({ id: e.id, title: e.title, available: true })),
+  }] : []
+  const toc = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/guide-toc.json'), 'utf-8'))
+  const allDocs = loadDocEntries()
+  const availableIds = new Set(allDocs.map((d: DocEntry) => d.id))
+  const enriched = toc.map((section: { section: string; id: string; entries: { id: string; title: string }[] }) => ({
+    ...section,
+    entries: section.entries.map(e => ({ ...e, available: availableIds.has(e.id) })),
+  }))
+  const beforeYouReadIdx = enriched.findIndex((s: DocTocSection) => s.id === 'mhhvwcrb9v92' || s.section === 'Before You Read')
+  const insertAt = beforeYouReadIdx >= 0 ? beforeYouReadIdx + 1 : enriched.length
+  enriched.splice(insertAt, 0, ...translationSection)
+  return enriched
 }
 
 function titleToSvgFilename(rawTitle: string): string {
@@ -253,25 +375,10 @@ app.get('/api/docs/list/:scope', (req, res) => {
   }
 })
 
-app.get('/api/docs/toc', (_req, res) => {
+app.get('/api/docs/toc', (req, res) => {
   try {
-    const translations = loadTranslationEntries()
-    const translationSection = translations.length > 0 ? [{
-      section: 'Translation',
-      id: 'translation',
-      entries: translations.map(e => ({ id: e.id, title: e.title, available: true })),
-    }] : []
-    const toc = JSON.parse(fs.readFileSync(path.join(DATA_ROOT, 'config/guide-toc.json'), 'utf-8'))
-    const allDocs = loadDocEntries()
-    const availableIds = new Set(allDocs.map((d: DocEntry) => d.id))
-    const enriched = toc.map((section: { section: string; id: string; entries: { id: string; title: string }[] }) => ({
-      ...section,
-      entries: section.entries.map(e => ({ ...e, available: availableIds.has(e.id) })),
-    }))
-    const beforeYouReadIdx = enriched.findIndex((s: any) => s.id === 'mhhvwcrb9v92' || s.section === 'Before You Read')
-    const insertAt = beforeYouReadIdx >= 0 ? beforeYouReadIdx + 1 : enriched.length
-    enriched.splice(insertAt, 0, ...translationSection)
-    res.json(enriched)
+    const scope = req.query.scope === 'tutorial' ? 'tutorial' : 'guide'
+    res.json(scope === 'tutorial' ? loadTutorialToc() : loadGuideToc())
   } catch (err) {
     res.status(500).json({ error: String(err) })
   }

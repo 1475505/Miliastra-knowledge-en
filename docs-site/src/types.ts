@@ -2,7 +2,7 @@ export interface DocEntry {
   id: string
   title: string
   url: string
-  scope: 'guide' | 'tutorial'
+  scope: 'guide' | 'tutorial' | 'translation'
   updated_at: string
   localPath: string
 }
