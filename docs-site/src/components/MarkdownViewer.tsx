@@ -7,9 +7,17 @@ const HOYO_URL_RE = /act\.hoyoverse\.com\/ys\/ugc\/tutorial\/(?:course\/)?detail
 interface Props {
   content: string
   localDocIds?: Set<string>
+  docLocalPath?: string
 }
 
-export function MarkdownViewer({ content, localDocIds }: Props) {
+function resolveAssetUrl(docLocalPath: string | undefined, assetPath: string): string {
+  if (!assetPath || /^(?:[a-z]+:|\/\/|#|\/)/i.test(assetPath)) return assetPath
+  if (!docLocalPath) return assetPath
+
+  return `/api/docs/asset?docPath=${encodeURIComponent(docLocalPath)}&assetPath=${encodeURIComponent(assetPath)}`
+}
+
+export function MarkdownViewer({ content, localDocIds, docLocalPath }: Props) {
   const navigate = useNavigate()
 
   // Strip frontmatter before rendering
@@ -46,6 +54,10 @@ export function MarkdownViewer({ content, localDocIds }: Props) {
               )
             }
             return <a>{children}</a>
+          },
+          img({ src, alt }) {
+            if (!src) return null
+            return <img src={resolveAssetUrl(docLocalPath, src)} alt={alt || ''} loading="lazy" />
           },
         }}
       >

@@ -88,6 +88,13 @@ function enforceSvgFontFamily(svgText: string): string {
   return svgText.replace(/<svg\b([^>]*)>/i, `<svg$1>${SVG_FONT_OVERRIDE_STYLE}`)
 }
 
+function resolveDocAssetPath(docLocalPath: string, assetPath: string): string | null {
+  if (!assetPath || /^(?:[a-z]+:|\/\/|#)/i.test(assetPath)) return null
+  const normalized = path.posix.normalize(path.posix.join(path.posix.dirname(docLocalPath), assetPath))
+  if (normalized.startsWith('..')) return null
+  return normalized
+}
+
 function loadTranslationEntries(): DocEntry[] {
   const dir = path.join(DATA_ROOT, 'official/translation')
   if (!fs.existsSync(dir)) return []
@@ -407,6 +414,24 @@ app.get('/api/docs/ids', (_req, res) => {
       : []
     const ids = [...guide.map(d => d.id), ...translationIds]
     res.json([...new Set(ids)])
+  } catch (err) {
+    res.status(500).json({ error: String(err) })
+  }
+})
+
+app.get('/api/docs/asset', (req, res) => {
+  const docPath = typeof req.query.docPath === 'string' ? req.query.docPath : ''
+  const assetPath = typeof req.query.assetPath === 'string' ? req.query.assetPath : ''
+  const resolved = resolveDocAssetPath(docPath, assetPath)
+  if (!resolved) return res.status(400).json({ error: 'Invalid asset path' })
+
+  try {
+    const absPath = path.resolve(DATA_ROOT, resolved)
+    if (!absPath.startsWith(path.resolve(DATA_ROOT))) return res.status(403).json({ error: 'Forbidden' })
+    if (!fs.existsSync(absPath) || !fs.statSync(absPath).isFile()) {
+      return res.status(404).json({ error: 'Not found' })
+    }
+    res.sendFile(absPath)
   } catch (err) {
     res.status(500).json({ error: String(err) })
   }

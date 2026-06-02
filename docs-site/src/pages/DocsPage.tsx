@@ -279,7 +279,7 @@ export function DocsPage() {
                     )}
                   </div>
                 </div>
-                <MarkdownViewer content={docContent} localDocIds={localDocIds} />
+                <MarkdownViewer content={docContent} localDocIds={localDocIds} docLocalPath={docMeta?.localPath} />
               </article>
             )}
           </div>
