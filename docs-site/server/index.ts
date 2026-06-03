@@ -248,7 +248,7 @@ function titleToSvgFilename(rawTitle: string): string {
   // Strip parenthetical description
   const noParens = noPrefix.replace(/\s*\([^)]*\)\s*$/, '').trim()
   // Replace spaces and special chars with underscores
-  return noParens.replace(/[\s,]+/g, '_').replace(/[^\w-]/g, '')
+  return noParens.replace(/[\s,\/]+/g, '_').replace(/[^\w-]/g, '')
 }
 
 interface SvgEntry {
