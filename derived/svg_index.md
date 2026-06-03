@@ -74,7 +74,7 @@
 58-Progress Bar
 59-Timer UI
 60-Scoreboard
-61-Rich Text
+61-Text/Image Input Box
 62-Status Display
 63-Notification Queue
 
@@ -88,7 +88,7 @@
 
 # Version Update: Luna 7
 42-Custom Mini-Map
-61-Rich Text
+61-Text/Image Input Box
 62-Status Display
 63-Notification Queue
 65-Asset Library

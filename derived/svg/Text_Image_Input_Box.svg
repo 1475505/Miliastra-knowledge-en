@@ -18,26 +18,25 @@
   <!-- Title Card -->
   <rect x="48" y="32" width="1104" height="80" rx="14" fill="#fff" filter="url(#elevated)"/>
   <rect x="48" y="32" width="4" height="80" rx="2" fill="#2D6BE4"/>
-  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Rich Text</text>
-  <text x="260" y="82" fill="#4A4B65" font-size="16">Input Controls</text>
+  <text x="72" y="82" fill="#1A1B2E" font-size="34" font-weight="bold">Text/Image Input Box</text>
 
   <!-- I. Features -->
-  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Features of the Rich Text Input Control</text>
+  <text x="48" y="148" fill="#2D6BE4" font-size="18" font-weight="700">I. Features of the Text/Image Input Box</text>
 
   <rect x="48" y="164" width="1104" height="80" rx="14" fill="#fff" filter="url(#card)"/>
-  <text x="72" y="192" fill="#4A4B65" font-size="14">The Rich Text Input Control can be configured in a UI layout. It is suited for scenarios where</text>
+  <text x="72" y="192" fill="#4A4B65" font-size="14">The Text/Image Input Box can be configured in a UI layout. It is suited for scenarios where</text>
   <text x="72" y="212" fill="#4A4B65" font-size="14">images and text are used together in a mixed layout.</text>
   <text x="72" y="234" fill="#1A1B2E" font-size="14" font-weight="500">Images are dynamically adapted based on the actual length of the text content.</text>
 
   <!-- II. Editing -->
-  <text x="48" y="280" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Rich Text Input Control</text>
+  <text x="48" y="280" fill="#2D6BE4" font-size="18" font-weight="700">II. Editing the Text/Image Input Box</text>
 
   <!-- Step 1: Adding -->
   <rect x="48" y="296" width="1104" height="56" rx="14" fill="#fff" filter="url(#card)"/>
   <circle cx="80" cy="324" r="14" fill="#2D6BE4"/>
   <text x="80" y="329" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">1</text>
-  <text x="106" y="320" fill="#1A1B2E" font-size="14" font-weight="500">Adding the Rich Text Input Control</text>
-  <text x="106" y="340" fill="#4A4B65" font-size="13">In the UI Control Group Editing Window, add a UI control template: Rich Text Input.</text>
+  <text x="106" y="320" fill="#1A1B2E" font-size="14" font-weight="500">Adding the Text/Image Input Box</text>
+  <text x="106" y="340" fill="#4A4B65" font-size="13">In the UI Control Group Editing Window, add a UI control template: Text/Image Input Box.</text>
 
   <!-- Step 2: Text Box Settings -->
   <rect x="48" y="364" width="1104" height="120" rx="14" fill="#fff" filter="url(#card)"/>
@@ -47,7 +46,7 @@
 
   <rect x="106" y="410" width="100" height="26" rx="6" fill="#E8EEFB"/>
   <text x="116" y="428" fill="#2D6BE4" font-size="12" font-weight="500">Font Size</text>
-  <text x="220" y="428" fill="#4A4B65" font-size="13">The font size of the text inside the rich text input control.</text>
+  <text x="220" y="428" fill="#4A4B65" font-size="13">The font size of the text inside the text/image input box.</text>
 
   <rect x="106" y="444" width="100" height="26" rx="6" fill="#E8EEFB"/>
   <text x="116" y="462" fill="#2D6BE4" font-size="12" font-weight="500">Line Spacing</text>
@@ -63,7 +62,7 @@
   <text x="80" y="531" fill="#fff" font-size="12" text-anchor="middle" font-weight="500">3</text>
   <text x="106" y="530" fill="#1A1B2E" font-size="14" font-weight="500">Image Settings</text>
 
-  <text x="106" y="554" fill="#4A4B65" font-size="13">Inside the rich text input control, click [Insert Image] to add an image.</text>
+  <text x="106" y="554" fill="#4A4B65" font-size="13">Inside the text/image input box, click [Insert Image] to add an image.</text>
 
   <rect x="106" y="568" width="90" height="26" rx="6" fill="#E8EEFB"/>
   <text x="116" y="586" fill="#2D6BE4" font-size="12" font-weight="500">Position</text>
@@ -81,7 +80,7 @@
   <!-- Related Documentation -->
   <text x="48" y="700" fill="#8B8DA0" font-size="12">Related Documentation:</text>
   <a xlink:href="https://act.mihoyo.com/ys/ugc/tutorial/detail/mh496c08hooo" target="_blank">
-    <text x="48" y="716" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Rich Text Input Controls</text>
+    <text x="48" y="716" fill="#2D6BE4" font-size="12" text-decoration="underline">Miliastra Academy Documentation: Text/Image Input Box</text>
   </a>
 
   <text x="600" y="736" fill="#8B8DA0" font-size="11" text-anchor="middle">AI Generated, based on Craftspeople Academy. Version: Luna 7</text>
